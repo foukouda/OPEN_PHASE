@@ -1,5 +1,5 @@
 # KiBot configuration file for KDT_Hierarchical Template
-# KiCad 8.0
+# KiCad 10 (template written for KiCad 8/9)
 
 kibot:
   version: 1
@@ -560,11 +560,11 @@ definitions:
   PROJECT_NAME: PhaseSense-8586
   BOARD_NAME: PHASETRACKER
 
-  COMPANY: Company Name
+  COMPANY: OPEN THRUST LAB
   DESIGNER: SIEBERT DIMITRY
 
-  LOGO: 'Logos/dummy_logo.png'
-  GIT_URL: 'https://github.com/nguyen-v/KDT_Hierarchical_KiBot'
+  LOGO: 'Logos/LOGO.png'
+  GIT_URL: 'https://github.com/foukouda/PhaseSense-8586'
 
   # Preflight ==================================================================
 
