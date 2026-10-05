@@ -1,0 +1,39 @@
+Version 4
+SymbolType CELL
+RECTANGLE Normal -128 -96 128 96
+TEXT 8 -44 Center 2 INA241A2
+TEXT 8 -20 Center 1 (behavioral)
+TEXT 8 8 Center 1 20 V/V
+TEXT -120 -48 Left 1 IN+
+TEXT -120 48 Left 1 IN-
+TEXT 120 0 Right 1 OUT
+TEXT 0 -84 Center 1 VS
+TEXT -64 84 Center 1 REF1
+TEXT 0 84 Center 1 GND
+TEXT 64 84 Center 1 REF2
+WINDOW 0 24 -112 Left 2
+SYMATTR Value INA241A2_BEHAV
+SYMATTR Prefix X
+SYMATTR ModelFile INA241A2_behav.sub
+SYMATTR Description Behavioral model of TI INA241A2 current-sense amplifier (written for PhaseSense-8586, not a TI model)
+PIN -128 -48 NONE 0
+PINATTR PinName IN+
+PINATTR SpiceOrder 1
+PIN -128 48 NONE 0
+PINATTR PinName IN-
+PINATTR SpiceOrder 2
+PIN -64 96 NONE 0
+PINATTR PinName REF1
+PINATTR SpiceOrder 3
+PIN 64 96 NONE 0
+PINATTR PinName REF2
+PINATTR SpiceOrder 4
+PIN 0 -96 NONE 0
+PINATTR PinName VS
+PINATTR SpiceOrder 5
+PIN 0 96 NONE 0
+PINATTR PinName GND
+PINATTR SpiceOrder 6
+PIN 128 0 NONE 0
+PINATTR PinName OUT
+PINATTR SpiceOrder 7
