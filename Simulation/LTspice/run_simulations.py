@@ -206,12 +206,13 @@ def fig04():
     d = read_raw(os.path.join(HERE, "04_Analog_Rails_PSRR.raw"))
     f = d["frequency"]
     fig, a = plt.subplots(figsize=(9, 4.4))
-    for key, lab, col, dy in (("v(+5va)", "+5VA (IC8)", C1, -26), ("v(+2.5va)", "+2.5VA (IC9, corrected)", C2, 16)):
+    for key, lab, col, dx, dy in (("v(+5va)", "+5VA (IC8)", C1, 12, -22),
+                                  ("v(+2.5va)", "+2.5VA (IC9, corrected)", C2, -96, 16)):
         psrr = -20 * np.log10(np.abs(d[key]))
         a.semilogx(f, psrr, color=col, lw=2, label=lab)
         i = np.argmin(np.abs(f - 2e6))
         a.plot(f[i], psrr[i], "o", color=col, ms=8, mec=SURFACE, mew=2)
-        a.annotate(f"{psrr[i]:.0f} dB @ 2 MHz", (f[i], psrr[i]), xytext=(-96, dy),
+        a.annotate(f"{psrr[i]:.0f} dB @ 2 MHz", (f[i], psrr[i]), xytext=(dx, dy),
                    textcoords="offset points", color=INK2, fontsize=9,
                    arrowprops=dict(arrowstyle="-", color=INK2, lw=0.8))
     a.axvline(2e6, color=INK2, lw=1, ls="--")
@@ -243,7 +244,7 @@ def fig05():
     a.set_title("05 - Measurement channels, from the phase to the AD7606C input pins")
     a.set_ylim(-55, 3)
     a.set_xlim(f[0], f[-1])
-    a.legend(loc="upper right")
+    a.legend(loc="center left")
     save(fig, "sim05_channels_ac.png")
 
 
