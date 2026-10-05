@@ -1,693 +1,365 @@
-<h1 align="center">KiCad 8/9 Template for CI/CD with KiBot</h1>
+<p align="center" width="100%">
+  <img alt="Logo" width="33%" src="Logos/LOGO.png">
+</p>
+
+<h1 align="center">PhaseSense-8586 – PHASETRACKER</h1>
 
 <p align="center">
-  <a href=https://www.kicad.org/>
-    <img alt="Light" src="https://gitlab.com/uploads/-/system/group/avatar/6593371/kicadlogo.png" height=200>
+  3-phase inline current and voltage sensing PCB for BLDC drone motors (INA241A2 + AD7606C-18)
+</p>
+
+<p align="center">
+  Sub-project of <a href="https://opentruslab.vercel.app/">OPEN THRUST LAB</a>
+</p>
+
+<p align="center" width="100%">
+  <a href="https://github.com/foukouda/PhaseSense-8586/actions/workflows/ci.yaml">
+    <img alt="CI" src="https://github.com/foukouda/PhaseSense-8586/actions/workflows/ci.yaml/badge.svg?branch=dev">
   </a>
-&nbsp; &nbsp; &nbsp; &nbsp;
-  <a href=https://kibot.readthedocs.io/en/latest/>
-    <img alt="Dark" src="https://raw.githubusercontent.com/INTI-CMNB/KiBot/dev/docs/images/kibot_740x400_logo.png" height=200>
+  <a href="LICENSE">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-blue">
   </a>
-</p>
-
-A **KiCad 8/9** template for **automated**, professional documentation generation with **Continuous Integration and Continuous Development** (CI/CD) using [KiBot](https://github.com/INTI-CMNB/KiBot/tree/master).
-
-A video tutorial for setting up this template is available [here](https://www.youtube.com/watch?v=63R6Wnx44uY).
-
-An example project using this template can be found [here](https://github.com/nguyen-v/amulet_controller_kibot/tree/master).
-
-> [!NOTE]
-> This file will be overridden by a KiBot run.
-
-## TABLE OF CONTENTS
-
-- [TABLE OF CONTENTS](#table-of-contents)
-- [FEATURES](#features)
-- [GETTING STARTED](#getting-started)
-- [USAGE](#usage)
-  - [CI/CD Workflow and Semantic Versioning](#cicd-workflow-and-semantic-versioning)
-  - [Running Locally](#running-locally)
-  - [Calculating Board Costs (KiCost)](#calculating-board-costs-kicost)
-  - [Visualizing Outputs in a Webpage](#visualizing-outputs-in-a-webpage)
-- [PROJECT CONVERSION GUIDE](#project-conversion-guide)
-  - [Folders](#folders)
-  - [Schematic](#schematic)
-  - [PCB](#pcb)
-  - [Summary in table format](#summary-in-table-format)
-- [DIRECTORY STRUCTURE](#directory-structure)
-- [CREDITS](#credits)
-- [RESOURCES](#resources)
-- [CONTRIBUTING](#contributing)
-
-## FEATURES
-
-- **Automated fabrication document**: [Example](https://github.com/nguyen-v/amulet_controller_kibot/blob/master/Manufacturing/Fabrication/amulet_controller-fabrication.pdf). The stackup table, fabrication notes, drill drawings/tables, testpoint tables/highlighting are all automated.
-  
-- **Automated assembly document**: [Example](https://github.com/nguyen-v/amulet_controller_kibot/blob/master/Manufacturing/Assembly/amulet_controller-assembly.pdf). The images, tables, DNP crosses, texts are all automated.
-
-- **Automated table of contents** in schematic
-
-- **Automated 3D images** of the PCB in various documents
-
-- **Synchronised `CHANGELOG.md`** with Revision History page of the schematic
-
-- **Automated README.md**: images and other board information
-
-- **Various outputs** such as gerbers, 3D renders, ERC/DRC reports, BoM, Diff visualizer
-
-- **Modern webpage** for visualizing the generated files and documents
-
-- **Robust workflow** with two branches and semantic versioning
-
-- **Releases with changelog** and assets
-
-- **Can be run locally** with Docker
-
-## GETTING STARTED
-
-1. Go to your KiCad templates folder
-   
-    **Windows**:
-
-    ```
-    cd "C:\Program Files\KiCad\8.0\share\kicad\template"
-    ```
-
-    **Linux**:
-    ```
-    cd ~/.local/share/kicad/8.0/template
-    ```
-
-2. Clone the repository
-
-    ```
-    git clone https://github.com/nguyen-v/KDT_Hierarchical_KiBot.git
-    ```
-
-3. Install the fonts inside of [`kibot_resources/fonts`](kibot_resources/fonts) if not already installed on the system.
-
-   **Linux**:
-
-   ```
-   cp -i KDT_Hierarchical_KiBot/kibot_resources/fonts/*.ttf ~/.fonts/
-   fc-cache
-   ```
-
-5. A custom color theme ([`Altium_Theme.json`](kibot_resources/colors/Altium_Theme.json)) is also provided in [`kibot_resources/colors`](kibot_resources/colors).
-You should move this file to your KiCad Themes folder.
-
-    **Windows**:
-
-    `xcopy "KDT_Hierarchical_KiBot\kibot_resources\colors\Altium_Theme.json" "C:\Users\%USERNAME%\AppData\Roaming\kicad\8.0\colors\" /-Y`
-
-    **Linux**:
-
-    `cp -i KDT_Hierarchical_KiBot/kibot_resources/colors/Altium_Theme.json ~/.config/kicad/8.0/colors/`
-
-> [!NOTE]
-> In the steps above, replace ```8.0``` with ```9.0``` for KiCad 9
-
-5. Create a new project with:
-
-    **File → New Project From Template** and select `KDT_Hierarchical_KiBot`
-
-> [!CAUTION]
-> Under Linux, the ```.github``` folder from the template needs to be copied at the root of the project directory, as it is not copied when creating a project from a template in KiCad.
-
-6. Create a new `dev` branch. This will be the working branch. 
-   
-   ```
-   git checkout -b dev
-   ```
-   
-7. Modify the following fields in [`kibot_main.yaml`](kibot_yaml/kibot_main.yaml#L556) according to your project:
-    ```
-      # Metadata ===================================================================
-
-      PROJECT_NAME: Project Name
-      BOARD_NAME: Board Name
-
-      COMPANY: Company Name
-      DESIGNER: Author
-
-      LOGO: 'Logos/dummy_logo.png'
-      GIT_URL: 'https://github.com/nguyen-v/KDT_Hierarchical_KiBot'
-
-      # Preflight ==================================================================
-
-      CHECK_ZONE_FILLS: false
-      STACKUP_TABLE_NOTE: external layer thicknesses are specified after plating
-
-      # BoM ========================================================================
-
-      MPN_FIELD: 'Manufacturer Part Number'
-      MAN_FIELD: 'Manufacturer'
-
-      # Drill table and drill map parameters =======================================
-
-      GROUP_ROUND_SLOTS: true  # whether or not to group round holes and slots
-      GROUP_PTH_NPTH: 'no'  # for drill tables (CSV, PCB Print)
-      GROUP_PTH_NPTH_DRL: false  # for .drl files
-
-      # Gerber parameters ==========================================================
-
-      PLOT_REFS: true # reference designators
-
-      # Schematic parameters =======================================================
-
-      COLOR_THEME: Altium_Theme
-      SHEET_WKS: ${KIPRJMOD}/Templates/KDT_Template_PCB_GIT_A4.kicad_wks
-      FAB_SCALING: 1
-      ASSEMBLY_SCALING: 1
-
-      # References to exclude from testpoint highlighting ==========================
-      
-      EXCLUDE_REFS: '[MB*]' # for components on the PCB but not on the schematic
-
-      # 3D Viewer rotations (in steps) =============================================
-
-      3D_VIEWER_ROT_X: 2
-      3D_VIEWER_ROT_Y: -1
-      3D_VIEWER_ROT_Z: 1
-      3D_VIEWER_ZOOM: -1
-      KEY_COLOR: '#00FF00' # background color to remove
-    ```
-
-8. The files inside of [`kibot_resources/templates`](kibot_resources/templates) should also be modified according to your project. These include Assembly and Fabrication notes, Impedance table and README file templates.
-
-9. Edit the [`*.kicad_dru`](KDT_Hierarchical_KiBot.kicad_dru) if necessary according to your design rules. Right now, it has been set for PCBWay 6-layer PCBs with 2oz outer 1oz inner, focusing on lowest cost.
-
-10.  Edit the [`kibot_out_csv_bom.yaml`](kibot_yaml/kibot_out_csv_bom.yaml), [`kibot_out_html_bom.yaml`](kibot_yaml/kibot_out_html_bom.yaml) and [`kibot_out_xlsx_bom.yaml`](kibot_yaml/kibot_out_xlsx_bom.yaml) files according to the component fields that you use. You can refer to the [KiCost Documentation](https://hildogjr.github.io/KiCost/docs/_build/singlehtml/index.html) for the field names.
-
-## USAGE
-
-### CI/CD Workflow and Semantic Versioning
-
-This template is meant to be used in a CI/CD environment on GitHub. The workflow is as follows:
-
-- Any custom font used in the project must be added to the [`kibot_resources/fonts`](kibot_resources/fonts) folder.
-
-> [!NOTE]
-> KiCad 9 allows for fonts to be embedded in the schematic. However, it is still good practice to add the fonts in the folder mentioned.
-
-- There are two branches, a `main` and a `dev` branch. The `dev` branch is the working branch. The `main` should only be used for pull requests and releases.
-
-- Changes should be recorded in the [`CHANGELOG.md`](CHANGELOG.md) file, and should respect [semantic versioning guidelines](https://semver.org/) for [hardware](https://www.maskset.net/blog/2023/02/26/semantic-versioning-for-hardware/). The changes of the current version should be added under the `[Unreleased]` section.
-
-- The `variant` variable in [.github/workflows/ci.yaml](.github/workflows/ci.yaml#L21) should be selected according to the project progress.
-
-  ```
-    # Used variant. We assume:
-    # DRAFT: only schematic in progress, will only generate schematic PDF, netlist and BoM
-    # PRELIMINARY: will generate both schematic and PCB documents, but no ERC/DRC
-    # CHECKED: will generate both schematic and PCB documents, with ERC/DRC
-    # RELEASED: similar to CHECKED, automatically selected when pushing a tag to master
-
-    kibot_variant: CHECKED  
-  ```
-
-- The `kicad_version` variable in [.github/workflows/ci.yaml](.github/workflows/ci.yaml#L24) should be selected according to the desired KiCad version. Supported versions are 8 and 9.
-
-- You should work locally on the `dev` branch. When a change is made, the changes should be pushed to GitHub which will trigger the KiBot workflow. The generated files will be committed and pushed back to the repository.
-
-- After a successful KiBot run on the remote repository, you should pull back the changes into your local repository.
-
-- To avoid conflicts, you should avoid modifying the `.kicad_pro` file locally before pulling from the remote (after the completion of a KiBot run). Otherwise, you will need to solve merge conflicts when pulling the file.
-
-- To synchronise the Revision History of the schematic with the `CHANGELOG.md` file, you should create new text variables in [kibot_pre_set_text_variables.yaml](kibot_yaml/kibot_pre_set_text_variables.yaml#L39). The text variables should then be added in the text boxes of the Revision History sheet.
-
-  ```
-  - variable: '@RELEASE_TITLE_VAR@x.x.x'
-    command: '@GET_TITLE_CMD@ x.x.x'
-  - variable: '@RELEASE_BODY_VAR@x.x.x'
-    command: '@GET_BODY_CMD@ x.x.x'
-  ```
-
-- When ready for a release, you should open a pull request and merge the changes into main. Currently the workflow is set **not to trigger on pull requests**, as we assume the changes coming from `dev` are up-to-date.
-
-- To create a release, push a tag on the `main` branch with the version number (for example `x.x.x = 1.1.1`):
-
-  ```
-  git checkout main
-  git pull
-  git tag x.x.x
-  git push origin x.x.x
-  ```
-
-  This will start a KiBot run with the variant set as `RELEASED`. When the run completes, it also creates a release with assets and updates the `CHANGELOG.md` file (renames the `[Unreleased]` section with the pushed tag and creates a new `[Unreleased]` section).
-
-- After a release, you will need to update your `main` branch to be up-to-date with the remote:
-
-  ```
-  git pull
-  ```
-
-  And you will also need to rebase your `dev` branch to the `main` branch:
-
-  ```
-  git checkout dev
-  git rebase main
-  ```
-
-> [!NOTE]
-> You are free to modify the [.github/workflows/ci.yaml](.github/workflows/ci.yaml) file to suit your workflow needs.
-
-***
-
-### Running Locally
-
-KiBot can be installed if you want to run some of the scripts locally. If you only plan to use it in a CI/CD workflow, this step can be skipped.
-Installation steps can be found on the [official documentation](https://kibot.readthedocs.io/en/master/installation.html). 
-The easiest way to install KiBot if custom development is not required is with dockers.
-
-1.  Install **and run** [Docker Desktop](https://docs.docker.com/desktop/)
-  
-2.  Run the script `docker_kibot_windows.bat` or `docker_kibot_linux.sh` depending on your platform in [`kibot_resources/scripts`](kibot_resources/scripts). Currently tested on Windows and WSL2. This should pull and start a docker running the `dev` branch of KiBot. You should have access to your local files.
-
-***
-**KiCad 8**
-
-  Windows:
-
-  ```
-  .\docker_kibot_windows.bat
-  ```
-
-  Linux:
-
-  ```
-  ./docker_kibot_linux.sh
-  ```
-
-***
-**KiCad 9**
-
-  Windows:
-
-  ```
-  .\docker_kibot_windows.bat -v 9
-  ```
-
-  Linux:
-
-  ```
-  ./docker_kibot_linux.sh -v 9
-  ```
-  ***
-
-Once in the docker, you can use the [`kibot_launch.sh`](kibot_launch.sh) script to generate and visualize outputs.
-
-```
-./kibot_launch.sh
-```
-
-You can get more information about the usage with
-
-```
-./kibot_launch.sh --help
-```
-
-When running the script with no arguments, it will default to the `CHECKED` variant and generate all outputs. A variant can be set with the `-v` flag. If a custom variant is used (i.e. other than the default variants `DRAFT`, `PRELIMINARY`, `CHECKED`, `RELEASED`), the outputs will be generated in the `Variants` folder.
-
-Each default variant will have different KiBot flags, which is useful for different phases of the project:
-
-
-1. **DRAFT**
-  
-   Only schematic in progress, will only generate schematic PDF, netlist and BoM
-
-2. **PRELIMINARY**
-   
-   Will generate both schematic and PCB documents, but no ERC/DRC
-
-3. **CHECKED**
-   
-   Will generate both schematic and PCB documents, with ERC/DRC
-
-4. **RELEASED**
-   
-   Similar to CHECKED, automatically selected when pushing a tag to main (CI/CD)
-
-> [!WARNING]
-> When generating outputs locally, it could conflict with the outputs generated by the remote CI/CD workflow. In this case, you should decide how to resolve the conflicts.
-
-***
-
-### Calculating Board Costs (KiCost)
-
-[KiCost](https://github.com/hildogjr/KiCost) is used to estimate costs and get a nice XLSX spreadsheet with part specs. In this project, we run KiCost locally to avoid too many API calls. Also, DigiKey's API [doesn't seem to work](https://github.com/set-soft/kicost_ci_test) in a CI/CD environment.
-To run KiCost, you will need to create a file `kicost_config_local.yaml` in [`kicost_yaml`](kicost_yaml). You can use the [`kicost_config_local_template.yaml`](kicost_yaml/kicost_config_local.yaml) file as a base. Once you have filled in the API keys for the desired manufacturers, KiCost can be run with:
-
-```
-./kibot_launch.sh --costs
-```
-This will create a spreadsheet in [`Manufacturing/Assembly`](Manufacturing/Assembly/) folder.
-
-You can also specify a variant if desired:
-
-```
-./kibot_launch.sh -v <VARIANT> --costs
-```
-
-For more information, please have a look at the official [documentation](https://hildogjr.github.io/KiCost/docs/_build/singlehtml/index.html)
-
-> [!CAUTION]
-> KiCost expects the **MPN (Manufacturer Part Number)** and **Manufacturer** fields to be named in a certain way. To cater for different naming conventions, we rename user-defined fields to KiCost-compatible fields in the KiBot run. You can set your user-defined field for **MPN** and **Manufacturer** in the [`kibot_yaml/kibot_main.yaml`](kibot_yaml/kibot_main.yaml#L576) by editing the `MPN_FIELD` and `MAN_FIELD` definitions.
-
-<p align="center">
-  <img alt="XLSX BoM" src="https://github.com/user-attachments/assets/e7683ae3-efcc-4f64-b4b7-c4c39c3c9d48">
+  <img alt="KiCad 10" src="https://img.shields.io/badge/KiCad-10-brightgreen">
+  <img alt="Status" src="https://img.shields.io/badge/Status-Work%20in%20progress-orange">
 </p>
 
 <p align="center">
-  <img alt="XLSX Costs" src="https://github.com/user-attachments/assets/1136a095-fc2d-4f59-bcbf-24f6e1a69410">
-</p>
-
-<p align="center">
-  <img alt="XLSX Specs" src="https://github.com/user-attachments/assets/77677761-7ab1-4580-b60c-6a0563c59d67">
-</p>
-
-***
-
-### Visualizing Outputs in a Webpage
-
-The outputs of KiBot can be visualized in a webpage (excepted for the `DRAFT` variant). This can be done by running:
-
-```
-./kibot_launch.sh --server
-```
-And opening `http://localhost:8000` in your favorite browser. The server can be shut down with:
-```
-./kibot_launch.sh --stop-server
-```
-
-> [!TIP]
-> You can also give the port as an argument if you want to use another port.
-
-<p align="center">
-  <img alt="Web Page" src="https://github.com/user-attachments/assets/9abee686-5245-4850-b00f-b67be02284ee">
-</p>
-
-## PROJECT CONVERSION GUIDE
-
-This section will describe the necessary steps to convert an existing project to work with this template. This will also give more insights into how the template works in general. For more information, you should refer to the template.
-
-***
-
-### Folders
-
-You should keep the folder structure as defined in [DIRECTORY STRUCTURE](#directory-structure). The folders marked as optional are not mandatory for the project to work, as long as the relevant file paths are correct (e.g. logos). You should then go through the same steps as in [GETTING STARTED](#getting-started) and [USAGE](#usage).
-
-### Schematic
-
-You should select [`Templates/KDT_Template_GIT.kicad_wks`](Templates/KDT_Template_GIT.kicad_wks) as your Drawing Sheet in:
-
-**File → Page Settings → Drawing Sheet**
-
-On the same page, The `Revision` and `Company` fields should be set to `${REVISION}` and `${COMPANY}` and exported to all sheets.
-
-<p align="center">
-  <img alt="Drawing Sheet" src="https://github.com/user-attachments/assets/311f4e13-cdb9-45cb-9fcf-1a88f8432416">
-</p>
-
-For an automated table of contents, you should copy the root page of the template into your project, or use the `${SHEET_NAME_X}` text variables. These variables will be replaced by the sheet name (page `X`) when running KiBot. Currently the maximum number of pages is set to 40. You are free to add new text variables in [`kibot_yaml/kibot_pre_set_text_variables`](kibot_yaml/kibot_pre_set_text_variables.yaml#L160).
-
-The `${VARIANT}` text variable is replaced by the current variant name (e.g. DRAFT or RELEASED). 
-
-The `${RELEASE_DATE}` and `${RELEASE_DATE_NUM}` will be replaced by the tag release date and are just the same date in different formats (for example, `${RELEASE_DATE} = 17-Dec-2024` and `${RELEASE_DATE_NUM} = 2024-12-17`).
-
-To get 3D pictures of the PCB in the schematic, you can create text boxes with the desired size, with the following names: `kibot_image_png_3d_viewer_angled_top` and `kibot_image_png_3d_viewer_angled_bottom`.
-
-<p align="center">
-  <img alt="kibot_image_png_3d_viewer_angled_top, kibot_image_png_3d_viewer_angled_bottom" src="https://github.com/user-attachments/assets/2f7f23fa-e233-4a54-b656-860f69a33d36">
-</p>
-
-> You can add any image generated by a KiBot output using by changing the name to `kibot_image_<output_name>`.
-
-
-
-To synchronise the Revision History of the schematic with the `CHANGELOG.md` file, you should create new text variables in [kibot_pre_set_text_variables.yaml](kibot_yaml/kibot_pre_set_text_variables.yaml#L39). The text variables (`${RELEASE_TITLE_VAR<VERSION>}` and `${RELEASE_BODY_VAR<VERSION>`) should then be added in the text boxes of the Revision History sheet.
-
-  ```
-  - variable: '@RELEASE_TITLE_VAR@x.x.x'
-    command: '@GET_TITLE_CMD@ x.x.x'
-  - variable: '@RELEASE_BODY_VAR@x.x.x'
-    command: '@GET_BODY_CMD@ x.x.x'
-  ```
-
-***
-
-### PCB
-
-The layer names of the PCB should follow the ones defined in [kibot_main.yaml](kibot_yaml/kibot_main.yaml#L631). 
-
-```
-  LAYER_TITLE_PAGE: TitlePage
-  LAYER_DNP_TOP: F.DNP
-  LAYER_DNP_BOTTOM: B.DNP
-  LAYER_DRILL_MAP: DrillMap
-  LAYER_TP_LIST_TOP: F.TestPointList
-  LAYER_TP_LIST_BOTTOM: B.TestPointList
-  LAYER_ASSEMBLY_TEXT_TOP: F.AssemblyText
-  LAYER_ASSEMBLY_TEXT_BOTTOM: B.AssemblyText
-  LAYER_DNP_CROSS_TOP: F.DNP
-  LAYER_DNP_CROSS_BOTTOM: B.DNP
-```
-
-<p align="center">
-  <img alt="PCB Layer Names" src="https://github.com/user-attachments/assets/9089a324-e170-4cd5-ae4f-396ef3fdd1c9">
-</p>
-
-The layer names can be set in 
-
-**File → Board Setup → Board Stackup → Board Editor Layers**
-
-Each layer has a specific function, and must be setup in a particular way.
-
-In the following explanation, when a group must be created, this can be done using KiCad's **Draw Rectangle** tool, and then a group can be created with:
-
-**Right-Click → Grouping → Group Items**
-
-Pressing **E** then allows you to rename the group. The size and position of the group usually determines the size and location of the element to be drawn. To change the font inside a group, you can create a textbox with the desired font in the group. You can set the border width to 0.
-
-<p align="center">
-  <img alt="Textbox Group" src="https://github.com/user-attachments/assets/b7956436-d8df-47e1-a082-ca6bbaeae168">
-</p>
-
-***
-
-**TitlePage**
-
-This is used for the first page of the assembly document. Here, you should add **Top View** and **Bottom View** texts and under these text, you can create two named groups with the location and size that you desire. The groups should be named `kibot_image_png_3d_viewer_angled_top` and `kibot_image_png_3d_viewer_angled_bottom`.
-
-> [!TIP]
-> You can add any image generated by a KiBot output using by changing the name to `kibot_image_<output_name>`.
-
-<p align="center">
-  <img alt="TitlePage" src="https://github.com/user-attachments/assets/38470acb-2645-42eb-b38f-222b4a6475b2">
-</p>
-
-<p align="center">
-  <img alt="kibot_image_png_3d_viewer_angled_top" src="https://github.com/user-attachments/assets/8b8d1beb-7f2a-4339-a4be-258da6ff926a" width="45%">
+  <img alt="3D Top Angled" src="Images/PhaseSense-8586-angled_top.png" width="45%">
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="kibot_image_png_3d_viewer_angled_bottom" src="https://github.com/user-attachments/assets/1419a4bd-6247-4eb8-a410-cb4665220ba2" width="45%">
+  <img alt="3D Bottom Angled" src="Images/PhaseSense-8586-angled_bottom.png" width="45%">
 </p>
 
 ***
 
-**User.Comments**
+## OVERVIEW
 
-Currently not used, you can use it for your project.
+**PhaseSense-8586** is an open-hardware measurement board developed as part of **OPEN THRUST LAB**, a community-driven project building open-source test benches for drone motor characterization.
 
-***
+The board is inserted between the ESC and a 3-phase BLDC motor (two Amass **MR60PW** connectors). On each phase it measures:
 
-**F.DNP** and **B.DNP**
+- the **phase current**, with a 1 mΩ four-terminal shunt (Isabellenhütte PBV-R001) and a **TI INA241A2** current-sense amplifier (20 V/V, enhanced PWM rejection, bidirectional around a 2.5 V reference);
+- the **phase voltage**, with a 40.2 kΩ / 10 kΩ divider.
 
-These are used to hold the red crosses for components marked as *Do Not Populate*. The layers for those should be kept empty.
+The six signals are sampled **simultaneously** by an **Analog Devices AD7606C-18** (8 channels, 18 bits, 1 MSPS), so that power, efficiency and ESC behaviour can be computed from time-aligned Va/Vb/Vc and Ia/Ib/Ic.
 
-***
+The board only needs **3.3 V**. An LT8362 boost converter (2 MHz) makes 6 V, and two LT3045-1 ultralow-noise LDOs make the analog rails. Each LDO has its SET pin driven by an LTC6655 precision reference, so the LDO works as a low-noise buffer for the reference: **+5VA** (ADC and amplifier supply) and **+2.5VA** (ADC reference and amplifier zero-current level).
 
-**DrillMap**
-
-This layer is used to draw drill map drawings and drill tables in the fabrication document. You should create a named group called `kibot_table_csv_drill_table` and place it where the drill tables should be drawn for each drill layer pair. The drill drawing is by default aligned with the PCB.
-
-<p align="center">
-  <img alt="DrillMap" src="https://github.com/user-attachments/assets/018821a7-890a-45a8-b4b7-07eb7e3e8bcf">
-  <img alt="kibot_table_csv_drill_table" src="https://github.com/user-attachments/assets/e35f71d1-dbdf-42ec-8f02-b95118e12bdb">
-</p>
+> The project name comes from the first version of the design (INA240 + ADS8586S). The schematic now uses the **INA241A2** and the **AD7606C-18**; everything in this README is taken from the current netlist.
 
 ***
 
-**F.TestPoint** and **B.TestPoint**
+## STATUS
 
-These layers are used to highlight testpoint locations in the fabrication document. They should be left as empty.
+This revision is **not ready for fabrication**. What is in the repository today:
 
-***
+| Area | State |
+| --- | --- |
+| Analog front-end (shunts, INA241A2, dividers, input filters) | Drawn and routed |
+| AD7606C-18 supply, reference and analog inputs | Drawn and routed |
+| AD7606C-18 digital interface (CONVST, BUSY, CS, SCLK, DOUTx, RESET, OS, RANGE, PAR/SER, STBY, REF SELECT) | **Not connected**, there is no host connector yet |
+| +3.3V input | **No connector** on the board yet |
+| Power supply (LT8362, LTC6655, LT3045-1) | Drawn; the boost stage is **not placed** on the PCB (37 unrouted connections) |
+| ERC / DRC | 43 ERC and 126 DRC violations, CI runs the `PRELIMINARY` variant (no ERC/DRC gate) |
 
-**F.AssemblyText**
-
-This layer is used to hold information about the number of components, assembly notes, assembly drawing and 3D render of the top of the PCB. For the number of components, you should create a group named `kibot_table_csv_comp_count`. Assembly notes should be added using the text variable `${ASSEMBLY_NOTES}`. The 3D render can be added by creating a group named `kibot_image_png_3d_viewer_top`.
-
-<p align="center">
-  <img alt="F.AssemblyText" src="https://github.com/user-attachments/assets/3ecbb012-ad26-4e94-9fb2-f2743e7ff44e">
-  <img alt="kibot_image_png_3d_viewer_top" src="https://github.com/user-attachments/assets/823c4d2a-d84a-4096-b277-c7938554fb98">
-</p>
-
-<p align="center">
-  <img alt="kibot_table_csv_comp_count" src="https://github.com/user-attachments/assets/e05bb55f-971e-4b34-9af6-0b44668ae599" width="45%">
-&nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="${ASSEMBLY_NOTES}" src="https://github.com/user-attachments/assets/954b444f-8db9-4e08-85c1-5c62ee96d5fa" width="45%">
-</p>
-
-**B.AssemblyText**
-
-This layer hold the assembly drawing and 3D render for the backside of the PCB. For the 3D render, you should add a group named `kibot_image_png_3d_viewer_bottom`.
+See [DESIGN REVIEW](#design-review) for the points found while documenting and simulating the design.
 
 ***
 
-**F.Dimensions**
+## SPECIFICATIONS
 
-This layer holds information about the PCB stackup and dimensions, impedance table and fabrication notes. The PCB stackup can be added by creating a group named `kibot_fancy_stackup`. The impedance table with a group named `kibot_table_csv_impedance_table` and the fabrication notes are included with the text variable `${FABRICATION_NOTES}`.
+### Electrical specifications
 
-> [!NOTE]
-> The text variable ${FABRICATION_NOTE} is dependent on the [`kibot_resources/templates/fabrication_notes.txt`](kibot_resources/templates/fabrication_notes.txt) file. Modify it to your needs.
+| Parameter | Value |
+| --- | --- |
+| Input voltage | 3.3 V (LT8362 input range starts at 2.8 V) |
+| Boost output — LT8362 | 5.98 V, 2 MHz (RT = 20 kΩ), FBX divider R5/R6 = 1 MΩ / 365 kΩ |
+| Analog supply +5VA | 5.000 V — LTC6655-5 (IC7) driving the SET pin of an LT3045-1 (IC8) through R8 = 1 kΩ |
+| Reference rail +2.5VA | 2.5 V nominal — LTC6655LN-2.5 (IC3) and LT3045-1 (IC9), see [DESIGN REVIEW](#design-review) |
+| Digital supply (AD7606C VDRIVE) | 3.3 V, from the host |
+| ADC | AD7606C-18, 8-channel simultaneous sampling, 18 bits, 1 MSPS, external reference on REFIN/REFOUT |
+| Current sensing | 3 × PBV-R001 1 mΩ shunt + INA241A2 (20 V/V): **20 mV/A**, zero current = 2.5 V |
+| Current range | ±35 A continuous (MR60PW rating) = 2.5 V ± 0.7 V; the amplifier output swing allows about ±115 A |
+| Voltage sensing | 3 × divider 40.2 kΩ / 10 kΩ: 0.1992 V/V unloaded, **0.1977 V/V** with the AD7606C input impedance |
+| Voltage range | 50 V on a ±10 V ADC range (25.2 V for a 6S pack gives 4.98 V) |
+| Current channel bandwidth | 17.5 kHz (R13 = 33 Ω, R15 = 9.1 kΩ, C25 = 1 nF) |
+| Voltage channel bandwidth | 48.5 kHz (divider + Re2 = 1 kΩ, R19 = 9.1 kΩ, C31 = 180 pF) |
+| Phase connectors | 2 × Amass MR60PW (J1 = IN-A/B/C, J2 = OUT-A/B/C), 35 A |
 
-<p align="center">
-  <img alt="F.Dimensions" src="https://github.com/user-attachments/assets/6f47fa22-8bc8-4a65-97d7-891e124f82a2">
-  <img alt="kibot_fancy_stackup" src="https://github.com/user-attachments/assets/bb45fed2-820a-48a4-b8c7-9473efa5007a">
-</p>
+### ADC channel assignment
 
-<p align="center">
-  <img alt="kibot_table_csv_impedance_table" src="https://github.com/user-attachments/assets/add357a8-4aee-4d9d-873f-08883d448c07">
-  <img alt="${FABRICATION_NOTES}" src="https://github.com/user-attachments/assets/82083591-50fe-4381-b643-ba91a7d45452">
-</p>
+| AD7606C input | Signal | Source |
+| --- | --- | --- |
+| V1 | Phase C voltage | OUT-C, R35 / R36, Re3, C34, R22 |
+| V2 | Phase C current | R7 shunt, IC6, R21, C33, R18 |
+| V3 | Phase B voltage | OUT-B, R31 / R32, Re1, C32, R20 |
+| V4 | Phase B current | R4 shunt, IC4, R17, C29, R16 |
+| V5 | Phase A voltage | OUT-A, R27 / R28, Re2, C31, R19 |
+| V6 | Phase A current | R1 shunt, IC2, R13, C25, R15 |
+| V7, V8 | Not used | Open (the datasheet asks to tie unused inputs to AGND) |
 
-**B.Dimensions**
+Current sign: IN+ of each INA241 is on the J2 side of the shunt, so a current flowing **from J1 to J2 lowers** the output: `V = 2.5 V − 20 mV/A × I(J1→J2)`. The phase voltage is measured on the J2 side of the shunt.
 
-This layer contains information about the dimensions of the PCB, seen from the backside. Similarly to the front side, you can use KiCad's **Dimensions** tool to add some dimensions.
+### Power budget
 
-<p align="center">
-  <img alt="B.Dimensions" src="https://github.com/user-attachments/assets/cd62501d-b696-49f7-a9a5-9cf350b76d70">
-</p>
+Power chain: **+3.3 V (host) → LT8362 → +6 V → LTC6655 + LT3045-1 → +5VA / +2.5VA**
+
+| Load | Rail | Typical current |
+| --- | --- | --- |
+| AD7606C-18 AVCC (datasheet: 8.5 mA at 10 kSPS, 45 mA at 1 MSPS) | +5VA | 8.5 – 45 mA |
+| 3 × INA241A2 (2.5 mA each) | +5VA | 7.5 mA |
+| 2 × LTC6655 (5 mA each) and 2 × LT3045-1 | +6V | ≈ 13 mA |
+| **Total on +6V** (simulated, 1 MSPS) | **+6V** | **65 mA** |
+| AD7606C-18 VDRIVE | +3.3V | < 2 mA |
+| **Board total** (simulated, 1 MSPS) | **+3.3V** | **≈ 130 mA (0.43 W)** |
+
+### Physical specifications
+
+| Parameter | Value |
+| --- | --- |
+| Project name | PhaseSense-8586 |
+| Board name | PHASETRACKER |
+| Parent project | OPEN THRUST LAB |
+| CAD tool | KiCad 10 |
+| Automation tooling | KiBot + GitHub Actions |
+| Dimensions | 65.0 × 59.5 mm |
+| Stackup | 4 layers, 1.66 mm, 70 µm outer copper, ENIG |
+| Mounting holes | 4 × M3, connected to GND |
 
 ***
 
-**F.TestPointList**
+## SCHEMATIC ARCHITECTURE
 
-This layer is used to hold information about the testpoints locations and nets. You can add testpoint tables by creating a group named `kibot_table_csv_testpoints_top`. It is also possible to use python slicing to separate the table into multiple tables, by using slice operators in the name. For example: `kibot_table_csv_testpoints_top[:32]` and `kibot_table_csv_testpoints_top[32:]` in two different groups would create two tables with the first one including the first 32 testpoints and the second one every testpoint after that.
+Five functional hierarchical sheets (under `Project Architecture`), plus the documentation sheets (Block Diagram, Power - Sequencing, Revision History):
 
-Test point locations are computed from the drill origin, which can be set with:
-
-**Place → Drill/Place File Origin**.
-
-> [!TIP]
-> It is usually good practice to set the origin at the bottom left of the board.
-
-<p align="center">
-  <img alt="F.TestPointList" src="https://github.com/user-attachments/assets/ec1e538e-05f0-4e3b-a5b7-642a60116f10">
-</p>
-
-<p align="center">
-  <img alt="kibot_table_csv_testpoints_top[:32]" src="https://github.com/user-attachments/assets/4c69e9e0-461f-4de7-9528-34ebe5d93b9c" width="45%">
-&nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="kibot_table_csv_testpoints_top[32:]" src="https://github.com/user-attachments/assets/d77a5d2c-f599-49e7-801b-01bb4950e769" width="45%">
-</p>
-
-**B.TestPointList**
-
-Similar to the front testpoint layer. The group should be named `kibot_table_csv_testpoints_bottom`. Note that because PCB is inverted for this layer during print, if the group is placed on the left side it will be printed on the right side.
-
-<p align="center">
-  <img alt="B.TestPointList" src="https://github.com/user-attachments/assets/e1f6cd3a-5322-4699-9ae8-d9e4d9d16b93">
-</p>
-
-<p align="center">
-  <img alt="kibot_table_csv_testpoints_bottom" src="https://github.com/user-attachments/assets/42e035fa-a4c3-4251-81da-6ff4a5da102e">
-</p>
+| Sheet (file) | Description |
+| --- | --- |
+| `AD7606C-18_ADC` (`AD7606C-18 - ADC.kicad_sch`) | AD7606C-18 (IC1). AVCC = +5VA (C20, C35, C38), VDRIVE = +3.3V (C21), REFIN/REFOUT = +2.5VA (C41), REFCAPA/REFCAPB joined on C39 (10 µF), REGCAP pins on C36 / C37 (1 µF each). Six analog input pairs come from the INA241 sheet through global labels. |
+| `INA241_Phase_Sense` (`INA241 - Phase Current and Voltage Sense.kicad_sch`) | Three identical phases. Shunt R1 / R4 / R7 with Kelvin connection to IC2 / IC4 / IC6 (INA241A2, VS = +5VA, REF1 = REF2 = +2.5VA), output filter 33 Ω + 1 nF. Voltage divider 40.2 kΩ / 10 kΩ, 1 kΩ + 180 pF. 9.1 kΩ return resistor on every negative ADC input. |
+| `Connectors` (`Connectors.kicad_sch`) | J1 and J2, Amass MR60PW. Pins 1–3 = phases, mounting pins 4–5 = GND. |
+| `Holes, Fiducials` (`Holes - Fiducials.kicad_sch`) | Four M3 mounting holes H1–H4 connected to GND. |
+| `Power_Supply` (`Power Supply - Boost 6V and Analog Rails.kicad_sch`) | LT8362 boost (IC5, L1 = 2.2 µH, D2 = PMEG2020EH, 2 MHz, pulse-skipping, soft-start C24 = 10 nF). LTC6655-5 (IC7) and LTC6655LN-2.5 (IC3) references, each driving the SET pin of an LT3045-1 (IC8 / IC9) through 1 kΩ with 10 µF on SET. PGFB tied to IN (no Power-Good, no fast start-up), ILIM to GND, VIOC open. |
 
 ***
 
-### Summary in table format
+## DESIGN REVIEW
 
-| **Layer**                     | **Description**                                                                                    | **Changes/Included Items**                                                                                                    |
-|-------------------------------|----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| **TitlePage**                 | First page of the assembly document.                                                               | Add groups: `kibot_image_png_3d_viewer_angled_top` and `kibot_image_png_3d_viewer_angled_bottom`.                             |
-| **User.Comments**             | Reserved for project-specific comments.                                                            | Not used by default; customize as needed.                                                                                     |
-| **F.DNP / B.DNP**             | Holds red crosses for components marked as *Do Not Populate*.                                      | Keep these layers empty.                                                                                                      |
-| **DrillMap**                  | Draws drill map drawings and tables in the fabrication document, aligned by default with the PCB.  | Add group: `kibot_table_csv_drill_table`.                                                                                     |
-| **F.TestPoint / B.TestPoint** | Highlights testpoint locations in the fabrication document.                                        | Keep these layers empty.                                                                                                      |
-| **F.AssemblyText**            | Contains component count, assembly notes, drawings, and 3D renders for the top side of the PCB.    | Add group: `kibot_table_csv_comp_count` (table) and `kibot_image_png_3d_viewer_top` (image). Include `${ASSEMBLY_NOTES}` text.|
-| **B.AssemblyText**            | Holds assembly drawings and 3D render for the bottom side of the PCB.                              | Add group: `kibot_image_png_3d_viewer_bottom` for the 3D render.                                                              |
-| **F.Dimensions**              | Holds PCB stackup, dimensions, impedance table, and fabrication notes.                             | Add groups: `kibot_fancy_stackup` (stackup), `kibot_table_csv_impedance_table` (impedance table), and `${FABRICATION_NOTES}`. |
-| **B.Dimensions**              | Holds dimensions of the PCB, seen from the backside.                                               | Use KiCad **Dimensions** tool to add details.                                                                                 |
-| **F.TestPointList**           | Lists testpoint locations and nets for the top layer.                                              | Add group: `kibot_table_csv_testpoints_top`. Use slicing (e.g., `[:32]`) for multiple tables.                                 |
-| **B.TestPointList**           | Lists testpoint locations and nets for the bottom layer.                                           | Add group: `kibot_table_csv_testpoints_bottom`. Adjust left-side placements for inverted print alignment.                     |
+Points found while checking the documentation against the netlist and the datasheets, and while simulating the design. None of them has been changed in the schematic: they are design decisions to take.
+
+| # | Finding | Evidence | Suggested action |
+| --- | --- | --- | --- |
+| 1 | **LTC6655LN-2.5 (IC3): pin 6 is NR, and it is tied to VOUT (pin 7).** On the standard LTC6655 pin 6 is VOUT_S and must be tied to VOUT_F, which is how IC7 is wired. On the LN version the datasheet says: *"NR (Pin 6): Noise Reduction Pin. To band limit noise, connect a capacitor between this pin and ground"*, and gives its nominal voltage as 1.000 V (an internal node ahead of the output buffer). | Netlist: `Net-(IC3-NR)` = IC3.6, IC3.7, C12, R11. With the ADI model the reference then gives 2.02 V instead of 2.500 V (simulation 02, run 1). The model does not reproduce the NR node faithfully, so the exact value on a real board is unknown; the connection itself is not allowed by the datasheet. | Separate pin 6 from pin 7. Put the noise-reduction capacitor from pin 6 to GND and keep C12 on VOUT, or fit an LTC6655-2.5 (non-LN) on the unchanged footprint. |
+| 2 | **R12 = 49.9 kΩ on the SET pin of IC9 gives 2.549 V, not 2.500 V.** The LT3045-1 sources 100 µA from SET: with 49.9 kΩ the pin wants 4.99 V, the 2.5 V reference holds it through R11 = 1 kΩ and sinks 49 µA, which leaves 49 mV across R11. | Simulation 02, run 2: +2.5VA = 2.549 V (+1.96 %). The AD7606C external reference input is specified from 2.495 V to 2.505 V. | R12 = 24.9 kΩ (100 µA × 24.9 kΩ = 2.49 V): simulation 02, run 3 gives 2.4996 V. R14 = 49.9 kΩ is already right for the 5 V rail (4.9998 V). |
+| 3 | **The AD7606C-18 has no digital interface and the board has no +3.3V input.** CONVST, BUSY, CS, RD/SCLK, DOUTA–D, FRSTDATA, RESET, OS0–2, RANGE, PAR/SER SEL, STBY, WR and REF SELECT are open. | Netlist: 36 `unconnected-(IC1-…)` nets; J1 / J2 only carry the phases and GND. | Add the host connector and strap the mode pins (REF SELECT low for the external reference, PAR/SER SEL high for serial). |
+| 4 | **AD7606C-18 pins left open that the datasheet asks to connect**: AGND pin 26 and REFGND pin 46 (*"All six of the AGND pins must connect to the AGND plane"*), unused inputs V7± / V8± (*"Connect all unused analog input channels to AGND"*). | Netlist: `unconnected-(IC1-AGND_2-Pad26)`, `…REFGND_2-Pad46`, `…V7+`, `…V8-`. | Connect them to GND. |
+| 5 | **INA241A2 pin 4 (NC) is open** on IC2, IC4 and IC6. The datasheet pin table says: *"NC — Reserved. Connect to ground."* | Netlist: `unconnected-(IC2-NC-Pad4)` and the same for IC4, IC6. | Connect pin 4 to GND. |
+| 6 | **The INA241A2 gain is 20 V/V.** The schematic note listed the INA240 gains (A2 = 50 V/V). With 1 mΩ the scale is 20 mV/A: 35 A only uses ±0.7 V of the ±2.5 V available. | TI datasheet SBOSA30D: A1 = 10, A2 = 20, A3 = 50, A4 = 100, A5 = 200 V/V. The note is corrected in the schematic. | Keep 20 V/V (±115 A range) or fit an INA241A3 (50 V/V, ±46 A) for more resolution. |
+| 7 | **Current channels: the 9.1 kΩ return resistor creates a 15 mV offset.** The AD7606C inputs are 1.2 MΩ to an internal 2 V node. On the voltage channels both inputs see about 9 kΩ, so the two bias drops cancel (−0.15 mV). On the current channels the positive input sees 33 Ω and the negative one 9.1 kΩ: V− sits at +15 mV. | Simulation 06: 2.4849 V at zero current instead of 2.5000 V, which reads as −0.75 A. | Constant offset: remove it with a zero-current calibration. Do not shrink R15 / R16 / R18 without recomputing the filter: C25 is differential, so they set the 17.5 kHz corner. |
+| 8 | **Voltage channels: −0.75 % gain error** from the 9 kΩ source impedance into the 1.2 MΩ input (−0.9 % at the 1 MΩ minimum). | Simulation 05: 0.1977 V/V instead of 0.1992 V/V. | Calibrate, or use the AD7606C per-channel gain register (software mode, 9 kΩ). |
+| 9 | **PCB not finished**: IC5, L1 and the boost passives are outside the board outline, C16 has no schematic symbol, C14 / C15 / C39 use a 4-pin capacitor symbol on a 2-pad footprint. | DRC: 37 unconnected items, 20 schematic parity warnings. | Place and route the boost stage; align symbol and footprint of the 4-terminal capacitors. |
+
+***
+
+## SIMULATION (LTspice)
+
+The power chain and the two measurement channels are simulated with **LTspice 26** in [`Simulation/LTspice/`](Simulation/LTspice). Every component value comes from the KiCad netlist and keeps its reference designator, so the simulation schematics can be read side by side with the KiCad sheets.
+
+| File | Analysis | What it checks |
+| --- | --- | --- |
+| `01_Power_Chain_Startup.asc` | `.tran` 12 ms, switching | +3.3V → LT8362 → +6V → LT3045-1 soft-start, inrush and inductor current (board as built) |
+| `02_Analog_Rails_Startup.asc` | `.tran` 150 ms, 3 runs | Settling and accuracy of +5VA and +2.5VA: as built, NR pin freed, NR freed + R12 = 24.9 kΩ |
+| `03_Boost_Ripple.asc` | `.tran` 6 ms, switching | LT8362 steady-state ripple on +6V with the simulated load of both rails |
+| `04_Analog_Rails_PSRR.asc` | `.ac` 10 Hz – 10 MHz | Rejection from +6V to +5VA and +2.5VA (reference + LDO, board capacitors) |
+| `05_Measurement_Channels_AC.asc` | `.ac` 10 Hz – 10 MHz | Gain and bandwidth of the current and voltage channels, down to the ADC pins |
+| `06_Measurement_Channels_Step.asc` | `.tran` 600 µs | DC transfer, offsets and settling for a 25.2 V and a 35 A step |
+
+**Models**
+
+- **LT8362, LT3045-1, LTC6655-5, LTC6655LN-2.5**: official Analog Devices models shipped with LTspice.
+- **INA241A2**: TI does not provide an LTspice model, so `INA241A2_behav.sub` / `.asy` is a **behavioral model** written for this project from the datasheet (SBOSA30D): gain 20 V/V around (REF1 + REF2) / 2, 1.1 MHz bandwidth, 8 V/µs slew rate, output swing, 2.5 mA supply current, 35 µA input bias. It does not model offset, noise, CMRR or the 1 µs output hold of the enhanced PWM rejection.
+- **AD7606C-18**: loads only. AVCC and VDRIVE are current sources (45 mA and 1.8 mA, the 1 MSPS figures). Each analog input is 1.2 MΩ to an internal 2 V node plus 5 pF, from the datasheet (*"Analog Input Current = (VIN − 2)/RIN"*).
+- **D2**: PMEG2020EH modelled with the LTspice PMEG2020AEA (same 20 V / 2 A Nexperia MEGA Schottky family). **L1**: 2.2 µH, 3.2 mΩ.
+- Ceramic capacitors use their nominal value (no DC-bias derating).
+
+**Results**
+
+| Quantity | Simulated | Notes |
+| --- | --- | --- |
+| +6V output (LT8362) | 5.96 V | 1.6 V × (1 + 1 MΩ / 365 kΩ) = 5.98 V |
+| +6V reaches 90 % | 0.87 ms | 5.9 V after 1.0 ms, 6.04 V overshoot |
+| Inrush in L1 / D2 when +3.3V is applied | 3.1 A peak | the 31 µF on +6V charge to VIN through L1 and D2; depends on the rise time of the host rail (100 µs assumed) |
+| Peak inductor current during soft-start / steady state | 0.98 A / 0.30 A | L1 saturates at 20.7 A, LT8362 switch limit 2 A min |
+| +6V ripple, 20 MHz bandwidth | 0.92 mV pp | discontinuous conduction, 65 mA load |
+| Current drawn from +3.3V | 129 mA | AD7606C at 1 MSPS |
+| +5VA | 4.9998 V | reference 5.0000 V; 100 µA × R14 = 4.99 V, almost no current in R8 |
+| +5VA within 1 % / 0.1 % | 48 ms / 71 ms | τ = (R8 ∥ R14) × C13 = 9.8 ms; PGFB = IN disables the LT3045-1 fast start-up |
+| +2.5VA as built | 2.08 V | NR tied to VOUT, see [DESIGN REVIEW](#design-review) 1 (model value, not reliable) |
+| +2.5VA with NR freed, R12 = 49.9 kΩ | 2.549 V | [DESIGN REVIEW](#design-review) 2 |
+| +2.5VA with NR freed, R12 = 24.9 kΩ | 2.4996 V | inside the 2.495 – 2.505 V window of the AD7606C |
+| PSRR +6V → +5VA | 85 dB at 1 kHz, 77 dB at 2 MHz | ideal layout |
+| PSRR +6V → +2.5VA (corrected rail) | 85 dB at 1 kHz, 94 dB at 2 MHz | ideal layout |
+| Boost ripple left on +5VA / +2.5VA | 0.13 µV pp / 0.02 µV pp | +6V ripple × PSRR at 2 MHz |
+| Current channel gain | 20.00 mV/A | 1 mΩ × 20 V/V |
+| Current channel −3 dB | 17.5 kHz | −4.6 dB at 24 kHz, −46 dB at 2 MHz |
+| Current channel at 0 A / 35 A (J1→J2) | 2.4849 V / 1.7849 V | 15 mV offset from the ADC input bias in R15 |
+| Current channel 1 % settling | 42 µs | |
+| Voltage channel gain | 0.1977 V/V | 25.2 V reads 4.982 V |
+| Voltage channel −3 dB | 48.5 kHz | −0.95 dB at 24 kHz, −32 dB at 2 MHz |
+| Voltage channel 1 % settling | 15 µs | |
+
+<p align="center">
+  <img alt="Power chain start-up" src="Images/Simulation/sim01_power_startup.png" width="80%">
+</p>
+<p align="center">
+  <img alt="Analog rails start-up and +2.5VA accuracy" src="Images/Simulation/sim02_analog_rails.png" width="90%">
+</p>
+<p align="center">
+  <img alt="Boost ripple" src="Images/Simulation/sim03_ripple.png" width="80%">
+</p>
+<p align="center">
+  <img alt="PSRR of the analog rails" src="Images/Simulation/sim04_psrr.png" width="80%">
+</p>
+<p align="center">
+  <img alt="Measurement channels frequency response" src="Images/Simulation/sim05_channels_ac.png" width="80%">
+</p>
+<p align="center">
+  <img alt="Measurement channels step response" src="Images/Simulation/sim06_channels_step.png" width="90%">
+</p>
+
+**Re-run the simulations** (Windows, LTspice installed in the default location):
+
+```bash
+cd Simulation/LTspice
+python run_simulations.py            # runs LTspice in batch mode, redraws Images/Simulation/*.png and results.md
+python run_simulations.py --no-run   # only redraw from the existing .raw files
+python generate_asc.py               # rebuilds the .asc files (overwrites hand edits)
+```
+
+Or open any `.asc` in LTspice and press *Run*. Simulation 01 switches at 2 MHz for 12 ms and takes about 7 minutes; 03 takes about 2 minutes.
+
+> The simulations validate the design intent (regulation, sequencing, filtering). They do not replace bench measurements: layout parasitics, capacitor DC-bias derating and the real PWM edges on the phases will change the figures. The steady-state ripple is simulated on the boost alone because the encrypted LDO and reference models cannot be started from a preset operating point; what is left on the analog rails is computed from the simulated PSRR. The PSRR of +2.5VA is given for the corrected rail.
+
+***
+
+## STARTUP SEQUENCE
+
+After 3.3 V is applied (values from the [LTspice simulations](#simulation-ltspice)):
+
+| Stage | Duration | Indicator |
+| --- | --- | --- |
+| Output capacitors charge to VIN through L1 / D2 | < 0.2 ms | +6V ≈ 3 V |
+| LT8362 soft-start (C24 = 10 nF) | +6V at 90 % after 0.9 ms, 5.9 V after 1.0 ms | +6V = 5.96 V |
+| LTC6655 references charge their 10 µF and the SET capacitors | 93 % after 3 ms | REF5 → 5 V |
+| LT3045-1 outputs follow the SET pins (τ = 9.8 ms) | 1 % after 48 ms, 0.1 % after 71 ms | +5VA, +2.5VA |
+| **Minimum delay before the first conversion** | **≥ 100 ms** | rails settled |
+
+> The LT3045-1 Power-Good outputs are not used (PGFB tied to IN), so there is no hardware "rails ready" signal: use the delay.
+
+***
+
+## HOW TO USE
+
+### Prerequisites
+
+- **KiCad 10** (files are saved in KiCad 10 format and cannot be opened with KiCad 9 or earlier)
+- Nothing else: every symbol, footprint and 3D model is in `lib/` and referenced relative to the project (`KIPRJMOD`, project-local `sym-lib-table` / `fp-lib-table`)
+- **KiBot** for automated output generation, **Docker** recommended for local CI runs
+
+### Generate outputs locally
+
+```bash
+./kibot_launch.sh               # default configuration
+./kibot_launch.sh -v CHECKED    # specific variant
+```
+
+| Variant | Outputs | ERC/DRC | Typical use |
+| --- | --- | --- | --- |
+| `DRAFT` | Schematic only | — | Early design work |
+| `PRELIMINARY` | Schematic + PCB | — | Layout iterations (current CI setting) |
+| `CHECKED` | Full | ✓ enforced | Design review |
+| `RELEASED` | Full | ✓ enforced | Tagged version releases |
+
+***
+
+## REPOSITORY CONTENT
+
+| Content | Description |
+| --- | --- |
+| Schematic sources | KiCad hierarchical schematic, 10 sheets |
+| PCB layout | KiCad 4-layer PCB |
+| Libraries | `lib/` — every symbol, footprint and 3D model used on the board |
+| Manufacturing, validation, 3D exports | Generated by the CI (KiBot) |
+| Documentation sheets | Block diagram, architecture, power sequencing, revision history |
+| CI resources | GitHub Actions workflow, KiBot YAML configuration |
+| Simulation | LTspice simulations of the power chain and the measurement channels |
+
+***
 
 ## DIRECTORY STRUCTURE
-The following directory structure is used in the template. Folders marked as 'optional' are not crucial for KiBot to work. Other folders will be generated automatically during a KiBot run.
 
-```
-├─ Computations       # Misc calculations (optional)
-├─ HTML               # HTML files for generated webpage
-├─ Images             # Pictures and renders
-│
-├─ kibot_resources
-│  ├─ colors          # Color theme for KiCad
-│  ├─ fonts           # Fonts used in the project
-│  ├─ scripts         # External scripts used with KiBot
-│  └─ templates       # Templates for KiBot generated reports
-│
-├─ kibot_yaml         # KiBot YAML config files
-├─ KiRI               # KiRI (PCB diff viewer) files
-│
-├─ lib                # Footprint and symbol libraries (optional)
-│  ├─ 3d_models       # Component 3D models
-│  ├─ lib_fp          # Footprint libraries
-│  └─ lib_sym         # Symbol libraries
-│
-├─ Logos              # Logos (optional)
-│
-├─ Manufacturing
-│  ├─ Assembly        # Assembly documents (BoM, pos, notes)
-│  │
-│  └─ Fabrication     # Fabrication documents (ZIP, notes)
-│     ├─ Drill Tables # CSV drill tables
-│     └─ Gerbers      # Gerbers
-│
-├─ Report             # Reports for ERC/DRC
-├─ Schematic          # PDF of schematic
-├─ Templates          # Title block templates
-├─ Testing
-│  └─ Testpoints      # Testpoints tables      
-│
-└─ Variants           # Outputs for assembly variants (optional)
-```
+    .
+    ├─ Computations       # Design notes and calculations
+    ├─ HTML               # Generated HTML pages
+    ├─ Images             # Pictures, renders
+    │  └─ Simulation      # Figures drawn by Simulation/LTspice/run_simulations.py
+    │
+    ├─ kibot_resources    # External resources used by KiBot
+    │  ├─ colors          # Color themes for KiCad outputs
+    │  ├─ fonts           # Fonts used in generated documents
+    │  ├─ scripts         # Helper scripts used with KiBot
+    │  └─ templates       # Templates for KiBot reports (this README: readme.txt)
+    │
+    ├─ kibot_yaml         # KiBot YAML configuration files
+    ├─ KiRI               # KiRI PCB diff viewer files
+    │
+    ├─ lib                # Project libraries (self-contained)
+    │  ├─ lib_sym         # PhaseSense-8586.kicad_sym — every symbol used
+    │  ├─ lib_fp          # PhaseSense-8586.pretty — every footprint used
+    │  └─ 3d_models       # STEP models referenced by the footprints
+    │
+    ├─ Logos              # Project logos
+    │
+    ├─ Manufacturing
+    │  ├─ Assembly        # BoM, position files, assembly notes
+    │  └─ Fabrication     # Gerbers, drill tables, fabrication notes
+    │
+    ├─ Report             # ERC / DRC reports
+    ├─ Schematic          # Exported schematic PDFs
+    ├─ Simulation
+    │  └─ LTspice         # LTspice schematics, INA241A2 behavioral model, run/plot scripts
+    ├─ Templates          # Drawing sheets and title block templates
+    └─ Testing
+       └─ Testpoints      # Test point tables
 
-## CREDITS
+***
 
-[@set-soft](https://github.com/set-soft) for his amazing work on [KiBot](https://github.com/INTI-CMNB/KiBot/tree/master). Check out the [documentation](https://kibot.readthedocs.io/en/latest/) for more!
+## DEVELOPMENT WORKFLOW
 
-## RESOURCES
+This project uses a reproducible hardware workflow based on **KiCad 10**, **KiBot** and **GitHub Actions**.
 
-- [Video Tutorial for this template](https://www.youtube.com/watch?v=63R6Wnx44uY)
+The CI pipeline (`.github/workflows/ci.yaml`) runs KiBot on every push to `dev` or `main` and commits the generated outputs back ("Update Outputs" commits). **Always `git pull` after the CI has run, before editing the project again**, otherwise the regenerated files (`.kicad_pro`, BoM, netlist, README…) will conflict.
 
-- [Example project (from the video tutorial)](https://github.com/nguyen-v/KiBot_Project_Test)
+> ℹ️ `README.md` is **generated** by KiBot from `kibot_resources/templates/readme.txt`. Edit the template, not `README.md`, or your changes will be overwritten by the next CI run.
 
-- [Example project (Amulet)](https://github.com/nguyen-v/amulet_controller_kibot/tree/master)
+**Branch convention:** `dev` is the development branch; `main` only receives merges from `dev` and carries the release tags.
 
-- [(Outdated) Best practices and tips for good schematics](https://www.youtube.com/watch?v=_ZjyeltLMAg)
+**Project metadata** (project name, board name, company, designer, logo, repository URL) is defined once in `kibot_yaml/kibot_main.yaml` (`definitions:` section) and propagated to title blocks, documents and this README.
 
-- [GitHub Actions Documentation](https://docs.github.com/en/actions)
+**Release a new hardware revision:**
 
-- [KiBot Documentation](https://kibot.readthedocs.io/en/latest/)
+1. On `dev`, fill the `[Unreleased]` section of [CHANGELOG.md](CHANGELOG.md).
+2. Switch `kibot_variant` to `CHECKED` in `ci.yaml` once ERC and DRC are clean.
+3. Merge `dev` into `main`: `git checkout main && git pull && git merge dev && git push`
+4. Tag with a plain semantic version (**no `v` prefix**): `git tag 1.0.0 && git push origin 1.0.0`
+5. Re-sync `dev`: `git checkout dev && git merge main`
 
-- [KiBot Repository](https://github.com/INTI-CMNB/KiBot)
+***
 
-- [KiCost Documentation](https://hildogjr.github.io/KiCost/docs/_build/singlehtml/index.html)
+## CHANGELOG
 
-- [KiCost Repository](https://github.com/hildogjr/KiCost)
+See [CHANGELOG.md](CHANGELOG.md) (Keep a Changelog format, semantic versioning).
 
-- [KiRI Repository](https://github.com/leoheck/kiri)
+***
 
-## CONTRIBUTING
+## LICENSE
 
-Feel free to open a pull request if you have any cool features to add!
+See [LICENSE](LICENSE) (MIT).
