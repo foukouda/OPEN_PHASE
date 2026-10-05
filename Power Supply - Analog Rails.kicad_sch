@@ -5,7 +5,7 @@
 	(uuid "ea8c4f5e-7a49-4faf-a994-dbc85ed86b0a")
 	(paper "A3")
 	(title_block
-		(title "Power Supply - Boost 6V and Analog Rails")
+		(title "Power Supply - Analog Rails")
 		(date "2026-10-05")
 		(rev "${REVISION}")
 		(company "${COMPANY}")

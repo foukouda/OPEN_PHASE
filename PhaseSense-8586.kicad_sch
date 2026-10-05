@@ -1182,7 +1182,7 @@
 		)
 		(uuid "c7960137-7711-4ffe-94cf-8be0bcb30b2c")
 	)
-	(text "Comment"
+	(text "3-phase current and voltage sensing: INA241A2 + AD7606C-18"
 		(exclude_from_sim no)
 		(at 222.25 177.8 0)
 		(effects
@@ -1461,7 +1461,7 @@
 		)
 		(uuid "faea8a5f-3a8f-49cb-9832-569be941b06b")
 	)
-	(text_box "DESIGN NOTE:\nExample text for cautionary design notes."
+	(text_box "DESIGN NOTE:\nAD7606C digital pins and +3.3V input not wired yet."
 		(exclude_from_sim no)
 		(at 96.52 258.445 0)
 		(size 30.48 20.32)
@@ -1484,7 +1484,7 @@
 		)
 		(uuid "14407e09-ee6c-4b22-86d1-36d73a33e664")
 	)
-	(text_box "DESIGN NOTE:\nExample text for debug notes."
+	(text_box "DESIGN NOTE:\nNo Power-Good: rails within 0.1 % after 71 ms."
 		(exclude_from_sim no)
 		(at 61.595 258.445 0)
 		(size 30.48 20.32)
@@ -1507,7 +1507,7 @@
 		)
 		(uuid "1499d9a9-9f29-4929-8df7-74d84823ddfb")
 	)
-	(text_box "DESIGN NOTE:\nExample text for critical design notes."
+	(text_box "DESIGN NOTE:\n+2.5VA: IC3 pin 6 (NR) tied to VOUT, R12 = 49.9k. See README."
 		(exclude_from_sim no)
 		(at 131.445 258.445 0)
 		(size 30.48 20.32)
@@ -1532,7 +1532,7 @@
 		)
 		(uuid "1c311692-d683-4cdf-ac31-77bcdd4c4b39")
 	)
-	(text_box "LAYOUT NOTE:\nExample text for critical layout guidelines."
+	(text_box "LAYOUT NOTE:\nKelvin-route the shunt sense pads to each INA241."
 		(exclude_from_sim no)
 		(at 166.37 258.445 0)
 		(size 30.48 20.32)
@@ -1577,7 +1577,7 @@
 		)
 		(uuid "33c3f6da-ba9e-4d58-9257-d85394a72b7b")
 	)
-	(text_box "DESIGN NOTE:\nExample text for informational design notes."
+	(text_box "DESIGN NOTE:\nCurrent: 2.5 V - 20 mV/A x I(J1->J2). Voltage: 0.198 V/V."
 		(exclude_from_sim no)
 		(at 26.67 258.445 0)
 		(size 30.48 20.32)

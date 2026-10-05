@@ -525,7 +525,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/85769b3e-2c62-4c06-a7d3-13459ae336d9")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -685,7 +685,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/1f424e18-346a-4f78-8fb2-a2192bd5d850")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -845,7 +845,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/a51fd6f1-8cf8-40d5-8a52-d54bc27e25ec")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1083,7 +1083,7 @@
 		)
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/201d6fff-93de-49d2-82a3-8481a01185af")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1438,7 +1438,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/7fad4638-f6b6-4964-ad12-e0707dc43381")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1600,7 +1600,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/4046500a-a4c4-4468-aac5-acf42674198e")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1838,7 +1838,7 @@
 		)
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/6adb11f7-ce55-42c3-8019-c77649bd4955")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2473,7 +2473,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/ff0ec5d1-0d6d-42d9-bb97-7232d38b3873")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3692,7 +3692,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/61b89881-ddba-4cdb-b2d4-9913b1d09962")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3852,7 +3852,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/6379c60e-1bdd-4e34-a687-b03190e373b1")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4012,7 +4012,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/3627d060-59e8-4dc0-a17e-60ea2222ce84")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4171,7 +4171,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/4c92c8d4-7ffc-44d2-ad40-b8ed584feb3a")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4330,7 +4330,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/0f4f97cc-9a65-41e6-9c0c-a69f1a71bdc2")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4490,7 +4490,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/42aed2b6-e537-476f-9f0a-eb4f9a496d3f")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5065,7 +5065,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/8619ffcd-5d83-4ae5-b2be-c86c46e2e838")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5224,7 +5224,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/549c39b1-04c2-49f3-a63d-b798b49ec2b4")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5384,7 +5384,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/20ee71e5-ec58-424f-9ce7-bdc925fa4a7a")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5544,7 +5544,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/450d0ffb-b49a-4959-b917-e6a66a2cec40")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5703,7 +5703,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/601139f1-87ee-470b-a7a2-6804fef1d69b")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5862,7 +5862,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/e5253a65-31b1-426b-a890-203872b163e9")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -6022,7 +6022,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/b22fbd91-ac9d-41f2-bc95-0a6c3066e245")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -6183,7 +6183,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/ef2b788d-23a4-4488-afd6-c751124ec8b9")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -6342,7 +6342,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/b46e0657-a15a-4d7a-b3a0-e97528c0c37d")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -6502,7 +6502,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/b7d8b942-6f33-4be9-b8ee-8880db7f3b0a")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -6662,7 +6662,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/6409fe82-6c1a-4d90-acf9-4022c07507c8")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -7201,7 +7201,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/a86a4397-7e27-412b-ab01-e303c1684ee0")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -7441,7 +7441,7 @@
 		)
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/ab5a7e3e-dab8-4de5-884a-c89b18bbcc7f")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -7825,7 +7825,7 @@
 		)
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/400ad8c0-4d9c-45fd-a3dd-8262e672c255")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -8131,7 +8131,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/2ac30af1-d691-48b6-88a1-a335def8363e")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -8291,7 +8291,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/4fff951b-bb05-462e-abf5-0c4853ac4307")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -8689,7 +8689,7 @@
 		)
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/e4ec534d-c3f0-42b4-897b-4d301a9a8ae2")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -9322,7 +9322,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/f6c757ec-2e60-487b-8f89-a41f4e13d108")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -9482,7 +9482,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/60c031fa-1a5b-42c1-ac73-404a20c36873")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -9644,7 +9644,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/f11a858e-b1e3-46d4-b330-15ff90ab141d")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -9881,7 +9881,7 @@
 		)
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/20a5d4e4-cf1c-4b8e-898f-4cfd9649ce75")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -10232,7 +10232,7 @@
 		(property ki_fp_filters "D*SOD?123F*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/9c98ef77-a07f-4cec-bd71-8f216cdfc4f7")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -10531,7 +10531,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/11747799-4470-4b7d-ad49-85894d05d502")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -10910,7 +10910,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/261337c4-eacb-42d4-802b-eb04a7626035")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -11148,7 +11148,7 @@
 		)
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/f18b1251-9492-4ec1-b6e9-254af92cc3ba")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -11503,7 +11503,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/b8853090-63d5-4fb6-8ab0-f087d1005e39")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -11663,7 +11663,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/8a103d29-ddbb-404c-a6ad-b19737487247")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -11823,7 +11823,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/15d1409d-fd8c-4b1c-87a9-f75a5634afe0")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -13533,7 +13533,7 @@
 		)
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/92a771b9-416d-42c7-8dde-aa86d75ab7db")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -13845,7 +13845,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/0003cd57-337d-4e35-975a-fcea27ddd65b")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -14004,7 +14004,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/1cc3c415-e376-4b37-b294-e797cc86f421")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -14164,7 +14164,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/36bafbbe-79ce-4191-b419-61374366591d")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -14402,7 +14402,7 @@
 		)
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/f7dc78b8-6e22-4a03-bfca-9264a6f47eba")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -14708,7 +14708,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/ec3b9c63-2865-4597-8dc0-220b6e844009")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -14867,7 +14867,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/dfee18a8-0b7f-44da-9fb9-af9cc6648290")
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -15027,7 +15027,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/86916788-70d6-4312-b767-07ba1a55710c")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -15643,7 +15643,7 @@
 			)
 		)
 		(sheetname "/Project Architecture/Power_Supply/")
-		(sheetfile "Power Supply - Boost 6V and Analog Rails.kicad_sch")
+		(sheetfile "Power Supply - Analog Rails.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -16012,7 +16012,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/c432448e-b47b-46b8-a1e3-b63ab54e80dc")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -16176,7 +16176,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/8a65175e-487c-4fb5-8ba5-50dee6d5112c")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -16341,7 +16341,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/aa53037c-2491-4929-bd15-634e7f20e5a1")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -16591,7 +16591,7 @@
 		)
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/daecd80c-40de-4fbb-97d7-49e84b7a367a")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -16909,7 +16909,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/e110d27e-c809-4335-bfd0-16a0dd700bd7")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -17159,7 +17159,7 @@
 		)
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/fe1adfdc-974d-48e4-b3c6-78e962e07b6e")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -17476,7 +17476,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/051b735c-0936-4003-bc9b-59524e2936eb")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -17641,7 +17641,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/fd8fd115-78cc-40fd-b260-7fbd7adb5206")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -17807,7 +17807,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/914d4c13-bedf-4cd2-85ca-4b145411ca74")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -17973,7 +17973,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/bf7923d0-7a4a-47dc-9f25-31299e6d4b0b")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -18223,7 +18223,7 @@
 		)
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/07f4132d-cb9a-4d9a-b179-2b5a8bc6f56e")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -18541,7 +18541,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/40f96182-b18f-4994-902b-6a9060f9a4fc")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -18706,7 +18706,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/b5f48eef-46de-43eb-8a49-9803d1e37948")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -18871,7 +18871,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/5f44ee5c-e653-46d2-92da-e98374f3c988")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -19036,7 +19036,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/389cd22b-e442-4ada-9704-b07f8f6ff024")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -19201,7 +19201,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/86eb8b00-0720-4173-8ff3-88fe9312031c")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
-		(sheetfile "INA241 - Phase Current and Voltage Sense.kicad_sch")
+		(sheetfile "INA241 - Phase Sensing.kicad_sch")
 		(units
 			(unit
 				(name "A")

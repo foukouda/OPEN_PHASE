@@ -134,10 +134,10 @@ Five functional hierarchical sheets (under `Project Architecture`), plus the doc
 | Sheet (file) | Description |
 | --- | --- |
 | `AD7606C-18_ADC` (`AD7606C-18 - ADC.kicad_sch`) | AD7606C-18 (IC1). AVCC = +5VA (C20, C35, C38), VDRIVE = +3.3V (C21), REFIN/REFOUT = +2.5VA (C41), REFCAPA/REFCAPB joined on C39 (10 µF), REGCAP pins on C36 / C37 (1 µF each). Six analog input pairs come from the INA241 sheet through global labels. |
-| `INA241_Phase_Sense` (`INA241 - Phase Current and Voltage Sense.kicad_sch`) | Three identical phases. Shunt R1 / R4 / R7 with Kelvin connection to IC2 / IC4 / IC6 (INA241A2, VS = +5VA, REF1 = REF2 = +2.5VA), output filter 33 Ω + 1 nF. Voltage divider 40.2 kΩ / 10 kΩ, 1 kΩ + 180 pF. 9.1 kΩ return resistor on every negative ADC input. |
+| `INA241_Phase_Sense` (`INA241 - Phase Sensing.kicad_sch`) | Three identical phases. Shunt R1 / R4 / R7 with Kelvin connection to IC2 / IC4 / IC6 (INA241A2, VS = +5VA, REF1 = REF2 = +2.5VA), output filter 33 Ω + 1 nF. Voltage divider 40.2 kΩ / 10 kΩ, 1 kΩ + 180 pF. 9.1 kΩ return resistor on every negative ADC input. |
 | `Connectors` (`Connectors.kicad_sch`) | J1 and J2, Amass MR60PW. Pins 1–3 = phases, mounting pins 4–5 = GND. |
 | `Holes, Fiducials` (`Holes - Fiducials.kicad_sch`) | Four M3 mounting holes H1–H4 connected to GND. |
-| `Power_Supply` (`Power Supply - Boost 6V and Analog Rails.kicad_sch`) | LT8362 boost (IC5, L1 = 2.2 µH, D2 = PMEG2020EH, 2 MHz, pulse-skipping, soft-start C24 = 10 nF). LTC6655-5 (IC7) and LTC6655LN-2.5 (IC3) references, each driving the SET pin of an LT3045-1 (IC8 / IC9) through 1 kΩ with 10 µF on SET. PGFB tied to IN (no Power-Good, no fast start-up), ILIM to GND, VIOC open. |
+| `Power_Supply` (`Power Supply - Analog Rails.kicad_sch`) | LT8362 boost (IC5, L1 = 2.2 µH, D2 = PMEG2020EH, 2 MHz, pulse-skipping, soft-start C24 = 10 nF). LTC6655-5 (IC7) and LTC6655LN-2.5 (IC3) references, each driving the SET pin of an LT3045-1 (IC8 / IC9) through 1 kΩ with 10 µF on SET. PGFB tied to IN (no Power-Good, no fast start-up), ILIM to GND, VIOC open. |
 
 ***
 

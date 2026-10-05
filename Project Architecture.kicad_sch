@@ -220,6 +220,43 @@
 		)
 		(uuid "fda911f3-adb3-4abb-981f-a877a93c831b")
 	)
+	(text "Page 6"
+		(exclude_from_sim no)
+		(at 86.36 157.48 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify right bottom)
+			(href "#6")
+		)
+		(uuid "f3991182-76ac-4eb2-95ef-16d6a7e7eadb")
+	)
+	(text_box "Schematic page dedicated to the power supply: LT8362 boost to +6V, then +5VA and +2.5VA (LTC6655 + LT3045-1)."
+		(exclude_from_sim no)
+		(at 92.71 139.7 0)
+		(size 26.015 5.1)
+		(margins 1.4287 1.4287 1.4287 1.4287)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "884e1d75-51b0-464e-a45d-6453076dd8e6")
+	)
 	(text "Page 8"
 		(exclude_from_sim no)
 		(at 350.52 186.69 0)
@@ -299,7 +336,7 @@
 		)
 		(uuid "01a55d99-04b0-449d-b8f9-78c0cfe473bb")
 	)
-	(text_box "Schematic page dedicated to the AD7606C-18 8-channel 18-bit ADC: supply decoupling, +2.5VA external reference and the six analog input pairs."
+	(text_box "Schematic page dedicated to the AD7606C-18 ADC: supply, +2.5VA reference and analog inputs."
 		(exclude_from_sim no)
 		(at 129.54 88.9 0)
 		(size 22.225 5.08)
@@ -322,7 +359,7 @@
 		)
 		(uuid "971f0c48-6726-412d-badf-cee82cbffedd")
 	)
-	(text_box "Schematic page dedicated to phase current (PBV 1 mOhm shunt + INA241A2, 20 V/V) and phase voltage (40.2k / 10k divider) measurement."
+	(text_box "Schematic page dedicated to phase current (shunt + INA241A2) and phase voltage (divider) sensing."
 		(exclude_from_sim no)
 		(at 249.575 121.9 0)
 		(size 26.015 5.1)
@@ -549,7 +586,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Power Supply - Boost 6V and Analog Rails.kicad_sch"
+		(property "Sheetfile" "Power Supply - Analog Rails.kicad_sch"
 			(at 50.8 159.3346 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -564,7 +601,7 @@
 		(instances
 			(project "PhaseSense-8586"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
-					(page "11")
+					(page "6")
 				)
 			)
 		)
@@ -693,7 +730,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "INA241 - Phase Current and Voltage Sense.kicad_sch"
+		(property "Sheetfile" "INA241 - Phase Sensing.kicad_sch"
 			(at 204.47 145.3646 0)
 			(show_name no)
 			(do_not_autoplace no)
