@@ -1,0 +1,9 @@
+Manufacturer=onsemi
+PartNumber=NSR10F20NXT5G
+PartCategory=Diode
+PackageCategory=Other
+PinCount=2
+Version=2.1
+Released=2020-03-24 11:07:49
+Downloaded=2026-05-04 17:43:52
+3D=Y

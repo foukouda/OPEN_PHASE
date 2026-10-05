@@ -1,0 +1,9 @@
+Manufacturer=Würth Elektronik
+PartNumber=744373965022
+PartCategory=Inductor
+PackageCategory=Inductors Precision Moulded
+PinCount=2
+Version=4.1
+Released=2022-04-02 07:18:31
+Downloaded=2026-05-15 12:16:04
+3D=Y

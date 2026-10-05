@@ -14,3 +14,29 @@ kibot_*.kicad_pcb
 kibot_*.kicad_dru
 kibot_*.kicad_prl
 kibot_*.kicad_pro
+
+# Local history / editor & plugin caches
+.history/
+.spinrender/
+.*.spinrender-src*
+_archive/
+3DxService.log
+3DxWare/
+~$*
+
+# Stray local STEP export (26 MB, no basename); the CI generates 3D/*.step
+/.step
+
+# Fabrication Toolkit plugin outputs (KiBot generates the official outputs)
+bom/
+plots/
+production/
+fabrication-toolkit-options.json
+
+# Component Search Engine download leftovers (legacy formats, duplicated PDF)
+lib/**/How_To_Use_Models.pdf
+lib/**/*.epw
+lib/**/*.lib
+lib/**/*.mod
+lib/**/*.dcm
+lib/**/version.bin

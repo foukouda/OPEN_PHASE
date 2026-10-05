@@ -1,0 +1,9 @@
+Manufacturer=Analog Devices
+PartNumber=LTC6655BHMS8-5#PBF
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline Packages
+PinCount=8
+Version=1.1
+Released=2018-07-19 14:39:15
+Downloaded=2026-06-11 10:01:02
+3D=Y

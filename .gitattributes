@@ -1,0 +1,5 @@
+# 3D models are text STEP files but must never be line-ending converted
+*.step binary
+*.STEP binary
+*.stp binary
+*.wrl binary

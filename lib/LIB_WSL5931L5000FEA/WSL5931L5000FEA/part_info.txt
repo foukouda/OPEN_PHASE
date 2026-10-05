@@ -1,0 +1,9 @@
+Manufacturer=Vishay
+PartNumber=WSL5931L5000FEA
+PartCategory=Resistor
+PackageCategory=Other
+PinCount=2
+Version=2.3
+Released=2024-05-24 10:07:01
+Downloaded=2026-01-02 16:38:57
+3D=Y
