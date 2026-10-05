@@ -6,11 +6,12 @@
 	(paper "A3")
 	(title_block
 		(title "Project Architecture")
-		(date "2025-01-12")
+		(date "2026-10-05")
 		(rev "${REVISION}")
 		(company "${COMPANY}")
 	)
-	(lib_symbols)
+	(lib_symbols
+	)
 	(arc
 		(start 153.67 104.14)
 		(mid 153.2951 105.0351)
@@ -298,7 +299,7 @@
 		)
 		(uuid "01a55d99-04b0-449d-b8f9-78c0cfe473bb")
 	)
-	(text_box "Schematic page dedicated to the ADS8586S ADC core, including its power, reference, and digital interface"
+	(text_box "Schematic page dedicated to the AD7606C-18 8-channel 18-bit ADC: supply decoupling, +2.5VA external reference and the six analog input pairs."
 		(exclude_from_sim no)
 		(at 129.54 88.9 0)
 		(size 22.225 5.08)
@@ -321,7 +322,7 @@
 		)
 		(uuid "971f0c48-6726-412d-badf-cee82cbffedd")
 	)
-	(text_box "Schematic page dedicated to current measurement using INA240 + shunt current-sense amplifiers."
+	(text_box "Schematic page dedicated to phase current (PBV 1 mOhm shunt + INA241A2, 20 V/V) and phase voltage (40.2k / 10k divider) measurement."
 		(exclude_from_sim no)
 		(at 249.575 121.9 0)
 		(size 26.015 5.1)
@@ -536,7 +537,7 @@
 			(color 255 200 0 0.502)
 		)
 		(uuid "64761cd4-62bf-4da3-92a1-0053e0023d86")
-		(property "Sheetname" "ALIMENTATION"
+		(property "Sheetname" "Power_Supply"
 			(at 50.8 137.4009 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -548,7 +549,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Section F - TItle F.kicad_sch"
+		(property "Sheetfile" "Power Supply - Boost 6V and Analog Rails.kicad_sch"
 			(at 50.8 159.3346 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -561,7 +562,7 @@
 			)
 		)
 		(instances
-			(project "INA240"
+			(project "PhaseSense-8586"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
 					(page "11")
 				)
@@ -596,7 +597,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Section E - TItle E.kicad_sch"
+		(property "Sheetfile" "Holes - Fiducials.kicad_sch"
 			(at 314.96 188.5446 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -609,7 +610,7 @@
 			)
 		)
 		(instances
-			(project "INA240"
+			(project "PhaseSense-8586"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
 					(page "8")
 				)
@@ -644,7 +645,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Section D - TItle D.kicad_sch"
+		(property "Sheetfile" "Connectors.kicad_sch"
 			(at 205.74 79.3246 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -657,7 +658,7 @@
 			)
 		)
 		(instances
-			(project "INA240"
+			(project "PhaseSense-8586"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
 					(page "7")
 				)
@@ -680,7 +681,7 @@
 			(color 255 200 0 0.502)
 		)
 		(uuid "e744f3ce-03a6-44a6-8792-1447ef232b9a")
-		(property "Sheetname" "INA241_A_Sensor (page 5)"
+		(property "Sheetname" "INA241_Phase_Sense"
 			(at 204.47 123.4309 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -692,7 +693,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Section B - TItle B.kicad_sch"
+		(property "Sheetfile" "INA241 - Phase Current and Voltage Sense.kicad_sch"
 			(at 204.47 145.3646 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -705,7 +706,7 @@
 			)
 		)
 		(instances
-			(project "INA240"
+			(project "PhaseSense-8586"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
 					(page "5")
 				)
@@ -728,7 +729,7 @@
 			(color 128 255 128 0.5)
 		)
 		(uuid "f06537ee-772d-44d3-8c50-e0ba41038c9c")
-		(property "Sheetname" "AD7606C-18"
+		(property "Sheetname" "AD7606C-18_ADC"
 			(at 157.48 94.2209 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -740,7 +741,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Section A - Title A.kicad_sch"
+		(property "Sheetfile" "AD7606C-18 - ADC.kicad_sch"
 			(at 157.48 116.1546 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -753,7 +754,7 @@
 			)
 		)
 		(instances
-			(project "INA240"
+			(project "PhaseSense-8586"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
 					(page "4")
 				)

@@ -1,9 +1,0 @@
-Manufacturer=Analog Devices
-PartNumber=LT8362EMSE#PBF
-PartCategory=Integrated Circuit
-PackageCategory=Other
-PinCount=13
-Version=1.4
-Released=2023-01-27 05:54:26
-Downloaded=2026-05-04 16:23:30
-3D=Y

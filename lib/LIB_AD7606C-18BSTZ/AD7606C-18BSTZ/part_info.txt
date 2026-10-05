@@ -1,9 +1,0 @@
-Manufacturer=Analog Devices
-PartNumber=AD7606C-18BSTZ
-PartCategory=Integrated Circuit
-PackageCategory=Quad Flat Packages
-PinCount=64
-Version=1.1
-Released=2020-12-28 11:08:19
-Downloaded=2026-04-28 09:48:36
-3D=Y

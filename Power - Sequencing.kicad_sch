@@ -6,11 +6,12 @@
 	(paper "A4")
 	(title_block
 		(title "Power - Sequencing")
-		(date "2025-01-12")
+		(date "2026-10-05")
 		(rev "${REVISION}")
 		(company "${COMPANY}")
 	)
-	(lib_symbols)
+	(lib_symbols
+	)
 	(rectangle
 		(start 94.615 119.38)
 		(end 96.139 119.888)

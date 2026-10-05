@@ -6,11 +6,12 @@
 	(paper "A4")
 	(title_block
 		(title "Revision History")
-		(date "2025-01-12")
+		(date "2026-10-05")
 		(rev "${REVISION}")
 		(company "${COMPANY}")
 	)
-	(lib_symbols)
+	(lib_symbols
+	)
 	(text_box "${RELEASE_BODY_1.1.0}"
 		(exclude_from_sim no)
 		(at 220.98 35.56 0)

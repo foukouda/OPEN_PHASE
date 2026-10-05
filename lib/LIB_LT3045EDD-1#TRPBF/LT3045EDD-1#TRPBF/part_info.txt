@@ -1,9 +1,0 @@
-Manufacturer=Analog Devices
-PartNumber=LT3045EDD-1#TRPBF
-PartCategory=Integrated Circuit
-PackageCategory=Small Outline No-lead
-PinCount=13
-Version=1.1
-Released=2024-08-26 05:08:36
-Downloaded=2026-04-28 14:49:44
-3D=Y

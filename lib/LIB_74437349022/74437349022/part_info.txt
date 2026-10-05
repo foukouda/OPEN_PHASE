@@ -1,9 +1,0 @@
-Manufacturer=Würth Elektronik
-PartNumber=74437349022
-PartCategory=Inductor
-PackageCategory=Other
-PinCount=2
-Version=7.1
-Released=2017-01-12 20:05:57
-Downloaded=2026-05-04 16:48:14
-3D=Y

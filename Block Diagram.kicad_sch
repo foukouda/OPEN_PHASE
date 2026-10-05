@@ -6,11 +6,12 @@
 	(paper "A3")
 	(title_block
 		(title "Block Diagram")
-		(date "2025-01-12")
+		(date "2026-10-05")
 		(rev "${REVISION}")
 		(company "${COMPANY}")
 	)
-	(lib_symbols)
+	(lib_symbols
+	)
 	(rectangle
 		(start 248.92 83.185)
 		(end 261.62 168.91)

@@ -1,9 +1,0 @@
-Manufacturer=Yageo Group
-PartNumber=T491B475K016AT
-PartCategory=Capacitor Polarised
-PackageCategory=Other
-PinCount=2
-Version=7.1
-Released=2022-04-25 10:55:55
-Downloaded=2026-05-04 09:56:33
-3D=Y

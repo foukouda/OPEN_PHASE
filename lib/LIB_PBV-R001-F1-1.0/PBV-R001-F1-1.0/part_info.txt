@@ -1,9 +1,0 @@
-Manufacturer=Isabellenhütte
-PartNumber=PBV-R001-F1-1.0
-PartCategory=Resistor
-PackageCategory=Other
-PinCount=4
-Version=1.4
-Released=2022-02-25 07:20:10
-Downloaded=2026-05-16 16:19:07
-3D=Y

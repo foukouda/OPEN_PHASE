@@ -1,9 +1,0 @@
-Manufacturer=Amass
-PartNumber=MR60PW
-PartCategory=Connector
-PackageCategory=Other
-PinCount=5
-Version=1.3
-Released=2025-02-22 06:43:15
-Downloaded=2026-01-02 16:08:56
-3D=Y

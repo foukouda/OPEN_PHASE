@@ -1,0 +1,8888 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "ea8c4f5e-7a49-4faf-a994-dbc85ed86b0a")
+	(paper "A3")
+	(title_block
+		(title "Power Supply - Boost 6V and Analog Rails")
+		(date "2026-10-05")
+		(rev "${REVISION}")
+		(company "${COMPANY}")
+	)
+	(lib_symbols
+		(symbol "PhaseSense-8586:744373965022"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at 16.51 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "744373965022"
+				(at 16.51 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "PhaseSense-8586:INDPM135125X620N"
+				(at 16.51 -96.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Datasheet" "https://www.we-online.com/catalog/datasheet/744373965022.pdf"
+				(at 16.51 -196.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Description" "WE-LHMI SMT Power Inductor Size 1365; L = 2,2 H ; IR = 17 A; Isat = 41,1 A; RDC = 4,2 m"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Height" "6.2"
+				(at 16.51 -396.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Name" "Wurth Elektronik"
+				(at 16.51 -496.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Part_Number" "744373965022"
+				(at 16.51 -596.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Part Number" "710-744373965022"
+				(at 16.51 -696.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/744373965022?qs=BZBei1rCqCC1TQlqJ2wRyg%3D%3D"
+				(at 16.51 -796.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Arrow Part Number" ""
+				(at 16.51 -896.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Arrow Price/Stock" ""
+				(at 16.51 -996.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(symbol "744373965022_1_1"
+				(arc
+					(start 5.08 0)
+					(mid 6.35 1.219)
+					(end 7.62 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 7.62 0)
+					(mid 8.89 1.219)
+					(end 10.16 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 10.16 0)
+					(mid 11.43 1.219)
+					(end 12.7 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 12.7 0)
+					(mid 13.97 1.219)
+					(end 15.24 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 0 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PhaseSense-8586:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PhaseSense-8586:C_4T"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C1"
+				(at 3.81 1.2701 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 3.81 -1.2699 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "PhaseSense-8586:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_4T_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_4T_1_1"
+				(text "1"
+					(at -2.286 2.794 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "2"
+					(at -2.286 -2.54 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "4"
+					(at 2.286 2.794 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "3\n"
+					(at 2.286 -2.54 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(pin passive line
+					(at -1.27 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -1.27 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 1.27 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 1.27 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PhaseSense-8586:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PhaseSense-8586:PMEG2020EH"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PMEG2020EH"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "PhaseSense-8586:D_SOD-123F"
+				(at 0 -4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG2020EH_EJ.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "20V, 2A very low Vf MEGA Schottky barrier rectifier, SOD-123F"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "forward voltage diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "D*SOD?123F*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PMEG2020EH_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PMEG2020EH_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PhaseSense-8586:LT3045EDD-1#TRPBF"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "IC2"
+				(at 15.24 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LT3045EDD-1#TRPBF"
+				(at 15.24 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "PhaseSense-8586:SON45P300X300X80-13N-D"
+				(at 26.67 -94.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Datasheet" "http://www.linear.com/docs/57863"
+				(at 26.67 -194.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Description" "LDO Voltage Regulators 20V, 500mA, Ultralow N, Ultrahigh PSRR L"
+				(at 0 5.588 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Height" "0.8"
+				(at 26.67 -394.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Name" "Analog Devices"
+				(at 26.67 -494.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Part_Number" "LT3045EDD-1#TRPBF"
+				(at 26.67 -594.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Part Number" "584-LT3045EDD-1TRPBF"
+				(at 26.67 -694.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT3045EDD-1TRPBF?qs=5aG0NVq1C4xAeOApH5waXQ%3D%3D"
+				(at 26.67 -794.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Arrow Part Number" "LT3045EDD-1#TRPBF"
+				(at 26.67 -894.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Arrow Price/Stock" "https://www.arrow.com/en/products/lt3045edd-1trpbf/analog-devices.html?utm_currency=USD&region=nac"
+				(at 26.67 -994.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(symbol "LT3045EDD-1#TRPBF_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 25.4 -25.4)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(hide yes)
+					(name "IN_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 0)
+					(length 5.08)
+					(name "VIOC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "EN/UV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -10.16 0)
+					(length 5.08)
+					(name "PG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -19.05 0)
+					(length 5.08)
+					(name "ILIM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 -10.16 180)
+					(length 5.08)
+					(name "PGFB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 -19.05 180)
+					(length 5.08)
+					(name "SET"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 -30.48 90)
+					(length 5.08)
+					(hide yes)
+					(name "GND_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 0 180)
+					(length 5.08)
+					(name "OUTS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 -2.54 180)
+					(length 5.08)
+					(hide yes)
+					(name "OUT_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 -2.54 180)
+					(length 5.08)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 -30.48 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PhaseSense-8586:LT8362EMSE#PBF"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "IC1"
+				(at 18.542 -5.334 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LT8362EMSE#PBF"
+				(at 19.05 -7.874 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "PhaseSense-8586:LT8362EMSEPBF"
+				(at 34.29 -94.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/lt8362.pdf"
+				(at 34.29 -194.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Description" "Switching Voltage Regulators L IQ Boost/SEPIC/Inv Conv w/ 2A, 60V Swi"
+				(at 7.366 -18.034 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Height" "1.1"
+				(at 34.29 -394.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Name" "Analog Devices"
+				(at 34.29 -494.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Part_Number" "LT8362EMSE#PBF"
+				(at 34.29 -594.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Part Number" "584-LT8362EMSEPBF"
+				(at 34.29 -694.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT8362EMSEPBF?qs=BZBei1rCqCDTsKUgeznosg%3D%3D"
+				(at 34.29 -794.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Arrow Part Number" "LT8362EMSE#PBF"
+				(at 34.29 -894.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Arrow Price/Stock" "https://www.arrow.com/en/products/lt8362emsepbf/analog-devices?utm_currency=USD&region=nac"
+				(at 34.29 -994.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(symbol "LT8362EMSE#PBF_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 33.02 -17.78)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 0)
+					(length 5.08)
+					(name "EN/UVLO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 7.62 270)
+					(length 5.08)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 38.1 -12.7 180)
+					(length 5.08)
+					(name "INTVCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 38.1 -7.62 180)
+					(length 5.08)
+					(name "BIAS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 -22.86 90)
+					(length 5.08)
+					(name "VC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 38.1 -3.81 180)
+					(length 5.08)
+					(name "FBX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -22.86 90)
+					(length 5.08)
+					(name "RT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 13.97 -22.86 90)
+					(length 5.08)
+					(name "SS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -12.7 0)
+					(length 5.08)
+					(name "SYNC/MODE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 7.62 270)
+					(length 5.08)
+					(hide yes)
+					(name "SW2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 7.62 270)
+					(length 5.08)
+					(name "SW1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -22.86 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PhaseSense-8586:LTC6655BHMS8-5#PBF"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "IC"
+				(at 29.21 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "LTC6655BHMS8-5#PBF"
+				(at 29.21 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "PhaseSense-8586:SOP65P490X110-8N"
+				(at 29.21 -94.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Datasheet" "http://www.analog.com/media/en/technical-documentation/data-sheets/6655ff.pdf"
+				(at 29.21 -194.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Description" "Voltage References Ultra Low Noise, 5V Precision Voltage Reference"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Height" "1.1"
+				(at 29.21 -394.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Name" "Analog Devices"
+				(at 29.21 -494.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Part_Number" "LTC6655BHMS8-5#PBF"
+				(at 29.21 -594.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Part Number" "584-C6655BHMS8-5PBF"
+				(at 29.21 -694.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Analog-Devices/LTC6655BHMS8-5PBF?qs=hVkxg5c3xu%2F3lusIgiSiiA%3D%3D"
+				(at 29.21 -794.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Arrow Part Number" "LTC6655BHMS8-5#PBF"
+				(at 29.21 -894.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Arrow Price/Stock" "https://www.arrow.com/en/products/ltc6655bhms8-5pbf/analog-devices?region=europe"
+				(at 29.21 -994.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(symbol "LTC6655BHMS8-5#PBF_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 27.94 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "~{SHDN}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "GND_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "GND_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 33.02 -7.62 180)
+					(length 5.08)
+					(name "GND_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 33.02 -5.08 180)
+					(length 5.08)
+					(name "VOUT_S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 33.02 -2.54 180)
+					(length 5.08)
+					(name "VOUT_F"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 33.02 0 180)
+					(length 5.08)
+					(name "GND_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PhaseSense-8586:LTC6655LNBHMS8-2.5#PBF"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "IC"
+				(at 29.21 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "LTC6655LNBHMS8-2.5#PBF"
+				(at 29.21 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "PhaseSense-8586:SOP65P490X110-8N"
+				(at 29.21 -94.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/LTC6655-6655LN.pdf"
+				(at 29.21 -194.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Description" "0.25PPM N, L DRIFT PREC REFS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Height" "1.1"
+				(at 29.21 -394.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Name" "Analog Devices"
+				(at 29.21 -494.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Part_Number" "LTC6655LNBHMS8-2.5#PBF"
+				(at 29.21 -594.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Part Number" "584-6655LNBHMS825PBF"
+				(at 29.21 -694.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Analog-Devices/LTC6655LNBHMS8-2.5PBF?qs=0lSvoLzn4L%252BRohUD3M%252BeWQ%3D%3D"
+				(at 29.21 -794.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Arrow Part Number" "LTC6655LNBHMS8-2.5#PBF"
+				(at 29.21 -894.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Arrow Price/Stock" "https://www.arrow.com/en/products/ltc6655lnbhms8-2.5pbf/analog-devices.html?utm_currency=USD&region=nac"
+				(at 29.21 -994.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(symbol "LTC6655LNBHMS8-2.5#PBF_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 27.94 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "~{SHDN}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "GND_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "GND_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 33.02 -7.62 180)
+					(length 5.08)
+					(name "GND_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 33.02 -5.08 180)
+					(length 5.08)
+					(name "NR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 33.02 -2.54 180)
+					(length 5.08)
+					(name "VOUT_F"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 33.02 0 180)
+					(length 5.08)
+					(name "GND_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+3.3V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+5VA"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+5VA"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5VA\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+5VA_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5VA_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+6V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+6V"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+6V\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+6V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+6V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(rectangle
+		(start 317.5 39.37)
+		(end 373.38 240.03)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "0f49980a-5a6f-4831-b2f9-1caa218ebedb")
+	)
+	(rectangle
+		(start 139.7 39.37)
+		(end 313.69 240.03)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "5aa4aa96-68ed-4472-a578-3d4e742df1cb")
+	)
+	(rectangle
+		(start 45.72 172.72)
+		(end 134.62 238.76)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "84c4aaed-8502-4297-9671-942d3b7b9cf7")
+	)
+	(rectangle
+		(start 45.72 39.37)
+		(end 134.62 167.64)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "e388cf10-0285-4593-af02-30956e110000")
+	)
+	(text "Flexible I/O source configuration"
+		(exclude_from_sim no)
+		(at 265.43 256.54 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+			(href "https://jpieper.com/2022/06/28/flexible-i-o-source-configuration/")
+		)
+		(uuid "80d93b12-205e-4a9a-bc81-b2a59895d4fb")
+	)
+	(text "Vout≈Vref+(Gain)×(I×Rshunt)"
+		(exclude_from_sim no)
+		(at 48.514 177.546 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.54 2.54)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "9b88c4b2-f02a-4ffd-a550-71760403098a")
+	)
+	(text "References:"
+		(exclude_from_sim no)
+		(at 265.43 250.19 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "ad745970-c3d5-4c7e-b5e8-e29a9b2e978c")
+	)
+	(text "Flexible I/O worked examples"
+		(exclude_from_sim no)
+		(at 265.43 254 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+			(href "https://jpieper.com/2022/06/30/flexible-i-o-worked-examples/")
+		)
+		(uuid "d192e73d-f2b9-4bd5-aeae-ecea2c81e2ff")
+	)
+	(text_box "DESIGN NOTE:\nCapacitor Découplage\n0603\nCeramique X7R\n>16V"
+		(exclude_from_sim no)
+		(at 77.47 143.51 0)
+		(size 21.59 15.24)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 255 165 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "079c1848-de68-4f64-ac9a-d0ecf3fbe27b")
+	)
+	(text_box "[${#}] ${TITLE}"
+		(exclude_from_sim no)
+		(at 161.29 20.32 0)
+		(size 96.52 12.7)
+		(margins 5.9999 5.9999 5.9999 5.9999)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 8 8)
+				(thickness 1.2)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+		)
+		(uuid "0996ea89-ccd8-4236-b901-34a814316fa4")
+	)
+	(text_box "LAYOUT NOTE:\nblabla"
+		(exclude_from_sim no)
+		(at 101.6 143.51 0)
+		(size 26.67 15.24)
+		(margins 1.4525 1.4525 1.4525 1.4525)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 0 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 255 1)
+			)
+			(justify left top)
+		)
+		(uuid "1442a890-fedd-43c2-a4af-542ac00bf633")
+	)
+	(text_box "Description"
+		(exclude_from_sim no)
+		(at 46.99 156.21 0)
+		(size 86.36 9.525)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "158b9087-7fe0-418c-be3e-bcf021a9eed5")
+	)
+	(text_box "Don't panic \n\nit's just a regular capacitor with a slightly modified footprint to better cover the 1 MHz and higher bands. \n\nNon-critical detail."
+		(exclude_from_sim no)
+		(at 321.31 163.2498 0)
+		(size 29.21 19.6302)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "2d62e74d-12c4-4d25-9863-9915921e0d66")
+	)
+	(text_box "5VA précision Alimentation"
+		(exclude_from_sim no)
+		(at 140.97 229.235 0)
+		(size 80.01 9.525)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "50111c8c-d92f-4b5d-a024-69ea32dd72d7")
+	)
+	(text_box "Shouse your INA240A..."
+		(exclude_from_sim no)
+		(at 49.53 226.695 0)
+		(size 86.36 9.525)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "5c7ef1a8-ebe2-4743-a27b-a0cd8b712300")
+	)
+	(text_box "Test Point"
+		(exclude_from_sim no)
+		(at 318.77 228.6 0)
+		(size 53.34 9.525)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "970db1e6-e24c-4055-8052-8bada4de8662")
+	)
+	(text_box "DESIGN NOTE:\nGain A1->A5 (INA241)\nINA241A1 : 10V/V\nINA241A2 : 20V/V (fitted)\nINA241A3 : 50V/V\nINA241A4 : 100V/V\nINA241A5 : 200V/V"
+		(exclude_from_sim no)
+		(at 53.34 143.51 0)
+		(size 21.59 15.24)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "b0beddc4-31c0-48bc-a91c-db4ad50fb6b9")
+	)
+	(text_box "2.5VA précision Alimentation"
+		(exclude_from_sim no)
+		(at 229.87 228.6 0)
+		(size 80.01 9.525)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "b94fe790-f192-4f9c-a061-075439767c06")
+	)
+	(junction
+		(at 175.26 195.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "06c639ec-f4ff-4ec1-9106-b8685b94da96")
+	)
+	(junction
+		(at 158.75 223.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "07ff9b08-2ea6-488f-8a11-52d90b2660a7")
+	)
+	(junction
+		(at 208.28 220.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0b129b35-0ad7-455d-846c-b72e4def9ed1")
+	)
+	(junction
+		(at 215.9 220.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0bc969fc-3fdc-42d8-a541-eddb64547265")
+	)
+	(junction
+		(at 233.68 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d7f9634-3e69-4d1e-bc82-80a9a61d6555")
+	)
+	(junction
+		(at 257.81 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0eade485-7aa3-4e9e-9630-52d2266be5c5")
+	)
+	(junction
+		(at 233.68 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1539c1cf-2761-4c1b-b326-5407b1b54a5b")
+	)
+	(junction
+		(at 293.37 220.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1768b654-f193-4a68-820f-d4135cd49645")
+	)
+	(junction
+		(at 247.65 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1909c78a-1218-41c1-911c-087de569e160")
+	)
+	(junction
+		(at 158.75 212.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1eed4e52-bb29-4feb-8be4-39972ce9e6a4")
+	)
+	(junction
+		(at 257.81 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1fd06ecd-501d-4ea8-8bd9-67b5ccfa2202")
+	)
+	(junction
+		(at 307.34 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "236a42fa-9c91-4d08-8091-e47b45266bd9")
+	)
+	(junction
+		(at 222.25 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ba2e8c1-67c2-4e3d-89ee-0c0300b87f24")
+	)
+	(junction
+		(at 242.57 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2c20af99-a90b-47c3-b433-edf00be5dd67")
+	)
+	(junction
+		(at 261.62 223.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2d77e200-b6e8-4f19-bf2e-4a7bae0ea36a")
+	)
+	(junction
+		(at 208.28 207.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e9b9bab-43a2-4f73-8dae-e7d66f80f3bf")
+	)
+	(junction
+		(at 196.85 212.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "348e1197-3443-418c-a56d-50c036fc246b")
+	)
+	(junction
+		(at 226.06 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "34d6b1e3-a600-486e-8c19-e69992840912")
+	)
+	(junction
+		(at 261.62 195.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "34f6c035-0968-42b4-8cba-174b8d621ab9")
+	)
+	(junction
+		(at 191.77 207.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "41b2febc-567d-4723-818b-cc8c4d96816f")
+	)
+	(junction
+		(at 147.32 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "497c3a9a-a9ce-4c8d-9d23-6090b909d856")
+	)
+	(junction
+		(at 219.71 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "49f77d24-d085-4498-8ccd-607526acf53f")
+	)
+	(junction
+		(at 210.82 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e47e2ad-81c3-4195-85e3-5831722ac857")
+	)
+	(junction
+		(at 210.82 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5148fa48-b692-4337-85e2-c068b0f8e4ab")
+	)
+	(junction
+		(at 265.43 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5183414b-6b94-4a85-8c45-3cbc182d569b")
+	)
+	(junction
+		(at 281.94 213.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "56222bd3-19d6-4eab-b895-072e2b0ef4e6")
+	)
+	(junction
+		(at 285.75 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5b974c23-7ca7-4263-bc2a-ac9692337891")
+	)
+	(junction
+		(at 217.17 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6bc42d88-3d51-4d4a-b6be-cf9cc634ca51")
+	)
+	(junction
+		(at 257.81 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6bd72be2-e0ba-4ac7-a233-3d5cb8a10a8a")
+	)
+	(junction
+		(at 293.37 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6de684d3-4c82-46da-b060-64bf12c157d3")
+	)
+	(junction
+		(at 300.99 220.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7446792e-0405-4d24-9ec0-7872de39ba67")
+	)
+	(junction
+		(at 196.85 204.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7823df9a-8e2b-43e3-9962-c1115364de7a")
+	)
+	(junction
+		(at 245.11 205.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "79ac7a81-2fbd-44ab-9e3f-ac0f24e08230")
+	)
+	(junction
+		(at 156.21 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c20161f-ad8b-4caa-91c7-65f0d30e42c3")
+	)
+	(junction
+		(at 300.99 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8a39c49b-7253-4cd1-97f4-4aefb7e8dba3")
+	)
+	(junction
+		(at 245.11 213.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8b80e1b3-ecfa-44b4-8b4f-c346d07e97e9")
+	)
+	(junction
+		(at 200.66 207.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8cf8ce82-9b7e-4b23-b528-52de4e60ee7e")
+	)
+	(junction
+		(at 222.25 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8d1d5c67-c5ac-4e8f-ad52-ebf992d23413")
+	)
+	(junction
+		(at 207.01 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8ea6aab4-6a16-4344-b499-6a5d25c056e1")
+	)
+	(junction
+		(at 219.71 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "90582e68-205d-45b3-a49f-096fea673ecc")
+	)
+	(junction
+		(at 191.77 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "94b5a9cc-7955-4d07-a8af-dea7b0a4092e")
+	)
+	(junction
+		(at 215.9 207.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9dc9bb32-e1bc-4b2e-9545-8e7934e48c21")
+	)
+	(junction
+		(at 242.57 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9f4d11ed-312a-4002-b30c-c9cd039e7397")
+	)
+	(junction
+		(at 304.8 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a45ec277-ca70-4ed5-bce1-9bd54b840ad7")
+	)
+	(junction
+		(at 245.11 223.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a7bfa60d-9e28-46ba-9a51-863e6d382f90")
+	)
+	(junction
+		(at 278.13 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b10f38fb-a5e4-4f5d-b08d-8956d28049c7")
+	)
+	(junction
+		(at 281.94 205.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba438a11-ca4e-4193-b484-3b838034d5f0")
+	)
+	(junction
+		(at 191.77 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bac6a07b-0b38-4ea7-a429-af937e4db51d")
+	)
+	(junction
+		(at 304.8 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "be1080b7-401e-4ac0-aac1-0e31dc4ec9c4")
+	)
+	(junction
+		(at 232.41 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c169cf86-9de3-4ffb-81f6-405de354facd")
+	)
+	(junction
+		(at 158.75 204.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c32ce185-c689-4899-91d5-3d4d0dd7414c")
+	)
+	(junction
+		(at 297.18 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c62c9452-600e-4f9f-9de1-a33ea64e7e7d")
+	)
+	(junction
+		(at 175.26 223.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "caa790ee-e8a6-4e3e-baea-a9ecd3382779")
+	)
+	(junction
+		(at 281.94 223.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ce0f4735-e5cc-4de6-bc1a-fa4ecbcaed22")
+	)
+	(junction
+		(at 203.2 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d18f95ca-f630-4119-9374-fdb779264cf7")
+	)
+	(junction
+		(at 184.15 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d6b4b2c1-10ae-4162-9aa8-ea035033eadd")
+	)
+	(junction
+		(at 241.3 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e0062875-ef91-420c-9275-28520b30ea1b")
+	)
+	(junction
+		(at 307.34 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e3f30b98-4637-4e84-9bac-dfec08020d97")
+	)
+	(junction
+		(at 196.85 223.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f20d899a-5ad3-4589-b6df-1023980e4c49")
+	)
+	(junction
+		(at 273.05 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f2724d91-a869-4f4b-8814-6480c3f6b192")
+	)
+	(junction
+		(at 156.21 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f2a0bf60-373d-4a6c-9d93-f8e3e25e28bb")
+	)
+	(no_connect
+		(at 160.02 168.91)
+		(uuid "34b92aa0-ef71-4519-bc9a-279217662950")
+	)
+	(no_connect
+		(at 160.02 175.26)
+		(uuid "63b5c37f-ad2e-46ff-a745-fe3c9209a087")
+	)
+	(no_connect
+		(at 246.38 175.26)
+		(uuid "8e02654d-e57c-4f83-bbf1-5f29a6ceae02")
+	)
+	(no_connect
+		(at 203.2 85.09)
+		(uuid "b35322bc-a943-4fb1-b4f2-084d8c4d4b31")
+	)
+	(no_connect
+		(at 246.38 168.91)
+		(uuid "eabc4600-4217-4277-807c-3acd1ab6efff")
+	)
+	(wire
+		(pts
+			(xy 184.15 110.49) (xy 191.77 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0004b244-35c3-4bfb-a710-6206f99f66b9")
+	)
+	(wire
+		(pts
+			(xy 278.13 208.28) (xy 278.13 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "002e838f-98f3-4253-90c0-a0176185e958")
+	)
+	(wire
+		(pts
+			(xy 285.75 217.17) (xy 285.75 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02754c27-c221-45c8-aace-6f39c08907e1")
+	)
+	(wire
+		(pts
+			(xy 212.09 64.77) (xy 210.82 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0347df05-bbd4-4dc4-b978-c20ff14200d3")
+	)
+	(wire
+		(pts
+			(xy 158.75 212.09) (xy 158.75 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "035381df-a9cb-4755-b4be-ad886dee5263")
+	)
+	(wire
+		(pts
+			(xy 190.5 184.15) (xy 215.9 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06dc7041-449b-4730-86d7-f6c9d66217de")
+	)
+	(wire
+		(pts
+			(xy 196.85 204.47) (xy 196.85 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0722ff5f-2216-4661-a1b3-db74801799a7")
+	)
+	(wire
+		(pts
+			(xy 265.43 66.04) (xy 265.43 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07ecd962-4a83-4f49-8d34-6d9eab211255")
+	)
+	(wire
+		(pts
+			(xy 208.28 209.55) (xy 208.28 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07ff6e7d-bf16-44b8-bc2f-a7e1f8cb674f")
+	)
+	(wire
+		(pts
+			(xy 281.94 213.36) (xy 278.13 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c14a433-2566-404e-866e-691240ae6fdc")
+	)
+	(wire
+		(pts
+			(xy 196.85 212.09) (xy 196.85 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10f4ebad-b5ca-43ad-9f63-45273adbc59f")
+	)
+	(wire
+		(pts
+			(xy 281.94 223.52) (xy 307.34 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11a54c7f-5919-42a5-8577-431001010ad2")
+	)
+	(wire
+		(pts
+			(xy 300.99 208.28) (xy 300.99 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1239ecf0-5aff-4d44-bb07-642e917d040a")
+	)
+	(wire
+		(pts
+			(xy 222.25 223.52) (xy 196.85 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14e2704a-31c9-401f-88c9-6b767a73379c")
+	)
+	(wire
+		(pts
+			(xy 226.06 110.49) (xy 233.68 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "174699b2-4471-4335-8a62-89c7f59683e0")
+	)
+	(wire
+		(pts
+			(xy 208.28 217.17) (xy 208.28 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "180ffaaa-c48d-4f2a-a798-de85eab57833")
+	)
+	(wire
+		(pts
+			(xy 147.32 165.1) (xy 156.21 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e2c7154-8d45-4530-849f-9c7a543ce519")
+	)
+	(wire
+		(pts
+			(xy 217.17 102.87) (xy 217.17 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1eb6930d-cbbc-4d54-a7d5-7272fb1e1b51")
+	)
+	(wire
+		(pts
+			(xy 219.71 175.26) (xy 219.71 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26043277-8086-4c6e-b822-181bd20bcb12")
+	)
+	(wire
+		(pts
+			(xy 191.77 207.01) (xy 200.66 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26ef3598-7433-4e00-b0fe-dd9e33a3e9d6")
+	)
+	(wire
+		(pts
+			(xy 191.77 92.71) (xy 191.77 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2768f25a-98bb-41c8-8c1a-0ee888931876")
+	)
+	(wire
+		(pts
+			(xy 257.81 83.82) (xy 257.81 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "278d376d-1544-468c-abec-aaf01ad6321c")
+	)
+	(wire
+		(pts
+			(xy 261.62 223.52) (xy 245.11 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27faeee9-7d2a-4c50-b005-7474bd8e112e")
+	)
+	(wire
+		(pts
+			(xy 160.02 195.58) (xy 175.26 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28e88b38-d9d2-4fed-9691-7a9240f6426d")
+	)
+	(wire
+		(pts
+			(xy 175.26 195.58) (xy 196.85 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a184cfb-291f-40f9-94ab-fc49de8ee822")
+	)
+	(wire
+		(pts
+			(xy 265.43 64.77) (xy 273.05 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a96c7b1-1aaf-4a22-97ef-8ded68bacda8")
+	)
+	(wire
+		(pts
+			(xy 304.8 175.26) (xy 304.8 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b27bc2d-b738-4cf0-92d5-7f992c64676e")
+	)
+	(wire
+		(pts
+			(xy 191.77 64.77) (xy 191.77 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "315ad3de-e03d-40cf-82a3-a97283fbcbac")
+	)
+	(wire
+		(pts
+			(xy 242.57 205.74) (xy 245.11 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31eed3b0-6b52-47cc-abe9-cb2e0e5de75f")
+	)
+	(wire
+		(pts
+			(xy 242.57 172.72) (xy 246.38 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32990a0a-ba06-4ca1-b2a5-fcc0aeefce3f")
+	)
+	(wire
+		(pts
+			(xy 158.75 209.55) (xy 158.75 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33b44127-39c7-4411-8da4-e48257b1c16a")
+	)
+	(wire
+		(pts
+			(xy 184.15 92.71) (xy 184.15 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34fd3f95-27ef-45c3-be64-a1d6a3c04bba")
+	)
+	(wire
+		(pts
+			(xy 241.3 110.49) (xy 247.65 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "371ab88d-daa0-4440-adcf-2b6f3e2b7a59")
+	)
+	(wire
+		(pts
+			(xy 191.77 204.47) (xy 196.85 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37fb327f-f8b8-4e89-964c-bc2fb7983549")
+	)
+	(wire
+		(pts
+			(xy 208.28 220.98) (xy 215.9 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d458c39-c418-4f38-bcef-e4a201878dbb")
+	)
+	(wire
+		(pts
+			(xy 184.15 64.77) (xy 191.77 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d7d1c38-c43a-4a6f-b95e-f37d6fae9d55")
+	)
+	(wire
+		(pts
+			(xy 175.26 223.52) (xy 158.75 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dc340a9-6d59-44ac-8f62-537887c639b4")
+	)
+	(wire
+		(pts
+			(xy 215.9 184.15) (xy 215.9 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e3fc315-b989-47af-82ed-f3b2459a16f7")
+	)
+	(wire
+		(pts
+			(xy 261.62 195.58) (xy 281.94 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "438ab789-1ab5-4667-a900-0d618cd84a79")
+	)
+	(wire
+		(pts
+			(xy 293.37 208.28) (xy 300.99 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47253832-e2fd-4247-9004-dd4295663cea")
+	)
+	(wire
+		(pts
+			(xy 156.21 204.47) (xy 158.75 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fc614e1-e6d7-45d4-b420-2eacb1fbccc4")
+	)
+	(wire
+		(pts
+			(xy 190.5 165.1) (xy 222.25 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "505649b3-dda0-486e-b81e-0d5fc4822483")
+	)
+	(wire
+		(pts
+			(xy 196.85 195.58) (xy 196.85 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "516de168-7d39-42df-9cb9-5e709ea2b8d4")
+	)
+	(wire
+		(pts
+			(xy 203.2 76.2) (xy 203.2 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52525804-8461-4514-8f04-a07fb8926e28")
+	)
+	(wire
+		(pts
+			(xy 217.17 110.49) (xy 226.06 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "543e7470-9efe-4011-abbd-730be5e2fdaa")
+	)
+	(wire
+		(pts
+			(xy 300.99 218.44) (xy 300.99 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55335e9d-0437-4745-ae2a-a52376c0eda3")
+	)
+	(wire
+		(pts
+			(xy 276.86 167.64) (xy 297.18 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57ce790b-da10-4074-bbea-400143aede43")
+	)
+	(wire
+		(pts
+			(xy 233.68 64.77) (xy 241.3 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ad1850e-2cb5-4f73-9913-9dd97394f05f")
+	)
+	(wire
+		(pts
+			(xy 232.41 165.1) (xy 242.57 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b0ed610-74e7-4487-ba17-fc26142213f7")
+	)
+	(wire
+		(pts
+			(xy 281.94 205.74) (xy 281.94 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f28db65-0f7f-45c1-ba7e-80ee02505b8d")
+	)
+	(wire
+		(pts
+			(xy 285.75 208.28) (xy 285.75 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61ed438f-bf1d-4aba-8868-4d7e1f38e6d6")
+	)
+	(wire
+		(pts
+			(xy 196.85 212.09) (xy 191.77 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64c6f65b-b093-4aca-a251-e0d28f3a8a4d")
+	)
+	(wire
+		(pts
+			(xy 215.9 220.98) (xy 219.71 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "655c4953-d9b5-43b6-b783-e4b7b787fb66")
+	)
+	(wire
+		(pts
+			(xy 265.43 73.66) (xy 265.43 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66a43c33-30c6-4e08-b15e-daf9a9735221")
+	)
+	(wire
+		(pts
+			(xy 281.94 213.36) (xy 281.94 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66ee9720-fff5-414c-a7e3-9ad3123dd477")
+	)
+	(wire
+		(pts
+			(xy 200.66 217.17) (xy 200.66 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "671f211e-e846-44c5-ab29-ab69dfd4e8ce")
+	)
+	(wire
+		(pts
+			(xy 246.38 195.58) (xy 261.62 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67e6ea66-d109-41cd-b81b-b57fa10de50a")
+	)
+	(wire
+		(pts
+			(xy 215.9 217.17) (xy 215.9 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "683e0305-9a2e-4155-8989-2b58e0fe8289")
+	)
+	(wire
+		(pts
+			(xy 307.34 223.52) (xy 307.34 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68c39971-6626-477e-a981-1fbac3dc1340")
+	)
+	(wire
+		(pts
+			(xy 293.37 208.28) (xy 293.37 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69430823-4a15-4e5d-b277-d02b8c983723")
+	)
+	(wire
+		(pts
+			(xy 257.81 73.66) (xy 257.81 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f9094c0-ebac-4186-b4ed-a648ce7f923a")
+	)
+	(wire
+		(pts
+			(xy 233.68 110.49) (xy 241.3 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "721ceb02-d3f8-4a10-95a9-9de57e108bcf")
+	)
+	(wire
+		(pts
+			(xy 184.15 64.77) (xy 184.15 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7237d57b-fd29-4f39-ad54-c0057e0bc636")
+	)
+	(wire
+		(pts
+			(xy 226.06 95.25) (xy 226.06 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74f49e96-0ae7-413a-9e02-7aaa53ef0265")
+	)
+	(wire
+		(pts
+			(xy 233.68 64.77) (xy 232.41 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75ef03b4-b61f-410f-af4e-9fb128985c8b")
+	)
+	(wire
+		(pts
+			(xy 156.21 165.1) (xy 160.02 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77c6088f-185b-44f8-9a46-2d023dd53f47")
+	)
+	(wire
+		(pts
+			(xy 191.77 110.49) (xy 210.82 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "789fbf16-3326-48d2-a00e-6baa5c0ae15d")
+	)
+	(wire
+		(pts
+			(xy 245.11 210.82) (xy 245.11 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b2877a3-a05c-4fed-bfe1-582c109f2749")
+	)
+	(wire
+		(pts
+			(xy 261.62 223.52) (xy 281.94 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e452b01-0772-4901-acf3-f7e484b92f09")
+	)
+	(wire
+		(pts
+			(xy 300.99 184.15) (xy 300.99 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81acfeaf-357c-498c-af91-76407f233664")
+	)
+	(wire
+		(pts
+			(xy 293.37 220.98) (xy 300.99 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84424c63-3aa7-4cc7-9ccc-bdd02706bcac")
+	)
+	(wire
+		(pts
+			(xy 200.66 207.01) (xy 200.66 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88479655-d8c2-4089-a373-fc8387137e56")
+	)
+	(wire
+		(pts
+			(xy 232.41 184.15) (xy 232.41 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89704416-8521-4089-9287-227c0054354f")
+	)
+	(wire
+		(pts
+			(xy 207.01 167.64) (xy 219.71 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89c77fcb-2def-4860-97a9-c98760d3c12c")
+	)
+	(wire
+		(pts
+			(xy 276.86 184.15) (xy 300.99 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89d20841-21d0-4f82-9daa-7cd1ea990542")
+	)
+	(wire
+		(pts
+			(xy 241.3 80.01) (xy 247.65 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c63ffd2-692d-40b9-b15f-98314290cd97")
+	)
+	(wire
+		(pts
+			(xy 175.26 223.52) (xy 196.85 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92a7d25e-afc1-4617-939e-ea57c60e80f2")
+	)
+	(wire
+		(pts
+			(xy 241.3 102.87) (xy 241.3 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96d89007-3f63-4d3b-b888-db89db77ba5a")
+	)
+	(wire
+		(pts
+			(xy 293.37 217.17) (xy 293.37 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97203844-5f9f-456a-8aa9-673a3e5a80f7")
+	)
+	(wire
+		(pts
+			(xy 203.2 64.77) (xy 210.82 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9793dfe1-2874-43e1-9a08-11d0f25456fe")
+	)
+	(wire
+		(pts
+			(xy 273.05 64.77) (xy 273.05 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97f9ca0a-1305-4dc8-a9ab-ddee68ae790e")
+	)
+	(wire
+		(pts
+			(xy 307.34 167.64) (xy 307.34 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99016fbe-97f5-433f-8a92-80c192403ecd")
+	)
+	(wire
+		(pts
+			(xy 241.3 76.2) (xy 257.81 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99db2f1c-a8a7-4532-87a6-08652d41dd94")
+	)
+	(wire
+		(pts
+			(xy 257.81 110.49) (xy 247.65 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c74130d-00c3-4dd1-a8ef-198247d4078a")
+	)
+	(wire
+		(pts
+			(xy 242.57 172.72) (xy 242.57 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6333503-01ed-42c4-b151-da9321d16ff6")
+	)
+	(wire
+		(pts
+			(xy 241.3 95.25) (xy 241.3 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7b1b44e-d364-485a-acb3-4e34b6c8ec1a")
+	)
+	(wire
+		(pts
+			(xy 273.05 92.71) (xy 273.05 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a934e700-5f6c-4aea-9afe-6c3503c1a3af")
+	)
+	(wire
+		(pts
+			(xy 285.75 208.28) (xy 278.13 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa4a9291-c086-448a-a258-b207b6e1fbb5")
+	)
+	(wire
+		(pts
+			(xy 273.05 110.49) (xy 257.81 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aabd0fa3-a4a0-4b8c-80ac-db6e20893a6b")
+	)
+	(wire
+		(pts
+			(xy 208.28 207.01) (xy 215.9 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab670cf1-51b4-4a49-a4de-86a5ade81576")
+	)
+	(wire
+		(pts
+			(xy 158.75 204.47) (xy 158.75 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acf58163-186a-479d-bc05-51ebe0b438bb")
+	)
+	(wire
+		(pts
+			(xy 257.81 64.77) (xy 265.43 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad9ff80b-0177-4e2d-859a-32c949f2d906")
+	)
+	(wire
+		(pts
+			(xy 222.25 165.1) (xy 222.25 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae16d2ce-4035-4cff-9a5d-4c358132aab7")
+	)
+	(wire
+		(pts
+			(xy 147.32 189.23) (xy 147.32 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b14bd7de-4b85-424a-8bea-8eed3b2107c3")
+	)
+	(wire
+		(pts
+			(xy 147.32 223.52) (xy 158.75 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3b6beda-8365-4676-b612-c8506470f097")
+	)
+	(wire
+		(pts
+			(xy 156.21 172.72) (xy 156.21 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5049c47-8efc-4123-8792-409677902cfc")
+	)
+	(wire
+		(pts
+			(xy 191.77 207.01) (xy 191.77 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b997abb5-7c79-4e83-9f53-bca6f2bbfd19")
+	)
+	(wire
+		(pts
+			(xy 156.21 165.1) (xy 156.21 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba90193d-4753-47c9-b11c-7fc3de9823a4")
+	)
+	(wire
+		(pts
+			(xy 219.71 175.26) (xy 222.25 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be65b3d8-4ab4-43f2-ab7f-2bf4a1a2d9ae")
+	)
+	(wire
+		(pts
+			(xy 215.9 207.01) (xy 215.9 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0a3dcb6-8b5b-4ec3-bb06-509234f1a5b8")
+	)
+	(wire
+		(pts
+			(xy 276.86 165.1) (xy 307.34 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7227460-62d1-40cf-8489-22f9b9cff1ec")
+	)
+	(wire
+		(pts
+			(xy 200.66 220.98) (xy 208.28 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8dbff9a-f68e-4716-b881-a6c5301d997b")
+	)
+	(wire
+		(pts
+			(xy 222.25 175.26) (xy 222.25 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc2c5029-8591-4f9b-93a7-344547031258")
+	)
+	(wire
+		(pts
+			(xy 246.38 184.15) (xy 246.38 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccd0687c-6831-4da8-9158-8674b2655ef6")
+	)
+	(wire
+		(pts
+			(xy 210.82 110.49) (xy 217.17 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd284020-8b2a-47ba-b943-742a5332262d")
+	)
+	(wire
+		(pts
+			(xy 242.57 165.1) (xy 246.38 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfa369cd-4e42-4d10-8bd6-e590625bf5af")
+	)
+	(wire
+		(pts
+			(xy 304.8 175.26) (xy 307.34 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1e1120e-7563-4d41-9260-6ab5612b54c4")
+	)
+	(wire
+		(pts
+			(xy 245.11 205.74) (xy 245.11 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4c87de6-38f9-4a2d-9a61-14995a65cff9")
+	)
+	(wire
+		(pts
+			(xy 245.11 213.36) (xy 245.11 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d55825d2-3ab8-45eb-b516-89e78f9ad9ea")
+	)
+	(wire
+		(pts
+			(xy 242.57 165.1) (xy 242.57 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6455043-6e33-4186-a7b7-f5729a49bb6d")
+	)
+	(wire
+		(pts
+			(xy 190.5 167.64) (xy 207.01 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d789f7bb-c763-4413-a2c6-8caa0873a053")
+	)
+	(wire
+		(pts
+			(xy 160.02 172.72) (xy 156.21 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d80ed83a-e182-4ff8-b543-ec63ccebe2bc")
+	)
+	(wire
+		(pts
+			(xy 285.75 220.98) (xy 293.37 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d96c877d-389e-44d2-a4c5-8cd4c53d2e9a")
+	)
+	(wire
+		(pts
+			(xy 232.41 191.77) (xy 232.41 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc5a7e4d-19de-4938-8be5-6ac516a6cb93")
+	)
+	(wire
+		(pts
+			(xy 210.82 102.87) (xy 210.82 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de8711ac-cd8b-4952-ad42-6555f0f0c2c9")
+	)
+	(wire
+		(pts
+			(xy 247.65 80.01) (xy 247.65 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e32aa85b-a2f5-4ef4-abf2-515b8251a92c")
+	)
+	(wire
+		(pts
+			(xy 232.41 223.52) (xy 245.11 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3f573e3-da6e-4c5b-97d5-4b4e8ee8e97a")
+	)
+	(wire
+		(pts
+			(xy 147.32 196.85) (xy 147.32 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e934bd91-a49d-4aa9-ba91-9649d8e027db")
+	)
+	(wire
+		(pts
+			(xy 257.81 64.77) (xy 257.81 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee801b58-0cbb-40dd-8d5e-3e13dea9a600")
+	)
+	(wire
+		(pts
+			(xy 265.43 76.2) (xy 257.81 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efe439e4-16f3-41bc-b9c4-1f4eb8122c09")
+	)
+	(wire
+		(pts
+			(xy 191.77 64.77) (xy 203.2 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0638c36-6538-4cd0-b8c2-2052d7859327")
+	)
+	(wire
+		(pts
+			(xy 300.99 220.98) (xy 304.8 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2b294c2-1cc1-4860-b743-4cd5b4041f35")
+	)
+	(wire
+		(pts
+			(xy 160.02 184.15) (xy 160.02 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2f518b2-7624-43a2-a7b1-9a6ff888399f")
+	)
+	(wire
+		(pts
+			(xy 281.94 195.58) (xy 281.94 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f50ff411-a833-4f3e-aad6-fd2aaa3d0d6b")
+	)
+	(wire
+		(pts
+			(xy 278.13 205.74) (xy 281.94 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa9bb7c6-36d8-4674-90b0-c06f4f411787")
+	)
+	(wire
+		(pts
+			(xy 304.8 167.64) (xy 307.34 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc4eeab9-d1e9-4d2a-b96f-44322a50562f")
+	)
+	(wire
+		(pts
+			(xy 297.18 167.64) (xy 304.8 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "feaf45f6-20f2-47ce-9eb1-a9c346cb70e0")
+	)
+	(wire
+		(pts
+			(xy 219.71 167.64) (xy 222.25 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff0a637f-44eb-4a1d-b801-55ee89066b7b")
+	)
+	(wire
+		(pts
+			(xy 248.92 64.77) (xy 257.81 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff6b03dd-36f6-4503-8317-c976fc9e6bf1")
+	)
+	(label "INTVCC"
+		(at 241.3 87.63 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0710d620-9da5-43d3-829e-d4034c453c59")
+	)
+	(label "SS"
+		(at 217.17 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "384b919c-43ee-4932-a96a-c73df5d9a0a6")
+	)
+	(label "RT"
+		(at 210.82 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4df38cca-f8c4-43b2-980e-71a2a0b90dc5")
+	)
+	(label "VC"
+		(at 233.68 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b6b2e948-5806-4454-8df5-716b04323686")
+	)
+	(label "FBX"
+		(at 251.46 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ddbbee80-292b-416d-a412-530dfd34c3e0")
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 184.15 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0dda15b6-7a6b-444c-a14d-87c53d8906e8")
+		(property "Reference" "#PWR04"
+			(at 184.15 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 184.15 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 184.15 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 184.15 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 184.15 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c4b8c26c-2c67-49b5-b41c-60deaef08195")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:C_4T")
+		(at 306.07 171.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0f4f97cc-9a65-41e6-9c0c-a69f1a71bdc2")
+		(property "Reference" "C15"
+			(at 304.8 169.418 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10µF"
+			(at 308.356 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:C_0805_2012Metric"
+			(at 307.0352 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 306.07 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 306.07 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c872f747-cb15-49ef-9bd0-482e4a6d185a")
+		)
+		(pin "1"
+			(uuid "b84a0958-5ed3-42f5-8823-2ea05dcf457f")
+		)
+		(pin "3"
+			(uuid "2f1eb2ff-b356-4c18-b46d-006ac332ca4c")
+		)
+		(pin "4"
+			(uuid "7d400628-889b-4afd-b556-9113d72990fb")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+6V")
+		(at 273.05 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1023df8a-54c6-4aae-b9be-bbab8307bad3")
+		(property "Reference" "#PWR015"
+			(at 273.05 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+6V"
+			(at 273.05 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 273.05 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 273.05 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+6V\""
+			(at 273.05 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "35d02e11-bc62-4855-8de1-9735eb02e06a")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:C")
+		(at 300.99 214.63 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "11747799-4470-4b7d-ad49-85894d05d502")
+		(property "Reference" "C19"
+			(at 299.72 213.36 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10µF"
+			(at 299.466 220.726 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:C_0805_2012Metric"
+			(at 301.9552 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 300.99 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 300.99 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bd9746f0-28ed-4b4b-8740-97d72a5b82d7")
+		)
+		(pin "2"
+			(uuid "32ba0f5a-d230-4e62-9936-2cecc302c76b")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:C_4T")
+		(at 220.98 171.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1cc3c415-e376-4b37-b294-e797cc86f421")
+		(property "Reference" "C14"
+			(at 219.71 169.418 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10µF"
+			(at 223.266 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:C_0805_2012Metric"
+			(at 221.9452 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 220.98 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "952e3f54-69f2-46c4-a774-7f2821117bed")
+		)
+		(pin "1"
+			(uuid "89f73281-e6c3-4952-b602-2fa53ff09a9f")
+		)
+		(pin "3"
+			(uuid "6e8bf61a-edd3-4b99-998d-1e87aba08ba1")
+		)
+		(pin "4"
+			(uuid "9b774ee3-52af-45f6-b04b-bca08d8effb1")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:LT3045EDD-1#TRPBF")
+		(at 160.02 165.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "201d6fff-93de-49d2-82a3-8481a01185af")
+		(property "Reference" "IC8"
+			(at 175.26 157.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LT3045EDD-1#TRPBF"
+			(at 175.26 160.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:SON45P300X300X80-13N-D"
+			(at 186.69 260.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "http://www.linear.com/docs/57863"
+			(at 186.69 360.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "LDO Voltage Regulators 20V, 500mA, Ultralow N, Ultrahigh PSRR L"
+			(at 160.02 159.512 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "0.8"
+			(at 186.69 560.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Analog Devices"
+			(at 186.69 660.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "LT3045EDD-1#TRPBF"
+			(at 186.69 760.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "584-LT3045EDD-1TRPBF"
+			(at 186.69 860.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT3045EDD-1TRPBF?qs=5aG0NVq1C4xAeOApH5waXQ%3D%3D"
+			(at 186.69 960.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Part Number" "LT3045EDD-1#TRPBF"
+			(at 186.69 1060.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/lt3045edd-1trpbf/analog-devices.html?utm_currency=USD&region=nac"
+			(at 186.69 1160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "1"
+			(uuid "fa08c4db-6cad-4f04-a9d8-2d6b51f42c2a")
+		)
+		(pin "7"
+			(uuid "40b985ff-f34b-4048-8f06-dd1c0b082d16")
+		)
+		(pin "2"
+			(uuid "eef1e2a7-cd44-44ea-a9ee-957c17a3004a")
+		)
+		(pin "3"
+			(uuid "32d9fd43-7c1f-4f46-b68f-0e3685318e45")
+		)
+		(pin "4"
+			(uuid "68ade799-ae9b-4552-a0d6-c8d37eddb6a8")
+		)
+		(pin "5"
+			(uuid "6ae17708-1e98-4df4-af8f-a82f73bece9c")
+		)
+		(pin "6"
+			(uuid "522db635-dc2c-4a60-b0df-2d012bb0dc9b")
+		)
+		(pin "10"
+			(uuid "7582ae12-7228-44a3-9e70-e6e966292f1b")
+		)
+		(pin "9"
+			(uuid "50be7759-adc3-4a92-afd5-16fd36252fbd")
+		)
+		(pin "8"
+			(uuid "07fbe794-2cbf-430e-9e98-34829f9470f0")
+		)
+		(pin "12"
+			(uuid "76163b68-e1cd-4b23-a81a-2734daddb5b0")
+		)
+		(pin "13"
+			(uuid "dd024ecf-acfe-472e-b41c-3530ac13960e")
+		)
+		(pin "11"
+			(uuid "3f93fcda-dd41-447c-9bfc-83bd8a034170")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "IC8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:LT8362EMSE#PBF")
+		(at 203.2 72.39 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "20a5d4e4-cf1c-4b8e-898f-4cfd9649ce75")
+		(property "Reference" "IC5"
+			(at 221.742 77.724 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LT8362EMSE#PBF"
+			(at 222.25 80.264 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:LT8362EMSEPBF"
+			(at 237.49 167.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/lt8362.pdf"
+			(at 237.49 267.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Switching Voltage Regulators L IQ Boost/SEPIC/Inv Conv w/ 2A, 60V Swi"
+			(at 210.566 90.424 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "1.1"
+			(at 237.49 467.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Analog Devices"
+			(at 237.49 567.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "LT8362EMSE#PBF"
+			(at 237.49 667.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "584-LT8362EMSEPBF"
+			(at 237.49 767.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT8362EMSEPBF?qs=BZBei1rCqCDTsKUgeznosg%3D%3D"
+			(at 237.49 867.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Part Number" "LT8362EMSE#PBF"
+			(at 237.49 967.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/lt8362emsepbf/analog-devices?utm_currency=USD&region=nac"
+			(at 237.49 1067.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "7"
+			(uuid "51c57ab8-ad0e-478e-9e57-31b5336562e6")
+		)
+		(pin "10"
+			(uuid "9a5b76d7-3fae-4812-89a0-0a5e09453b06")
+		)
+		(pin "12"
+			(uuid "afac40b5-8f35-44a3-b27f-b4deea89d5ec")
+		)
+		(pin "6"
+			(uuid "13320e3c-3206-4805-9a23-e75cbd8494de")
+		)
+		(pin "11"
+			(uuid "bdbc3614-65d5-46d9-b7f1-4d6f4a7ac1a4")
+		)
+		(pin "8"
+			(uuid "1a4acd59-74e3-4cbd-8176-8648e9c60eae")
+		)
+		(pin "3"
+			(uuid "02172f60-2ea9-4201-9361-da56ae484465")
+		)
+		(pin "9"
+			(uuid "ca0242cc-5ddd-4cd6-9161-61a3408123d2")
+		)
+		(pin "1"
+			(uuid "286bc97a-3c1b-47a8-a797-6b79a0aad469")
+		)
+		(pin "5"
+			(uuid "38422fd9-5d59-4c2c-b397-6d393fbef5b4")
+		)
+		(pin "14"
+			(uuid "866e87b7-a3aa-459c-9c01-b3149c5193c3")
+		)
+		(pin "16"
+			(uuid "906a19f4-d924-4418-88da-e7d4144e96cd")
+		)
+		(pin "17"
+			(uuid "cfa4204b-b6a2-45bd-b2d3-86584f124f14")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "IC5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5VA")
+		(at 297.18 167.64 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "290afbcb-4312-4d6f-bff1-7583de397930")
+		(property "Reference" "#PWR027"
+			(at 297.18 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+2.5VA"
+			(at 296.926 171.196 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 297.18 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 297.18 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VA\""
+			(at 297.18 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "abb2e7d7-78af-498e-b0e1-d475a12ff3b6")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:C")
+		(at 265.43 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "42aed2b6-e537-476f-9f0a-eb4f9a496d3f")
+		(property "Reference" "C28"
+			(at 264.16 68.58 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4,7 pF C0G 0603"
+			(at 269.24 82.55 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:C_0603_1608Metric"
+			(at 266.3952 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 265.43 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 265.43 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f6f7acd7-1e1a-4965-85f1-37e5f94ad563")
+		)
+		(pin "2"
+			(uuid "826346a7-4c12-498a-8bc1-498946b82638")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "C28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:R")
+		(at 210.82 99.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "450d0ffb-b49a-4959-b917-e6a66a2cec40")
+		(property "Reference" "R2"
+			(at 204.724 100.076 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "20kΩ"
+			(at 210.82 101.346 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:R_0603_1608Metric"
+			(at 209.042 99.06 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 210.82 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "33fdd771-f6ea-461c-b8d7-c026a3293e00")
+		)
+		(pin "1"
+			(uuid "694cb23a-9f82-4656-840f-c7193b31c810")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:C")
+		(at 215.9 213.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4c92c8d4-7ffc-44d2-ad40-b8ed584feb3a")
+		(property "Reference" "C13"
+			(at 214.63 212.09 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10µF"
+			(at 214.376 219.456 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:C_0805_2012Metric"
+			(at 216.8652 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 215.9 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1d64241e-85d0-4b3c-8ee4-70d0f09f893a")
+		)
+		(pin "2"
+			(uuid "429306b9-5ae2-47d6-8250-0f94bf9815e7")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:C")
+		(at 233.68 106.68 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4fff951b-bb05-462e-abf5-0c4853ac4307")
+		(property "Reference" "C26"
+			(at 232.918 104.394 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1 nF X7R 0603"
+			(at 245.618 113.538 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:C_0603_1608Metric"
+			(at 232.7148 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.68 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 233.68 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "def90ce1-41ba-4d21-a0eb-03edf5ae0466")
+		)
+		(pin "2"
+			(uuid "f305980b-6236-4ed0-8dc5-112117db9234")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "C26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5VA")
+		(at 190.5 175.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "531859e2-93d3-442b-8fe5-d3a992c2e532")
+		(property "Reference" "#PWR024"
+			(at 190.5 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+6V"
+			(at 188.976 171.196 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VA\""
+			(at 190.5 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "85a886ea-15e8-430a-94af-c5e2ed6b2359")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:R")
+		(at 208.28 213.36 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "549c39b1-04c2-49f3-a63d-b798b49ec2b4")
+		(property "Reference" "R14"
+			(at 211.836 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "49.9kΩ"
+			(at 208.28 211.582 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:R_0603_1608Metric"
+			(at 210.058 213.36 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 208.28 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7ca355f1-218b-49f1-a4b6-914955b52fe5")
+		)
+		(pin "1"
+			(uuid "6575efb8-6bf6-4b10-a5bd-507cd6096155")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:R")
+		(at 204.47 207.01 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "601139f1-87ee-470b-a7a2-6804fef1d69b")
+		(property "Reference" "R8"
+			(at 200.914 209.804 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1kΩ"
+			(at 206.248 207.01 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:R_0603_1608Metric"
+			(at 204.47 208.788 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 204.47 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "93519125-4bad-43d4-afcf-6e3cb94e0259")
+		)
+		(pin "1"
+			(uuid "c7a60295-ba81-46df-b56c-d2ce78e217f1")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:C")
+		(at 232.41 187.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "60c031fa-1a5b-42c1-ac73-404a20c36873")
+		(property "Reference" "C11"
+			(at 231.14 186.69 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7µF"
+			(at 231.14 195.834 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:C_0603_1608Metric"
+			(at 233.3752 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 232.41 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "36e5b1e2-9fdd-4ed1-b378-08b41713878b")
+		)
+		(pin "2"
+			(uuid "03d29244-4bcb-424c-8332-08f1740c7eae")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:C")
+		(at 191.77 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6409fe82-6c1a-4d90-acf9-4022c07507c8")
+		(property "Reference" "C23"
+			(at 190.5 87.63 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 190.5 96.774 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:C_0603_1608Metric"
+			(at 192.7352 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 191.77 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 191.77 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "41b359a4-835d-40e2-9a47-f1cc9b03e3d6")
+		)
+		(pin "2"
+			(uuid "94d9571e-4055-4d47-b4ad-dde48ad54ce2")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:LTC6655BHMS8-5#PBF")
+		(at 158.75 204.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6adb11f7-ce55-42c3-8019-c77649bd4955")
+		(property "Reference" "IC7"
+			(at 175.26 196.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LTC6655BHMS8-5#PBF"
+			(at 175.26 199.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:SOP65P490X110-8N"
+			(at 187.96 299.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "http://www.analog.com/media/en/technical-documentation/data-sheets/6655ff.pdf"
+			(at 187.96 399.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Voltage References Ultra Low Noise, 5V Precision Voltage Reference"
+			(at 158.75 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "1.1"
+			(at 187.96 599.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Analog Devices"
+			(at 187.96 699.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "LTC6655BHMS8-5#PBF"
+			(at 187.96 799.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "584-C6655BHMS8-5PBF"
+			(at 187.96 899.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Analog-Devices/LTC6655BHMS8-5PBF?qs=hVkxg5c3xu%2F3lusIgiSiiA%3D%3D"
+			(at 187.96 999.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Part Number" "LTC6655BHMS8-5#PBF"
+			(at 187.96 1099.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/ltc6655bhms8-5pbf/analog-devices?region=europe"
+			(at 187.96 1199.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "5"
+			(uuid "6d1dfd39-ca78-4b9f-bed0-78551c9a3c5c")
+		)
+		(pin "4"
+			(uuid "7e53c2d2-ddac-4c17-b422-ad8781959364")
+		)
+		(pin "2"
+			(uuid "85bef85f-a172-4e6e-8ea9-c582de9464ec")
+		)
+		(pin "3"
+			(uuid "57afbdd9-5254-459e-b4ef-d01228e8aa98")
+		)
+		(pin "6"
+			(uuid "c9f4e92e-d68a-42f2-9014-350960442e17")
+		)
+		(pin "7"
+			(uuid "2120bf74-3c69-45aa-b0cb-f82be82b20cb")
+		)
+		(pin "8"
+			(uuid "a82d5d2d-fc43-4205-b51a-170ea96522c8")
+		)
+		(pin "1"
+			(uuid "cce0c06d-9a2a-4912-ba55-d8632b5580aa")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "IC7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:C")
+		(at 147.32 193.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7fad4638-f6b6-4964-ad12-e0707dc43381")
+		(property "Reference" "C9"
+			(at 146.05 191.77 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7µF"
+			(at 146.05 200.914 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:C_0603_1608Metric"
+			(at 148.2852 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 147.32 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2b4477f6-0da7-4322-bbba-a29ae88a4c56")
+		)
+		(pin "2"
+			(uuid "b1b1b0ed-37b6-40ba-8532-9e2599517d2c")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:C")
+		(at 241.3 99.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8619ffcd-5d83-4ae5-b2be-c86c46e2e838")
+		(property "Reference" "C27"
+			(at 240.03 97.79 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1µF"
+			(at 240.03 106.934 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:C_0603_1608Metric"
+			(at 242.2652 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.3 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 241.3 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "60fca9af-df9a-4339-80f3-2541f412f446")
+		)
+		(pin "2"
+			(uuid "927f3d2d-a5a5-4dd3-9c55-3a5f640d49c6")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "C27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:C")
+		(at 217.17 99.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8a103d29-ddbb-404c-a6ad-b19737487247")
+		(property "Reference" "C24"
+			(at 215.9 97.79 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10 nF X7R 0603"
+			(at 221.234 107.188 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:C_0603_1608Metric"
+			(at 218.1352 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 217.17 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "50dc4a49-8654-4b34-8488-e7519e1c7934")
+		)
+		(pin "2"
+			(uuid "1dabece8-e149-4f01-a385-a9c72a98be09")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:LTC6655LNBHMS8-2.5#PBF")
+		(at 245.11 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "92a771b9-416d-42c7-8dde-aa86d75ab7db")
+		(property "Reference" "IC3"
+			(at 261.62 198.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LTC6655LNBHMS8-2.5#PBF"
+			(at 261.62 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:SOP65P490X110-8N"
+			(at 274.32 300.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/LTC6655-6655LN.pdf"
+			(at 274.32 400.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "0.25PPM N, L DRIFT PREC REFS"
+			(at 245.11 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "1.1"
+			(at 274.32 600.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Analog Devices"
+			(at 274.32 700.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "LTC6655LNBHMS8-2.5#PBF"
+			(at 274.32 800.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "584-6655LNBHMS825PBF"
+			(at 274.32 900.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Analog-Devices/LTC6655LNBHMS8-2.5PBF?qs=0lSvoLzn4L%252BRohUD3M%252BeWQ%3D%3D"
+			(at 274.32 1000.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Part Number" "LTC6655LNBHMS8-2.5#PBF"
+			(at 274.32 1100.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/ltc6655lnbhms8-2.5pbf/analog-devices.html?utm_currency=USD&region=nac"
+			(at 274.32 1200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "2"
+			(uuid "182c39c0-c2f8-4dc7-82ec-4287eb92639e")
+		)
+		(pin "3"
+			(uuid "a99804f7-848a-402e-b18a-53fd01dc7b2d")
+		)
+		(pin "6"
+			(uuid "e5540261-c150-4683-b171-e6923210140c")
+		)
+		(pin "4"
+			(uuid "9dfa530e-529f-4225-88fd-536df076c927")
+		)
+		(pin "7"
+			(uuid "3b054c63-44ee-46c2-a7ee-93316d708492")
+		)
+		(pin "8"
+			(uuid "4fb3766c-5bba-4120-abb5-60436b7e9319")
+		)
+		(pin "1"
+			(uuid "a3c341aa-0094-4ab8-8a97-7e99f136ff77")
+		)
+		(pin "5"
+			(uuid "62095142-f032-414c-8499-63cb405d90ae")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "IC3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5VA")
+		(at 147.32 165.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "94bca9b0-ccdc-4279-8112-4336e4de1563")
+		(property "Reference" "#PWR023"
+			(at 147.32 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+6V"
+			(at 145.288 161.036 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VA\""
+			(at 147.32 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e5cbbfe4-658d-48ae-ac03-7697ff21a585")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:PMEG2020EH")
+		(at 245.11 64.77 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9c98ef77-a07f-4cec-bd71-8f216cdfc4f7")
+		(property "Reference" "D2"
+			(at 245.4275 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PMEG2020EH"
+			(at 245.4275 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:D_SOD-123F"
+			(at 245.11 60.325 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG2020EH_EJ.pdf"
+			(at 245.11 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "20V, 2A very low Vf MEGA Schottky barrier rectifier, SOD-123F"
+			(at 245.11 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b3353e41-8c41-4626-be52-c0345abf1cf9")
+		)
+		(pin "1"
+			(uuid "0754774c-64cb-41bc-a9e8-ccf75d874764")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5VA")
+		(at 207.01 167.64 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a3a782a6-f3e3-47b4-be4e-1c25b6ca5b96")
+		(property "Reference" "#PWR022"
+			(at 207.01 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5VA"
+			(at 209.55 171.704 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 207.01 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 207.01 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VA\""
+			(at 207.01 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a8745cd8-db36-4308-8347-ef49ca5ce7f3")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:C")
+		(at 273.05 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a51fd6f1-8cf8-40d5-8a52-d54bc27e25ec")
+		(property "Reference" "C30"
+			(at 271.78 87.63 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22 µF X7R 1206"
+			(at 276.606 94.488 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 274.0152 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 273.05 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 273.05 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "19e7dfcd-09fb-4a92-87de-995ce3d4dcb0")
+		)
+		(pin "2"
+			(uuid "2c571e67-ca6f-4238-b542-8d8ac2a2874b")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "C30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:R")
+		(at 257.81 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a86a4397-7e27-412b-ab01-e303c1684ee0")
+		(property "Reference" "R6"
+			(at 260.35 78.7399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "365kΩ"
+			(at 255.016 83.566 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:R_0603_1608Metric"
+			(at 256.032 80.01 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 257.81 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 257.81 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "00e38401-a9bf-42b3-b98f-ad202a441676")
+		)
+		(pin "1"
+			(uuid "30817ca4-de67-471a-a03c-dbf3a234008a")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:R")
+		(at 257.81 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b22fbd91-ac9d-41f2-bc95-0a6c3066e245")
+		(property "Reference" "R5"
+			(at 253.492 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1MΩ"
+			(at 257.81 72.136 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:R_0603_1608Metric"
+			(at 256.032 69.85 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 257.81 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 257.81 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "74334f82-0b55-4324-8a69-f8910383aa75")
+		)
+		(pin "1"
+			(uuid "1a3e3576-e332-43f4-9eac-a4d494a573dc")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:R")
+		(at 289.56 208.28 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b46e0657-a15a-4d7a-b3a0-e97528c0c37d")
+		(property "Reference" "R11"
+			(at 292.354 210.312 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1kΩ"
+			(at 291.084 208.28 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:R_0603_1608Metric"
+			(at 289.56 210.058 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 289.56 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 289.56 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "baf41e2a-955d-480f-9329-810c5add5449")
+		)
+		(pin "2"
+			(uuid "2915bfd3-77bc-4121-9d9e-dcd342497194")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:C")
+		(at 184.15 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b8853090-63d5-4fb6-8ab0-f087d1005e39")
+		(property "Reference" "C22"
+			(at 182.88 87.63 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7µF"
+			(at 182.88 96.774 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:C_0603_1608Metric"
+			(at 185.1152 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 184.15 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 184.15 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "709cbbbf-69a4-4487-a2f2-aaabe89d5dfe")
+		)
+		(pin "2"
+			(uuid "5e260644-7335-4a4f-8964-ea678ed1ab3d")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 175.26 223.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bb34bb53-f51b-4e7a-9917-71eed5aebc73")
+		(property "Reference" "#PWR013"
+			(at 175.26 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 175.26 228.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 175.26 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "56405b4e-5f6d-4fd1-85bc-d57384c6b535")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 261.62 223.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bdf76c47-876b-4237-90eb-d94ff125a745")
+		(property "Reference" "#PWR014"
+			(at 261.62 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 261.62 228.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 261.62 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 261.62 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 261.62 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "47aa11a3-c605-4622-998e-29a6bd1c1630")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 226.06 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cd729560-f13c-4a1e-b331-44670ca4f010")
+		(property "Reference" "#PWR01"
+			(at 226.06 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 226.06 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 226.06 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 226.06 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6e4e0704-0735-4639-a859-c05e8a8fef30")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+6V")
+		(at 232.41 165.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dab3b358-14b1-404e-be58-e09e073fdea5")
+		(property "Reference" "#PWR016"
+			(at 232.41 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+6V"
+			(at 232.41 160.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+6V\""
+			(at 232.41 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "51f6a89d-4ecf-4fb6-961f-ad52b909a558")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:C")
+		(at 285.75 213.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dfee18a8-0b7f-44da-9fb9-af9cc6648290")
+		(property "Reference" "C12"
+			(at 284.48 212.09 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10µF"
+			(at 284.226 219.456 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:C_0603_1608Metric"
+			(at 286.7152 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 285.75 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 285.75 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3018d2f2-ee31-4756-9774-93b4a209291c")
+		)
+		(pin "2"
+			(uuid "0bbc5bec-abf0-49d2-8aee-19744d04f18e")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:744373965022")
+		(at 212.09 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e4ec534d-c3f0-42b4-897b-4d301a9a8ae2")
+		(property "Reference" "L1"
+			(at 222.25 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "744373965022"
+			(at 222.25 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:INDPM135125X620N"
+			(at 228.6 160.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.we-online.com/catalog/datasheet/744373965022.pdf"
+			(at 228.6 260.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "WE-LHMI SMT Power Inductor Size 1365; L = 2,2 H ; IR = 17 A; Isat = 41,1 A; RDC = 4,2 m"
+			(at 212.09 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "6.2"
+			(at 228.6 460.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Wurth Elektronik"
+			(at 228.6 560.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "744373965022"
+			(at 228.6 660.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "710-744373965022"
+			(at 228.6 760.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/744373965022?qs=BZBei1rCqCC1TQlqJ2wRyg%3D%3D"
+			(at 228.6 860.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 228.6 960.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 228.6 1060.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "1"
+			(uuid "b266787f-3fb2-4caa-9dff-e5eaf801824d")
+		)
+		(pin "2"
+			(uuid "ec4fc819-761f-4f85-8b13-cb370f28bb0c")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:C")
+		(at 200.66 213.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e5253a65-31b1-426b-a890-203872b163e9")
+		(property "Reference" "C8"
+			(at 199.39 212.09 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10µF"
+			(at 199.136 219.456 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:C_0603_1608Metric"
+			(at 201.6252 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 200.66 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6f78b74b-64ed-4728-8e13-90a40fe39a83")
+		)
+		(pin "2"
+			(uuid "4ccba0e8-8a33-438e-be0e-dbcb2b07ba88")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:R")
+		(at 293.37 213.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ef2b788d-23a4-4488-afd6-c751124ec8b9")
+		(property "Reference" "R12"
+			(at 295.656 216.154 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "49.9kΩ"
+			(at 293.37 215.646 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:R_0603_1608Metric"
+			(at 291.592 213.36 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 293.37 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 293.37 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ba06833f-36eb-439f-a150-0936acbe3213")
+		)
+		(pin "2"
+			(uuid "3b0e53d4-32c5-4057-883a-ac75a80256bb")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:R")
+		(at 233.68 99.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f11a858e-b1e3-46d4-b330-15ff90ab141d")
+		(property "Reference" "R3"
+			(at 230.886 95.504 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "36,5kΩ"
+			(at 235.966 102.108 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:R_0603_1608Metric"
+			(at 231.902 99.06 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.68 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 233.68 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7ee4a00f-7e2b-4166-a10d-1a65812aacbe")
+		)
+		(pin "1"
+			(uuid "528683b0-f447-4885-b6db-ae921e34dbd9")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PhaseSense-8586:LT3045EDD-1#TRPBF")
+		(at 246.38 165.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f18b1251-9492-4ec1-b6e9-254af92cc3ba")
+		(property "Reference" "IC9"
+			(at 261.62 157.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LT3045EDD-1#TRPBF"
+			(at 261.62 160.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:SON45P300X300X80-13N-D"
+			(at 273.05 260.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "http://www.linear.com/docs/57863"
+			(at 273.05 360.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "LDO Voltage Regulators 20V, 500mA, Ultralow N, Ultrahigh PSRR L"
+			(at 246.38 159.512 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "0.8"
+			(at 273.05 560.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Analog Devices"
+			(at 273.05 660.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "LT3045EDD-1#TRPBF"
+			(at 273.05 760.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "584-LT3045EDD-1TRPBF"
+			(at 273.05 860.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT3045EDD-1TRPBF?qs=5aG0NVq1C4xAeOApH5waXQ%3D%3D"
+			(at 273.05 960.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Part Number" "LT3045EDD-1#TRPBF"
+			(at 273.05 1060.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/lt3045edd-1trpbf/analog-devices.html?utm_currency=USD&region=nac"
+			(at 273.05 1160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "1"
+			(uuid "e6cf8d18-f316-4126-9419-ac0caa8a37b6")
+		)
+		(pin "7"
+			(uuid "40dcbb54-6741-4b4b-a682-b72b31b0b1e1")
+		)
+		(pin "2"
+			(uuid "da18e94a-c7b3-4280-ab33-17049264e9ec")
+		)
+		(pin "3"
+			(uuid "dbc5754e-c1b1-40dd-9595-d44fa29b84d4")
+		)
+		(pin "4"
+			(uuid "53689733-24ee-4920-b58e-dee343e7d475")
+		)
+		(pin "5"
+			(uuid "213cf146-1af0-421e-8a59-aa6c02d4a065")
+		)
+		(pin "6"
+			(uuid "91e3e3d1-8fba-45c0-b4e9-e0ca2e7924fd")
+		)
+		(pin "10"
+			(uuid "3be46409-1c19-4f30-a2ff-a001b6287a6e")
+		)
+		(pin "9"
+			(uuid "41483470-5824-4071-b3a7-60f7c616d7ec")
+		)
+		(pin "8"
+			(uuid "2e0fca35-448d-41cd-94d2-a71dde7213b4")
+		)
+		(pin "12"
+			(uuid "81aa8646-6dec-4dca-b107-f1da7d4f4cea")
+		)
+		(pin "13"
+			(uuid "df4dec49-d5f0-4808-87fc-863cf58f6166")
+		)
+		(pin "11"
+			(uuid "0ab9ed46-b830-4b5d-9bae-9bef16529218")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "IC9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+6V")
+		(at 276.86 175.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f22d79e5-791b-476a-a7e9-f192608c1e18")
+		(property "Reference" "#PWR019"
+			(at 276.86 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+6V"
+			(at 276.86 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 276.86 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 276.86 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+6V\""
+			(at 276.86 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4ad65780-4ad2-42eb-9b2e-f56498f63168")
+		)
+		(instances
+			(project "PhaseSense-8586"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
