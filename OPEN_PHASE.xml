@@ -1,0 +1,3720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/github/workspace/OPEN_PHASE.kicad_sch</source>
+    <date>Date1</date>
+    <tool>Eeschema 10.0.5-unknown-202607221313~667fa36054~ubuntu25.10.1</tool>
+    <textvar name="ASSEMBLY_NOTES">ASSEMBLY NOTES (UNLESS OTHERWISE SPECIFIED)
+
+1)	DO NOT POPULATE PARTS ARE MARKED WITH A RED CROSS.
+
+2)	DO NOT POPULATE PARTS ARE NOT PRESENT IN THE BOM.
+
+3)	IF CONFLICTING INFORMATION IS FOUND BETWEEN THE ASSEMBLY
+	FILE AND BOM, BOM SHOULD BE USED AS THE MAIN SOURCE.
+
+4)	CONFORMAL COATING IS NOT REQUIRED.
+
+5)	DOT IDENTIFIES PIN #1 LOCATION AND DEVICE ORIENTATION
+	WHEN VIEWED FROM THE TOP.</textvar>
+    <textvar name="BOARD_NAME">PHASETRACKER</textvar>
+    <textvar name="COMPANY">OPEN THRUST LAB</textvar>
+    <textvar name="DESIGNER">SIEBERT DIMITRY</textvar>
+    <textvar name="FABRICATION_NOTES">FABRICATION NOTES (UNLESS OTHERWISE SPECIFIED)
+
+1)	FABRICATE PER IPC-6012A CLASS 2.
+
+2)	OUTLINE DEFINED IN SEPARATE GERBER FILE WITH
+	"Edge_Cuts.GBR" SUFFIX.
+
+	DIMENSIONS OF CIRCUMSIZED RECTANGLE SHOWN ON THIS
+	DRAWING FOR REFERENCE ONLY.
+
+3)	SEE SEPARATE DRILL FILES WITH ".DRL" SUFFIX 
+	FOR HOLE LOCATIONS.
+
+	SELECTED HOLE LOCATIONS SHOWN ON THIS DRAWING 
+	FOR REFERENCE ONLY.
+
+4)	SURFACE FINISH: IMMERSION GOLD
+
+5)	SOLDERMASK ON BOTH SIDES OF THE BOARD SHALL 
+	BE LPI, COLOR BLACK.
+
+6)	SILK SCREEN LEGEND TO BE APPLIED PER LAYER 
+	STACKUP USING YELLOW NON-CONDUCTIVE EPOXY INK.
+
+7)	ALL VIAS ARE TENTED ON BOTH SIDES UNLESS 
+	SOLDERMASK OPENED IN GERBER.
+
+8)	VENDOR SHOULD FOLLOW ROHS COMPLIANT PROCESS 
+	AND Pb FREE FOR MANUFACTURING
+
+9)	PCB MATERIAL REQUIREMENTS:
+
+	A.	FLAMMABILITY RATING MUST MEET OR EXCEED 
+		UL94V-0 REQUIREMENTS.
+	B.	Tg 170 C OR EQUIVALENT.
+	C.	EQUIVALENT MATERIAL SHALL BE RoHS COMPLIANT, 
+		HALOGEN FREE AND APPROVED BY OPEN THRUST LAB.
+
+10)	DESIGN GEOMETRY MINIMUM FEATURE SIZES:
+
+	BOARD SIZE				65.050 × 59.500 mm
+	BOARD THICKNESS		1.660 mm
+	TRACE WIDTH			0.200 mm
+	TRACE TO TRACE		0.200 mm
+	MIN. HOLE (PTH)			0.250 mm
+	MIN. HOLE (NPTH)		N/A mm
+	ANNULAR RING			0.150 mm
+	COPPER TO HOLE		0.254 mm
+	COPPER TO EDGE		0.250 mm
+	HOLE TO HOLE			0.254 mm
+
+11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.
+
+12)	CONFIRM SPACE WIDTHS AND SPACINGS.</textvar>
+    <textvar name="GIT_HASH_PCB">7703dc5</textvar>
+    <textvar name="GIT_HASH_SCH">7703dc5</textvar>
+    <textvar name="GIT_URL">https://github.com/foukouda/OPEN_PHASE</textvar>
+    <textvar name="PROJECT_NAME">OPEN_PHASE</textvar>
+    <textvar name="RELEASE_BODY_1.0.0"/>
+    <textvar name="RELEASE_BODY_1.0.1"/>
+    <textvar name="RELEASE_BODY_1.0.2"/>
+    <textvar name="RELEASE_BODY_1.1.0"/>
+    <textvar name="RELEASE_BODY_UNRELEASED">___________________________________
+
+Added
+
+-   3x PBV 1 mOhm shunt + INA241A2 (20 V/V)
+
+-   3x phase voltage divider 40.2k / 10k
+
+-   AD7606C-18 ADC, 6 inputs used
+
+-   +3.3V -&gt; LT8362 6 V -&gt; LT3045-1 +5VA / +2.5VA
+
+-   Self-contained libs and 3D models (lib/)
+
+-   LTspice simulations (Simulation/LTspice)
+
+-   Predicted measurement quality (sim 07, 08)
+
+___________________________________
+
+Changed
+
+-   Renamed to OPEN_PHASE, KiCad 10
+
+-   Sheets named after their function
+
+-   IC3: LTC6655LN-2.5 -&gt; LTC6655-2.5 (pin 6 = VOUT_S)
+
+-   R12: 49.9k -&gt; 24.9k (+2.5VA = 2.500 V)</textvar>
+    <textvar name="RELEASE_DATE">10-Oct-2026</textvar>
+    <textvar name="RELEASE_DATE_NUM">2026-10-10</textvar>
+    <textvar name="RELEASE_TITLE_1.0.0"/>
+    <textvar name="RELEASE_TITLE_1.0.1"/>
+    <textvar name="RELEASE_TITLE_1.0.2"/>
+    <textvar name="RELEASE_TITLE_1.1.0"/>
+    <textvar name="RELEASE_TITLE_UNRELEASED">Version Unreleased</textvar>
+    <textvar name="REVISION">+ (Unreleased)</textvar>
+    <textvar name="SHEET_NAME_1">Cover Page</textvar>
+    <textvar name="SHEET_NAME_10">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_11">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_12">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_13">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_14">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_15">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_16">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_17">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_18">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_19">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_2">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_20">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_21">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_22">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_23">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_24">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_25">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_26">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_27">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_28">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_29">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_3">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_30">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_31">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_32">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_33">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_34">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_35">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_36">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_37">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_38">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_39">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_4">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_40">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_5">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_6">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_7">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_8">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_9">Error: XML File not found</textvar>
+    <textvar name="VARIANT">PRELIMINARY</textvar>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>OPEN_PHASE - PHASETRACKER</title>
+        <company>OPEN THRUST LAB</company>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
+        <source>OPEN_PHASE.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Block Diagram/" tstamps="/82da9dbf-ba38-4d08-ba35-a220fa2963b1/">
+      <title_block>
+        <title>Block Diagram</title>
+        <company>OPEN THRUST LAB</company>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
+        <source>Block Diagram.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Project Architecture/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/">
+      <title_block>
+        <title>Project Architecture</title>
+        <company>OPEN THRUST LAB</company>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
+        <source>Project Architecture.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/Project Architecture/AD7606C-18_ADC/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/">
+      <title_block>
+        <title>AD7606C-18 - ADC</title>
+        <company>OPEN THRUST LAB</company>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
+        <source>AD7606C-18 - ADC.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/">
+      <title_block>
+        <title>INA241 - Phase Sensing</title>
+        <company>OPEN THRUST LAB</company>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
+        <source>INA241 - Phase Sensing.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/">
+      <title_block>
+        <title>Power Supply - Analog Rails</title>
+        <company>OPEN THRUST LAB</company>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
+        <source>Power Supply - Analog Rails.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="7" name="/Project Architecture/Connectors/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/">
+      <title_block>
+        <title>Connectors</title>
+        <company>OPEN THRUST LAB</company>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
+        <source>Connectors.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="8" name="/Project Architecture/Holes, Fiducials/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/b825b9f2-4a7b-44ab-b000-02167519e5f9/">
+      <title_block>
+        <title>Holes - Fiducials</title>
+        <company>OPEN THRUST LAB</company>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
+        <source>Holes - Fiducials.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="9" name="/Power - Sequencing/" tstamps="/5fb05893-0da3-4f58-a52b-cb6d6f4cb80b/">
+      <title_block>
+        <title>Power - Sequencing</title>
+        <company>OPEN THRUST LAB</company>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
+        <source>Power - Sequencing.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="10" name="/Revision History/" tstamps="/6e125bd6-2f99-4e5d-b3ea-4899f4540739/">
+      <title_block>
+        <title>Revision History</title>
+        <company>OPEN THRUST LAB</company>
+        <rev>+ (Unreleased)</rev>
+        <date>Date2</date>
+        <source>Revision History.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C20">
+      <value>100nF</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="AD7606C-18_ADC"/>
+      <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/AD7606C-18_ADC/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>a208d37e-b6fd-4b64-860f-d61fbc9f13d7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C21">
+      <value>100nF</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="AD7606C-18_ADC"/>
+      <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/AD7606C-18_ADC/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>07b3968b-d320-4c04-a522-bb0d8ee11f02</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C35">
+      <value>100nF</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="AD7606C-18_ADC"/>
+      <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/AD7606C-18_ADC/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>d85565cb-8e80-4932-8b94-01c00bb50527</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C36">
+      <value>1uF</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="AD7606C-18_ADC"/>
+      <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/AD7606C-18_ADC/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>a7613661-db37-458c-8e19-12a555f38a78</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C37">
+      <value>1uF</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="AD7606C-18_ADC"/>
+      <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/AD7606C-18_ADC/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>e67db48b-ad51-46c0-bd87-d9ab8cd5f132</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C38">
+      <value>100nF</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="AD7606C-18_ADC"/>
+      <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/AD7606C-18_ADC/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>ec0631f2-39a8-4ab0-8207-837696ebd26c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C39">
+      <value>10µF</value>
+      <footprint>OPEN_PHASE:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C_4T" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="AD7606C-18_ADC"/>
+      <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/AD7606C-18_ADC/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>f1c11945-ad8c-4d3d-9096-0d24f16e22ec</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C41">
+      <value>100nF</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="AD7606C-18_ADC"/>
+      <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/AD7606C-18_ADC/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>1abb5c9d-3e6a-4b80-a1fd-b7404a092f8d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="IC1">
+      <value>AD7606C-18BSTZ</value>
+      <footprint>OPEN_PHASE:QFP50P1200X1200X160-64N</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/ad7606c-18.pdf</datasheet>
+      <description>Analog to Digital Converters - ADC 8-ch DAS w/18-bit, bipola</description>
+      <fields>
+        <field name="Height">1.6</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">AD7606C-18BSTZ</field>
+        <field name="Mouser Part Number">584-AD7606C-18BSTZ</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Analog-Devices/AD7606C-18BSTZ?qs=T94vaHKWudSLf6RPLoNi0g%3D%3D</field>
+        <field name="Arrow Part Number">AD7606C-18BSTZ</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/ad7606c-18bstz/analog-devices.html?utm_currency=USD&amp;region=nac</field>
+        <field name="Footprint">OPEN_PHASE:QFP50P1200X1200X160-64N</field>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/ad7606c-18.pdf</field>
+        <field name="Description">Analog to Digital Converters - ADC 8-ch DAS w/18-bit, bipola</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="AD7606C-18BSTZ" description="Analog to Digital Converters - ADC 8-ch DAS w/18-bit, bipola"/>
+      <property name="Height" value="1.6"/>
+      <property name="Manufacturer_Name" value="Analog Devices"/>
+      <property name="Manufacturer_Part_Number" value="AD7606C-18BSTZ"/>
+      <property name="Mouser Part Number" value="584-AD7606C-18BSTZ"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Analog-Devices/AD7606C-18BSTZ?qs=T94vaHKWudSLf6RPLoNi0g%3D%3D"/>
+      <property name="Arrow Part Number" value="AD7606C-18BSTZ"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/ad7606c-18bstz/analog-devices.html?utm_currency=USD&amp;region=nac"/>
+      <property name="Sheetname" value="AD7606C-18_ADC"/>
+      <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
+      <sheetpath names="/Project Architecture/AD7606C-18_ADC/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>5c28dd7c-d15f-455e-8f30-a4005776e6e2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="64"/>
+            <pin num="17"/>
+            <pin num="63"/>
+            <pin num="18"/>
+            <pin num="62"/>
+            <pin num="19"/>
+            <pin num="61"/>
+            <pin num="20"/>
+            <pin num="60"/>
+            <pin num="21"/>
+            <pin num="59"/>
+            <pin num="22"/>
+            <pin num="58"/>
+            <pin num="23"/>
+            <pin num="57"/>
+            <pin num="24"/>
+            <pin num="56"/>
+            <pin num="25"/>
+            <pin num="55"/>
+            <pin num="26"/>
+            <pin num="54"/>
+            <pin num="27"/>
+            <pin num="53"/>
+            <pin num="28"/>
+            <pin num="52"/>
+            <pin num="29"/>
+            <pin num="51"/>
+            <pin num="30"/>
+            <pin num="50"/>
+            <pin num="31"/>
+            <pin num="49"/>
+            <pin num="32"/>
+            <pin num="48"/>
+            <pin num="47"/>
+            <pin num="46"/>
+            <pin num="45"/>
+            <pin num="44"/>
+            <pin num="43"/>
+            <pin num="42"/>
+            <pin num="41"/>
+            <pin num="40"/>
+            <pin num="39"/>
+            <pin num="38"/>
+            <pin num="37"/>
+            <pin num="36"/>
+            <pin num="35"/>
+            <pin num="34"/>
+            <pin num="33"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C1">
+      <value>0.1µF</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>051b735c-0936-4003-bc9b-59524e2936eb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>0.1µF</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>fd8fd115-78cc-40fd-b260-7fbd7adb5206</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>1µF</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>b5f48eef-46de-43eb-8a49-9803d1e37948</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>1µF</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>aa53037c-2491-4929-bd15-634e7f20e5a1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C17">
+      <value>0.1µF</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>e110d27e-c809-4335-bfd0-16a0dd700bd7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C18">
+      <value>1µF</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>40f96182-b18f-4994-902b-6a9060f9a4fc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C25">
+      <value>1nF C0G</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>36bafbbe-79ce-4191-b419-61374366591d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C29">
+      <value>1nF C0G</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>1f424e18-346a-4f78-8fb2-a2192bd5d850</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C31">
+      <value>180 pF C0G/NP0, 50 V, 0603</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>c432448e-b47b-46b8-a1e3-b63ab54e80dc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C32">
+      <value>180 pF C0G/NP0, 50 V, 0603</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>0003cd57-337d-4e35-975a-fcea27ddd65b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C33">
+      <value>1nF C0G</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>15d1409d-fd8c-4b1c-87a9-f75a5634afe0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C34">
+      <value>180 pF C0G/NP0, 50 V, 0603</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>ec3b9c63-2865-4597-8dc0-220b6e844009</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="IC2">
+      <value>INA241A2IDGKR</value>
+      <footprint>OPEN_PHASE:SOP65P490X110-8N</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/ina241a.pdf?ts=1698648582718&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FINA241A%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-amps-null-44700045336317476_prodfolderdynamic-cpc-pf-go</datasheet>
+      <description>Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP</description>
+      <fields>
+        <field name="Height">1.1</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">INA241A2IDGKR</field>
+        <field name="Mouser Part Number">595-INA241A2IDGKR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA241A2IDGKR?qs=Imq1NPwxi772hZtuitx1Tg%3D%3D</field>
+        <field name="Arrow Part Number">INA241A2IDGKR</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/ina241a2idgkr/texas-instruments?utm_currency=USD&amp;region=nac</field>
+        <field name="Footprint">OPEN_PHASE:SOP65P490X110-8N</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ina241a.pdf?ts=1698648582718&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FINA241A%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-amps-null-44700045336317476_prodfolderdynamic-cpc-pf-go</field>
+        <field name="Description">Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="INA241A2IDGKR" description="Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP"/>
+      <property name="Height" value="1.1"/>
+      <property name="Manufacturer_Name" value="Texas Instruments"/>
+      <property name="Manufacturer_Part_Number" value="INA241A2IDGKR"/>
+      <property name="Mouser Part Number" value="595-INA241A2IDGKR"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA241A2IDGKR?qs=Imq1NPwxi772hZtuitx1Tg%3D%3D"/>
+      <property name="Arrow Part Number" value="INA241A2IDGKR"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/ina241a2idgkr/texas-instruments?utm_currency=USD&amp;region=nac"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>fe1adfdc-974d-48e4-b3c6-78e962e07b6e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="8"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="IC4">
+      <value>INA241A2IDGKR</value>
+      <footprint>OPEN_PHASE:SOP65P490X110-8N</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/ina241a.pdf?ts=1698648582718&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FINA241A%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-amps-null-44700045336317476_prodfolderdynamic-cpc-pf-go</datasheet>
+      <description>Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP</description>
+      <fields>
+        <field name="Height">1.1</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">INA241A2IDGKR</field>
+        <field name="Mouser Part Number">595-INA241A2IDGKR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA241A2IDGKR?qs=Imq1NPwxi772hZtuitx1Tg%3D%3D</field>
+        <field name="Arrow Part Number">INA241A2IDGKR</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/ina241a2idgkr/texas-instruments?utm_currency=USD&amp;region=nac</field>
+        <field name="Footprint">OPEN_PHASE:SOP65P490X110-8N</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ina241a.pdf?ts=1698648582718&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FINA241A%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-amps-null-44700045336317476_prodfolderdynamic-cpc-pf-go</field>
+        <field name="Description">Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="INA241A2IDGKR" description="Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP"/>
+      <property name="Height" value="1.1"/>
+      <property name="Manufacturer_Name" value="Texas Instruments"/>
+      <property name="Manufacturer_Part_Number" value="INA241A2IDGKR"/>
+      <property name="Mouser Part Number" value="595-INA241A2IDGKR"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA241A2IDGKR?qs=Imq1NPwxi772hZtuitx1Tg%3D%3D"/>
+      <property name="Arrow Part Number" value="INA241A2IDGKR"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/ina241a2idgkr/texas-instruments?utm_currency=USD&amp;region=nac"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>daecd80c-40de-4fbb-97d7-49e84b7a367a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="8"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="IC6">
+      <value>INA241A2IDGKR</value>
+      <footprint>OPEN_PHASE:SOP65P490X110-8N</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/ina241a.pdf?ts=1698648582718&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FINA241A%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-amps-null-44700045336317476_prodfolderdynamic-cpc-pf-go</datasheet>
+      <description>Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP</description>
+      <fields>
+        <field name="Height">1.1</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">INA241A2IDGKR</field>
+        <field name="Mouser Part Number">595-INA241A2IDGKR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA241A2IDGKR?qs=Imq1NPwxi772hZtuitx1Tg%3D%3D</field>
+        <field name="Arrow Part Number">INA241A2IDGKR</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/ina241a2idgkr/texas-instruments?utm_currency=USD&amp;region=nac</field>
+        <field name="Footprint">OPEN_PHASE:SOP65P490X110-8N</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ina241a.pdf?ts=1698648582718&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FINA241A%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-amps-null-44700045336317476_prodfolderdynamic-cpc-pf-go</field>
+        <field name="Description">Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="INA241A2IDGKR" description="Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP"/>
+      <property name="Height" value="1.1"/>
+      <property name="Manufacturer_Name" value="Texas Instruments"/>
+      <property name="Manufacturer_Part_Number" value="INA241A2IDGKR"/>
+      <property name="Mouser Part Number" value="595-INA241A2IDGKR"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA241A2IDGKR?qs=Imq1NPwxi772hZtuitx1Tg%3D%3D"/>
+      <property name="Arrow Part Number" value="INA241A2IDGKR"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/ina241a2idgkr/texas-instruments?utm_currency=USD&amp;region=nac"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>07f4132d-cb9a-4d9a-b179-2b5a8bc6f56e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="8"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>PBV-R001-F1-1.0</value>
+      <footprint>OPEN_PHASE:PBVR001F110</footprint>
+      <datasheet>https://cms.nacsemi.com/content/AuthDatasheets/Isabellehuette/PBV.pdf</datasheet>
+      <description>ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %</description>
+      <fields>
+        <field name="Height">20.7</field>
+        <field name="Manufacturer_Name">Isabellenhutte</field>
+        <field name="Manufacturer_Part_Number">PBV-R001-F1-1.0</field>
+        <field name="Mouser Part Number"/>
+        <field name="Mouser Price/Stock"/>
+        <field name="Arrow Part Number"/>
+        <field name="Arrow Price/Stock"/>
+        <field name="Footprint">OPEN_PHASE:PBVR001F110</field>
+        <field name="Datasheet">https://cms.nacsemi.com/content/AuthDatasheets/Isabellehuette/PBV.pdf</field>
+        <field name="Description">ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="PBV-R001-F1-1.0" description="ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %"/>
+      <property name="Height" value="20.7"/>
+      <property name="Manufacturer_Name" value="Isabellenhutte"/>
+      <property name="Manufacturer_Part_Number" value="PBV-R001-F1-1.0"/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>400ad8c0-4d9c-45fd-a3dd-8262e672c255</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>PBV-R001-F1-1.0</value>
+      <footprint>OPEN_PHASE:PBVR001F110</footprint>
+      <datasheet>https://cms.nacsemi.com/content/AuthDatasheets/Isabellehuette/PBV.pdf</datasheet>
+      <description>ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %</description>
+      <fields>
+        <field name="Height">20.7</field>
+        <field name="Manufacturer_Name">Isabellenhutte</field>
+        <field name="Manufacturer_Part_Number">PBV-R001-F1-1.0</field>
+        <field name="Mouser Part Number"/>
+        <field name="Mouser Price/Stock"/>
+        <field name="Arrow Part Number"/>
+        <field name="Arrow Price/Stock"/>
+        <field name="Footprint">OPEN_PHASE:PBVR001F110</field>
+        <field name="Datasheet">https://cms.nacsemi.com/content/AuthDatasheets/Isabellehuette/PBV.pdf</field>
+        <field name="Description">ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="PBV-R001-F1-1.0" description="ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %"/>
+      <property name="Height" value="20.7"/>
+      <property name="Manufacturer_Name" value="Isabellenhutte"/>
+      <property name="Manufacturer_Part_Number" value="PBV-R001-F1-1.0"/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>f7dc78b8-6e22-4a03-bfca-9264a6f47eba</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>PBV-R001-F1-1.0</value>
+      <footprint>OPEN_PHASE:PBVR001F110</footprint>
+      <datasheet>https://cms.nacsemi.com/content/AuthDatasheets/Isabellehuette/PBV.pdf</datasheet>
+      <description>ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %</description>
+      <fields>
+        <field name="Height">20.7</field>
+        <field name="Manufacturer_Name">Isabellenhutte</field>
+        <field name="Manufacturer_Part_Number">PBV-R001-F1-1.0</field>
+        <field name="Mouser Part Number"/>
+        <field name="Mouser Price/Stock"/>
+        <field name="Arrow Part Number"/>
+        <field name="Arrow Price/Stock"/>
+        <field name="Footprint">OPEN_PHASE:PBVR001F110</field>
+        <field name="Datasheet">https://cms.nacsemi.com/content/AuthDatasheets/Isabellehuette/PBV.pdf</field>
+        <field name="Description">ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="PBV-R001-F1-1.0" description="ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %"/>
+      <property name="Height" value="20.7"/>
+      <property name="Manufacturer_Name" value="Isabellenhutte"/>
+      <property name="Manufacturer_Part_Number" value="PBV-R001-F1-1.0"/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>ab5a7e3e-dab8-4de5-884a-c89b18bbcc7f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R13">
+      <value>33Ω</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>85769b3e-2c62-4c06-a7d3-13459ae336d9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R15">
+      <value>9.1kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>86916788-70d6-4312-b767-07ba1a55710c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R16">
+      <value>9.1kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>20ee71e5-ec58-424f-9ce7-bdc925fa4a7a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R17">
+      <value>33Ω</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>f6c757ec-2e60-487b-8f89-a41f4e13d108</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R18">
+      <value>9.1kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>3627d060-59e8-4dc0-a17e-60ea2222ce84</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R19">
+      <value>9.1kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>261337c4-eacb-42d4-802b-eb04a7626035</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R20">
+      <value>9.1kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>2ac30af1-d691-48b6-88a1-a335def8363e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R21">
+      <value>33Ω</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>6379c60e-1bdd-4e34-a687-b03190e373b1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R22">
+      <value>9.1kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>ff0ec5d1-0d6d-42d9-bb97-7232d38b3873</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R27">
+      <value>40.2kΩ</value>
+      <footprint>OPEN_PHASE:R_0805_2012Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>5f44ee5c-e653-46d2-92da-e98374f3c988</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R28">
+      <value>10kΩ</value>
+      <footprint>OPEN_PHASE:R_0805_2012Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>86eb8b00-0720-4173-8ff3-88fe9312031c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R31">
+      <value>40.2kΩ</value>
+      <footprint>OPEN_PHASE:R_0805_2012Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>8a65175e-487c-4fb5-8ba5-50dee6d5112c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R32">
+      <value>10kΩ</value>
+      <footprint>OPEN_PHASE:R_0805_2012Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>389cd22b-e442-4ada-9704-b07f8f6ff024</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R35">
+      <value>40.2kΩ</value>
+      <footprint>OPEN_PHASE:R_0805_2012Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>bf7923d0-7a4a-47dc-9f25-31299e6d4b0b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R36">
+      <value>10kΩ</value>
+      <footprint>OPEN_PHASE:R_0805_2012Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>914d4c13-bedf-4cd2-85ca-4b145411ca74</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Re1">
+      <value>1kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>b7d8b942-6f33-4be9-b8ee-8880db7f3b0a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Re2">
+      <value>1kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>4046500a-a4c4-4468-aac5-acf42674198e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Re3">
+      <value>1kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>61b89881-ddba-4cdb-b2d4-9913b1d09962</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>10µF</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>e5253a65-31b1-426b-a890-203872b163e9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>4.7µF</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>7fad4638-f6b6-4964-ad12-e0707dc43381</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>4.7µF</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>60c031fa-1a5b-42c1-ac73-404a20c36873</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>10µF</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>dfee18a8-0b7f-44da-9fb9-af9cc6648290</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>10µF</value>
+      <footprint>OPEN_PHASE:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>4c92c8d4-7ffc-44d2-ad40-b8ed584feb3a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C14">
+      <value>10µF</value>
+      <footprint>OPEN_PHASE:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C_4T" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>1cc3c415-e376-4b37-b294-e797cc86f421</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C15">
+      <value>10µF</value>
+      <footprint>OPEN_PHASE:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C_4T" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>0f4f97cc-9a65-41e6-9c0c-a69f1a71bdc2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C19">
+      <value>10µF</value>
+      <footprint>OPEN_PHASE:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>11747799-4470-4b7d-ad49-85894d05d502</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C22">
+      <value>4.7µF</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>b8853090-63d5-4fb6-8ab0-f087d1005e39</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C23">
+      <value>100nF</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>6409fe82-6c1a-4d90-acf9-4022c07507c8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C24">
+      <value>10 nF X7R 0603</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>8a103d29-ddbb-404c-a6ad-b19737487247</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C26">
+      <value>1 nF X7R 0603</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>4fff951b-bb05-462e-abf5-0c4853ac4307</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C27">
+      <value>1µF</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>8619ffcd-5d83-4ae5-b2be-c86c46e2e838</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C28">
+      <value>4,7 pF C0G 0603</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>42aed2b6-e537-476f-9f0a-eb4f9a496d3f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C30">
+      <value>22 µF X7R 1206</value>
+      <footprint>OPEN_PHASE:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>a51fd6f1-8cf8-40d5-8a52-d54bc27e25ec</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D2">
+      <value>PMEG2020EH</value>
+      <footprint>OPEN_PHASE:D_SOD-123F</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/PMEG2020EH_EJ.pdf</datasheet>
+      <description>20V, 2A very low Vf MEGA Schottky barrier rectifier, SOD-123F</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:D_SOD-123F</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/PMEG2020EH_EJ.pdf</field>
+        <field name="Description">20V, 2A very low Vf MEGA Schottky barrier rectifier, SOD-123F</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="PMEG2020EH" description="20V, 2A very low Vf MEGA Schottky barrier rectifier, SOD-123F"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="forward voltage diode"/>
+      <property name="ki_fp_filters" value="D*SOD?123F*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>9c98ef77-a07f-4cec-bd71-8f216cdfc4f7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="IC3">
+      <value>LTC6655BHMS8-2.5#PBF</value>
+      <footprint>OPEN_PHASE:SOP65P490X110-8N</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/LTC6655-6655LN.pdf</datasheet>
+      <description>0.25PPM N, L DRIFT PREC REFS</description>
+      <fields>
+        <field name="Height">1.1</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">LTC6655BHMS8-2.5#PBF</field>
+        <field name="Mouser Part Number"/>
+        <field name="Mouser Price/Stock"/>
+        <field name="Arrow Part Number">LTC6655BHMS8-2.5#PBF</field>
+        <field name="Arrow Price/Stock"/>
+        <field name="Footprint">OPEN_PHASE:SOP65P490X110-8N</field>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/LTC6655-6655LN.pdf</field>
+        <field name="Description">0.25PPM N, L DRIFT PREC REFS</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="LTC6655BHMS8-2.5#PBF" description="0.25PPM N, L DRIFT PREC REFS"/>
+      <property name="Height" value="1.1"/>
+      <property name="Manufacturer_Name" value="Analog Devices"/>
+      <property name="Manufacturer_Part_Number" value="LTC6655BHMS8-2.5#PBF"/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value="LTC6655BHMS8-2.5#PBF"/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>92a771b9-416d-42c7-8dde-aa86d75ab7db</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="8"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="IC5">
+      <value>LT8362EMSE#PBF</value>
+      <footprint>OPEN_PHASE:LT8362EMSEPBF</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/lt8362.pdf</datasheet>
+      <description>Switching Voltage Regulators L IQ Boost/SEPIC/Inv Conv w/ 2A, 60V Swi</description>
+      <fields>
+        <field name="Height">1.1</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">LT8362EMSE#PBF</field>
+        <field name="Mouser Part Number">584-LT8362EMSEPBF</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT8362EMSEPBF?qs=BZBei1rCqCDTsKUgeznosg%3D%3D</field>
+        <field name="Arrow Part Number">LT8362EMSE#PBF</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/lt8362emsepbf/analog-devices?utm_currency=USD&amp;region=nac</field>
+        <field name="Footprint">OPEN_PHASE:LT8362EMSEPBF</field>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/lt8362.pdf</field>
+        <field name="Description">Switching Voltage Regulators L IQ Boost/SEPIC/Inv Conv w/ 2A, 60V Swi</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="LT8362EMSE#PBF" description="Switching Voltage Regulators L IQ Boost/SEPIC/Inv Conv w/ 2A, 60V Swi"/>
+      <property name="Height" value="1.1"/>
+      <property name="Manufacturer_Name" value="Analog Devices"/>
+      <property name="Manufacturer_Part_Number" value="LT8362EMSE#PBF"/>
+      <property name="Mouser Part Number" value="584-LT8362EMSEPBF"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT8362EMSEPBF?qs=BZBei1rCqCDTsKUgeznosg%3D%3D"/>
+      <property name="Arrow Part Number" value="LT8362EMSE#PBF"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/lt8362emsepbf/analog-devices?utm_currency=USD&amp;region=nac"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>20a5d4e4-cf1c-4b8e-898f-4cfd9649ce75</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="6"/>
+            <pin num="12"/>
+            <pin num="3"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="17"/>
+            <pin num="14"/>
+            <pin num="16"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="7"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="IC7">
+      <value>LTC6655BHMS8-5#PBF</value>
+      <footprint>OPEN_PHASE:SOP65P490X110-8N</footprint>
+      <datasheet>http://www.analog.com/media/en/technical-documentation/data-sheets/6655ff.pdf</datasheet>
+      <description>Voltage References Ultra Low Noise, 5V Precision Voltage Reference</description>
+      <fields>
+        <field name="Height">1.1</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">LTC6655BHMS8-5#PBF</field>
+        <field name="Mouser Part Number">584-C6655BHMS8-5PBF</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Analog-Devices/LTC6655BHMS8-5PBF?qs=hVkxg5c3xu%2F3lusIgiSiiA%3D%3D</field>
+        <field name="Arrow Part Number">LTC6655BHMS8-5#PBF</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/ltc6655bhms8-5pbf/analog-devices?region=europe</field>
+        <field name="Footprint">OPEN_PHASE:SOP65P490X110-8N</field>
+        <field name="Datasheet">http://www.analog.com/media/en/technical-documentation/data-sheets/6655ff.pdf</field>
+        <field name="Description">Voltage References Ultra Low Noise, 5V Precision Voltage Reference</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="LTC6655BHMS8-5#PBF" description="Voltage References Ultra Low Noise, 5V Precision Voltage Reference"/>
+      <property name="Height" value="1.1"/>
+      <property name="Manufacturer_Name" value="Analog Devices"/>
+      <property name="Manufacturer_Part_Number" value="LTC6655BHMS8-5#PBF"/>
+      <property name="Mouser Part Number" value="584-C6655BHMS8-5PBF"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Analog-Devices/LTC6655BHMS8-5PBF?qs=hVkxg5c3xu%2F3lusIgiSiiA%3D%3D"/>
+      <property name="Arrow Part Number" value="LTC6655BHMS8-5#PBF"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/ltc6655bhms8-5pbf/analog-devices?region=europe"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>6adb11f7-ce55-42c3-8019-c77649bd4955</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="8"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="IC8">
+      <value>LT3045EDD-1#TRPBF</value>
+      <footprint>OPEN_PHASE:SON45P300X300X80-13N-D</footprint>
+      <datasheet>http://www.linear.com/docs/57863</datasheet>
+      <description>LDO Voltage Regulators 20V, 500mA, Ultralow N, Ultrahigh PSRR L</description>
+      <fields>
+        <field name="Height">0.8</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">LT3045EDD-1#TRPBF</field>
+        <field name="Mouser Part Number">584-LT3045EDD-1TRPBF</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT3045EDD-1TRPBF?qs=5aG0NVq1C4xAeOApH5waXQ%3D%3D</field>
+        <field name="Arrow Part Number">LT3045EDD-1#TRPBF</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/lt3045edd-1trpbf/analog-devices.html?utm_currency=USD&amp;region=nac</field>
+        <field name="Footprint">OPEN_PHASE:SON45P300X300X80-13N-D</field>
+        <field name="Datasheet">http://www.linear.com/docs/57863</field>
+        <field name="Description">LDO Voltage Regulators 20V, 500mA, Ultralow N, Ultrahigh PSRR L</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="LT3045EDD-1#TRPBF" description="LDO Voltage Regulators 20V, 500mA, Ultralow N, Ultrahigh PSRR L"/>
+      <property name="Height" value="0.8"/>
+      <property name="Manufacturer_Name" value="Analog Devices"/>
+      <property name="Manufacturer_Part_Number" value="LT3045EDD-1#TRPBF"/>
+      <property name="Mouser Part Number" value="584-LT3045EDD-1TRPBF"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT3045EDD-1TRPBF?qs=5aG0NVq1C4xAeOApH5waXQ%3D%3D"/>
+      <property name="Arrow Part Number" value="LT3045EDD-1#TRPBF"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/lt3045edd-1trpbf/analog-devices.html?utm_currency=USD&amp;region=nac"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>201d6fff-93de-49d2-82a3-8481a01185af</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="9"/>
+            <pin num="13"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="IC9">
+      <value>LT3045EDD-1#TRPBF</value>
+      <footprint>OPEN_PHASE:SON45P300X300X80-13N-D</footprint>
+      <datasheet>http://www.linear.com/docs/57863</datasheet>
+      <description>LDO Voltage Regulators 20V, 500mA, Ultralow N, Ultrahigh PSRR L</description>
+      <fields>
+        <field name="Height">0.8</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">LT3045EDD-1#TRPBF</field>
+        <field name="Mouser Part Number">584-LT3045EDD-1TRPBF</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT3045EDD-1TRPBF?qs=5aG0NVq1C4xAeOApH5waXQ%3D%3D</field>
+        <field name="Arrow Part Number">LT3045EDD-1#TRPBF</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/lt3045edd-1trpbf/analog-devices.html?utm_currency=USD&amp;region=nac</field>
+        <field name="Footprint">OPEN_PHASE:SON45P300X300X80-13N-D</field>
+        <field name="Datasheet">http://www.linear.com/docs/57863</field>
+        <field name="Description">LDO Voltage Regulators 20V, 500mA, Ultralow N, Ultrahigh PSRR L</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="LT3045EDD-1#TRPBF" description="LDO Voltage Regulators 20V, 500mA, Ultralow N, Ultrahigh PSRR L"/>
+      <property name="Height" value="0.8"/>
+      <property name="Manufacturer_Name" value="Analog Devices"/>
+      <property name="Manufacturer_Part_Number" value="LT3045EDD-1#TRPBF"/>
+      <property name="Mouser Part Number" value="584-LT3045EDD-1TRPBF"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT3045EDD-1TRPBF?qs=5aG0NVq1C4xAeOApH5waXQ%3D%3D"/>
+      <property name="Arrow Part Number" value="LT3045EDD-1#TRPBF"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/lt3045edd-1trpbf/analog-devices.html?utm_currency=USD&amp;region=nac"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>f18b1251-9492-4ec1-b6e9-254af92cc3ba</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="9"/>
+            <pin num="13"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L1">
+      <value>744373965022</value>
+      <footprint>OPEN_PHASE:INDPM135125X620N</footprint>
+      <datasheet>https://www.we-online.com/catalog/datasheet/744373965022.pdf</datasheet>
+      <description>WE-LHMI SMT Power Inductor Size 1365; L = 2,2 H ; IR = 17 A; Isat = 41,1 A; RDC = 4,2 m</description>
+      <fields>
+        <field name="Height">6.2</field>
+        <field name="Manufacturer_Name">Wurth Elektronik</field>
+        <field name="Manufacturer_Part_Number">744373965022</field>
+        <field name="Mouser Part Number">710-744373965022</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/744373965022?qs=BZBei1rCqCC1TQlqJ2wRyg%3D%3D</field>
+        <field name="Arrow Part Number"/>
+        <field name="Arrow Price/Stock"/>
+        <field name="Footprint">OPEN_PHASE:INDPM135125X620N</field>
+        <field name="Datasheet">https://www.we-online.com/catalog/datasheet/744373965022.pdf</field>
+        <field name="Description">WE-LHMI SMT Power Inductor Size 1365; L = 2,2 H ; IR = 17 A; Isat = 41,1 A; RDC = 4,2 m</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="744373965022" description="WE-LHMI SMT Power Inductor Size 1365; L = 2,2 H ; IR = 17 A; Isat = 41,1 A; RDC = 4,2 m"/>
+      <property name="Height" value="6.2"/>
+      <property name="Manufacturer_Name" value="Wurth Elektronik"/>
+      <property name="Manufacturer_Part_Number" value="744373965022"/>
+      <property name="Mouser Part Number" value="710-744373965022"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/744373965022?qs=BZBei1rCqCC1TQlqJ2wRyg%3D%3D"/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>e4ec534d-c3f0-42b4-897b-4d301a9a8ae2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>20kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>450d0ffb-b49a-4959-b917-e6a66a2cec40</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>36,5kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>f11a858e-b1e3-46d4-b330-15ff90ab141d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>1MΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>b22fbd91-ac9d-41f2-bc95-0a6c3066e245</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>365kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>a86a4397-7e27-412b-ab01-e303c1684ee0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>1kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>601139f1-87ee-470b-a7a2-6804fef1d69b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>1kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>b46e0657-a15a-4d7a-b3a0-e97528c0c37d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R12">
+      <value>24.9kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>ef2b788d-23a4-4488-afd6-c751124ec8b9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R14">
+      <value>49.9kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>549c39b1-04c2-49f3-a63d-b798b49ec2b4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>MR60PW</value>
+      <footprint>OPEN_PHASE:MR60PW</footprint>
+      <datasheet>https://www.tme.eu/Document/fd4b3517709a946d7b01cf4810656931/MR60PW-M.pdf</datasheet>
+      <description>Connector: DC supply; socket; MR60; male; PIN: 3; on PCBs; THT; black</description>
+      <fields>
+        <field name="Height">8.2</field>
+        <field name="Manufacturer_Name">Amass</field>
+        <field name="Manufacturer_Part_Number">MR60PW</field>
+        <field name="Mouser Part Number"/>
+        <field name="Mouser Price/Stock"/>
+        <field name="Arrow Part Number"/>
+        <field name="Arrow Price/Stock"/>
+        <field name="Footprint">OPEN_PHASE:MR60PW</field>
+        <field name="Datasheet">https://www.tme.eu/Document/fd4b3517709a946d7b01cf4810656931/MR60PW-M.pdf</field>
+        <field name="Description">Connector: DC supply; socket; MR60; male; PIN: 3; on PCBs; THT; black</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="MR60PW" description="Connector: DC supply; socket; MR60; male; PIN: 3; on PCBs; THT; black"/>
+      <property name="Height" value="8.2"/>
+      <property name="Manufacturer_Name" value="Amass"/>
+      <property name="Manufacturer_Part_Number" value="MR60PW"/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Sheetname" value="Connectors"/>
+      <property name="Sheetfile" value="Connectors.kicad_sch"/>
+      <sheetpath names="/Project Architecture/Connectors/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/"/>
+      <tstamps>3a45c7f9-bb39-40c0-80b6-48f687d2ab0e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>MR60PW</value>
+      <footprint>OPEN_PHASE:MR60PW</footprint>
+      <datasheet>https://www.tme.eu/Document/fd4b3517709a946d7b01cf4810656931/MR60PW-M.pdf</datasheet>
+      <description>Connector: DC supply; socket; MR60; male; PIN: 3; on PCBs; THT; black</description>
+      <fields>
+        <field name="Height">8.2</field>
+        <field name="Manufacturer_Name">Amass</field>
+        <field name="Manufacturer_Part_Number">MR60PW</field>
+        <field name="Mouser Part Number"/>
+        <field name="Mouser Price/Stock"/>
+        <field name="Arrow Part Number"/>
+        <field name="Arrow Price/Stock"/>
+        <field name="Footprint">OPEN_PHASE:MR60PW</field>
+        <field name="Datasheet">https://www.tme.eu/Document/fd4b3517709a946d7b01cf4810656931/MR60PW-M.pdf</field>
+        <field name="Description">Connector: DC supply; socket; MR60; male; PIN: 3; on PCBs; THT; black</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="MR60PW" description="Connector: DC supply; socket; MR60; male; PIN: 3; on PCBs; THT; black"/>
+      <property name="Height" value="8.2"/>
+      <property name="Manufacturer_Name" value="Amass"/>
+      <property name="Manufacturer_Part_Number" value="MR60PW"/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Sheetname" value="Connectors"/>
+      <property name="Sheetfile" value="Connectors.kicad_sch"/>
+      <sheetpath names="/Project Architecture/Connectors/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/"/>
+      <tstamps>e82cd9ed-973c-441b-b6ab-7d8935584394</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J5">
+      <value>XT60PW-M</value>
+      <footprint>OPEN_PHASE:XT60PWM</footprint>
+      <datasheet>https://www.tme.eu/Document/b13629717d44ae038681dba08d18c0b6/XT60PW-M.pdf</datasheet>
+      <description>Connector: DC supply; socket; XT60; male; PIN: 2; on PCBs; THT; 30A</description>
+      <fields>
+        <field name="Height">8.4</field>
+        <field name="Manufacturer_Name">Amass</field>
+        <field name="Manufacturer_Part_Number">XT60PW-M</field>
+        <field name="Mouser Part Number"/>
+        <field name="Mouser Price/Stock"/>
+        <field name="Arrow Part Number"/>
+        <field name="Arrow Price/Stock"/>
+        <field name="Footprint">OPEN_PHASE:XT60PWM</field>
+        <field name="Datasheet">https://www.tme.eu/Document/b13629717d44ae038681dba08d18c0b6/XT60PW-M.pdf</field>
+        <field name="Description">Connector: DC supply; socket; XT60; male; PIN: 2; on PCBs; THT; 30A</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="XT60PW-M" description="Connector: DC supply; socket; XT60; male; PIN: 2; on PCBs; THT; 30A"/>
+      <property name="Height" value="8.4"/>
+      <property name="Manufacturer_Name" value="Amass"/>
+      <property name="Manufacturer_Part_Number" value="XT60PW-M"/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Sheetname" value="Connectors"/>
+      <property name="Sheetfile" value="Connectors.kicad_sch"/>
+      <sheetpath names="/Project Architecture/Connectors/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/"/>
+      <tstamps>94790a6d-4c6e-4f1b-8601-dbd0f1a9b6a0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J6">
+      <value>XT60PW-M</value>
+      <footprint>OPEN_PHASE:XT60PWM</footprint>
+      <datasheet>https://www.tme.eu/Document/b13629717d44ae038681dba08d18c0b6/XT60PW-M.pdf</datasheet>
+      <description>Connector: DC supply; socket; XT60; male; PIN: 2; on PCBs; THT; 30A</description>
+      <fields>
+        <field name="Height">8.4</field>
+        <field name="Manufacturer_Name">Amass</field>
+        <field name="Manufacturer_Part_Number">XT60PW-M</field>
+        <field name="Mouser Part Number"/>
+        <field name="Mouser Price/Stock"/>
+        <field name="Arrow Part Number"/>
+        <field name="Arrow Price/Stock"/>
+        <field name="Footprint">OPEN_PHASE:XT60PWM</field>
+        <field name="Datasheet">https://www.tme.eu/Document/b13629717d44ae038681dba08d18c0b6/XT60PW-M.pdf</field>
+        <field name="Description">Connector: DC supply; socket; XT60; male; PIN: 2; on PCBs; THT; 30A</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="XT60PW-M" description="Connector: DC supply; socket; XT60; male; PIN: 2; on PCBs; THT; 30A"/>
+      <property name="Height" value="8.4"/>
+      <property name="Manufacturer_Name" value="Amass"/>
+      <property name="Manufacturer_Part_Number" value="XT60PW-M"/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Sheetname" value="Connectors"/>
+      <property name="Sheetfile" value="Connectors.kicad_sch"/>
+      <sheetpath names="/Project Architecture/Connectors/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/"/>
+      <tstamps>14d824c2-4611-4d49-9247-f356ce4fd4b6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole_Pad</value>
+      <footprint>OPEN_PHASE:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <description>Mounting Hole with connection</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:MountingHole_3.2mm_M3_Pad_Via</field>
+        <field name="Datasheet"/>
+        <field name="Description">Mounting Hole with connection</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value="Holes, Fiducials"/>
+      <property name="Sheetfile" value="Holes - Fiducials.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*Pad*"/>
+      <sheetpath names="/Project Architecture/Holes, Fiducials/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/b825b9f2-4a7b-44ab-b000-02167519e5f9/"/>
+      <tstamps>91cc39bd-d20d-4b90-8cc9-89cb90bec5f3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole_Pad</value>
+      <footprint>OPEN_PHASE:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <description>Mounting Hole with connection</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:MountingHole_3.2mm_M3_Pad_Via</field>
+        <field name="Datasheet"/>
+        <field name="Description">Mounting Hole with connection</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value="Holes, Fiducials"/>
+      <property name="Sheetfile" value="Holes - Fiducials.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*Pad*"/>
+      <sheetpath names="/Project Architecture/Holes, Fiducials/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/b825b9f2-4a7b-44ab-b000-02167519e5f9/"/>
+      <tstamps>d6d949ea-ff1f-43bc-8e8d-6e950c0164da</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole_Pad</value>
+      <footprint>OPEN_PHASE:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <description>Mounting Hole with connection</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:MountingHole_3.2mm_M3_Pad_Via</field>
+        <field name="Datasheet"/>
+        <field name="Description">Mounting Hole with connection</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value="Holes, Fiducials"/>
+      <property name="Sheetfile" value="Holes - Fiducials.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*Pad*"/>
+      <sheetpath names="/Project Architecture/Holes, Fiducials/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/b825b9f2-4a7b-44ab-b000-02167519e5f9/"/>
+      <tstamps>e44d5142-f3e1-438b-9262-cef2badf6bff</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole_Pad</value>
+      <footprint>OPEN_PHASE:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <description>Mounting Hole with connection</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:MountingHole_3.2mm_M3_Pad_Via</field>
+        <field name="Datasheet"/>
+        <field name="Description">Mounting Hole with connection</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value="Holes, Fiducials"/>
+      <property name="Sheetfile" value="Holes - Fiducials.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*Pad*"/>
+      <sheetpath names="/Project Architecture/Holes, Fiducials/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/b825b9f2-4a7b-44ab-b000-02167519e5f9/"/>
+      <tstamps>d48e21a0-3772-4bc3-8394-bfcdfc154564</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="OPEN_PHASE" part="744373965022">
+      <description>WE-LHMI SMT Power Inductor Size 1365; L = 2,2 H ; IR = 17 A; Isat = 41,1 A; RDC = 4,2 m</description>
+      <docs>https://www.we-online.com/catalog/datasheet/744373965022.pdf</docs>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">744373965022</field>
+        <field name="Footprint">OPEN_PHASE:INDPM135125X620N</field>
+        <field name="Datasheet">https://www.we-online.com/catalog/datasheet/744373965022.pdf</field>
+        <field name="Description">WE-LHMI SMT Power Inductor Size 1365; L = 2,2 H ; IR = 17 A; Isat = 41,1 A; RDC = 4,2 m</field>
+        <field name="Height">6.2</field>
+        <field name="Manufacturer_Name">Wurth Elektronik</field>
+        <field name="Manufacturer_Part_Number">744373965022</field>
+        <field name="Mouser Part Number">710-744373965022</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/744373965022?qs=BZBei1rCqCC1TQlqJ2wRyg%3D%3D</field>
+        <field name="Arrow Part Number"/>
+        <field name="Arrow Price/Stock"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OPEN_PHASE" part="AD7606C-18BSTZ">
+      <description>Analog to Digital Converters - ADC 8-ch DAS w/18-bit, bipola</description>
+      <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/ad7606c-18.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">AD7606C-18BSTZ</field>
+        <field name="Footprint">OPEN_PHASE:QFP50P1200X1200X160-64N</field>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/ad7606c-18.pdf</field>
+        <field name="Description">Analog to Digital Converters - ADC 8-ch DAS w/18-bit, bipola</field>
+        <field name="Height">1.6</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">AD7606C-18BSTZ</field>
+        <field name="Mouser Part Number">584-AD7606C-18BSTZ</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Analog-Devices/AD7606C-18BSTZ?qs=T94vaHKWudSLf6RPLoNi0g%3D%3D</field>
+        <field name="Arrow Part Number">AD7606C-18BSTZ</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/ad7606c-18bstz/analog-devices.html?utm_currency=USD&amp;region=nac</field>
+      </fields>
+      <pins>
+        <pin num="1" name="AVCC_1" type="passive"/>
+        <pin num="2" name="AGND_1" type="passive"/>
+        <pin num="3" name="OS_0" type="passive"/>
+        <pin num="4" name="OS_1" type="passive"/>
+        <pin num="5" name="OS_2" type="passive"/>
+        <pin num="6" name="~{PAR}/SER_SEL" type="passive"/>
+        <pin num="7" name="~{STBY}" type="passive"/>
+        <pin num="8" name="RANGE" type="passive"/>
+        <pin num="9" name="CONVST" type="passive"/>
+        <pin num="10" name="~{WR}" type="passive"/>
+        <pin num="11" name="RESET" type="passive"/>
+        <pin num="12" name="~{RD}/SCLK" type="passive"/>
+        <pin num="13" name="~{CS}" type="passive"/>
+        <pin num="14" name="BUSY" type="passive"/>
+        <pin num="15" name="FRSTDATA" type="passive"/>
+        <pin num="16" name="DB2" type="passive"/>
+        <pin num="17" name="DB3" type="passive"/>
+        <pin num="18" name="DB4" type="passive"/>
+        <pin num="19" name="DB5/DOUTE" type="passive"/>
+        <pin num="20" name="DB6/DOUTF" type="passive"/>
+        <pin num="21" name="DB7/DOUTG" type="passive"/>
+        <pin num="22" name="DB8/DOUTH" type="passive"/>
+        <pin num="23" name="VDRIVE" type="passive"/>
+        <pin num="24" name="DB9/DOUTA" type="passive"/>
+        <pin num="25" name="DB10/DOUTB" type="passive"/>
+        <pin num="26" name="AGND_2" type="passive"/>
+        <pin num="27" name="DB11/DOUTC" type="passive"/>
+        <pin num="28" name="DB12/DOUTD" type="passive"/>
+        <pin num="29" name="DB13/SDI" type="passive"/>
+        <pin num="30" name="DB14" type="passive"/>
+        <pin num="31" name="DB15" type="passive"/>
+        <pin num="32" name="DB16/DB0" type="passive"/>
+        <pin num="33" name="DB17/DB1" type="passive"/>
+        <pin num="34" name="REF_SELECT" type="passive"/>
+        <pin num="35" name="AGND_3" type="passive"/>
+        <pin num="36" name="REGCAP_1" type="passive"/>
+        <pin num="37" name="AVCC_2" type="passive"/>
+        <pin num="38" name="AVCC_3" type="passive"/>
+        <pin num="39" name="REGCAP_2" type="passive"/>
+        <pin num="40" name="AGND_4" type="passive"/>
+        <pin num="41" name="AGND_5" type="passive"/>
+        <pin num="42" name="REFIN/REFOUT" type="passive"/>
+        <pin num="43" name="REFGND_1" type="passive"/>
+        <pin num="44" name="REFCAPA" type="passive"/>
+        <pin num="45" name="REFCAPB" type="passive"/>
+        <pin num="46" name="REFGND_2" type="passive"/>
+        <pin num="47" name="AGND_6" type="passive"/>
+        <pin num="48" name="AVCC_4" type="passive"/>
+        <pin num="49" name="V1+" type="passive"/>
+        <pin num="50" name="V1-" type="passive"/>
+        <pin num="51" name="V2+" type="passive"/>
+        <pin num="52" name="V2-" type="passive"/>
+        <pin num="53" name="V3+" type="passive"/>
+        <pin num="54" name="V3-" type="passive"/>
+        <pin num="55" name="V4+" type="passive"/>
+        <pin num="56" name="V4-" type="passive"/>
+        <pin num="57" name="V5+" type="passive"/>
+        <pin num="58" name="V5-" type="passive"/>
+        <pin num="59" name="V6+" type="passive"/>
+        <pin num="60" name="V6-" type="passive"/>
+        <pin num="61" name="V7+" type="passive"/>
+        <pin num="62" name="V7-" type="passive"/>
+        <pin num="63" name="V8+" type="passive"/>
+        <pin num="64" name="V8-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OPEN_PHASE" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OPEN_PHASE" part="C_4T">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C1</field>
+        <field name="Value">C</field>
+        <field name="Footprint">OPEN_PHASE:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+        <pin num="4" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OPEN_PHASE" part="INA241A2IDGKR">
+      <description>Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP</description>
+      <docs>https://www.ti.com/lit/ds/symlink/ina241a.pdf?ts=1698648582718&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FINA241A%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-amps-null-44700045336317476_prodfolderdynamic-cpc-pf-go</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">INA241A2IDGKR</field>
+        <field name="Footprint">OPEN_PHASE:SOP65P490X110-8N</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ina241a.pdf?ts=1698648582718&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FINA241A%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-amps-null-44700045336317476_prodfolderdynamic-cpc-pf-go</field>
+        <field name="Description">Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP</field>
+        <field name="Height">1.1</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">INA241A2IDGKR</field>
+        <field name="Mouser Part Number">595-INA241A2IDGKR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA241A2IDGKR?qs=Imq1NPwxi772hZtuitx1Tg%3D%3D</field>
+        <field name="Arrow Part Number">INA241A2IDGKR</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/ina241a2idgkr/texas-instruments?utm_currency=USD&amp;region=nac</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN-" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="REF2" type="passive"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="OUT" type="passive"/>
+        <pin num="6" name="VS" type="passive"/>
+        <pin num="7" name="REF1" type="passive"/>
+        <pin num="8" name="IN+" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OPEN_PHASE" part="LT3045EDD-1#TRPBF">
+      <description>LDO Voltage Regulators 20V, 500mA, Ultralow N, Ultrahigh PSRR L</description>
+      <docs>http://www.linear.com/docs/57863</docs>
+      <fields>
+        <field name="Reference">IC2</field>
+        <field name="Value">LT3045EDD-1#TRPBF</field>
+        <field name="Footprint">OPEN_PHASE:SON45P300X300X80-13N-D</field>
+        <field name="Datasheet">http://www.linear.com/docs/57863</field>
+        <field name="Description">LDO Voltage Regulators 20V, 500mA, Ultralow N, Ultrahigh PSRR L</field>
+        <field name="Height">0.8</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">LT3045EDD-1#TRPBF</field>
+        <field name="Mouser Part Number">584-LT3045EDD-1TRPBF</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT3045EDD-1TRPBF?qs=5aG0NVq1C4xAeOApH5waXQ%3D%3D</field>
+        <field name="Arrow Part Number">LT3045EDD-1#TRPBF</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/lt3045edd-1trpbf/analog-devices.html?utm_currency=USD&amp;region=nac</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="passive"/>
+        <pin num="2" name="IN_2" type="passive"/>
+        <pin num="3" name="VIOC" type="passive"/>
+        <pin num="4" name="EN/UV" type="passive"/>
+        <pin num="5" name="PG" type="passive"/>
+        <pin num="6" name="ILIM" type="passive"/>
+        <pin num="7" name="PGFB" type="passive"/>
+        <pin num="8" name="SET" type="passive"/>
+        <pin num="9" name="GND_1" type="passive"/>
+        <pin num="10" name="OUTS" type="passive"/>
+        <pin num="11" name="OUT_2" type="passive"/>
+        <pin num="12" name="OUT" type="passive"/>
+        <pin num="13" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OPEN_PHASE" part="LT8362EMSE#PBF">
+      <description>Switching Voltage Regulators L IQ Boost/SEPIC/Inv Conv w/ 2A, 60V Swi</description>
+      <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/lt8362.pdf</docs>
+      <fields>
+        <field name="Reference">IC1</field>
+        <field name="Value">LT8362EMSE#PBF</field>
+        <field name="Footprint">OPEN_PHASE:LT8362EMSEPBF</field>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/lt8362.pdf</field>
+        <field name="Description">Switching Voltage Regulators L IQ Boost/SEPIC/Inv Conv w/ 2A, 60V Swi</field>
+        <field name="Height">1.1</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">LT8362EMSE#PBF</field>
+        <field name="Mouser Part Number">584-LT8362EMSEPBF</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT8362EMSEPBF?qs=BZBei1rCqCDTsKUgeznosg%3D%3D</field>
+        <field name="Arrow Part Number">LT8362EMSE#PBF</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/lt8362emsepbf/analog-devices?utm_currency=USD&amp;region=nac</field>
+      </fields>
+      <pins>
+        <pin num="1" name="EN/UVLO" type="passive"/>
+        <pin num="3" name="VIN" type="passive"/>
+        <pin num="5" name="INTVCC" type="passive"/>
+        <pin num="6" name="NC" type="no_connect"/>
+        <pin num="7" name="BIAS" type="passive"/>
+        <pin num="8" name="VC" type="passive"/>
+        <pin num="9" name="FBX" type="passive"/>
+        <pin num="10" name="RT" type="passive"/>
+        <pin num="11" name="SS" type="passive"/>
+        <pin num="12" name="SYNC/MODE" type="passive"/>
+        <pin num="14" name="SW2" type="passive"/>
+        <pin num="16" name="SW1" type="passive"/>
+        <pin num="17" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OPEN_PHASE" part="LTC6655BHMS8-2.5#PBF">
+      <description>0.25PPM N, L DRIFT PREC REFS</description>
+      <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/LTC6655-6655LN.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">LTC6655BHMS8-2.5#PBF</field>
+        <field name="Footprint">OPEN_PHASE:SOP65P490X110-8N</field>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/LTC6655-6655LN.pdf</field>
+        <field name="Description">0.25PPM N, L DRIFT PREC REFS</field>
+        <field name="Height">1.1</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">LTC6655BHMS8-2.5#PBF</field>
+        <field name="Mouser Part Number"/>
+        <field name="Mouser Price/Stock"/>
+        <field name="Arrow Part Number">LTC6655BHMS8-2.5#PBF</field>
+        <field name="Arrow Price/Stock"/>
+      </fields>
+      <pins>
+        <pin num="1" name="~{SHDN}" type="passive"/>
+        <pin num="2" name="VIN" type="passive"/>
+        <pin num="3" name="GND_1" type="passive"/>
+        <pin num="4" name="GND_2" type="passive"/>
+        <pin num="5" name="GND_3" type="passive"/>
+        <pin num="6" name="VOUT_S" type="passive"/>
+        <pin num="7" name="VOUT_F" type="passive"/>
+        <pin num="8" name="GND_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OPEN_PHASE" part="LTC6655BHMS8-5#PBF">
+      <description>Voltage References Ultra Low Noise, 5V Precision Voltage Reference</description>
+      <docs>http://www.analog.com/media/en/technical-documentation/data-sheets/6655ff.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">LTC6655BHMS8-5#PBF</field>
+        <field name="Footprint">OPEN_PHASE:SOP65P490X110-8N</field>
+        <field name="Datasheet">http://www.analog.com/media/en/technical-documentation/data-sheets/6655ff.pdf</field>
+        <field name="Description">Voltage References Ultra Low Noise, 5V Precision Voltage Reference</field>
+        <field name="Height">1.1</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">LTC6655BHMS8-5#PBF</field>
+        <field name="Mouser Part Number">584-C6655BHMS8-5PBF</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Analog-Devices/LTC6655BHMS8-5PBF?qs=hVkxg5c3xu%2F3lusIgiSiiA%3D%3D</field>
+        <field name="Arrow Part Number">LTC6655BHMS8-5#PBF</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/ltc6655bhms8-5pbf/analog-devices?region=europe</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~{SHDN}" type="passive"/>
+        <pin num="2" name="VIN" type="passive"/>
+        <pin num="3" name="GND_1" type="passive"/>
+        <pin num="4" name="GND_2" type="passive"/>
+        <pin num="5" name="GND_3" type="passive"/>
+        <pin num="6" name="VOUT_S" type="passive"/>
+        <pin num="7" name="VOUT_F" type="passive"/>
+        <pin num="8" name="GND_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OPEN_PHASE" part="MR60PW">
+      <description>Connector: DC supply; socket; MR60; male; PIN: 3; on PCBs; THT; black</description>
+      <docs>https://www.tme.eu/Document/fd4b3517709a946d7b01cf4810656931/MR60PW-M.pdf</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">MR60PW</field>
+        <field name="Footprint">OPEN_PHASE:MR60PW</field>
+        <field name="Datasheet">https://www.tme.eu/Document/fd4b3517709a946d7b01cf4810656931/MR60PW-M.pdf</field>
+        <field name="Description">Connector: DC supply; socket; MR60; male; PIN: 3; on PCBs; THT; black</field>
+        <field name="Height">8.2</field>
+        <field name="Manufacturer_Name">Amass</field>
+        <field name="Manufacturer_Part_Number">MR60PW</field>
+        <field name="Mouser Part Number"/>
+        <field name="Mouser Price/Stock"/>
+        <field name="Arrow Part Number"/>
+        <field name="Arrow Price/Stock"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="MH1" type="passive"/>
+        <pin num="5" name="MH2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OPEN_PHASE" part="MountingHole_Pad">
+      <description>Mounting Hole with connection</description>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Mounting Hole with connection</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="OPEN_PHASE" part="PBV-R001-F1-1.0">
+      <description>ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %</description>
+      <docs>https://cms.nacsemi.com/content/AuthDatasheets/Isabellehuette/PBV.pdf</docs>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">PBV-R001-F1-1.0</field>
+        <field name="Footprint">OPEN_PHASE:PBVR001F110</field>
+        <field name="Datasheet">https://cms.nacsemi.com/content/AuthDatasheets/Isabellehuette/PBV.pdf</field>
+        <field name="Description">ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %</field>
+        <field name="Height">20.7</field>
+        <field name="Manufacturer_Name">Isabellenhutte</field>
+        <field name="Manufacturer_Part_Number">PBV-R001-F1-1.0</field>
+        <field name="Mouser Part Number"/>
+        <field name="Mouser Price/Stock"/>
+        <field name="Arrow Part Number"/>
+        <field name="Arrow Price/Stock"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OPEN_PHASE" part="PMEG2020EH">
+      <description>20V, 2A very low Vf MEGA Schottky barrier rectifier, SOD-123F</description>
+      <docs>https://assets.nexperia.com/documents/data-sheet/PMEG2020EH_EJ.pdf</docs>
+      <footprints>
+        <fp>D*SOD?123F*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">PMEG2020EH</field>
+        <field name="Footprint">OPEN_PHASE:D_SOD-123F</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/PMEG2020EH_EJ.pdf</field>
+        <field name="Description">20V, 2A very low Vf MEGA Schottky barrier rectifier, SOD-123F</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OPEN_PHASE" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OPEN_PHASE" part="XT60PW-M">
+      <description>Connector: DC supply; socket; XT60; male; PIN: 2; on PCBs; THT; 30A</description>
+      <docs>https://www.tme.eu/Document/b13629717d44ae038681dba08d18c0b6/XT60PW-M.pdf</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">XT60PW-M</field>
+        <field name="Footprint">OPEN_PHASE:XT60PWM</field>
+        <field name="Datasheet">https://www.tme.eu/Document/b13629717d44ae038681dba08d18c0b6/XT60PW-M.pdf</field>
+        <field name="Description">Connector: DC supply; socket; XT60; male; PIN: 2; on PCBs; THT; 30A</field>
+        <field name="Height">8.4</field>
+        <field name="Manufacturer_Name">Amass</field>
+        <field name="Manufacturer_Part_Number">XT60PW-M</field>
+        <field name="Mouser Part Number"/>
+        <field name="Mouser Price/Stock"/>
+        <field name="Arrow Part Number"/>
+        <field name="Arrow Price/Stock"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="MH1" type="passive"/>
+        <pin num="4" name="MH2" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="OPEN_PHASE">
+      <uri>${KIPRJMOD}/lib/lib_sym/OPEN_PHASE.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+2.5VA" class="Default">
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="C15" pin="4" pintype="passive"/>
+      <node ref="C41" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="42" pinfunction="REFIN/REFOUT_42" pintype="passive"/>
+      <node ref="IC2" pin="3" pinfunction="REF2_3" pintype="passive"/>
+      <node ref="IC2" pin="7" pinfunction="REF1_7" pintype="passive"/>
+      <node ref="IC4" pin="3" pinfunction="REF2_3" pintype="passive"/>
+      <node ref="IC4" pin="7" pinfunction="REF1_7" pintype="passive"/>
+      <node ref="IC6" pin="3" pinfunction="REF2_3" pintype="passive"/>
+      <node ref="IC6" pin="7" pinfunction="REF1_7" pintype="passive"/>
+      <node ref="IC9" pin="10" pinfunction="OUTS_10" pintype="passive"/>
+      <node ref="IC9" pin="11" pinfunction="OUT_2_11" pintype="passive"/>
+      <node ref="IC9" pin="12" pinfunction="OUT_12" pintype="passive"/>
+    </net>
+    <net code="2" name="+3.3V" class="Default">
+      <node ref="C21" pin="2" pintype="passive"/>
+      <node ref="C22" pin="1" pintype="passive"/>
+      <node ref="C23" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="23" pinfunction="VDRIVE_23" pintype="passive"/>
+      <node ref="IC5" pin="1" pinfunction="EN/UVLO_1" pintype="passive"/>
+      <node ref="IC5" pin="3" pinfunction="VIN_3" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="3" name="+5VA" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="C14" pin="4" pintype="passive"/>
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="C18" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C20" pin="1" pintype="passive"/>
+      <node ref="C35" pin="2" pintype="passive"/>
+      <node ref="C38" pin="2" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="1" pinfunction="AVCC_1_1" pintype="passive"/>
+      <node ref="IC1" pin="37" pinfunction="AVCC_2_37" pintype="passive"/>
+      <node ref="IC1" pin="38" pinfunction="AVCC_3_38" pintype="passive"/>
+      <node ref="IC1" pin="48" pinfunction="AVCC_4_48" pintype="passive"/>
+      <node ref="IC2" pin="6" pinfunction="VS_6" pintype="passive"/>
+      <node ref="IC4" pin="6" pinfunction="VS_6" pintype="passive"/>
+      <node ref="IC6" pin="6" pinfunction="VS_6" pintype="passive"/>
+      <node ref="IC8" pin="10" pinfunction="OUTS_10" pintype="passive"/>
+      <node ref="IC8" pin="11" pinfunction="OUT_2_11" pintype="passive"/>
+      <node ref="IC8" pin="12" pinfunction="OUT_12" pintype="passive"/>
+    </net>
+    <net code="4" name="+6V" class="Default">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C28" pin="1" pintype="passive"/>
+      <node ref="C30" pin="1" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="IC3" pin="1" pinfunction="~{SHDN}_1" pintype="passive"/>
+      <node ref="IC3" pin="2" pinfunction="VIN_2" pintype="passive"/>
+      <node ref="IC7" pin="1" pinfunction="~{SHDN}_1" pintype="passive"/>
+      <node ref="IC7" pin="2" pinfunction="VIN_2" pintype="passive"/>
+      <node ref="IC8" pin="1" pinfunction="IN_1" pintype="passive"/>
+      <node ref="IC8" pin="2" pinfunction="IN_2_2" pintype="passive"/>
+      <node ref="IC8" pin="4" pinfunction="EN/UV_4" pintype="passive"/>
+      <node ref="IC8" pin="7" pinfunction="PGFB_7" pintype="passive"/>
+      <node ref="IC9" pin="1" pinfunction="IN_1" pintype="passive"/>
+      <node ref="IC9" pin="2" pinfunction="IN_2_2" pintype="passive"/>
+      <node ref="IC9" pin="4" pinfunction="EN/UV_4" pintype="passive"/>
+      <node ref="IC9" pin="7" pinfunction="PGFB_7" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+    <net code="5" name="/Project Architecture/Power_Supply/FBX" class="Default">
+      <node ref="C28" pin="2" pintype="passive"/>
+      <node ref="IC5" pin="9" pinfunction="FBX_9" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+    </net>
+    <net code="6" name="/Project Architecture/Power_Supply/INTVCC" class="Default">
+      <node ref="C27" pin="1" pintype="passive"/>
+      <node ref="IC5" pin="5" pinfunction="INTVCC_5" pintype="passive"/>
+    </net>
+    <net code="7" name="/Project Architecture/Power_Supply/RT" class="Default">
+      <node ref="IC5" pin="10" pinfunction="RT_10" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+    </net>
+    <net code="9" name="/Project Architecture/Power_Supply/VC" class="Default">
+      <node ref="IC5" pin="8" pinfunction="VC_8" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+    </net>
+    <net code="10" name="GND" class="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C14" pin="3" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C15" pin="3" pintype="passive"/>
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C18" pin="2" pintype="passive"/>
+      <node ref="C19" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C20" pin="2" pintype="passive"/>
+      <node ref="C21" pin="1" pintype="passive"/>
+      <node ref="C22" pin="2" pintype="passive"/>
+      <node ref="C23" pin="2" pintype="passive"/>
+      <node ref="C24" pin="2" pintype="passive"/>
+      <node ref="C26" pin="1" pintype="passive"/>
+      <node ref="C27" pin="2" pintype="passive"/>
+      <node ref="C30" pin="2" pintype="passive"/>
+      <node ref="C35" pin="1" pintype="passive"/>
+      <node ref="C36" pin="2" pintype="passive"/>
+      <node ref="C37" pin="2" pintype="passive"/>
+      <node ref="C38" pin="1" pintype="passive"/>
+      <node ref="C39" pin="1" pintype="passive"/>
+      <node ref="C39" pin="4" pintype="passive"/>
+      <node ref="C41" pin="1" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="H1" pin="1" pinfunction="1_1" pintype="input"/>
+      <node ref="H2" pin="1" pinfunction="1_1" pintype="input"/>
+      <node ref="H3" pin="1" pinfunction="1_1" pintype="input"/>
+      <node ref="H4" pin="1" pinfunction="1_1" pintype="input"/>
+      <node ref="IC1" pin="2" pinfunction="AGND_1_2" pintype="passive"/>
+      <node ref="IC1" pin="35" pinfunction="AGND_3_35" pintype="passive"/>
+      <node ref="IC1" pin="40" pinfunction="AGND_4_40" pintype="passive"/>
+      <node ref="IC1" pin="41" pinfunction="AGND_5_41" pintype="passive"/>
+      <node ref="IC1" pin="43" pinfunction="REFGND_1_43" pintype="passive"/>
+      <node ref="IC1" pin="47" pinfunction="AGND_6_47" pintype="passive"/>
+      <node ref="IC2" pin="2" pinfunction="GND_2" pintype="passive"/>
+      <node ref="IC3" pin="3" pinfunction="GND_1_3" pintype="passive"/>
+      <node ref="IC3" pin="4" pinfunction="GND_2_4" pintype="passive"/>
+      <node ref="IC3" pin="5" pinfunction="GND_3_5" pintype="passive"/>
+      <node ref="IC3" pin="8" pinfunction="GND_4_8" pintype="passive"/>
+      <node ref="IC4" pin="2" pinfunction="GND_2" pintype="passive"/>
+      <node ref="IC5" pin="17" pinfunction="GND_17" pintype="passive"/>
+      <node ref="IC5" pin="7" pinfunction="BIAS_7" pintype="passive"/>
+      <node ref="IC6" pin="2" pinfunction="GND_2" pintype="passive"/>
+      <node ref="IC7" pin="3" pinfunction="GND_1_3" pintype="passive"/>
+      <node ref="IC7" pin="4" pinfunction="GND_2_4" pintype="passive"/>
+      <node ref="IC7" pin="5" pinfunction="GND_3_5" pintype="passive"/>
+      <node ref="IC7" pin="8" pinfunction="GND_4_8" pintype="passive"/>
+      <node ref="IC8" pin="13" pinfunction="GND_13" pintype="passive"/>
+      <node ref="IC8" pin="6" pinfunction="ILIM_6" pintype="passive"/>
+      <node ref="IC8" pin="9" pinfunction="GND_1_9" pintype="passive"/>
+      <node ref="IC9" pin="13" pinfunction="GND_13" pintype="passive"/>
+      <node ref="IC9" pin="6" pinfunction="ILIM_6" pintype="passive"/>
+      <node ref="IC9" pin="9" pinfunction="GND_1_9" pintype="passive"/>
+      <node ref="J1" pin="4" pinfunction="MH1_4" pintype="passive"/>
+      <node ref="J1" pin="5" pinfunction="MH2_5" pintype="passive"/>
+      <node ref="J2" pin="4" pinfunction="MH1_4" pintype="passive"/>
+      <node ref="J2" pin="5" pinfunction="MH2_5" pintype="passive"/>
+      <node ref="J5" pin="3" pinfunction="MH1_3" pintype="passive"/>
+      <node ref="J5" pin="4" pinfunction="MH2_4" pintype="passive"/>
+      <node ref="J6" pin="3" pinfunction="MH1_3" pintype="passive"/>
+      <node ref="J6" pin="4" pinfunction="MH2_4" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="R28" pin="1" pintype="passive"/>
+      <node ref="R32" pin="1" pintype="passive"/>
+      <node ref="R36" pin="1" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+    </net>
+    <net code="11" name="IN-1" class="Default">
+      <node ref="IC2" pin="1" pinfunction="IN-_1" pintype="passive"/>
+      <node ref="R1" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="12" name="IN-2" class="Default">
+      <node ref="IC4" pin="1" pinfunction="IN-_1" pintype="passive"/>
+      <node ref="R4" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="13" name="IN-3" class="Default">
+      <node ref="IC6" pin="1" pinfunction="IN-_1" pintype="passive"/>
+      <node ref="R7" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="14" name="IN-A" class="Default">
+      <node ref="J1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R1" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="15" name="IN-B" class="Default">
+      <node ref="J1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R4" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="16" name="IN-C" class="Default">
+      <node ref="J1" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="R7" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="17" name="Net-(C26-Pad2)" class="Default">
+      <node ref="C26" pin="2" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+    </net>
+    <net code="18" name="Net-(D2-A)" class="Default">
+      <node ref="D2" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="IC5" pin="14" pinfunction="SW2_14" pintype="passive"/>
+      <node ref="IC5" pin="16" pinfunction="SW1_16" pintype="passive"/>
+      <node ref="L1" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="19" name="Net-(IC1-REFCAPA)" class="Default">
+      <node ref="C39" pin="2" pintype="passive"/>
+      <node ref="C39" pin="3" pintype="passive"/>
+      <node ref="IC1" pin="44" pinfunction="REFCAPA_44" pintype="passive"/>
+      <node ref="IC1" pin="45" pinfunction="REFCAPB_45" pintype="passive"/>
+    </net>
+    <net code="20" name="Net-(IC1-REGCAP_1)" class="Default">
+      <node ref="C37" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="36" pinfunction="REGCAP_1_36" pintype="passive"/>
+    </net>
+    <net code="21" name="Net-(IC1-REGCAP_2)" class="Default">
+      <node ref="C36" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="39" pinfunction="REGCAP_2_39" pintype="passive"/>
+    </net>
+    <net code="22" name="Net-(IC3-VOUT_F)" class="Default">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="IC3" pin="6" pinfunction="VOUT_S_6" pintype="passive"/>
+      <node ref="IC3" pin="7" pinfunction="VOUT_F_7" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+    </net>
+    <net code="23" name="Net-(IC5-SS)" class="Default">
+      <node ref="C24" pin="1" pintype="passive"/>
+      <node ref="IC5" pin="11" pinfunction="SS_11" pintype="passive"/>
+    </net>
+    <net code="24" name="Net-(IC7-VOUT_F)" class="Default">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="IC7" pin="6" pinfunction="VOUT_S_6" pintype="passive"/>
+      <node ref="IC7" pin="7" pinfunction="VOUT_F_7" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+    </net>
+    <net code="25" name="Net-(IC8-SET)" class="Default">
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="IC8" pin="8" pinfunction="SET_8" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+    </net>
+    <net code="26" name="Net-(IC9-SET)" class="Default">
+      <node ref="C19" pin="1" pintype="passive"/>
+      <node ref="IC9" pin="8" pinfunction="SET_8" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+    </net>
+    <net code="27" name="Net-(R27-Pad2)" class="Default">
+      <node ref="R27" pin="2" pintype="passive"/>
+      <node ref="R28" pin="2" pintype="passive"/>
+      <node ref="Re2" pin="1" pintype="passive"/>
+    </net>
+    <net code="28" name="Net-(R31-Pad2)" class="Default">
+      <node ref="R31" pin="2" pintype="passive"/>
+      <node ref="R32" pin="2" pintype="passive"/>
+      <node ref="Re1" pin="1" pintype="passive"/>
+    </net>
+    <net code="29" name="Net-(R35-Pad2)" class="Default">
+      <node ref="R35" pin="2" pintype="passive"/>
+      <node ref="R36" pin="2" pintype="passive"/>
+      <node ref="Re3" pin="1" pintype="passive"/>
+    </net>
+    <net code="30" name="OUT-1" class="Default">
+      <node ref="IC2" pin="8" pinfunction="IN+_8" pintype="passive"/>
+      <node ref="R1" pin="3" pinfunction="3_3" pintype="passive"/>
+    </net>
+    <net code="31" name="OUT-2" class="Default">
+      <node ref="IC4" pin="8" pinfunction="IN+_8" pintype="passive"/>
+      <node ref="R4" pin="3" pinfunction="3_3" pintype="passive"/>
+    </net>
+    <net code="32" name="OUT-3" class="Default">
+      <node ref="IC6" pin="8" pinfunction="IN+_8" pintype="passive"/>
+      <node ref="R7" pin="3" pinfunction="3_3" pintype="passive"/>
+    </net>
+    <net code="33" name="OUT-A" class="Default">
+      <node ref="J2" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="R1" pin="4" pinfunction="4_4" pintype="passive"/>
+      <node ref="R27" pin="1" pintype="passive"/>
+    </net>
+    <net code="34" name="OUT-B" class="Default">
+      <node ref="J2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R31" pin="1" pintype="passive"/>
+      <node ref="R4" pin="4" pinfunction="4_4" pintype="passive"/>
+    </net>
+    <net code="35" name="OUT-C" class="Default">
+      <node ref="J2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R35" pin="1" pintype="passive"/>
+      <node ref="R7" pin="4" pinfunction="4_4" pintype="passive"/>
+    </net>
+    <net code="36" name="SNG-1F" class="Default">
+      <node ref="C25" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="59" pinfunction="V6+_59" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+    </net>
+    <net code="37" name="SNG-1G" class="Default">
+      <node ref="C25" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="60" pinfunction="V6-_60" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+    </net>
+    <net code="38" name="SNG-2F" class="Default">
+      <node ref="C29" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="55" pinfunction="V4+_55" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+    </net>
+    <net code="39" name="SNG-2G" class="Default">
+      <node ref="C29" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="56" pinfunction="V4-_56" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+    </net>
+    <net code="40" name="SNG-3F" class="Default">
+      <node ref="C33" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="51" pinfunction="V2+_51" pintype="passive"/>
+      <node ref="R21" pin="2" pintype="passive"/>
+    </net>
+    <net code="41" name="SNG-3G" class="Default">
+      <node ref="C33" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="52" pinfunction="V2-_52" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+    </net>
+    <net code="42" name="SNG-A1N" class="Default">
+      <node ref="IC2" pin="5" pinfunction="OUT_5" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+    </net>
+    <net code="43" name="SNG-A2N" class="Default">
+      <node ref="IC4" pin="5" pinfunction="OUT_5" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+    </net>
+    <net code="44" name="SNG-A3N" class="Default">
+      <node ref="IC6" pin="5" pinfunction="OUT_5" pintype="passive"/>
+      <node ref="R21" pin="1" pintype="passive"/>
+    </net>
+    <net code="45" name="SNG-V1+" class="Default">
+      <node ref="C31" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="57" pinfunction="V5+_57" pintype="passive"/>
+      <node ref="Re2" pin="2" pintype="passive"/>
+    </net>
+    <net code="46" name="SNG-V1-" class="Default">
+      <node ref="C31" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="58" pinfunction="V5-_58" pintype="passive"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+    </net>
+    <net code="47" name="SNG-V2+" class="Default">
+      <node ref="C32" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="53" pinfunction="V3+_53" pintype="passive"/>
+      <node ref="Re1" pin="2" pintype="passive"/>
+    </net>
+    <net code="48" name="SNG-V2-" class="Default">
+      <node ref="C32" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="54" pinfunction="V3-_54" pintype="passive"/>
+      <node ref="R20" pin="2" pintype="passive"/>
+    </net>
+    <net code="49" name="SNG-V3+" class="Default">
+      <node ref="C34" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="49" pinfunction="V1+_49" pintype="passive"/>
+      <node ref="Re3" pin="2" pintype="passive"/>
+    </net>
+    <net code="50" name="SNG-V3-" class="Default">
+      <node ref="C34" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="50" pinfunction="V1-_50" pintype="passive"/>
+      <node ref="R22" pin="2" pintype="passive"/>
+    </net>
+    <net code="51" name="unconnected-(IC1-AGND_2-Pad26)" class="Default">
+      <node ref="IC1" pin="26" pinfunction="AGND_2_26" pintype="passive"/>
+    </net>
+    <net code="52" name="unconnected-(IC1-BUSY-Pad14)" class="Default">
+      <node ref="IC1" pin="14" pinfunction="BUSY_14" pintype="passive"/>
+    </net>
+    <net code="53" name="unconnected-(IC1-CONVST-Pad9)" class="Default">
+      <node ref="IC1" pin="9" pinfunction="CONVST_9" pintype="passive"/>
+    </net>
+    <net code="54" name="unconnected-(IC1-DB2-Pad16)" class="Default">
+      <node ref="IC1" pin="16" pinfunction="DB2_16" pintype="passive"/>
+    </net>
+    <net code="55" name="unconnected-(IC1-DB3-Pad17)" class="Default">
+      <node ref="IC1" pin="17" pinfunction="DB3_17" pintype="passive"/>
+    </net>
+    <net code="56" name="unconnected-(IC1-DB4-Pad18)" class="Default">
+      <node ref="IC1" pin="18" pinfunction="DB4_18" pintype="passive"/>
+    </net>
+    <net code="57" name="unconnected-(IC1-DB5/DOUTE-Pad19)" class="Default">
+      <node ref="IC1" pin="19" pinfunction="DB5/DOUTE_19" pintype="passive"/>
+    </net>
+    <net code="58" name="unconnected-(IC1-DB6/DOUTF-Pad20)" class="Default">
+      <node ref="IC1" pin="20" pinfunction="DB6/DOUTF_20" pintype="passive"/>
+    </net>
+    <net code="59" name="unconnected-(IC1-DB7/DOUTG-Pad21)" class="Default">
+      <node ref="IC1" pin="21" pinfunction="DB7/DOUTG_21" pintype="passive"/>
+    </net>
+    <net code="60" name="unconnected-(IC1-DB8/DOUTH-Pad22)" class="Default">
+      <node ref="IC1" pin="22" pinfunction="DB8/DOUTH_22" pintype="passive"/>
+    </net>
+    <net code="61" name="unconnected-(IC1-DB9/DOUTA-Pad24)" class="Default">
+      <node ref="IC1" pin="24" pinfunction="DB9/DOUTA_24" pintype="passive"/>
+    </net>
+    <net code="62" name="unconnected-(IC1-DB10/DOUTB-Pad25)" class="Default">
+      <node ref="IC1" pin="25" pinfunction="DB10/DOUTB_25" pintype="passive"/>
+    </net>
+    <net code="63" name="unconnected-(IC1-DB11/DOUTC-Pad27)" class="Default">
+      <node ref="IC1" pin="27" pinfunction="DB11/DOUTC_27" pintype="passive"/>
+    </net>
+    <net code="64" name="unconnected-(IC1-DB12/DOUTD-Pad28)" class="Default">
+      <node ref="IC1" pin="28" pinfunction="DB12/DOUTD_28" pintype="passive"/>
+    </net>
+    <net code="65" name="unconnected-(IC1-DB13/SDI-Pad29)" class="Default">
+      <node ref="IC1" pin="29" pinfunction="DB13/SDI_29" pintype="passive"/>
+    </net>
+    <net code="66" name="unconnected-(IC1-DB14-Pad30)" class="Default">
+      <node ref="IC1" pin="30" pinfunction="DB14_30" pintype="passive"/>
+    </net>
+    <net code="67" name="unconnected-(IC1-DB15-Pad31)" class="Default">
+      <node ref="IC1" pin="31" pinfunction="DB15_31" pintype="passive"/>
+    </net>
+    <net code="68" name="unconnected-(IC1-DB16/DB0-Pad32)" class="Default">
+      <node ref="IC1" pin="32" pinfunction="DB16/DB0_32" pintype="passive"/>
+    </net>
+    <net code="69" name="unconnected-(IC1-DB17/DB1-Pad33)" class="Default">
+      <node ref="IC1" pin="33" pinfunction="DB17/DB1_33" pintype="passive"/>
+    </net>
+    <net code="70" name="unconnected-(IC1-FRSTDATA-Pad15)" class="Default">
+      <node ref="IC1" pin="15" pinfunction="FRSTDATA_15" pintype="passive"/>
+    </net>
+    <net code="71" name="unconnected-(IC1-OS_0-Pad3)" class="Default">
+      <node ref="IC1" pin="3" pinfunction="OS_0_3" pintype="passive"/>
+    </net>
+    <net code="72" name="unconnected-(IC1-OS_1-Pad4)" class="Default">
+      <node ref="IC1" pin="4" pinfunction="OS_1_4" pintype="passive"/>
+    </net>
+    <net code="73" name="unconnected-(IC1-OS_2-Pad5)" class="Default">
+      <node ref="IC1" pin="5" pinfunction="OS_2_5" pintype="passive"/>
+    </net>
+    <net code="74" name="unconnected-(IC1-RANGE-Pad8)" class="Default">
+      <node ref="IC1" pin="8" pinfunction="RANGE_8" pintype="passive"/>
+    </net>
+    <net code="75" name="unconnected-(IC1-REFGND_2-Pad46)" class="Default">
+      <node ref="IC1" pin="46" pinfunction="REFGND_2_46" pintype="passive"/>
+    </net>
+    <net code="76" name="unconnected-(IC1-REF_SELECT-Pad34)" class="Default">
+      <node ref="IC1" pin="34" pinfunction="REF_SELECT_34" pintype="passive"/>
+    </net>
+    <net code="77" name="unconnected-(IC1-RESET-Pad11)" class="Default">
+      <node ref="IC1" pin="11" pinfunction="RESET_11" pintype="passive"/>
+    </net>
+    <net code="78" name="unconnected-(IC1-V7+-Pad61)" class="Default">
+      <node ref="IC1" pin="61" pinfunction="V7+_61" pintype="passive"/>
+    </net>
+    <net code="79" name="unconnected-(IC1-V7--Pad62)" class="Default">
+      <node ref="IC1" pin="62" pinfunction="V7-_62" pintype="passive"/>
+    </net>
+    <net code="80" name="unconnected-(IC1-V8+-Pad63)" class="Default">
+      <node ref="IC1" pin="63" pinfunction="V8+_63" pintype="passive"/>
+    </net>
+    <net code="81" name="unconnected-(IC1-V8--Pad64)" class="Default">
+      <node ref="IC1" pin="64" pinfunction="V8-_64" pintype="passive"/>
+    </net>
+    <net code="82" name="unconnected-(IC1-~{CS}-Pad13)" class="Default">
+      <node ref="IC1" pin="13" pinfunction="~{CS}_13" pintype="passive"/>
+    </net>
+    <net code="83" name="unconnected-(IC1-~{PAR}/SER_SEL-Pad6)" class="Default">
+      <node ref="IC1" pin="6" pinfunction="~{PAR}/SER_SEL_6" pintype="passive"/>
+    </net>
+    <net code="84" name="unconnected-(IC1-~{RD}/SCLK-Pad12)" class="Default">
+      <node ref="IC1" pin="12" pinfunction="~{RD}/SCLK_12" pintype="passive"/>
+    </net>
+    <net code="85" name="unconnected-(IC1-~{STBY}-Pad7)" class="Default">
+      <node ref="IC1" pin="7" pinfunction="~{STBY}_7" pintype="passive"/>
+    </net>
+    <net code="86" name="unconnected-(IC1-~{WR}-Pad10)" class="Default">
+      <node ref="IC1" pin="10" pinfunction="~{WR}_10" pintype="passive"/>
+    </net>
+    <net code="87" name="unconnected-(IC2-NC-Pad4)" class="Default">
+      <node ref="IC2" pin="4" pinfunction="NC_4" pintype="no_connect"/>
+    </net>
+    <net code="88" name="unconnected-(IC4-NC-Pad4)" class="Default">
+      <node ref="IC4" pin="4" pinfunction="NC_4" pintype="no_connect"/>
+    </net>
+    <net code="89" name="unconnected-(IC5-NC-Pad6)" class="Default">
+      <node ref="IC5" pin="6" pinfunction="NC_6" pintype="no_connect"/>
+    </net>
+    <net code="90" name="unconnected-(IC5-SYNC/MODE-Pad12)" class="Default">
+      <node ref="IC5" pin="12" pinfunction="SYNC/MODE_12" pintype="passive+no_connect"/>
+    </net>
+    <net code="91" name="unconnected-(IC6-NC-Pad4)" class="Default">
+      <node ref="IC6" pin="4" pinfunction="NC_4" pintype="no_connect"/>
+    </net>
+    <net code="92" name="unconnected-(IC8-PG-Pad5)" class="Default">
+      <node ref="IC8" pin="5" pinfunction="PG_5" pintype="passive+no_connect"/>
+    </net>
+    <net code="93" name="unconnected-(IC8-VIOC-Pad3)" class="Default">
+      <node ref="IC8" pin="3" pinfunction="VIOC_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="94" name="unconnected-(IC9-PG-Pad5)" class="Default">
+      <node ref="IC9" pin="5" pinfunction="PG_5" pintype="passive+no_connect"/>
+    </net>
+    <net code="95" name="unconnected-(IC9-VIOC-Pad3)" class="Default">
+      <node ref="IC9" pin="3" pinfunction="VIOC_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="96" name="unconnected-(J5-Pad1)" class="Default">
+      <node ref="J5" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="97" name="unconnected-(J5-Pad2)" class="Default">
+      <node ref="J5" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="98" name="unconnected-(J6-Pad1)" class="Default">
+      <node ref="J6" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="99" name="unconnected-(J6-Pad2)" class="Default">
+      <node ref="J6" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+  </nets>
+</export>

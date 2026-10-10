@@ -121,7 +121,7 @@ Power chain: **+3.3 V (host) → LT8362 → +6 V → LTC6655 + LT3045-1 → +5VA
 | Parent project | OPEN THRUST LAB |
 | CAD tool | KiCad 10 |
 | Automation tooling | KiBot + GitHub Actions |
-| Dimensions | 65.0 × 59.5 mm |
+| Dimensions | 65.05 × 59.5 mm |
 | Stackup | 4 layers, 1.66 mm, 70 µm outer copper, ENIG |
 | Mounting holes | 4 × M3, connected to GND |
 

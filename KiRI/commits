@@ -1,0 +1,4 @@
+_local_|2026-10-10|root|Local changes not committed|False|True
+7703dc5|2026-10-10|foukouda|Rename the project to OPEN_PHASE|True|True
+ebef596|2026-10-10|foukouda|Fix the +2.5VA reference, add XT60PW-M connectors, predict measurement quality|True|False
+5638f9e|2026-10-06|foukouda|Fill template pages: block diagram, power sequencing, cover notes, architecture|True|False
