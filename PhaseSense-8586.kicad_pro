@@ -1035,12 +1035,12 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "INA240.kicad_sch",
-        "name": "INA240",
+        "filename": "PhaseSense-8586.kicad_sch",
+        "name": "PhaseSense-8586",
         "uuid": "f9e05184-c88b-4a88-ae9c-ab2bdb32be7c"
       }
     ],
-    "used_designators": "",
+    "used_designators": "J3-6",
     "variants": []
   },
   "sheets": [
@@ -1065,6 +1065,10 @@
       "INA241_Phase_Sense"
     ],
     [
+      "64761cd4-62bf-4da3-92a1-0053e0023d86",
+      "Power_Supply"
+    ],
+    [
       "c7c721f5-c1ee-4db1-9a46-4881d72bcc61",
       "Connectors"
     ],
@@ -1079,10 +1083,6 @@
     [
       "6e125bd6-2f99-4e5d-b3ea-4899f4540739",
       "Revision History"
-    ],
-    [
-      "64761cd4-62bf-4da3-92a1-0053e0023d86",
-      "Power_Supply"
     ]
   ],
   "text_variables": {

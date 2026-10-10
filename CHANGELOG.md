@@ -14,8 +14,11 @@ Keep entries short: the `[Unreleased]` section is printed on the schematic Revis
 -   +3.3V -> LT8362 6 V -> LT3045-1 +5VA / +2.5VA
 -   Self-contained libs and 3D models (lib/)
 -   LTspice simulations (Simulation/LTspice)
+-   Predicted measurement quality (sim 07, 08)
 
 ### Changed
 
 -   Renamed to PhaseSense-8586, KiCad 10
 -   Sheets named after their function
+-   IC3: LTC6655LN-2.5 -> LTC6655-2.5 (pin 6 = VOUT_S)
+-   R12: 49.9k -> 24.9k (+2.5VA = 2.500 V)

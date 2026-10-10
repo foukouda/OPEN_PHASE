@@ -177,14 +177,14 @@
 		)
 	)
 	(property "ASSEMBLY_NOTES" "ASSEMBLY NOTES")
-	(property "BOARD_NAME" "Board Name")
-	(property "COMPANY" "Company")
-	(property "DESIGNER" "Author")
+	(property "BOARD_NAME" "PHASETRACKER")
+	(property "COMPANY" "OPEN THRUST LAB")
+	(property "DESIGNER" "SIEBERT DIMITRY")
 	(property "FABRICATION_NOTES" "FABRICATION NOTES")
 	(property "GIT_HASH_PCB" "")
 	(property "GIT_HASH_SCH" "")
-	(property "GIT_URL" "")
-	(property "PROJECT_NAME" "Project Name")
+	(property "GIT_URL" "https://github.com/foukouda/PhaseSense-8586")
+	(property "PROJECT_NAME" "PhaseSense-8586")
 	(property "RELEASE_BODY_1.0.0" "")
 	(property "RELEASE_BODY_1.0.1" "")
 	(property "RELEASE_BODY_1.0.2" "")
@@ -199,7 +199,7 @@
 	(property "RELEASE_TITLE_UNRELEASED" "")
 	(property "REVISION" "")
 	(property "SHEET_NAME_1" "Cover Page")
-	(property "SHEET_NAME_10" "......................................")
+	(property "SHEET_NAME_10" "Revision History")
 	(property "SHEET_NAME_11" "......................................")
 	(property "SHEET_NAME_12" "......................................")
 	(property "SHEET_NAME_13" "......................................")
@@ -231,13 +231,13 @@
 	(property "SHEET_NAME_37" "......................................")
 	(property "SHEET_NAME_38" "......................................")
 	(property "SHEET_NAME_39" "......................................")
-	(property "SHEET_NAME_4" "Section A - Title A")
+	(property "SHEET_NAME_4" "AD7606C-18 - ADC")
 	(property "SHEET_NAME_40" "......................................")
-	(property "SHEET_NAME_5" "Section B -Title B")
-	(property "SHEET_NAME_6" "Power - Sequencing")
-	(property "SHEET_NAME_7" "Revision History")
-	(property "SHEET_NAME_8" "......................................")
-	(property "SHEET_NAME_9" "......................................")
+	(property "SHEET_NAME_5" "INA241 - Phase Sensing")
+	(property "SHEET_NAME_6" "Power Supply - Analog Rails")
+	(property "SHEET_NAME_7" "Connectors")
+	(property "SHEET_NAME_8" "Holes - Fiducials")
+	(property "SHEET_NAME_9" "Power - Sequencing")
 	(property "VARIANT" "")
 	(footprint "PhaseSense-8586:MountingHole_3.2mm_M3_Pad_Via"
 		(layer "F.Cu")
@@ -1090,7 +1090,7 @@
 				(pins "1" "2" "3" "4" "5" "6" "9" "13" "10" "11" "12" "7" "8")
 			)
 		)
-		(attr smd dnp)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center -1.9 -1.75)
@@ -1845,7 +1845,7 @@
 				(pins "1" "2" "3" "4" "8" "7" "6" "5")
 			)
 		)
-		(attr smd dnp)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -2.925 -1.55)
@@ -2722,7 +2722,7 @@
 				)
 			)
 		)
-		(attr smd dnp)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 4.65 4.65)
@@ -4735,7 +4735,7 @@
 				(pins "4" "5" "1" "2" "3")
 			)
 		)
-		(attr through_hole dnp)
+		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -4.1 16.5)
@@ -6135,7 +6135,7 @@
 				)
 			)
 		)
-		(property "Value" "49.9kΩ"
+		(property "Value" "24.9kΩ"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "63dd9b26-5e7e-4496-8af2-c5cdaf296dc8")
@@ -6409,7 +6409,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(IC3-NR)")
+			(net "Net-(IC3-VOUT_F)")
 			(pintype "passive")
 			(uuid "cc3b7167-e5d7-4707-982b-ddd8fd381b6e")
 		)
@@ -6592,6 +6592,852 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "PhaseSense-8586:XT60PWM"
+		(layer "F.Cu")
+		(uuid "6a1ece16-6868-41e4-97fe-ac335daaa8f1")
+		(at 132.2 35.2 90)
+		(descr "XT60PW-M-2")
+		(tags "Connector")
+		(property "Reference" "J5"
+			(at 3.6 -7.162 90)
+			(layer "F.SilkS")
+			(uuid "22ca7112-ae46-4e8e-8337-0a55db1630c7")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "XT60PW-M"
+			(at 3.6 -7.162 90)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "95dac56e-3929-4484-bd7a-e207e64b394b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.tme.eu/Document/b13629717d44ae038681dba08d18c0b6/XT60PW-M.pdf"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "353f323a-c369-42b2-a1f2-44133bc84e53")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Connector: DC supply; socket; XT60; male; PIN: 2; on PCBs; THT; 30A"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "13679f1e-e3d7-4c32-8336-33f391ff5eee")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "8.4"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7b4664ec-c868-41c2-bd9a-891c518266aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Amass"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e437ee17-a682-4175-814c-ee1b7ffdfee6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "XT60PW-M"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "51ab5a85-8102-43cd-91a8-ebabf80f957a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b291ad43-b886-4d90-89f2-7573b8a5b9cb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f8ae8c6c-fc4a-4543-afe7-3c1cc905f296")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4aa2bbce-f1c7-41ea-a3b0-f6e12859e762")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4c7d296e-297f-4f69-99ff-b09c433e8774")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/94790a6d-4c6e-4f1b-8601-dbd0f1a9b6a0")
+		(sheetname "/Project Architecture/Connectors/")
+		(sheetfile "Connectors.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4")
+			)
+		)
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 11.35 -16.35)
+			(end 11.35 -7.5)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2c89ced0-1808-4b38-ab2e-0f19cf6d2dfc")
+		)
+		(fp_line
+			(start -4.15 -16.35)
+			(end 11.35 -16.35)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "fa6fe003-ab09-4056-a926-42b569342a40")
+		)
+		(fp_line
+			(start -4.15 -7.5)
+			(end -4.15 -16.35)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5e42a150-916a-42cd-af9f-8311ec57c35e")
+		)
+		(fp_line
+			(start 11.349999 -4.5)
+			(end 11.35 1.850001)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "03ced797-c2c3-466d-9148-0f239ecb210e")
+		)
+		(fp_line
+			(start -4.150001 -4.5)
+			(end -4.150001 1.85)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "639a2059-6848-4b18-b4c6-a3d508d3fb81")
+		)
+		(fp_line
+			(start 5.1 1.85)
+			(end 2.6 1.85)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "ea9e9618-d6b4-4d6d-b73c-f5b826129a03")
+		)
+		(fp_line
+			(start -4.150001 1.85)
+			(end -2.9 1.85)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "c8c86385-b66d-4e0a-bb28-10f9aa568c0a")
+		)
+		(fp_line
+			(start 11.35 1.850001)
+			(end 9.1 1.85)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "4fe40c47-3dcb-42ec-b853-cc36958f9a5c")
+		)
+		(fp_line
+			(start 0 2.4)
+			(end 0 2.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2ca66f6b-9e8d-4bcb-b391-f11e46648e4e")
+		)
+		(fp_line
+			(start 0 2.5)
+			(end 0 2.5)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2d77e024-e3f7-41c2-992c-5aa69fcda560")
+		)
+		(fp_arc
+			(start 0 2.4)
+			(mid 0.05 2.45)
+			(end 0 2.5)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "91a2de6c-340c-460f-b7f7-3a4051f2eb88")
+		)
+		(fp_arc
+			(start 0 2.5)
+			(mid -0.05 2.45)
+			(end 0 2.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f354c1ba-92c1-4684-adcc-f84dfd7daa67")
+		)
+		(fp_line
+			(start 12.7 -17.35)
+			(end 12.7 3.025)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "7cb45b68-3f63-4ba8-8c79-f18770bcc473")
+		)
+		(fp_line
+			(start -5.5 -17.35)
+			(end 12.7 -17.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "9408bdf1-5c17-495d-aff5-b8371046c439")
+		)
+		(fp_line
+			(start 12.7 3.025)
+			(end -5.5 3.025)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "7086605f-d17d-4599-bead-1e8e9058abf7")
+		)
+		(fp_line
+			(start -5.5 3.025)
+			(end -5.5 -17.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "a4a8bd16-eb4a-438c-aaa8-4d0f8a3a4353")
+		)
+		(fp_line
+			(start 11.35 -16.35)
+			(end 11.35 1.850001)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1c047be4-f1e8-4567-a060-fa9fc1334dcc")
+		)
+		(fp_line
+			(start -4.15 -16.35)
+			(end 11.35 -16.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "bcdd9207-c4c8-4b91-8cd5-31c82740408a")
+		)
+		(fp_line
+			(start -4.150001 1.85)
+			(end -4.15 -16.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "47b3d7f5-6b23-4ebd-b31f-f7437b48887d")
+		)
+		(fp_line
+			(start 11.35 1.850001)
+			(end -4.150001 1.85)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ad8a0bea-514d-42fa-8050-65ed678c72a5")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 3.6 -7.162 90)
+			(layer "F.Fab")
+			(uuid "9ac7acc8-6a07-455d-a68f-c9e2671e14e1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "1" thru_hole rect
+			(at 0 0 90)
+			(size 4.05 4.05)
+			(drill 2.7)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "unconnected-(J5-Pad1)")
+			(pinfunction "1_1")
+			(pintype "passive")
+			(uuid "0ff5777d-8dea-4334-b7c7-a99cc6b8c805")
+		)
+		(pad "2" thru_hole circle
+			(at 7.2 0 90)
+			(size 4.05 4.05)
+			(drill 2.7)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "unconnected-(J5-Pad2)")
+			(pinfunction "2_2")
+			(pintype "passive")
+			(uuid "95c4987c-2501-4d98-a330-65a5d11fb72c")
+		)
+		(pad "3" thru_hole circle
+			(at -3.15 -6 90)
+			(size 2.7 2.7)
+			(drill 1.8)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "GND")
+			(pinfunction "MH1_3")
+			(pintype "passive")
+			(uuid "d4f7062f-ed74-4512-af24-6ff051dffc85")
+		)
+		(pad "4" thru_hole circle
+			(at 10.35 -6 90)
+			(size 2.7 2.7)
+			(drill 1.8)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "GND")
+			(pinfunction "MH2_4")
+			(pintype "passive")
+			(uuid "0b3e036b-8bf5-41e3-86e1-87dcd169569a")
+		)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/lib/3d_models/XT60PW-M.stp"
+			(offset
+				(xyz 3.599999851 2.380000079 0.4600000014)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -180 0 0)
+			)
+		)
+	)
+	(footprint "PhaseSense-8586:XT60PWM"
+		(layer "F.Cu")
+		(uuid "6a965afc-341e-4e08-b535-4e176c68408e")
+		(at 164.6 27.2 -90)
+		(descr "XT60PW-M-2")
+		(tags "Connector")
+		(property "Reference" "J6"
+			(at 3.6 -7.162 90)
+			(layer "F.SilkS")
+			(uuid "8f8420f2-6747-4612-8f86-a828926c9423")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "XT60PW-M"
+			(at 3.6 -7.162 90)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d8c40fde-39d2-41cf-9e1a-58baa046bcee")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.tme.eu/Document/b13629717d44ae038681dba08d18c0b6/XT60PW-M.pdf"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aea837ca-3e29-4a95-929f-13196674a913")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Connector: DC supply; socket; XT60; male; PIN: 2; on PCBs; THT; 30A"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9912cc43-b199-435a-a063-d8ab03f2b2bc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "8.4"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b06cc445-be5c-4596-a65b-65e14a98952c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Amass"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "21da8417-b8e4-42aa-9b1c-574bd950b6da")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "XT60PW-M"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ba73b804-bb5c-44fd-a93f-c8cd10389f2e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "486a36e4-80fd-4530-9569-a74a80d426b8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1a12cc56-cb5b-418e-8cf4-b37282710332")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "57d9dadb-2c03-406d-bc17-d5a9a04ffae4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8b453676-7120-47a9-b8e4-68aded751f4c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/14d824c2-4611-4d49-9247-f356ce4fd4b6")
+		(sheetname "/Project Architecture/Connectors/")
+		(sheetfile "Connectors.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4")
+			)
+		)
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 0 2.5)
+			(end 0 2.5)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "10767282-a656-4b26-baad-6b5f230e6a7f")
+		)
+		(fp_line
+			(start 0 2.4)
+			(end 0 2.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a773effc-3067-43aa-a732-6d422de23312")
+		)
+		(fp_line
+			(start 11.35 1.850001)
+			(end 9.1 1.85)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2459ea0c-c4f9-4cdd-a7c6-695b79af2699")
+		)
+		(fp_line
+			(start -4.150001 1.85)
+			(end -2.9 1.85)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f99539ef-a7b2-40b7-9194-a69b80a2f7e7")
+		)
+		(fp_line
+			(start 5.1 1.85)
+			(end 2.6 1.85)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "35c7ff5e-59d3-4068-9a6f-e5053a5a77e9")
+		)
+		(fp_line
+			(start -4.150001 -4.5)
+			(end -4.150001 1.85)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "463e3154-a826-49ae-9d9f-7d9f7b7d8b2d")
+		)
+		(fp_line
+			(start 11.349999 -4.5)
+			(end 11.35 1.850001)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "c40832fe-4585-469b-93b9-6c68ae2782f8")
+		)
+		(fp_line
+			(start -4.15 -7.5)
+			(end -4.15 -16.35)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9af81b55-152d-4f77-8558-53b920750000")
+		)
+		(fp_line
+			(start -4.15 -16.35)
+			(end 11.35 -16.35)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2345fcac-d3e4-4caf-8b3d-d35eceac95d3")
+		)
+		(fp_line
+			(start 11.35 -16.35)
+			(end 11.35 -7.5)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7c1e4c31-7591-486f-881f-4d22d0545f8c")
+		)
+		(fp_arc
+			(start 0 2.5)
+			(mid -0.05 2.45)
+			(end 0 2.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a5637160-e593-4f89-9102-4d1d5921a2bb")
+		)
+		(fp_arc
+			(start 0 2.4)
+			(mid 0.05 2.45)
+			(end 0 2.5)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a923a1a0-3a5b-48aa-a4b2-14c75034aa12")
+		)
+		(fp_line
+			(start -5.5 3.025)
+			(end -5.5 -17.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "3c291aa7-3582-403e-af3a-e0131fc26ca1")
+		)
+		(fp_line
+			(start 12.7 3.025)
+			(end -5.5 3.025)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "9b2a7e55-16b0-469d-a17a-2032099a1ebc")
+		)
+		(fp_line
+			(start -5.5 -17.35)
+			(end 12.7 -17.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "019b3549-a385-46ab-900c-50f4bd95c1e0")
+		)
+		(fp_line
+			(start 12.7 -17.35)
+			(end 12.7 3.025)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "61c6fbf4-6a9d-4759-a6d2-d39ce0e0c13a")
+		)
+		(fp_line
+			(start 11.35 1.850001)
+			(end -4.150001 1.85)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "7c95ea38-9166-4260-a037-f72c8ce4f1a4")
+		)
+		(fp_line
+			(start -4.150001 1.85)
+			(end -4.15 -16.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "6c71155a-cfa6-4390-8c1d-c7bef19c08f2")
+		)
+		(fp_line
+			(start -4.15 -16.35)
+			(end 11.35 -16.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ea65699d-df04-4f67-8407-97f486721e4c")
+		)
+		(fp_line
+			(start 11.35 -16.35)
+			(end 11.35 1.850001)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "eb14983b-56c5-454a-b021-38f928b28319")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 3.6 -7.162 90)
+			(layer "F.Fab")
+			(uuid "898754cd-cd23-4cda-b111-81a3d13ee57d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "1" thru_hole rect
+			(at 0 0 270)
+			(size 4.05 4.05)
+			(drill 2.7)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "unconnected-(J6-Pad1)")
+			(pinfunction "1_1")
+			(pintype "passive")
+			(uuid "048beba0-0771-4b0e-801a-5be39940596d")
+		)
+		(pad "2" thru_hole circle
+			(at 7.2 0 270)
+			(size 4.05 4.05)
+			(drill 2.7)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "unconnected-(J6-Pad2)")
+			(pinfunction "2_2")
+			(pintype "passive")
+			(uuid "52bd2c9a-1096-47dd-86d8-79b18a047647")
+		)
+		(pad "3" thru_hole circle
+			(at -3.15 -6 270)
+			(size 2.7 2.7)
+			(drill 1.8)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "GND")
+			(pinfunction "MH1_3")
+			(pintype "passive")
+			(uuid "c038ec52-4b4f-4462-a4a9-207c68f6f0f0")
+		)
+		(pad "4" thru_hole circle
+			(at 10.35 -6 270)
+			(size 2.7 2.7)
+			(drill 1.8)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "GND")
+			(pinfunction "MH2_4")
+			(pintype "passive")
+			(uuid "2da18b80-b08b-4665-930b-6edc0adb480f")
+		)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/lib/3d_models/XT60PW-M.stp"
+			(offset
+				(xyz 3.599999851 2.380000079 0.4600000014)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -180 0 0)
 			)
 		)
 	)
@@ -7448,7 +8294,7 @@
 				(pins "1" "2" "3" "4")
 			)
 		)
-		(attr through_hole dnp)
+		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3 0)
@@ -7832,7 +8678,7 @@
 				(pins "1" "2" "3" "4")
 			)
 		)
-		(attr through_hole dnp)
+		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3 0)
@@ -8992,7 +9838,7 @@
 				(pins "4" "5" "1" "2" "3")
 			)
 		)
-		(attr through_hole dnp)
+		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 0 -3.5)
@@ -11155,7 +12001,7 @@
 				(pins "1" "2" "3" "4" "5" "6" "9" "13" "10" "11" "12" "7" "8")
 			)
 		)
-		(attr smd dnp)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center -1.9 -1.75)
@@ -13406,7 +14252,7 @@
 				)
 			)
 		)
-		(property "Value" "LTC6655LNBHMS8-2.5#PBF"
+		(property "Value" "LTC6655BHMS8-2.5#PBF"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -13466,7 +14312,7 @@
 				)
 			)
 		)
-		(property "Manufacturer_Part_Number" "LTC6655LNBHMS8-2.5#PBF"
+		(property "Manufacturer_Part_Number" "LTC6655BHMS8-2.5#PBF"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13479,7 +14325,7 @@
 				)
 			)
 		)
-		(property "Mouser Part Number" "584-6655LNBHMS825PBF"
+		(property "Mouser Part Number" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13492,7 +14338,7 @@
 				)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Analog-Devices/LTC6655LNBHMS8-2.5PBF?qs=0lSvoLzn4L%252BRohUD3M%252BeWQ%3D%3D"
+		(property "Mouser Price/Stock" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13505,7 +14351,7 @@
 				)
 			)
 		)
-		(property "Arrow Part Number" "LTC6655LNBHMS8-2.5#PBF"
+		(property "Arrow Part Number" "LTC6655BHMS8-2.5#PBF"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13518,7 +14364,7 @@
 				)
 			)
 		)
-		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/ltc6655lnbhms8-2.5pbf/analog-devices.html?utm_currency=USD&region=nac"
+		(property "Arrow Price/Stock" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13540,7 +14386,7 @@
 				(pins "1" "2" "3" "4" "8" "7" "6" "5")
 			)
 		)
-		(attr smd dnp)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -2.925 -1.55)
@@ -13742,8 +14588,8 @@
 			(at 2.212 0.325 90)
 			(size 0.45 1.425)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "Net-(IC3-NR)")
-			(pinfunction "NR_6")
+			(net "Net-(IC3-VOUT_F)")
+			(pinfunction "VOUT_S_6")
 			(pintype "passive")
 			(uuid "eb101a9e-f344-49b9-8ed3-585121112612")
 		)
@@ -13751,7 +14597,7 @@
 			(at 2.212 -0.325 90)
 			(size 0.45 1.425)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "Net-(IC3-NR)")
+			(net "Net-(IC3-VOUT_F)")
 			(pinfunction "VOUT_F_7")
 			(pintype "passive")
 			(uuid "20cde67a-802f-46fc-b8f6-b7f06f9d76f4")
@@ -14409,7 +15255,7 @@
 				(pins "1" "2" "3" "4")
 			)
 		)
-		(attr through_hole dnp)
+		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3 0)
@@ -14934,7 +15780,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(IC3-NR)")
+			(net "Net-(IC3-VOUT_F)")
 			(pintype "passive")
 			(uuid "70de2239-991b-49a4-a67c-d8389bc3f290")
 		)
@@ -16598,7 +17444,7 @@
 				(pins "1" "2" "3" "4" "8" "7" "6" "5")
 			)
 		)
-		(attr smd dnp)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -2.925 1.55)
@@ -17166,7 +18012,7 @@
 				(pins "1" "2" "3" "4" "8" "7" "6" "5")
 			)
 		)
-		(attr smd dnp)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -2.925 1.55)
@@ -18230,7 +19076,7 @@
 				(pins "1" "2" "3" "4" "8" "7" "6" "5")
 			)
 		)
-		(attr smd dnp)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -2.925 1.55)
@@ -38719,7 +39565,7 @@
 		)
 	)
 	(zone
-		(net "Net-(IC3-NR)")
+		(net "Net-(IC3-VOUT_F)")
 		(layer "F.Cu")
 		(uuid "d32b9140-416c-4fc5-bbec-ca81d51bb501")
 		(hatch edge 0.5)

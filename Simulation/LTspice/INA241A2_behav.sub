@@ -7,15 +7,16 @@
 *   - -3 dB bandwidth 1.1 MHz (single pole), slew rate 8 V/us
 *   - output swing GND + 8 mV ... VS - 70 mV (typical, RL = 10 k)
 *   - quiescent current 2.5 mA, input bias current 35 uA per input
-* Not modelled: offset and gain error, noise, CMRR and the 1 us output hold of
-* the enhanced PWM rejection (the output of this model does not react at all to
-* the common-mode voltage).
+* Not modelled: noise, CMRR and the 1 us output hold of the enhanced PWM
+* rejection (the output of this model does not react at all to the common-mode
+* voltage). Gain and input offset are the parameters G and Vos: nominal by
+* default, drawn inside the datasheet limits by the Monte Carlo simulation 08.
 * Parameters not given in the datasheet (REF pin network 2 x 50 k, closed-loop
 * output resistance 0.5 ohm) are engineering estimates.
 * ---------------------------------------------------------------------------
 * Pins: IN+ IN- REF1 REF2 VS GND OUT
 .subckt INA241A2_BEHAV INP INN REF1 REF2 VS COM OUT
-.param G=20 fbw=1.1Meg SR=8Meg Cp=1n
+.param G=20 Vos=0 fbw=1.1Meg SR=8Meg Cp=1n
 * --- supply and input bias currents -----------------------------------------
 Iq VS COM 2.5m
 Ibp INP COM 35u
@@ -24,7 +25,7 @@ Ibn INN COM 35u
 Rr1 REF1 mid 50k
 Rr2 REF2 mid 50k
 * --- gain, clamped to the output swing --------------------------------------
-Bt tgt COM V=min(max(V(mid,COM)+G*V(INP,INN), 8m), V(VS,COM)-70m)
+Bt tgt COM V=min(max(V(mid,COM)+G*(V(INP,INN)+Vos), 8m), V(VS,COM)-70m)
 * --- 1.1 MHz pole with 8 V/us slew limit (gm = 2*pi*fbw*Cp, Imax = SR*Cp) ----
 Bs COM pole I=limit(2*pi*fbw*Cp*V(tgt,pole), -SR*Cp, SR*Cp)
 Cp pole COM {Cp}

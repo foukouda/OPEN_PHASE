@@ -6,262 +6,845 @@
 	(paper "A3")
 	(title_block
 		(title "Project Architecture")
-		(date "2026-10-05")
+		(date "2026-10-06")
 		(rev "${REVISION}")
 		(company "${COMPANY}")
 	)
-	(lib_symbols
-	)
-	(arc
-		(start 153.67 104.14)
-		(mid 153.2951 105.0351)
-		(end 152.4 105.41)
+	(lib_symbols)
+	(polyline
+		(pts
+			(xy 193.68 177.8) (xy 195.12 177.152) (xy 195.12 178.448) (xy 193.68 177.8)
+		)
 		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "13e3bc56-4a98-40ef-8c39-3b21620a792f")
-	)
-	(arc
-		(start 358.16 179.05)
-		(mid 358.5349 178.1549)
-		(end 359.43 177.78)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "17d54905-4550-45f8-8561-afedff6a8137")
-	)
-	(arc
-		(start 248.94 134.6)
-		(mid 248.0449 134.2251)
-		(end 247.67 133.33)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "19c30b2f-1391-4be0-8a5f-17a3226c0876")
-	)
-	(arc
-		(start 248.94 78.72)
-		(mid 248.1961 80.5161)
-		(end 246.4 81.26)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "1f118ecb-cadd-469f-bbb8-724dc73dfa90")
-	)
-	(arc
-		(start 246.4 55.86)
-		(mid 248.1902 56.6098)
-		(end 248.94 58.4)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "41edc4ef-1740-4350-af91-51284317da40")
-	)
-	(arc
-		(start 358.16 187.94)
-		(mid 357.4161 189.7361)
-		(end 355.62 190.48)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "4cefdb2a-7d09-43f8-8759-3f9a430143a0")
-	)
-	(arc
-		(start 247.67 135.87)
-		(mid 248.0449 134.9749)
-		(end 248.94 134.6)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "5b059745-d833-4f9d-9745-ec7a90904541")
-	)
-	(arc
-		(start 247.67 144.76)
-		(mid 246.9261 146.5561)
-		(end 245.13 147.3)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "62bb3cd5-23b6-4c8e-a8f2-a293aca5d83b")
-	)
-	(arc
-		(start 152.4 105.41)
-		(mid 153.2951 105.7849)
-		(end 153.67 106.68)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "787eda22-1bf9-4d1b-96b2-11995bb2af0f")
-	)
-	(arc
-		(start 156.21 120.65)
-		(mid 154.4198 119.9002)
-		(end 153.67 118.11)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "7c454724-851d-42c5-8823-df570c1fc5eb")
-	)
-	(arc
-		(start 245.13 121.9)
-		(mid 246.9202 122.6498)
-		(end 247.67 124.44)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "94ad6bc3-4505-4c4a-89fc-83d0c51dd562")
-	)
-	(arc
-		(start 248.94 69.83)
-		(mid 249.3149 68.9349)
-		(end 250.21 68.56)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "9be1f3d4-64da-482a-93b7-645e8a42a37f")
-	)
-	(arc
-		(start 250.21 68.56)
-		(mid 249.3149 68.1851)
-		(end 248.94 67.29)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "a9e89264-ae0b-4662-a79f-8aff1254b500")
-	)
-	(arc
-		(start 355.62 165.08)
-		(mid 357.4102 165.8298)
-		(end 358.16 167.62)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "aeecd69d-ecb9-4b87-8dcd-c07f48d7f76f")
-	)
-	(arc
-		(start 359.43 177.78)
-		(mid 358.5349 177.4051)
-		(end 358.16 176.51)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "c4d5c854-3d9c-49dc-bc18-f6b77d2a8be2")
-	)
-	(arc
-		(start 153.67 92.71)
-		(mid 154.4139 90.9139)
-		(end 156.21 90.17)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "fda911f3-adb3-4abb-981f-a877a93c831b")
-	)
-	(text "Page 6"
-		(exclude_from_sim no)
-		(at 86.36 157.48 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(bold yes)
-				(color 100 70 50 1)
-			)
-			(justify right bottom)
-			(href "#6")
-		)
-		(uuid "f3991182-76ac-4eb2-95ef-16d6a7e7eadb")
-	)
-	(text_box "Schematic page dedicated to the power supply: LT8362 boost to +6V, then +5VA and +2.5VA (LTC6655 + LT3045-1)."
-		(exclude_from_sim no)
-		(at 92.71 139.7 0)
-		(size 26.015 5.1)
-		(margins 1.4287 1.4287 1.4287 1.4287)
-		(stroke
-			(width -0.0001)
+			(width 0.35)
 			(type solid)
+			(color 214 64 180 1)
 		)
 		(fill
 			(type none)
 		)
+		(uuid "0b3973d0-ea63-5cb3-9afd-a76cebd116fc")
+	)
+	(polyline
+		(pts
+			(xy 275.59 120.02) (xy 276.238 121.46) (xy 274.942 121.46) (xy 275.59 120.02)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "0fc2899d-e379-54a7-a820-f0b164c5e69a")
+	)
+	(polyline
+		(pts
+			(xy 237.49 120.58) (xy 237.76 121.18) (xy 237.22 121.18) (xy 237.49 120.58)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "102e77ba-447c-5375-ac85-56a4a92ae92a")
+	)
+	(polyline
+		(pts
+			(xy 255.27 120.58) (xy 255.54 121.18) (xy 255 121.18) (xy 255.27 120.58)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "1c3476b5-5230-56a0-9840-89962353f793")
+	)
+	(polyline
+		(pts
+			(xy 255.27 119.38) (xy 256.35 121.78) (xy 254.19 121.78) (xy 255.27 119.38)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "1dc1578a-2ff2-54ca-a39f-7ac24a29405e")
+	)
+	(polyline
+		(pts
+			(xy 125.44 93.98) (xy 124.66 94.331) (xy 124.66 93.629) (xy 125.44 93.98)
+		)
+		(stroke
+			(width 0.455)
+			(type solid)
+			(color 224 112 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "21a550e6-f778-5b8b-b9c9-b2d96dcec8a4")
+	)
+	(polyline
+		(pts
+			(xy 294.57 100.33) (xy 295.17 100.06) (xy 295.17 100.6) (xy 294.57 100.33)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 40 90 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "232f5a60-2439-5fac-9698-52fca9e5d8fb")
+	)
+	(polyline
+		(pts
+			(xy 127 93.98) (xy 123.88 95.384) (xy 123.88 92.576) (xy 127 93.98)
+		)
+		(stroke
+			(width 0.455)
+			(type solid)
+			(color 224 112 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "2991bc7d-d332-5105-9ae6-abc078e45576")
+	)
+	(polyline
+		(pts
+			(xy 327.02 100.33) (xy 325.58 100.978) (xy 325.58 99.682) (xy 327.02 100.33)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 40 90 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "2a86bc9c-757d-5777-b31e-d6d49e0376c5")
+	)
+	(polyline
+		(pts
+			(xy 237.49 119.38) (xy 238.57 121.78) (xy 236.41 121.78) (xy 237.49 119.38)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "2f3b9c38-7806-5ac3-be82-bce9c7104183")
+	)
+	(polyline
+		(pts
+			(xy 275.59 119.38) (xy 276.67 121.78) (xy 274.51 121.78) (xy 275.59 119.38)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "350baea2-d7b4-548b-a125-75c61c0dc2a1")
+	)
+	(polyline
+		(pts
+			(xy 92.71 106.68) (xy 95.83 105.276) (xy 95.83 108.084) (xy 92.71 106.68)
+		)
+		(stroke
+			(width 0.455)
+			(type solid)
+			(color 224 112 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "38568acb-c17d-5b22-9ec6-845eb38295f0")
+	)
+	(polyline
+		(pts
+			(xy 193.04 177.8) (xy 195.44 176.72) (xy 195.44 178.88) (xy 193.04 177.8)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "38fd721c-6694-5ee1-9632-ee2e24ca09f0")
+	)
+	(polyline
+		(pts
+			(xy 94.27 106.68) (xy 95.05 106.329) (xy 95.05 107.031) (xy 94.27 106.68)
+		)
+		(stroke
+			(width 0.455)
+			(type solid)
+			(color 224 112 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "3b265981-527e-5890-996a-7f7cad22d426")
+	)
+	(polyline
+		(pts
+			(xy 193.04 157.48) (xy 237.49 157.48) (xy 237.49 120.98)
+		)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "3dbc4369-4747-577f-8aaf-73cb09c2872c")
+	)
+	(polyline
+		(pts
+			(xy 275.79 177.8) (xy 275.7632 177.9) (xy 275.69 177.9732) (xy 275.59 178) (xy 275.49 177.9732) (xy 275.4168 177.9)
+			(xy 275.39 177.8) (xy 275.4168 177.7) (xy 275.49 177.6268) (xy 275.59 177.6) (xy 275.69 177.6268)
+			(xy 275.7632 177.7) (xy 275.79 177.8)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "43388d53-c717-578b-ab23-0005013f6e7e")
+	)
+	(polyline
+		(pts
+			(xy 226.69 106.68) (xy 225.25 107.328) (xy 225.25 106.032) (xy 226.69 106.68)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 21 128 61 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "56f5b4fb-c603-56cb-a826-a183dee4f5a9")
+	)
+	(polyline
+		(pts
+			(xy 126.168 93.98) (xy 124.296 94.8224) (xy 124.296 93.1376) (xy 126.168 93.98)
+		)
+		(stroke
+			(width 0.455)
+			(type solid)
+			(color 224 112 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "5b743e86-ee5f-54ce-bc92-b86afb604225")
+	)
+	(polyline
+		(pts
+			(xy 180.34 120.58) (xy 180.61 121.18) (xy 180.07 121.18) (xy 180.34 120.58)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "5e2ad3b9-8eee-50e4-9d72-53d925e62b5a")
+	)
+	(polyline
+		(pts
+			(xy 326.46 100.33) (xy 325.86 100.6) (xy 325.86 100.06) (xy 326.46 100.33)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 40 90 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "618ee8f6-ecbe-5772-9f77-1d1f02ba776f")
+	)
+	(polyline
+		(pts
+			(xy 327.66 81.28) (xy 393.7 81.28) (xy 393.7 119.38) (xy 327.66 119.38) (xy 327.66 81.28)
+		)
+		(stroke
+			(width 0.3)
+			(type dash)
+			(color 150 150 150 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "64ef2174-f9ff-526a-8060-78fe8887146a")
+	)
+	(polyline
+		(pts
+			(xy 360.68 119.38) (xy 360.68 177.8) (xy 276.39 177.8)
+		)
+		(stroke
+			(width 0.6)
+			(type dash)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "6f423b93-6b49-5a1e-94d1-5ed6025d5fc9")
+	)
+	(polyline
+		(pts
+			(xy 227.33 106.68) (xy 224.93 107.76) (xy 224.93 105.6) (xy 227.33 106.68)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 21 128 61 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "742c6ee2-ff86-55d9-8e19-dedc23c4bfdc")
+	)
+	(polyline
+		(pts
+			(xy 180.34 120.02) (xy 180.988 121.46) (xy 179.692 121.46) (xy 180.34 120.02)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "7fa9d93c-18e4-59e4-9294-fd8db6ac8143")
+	)
+	(polyline
+		(pts
+			(xy 275.59 120.58) (xy 275.86 121.18) (xy 275.32 121.18) (xy 275.59 120.58)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "812cd169-349e-54f3-96eb-d9ab7e4c71ed")
+	)
+	(polyline
+		(pts
+			(xy 226.13 93.98) (xy 225.53 94.25) (xy 225.53 93.71) (xy 226.13 93.98)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 21 128 61 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "8ee4d138-058c-5f84-838f-9e9700b92150")
+	)
+	(polyline
+		(pts
+			(xy 93.542 106.68) (xy 95.414 105.8376) (xy 95.414 107.5224) (xy 93.542 106.68)
+		)
+		(stroke
+			(width 0.455)
+			(type solid)
+			(color 224 112 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "937d1209-9258-531a-bb86-360087bb0421")
+	)
+	(polyline
+		(pts
+			(xy 194.24 177.8) (xy 194.84 177.53) (xy 194.84 178.07) (xy 194.24 177.8)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "95cf91fe-bc1c-5ed9-9830-ce9389093a07")
+	)
+	(polyline
+		(pts
+			(xy 276.09 177.8) (xy 276.023 178.05) (xy 275.84 178.233) (xy 275.59 178.3) (xy 275.34 178.233) (xy 275.157 178.05)
+			(xy 275.09 177.8) (xy 275.157 177.55) (xy 275.34 177.367) (xy 275.59 177.3) (xy 275.84 177.367) (xy 276.023 177.55)
+			(xy 276.09 177.8)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "998020b4-45a4-5bb3-9bc8-3d0e24c9ffa8")
+	)
+	(polyline
+		(pts
+			(xy 180.34 119.38) (xy 181.42 121.78) (xy 179.26 121.78) (xy 180.34 119.38)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "a86eb5ea-20fe-5c61-be1a-b7525e3e2295")
+	)
+	(polyline
+		(pts
+			(xy 293.37 100.33) (xy 295.77 99.25) (xy 295.77 101.41) (xy 293.37 100.33)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 40 90 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "abfa8fbb-e81c-53ae-aac8-fe7810ca216a")
+	)
+	(polyline
+		(pts
+			(xy 162.56 119.38) (xy 163.64 121.78) (xy 161.48 121.78) (xy 162.56 119.38)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "bd73a941-ba4f-50c8-8270-accf0af7de03")
+	)
+	(polyline
+		(pts
+			(xy 237.49 120.02) (xy 238.138 121.46) (xy 236.842 121.46) (xy 237.49 120.02)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "bd89d649-1ef1-511e-bf02-e2b70d0e862b")
+	)
+	(polyline
+		(pts
+			(xy 227.33 93.98) (xy 224.93 95.06) (xy 224.93 92.9) (xy 227.33 93.98)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 21 128 61 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "c48d7933-df11-588c-9f84-c6b2fb0bef46")
+	)
+	(polyline
+		(pts
+			(xy 327.66 100.33) (xy 325.26 101.41) (xy 325.26 99.25) (xy 327.66 100.33)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 40 90 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "ca4102ee-3611-55ee-840a-5a6a33dc9b8e")
+	)
+	(polyline
+		(pts
+			(xy 276.39 177.8) (xy 276.2828 178.2) (xy 275.99 178.4928) (xy 275.59 178.6) (xy 275.19 178.4928)
+			(xy 274.8972 178.2) (xy 274.79 177.8) (xy 274.8972 177.4) (xy 275.19 177.1072) (xy 275.59 177) (xy 275.99 177.1072)
+			(xy 276.2828 177.4) (xy 276.39 177.8)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "cb96532f-75b3-5f47-9f9d-6d871b11de95")
+	)
+	(polyline
+		(pts
+			(xy 226.13 106.68) (xy 225.53 106.95) (xy 225.53 106.41) (xy 226.13 106.68)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 21 128 61 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "cd88541a-3cdd-5494-96f1-8cfeb0f040b0")
+	)
+	(polyline
+		(pts
+			(xy 162.56 120.58) (xy 162.83 121.18) (xy 162.29 121.18) (xy 162.56 120.58)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "cf56670c-070c-5169-95d4-0ed412f64abe")
+	)
+	(polyline
+		(pts
+			(xy 226.69 93.98) (xy 225.25 94.628) (xy 225.25 93.332) (xy 226.69 93.98)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 21 128 61 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "d62010f6-e681-5313-97bb-5691766746d7")
+	)
+	(polyline
+		(pts
+			(xy 294.01 100.33) (xy 295.45 99.682) (xy 295.45 100.978) (xy 294.01 100.33)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 40 90 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "dca6c65b-3589-5df6-8f18-fd614a9b4163")
+	)
+	(polyline
+		(pts
+			(xy 162.56 120.02) (xy 163.208 121.46) (xy 161.912 121.46) (xy 162.56 120.02)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "e2c77ff0-8ea6-5053-a7cd-df825e06233a")
+	)
+	(polyline
+		(pts
+			(xy 255.27 120.02) (xy 255.918 121.46) (xy 254.622 121.46) (xy 255.27 120.02)
+		)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "e86a06ef-0ced-5ce2-875b-5081cb87cae0")
+	)
+	(polyline
+		(pts
+			(xy 193.04 165.1) (xy 255.27 165.1) (xy 255.27 120.98)
+		)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "ebb175b6-cb6e-5f40-a291-da4a5d8b8889")
+	)
+	(text "+3.3V"
+		(exclude_from_sim no)
+		(at 277.19 125.98 0)
 		(effects
 			(font
-				(size 1.905 1.905)
-				(thickness 0.381)
+				(face "Arial")
+				(size 1.8 1.8)
 				(bold yes)
-				(color 0 0 0 1)
+				(color 214 64 180 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "0733990f-1fcc-5243-b4e5-8e6319e94012")
+	)
+	(text "DATA ACQUISITION"
+		(exclude_from_sim no)
+		(at 227.33 72.39 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.4 2.4)
+				(bold yes)
+				(color 111 84 181 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "08e169c9-b492-5fae-9bf2-58e67f218adc")
+	)
+	(text "IC5 LT8362 boost  +3.3V -> +6V, 2 MHz\nIC7 LTC6655-5 + IC8 LT3045-1 -> +5VA\nIC3 LTC6655-2.5 + IC9 LT3045-1 -> +2.5VA\nEach reference drives its LDO SET pin\nL1 2.2 µH, Schottky D2 PMEG2020EH"
+		(exclude_from_sim no)
+		(at 129.54 153.67 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.9 1.9)
+				(color 40 40 40 1)
 			)
 			(justify left top)
 		)
-		(uuid "884e1d75-51b0-464e-a45d-6453076dd8e6")
+		(uuid "090c4fc1-d0d9-551e-b505-1903be0a16a5")
+	)
+	(text "not wired yet"
+		(exclude_from_sim no)
+		(at 310.515 102.23 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.3 1.3)
+				(color 120 120 120 1)
+			)
+			(justify top)
+		)
+		(uuid "0c96590d-0aae-5727-8f34-93d3c9d5c3a3")
+	)
+	(text "3 x current"
+		(exclude_from_sim no)
+		(at 210.185 92.71 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+				(color 21 128 61 1)
+			)
+			(justify bottom)
+		)
+		(uuid "104414ab-01b2-53d2-8854-f7704b4fe241")
+	)
+	(text "SNG-V1±, V2±, V3±"
+		(exclude_from_sim no)
+		(at 210.185 108.58 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.3 1.3)
+				(color 120 120 120 1)
+			)
+			(justify top)
+		)
+		(uuid "2092ef3c-bead-539d-8984-17c0b8ae7562")
+	)
+	(text "POWER SUPPLY"
+		(exclude_from_sim no)
+		(at 127 140.97 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.4 2.4)
+				(bold yes)
+				(color 176 64 102 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "23003ab5-f1e8-5015-8863-ec37efe3bdc9")
+	)
+	(text "AVCC"
+		(exclude_from_sim no)
+		(at 239.09 126.78 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.3 1.3)
+				(color 120 120 120 1)
+			)
+			(justify left top)
+		)
+		(uuid "2361d631-c312-5205-86db-0cbb8194ae23")
+	)
+	(text "SNG-1F/G, 2F/G, 3F/G"
+		(exclude_from_sim no)
+		(at 210.185 95.88 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.3 1.3)
+				(color 120 120 120 1)
+			)
+			(justify top)
+		)
+		(uuid "26f09a56-5a39-5df0-8621-a9ae1903c25a")
+	)
+	(text "MECHANICAL"
+		(exclude_from_sim no)
+		(at 26.67 140.97 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.4 2.4)
+				(bold yes)
+				(color 120 120 120 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "28f3e33e-be05-553c-bfbd-9a6878183fa0")
+	)
+	(text "+5VA"
+		(exclude_from_sim no)
+		(at 164.16 125.98 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+				(color 214 64 180 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "296c1012-fbdf-5466-9b24-79292b4c8121")
+	)
+	(text "Digital interface"
+		(exclude_from_sim no)
+		(at 310.515 99.06 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+				(color 40 90 200 1)
+			)
+			(justify bottom)
+		)
+		(uuid "3dffbd90-684a-5d0b-b4ff-cce57556f384")
+	)
+	(text "[10]  Revision History"
+		(exclude_from_sim no)
+		(at 190.5 231.775 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify left bottom)
+			(href "#10")
+		)
+		(uuid "40bdd0e4-7e40-5527-920b-6db9fa170241")
+	)
+	(text "[3]  Project Architecture"
+		(exclude_from_sim no)
+		(at 127 221.615 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(bold yes)
+				(color 120 120 120 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "45633a9d-cea2-5f22-bcf9-2c476f752709")
+	)
+	(text "Sheet hierarchy and signal flow. Click a block or its page number to open the sheet."
+		(exclude_from_sim no)
+		(at 210.82 49.53 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(italic yes)
+				(color 120 120 120 1)
+			)
+			(justify bottom)
+		)
+		(uuid "4a191e12-b416-5727-ac34-064e26fb3767")
+	)
+	(text "+3.3V from the host: no input connector yet"
+		(exclude_from_sim no)
+		(at 318.135 176.53 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(bold yes)
+				(color 214 64 180 1)
+			)
+			(justify bottom)
+		)
+		(uuid "4d0ed869-4ec5-58e5-b0c8-d0c5a04d2327")
 	)
 	(text "Page 8"
 		(exclude_from_sim no)
-		(at 350.52 186.69 0)
+		(at 90.17 185.42 0)
 		(effects
 			(font
+				(face "Arial")
 				(size 2.54 2.54)
 				(bold yes)
 				(color 100 70 50 1)
@@ -269,27 +852,277 @@
 			(justify right bottom)
 			(href "#8")
 		)
-		(uuid "2e8c7cc0-7176-4d87-986a-20379d0fc065")
+		(uuid "4d309f2e-c8fd-5c8d-a0d8-ae0126638fd5")
 	)
-	(text "Page 5"
+	(text "VS"
 		(exclude_from_sim no)
-		(at 240.03 143.51 0)
+		(at 164.16 126.78 0)
 		(effects
 			(font
+				(face "Arial")
+				(size 1.3 1.3)
+				(color 120 120 120 1)
+			)
+			(justify left top)
+		)
+		(uuid "4f2ffbd2-443c-57b2-97ad-ffd03d60dc1c")
+	)
+	(text "+3.3V"
+		(exclude_from_sim no)
+		(at 215.265 176.53 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+				(color 214 64 180 1)
+			)
+			(justify bottom)
+		)
+		(uuid "5067a2c3-9f05-5c85-95b3-143987880336")
+	)
+	(text "+2.5VA"
+		(exclude_from_sim no)
+		(at 181.94 125.98 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+				(color 214 64 180 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "50a2fb13-4e97-54ba-abfc-3e835c0eb40b")
+	)
+	(text "Analog signal, differential pairs"
+		(exclude_from_sim no)
+		(at 40.64 221.615 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(color 40 40 40 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "5826d21a-7493-5f97-931f-ba2fe27050ad")
+	)
+	(text "[2]  Block Diagram"
+		(exclude_from_sim no)
+		(at 127 216.535 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify left bottom)
+			(href "#2")
+		)
+		(uuid "5951c455-2e80-510d-9d66-ebe1b1e26624")
+	)
+	(text "[4]  AD7606C-18 ADC"
+		(exclude_from_sim no)
+		(at 127 226.695 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify left bottom)
+			(href "#4")
+		)
+		(uuid "5bff87b5-d2ca-578a-a825-1fd6c125f093")
+	)
+	(text "Supply input, no connector yet"
+		(exclude_from_sim no)
+		(at 40.64 231.775 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(color 40 40 40 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "5c4f8231-4841-5ae3-b4ae-a3697ba1c28b")
+	)
+	(text "+2.5VA"
+		(exclude_from_sim no)
+		(at 256.87 125.98 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+				(color 214 64 180 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "5e1bc44d-9488-5c24-a3b6-7572bb17995f")
+	)
+	(text "Page 4"
+		(exclude_from_sim no)
+		(at 290.83 116.84 0)
+		(effects
+			(font
+				(face "Arial")
 				(size 2.54 2.54)
 				(bold yes)
 				(color 100 70 50 1)
 			)
 			(justify right bottom)
-			(href "#5")
+			(href "#4")
 		)
-		(uuid "b60ecde0-2a85-4071-a728-47148cd80779")
+		(uuid "5e78ccaf-d387-57ed-988a-8671a913bfe7")
+	)
+	(text "To do"
+		(exclude_from_sim no)
+		(at 391.16 116.84 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.54 2.54)
+				(bold yes)
+				(color 120 120 120 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "658075a0-1f51-5b3b-9a4a-a5831c3c49a5")
+	)
+	(text "HOST INTERFACE"
+		(exclude_from_sim no)
+		(at 327.66 72.39 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.4 2.4)
+				(bold yes)
+				(color 120 120 120 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "685e7641-a9f0-5d7e-b597-2d8177ef6bd9")
+	)
+	(text "[1]  Title Page"
+		(exclude_from_sim no)
+		(at 127 211.455 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify left bottom)
+			(href "#1")
+		)
+		(uuid "6947fea7-47a5-5b59-8129-a68f0c78fa5f")
+	)
+	(text "J1, from the ESC"
+		(exclude_from_sim no)
+		(at 109.855 95.88 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.3 1.3)
+				(color 120 120 120 1)
+			)
+			(justify top)
+		)
+		(uuid "72a0aeb2-71a0-5203-8818-6fb03ce581c1")
+	)
+	(text "[8]  Holes, Fiducials"
+		(exclude_from_sim no)
+		(at 190.5 221.615 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify left bottom)
+			(href "#8")
+		)
+		(uuid "76eec286-1a33-5ea4-9e17-7a599eb2c8a8")
+	)
+	(text "H1-H4  M3 mounting holes\nPads connected to GND\nNo fiducial on this revision"
+		(exclude_from_sim no)
+		(at 29.21 153.67 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.9 1.9)
+				(color 40 40 40 1)
+			)
+			(justify left top)
+		)
+		(uuid "7f798c85-66ee-5891-85a8-d349894ab20d")
+	)
+	(text "Digital interface, not wired yet"
+		(exclude_from_sim no)
+		(at 40.64 226.695 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(color 40 40 40 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "815b6ea7-640b-5cc5-a629-d9fff93a4a34")
+	)
+	(text "No sheet yet"
+		(exclude_from_sim no)
+		(at 327.66 80.2509 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.9 1.9)
+				(italic yes)
+				(color 120 120 120 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "879eb8bc-7dd3-5f66-a083-ceba2494e192")
+	)
+	(text "Power rail"
+		(exclude_from_sim no)
+		(at 40.64 216.535 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(color 40 40 40 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "89c2217a-61bd-5f77-b26f-df27dbbb2bf7")
+	)
+	(text "Phase conductor, 35 A"
+		(exclude_from_sim no)
+		(at 40.64 211.455 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(color 40 40 40 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "94aa846d-4242-5448-9118-61d3ec280531")
 	)
 	(text "Page 7"
 		(exclude_from_sim no)
-		(at 241.3 77.47 0)
+		(at 90.17 116.84 0)
 		(effects
 			(font
+				(face "Arial")
 				(size 2.54 2.54)
 				(bold yes)
 				(color 100 70 50 1)
@@ -297,113 +1130,341 @@
 			(justify right bottom)
 			(href "#7")
 		)
-		(uuid "cf443c67-c583-489a-a5e4-7ac7d566ce38")
+		(uuid "951165c9-7b7b-539e-87bb-eaa0fbf1419b")
 	)
-	(text "Page 4"
+	(text "Page 5"
 		(exclude_from_sim no)
-		(at 193.04 114.3 0)
+		(at 190.5 116.84 0)
 		(effects
 			(font
+				(face "Arial")
 				(size 2.54 2.54)
 				(bold yes)
-				(color 20 60 40 1)
+				(color 100 70 50 1)
 			)
 			(justify right bottom)
-			(href "#4")
+			(href "#5")
 		)
-		(uuid "f04f874a-d252-4474-87f2-c34bbb094a4c")
+		(uuid "9aab47f3-2442-5962-af1c-3a0b26ec9100")
 	)
-	(text_box "Schematic page dedicated to mounting holes and fiducials."
+	(text "[9]  Power Sequencing"
 		(exclude_from_sim no)
-		(at 359.41 168.91 0)
-		(size 26.015 5.1)
-		(margins 1.4287 1.4287 1.4287 1.4287)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
+		(at 190.5 226.695 0)
 		(effects
 			(font
-				(size 1.905 1.905)
-				(thickness 0.381)
+				(face "Arial")
+				(size 1.6 1.6)
 				(bold yes)
-				(color 0 0 0 1)
+				(color 100 70 50 1)
+			)
+			(justify left bottom)
+			(href "#9")
+		)
+		(uuid "a198cfa0-e61b-507d-80c9-14a88cd756a4")
+	)
+	(text "IC1 AD7606C-18  8 ch, 18 bit, 1 MSPS\nSimultaneous sampling, 6 inputs used\nV6 / V4 / V2 = Ia / Ib / Ic\nV5 / V3 / V1 = Va / Vb / Vc\nReference input REFIN/REFOUT = +2.5VA"
+		(exclude_from_sim no)
+		(at 229.87 85.09 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.9 1.9)
+				(color 40 40 40 1)
 			)
 			(justify left top)
 		)
-		(uuid "01a55d99-04b0-449d-b8f9-78c0cfe473bb")
+		(uuid "a39299d8-081e-5120-a7b8-5b84d0aba264")
 	)
-	(text_box "Schematic page dedicated to the AD7606C-18 ADC: supply, +2.5VA reference and analog inputs."
+	(text "J2, to the motor"
 		(exclude_from_sim no)
-		(at 129.54 88.9 0)
-		(size 22.225 5.08)
-		(margins 1.4287 1.4287 1.4287 1.4287)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
+		(at 109.855 108.58 0)
 		(effects
 			(font
-				(size 1.905 1.905)
-				(thickness 0.381)
+				(face "Arial")
+				(size 1.3 1.3)
+				(color 120 120 120 1)
+			)
+			(justify top)
+		)
+		(uuid "b132a179-5bd9-5301-bc50-6ae7d0e71c22")
+	)
+	(text "3 x voltage"
+		(exclude_from_sim no)
+		(at 210.185 105.41 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
 				(bold yes)
-				(color 0 0 0 1)
+				(color 21 128 61 1)
+			)
+			(justify bottom)
+		)
+		(uuid "b15b84bd-c1f9-5fd5-a8ff-5390fdb36205")
+	)
+	(text "+5VA"
+		(exclude_from_sim no)
+		(at 239.09 125.98 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+				(color 214 64 180 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b7597930-4f8f-54dc-a4a0-3dd2e45590ff")
+	)
+	(text "[7]  Connectors"
+		(exclude_from_sim no)
+		(at 190.5 216.535 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify left bottom)
+			(href "#7")
+		)
+		(uuid "bc913d1d-e7e5-5105-bfb7-97c6e454819d")
+	)
+	(text "LEGEND"
+		(exclude_from_sim no)
+		(at 26.67 203.2 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.4 2.4)
+				(bold yes)
+				(color 40 40 40 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "bf87135f-9acc-5215-82af-3e95fc7dc518")
+	)
+	(text "+2.5VA"
+		(exclude_from_sim no)
+		(at 215.265 163.83 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+				(color 214 64 180 1)
+			)
+			(justify bottom)
+		)
+		(uuid "c8949a56-2cad-5f6d-a3a0-9de8062947d3")
+	)
+	(text "REFIN / REFOUT"
+		(exclude_from_sim no)
+		(at 256.87 126.78 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.3 1.3)
+				(color 120 120 120 1)
 			)
 			(justify left top)
 		)
-		(uuid "971f0c48-6726-412d-badf-cee82cbffedd")
+		(uuid "cf014091-8a96-5c53-b8fe-565ee4c43f11")
 	)
-	(text_box "Schematic page dedicated to phase current (shunt + INA241A2) and phase voltage (divider) sensing."
+	(text "Page 6"
 		(exclude_from_sim no)
-		(at 249.575 121.9 0)
-		(size 26.015 5.1)
-		(margins 1.4287 1.4287 1.4287 1.4287)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
+		(at 190.5 185.42 0)
 		(effects
 			(font
-				(size 1.905 1.905)
-				(thickness 0.381)
+				(face "Arial")
+				(size 2.54 2.54)
 				(bold yes)
-				(color 0 0 0 1)
+				(color 100 70 50 1)
+			)
+			(justify right bottom)
+			(href "#6")
+		)
+		(uuid "d36aa973-50b6-5203-a0d6-2ffe65254a82")
+	)
+	(text "IN-A / B / C"
+		(exclude_from_sim no)
+		(at 109.855 92.71 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+				(color 224 112 0 1)
+			)
+			(justify bottom)
+		)
+		(uuid "d9937572-fc02-54c1-9ca1-f8cd077e6f36")
+	)
+	(text "ANALOG FRONT-END"
+		(exclude_from_sim no)
+		(at 127 72.39 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.4 2.4)
+				(bold yes)
+				(color 21 128 61 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "d9f3c7c0-f661-56fe-94ab-ee63c3770926")
+	)
+	(text "PHASE CONNECTORS"
+		(exclude_from_sim no)
+		(at 26.67 72.39 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.4 2.4)
+				(bold yes)
+				(color 74 155 203 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "e1d18ce1-f561-525d-a94d-f67205dca60f")
+	)
+	(text "DOCUMENT INDEX"
+		(exclude_from_sim no)
+		(at 127 203.2 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.4 2.4)
+				(bold yes)
+				(color 40 40 40 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "e6704f87-3e6e-520e-9574-c89523b79242")
+	)
+	(text "VDRIVE"
+		(exclude_from_sim no)
+		(at 277.19 126.78 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.3 1.3)
+				(color 120 120 120 1)
 			)
 			(justify left top)
 		)
-		(uuid "97bb5e92-ab26-4907-9b80-08d49465fc86")
+		(uuid "ebe7dd99-48e4-524b-87d6-8a71ce8bb469")
 	)
-	(text_box "Schematic page dedicated to connector selection."
+	(text "[6]  Power Supply - Analog Rails"
 		(exclude_from_sim no)
-		(at 250.19 62.23 0)
-		(size 26.015 5.1)
-		(margins 1.4287 1.4287 1.4287 1.4287)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
+		(at 190.5 211.455 0)
 		(effects
 			(font
-				(size 1.905 1.905)
-				(thickness 0.381)
+				(face "Arial")
+				(size 1.6 1.6)
 				(bold yes)
-				(color 0 0 0 1)
+				(color 100 70 50 1)
+			)
+			(justify left bottom)
+			(href "#6")
+		)
+		(uuid "ec79d342-8485-52b5-b2b8-68bd692e0594")
+	)
+	(text "J1  MR60PW, from the ESC: IN-A / B / C\nJ2  MR60PW, to the motor: OUT-A / B / C\n3 phases, 35 A (connector rating)\nMounting pins 4-5 tied to GND"
+		(exclude_from_sim no)
+		(at 29.21 85.09 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.9 1.9)
+				(color 40 40 40 1)
 			)
 			(justify left top)
 		)
-		(uuid "dde0396b-b211-4d23-87df-0d2d3cc9bb6c")
+		(uuid "f15e541b-2b5f-5cce-b212-1934653775a1")
+	)
+	(text "+5VA"
+		(exclude_from_sim no)
+		(at 215.265 156.21 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+				(color 214 64 180 1)
+			)
+			(justify bottom)
+		)
+		(uuid "f5fc4f91-27e6-5fec-b968-4c4d063d962e")
+	)
+	(text "REF1 / REF2"
+		(exclude_from_sim no)
+		(at 181.94 126.78 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.3 1.3)
+				(color 120 120 120 1)
+			)
+			(justify left top)
+		)
+		(uuid "f6c5e1a7-d0bc-56da-a40c-a4a5e5f68ca6")
+	)
+	(text "OUT-A / B / C"
+		(exclude_from_sim no)
+		(at 109.855 105.41 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+				(color 224 112 0 1)
+			)
+			(justify bottom)
+		)
+		(uuid "f6eb059a-fe2a-5af1-b1c1-239a498e8307")
+	)
+	(text "[5]  INA241 Phase Sensing"
+		(exclude_from_sim no)
+		(at 127 231.775 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(bold yes)
+				(color 100 70 50 1)
+			)
+			(justify left bottom)
+			(href "#5")
+		)
+		(uuid "f83a04a6-4dbd-54d7-80a8-93b67263dfdb")
+	)
+	(text "3 identical channels, phases A / B / C\nR1 / R4 / R7  PBV-R001 1 mΩ Kelvin shunt\nIC2 / IC4 / IC6  INA241A2, 20 V/V = 20 mV/A\nDividers 40.2 kΩ / 10 kΩ = 0.198 V/V\nRC filters: 17.5 kHz (I), 48.5 kHz (V)"
+		(exclude_from_sim no)
+		(at 129.54 85.09 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.9 1.9)
+				(color 40 40 40 1)
+			)
+			(justify left top)
+		)
+		(uuid "fd502d0f-aece-50e0-b0dc-38a422505f2b")
+	)
+	(text "The AD7606C-18 digital pins are open:\nCONVST, BUSY, CS, SCLK, DOUTx,\nRESET, OS, RANGE, PAR/SER, STBY,\nREF SELECT\nNo host connector, no +3.3V input"
+		(exclude_from_sim no)
+		(at 330.2 85.09 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.9 1.9)
+				(color 120 120 120 1)
+			)
+			(justify left top)
+		)
+		(uuid "fe6cbadf-ddc8-524d-8d0f-77a0bbb2f89b")
 	)
 	(text_box "[${#}] ${TITLE}"
 		(exclude_from_sim no)
@@ -430,152 +1491,220 @@
 	)
 	(polyline
 		(pts
-			(xy 175.26 67.31) (xy 205.74 67.31)
+			(xy 127 106.68) (xy 94.79 106.68)
 		)
 		(stroke
-			(width 1.27)
+			(width 1.2)
 			(type solid)
+			(color 224 112 0 1)
 		)
-		(uuid "447d110b-5c4c-450f-b9e8-64c18291451d")
+		(uuid "0ce68303-01b8-5058-81c7-8ddf4e4962c9")
 	)
 	(polyline
 		(pts
-			(xy 237.49 78.74) (xy 237.49 124.46)
+			(xy 26.67 231.14) (xy 29.21 231.14)
 		)
 		(stroke
-			(width 0.762)
+			(width 0.6)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(uuid "0e903691-129a-5d60-a8b8-77b61b5041f6")
+	)
+	(polyline
+		(pts
+			(xy 26.67 220.98) (xy 36.83 220.98)
+		)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 21 128 61 1)
+		)
+		(uuid "17d4d86e-f4c4-5144-9951-538d725a59dc")
+	)
+	(polyline
+		(pts
+			(xy 193.04 106.68) (xy 225.73 106.68)
+		)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 21 128 61 1)
+		)
+		(uuid "356f8035-ff56-5877-b885-01940db9cbd6")
+	)
+	(polyline
+		(pts
+			(xy 180.34 149.86) (xy 180.34 120.98)
+		)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(uuid "8b56e4f2-2b78-56da-8b37-722a8b0b909a")
+	)
+	(polyline
+		(pts
+			(xy 34.29 226.06) (xy 36.83 226.06)
+		)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 40 90 200 1)
+		)
+		(uuid "8daca00f-8214-5856-99bf-064875d0e1df")
+	)
+	(polyline
+		(pts
+			(xy 26.67 226.06) (xy 29.21 226.06)
+		)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 40 90 200 1)
+		)
+		(uuid "94cd47a9-deb0-5552-b875-201e73d8dad1")
+	)
+	(polyline
+		(pts
+			(xy 34.29 231.14) (xy 36.83 231.14)
+		)
+		(stroke
+			(width 0.6)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(uuid "a96a245b-17f7-5f49-826d-b2ce14dd08c0")
+	)
+	(polyline
+		(pts
+			(xy 275.59 177.8) (xy 275.59 120.98)
+		)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(uuid "a9d5923a-b1f6-5d66-9db8-b4d08ba86f9d")
+	)
+	(polyline
+		(pts
+			(xy 275.59 177.8) (xy 194.64 177.8)
+		)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 214 64 180 1)
+		)
+		(uuid "abda867b-59e7-5842-b322-6fc72dfadf29")
+	)
+	(polyline
+		(pts
+			(xy 193.04 93.98) (xy 225.73 93.98)
+		)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 21 128 61 1)
+		)
+		(uuid "c20ce82e-8ef1-501a-ad75-abdba1bee18f")
+	)
+	(polyline
+		(pts
+			(xy 294.97 100.33) (xy 326.06 100.33)
+		)
+		(stroke
+			(width 0.8)
 			(type dash)
+			(color 40 90 200 1)
 		)
-		(uuid "4d421dcb-1cfc-4cd5-9cff-035327c478f3")
+		(uuid "cbc5af06-a10c-590a-9949-5858913b5d0e")
 	)
 	(polyline
 		(pts
-			(xy 175.26 95.25) (xy 175.26 67.31)
+			(xy 26.67 210.82) (xy 36.83 210.82)
 		)
 		(stroke
-			(width 1.27)
+			(width 1.2)
 			(type solid)
+			(color 224 112 0 1)
 		)
-		(uuid "531e8a99-d2d3-4e42-aa83-7dfadbc0cd6d")
+		(uuid "d2364118-6186-586d-a7e3-1b6fbf930191")
 	)
 	(polyline
 		(pts
-			(xy 175.26 134.62) (xy 204.47 134.62)
+			(xy 26.67 215.9) (xy 36.83 215.9)
 		)
 		(stroke
-			(width 1.27)
+			(width 0.8)
 			(type solid)
+			(color 214 64 180 1)
 		)
-		(uuid "573c88b9-0eb6-47a8-8e6a-3c48a4f129ff")
+		(uuid "df7f52f4-4833-5b91-a136-cd29983fc28d")
 	)
 	(polyline
 		(pts
-			(xy 175.26 115.57) (xy 175.26 134.62)
+			(xy 30.48 231.14) (xy 33.02 231.14)
 		)
 		(stroke
-			(width 1.27)
+			(width 0.6)
 			(type solid)
+			(color 214 64 180 1)
 		)
-		(uuid "83bd138d-720c-46fa-a0ca-4ec458c5f63c")
+		(uuid "e495b06f-11f1-51bd-93b3-ac837797454c")
 	)
 	(polyline
 		(pts
-			(xy 153.67 106.68) (xy 153.67 118.11)
+			(xy 30.48 226.06) (xy 33.02 226.06)
 		)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.8)
+			(type solid)
+			(color 40 90 200 1)
 		)
-		(uuid "8b678fb1-fee7-4461-95f7-7f383f478fdc")
+		(uuid "e4eb6614-e7e6-52d5-93a0-a4f01c39c7f9")
 	)
 	(polyline
 		(pts
-			(xy 247.65 135.89) (xy 247.65 144.78)
+			(xy 162.56 149.86) (xy 162.56 120.98)
 		)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.8)
+			(type solid)
+			(color 214 64 180 1)
 		)
-		(uuid "8c7de816-3d34-497f-b0c8-22f80559d2d8")
+		(uuid "f521ea1a-5cc2-5ce0-b415-1338af67b535")
 	)
 	(polyline
 		(pts
-			(xy 153.67 104.14) (xy 153.67 92.71)
+			(xy 92.71 93.98) (xy 124.92 93.98)
 		)
 		(stroke
-			(width 0)
-			(type default)
+			(width 1.2)
+			(type solid)
+			(color 224 112 0 1)
 		)
-		(uuid "903e49b2-1b5d-4317-a33b-adfda1594a88")
-	)
-	(polyline
-		(pts
-			(xy 247.65 124.46) (xy 247.65 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9543d363-0f36-4c41-97bc-b97723f48818")
-	)
-	(polyline
-		(pts
-			(xy 358.14 167.64) (xy 358.14 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8b5a8be-1596-42c2-a564-db37c7e61ec4")
-	)
-	(polyline
-		(pts
-			(xy 248.92 58.42) (xy 248.92 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c7a3afc7-dbbd-471c-bc9d-aefa6c3f26de")
-	)
-	(polyline
-		(pts
-			(xy 248.92 69.85) (xy 248.92 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6f4a7de-3ffb-4768-9a2e-8aa22d660e62")
-	)
-	(polyline
-		(pts
-			(xy 358.14 179.07) (xy 358.14 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb86f988-7945-4eb4-bb2b-c5bfe28c546e")
+		(uuid "fe5bdea8-f650-5a3c-ae96-83184359a8ee")
 	)
 	(sheet
-		(at 50.8 138.43)
-		(size 36.83 20.32)
+		(at 127 149.86)
+		(size 66.04 38.1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
-			(width 0.1524)
+			(width 0.3)
 			(type solid)
 		)
 		(fill
-			(color 255 200 0 0.502)
+			(color 176 64 102 0.18)
 		)
 		(uuid "64761cd4-62bf-4da3-92a1-0053e0023d86")
 		(property "Sheetname" "Power_Supply"
-			(at 50.8 137.4009 0)
+			(at 127 148.8309 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -587,7 +1716,8 @@
 			)
 		)
 		(property "Sheetfile" "Power Supply - Analog Rails.kicad_sch"
-			(at 50.8 159.3346 0)
+			(at 127 188.3546 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -607,23 +1737,23 @@
 		)
 	)
 	(sheet
-		(at 314.96 167.64)
-		(size 36.83 20.32)
+		(at 26.67 149.86)
+		(size 66.04 38.1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
-			(width 0.1524)
+			(width 0.3)
 			(type solid)
 		)
 		(fill
-			(color 255 46 42 0.502)
+			(color 120 120 120 0.18)
 		)
 		(uuid "b825b9f2-4a7b-44ab-b000-02167519e5f9")
 		(property "Sheetname" "Holes, Fiducials"
-			(at 314.96 166.6109 0)
+			(at 26.67 148.8309 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -635,7 +1765,8 @@
 			)
 		)
 		(property "Sheetfile" "Holes - Fiducials.kicad_sch"
-			(at 314.96 188.5446 0)
+			(at 26.67 188.3546 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -655,23 +1786,23 @@
 		)
 	)
 	(sheet
-		(at 205.74 58.42)
-		(size 36.83 20.32)
+		(at 26.67 81.28)
+		(size 66.04 38.1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
-			(width 0.1524)
+			(width 0.3)
 			(type solid)
 		)
 		(fill
-			(color 59 63 255 0.502)
+			(color 74 155 203 0.18)
 		)
 		(uuid "c7c721f5-c1ee-4db1-9a46-4881d72bcc61")
 		(property "Sheetname" "Connectors"
-			(at 205.74 57.3909 0)
+			(at 26.67 80.2509 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -683,7 +1814,8 @@
 			)
 		)
 		(property "Sheetfile" "Connectors.kicad_sch"
-			(at 205.74 79.3246 0)
+			(at 26.67 119.7746 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -703,23 +1835,23 @@
 		)
 	)
 	(sheet
-		(at 204.47 124.46)
-		(size 36.83 20.32)
+		(at 127 81.28)
+		(size 66.04 38.1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
-			(width 0.1524)
+			(width 0.3)
 			(type solid)
 		)
 		(fill
-			(color 255 200 0 0.502)
+			(color 21 128 61 0.18)
 		)
 		(uuid "e744f3ce-03a6-44a6-8792-1447ef232b9a")
 		(property "Sheetname" "INA241_Phase_Sense"
-			(at 204.47 123.4309 0)
+			(at 127 80.2509 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -731,7 +1863,8 @@
 			)
 		)
 		(property "Sheetfile" "INA241 - Phase Sensing.kicad_sch"
-			(at 204.47 145.3646 0)
+			(at 127 119.7746 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -751,23 +1884,23 @@
 		)
 	)
 	(sheet
-		(at 157.48 95.25)
-		(size 36.83 20.32)
+		(at 227.33 81.28)
+		(size 66.04 38.1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
-			(width 0.1524)
+			(width 0.3)
 			(type solid)
 		)
 		(fill
-			(color 128 255 128 0.5)
+			(color 111 84 181 0.18)
 		)
 		(uuid "f06537ee-772d-44d3-8c50-e0ba41038c9c")
 		(property "Sheetname" "AD7606C-18_ADC"
-			(at 157.48 94.2209 0)
+			(at 227.33 80.2509 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -779,7 +1912,8 @@
 			)
 		)
 		(property "Sheetfile" "AD7606C-18 - ADC.kicad_sch"
-			(at 157.48 116.1546 0)
+			(at 227.33 119.7746 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

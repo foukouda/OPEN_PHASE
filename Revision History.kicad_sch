@@ -10,8 +10,7 @@
 		(rev "${REVISION}")
 		(company "${COMPANY}")
 	)
-	(lib_symbols
-	)
+	(lib_symbols)
 	(text_box "[${#}] ${TITLE}"
 		(exclude_from_sim no)
 		(at 80.01 16.51 0)

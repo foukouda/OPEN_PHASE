@@ -6,116 +6,358 @@
 	(paper "A3")
 	(title_block
 		(title "Block Diagram")
-		(date "2026-10-05")
+		(date "2026-10-06")
 		(rev "${REVISION}")
 		(company "${COMPANY}")
 	)
-	(lib_symbols
-	)
-	(text_box "J1  MR60PW\nfrom the ESC\nIN-A / IN-B / IN-C"
-		(exclude_from_sim no)
-		(at 30.000 55.000 0)
-		(size 48.000 25.000)
-		(margins 1 1 1 1)
+	(lib_symbols)
+	(polyline
+		(pts
+			(xy 208 224) (xy 226 224) (xy 223.8 224.99) (xy 226 224) (xy 223.8 223.01)
+		)
 		(stroke
-			(width -0.0001)
+			(width 0.9)
 			(type default)
+			(color 237 161 0 1)
 		)
 		(fill
-			(type color)
-			(color 175 67 103 1)
+			(type none)
 		)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.0 2.0)
-				(color 255 255 255 1)
-			)
-		)
-		(uuid "26a2a4c3-6998-4b15-a73c-b64ebf75047f")
-	)
-	(text_box "R1 / R4 / R7\nPBV-R001 shunt, 1 mOhm\n4-terminal (Kelvin)"
-		(exclude_from_sim no)
-		(at 120.000 55.000 0)
-		(size 56.000 25.000)
-		(margins 1 1 1 1)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type color)
-			(color 175 67 103 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.0 2.0)
-				(color 255 255 255 1)
-			)
-		)
-		(uuid "0cd54b65-29b8-45c2-a32b-17161d322cdf")
-	)
-	(text_box "J2  MR60PW\nto the motor\nOUT-A / OUT-B / OUT-C"
-		(exclude_from_sim no)
-		(at 218.000 55.000 0)
-		(size 48.000 25.000)
-		(margins 1 1 1 1)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type color)
-			(color 175 67 103 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.0 2.0)
-				(color 255 255 255 1)
-			)
-		)
-		(uuid "89f369ca-cd86-40c3-9b86-c0db432da59a")
+		(uuid "0e773107-99ce-4027-88f0-7f81ad601af5")
 	)
 	(polyline
 		(pts
-			(xy 78.000 67.500) (xy 120.000 67.500) (xy 117.800 68.490) (xy 120.000 67.500) (xy 117.800 66.510)
+			(xy 176 112.5) (xy 196 112.5) (xy 193.8 113.49) (xy 196 112.5) (xy 193.8 111.51)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+			(color 74 153 204 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "189a78f1-3126-43de-807e-d43605253b52")
+	)
+	(polyline
+		(pts
+			(xy 128 198) (xy 146 198) (xy 143.8 198.99) (xy 146 198) (xy 143.8 197.01)
+		)
+		(stroke
+			(width 0.9)
+			(type default)
+			(color 235 104 52 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "1a2ea601-c6be-43de-a89d-64a47f507450")
+	)
+	(polyline
+		(pts
+			(xy 248 155.5) (xy 280 155.5) (xy 277.8 156.49) (xy 280 155.5) (xy 277.8 154.51)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+			(color 74 153 204 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "46678510-07c4-4f9c-8764-170641c124da")
+	)
+	(polyline
+		(pts
+			(xy 208 198) (xy 226 198) (xy 223.8 198.99) (xy 226 198) (xy 223.8 197.01)
+		)
+		(stroke
+			(width 0.9)
+			(type default)
+			(color 27 175 122 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "52c87407-ea6a-4d43-b660-2ffe0c4b76c9")
+	)
+	(polyline
+		(pts
+			(xy 176 67.5) (xy 218 67.5) (xy 215.8 68.49) (xy 218 67.5) (xy 215.8 66.51)
 		)
 		(stroke
 			(width 1.2)
 			(type default)
 			(color 175 67 103 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "53d1c2bc-0f6d-4b44-8087-4cb96f6a98c3")
+	)
+	(polyline
+		(pts
+			(xy 78 67.5) (xy 120 67.5) (xy 117.8 68.49) (xy 120 67.5) (xy 117.8 66.51)
+		)
+		(stroke
+			(width 1.2)
+			(type default)
+			(color 175 67 103 1)
+		)
+		(fill
+			(type none)
 		)
 		(uuid "65b3e9ce-74b6-4022-b65d-fdd6cb4ad9a9")
 	)
 	(polyline
 		(pts
-			(xy 176.000 67.500) (xy 218.000 67.500) (xy 215.800 68.490) (xy 218.000 67.500) (xy 215.800 66.510)
+			(xy 176 155.5) (xy 196 155.5) (xy 193.8 156.49) (xy 196 155.5) (xy 193.8 154.51)
 		)
 		(stroke
-			(width 1.2)
+			(width 0.5)
 			(type default)
-			(color 175 67 103 1)
+			(color 74 153 204 1)
 		)
-		(uuid "53d1c2bc-0f6d-4b44-8087-4cb96f6a98c3")
+		(fill
+			(type none)
+		)
+		(uuid "9f1c7871-8c17-4793-9239-a4471c471c63")
 	)
-	(text "3 phases, 35 A"
+	(polyline
+		(pts
+			(xy 30 207) (xy 62 207) (xy 59.8 207.99) (xy 62 207) (xy 59.8 206.01)
+		)
+		(stroke
+			(width 0.9)
+			(type default)
+			(color 42 120 214 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "a3241109-0ead-49e8-9c9d-230c7bb19391")
+	)
+	(polyline
+		(pts
+			(xy 148 80) (xy 148 100) (xy 147.01 97.8) (xy 148 100) (xy 148.99 97.8)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+			(color 74 153 204 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "da142438-e3ea-4bde-89e6-4cfa5361bfc6")
+	)
+	(polyline
+		(pts
+			(xy 128 224) (xy 146 224) (xy 143.8 224.99) (xy 146 224) (xy 143.8 223.01)
+		)
+		(stroke
+			(width 0.9)
+			(type default)
+			(color 235 104 52 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "de2cc74f-6a79-4056-a315-d397d06656a5")
+	)
+	(polyline
+		(pts
+			(xy 100 155.5) (xy 120 155.5) (xy 117.8 156.49) (xy 120 155.5) (xy 117.8 154.51)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+			(color 74 153 204 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "e750887a-cb74-4867-83ae-03bfd3dc3ecf")
+	)
+	(polyline
+		(pts
+			(xy 328 134) (xy 352 134) (xy 349.8 134.99) (xy 352 134) (xy 349.8 133.01)
+		)
+		(stroke
+			(width 0.5)
+			(type dash)
+			(color 110 110 110 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "ea6d6308-9e02-4433-9441-e23a407cc6a9")
+	)
+	(polyline
+		(pts
+			(xy 248 112.5) (xy 280 112.5) (xy 277.8 113.49) (xy 280 112.5) (xy 277.8 111.51)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+			(color 74 153 204 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "fee0572d-8b44-4350-bf3c-59586207d6f3")
+	)
+	(text "Supply:"
 		(exclude_from_sim no)
-		(at 99.000 65.000 0)
+		(at 320 190 0)
 		(effects
 			(font
 				(face "Arial")
-				(size 1.8 1.8)
+				(size 2 2)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "010da2b6-40a4-4c54-ab6d-30fbb3ece6ba")
+	)
+	(text "+2.5VA"
+		(exclude_from_sim no)
+		(at 228 223 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.2 2.2)
+				(bold yes)
+				(color 237 161 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "01ee9e15-d742-4b12-8390-56be336c284d")
+	)
+	(text "0 - 50 V, 0.198 V/V"
+		(exclude_from_sim no)
+		(at 352 214 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "076cdbf5-35a9-49a4-a7a3-bb2f0747bbd7")
+	)
+	(text "Kelvin sense"
+		(exclude_from_sim no)
+		(at 150 91 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(color 0 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "07f74862-7252-4f63-b1a0-d572d09b53e2")
+	)
+	(text "+5VA"
+		(exclude_from_sim no)
+		(at 228 197 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.2 2.2)
+				(bold yes)
+				(color 27 175 122 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "12edea8f-5f0e-4476-a90f-4b9a681cad89")
+	)
+	(text "Phase current max:"
+		(exclude_from_sim no)
+		(at 320 202 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "2b47be9c-9e50-42c6-b6c8-f1b78cb24da2")
+	)
+	(text "V6, V4, V2"
+		(exclude_from_sim no)
+		(at 264 110.5 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
 				(color 0 0 0 1)
 			)
 			(justify bottom)
 		)
-		(uuid "a70a6d9e-7469-421e-8dd4-d307bfd52488")
+		(uuid "2f72e9e3-d627-465a-bc90-93b32526b0af")
+	)
+	(text "OUT-A / OUT-B / OUT-C"
+		(exclude_from_sim no)
+		(at 98 151 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(color 0 0 0 1)
+			)
+			(justify right)
+		)
+		(uuid "361e2e59-72c6-48cd-9e67-1a4ad6334c69")
+	)
+	(text "35 A continuous (MR60PW)"
+		(exclude_from_sim no)
+		(at 352 196 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "3e29c730-97e3-40dd-9251-1f051457ab7f")
+	)
+	(text "3.3 V, 130 mA"
+		(exclude_from_sim no)
+		(at 352 190 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "3f78d6bd-4ff1-4c37-b0ca-75fc635d7d4f")
+	)
+	(text "+3.3V"
+		(exclude_from_sim no)
+		(at 31 205 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.2 2.2)
+				(bold yes)
+				(color 42 120 214 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "5238b07c-abc8-4e92-8b55-d868234296b6")
 	)
 	(text "PHASE CONDUCTORS"
 		(exclude_from_sim no)
-		(at 30.000 52.000 0)
+		(at 30 52 0)
 		(effects
 			(font
 				(face "Arial")
@@ -127,172 +369,50 @@
 		)
 		(uuid "605216d9-caa3-4a3f-84fc-39c992720cd9")
 	)
-	(text_box "IC2 / IC4 / IC6\nINA241A2, 20 V/V\nout = 2.5 V - 20 mV/A x I(J1->J2)"
+	(text "Phase current:"
 		(exclude_from_sim no)
-		(at 120.000 100.000 0)
-		(size 56.000 25.000)
-		(margins 1 1 1 1)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type color)
-			(color 74 153 204 1)
-		)
+		(at 320 196 0)
 		(effects
 			(font
 				(face "Arial")
-				(size 2.0 2.0)
-				(color 255 255 255 1)
-			)
-		)
-		(uuid "d27a79f0-9993-4fff-8b20-a30814ae80e5")
-	)
-	(polyline
-		(pts
-			(xy 148.000 80.000) (xy 148.000 100.000) (xy 147.010 97.800) (xy 148.000 100.000) (xy 148.990 97.800)
-		)
-		(stroke
-			(width 0.5)
-			(type default)
-			(color 74 153 204 1)
-		)
-		(uuid "da142438-e3ea-4bde-89e6-4cfa5361bfc6")
-	)
-	(text "Kelvin sense"
-		(exclude_from_sim no)
-		(at 150.000 91.000 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.6 1.6)
+				(size 2 2)
+				(bold yes)
 				(color 0 0 0 1)
 			)
-			(justify left)
+			(justify left bottom)
 		)
-		(uuid "07f74862-7252-4f63-b1a0-d572d09b53e2")
+		(uuid "6c1dd59a-b83b-44d0-8ae7-99121d17926e")
 	)
-	(text_box "R13 / C25 / R15  (x3)\n33 Ohm, 1 nF, 9.1 kOhm\n-3 dB at 17.5 kHz"
+	(text "+6V"
 		(exclude_from_sim no)
-		(at 196.000 100.000 0)
-		(size 52.000 25.000)
-		(margins 1 1 1 1)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type color)
-			(color 74 153 204 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.0 2.0)
-				(color 255 255 255 1)
-			)
-		)
-		(uuid "50d2ae6d-3d09-4549-a5cf-be776004718b")
-	)
-	(polyline
-		(pts
-			(xy 176.000 112.500) (xy 196.000 112.500) (xy 193.800 113.490) (xy 196.000 112.500) (xy 193.800 111.510)
-		)
-		(stroke
-			(width 0.5)
-			(type default)
-			(color 74 153 204 1)
-		)
-		(uuid "189a78f1-3126-43de-807e-d43605253b52")
-	)
-	(polyline
-		(pts
-			(xy 248.000 112.500) (xy 280.000 112.500) (xy 277.800 113.490) (xy 280.000 112.500) (xy 277.800 111.510)
-		)
-		(stroke
-			(width 0.5)
-			(type default)
-			(color 74 153 204 1)
-		)
-		(uuid "fee0572d-8b44-4350-bf3c-59586207d6f3")
-	)
-	(text "V6, V4, V2"
-		(exclude_from_sim no)
-		(at 264.000 110.500 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.6 1.6)
-				(color 0 0 0 1)
-			)
-			(justify bottom)
-		)
-		(uuid "2f72e9e3-d627-465a-bc90-93b32526b0af")
-	)
-	(text "CURRENT CHANNELS"
-		(exclude_from_sim no)
-		(at 30.000 113.500 0)
+		(at 119 205 0)
 		(effects
 			(font
 				(face "Arial")
 				(size 2.2 2.2)
 				(bold yes)
-				(color 74 153 204 1)
+				(color 235 104 52 1)
 			)
-			(justify left)
+			(justify bottom)
 		)
-		(uuid "d8d26159-d9ea-4e67-af22-f6fbd256b5e5")
+		(uuid "707e3af1-06b2-4afb-80a0-7b63d4a95533")
 	)
-	(text_box "R27 / R28  (x3)\ndivider 40.2 kOhm / 10 kOhm\n0.198 V/V"
+	(text "17.5 kHz (I), 48.5 kHz (V)"
 		(exclude_from_sim no)
-		(at 120.000 143.000 0)
-		(size 56.000 25.000)
-		(margins 1 1 1 1)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type color)
-			(color 74 153 204 1)
-		)
+		(at 352 220 0)
 		(effects
 			(font
 				(face "Arial")
-				(size 2.0 2.0)
-				(color 255 255 255 1)
-			)
-		)
-		(uuid "2d057b22-481c-43d7-9d3c-e9413589520a")
-	)
-	(polyline
-		(pts
-			(xy 100.000 155.500) (xy 120.000 155.500) (xy 117.800 156.490) (xy 120.000 155.500) (xy 117.800 154.510)
-		)
-		(stroke
-			(width 0.5)
-			(type default)
-			(color 74 153 204 1)
-		)
-		(uuid "e750887a-cb74-4867-83ae-03bfd3dc3ecf")
-	)
-	(text "OUT-A / OUT-B / OUT-C"
-		(exclude_from_sim no)
-		(at 98.000 151.000 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.6 1.6)
+				(size 2 2)
 				(color 0 0 0 1)
 			)
-			(justify right)
+			(justify left bottom)
 		)
-		(uuid "361e2e59-72c6-48cd-9e67-1a4ad6334c69")
+		(uuid "79b755e5-4525-43fd-962b-537a26a82bac")
 	)
 	(text "(J2 side of the shunt)"
 		(exclude_from_sim no)
-		(at 98.000 154.500 0)
+		(at 98 154.5 0)
 		(effects
 			(font
 				(face "Arial")
@@ -303,66 +423,9 @@
 		)
 		(uuid "8cbe9fde-1c55-4bb8-ba55-be7e87f936e8")
 	)
-	(text_box "Re2 / C31 / R19  (x3)\n1 kOhm, 180 pF, 9.1 kOhm\n-3 dB at 48.5 kHz"
-		(exclude_from_sim no)
-		(at 196.000 143.000 0)
-		(size 52.000 25.000)
-		(margins 1 1 1 1)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type color)
-			(color 74 153 204 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.0 2.0)
-				(color 255 255 255 1)
-			)
-		)
-		(uuid "38005f1e-533a-40e5-8481-162bef0da195")
-	)
-	(polyline
-		(pts
-			(xy 176.000 155.500) (xy 196.000 155.500) (xy 193.800 156.490) (xy 196.000 155.500) (xy 193.800 154.510)
-		)
-		(stroke
-			(width 0.5)
-			(type default)
-			(color 74 153 204 1)
-		)
-		(uuid "9f1c7871-8c17-4793-9239-a4471c471c63")
-	)
-	(polyline
-		(pts
-			(xy 248.000 155.500) (xy 280.000 155.500) (xy 277.800 156.490) (xy 280.000 155.500) (xy 277.800 154.510)
-		)
-		(stroke
-			(width 0.5)
-			(type default)
-			(color 74 153 204 1)
-		)
-		(uuid "46678510-07c4-4f9c-8764-170641c124da")
-	)
-	(text "V5, V3, V1"
-		(exclude_from_sim no)
-		(at 264.000 153.500 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.6 1.6)
-				(color 0 0 0 1)
-			)
-			(justify bottom)
-		)
-		(uuid "a7ca1000-5d9a-47f7-aa7c-885f481b44ed")
-	)
 	(text "VOLTAGE CHANNELS"
 		(exclude_from_sim no)
-		(at 30.000 160.500 0)
+		(at 30 160.5 0)
 		(effects
 			(font
 				(face "Arial")
@@ -374,10 +437,212 @@
 		)
 		(uuid "902fdd35-3672-4884-ab49-d11b01374002")
 	)
+	(text "Measuring range:"
+		(exclude_from_sim no)
+		(at 320 208 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "97850d1c-5620-4af3-82a2-07500f50b989")
+	)
+	(text "AD7606C REFIN, INA241 REF1 / REF2"
+		(exclude_from_sim no)
+		(at 228 227.5 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(color 0 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "9a7a649d-be8e-429c-a1bb-7ff7f81183c0")
+	)
+	(text "ADC:"
+		(exclude_from_sim no)
+		(at 320 226 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "a5a30801-e2f4-4ae0-bd59-fc1cef27cf6f")
+	)
+	(text "Phase voltage:"
+		(exclude_from_sim no)
+		(at 320 214 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "a6aa405e-045a-4258-951d-749cb2c931b8")
+	)
+	(text "3 phases, 35 A"
+		(exclude_from_sim no)
+		(at 99 65 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(color 0 0 0 1)
+			)
+			(justify bottom)
+		)
+		(uuid "a70a6d9e-7469-421e-8dd4-d307bfd52488")
+	)
+	(text "V5, V3, V1"
+		(exclude_from_sim no)
+		(at 264 153.5 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(color 0 0 0 1)
+			)
+			(justify bottom)
+		)
+		(uuid "a7ca1000-5d9a-47f7-aa7c-885f481b44ed")
+	)
+	(text "Bandwidth:"
+		(exclude_from_sim no)
+		(at 320 220 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "a9bfc776-1bec-45a1-aa11-45237f851108")
+	)
+	(text "6 x 18 bit, 1 MSPS"
+		(exclude_from_sim no)
+		(at 352 226 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "aa00fd5c-07a5-46e2-a64d-51f5410bc9aa")
+	)
+	(text "POWER SUPPLY"
+		(exclude_from_sim no)
+		(at 30 190 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.2 2.2)
+				(bold yes)
+				(color 150 110 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "d7e323f6-beb4-48be-8ded-8e41e8ece67c")
+	)
+	(text "CURRENT CHANNELS"
+		(exclude_from_sim no)
+		(at 30 113.5 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.2 2.2)
+				(bold yes)
+				(color 74 153 204 1)
+			)
+			(justify left)
+		)
+		(uuid "d8d26159-d9ea-4e67-af22-f6fbd256b5e5")
+	)
+	(text "AD7606C AVCC, INA241 VS"
+		(exclude_from_sim no)
+		(at 228 201.5 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(color 0 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "dad5e4d2-18e9-4cb6-a1c4-c105d57cb4e3")
+	)
+	(text "+/-115 A, 20 mV/A"
+		(exclude_from_sim no)
+		(at 352 208 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "ee3b6b28-4f36-4283-8a2a-da5ea4a48e93")
+	)
+	(text "from the host"
+		(exclude_from_sim no)
+		(at 31 211 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(color 0 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "ee9c9577-69c1-4ee8-9609-15bb32da52c0")
+	)
+	(text "Target specifications:"
+		(exclude_from_sim no)
+		(at 318 181 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.6 2.6)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "ef789378-0578-4134-b0e9-96f3b707b36d")
+	)
+	(text "60 A peak (MR60PW)"
+		(exclude_from_sim no)
+		(at 352 202 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "f852c355-b8da-43c0-9c7c-9a66d19b776c")
+	)
 	(text_box "IC1\nAD7606C-18\n\n8 x 18 bit, 1 MSPS\nsimultaneous sampling\n\n6 inputs used\nV7, V8 free"
 		(exclude_from_sim no)
-		(at 280.000 95.000 0)
-		(size 48.000 78.000)
+		(at 280 95 0)
+		(size 48 78)
 		(margins 1 1 1 1)
 		(stroke
 			(width -0.0001)
@@ -397,95 +662,120 @@
 		)
 		(uuid "00ac83a4-3242-4abd-8f8f-51a2d09f8475")
 	)
-	(text_box "Host interface\n(SPI or parallel)\n\nNOT WIRED YET"
+	(text_box "R1 / R4 / R7\nPBV-R001 shunt, 1 mOhm\n4-terminal (Kelvin)"
 		(exclude_from_sim no)
-		(at 352.000 112.000 0)
-		(size 44.000 44.000)
+		(at 120 55 0)
+		(size 56 25)
 		(margins 1 1 1 1)
 		(stroke
-			(width 0.3)
-			(type dash)
-			(color 110 110 110 1)
+			(width -0.0001)
+			(type default)
 		)
 		(fill
-			(type none)
+			(type color)
+			(color 175 67 103 1)
 		)
 		(effects
 			(font
 				(face "Arial")
-				(size 2.0 2.0)
-				(color 110 110 110 1)
+				(size 2 2)
+				(color 255 255 255 1)
 			)
 		)
-		(uuid "c414a15c-f9a3-40e4-8651-a50822eb4a79")
+		(uuid "0cd54b65-29b8-45c2-a32b-17161d322cdf")
 	)
-	(polyline
-		(pts
-			(xy 328.000 134.000) (xy 352.000 134.000) (xy 349.800 134.990) (xy 352.000 134.000) (xy 349.800 133.010)
-		)
+	(text_box "J1  MR60PW\nfrom the ESC\nIN-A / IN-B / IN-C"
+		(exclude_from_sim no)
+		(at 30 55 0)
+		(size 48 25)
+		(margins 1 1 1 1)
 		(stroke
-			(width 0.5)
-			(type dash)
-			(color 110 110 110 1)
-		)
-		(uuid "ea6d6308-9e02-4433-9441-e23a407cc6a9")
-	)
-	(text "POWER SUPPLY"
-		(exclude_from_sim no)
-		(at 30.000 190.000 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.2 2.2)
-				(bold yes)
-				(color 150 110 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "d7e323f6-beb4-48be-8ded-8e41e8ece67c")
-	)
-	(text "+3.3V"
-		(exclude_from_sim no)
-		(at 31.000 205.000 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.2 2.2)
-				(bold yes)
-				(color 42 120 214 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "5238b07c-abc8-4e92-8b55-d868234296b6")
-	)
-	(text "from the host"
-		(exclude_from_sim no)
-		(at 31.000 211.000 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.6 1.6)
-				(color 0 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "ee9c9577-69c1-4ee8-9609-15bb32da52c0")
-	)
-	(polyline
-		(pts
-			(xy 30.000 207.000) (xy 62.000 207.000) (xy 59.800 207.990) (xy 62.000 207.000) (xy 59.800 206.010)
-		)
-		(stroke
-			(width 0.9)
+			(width -0.0001)
 			(type default)
-			(color 42 120 214 1)
 		)
-		(uuid "a3241109-0ead-49e8-9c9d-230c7bb19391")
+		(fill
+			(type color)
+			(color 175 67 103 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(color 255 255 255 1)
+			)
+		)
+		(uuid "26a2a4c3-6998-4b15-a73c-b64ebf75047f")
+	)
+	(text_box "R27 / R28  (x3)\ndivider 40.2 kOhm / 10 kOhm\n0.198 V/V"
+		(exclude_from_sim no)
+		(at 120 143 0)
+		(size 56 25)
+		(margins 1 1 1 1)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 74 153 204 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(color 255 255 255 1)
+			)
+		)
+		(uuid "2d057b22-481c-43d7-9d3c-e9413589520a")
+	)
+	(text_box "Re2 / C31 / R19  (x3)\n1 kOhm, 180 pF, 9.1 kOhm\n-3 dB at 48.5 kHz"
+		(exclude_from_sim no)
+		(at 196 143 0)
+		(size 52 25)
+		(margins 1 1 1 1)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 74 153 204 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(color 255 255 255 1)
+			)
+		)
+		(uuid "38005f1e-533a-40e5-8481-162bef0da195")
+	)
+	(text_box "R13 / C25 / R15  (x3)\n33 Ohm, 1 nF, 9.1 kOhm\n-3 dB at 17.5 kHz"
+		(exclude_from_sim no)
+		(at 196 100 0)
+		(size 52 25)
+		(margins 1 1 1 1)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 74 153 204 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(color 255 255 255 1)
+			)
+		)
+		(uuid "50d2ae6d-3d09-4549-a5cf-be776004718b")
 	)
 	(text_box "IC5  LT8362\nboost, 2 MHz\n+3.3V -> +6V"
 		(exclude_from_sim no)
-		(at 62.000 194.500 0)
-		(size 48.000 25.000)
+		(at 62 194.5 0)
+		(size 48 25)
 		(margins 1 1 1 1)
 		(stroke
 			(width -0.0001)
@@ -498,74 +788,16 @@
 		(effects
 			(font
 				(face "Arial")
-				(size 2.0 2.0)
+				(size 2 2)
 				(color 0 0 0 1)
 			)
 		)
 		(uuid "515acade-7edd-4cbb-a852-c7f962685e21")
 	)
-	(polyline
-		(pts
-			(xy 110.000 207.000) (xy 128.000 207.000)
-		)
-		(stroke
-			(width 0.9)
-			(type default)
-			(color 235 104 52 1)
-		)
-		(uuid "f2964abc-0304-43fc-a2de-64f87c19bdce")
-	)
-	(text "+6V"
-		(exclude_from_sim no)
-		(at 119.000 205.000 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.2 2.2)
-				(bold yes)
-				(color 235 104 52 1)
-			)
-			(justify bottom)
-		)
-		(uuid "707e3af1-06b2-4afb-80a0-7b63d4a95533")
-	)
-	(polyline
-		(pts
-			(xy 128.000 198.000) (xy 128.000 224.000)
-		)
-		(stroke
-			(width 0.9)
-			(type default)
-			(color 235 104 52 1)
-		)
-		(uuid "b403dc39-bce3-4222-a11b-ea4105b68f14")
-	)
-	(polyline
-		(pts
-			(xy 128.000 198.000) (xy 146.000 198.000) (xy 143.800 198.990) (xy 146.000 198.000) (xy 143.800 197.010)
-		)
-		(stroke
-			(width 0.9)
-			(type default)
-			(color 235 104 52 1)
-		)
-		(uuid "1a2ea601-c6be-43de-a89d-64a47f507450")
-	)
-	(polyline
-		(pts
-			(xy 128.000 224.000) (xy 146.000 224.000) (xy 143.800 224.990) (xy 146.000 224.000) (xy 143.800 223.010)
-		)
-		(stroke
-			(width 0.9)
-			(type default)
-			(color 235 104 52 1)
-		)
-		(uuid "de2cc74f-6a79-4056-a315-d397d06656a5")
-	)
 	(text_box "IC7 LTC6655-5 reference\n+ IC8 LT3045-1 buffer"
 		(exclude_from_sim no)
-		(at 146.000 189.000 0)
-		(size 62.000 18.000)
+		(at 146 189 0)
+		(size 62 18)
 		(margins 1 1 1 1)
 		(stroke
 			(width -0.0001)
@@ -578,16 +810,16 @@
 		(effects
 			(font
 				(face "Arial")
-				(size 2.0 2.0)
+				(size 2 2)
 				(color 0 0 0 1)
 			)
 		)
 		(uuid "64abcf90-9c2d-4167-b206-47de4d26899e")
 	)
-	(text_box "IC3 LTC6655LN-2.5 reference\n+ IC9 LT3045-1 buffer"
+	(text_box "IC3 LTC6655-2.5 reference\n+ IC9 LT3045-1 buffer"
 		(exclude_from_sim no)
-		(at 146.000 215.000 0)
-		(size 62.000 18.000)
+		(at 146 215 0)
+		(size 62 18)
 		(margins 1 1 1 1)
 		(stroke
 			(width -0.0001)
@@ -600,258 +832,11 @@
 		(effects
 			(font
 				(face "Arial")
-				(size 2.0 2.0)
+				(size 2 2)
 				(color 0 0 0 1)
 			)
 		)
 		(uuid "693018bd-78e0-450c-a319-c4b6110117ad")
-	)
-	(polyline
-		(pts
-			(xy 208.000 198.000) (xy 226.000 198.000) (xy 223.800 198.990) (xy 226.000 198.000) (xy 223.800 197.010)
-		)
-		(stroke
-			(width 0.9)
-			(type default)
-			(color 27 175 122 1)
-		)
-		(uuid "52c87407-ea6a-4d43-b660-2ffe0c4b76c9")
-	)
-	(polyline
-		(pts
-			(xy 208.000 224.000) (xy 226.000 224.000) (xy 223.800 224.990) (xy 226.000 224.000) (xy 223.800 223.010)
-		)
-		(stroke
-			(width 0.9)
-			(type default)
-			(color 237 161 0 1)
-		)
-		(uuid "0e773107-99ce-4027-88f0-7f81ad601af5")
-	)
-	(text "+5VA"
-		(exclude_from_sim no)
-		(at 228.000 197.000 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.2 2.2)
-				(bold yes)
-				(color 27 175 122 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "12edea8f-5f0e-4476-a90f-4b9a681cad89")
-	)
-	(text "AD7606C AVCC, INA241 VS"
-		(exclude_from_sim no)
-		(at 228.000 201.500 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.6 1.6)
-				(color 0 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "dad5e4d2-18e9-4cb6-a1c4-c105d57cb4e3")
-	)
-	(text "+2.5VA"
-		(exclude_from_sim no)
-		(at 228.000 223.000 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.2 2.2)
-				(bold yes)
-				(color 237 161 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "01ee9e15-d742-4b12-8390-56be336c284d")
-	)
-	(text "AD7606C REFIN, INA241 REF1 / REF2"
-		(exclude_from_sim no)
-		(at 228.000 227.500 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.6 1.6)
-				(color 0 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "9a7a649d-be8e-429c-a1bb-7ff7f81183c0")
-	)
-	(text "Target specifications:"
-		(exclude_from_sim no)
-		(at 318.000 190.000 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.6 2.6)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "ef789378-0578-4134-b0e9-96f3b707b36d")
-	)
-	(polyline
-		(pts
-			(xy 318.000 192.000) (xy 400.000 192.000)
-		)
-		(stroke
-			(width 0.8)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "d2779b7a-14eb-4299-ac87-009af44ae0fd")
-	)
-	(polyline
-		(pts
-			(xy 318.000 232.000) (xy 400.000 232.000)
-		)
-		(stroke
-			(width 0.8)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "34aa3c2c-048d-49db-86e2-71c864a060cf")
-	)
-	(text "Supply:"
-		(exclude_from_sim no)
-		(at 320.000 199.000 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.0 2.0)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "010da2b6-40a4-4c54-ab6d-30fbb3ece6ba")
-	)
-	(text "3.3 V, 130 mA"
-		(exclude_from_sim no)
-		(at 352.000 199.000 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.0 2.0)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "3f78d6bd-4ff1-4c37-b0ca-75fc635d7d4f")
-	)
-	(text "Phase current:"
-		(exclude_from_sim no)
-		(at 320.000 206.000 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.0 2.0)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "6c1dd59a-b83b-44d0-8ae7-99121d17926e")
-	)
-	(text "+/-35 A, 20 mV/A"
-		(exclude_from_sim no)
-		(at 352.000 206.000 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.0 2.0)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "3e29c730-97e3-40dd-9251-1f051457ab7f")
-	)
-	(text "Phase voltage:"
-		(exclude_from_sim no)
-		(at 320.000 213.000 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.0 2.0)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "a6aa405e-045a-4258-951d-749cb2c931b8")
-	)
-	(text "0 - 50 V, 0.198 V/V"
-		(exclude_from_sim no)
-		(at 352.000 213.000 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.0 2.0)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "076cdbf5-35a9-49a4-a7a3-bb2f0747bbd7")
-	)
-	(text "Bandwidth:"
-		(exclude_from_sim no)
-		(at 320.000 220.000 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.0 2.0)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "a9bfc776-1bec-45a1-aa11-45237f851108")
-	)
-	(text "17.5 kHz (I), 48.5 kHz (V)"
-		(exclude_from_sim no)
-		(at 352.000 220.000 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.0 2.0)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "79b755e5-4525-43fd-962b-537a26a82bac")
-	)
-	(text "ADC:"
-		(exclude_from_sim no)
-		(at 320.000 227.000 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.0 2.0)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "a5a30801-e2f4-4ae0-bd59-fc1cef27cf6f")
-	)
-	(text "6 x 18 bit, 1 MSPS"
-		(exclude_from_sim no)
-		(at 352.000 227.000 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.0 2.0)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "aa00fd5c-07a5-46e2-a64d-51f5410bc9aa")
 	)
 	(text_box "[${#}] ${TITLE}"
 		(exclude_from_sim no)
@@ -875,5 +860,115 @@
 			)
 		)
 		(uuid "73b2b29c-2473-4e80-be0b-4f57c6856c3e")
+	)
+	(text_box "J2  MR60PW\nto the motor\nOUT-A / OUT-B / OUT-C"
+		(exclude_from_sim no)
+		(at 218 55 0)
+		(size 48 25)
+		(margins 1 1 1 1)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 175 67 103 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(color 255 255 255 1)
+			)
+		)
+		(uuid "89f369ca-cd86-40c3-9b86-c0db432da59a")
+	)
+	(text_box "Host interface\n(SPI or parallel)\n\nNOT WIRED YET"
+		(exclude_from_sim no)
+		(at 352 112 0)
+		(size 44 44)
+		(margins 1 1 1 1)
+		(stroke
+			(width 0.3)
+			(type dash)
+			(color 110 110 110 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(color 110 110 110 1)
+			)
+		)
+		(uuid "c414a15c-f9a3-40e4-8651-a50822eb4a79")
+	)
+	(text_box "IC2 / IC4 / IC6\nINA241A2, 20 V/V\nout = 2.5 V - 20 mV/A x I(J1->J2)"
+		(exclude_from_sim no)
+		(at 120 100 0)
+		(size 56 25)
+		(margins 1 1 1 1)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type color)
+			(color 74 153 204 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 2 2)
+				(color 255 255 255 1)
+			)
+		)
+		(uuid "d27a79f0-9993-4fff-8b20-a30814ae80e5")
+	)
+	(polyline
+		(pts
+			(xy 318 231) (xy 400 231)
+		)
+		(stroke
+			(width 0.8)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "34aa3c2c-048d-49db-86e2-71c864a060cf")
+	)
+	(polyline
+		(pts
+			(xy 128 198) (xy 128 224)
+		)
+		(stroke
+			(width 0.9)
+			(type default)
+			(color 235 104 52 1)
+		)
+		(uuid "b403dc39-bce3-4222-a11b-ea4105b68f14")
+	)
+	(polyline
+		(pts
+			(xy 318 183) (xy 400 183)
+		)
+		(stroke
+			(width 0.8)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "d2779b7a-14eb-4299-ac87-009af44ae0fd")
+	)
+	(polyline
+		(pts
+			(xy 110 207) (xy 128 207)
+		)
+		(stroke
+			(width 0.9)
+			(type default)
+			(color 235 104 52 1)
+		)
+		(uuid "f2964abc-0304-43fc-a2de-64f87c19bdce")
 	)
 )

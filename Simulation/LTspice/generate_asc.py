@@ -10,6 +10,7 @@ PINS = {  # R0 pin coordinates
     "cap": {"A": (16, 0), "B": (16, 64)},
     "ind": {"A": (16, 16), "B": (16, 96)},
     "voltage": {"+": (0, 16), "-": (0, 96)},
+    "bv": {"+": (0, 16), "-": (0, 96)},
     "current": {"+": (0, 0), "-": (0, 80)},
     "schottky": {"A": (16, 0), "K": (16, 64)},
     "LT8362": {"EN": (-160, -144), "MODE": (-160, -48), "RT": (-160, 48), "SS": (-160, 144),
@@ -20,8 +21,8 @@ PINS = {  # R0 pin coordinates
                  "OUT": (304, 0), "OUTS": (304, 80)},
     "LTC6655-5": {"IN": (-144, -32), "SHDN": (-144, 32), "GND": (0, 64),
                   "OUT_F": (144, -32), "P6": (144, 32)},
-    "LTC6655LN-2.5": {"IN": (-144, -32), "SHDN": (-144, 32), "GND": (0, 64),
-                      "OUT_F": (144, -32), "P6": (144, 32)},
+    "LTC6655-2.5": {"IN": (-144, -32), "SHDN": (-144, 32), "GND": (0, 64),
+                    "OUT_F": (144, -32), "P6": (144, 32)},
     "INA241A2_behav": {"IN+": (-128, -48), "IN-": (-128, 48), "REF1": (-64, 96), "REF2": (64, 96),
                        "VS": (0, -96), "GND": (0, 96), "OUT": (128, 0)},
 }
@@ -98,15 +99,8 @@ MODELS = (
     "Vj=.3408 Iave=2 Vpk=20 mfg=NXP type=Schottky)"
 )
 
-# As-built values. Simulation 02 steps through the two corrections discussed in the README.
-ASBUILT = ".param Rnr=1m R12v=49.9k Iavcc=45m"
-CASES = (".step param run 1 3 1\n"
-         ".param Rnr=table(run, 1,1m, 2,1G, 3,1G)\n"
-         ".param R12v=table(run, 1,49.9k, 2,49.9k, 3,24.9k)\n"
-         ".param Iavcc=45m")
-CASES_NOTE = ("run 1 = as built : LTC6655LN pin 6 (NR) tied to pin 7 (VOUT), R12 = 49.9k\n"
-              "run 2 = NR separated from VOUT, R12 = 49.9k\n"
-              "run 3 = NR separated from VOUT, R12 = 24.9k (100 uA x 24.9k = 2.49 V, no current in R11)")
+# AD7606C AVCC current at 1 MSPS
+ASBUILT = ".param Iavcc=45m"
 
 
 # ------------------------------------------------------------------ blocks
@@ -187,8 +181,7 @@ def six_volt_source(s, value, value2=None, note="+6V (settled boost output)"):
     return [1840]
 
 
-def ref_ldo(s, y0, ref_sym, ref_name, ldo_name, r_ser, r_set, c_ref, c_set, lab_ref, lab_set,
-            nr_link):
+def ref_ldo(s, y0, ref_sym, ref_name, ldo_name, r_ser, r_set, c_ref, c_set, lab_ref, lab_set):
     """LTC6655 reference driving the SET pin of an LT3045-1 through 1 k. +6V rail at y = y0.
 
     Returns the x positions of the +6V taps and of the start of the output rail (y = y0 + 144)."""
@@ -198,13 +191,8 @@ def ref_ldo(s, y0, ref_sym, ref_name, ldo_name, r_ser, r_set, c_ref, c_set, lab_
     s.wire(ref["IN"], (2080, yr), (2080, y0))
     s.wire(ref["SHDN"], (2080, yr + 64), (2080, yr))
     s.gnd(ref["GND"], 32)
-    if nr_link:  # LTC6655LN: pin 6 is NR; on the board it is tied to pin 7
-        rl = s.part("res", "A", (2432, yr + 64), "R_NR", "{Rnr}", rot="R270")
-        s.wire(ref["P6"], rl["A"])
-        s.wire(rl["B"], (2512, yr))
-        s.text(2320, yr + 160, "R_NR = PCB link pin 6 (NR) - pin 7 (VOUT)\nas built: 1m  /  removed: 1G", 1)
-    else:    # LTC6655: pin 6 is VOUT_S, Kelvin-tied to VOUT_F
-        s.wire(ref["P6"], (2512, yr + 64), (2512, yr))
+    # LTC6655: pin 6 is VOUT_S, Kelvin-tied to VOUT_F
+    s.wire(ref["P6"], (2512, yr + 64), (2512, yr))
     s.bus(yr, [ref["OUT_F"][0], 2512, 2560, 2608, 2688])
     s.label((2560, yr), lab_ref)
     s.shunt_cap(2608, yr, c_ref, "10u", "Rser=5m")
@@ -230,7 +218,7 @@ def analog_rails(s, rail6):
     """Both precision rails (sheet ALIMENTATION) and their loads."""
     # --- +5VA : IC7 LTC6655-5 -> R8 -> SET of IC8
     taps, rail5 = ref_ldo(s, 0, "LTC6655-5", "IC7", "IC8", ("R8", "1k"), ("R14", "49.9k"), "C8", "C13",
-                          "REF5", "SET5", nr_link=False)
+                          "REF5", "SET5")
     s.bus(0, rail6 + [1968, 2016] + taps)
     s.label((1968, 0), "+6V")
     Y5 = 144
@@ -246,10 +234,10 @@ def analog_rails(s, rail6):
     s.text(3840, 256, "C1 (x6) = C1 C2 C17 C20 C35 C38\nC5 (x3) = C5 C10 C18", 1)
     s.text(4096, 256, "I_AVCC = AD7606C AVCC (1 MSPS)\nI_INA = 3 x INA241 IQ", 1)
     s.text(2080, -240, "+5VA : LTC6655-5 (IC7) reference buffered by LT3045-1 (IC8)", 3)
-    # --- +2.5VA : IC3 LTC6655LN-2.5 -> R11 -> SET of IC9
+    # --- +2.5VA : IC3 LTC6655-2.5 -> R11 -> SET of IC9
     YB = 880
-    taps, rail25 = ref_ldo(s, YB, "LTC6655LN-2.5", "IC3", "IC9", ("R11", "1k"), ("R12", "{R12v}"), "C12",
-                           "C19", "REF2V5", "SET2V5", nr_link=True)
+    taps, rail25 = ref_ldo(s, YB, "LTC6655-2.5", "IC3", "IC9", ("R11", "1k"), ("R12", "24.9k"), "C12",
+                           "C19", "REF2V5", "SET2V5")
     s.wire((2016, 0), (2016, YB))
     s.bus(YB, [2016] + taps)
     Y25 = YB + 144
@@ -260,7 +248,7 @@ def analog_rails(s, rail6):
     s.gnd(i["-"])
     s.bus(Y25, rail25 + [3648, 3744, 3872, 4000])
     s.text(3840, Y25 + 112, "C41 = AD7606C REFIN/REFOUT\nI_REF = INA241 REF pins + REFIN (estimate)", 1)
-    s.text(2080, YB - 112, "+2.5VA : LTC6655LN-2.5 (IC3) reference buffered by LT3045-1 (IC9)", 3)
+    s.text(2080, YB - 112, "+2.5VA : LTC6655-2.5 (IC3) reference buffered by LT3045-1 (IC9)", 3)
 
 
 def header(s, title, sub):
@@ -288,13 +276,12 @@ s.save("01_Power_Chain_Startup.asc")
 # ============================================================ 02 analog rails
 s = Sch(*SHEET)
 header(s, "PhaseSense-8586 - 02 - Analog rails start-up and accuracy : +5VA and +2.5VA",
-       "The boost is replaced by its settled output (1 ms ramp, see 01). Three runs: the board as built and two corrections of the +2.5VA rail.")
+       "The boost is replaced by its settled output (1 ms ramp, see 01), so the rails can be followed until they are settled.")
 r6 = six_volt_source(s, "PWL(0 0 1m 5.96)", note="+6V from the boost\n(1 ms ramp)")
 analog_rails(s, r6)
 s.text(DX, DY, ".tran 0 150m 0 20u", 2, True)
-s.text(DX, DY + 40, CASES, 2, True)
-s.text(DX, DY + 200, CASES_NOTE, 2)
-s.text(DX, DY + 320, ".meas tran V5VA AVG V(+5VA) FROM 140m TO 150m\n.meas tran V2V5A AVG V(+2.5VA) FROM 140m TO 150m\n"
+s.text(DX, DY + 40, ASBUILT, 2, True)
+s.text(DX, DY + 120, ".meas tran V5VA AVG V(+5VA) FROM 140m TO 150m\n.meas tran V2V5A AVG V(+2.5VA) FROM 140m TO 150m\n"
                      ".meas tran VREF5 AVG V(REF5) FROM 140m TO 150m\n.meas tran VREF2V5 AVG V(REF2V5) FROM 140m TO 150m\n"
                      ".meas tran I_R8 AVG I(R8) FROM 140m TO 150m\n.meas tran I_R11 AVG I(R11) FROM 140m TO 150m\n"
                      ".meas tran T5_99 WHEN V(+5VA)=4.95 RISE=1\n.meas tran T5_999 WHEN V(+5VA)=4.995 RISE=1\n"
@@ -332,9 +319,7 @@ header(s, "PhaseSense-8586 - 04 - PSRR of the analog rails : transfer from +6V r
 r6 = six_volt_source(s, "5.96", value2="AC 1", note="+6V with\n1 V AC ripple")
 analog_rails(s, r6)
 s.text(DX, DY, ".ac dec 50 10 10Meg", 2, True)
-s.text(DX, DY + 40, ".param Rnr=1G R12v=24.9k Iavcc=45m", 2, True)
-s.text(DX, DY + 100, "Corrected +2.5VA rail (run 3 of 02): the as-built reference has no valid operating point.\n"
-                     "+5VA is the same in both cases.", 2)
+s.text(DX, DY + 40, ASBUILT, 2, True)
 s.text(DX, DY + 260, ".meas ac PSRR5_1k FIND mag(V(+5VA)) AT 1k\n.meas ac PSRR5_100k FIND mag(V(+5VA)) AT 100k\n"
                      ".meas ac PSRR5_2M FIND mag(V(+5VA)) AT 2Meg\n.meas ac PSRR2V5_1k FIND mag(V(+2.5VA)) AT 1k\n"
                      ".meas ac PSRR2V5_100k FIND mag(V(+2.5VA)) AT 100k\n.meas ac PSRR2V5_2M FIND mag(V(+2.5VA)) AT 2Meg", 2, True)
@@ -342,10 +327,10 @@ s.save("04_Analog_Rails_PSRR.asc")
 
 
 # ============================================================ 05 / 06 measurement channels
-def adc_input(s, x, yp, yn, tag, name_p, name_n):
+def adc_input(s, x, yp, yn, tag, name_p, name_n, rin=("1.2Meg", "1.2Meg")):
     """AD7606C-18 analog input pair: RIN to an internal 2 V node, CIN to AGND (datasheet)."""
-    rp = s.part("res", "A", (x, yp), f"RIN_{tag}P", "1.2Meg", rot="R270")
-    rn = s.part("res", "A", (x, yn), f"RIN_{tag}N", "1.2Meg", rot="R270")
+    rp = s.part("res", "A", (x, yp), f"RIN_{tag}P", rin[0], rot="R270")
+    rn = s.part("res", "A", (x, yn), f"RIN_{tag}N", rin[1], rot="R270")
     xb = rp["B"][0] + 64
     s.wire(rp["B"], (xb, yp), (xb, yn))
     s.wire(rn["B"], (xb, yn))
@@ -361,26 +346,54 @@ def adc_input(s, x, yp, yn, tag, name_p, name_n):
     return x - 336, x - 240, x - 144
 
 
-def channels(s, vph, vph_ac, im, im_ac):
-    """Phase A: shunt R1 + INA241A2 (IC2) -> V6, and divider R27/R28 -> V5 (sheets INA241 and AD7606C)."""
+def channels(s, vph, vph_ac, im, im_ac, pwm=False, motor=None, mc=False, lsh=None):
+    """Phase A: shunt R1 + INA241A2 (IC2) -> V6, and divider R27/R28 -> V5 (sheets INA241 and AD7606C).
+
+    pwm:   the phase source is a behavioural source (PWM expression `vph`).
+    motor: {"L", "R", "E"} replaces the ideal current source by a motor phase (L, R, back-EMF source).
+    mc:    every value is drawn inside its tolerance (Monte Carlo, see the .param lines of simulation 08).
+    lsh:   inductance of the shunt, in series with R1 between the two Kelvin taps.
+    """
+    def tol(nominal, param):
+        return "{%s}" % param if mc else nominal
+
     # --- phase conductor J1 -> shunt -> J2
-    v = s.part("voltage", "+", (0, 0), "V_PH", vph, value2=vph_ac,
-               windows=["WINDOW 0 -112 40 Left 2", "WINDOW 3 -232 88 Left 1", "WINDOW 123 -232 112 Left 1"])
+    if pwm:
+        v = s.part("bv", "+", (0, 0), "B_PH", vph,
+                   windows=["WINDOW 0 -112 40 Left 2", "WINDOW 3 -560 88 Left 1"])
+    else:
+        v = s.part("voltage", "+", (0, 0), "V_PH", vph, value2=vph_ac,
+                   windows=["WINDOW 0 -112 40 Left 2", "WINDOW 3 -232 88 Left 1", "WINDOW 123 -232 112 Left 1"])
     s.gnd(v["-"])
     s.text(-232, 152, "ESC phase A\n(J1 pin 1)", 1)
-    r1 = s.part("res", "A", (160, 0), "R1", "1m", rot="R270")
-    i = s.part("current", "+", (304, 0), "I_M", im, value2=im_ac,
-               windows=["WINDOW 0 24 16 Left 2", "WINDOW 3 24 44 Left 1", "WINDOW 123 24 68 Left 1"])
-    s.gnd(i["-"])
-    s.text(336, -88, "I_M = motor phase current (J2 pin 3)", 1)
+    r1 = s.part("res", "A", (160, 0), "R1", tol("1m", "R1v"), rot="R270")
     s.bus(0, [0, 96, 160])
-    s.bus(0, [r1["B"][0], 304, 720])
+    tap = r1["B"][0]                                   # Kelvin tap of IN+, J2 side of the shunt
+    if lsh:
+        tap = s.part("ind", "A", (tap, 0), "L_SH", lsh, rot="R270", spiceline="Rser=0")["B"][0]
+    if motor:
+        lm = s.part("ind", "A", (784, 0), "L_M", motor["L"], rot="R270", spiceline="Rser=0")
+        rm = s.part("res", "A", (912, 0), "R_M", motor["R"], rot="R270")
+        vb = s.part("voltage", "+", (1056, 0), "V_BEMF", motor["E"],
+                    windows=["WINDOW 0 24 16 Left 2", "WINDOW 3 24 104 Left 1"])
+        s.gnd(vb["-"])
+        s.bus(0, [tap, 720, 784])
+        s.wire(lm["B"], rm["A"])
+        s.wire(rm["B"], vb["+"])
+        s.text(784, -88, "Motor phase A (J2 pin 3): inductance, resistance, back-EMF around Vbat / 2", 1)
+    else:
+        i = s.part("current", "+", (304, 0), "I_M", im, value2=im_ac,
+                   windows=["WINDOW 0 24 16 Left 2", "WINDOW 3 24 44 Left 1", "WINDOW 123 24 68 Left 1"])
+        s.gnd(i["-"])
+        s.text(336, -88, "I_M = motor phase current (J2 pin 3)", 1)
+        s.bus(0, [tap, 304, 720])
     s.label((96, 0), "IN-A")
     s.label((720, 0), "OUT-A")
-    s.text(144, -88, "PBV-R001 shunt", 1)
+    s.text(144, -88, "PBV-R001 shunt, L_SH = its inductance (datasheet: < 10 nH)" if lsh else "PBV-R001 shunt", 1)
     # --- INA241A2, Kelvin connection
-    u = s.part("INA241A2_behav", "IN+", (384, 256), "IC2")
-    s.wire((240, 0), (240, 256), u["IN+"])
+    u = s.part("INA241A2_behav", "IN+", (384, 256), "IC2",
+               spiceline="G={mc(20,tolG)} Vos={flat(15u)}" if mc else None)
+    s.wire((tap, 0), (tap, 256), u["IN+"])
     s.wire((160, 0), (160, 352), u["IN-"])
     s.wire(u["VS"], (512, 160))
     s.label((512, 160), "+5VA")
@@ -392,35 +405,35 @@ def channels(s, vph, vph_ac, im, im_ac):
     YP, YN = 304, 432
     s.wire(u["OUT"], (688, YP))
     s.label((688, YP), "SNG-A1N")
-    r13 = s.part("res", "A", (736, YP), "R13", "33", rot="R270")
+    r13 = s.part("res", "A", (736, YP), "R13", tol("33", "R13v"), rot="R270")
     s.wire((688, YP), r13["A"])
     c25 = s.part("cap", "A", (912, YP), "C25", "1n")
     s.wire(c25["B"], (912, YN))
-    r15 = s.part("res", "A", (784, YN), "R15", "9.1k")
+    r15 = s.part("res", "A", (784, YN), "R15", tol("9.1k", "R15v"))
     s.gnd(r15["B"])
-    xl, xcn, xcp = adc_input(s, 1392, YP, YN, "I", "V6+", "V6-")
+    xl, xcn, xcp = adc_input(s, 1392, YP, YN, "I", "V6+", "V6-", (tol("1.2Meg", "RiP"), tol("1.2Meg", "RiN")))
     s.bus(YP, [r13["B"][0], 912, xl, xcp, 1392])
     s.bus(YN, [784, 912, xl, xcn, 1392])
     s.text(0, -216, "CURRENT CHANNEL  (phase A : R1, IC2, R13, C25, R15 -> AD7606C V6)", 3)
     # --- voltage channel: R27 / R28 / Re2 / C31 / R19 -> V5+ / V5-
     YP, YN = 800, 928
     s.label((96, YP), "OUT-A")
-    r27 = s.part("res", "A", (160, YP), "R27", "40.2k", rot="R270")
+    r27 = s.part("res", "A", (160, YP), "R27", tol("40.2k", "R27v"), rot="R270")
     s.wire((96, YP), r27["A"])
-    r28 = s.part("res", "A", (336, YP), "R28", "10k")
+    r28 = s.part("res", "A", (336, YP), "R28", tol("10k", "R28v"))
     s.gnd(r28["B"])
-    re2 = s.part("res", "A", (432, YP), "Re2", "1k", rot="R270")
+    re2 = s.part("res", "A", (432, YP), "Re2", tol("1k", "Re2v"), rot="R270")
     s.bus(YP, [r27["B"][0], 336, 432])
     c31 = s.part("cap", "A", (912, YP), "C31", "180p")
     s.wire(c31["B"], (912, YN))
-    r19 = s.part("res", "A", (784, YN), "R19", "9.1k")
+    r19 = s.part("res", "A", (784, YN), "R19", tol("9.1k", "R19v"))
     s.gnd(r19["B"])
-    xl, xcn, xcp = adc_input(s, 1392, YP, YN, "V", "V5+", "V5-")
+    xl, xcn, xcp = adc_input(s, 1392, YP, YN, "V", "V5+", "V5-", (tol("1.2Meg", "RvP"), tol("1.2Meg", "RvN")))
     s.bus(YP, [re2["B"][0], 912, xl, xcp, 1392])
     s.bus(YN, [784, 912, xl, xcn, 1392])
     s.text(0, 664, "VOLTAGE CHANNEL  (phase A : R27, R28, Re2, C31, R19 -> AD7606C V5)", 3)
     # --- supplies
-    for x, n, val, lab in ((-320, "V_5VA", "5", "+5VA"), (-176, "V_2V5A", "2.5", "+2.5VA")):
+    for x, n, val, lab in ((-320, "V_5VA", "5", "+5VA"), (-176, "V_2V5A", "{V25}" if mc else "2.5", "+2.5VA")):
         v = s.part("voltage", "+", (x, 432), n, val,
                    windows=["WINDOW 0 -40 120 Left 2", "WINDOW 3 -40 148 Left 2"])
         s.wire(v["+"], (x, 400))
@@ -450,4 +463,46 @@ s.text(-400, 1160, ".meas tran VI_zero AVG V(V6+,V6-) FROM 50u TO 90u\n.meas tra
 s.text(720, 1160, ".meas tran VV_zero AVG V(V5+,V5-) FROM 50u TO 90u\n.meas tran VV_25V AVG V(V5+,V5-) FROM 250u TO 290u\n"
                   ".meas tran VOUTA AVG V(OUT-A) FROM 250u TO 290u\n.meas tran T_V_1pct WHEN V(V5+,V5-)=VV_zero+0.99*(VV_25V-VV_zero) RISE=1", 2, True)
 s.save("06_Measurement_Channels_Step.asc")
+
+# ============================================================ 07 / 08 measurement quality
+# 07: what the ADC pins see for a realistic ESC waveform. The phase voltage (PWM) and the motor
+# current (R-L + back-EMF, so it carries the real PWM ripple) are the reference; run_simulations.py
+# compares them with the readings and writes measurement_quality.md.
+s = Sch(2100, 1500)
+header(s, "PhaseSense-8586 - 07 - Measurement quality : ESC waveforms through both channels (phase A)",
+       "The PWM phase voltage and the motor current are the reference. run_simulations.py compares them with what the AD7606C pins see.")
+channels(s, "V={Vbat}*limit(0,1,0.5+{kedge}*(V(MOD)-V(CAR)))", None, None, None, pwm=True,
+         motor={"L": "{Lm}", "R": "{Rm}", "E": "SINE({Vbat/2} {Eb} {fe})"}, lsh="{Lsh}")
+for x, n, val, lab, wy in ((-320, "V_MOD", "SINE(0.5 {m/2} {fe} 0 0 {phi})", "MOD", 148),
+                           (-176, "V_CAR", "PULSE(0 1 0 {0.5/fpwm} {0.5/fpwm} 0 {1/fpwm})", "CAR", 176)):
+    v = s.part("voltage", "+", (x, 832), n, val,
+               windows=["WINDOW 0 -40 120 Left 2", f"WINDOW 3 -40 {wy} Left 1"])
+    s.wire(v["+"], (x, 800))
+    s.label((x, 800), lab)
+    s.gnd(v["-"])
+s.text(-400, 1040, "PWM modulator: sine reference (MOD) against a triangle carrier (CAR)", 1)
+s.text(-400, 1120, ".tran 0 8m 0 50n uic\n.options plotwinsize=0\n.step param Lsh list 1p 5n 10n", 2, True)
+s.text(-400, 1250, ".param Vbat=25.2 fpwm=24k fe=1k m=0.774 phi=22.7 kedge=200\n.param Lm=30u Rm=50m Eb=8", 2, True)
+s.text(-400, 1340, "6S battery, 24 kHz PWM, 1 kHz electrical frequency. Three runs: shunt without inductance, 5 nH, 10 nH.\n"
+                   "20 A peak in phase with the back-EMF: 90 W in the phase, PWM ripple of about 8 A pp.", 2)
+s.text(720, 1120, ".save V(IN-A) V(OUT-A) I(L_M) V(V6+) V(V6-) V(V5+) V(V5-)", 2, True)
+s.save("07_Measurement_Quality_Waveforms.asc")
+
+# 08: spread of the DC readings when every tolerance is drawn again (before any calibration).
+s = Sch(2100, 1500)
+header(s, "PhaseSense-8586 - 08 - Measurement quality : Monte Carlo on the tolerances (phase A, DC readings)",
+       "Each run draws every tolerance again. The readings at 0 / 35 A and 0 / 25.2 V give the spread of offset and gain before calibration.")
+channels(s, "0", None, "0", None, mc=True)
+s.text(-400, 1120, ".dc I_M 0 35 35 V_PH 0 25.2 25.2\n.step param run 1 1000 1", 2, True)
+s.text(-400, 1200, ".param tolSh=0.005 tolR=0.01 tolG=100u tolRin=0.167\n"
+                   ".param R1v={mc(1m,tolSh)} R13v={mc(33,tolR)} R15v={mc(9.1k,tolR)}\n"
+                   ".param R27v={mc(40.2k,tolR)} R28v={mc(10k,tolR)} Re2v={mc(1k,tolR)} R19v={mc(9.1k,tolR)}\n"
+                   ".param RiP={mc(1.2Meg,tolRin)} RiN={mc(1.2Meg,tolRin)} RvP={mc(1.2Meg,tolRin)} RvN={mc(1.2Meg,tolRin)}\n"
+                   ".param R11v={mc(1k,tolR)} R12v={mc(24.9k,tolR)} Iset={mc(100u,0.02)}\n"
+                   ".param V25={(2.5*(1+flat(250u))/R11v+Iset)/(1/R11v+1/R12v)+flat(2m)}", 2, True)
+s.text(-400, 1450, "tolSh: PBV shunt 0.5 %.  tolR: resistors, 1 % assumed.  IC2: gain 20 V/V +/-0.01 %, offset +/-15 uV (INA241A2 datasheet maximum).\n"
+                   "RiP, RiN, RvP, RvN: AD7606C input resistances, 1.0 ... 1.4 Meg.  V25: +2.5VA from the LTC6655B (0.025 %), the SET network\n"
+                   "(ISET 100 uA +/-2 %, R11, R12) and the LT3045-1 offset (+/-2 mV).", 1)
+s.text(720, 1120, ".save V(IN-A) V(OUT-A) V(V6+) V(V6-) V(V5+) V(V5-) V(+2.5VA)", 2, True)
+s.save("08_Measurement_Quality_Tolerances.asc")
 print("ok")

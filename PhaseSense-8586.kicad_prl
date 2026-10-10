@@ -51,7 +51,7 @@
       "conflict_shadows",
       "shapes"
     ],
-    "visible_layers": "ffffffff_ffffffff_fff555ff_f575ff21",
+    "visible_layers": "ffffffff_ffffffff_fff555ff_f575ffa1",
     "zone_display_mode": 0
   },
   "git": {
@@ -94,18 +94,18 @@
       11
     ],
     "col_widths": [
-      130,
-      118,
-      154,
-      153,
-      154,
-      201,
-      149,
-      158,
-      129,
-      129,
-      95,
-      129
+      163,
+      148,
+      193,
+      191,
+      193,
+      251,
+      186,
+      198,
+      161,
+      161,
+      119,
+      161
     ],
     "custom_group_rules": [],
     "expanded_rows": [],

@@ -3575,7 +3575,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "LTC6655LNBHMS8-2.5#PBF"
+	(symbol "LTC6655BHMS8-2.5#PBF"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3592,7 +3592,7 @@
 				(justify left top)
 			)
 		)
-		(property "Value" "LTC6655LNBHMS8-2.5#PBF"
+		(property "Value" "LTC6655BHMS8-2.5#PBF"
 			(at 29.21 5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3662,7 +3662,7 @@
 				(justify left top)
 			)
 		)
-		(property "Manufacturer_Part_Number" "LTC6655LNBHMS8-2.5#PBF"
+		(property "Manufacturer_Part_Number" "LTC6655BHMS8-2.5#PBF"
 			(at 29.21 -594.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3674,7 +3674,7 @@
 				(justify left top)
 			)
 		)
-		(property "Mouser Part Number" "584-6655LNBHMS825PBF"
+		(property "Mouser Part Number" ""
 			(at 29.21 -694.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3686,7 +3686,7 @@
 				(justify left top)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Analog-Devices/LTC6655LNBHMS8-2.5PBF?qs=0lSvoLzn4L%252BRohUD3M%252BeWQ%3D%3D"
+		(property "Mouser Price/Stock" ""
 			(at 29.21 -794.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3698,7 +3698,7 @@
 				(justify left top)
 			)
 		)
-		(property "Arrow Part Number" "LTC6655LNBHMS8-2.5#PBF"
+		(property "Arrow Part Number" "LTC6655BHMS8-2.5#PBF"
 			(at 29.21 -894.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3710,7 +3710,7 @@
 				(justify left top)
 			)
 		)
-		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/ltc6655lnbhms8-2.5pbf/analog-devices.html?utm_currency=USD&region=nac"
+		(property "Arrow Price/Stock" ""
 			(at 29.21 -994.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3722,7 +3722,7 @@
 				(justify left top)
 			)
 		)
-		(symbol "LTC6655LNBHMS8-2.5#PBF_1_1"
+		(symbol "LTC6655BHMS8-2.5#PBF_1_1"
 			(rectangle
 				(start 5.08 2.54)
 				(end 27.94 -10.16)
@@ -3827,7 +3827,7 @@
 			(pin passive line
 				(at 33.02 -5.08 180)
 				(length 5.08)
-				(name "NR"
+				(name "VOUT_S"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5485,6 +5485,240 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "XT60PW-M"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 19.05 7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "XT60PW-M"
+			(at 19.05 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Footprint" "PhaseSense-8586:XT60PWM"
+			(at 19.05 -94.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.tme.eu/Document/b13629717d44ae038681dba08d18c0b6/XT60PW-M.pdf"
+			(at 19.05 -194.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Connector: DC supply; socket; XT60; male; PIN: 2; on PCBs; THT; 30A"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "8.4"
+			(at 19.05 -394.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Amass"
+			(at 19.05 -494.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "XT60PW-M"
+			(at 19.05 -594.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 19.05 -694.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 19.05 -794.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 19.05 -894.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 19.05 -994.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(symbol "XT60PW-M_1_1"
+			(rectangle
+				(start 5.08 2.54)
+				(end 17.78 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin passive line
+				(at 0 0 0)
+				(length 5.08)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -2.54 0)
+				(length 5.08)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 0 180)
+				(length 5.08)
+				(name "MH1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 -2.54 180)
+				(length 5.08)
+				(name "MH2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)

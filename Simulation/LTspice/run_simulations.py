@@ -15,30 +15,15 @@ import subprocess
 import sys
 
 import numpy as np
-import matplotlib
 
-matplotlib.use("Agg")
-import matplotlib.pyplot as plt  # noqa: E402
+import measurement_quality
+from ltraw import read_raw, split_steps
+from plotstyle import C1, C2, C3, C4, GRID, HERE, INK2, SURFACE, plt, save
 
-from ltraw import read_raw, split_steps  # noqa: E402
-
-HERE = os.path.dirname(os.path.abspath(__file__))
-FIG_DIR = os.path.normpath(os.path.join(HERE, "..", "..", "Images", "Simulation"))
 SIMS = ["01_Power_Chain_Startup", "02_Analog_Rails_Startup", "03_Boost_Ripple",
-        "04_Analog_Rails_PSRR", "05_Measurement_Channels_AC", "06_Measurement_Channels_Step"]
+        "04_Analog_Rails_PSRR", "05_Measurement_Channels_AC", "06_Measurement_Channels_Step",
+        "07_Measurement_Quality_Waveforms", "08_Measurement_Quality_Tolerances"]
 LTSPICE = os.path.expandvars(r"%LOCALAPPDATA%\Programs\ADI\LTspice\LTspice.exe")
-
-# reference palette (light), fixed categorical order
-C1, C2, C3, C4 = "#2a78d6", "#eb6834", "#1baf7a", "#eda100"
-SURFACE, INK, INK2, GRID = "#fcfcfb", "#0b0b0b", "#52514e", "#e4e3df"
-
-plt.rcParams.update({
-    "figure.facecolor": SURFACE, "axes.facecolor": SURFACE, "savefig.facecolor": SURFACE,
-    "axes.edgecolor": INK2, "axes.labelcolor": INK, "xtick.color": INK2, "ytick.color": INK2,
-    "text.color": INK, "axes.grid": True, "grid.color": GRID, "grid.linewidth": 0.8,
-    "axes.spines.top": False, "axes.spines.right": False, "lines.linewidth": 2,
-    "font.size": 10, "axes.titlesize": 11, "axes.titleweight": "bold", "legend.frameon": False,
-})
 
 
 def run(name):
@@ -75,13 +60,6 @@ def num(s):
     if m:
         return float(m.group(1))
     return float(re.findall(r"[-+]?\d*\.?\d+(?:[eE][-+]?\d+)?", s.split("=")[-1])[0])
-
-
-def save(fig, fname):
-    os.makedirs(FIG_DIR, exist_ok=True)
-    fig.savefig(os.path.join(FIG_DIR, fname), dpi=130, bbox_inches="tight")
-    plt.close(fig)
-    print(f"  figure: Images/Simulation/{fname}")
 
 
 def decimate(t, *ys, n=6000):
@@ -140,7 +118,7 @@ def fig01():
 def fig02():
     runs = split_steps(read_raw(os.path.join(HERE, "02_Analog_Rails_Startup.raw")))
     fig, (a, b) = plt.subplots(1, 2, figsize=(11.5, 4.4))
-    d = runs[2]
+    d = runs[0]
     t = d["time"] * 1e3
     for key, lab, col in (("v(+6v)", "+6V", C2), ("v(+5va)", "+5VA", C3), ("v(+2.5va)", "+2.5VA", C4)):
         a.plot(t, d[key], color=col, label=lab, lw=1.8)
@@ -150,19 +128,17 @@ def fig02():
     a.set_xlim(0, 100)
     a.set_xlabel("Time (ms)")
     a.set_ylabel("Voltage (V)")
-    a.set_title("02 - Analog rails start-up (corrected +2.5VA rail)")
+    a.set_title("02 - Analog rails start-up")
     a.legend(loc="center right")
     b.axhspan(2.495, 2.505, color=GRID, lw=0)
     b.text(148, 2.512, "AD7606C REFIN: 2.495 ... 2.505 V", color=INK2, fontsize=8, ha="right")
-    labs = ("as built (NR tied to VOUT)", "NR freed, R12 = 49.9k", "NR freed, R12 = 24.9k")
-    for d, lab, col in zip(runs, labs, (C1, C2, C3)):
-        y = d["v(+2.5va)"]
-        b.plot(d["time"] * 1e3, y, color=col, label=f"{lab}: {y[-1]:.3f} V", lw=1.8)
+    y = d["v(+2.5va)"]
+    b.plot(t, y, color=C4, label=f"+2.5VA: {y[-1]:.4f} V", lw=1.8)
     b.set_xlim(0, 150)
-    b.set_ylim(1.9, 2.7)
+    b.set_ylim(2.44, 2.52)
     b.set_xlabel("Time (ms)")
     b.set_ylabel("+2.5VA (V)")
-    b.set_title("+2.5VA final value: as built and corrected")
+    b.set_title("+2.5VA settling into the AD7606C reference window")
     b.legend(loc="lower right", fontsize=9)
     save(fig, "sim02_analog_rails.png")
 
@@ -207,7 +183,7 @@ def fig04():
     f = d["frequency"]
     fig, a = plt.subplots(figsize=(9, 4.4))
     for key, lab, col, dx, dy in (("v(+5va)", "+5VA (IC8)", C1, 12, -22),
-                                  ("v(+2.5va)", "+2.5VA (IC9, corrected)", C2, -96, 16)):
+                                  ("v(+2.5va)", "+2.5VA (IC9)", C2, -96, 16)):
         psrr = -20 * np.log10(np.abs(d[key]))
         a.semilogx(f, psrr, color=col, lw=2, label=lab)
         i = np.argmin(np.abs(f - 2e6))
@@ -274,7 +250,8 @@ def fig06():
     save(fig, "sim06_channels_step.png")
 
 
-FIGS = {"01": fig01, "02": fig02, "03": fig03, "04": fig04, "05": fig05, "06": fig06}
+FIGS = {"01": fig01, "02": fig02, "03": fig03, "04": fig04, "05": fig05, "06": fig06,
+        "07": measurement_quality.fig07, "08": measurement_quality.fig08}
 
 
 def main():
@@ -296,6 +273,8 @@ def main():
             if not os.path.exists(os.path.join(HERE, s + ".log")):
                 continue
             res = meas(s)
+            if not res:                            # 07 / 08: analysed by measurement_quality.py
+                continue
             n = max((len(v) for v in res.values()), default=1)
             head = ["Measure"] + (["Result"] if n == 1 else [f"Step {i + 1}" for i in range(n)])
             f.write(f"## {s}\n\n| " + " | ".join(head) + " |\n|" + " --- |" * len(head) + "\n")
@@ -303,6 +282,7 @@ def main():
                 f.write(f"| `{k}` | " + " | ".join(f"`{x}`" for x in v) + " |\n")
             f.write("\n")
     print("  results.md written")
+    measurement_quality.write_report()
 
 
 if __name__ == "__main__":
