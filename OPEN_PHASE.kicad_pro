@@ -513,7 +513,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "PhaseSense-8586.kicad_pro",
+    "filename": "OPEN_PHASE.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -1035,8 +1035,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "PhaseSense-8586.kicad_sch",
-        "name": "PhaseSense-8586",
+        "filename": "OPEN_PHASE.kicad_sch",
+        "name": "OPEN_PHASE",
         "uuid": "f9e05184-c88b-4a88-ae9c-ab2bdb32be7c"
       }
     ],
@@ -1046,7 +1046,7 @@
   "sheets": [
     [
       "f9e05184-c88b-4a88-ae9c-ab2bdb32be7c",
-      "PhaseSense-8586"
+      "OPEN_PHASE"
     ],
     [
       "82da9dbf-ba38-4d08-ba35-a220fa2963b1",
@@ -1093,8 +1093,8 @@
     "FABRICATION_NOTES": "FABRICATION NOTES",
     "GIT_HASH_PCB": "",
     "GIT_HASH_SCH": "",
-    "GIT_URL": "https://github.com/foukouda/PhaseSense-8586",
-    "PROJECT_NAME": "PhaseSense-8586",
+    "GIT_URL": "https://github.com/foukouda/OPEN_PHASE",
+    "PROJECT_NAME": "OPEN_PHASE",
     "RELEASE_BODY_1.0.0": "",
     "RELEASE_BODY_1.0.1": "",
     "RELEASE_BODY_1.0.2": "",

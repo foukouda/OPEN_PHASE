@@ -1,4 +1,4 @@
-* INA241A2 - BEHAVIORAL model written for the PhaseSense-8586 project
+* INA241A2 - BEHAVIORAL model written for the OPEN_PHASE project
 * ---------------------------------------------------------------------------
 * This is NOT a Texas Instruments model (TI does not provide an LTspice model).
 * It reproduces the documented behaviour of the INA241A2 (SBOSA30D) closely

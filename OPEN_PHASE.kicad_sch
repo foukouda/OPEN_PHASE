@@ -5,7 +5,7 @@
 	(uuid "f9e05184-c88b-4a88-ae9c-ab2bdb32be7c")
 	(paper "A3")
 	(title_block
-		(title "PhaseSense-8586 - PHASETRACKER")
+		(title "OPEN_PHASE - PHASETRACKER")
 		(date "2026-10-06")
 		(rev "${REVISION}")
 		(company "${COMPANY}")
@@ -1771,7 +1771,7 @@
 			)
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c"
 					(page "9")
 				)
@@ -1820,7 +1820,7 @@
 			)
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c"
 					(page "10")
 				)
@@ -1869,7 +1869,7 @@
 			)
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c"
 					(page "2")
 				)
@@ -1918,7 +1918,7 @@
 			)
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c"
 					(page "3")
 				)

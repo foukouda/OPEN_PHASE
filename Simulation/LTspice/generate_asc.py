@@ -1,4 +1,4 @@
-# Generates the PhaseSense-8586 LTspice schematics (.asc) as properly wired circuits.
+# Generates the OPEN_PHASE LTspice schematics (.asc) as properly wired circuits.
 # WARNING: running it overwrites the .asc files in this folder (hand edits made
 # in LTspice are lost). Reuse the Sch class / PINS table for other projects.
 import os
@@ -261,7 +261,7 @@ DX, DY = 0, 760   # directives: free area under the boost stage
 
 # ============================================================ 01 start-up
 s = Sch(*SHEET)
-header(s, "PhaseSense-8586 - 01 - Power chain start-up : +3.3V -> LT8362 -> +6V -> LT3045-1 -> +5VA / +2.5VA",
+header(s, "OPEN_PHASE - 01 - Power chain start-up : +3.3V -> LT8362 -> +6V -> LT3045-1 -> +5VA / +2.5VA",
        "Switching simulation (2 MHz) of the boost soft-start, as built. Full settling of the analog rails: see 02_Analog_Rails_Startup.asc")
 analog_rails(s, boost(s))
 s.text(DX, DY, ".tran 0 12m 0 20n", 2, True)
@@ -275,7 +275,7 @@ s.save("01_Power_Chain_Startup.asc")
 
 # ============================================================ 02 analog rails
 s = Sch(*SHEET)
-header(s, "PhaseSense-8586 - 02 - Analog rails start-up and accuracy : +5VA and +2.5VA",
+header(s, "OPEN_PHASE - 02 - Analog rails start-up and accuracy : +5VA and +2.5VA",
        "The boost is replaced by its settled output (1 ms ramp, see 01), so the rails can be followed until they are settled.")
 r6 = six_volt_source(s, "PWL(0 0 1m 5.96)", note="+6V from the boost\n(1 ms ramp)")
 analog_rails(s, r6)
@@ -294,7 +294,7 @@ s.save("02_Analog_Rails_Startup.asc")
 # input current of the analog rails (I_6V of simulation 02). What is left on +5VA / +2.5VA is
 # obtained from the PSRR of simulation 04.
 s = Sch(2700, 1500)
-header(s, "PhaseSense-8586 - 03 - Steady-state ripple of the LT8362 boost on +6V",
+header(s, "OPEN_PHASE - 03 - Steady-state ripple of the LT8362 boost on +6V",
        "Boost alone, loaded by the input current of both analog rails (AD7606C at 1 MSPS, see I_6V in 02). Measured over 5..6 ms.")
 r6 = boost(s)
 i = s.part("current", "+", (2096, 0), "I_6V", "PWL(0 0 2m 0 2.1m {I6})",
@@ -314,7 +314,7 @@ s.save("03_Boost_Ripple.asc")
 
 # ============================================================ 04 PSRR
 s = Sch(*SHEET)
-header(s, "PhaseSense-8586 - 04 - PSRR of the analog rails : transfer from +6V ripple to +5VA and +2.5VA",
+header(s, "OPEN_PHASE - 04 - PSRR of the analog rails : transfer from +6V ripple to +5VA and +2.5VA",
        "PSRR(dB) = -20*log10|V(rail)/V(+6V)|. Includes the path through the LTC6655 references and the SET filters. 2 MHz = LT8362 switching frequency.")
 r6 = six_volt_source(s, "5.96", value2="AC 1", note="+6V with\n1 V AC ripple")
 analog_rails(s, r6)
@@ -443,7 +443,7 @@ def channels(s, vph, vph_ac, im, im_ac, pwm=False, motor=None, mc=False, lsh=Non
 
 
 s = Sch(2100, 1500)
-header(s, "PhaseSense-8586 - 05 - Measurement channels : frequency response (shunt / divider -> AD7606C pins)",
+header(s, "OPEN_PHASE - 05 - Measurement channels : frequency response (shunt / divider -> AD7606C pins)",
        "k = 1 : AC on the phase current (current channel, V/A).  k = 0 : AC on the phase voltage (voltage channel, V/V).")
 channels(s, "12", "AC {1-k}", "0", "AC {k}")
 s.text(-400, 1120, ".ac dec 100 10 10Meg\n.step param k list 0 1", 2, True)
@@ -454,7 +454,7 @@ s.text(640, 1200, ".meas ac G_V FIND mag(V(V5+,V5-)) AT 10\n.meas ac F3dB_V WHEN
 s.save("05_Measurement_Channels_AC.asc")
 
 s = Sch(2100, 1500)
-header(s, "PhaseSense-8586 - 06 - Measurement channels : DC transfer and step response",
+header(s, "OPEN_PHASE - 06 - Measurement channels : DC transfer and step response",
        "Phase voltage steps 0 -> 25.2 V (6S battery) at 100 us, phase current steps 0 -> 35 A (MR60 rating, J1 -> J2) at 300 us.")
 channels(s, "PWL(0 0 100u 0 100.1u 25.2)", None, "PWL(0 0 300u 0 300.1u 35)", None)
 s.text(-400, 1120, ".tran 0 600u 0 20n", 2, True)
@@ -469,7 +469,7 @@ s.save("06_Measurement_Channels_Step.asc")
 # current (R-L + back-EMF, so it carries the real PWM ripple) are the reference; run_simulations.py
 # compares them with the readings and writes measurement_quality.md.
 s = Sch(2100, 1500)
-header(s, "PhaseSense-8586 - 07 - Measurement quality : ESC waveforms through both channels (phase A)",
+header(s, "OPEN_PHASE - 07 - Measurement quality : ESC waveforms through both channels (phase A)",
        "The PWM phase voltage and the motor current are the reference. run_simulations.py compares them with what the AD7606C pins see.")
 channels(s, "V={Vbat}*limit(0,1,0.5+{kedge}*(V(MOD)-V(CAR)))", None, None, None, pwm=True,
          motor={"L": "{Lm}", "R": "{Rm}", "E": "SINE({Vbat/2} {Eb} {fe})"}, lsh="{Lsh}")
@@ -490,7 +490,7 @@ s.save("07_Measurement_Quality_Waveforms.asc")
 
 # 08: spread of the DC readings when every tolerance is drawn again (before any calibration).
 s = Sch(2100, 1500)
-header(s, "PhaseSense-8586 - 08 - Measurement quality : Monte Carlo on the tolerances (phase A, DC readings)",
+header(s, "OPEN_PHASE - 08 - Measurement quality : Monte Carlo on the tolerances (phase A, DC readings)",
        "Each run draws every tolerance again. The readings at 0 / 35 A and 0 / 25.2 V give the spread of offset and gain before calibration.")
 channels(s, "0", None, "0", None, mc=True)
 s.text(-400, 1120, ".dc I_M 0 35 35 V_PH 0 25.2 25.2\n.step param run 1 1000 1", 2, True)

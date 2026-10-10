@@ -2,7 +2,7 @@
   <img alt="Logo" width="33%" src="Logos/LOGO.png">
 </p>
 
-<h1 align="center">PhaseSense-8586 – PHASETRACKER</h1>
+<h1 align="center">OPEN_PHASE – PHASETRACKER</h1>
 
 <p align="center">
   3-phase inline current and voltage sensing PCB for BLDC drone motors (INA241A2 + AD7606C-18)
@@ -13,8 +13,8 @@
 </p>
 
 <p align="center" width="100%">
-  <a href="https://github.com/foukouda/PhaseSense-8586/actions/workflows/ci.yaml">
-    <img alt="CI" src="https://github.com/foukouda/PhaseSense-8586/actions/workflows/ci.yaml/badge.svg?branch=dev">
+  <a href="https://github.com/foukouda/OPEN_PHASE/actions/workflows/ci.yaml">
+    <img alt="CI" src="https://github.com/foukouda/OPEN_PHASE/actions/workflows/ci.yaml/badge.svg?branch=dev">
   </a>
   <a href="LICENSE">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-blue">
@@ -24,16 +24,16 @@
 </p>
 
 <p align="center">
-  <img alt="3D Top Angled" src="Images/PhaseSense-8586-angled_top.png" width="45%">
+  <img alt="3D Top Angled" src="Images/OPEN_PHASE-angled_top.png" width="45%">
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="3D Bottom Angled" src="Images/PhaseSense-8586-angled_bottom.png" width="45%">
+  <img alt="3D Bottom Angled" src="Images/OPEN_PHASE-angled_bottom.png" width="45%">
 </p>
 
 ***
 
 ## OVERVIEW
 
-**PhaseSense-8586** is an open-hardware measurement board developed as part of **OPEN THRUST LAB**, a community-driven project building open-source test benches for drone motor characterization.
+**OPEN_PHASE** is an open-hardware measurement board developed as part of **OPEN THRUST LAB**, a community-driven project building open-source test benches for drone motor characterization.
 
 The board is inserted between the ESC and a 3-phase BLDC motor (two Amass **MR60PW** connectors). On each phase it measures:
 
@@ -44,7 +44,7 @@ The six signals are sampled **simultaneously** by an **Analog Devices AD7606C-18
 
 The board only needs **3.3 V**. An LT8362 boost converter (2 MHz) makes 6 V, and two LT3045-1 ultralow-noise LDOs make the analog rails. Each LDO has its SET pin driven by an LTC6655 precision reference, so the LDO works as a low-noise buffer for the reference: **+5VA** (ADC and amplifier supply) and **+2.5VA** (ADC reference and amplifier zero-current level).
 
-> The project name comes from the first version of the design (INA240 + ADS8586S). The schematic now uses the **INA241A2** and the **AD7606C-18**; everything in this README is taken from the current netlist.
+> This project was first published as **PhaseSense-8586**, after the first version of the design (INA240 + ADS8586S). The schematic now uses the **INA241A2** and the **AD7606C-18**; everything in this README is taken from the current netlist.
 
 ***
 
@@ -116,7 +116,7 @@ Power chain: **+3.3 V (host) → LT8362 → +6 V → LTC6655 + LT3045-1 → +5VA
 
 | Parameter | Value |
 | --- | --- |
-| Project name | PhaseSense-8586 |
+| Project name | OPEN_PHASE |
 | Board name | PHASETRACKER |
 | Parent project | OPEN THRUST LAB |
 | CAD tool | KiCad 10 |
@@ -367,8 +367,8 @@ After 3.3 V is applied (values from the [LTspice simulations](#simulation-ltspic
     ├─ KiRI               # KiRI PCB diff viewer files
     │
     ├─ lib                # Project libraries (self-contained)
-    │  ├─ lib_sym         # PhaseSense-8586.kicad_sym — every symbol used
-    │  ├─ lib_fp          # PhaseSense-8586.pretty — every footprint used
+    │  ├─ lib_sym         # OPEN_PHASE.kicad_sym — every symbol used
+    │  ├─ lib_fp          # OPEN_PHASE.pretty — every footprint used
     │  └─ 3d_models       # STEP models referenced by the footprints
     │
     ├─ Logos              # Project logos

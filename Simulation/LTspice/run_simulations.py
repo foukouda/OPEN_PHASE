@@ -1,4 +1,4 @@
-"""Run the PhaseSense-8586 LTspice simulations and plot the results.
+"""Run the OPEN_PHASE LTspice simulations and plot the results.
 
 Usage (from this folder):
     python run_simulations.py            # run LTspice in batch mode, then plot

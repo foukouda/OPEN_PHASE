@@ -1,4 +1,4 @@
 (fp_lib_table
 	(version 7)
-	(lib (name "PhaseSense-8586")(type "KiCad")(uri "${KIPRJMOD}/lib/lib_fp/PhaseSense-8586.pretty")(options "")(descr "PhaseSense-8586 project footprints (3D models in lib/3d_models)"))
+	(lib (name "OPEN_PHASE")(type "KiCad")(uri "${KIPRJMOD}/lib/lib_fp/OPEN_PHASE.pretty")(options "")(descr "OPEN_PHASE project footprints (3D models in lib/3d_models)"))
 )

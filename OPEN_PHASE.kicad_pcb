@@ -183,8 +183,8 @@
 	(property "FABRICATION_NOTES" "FABRICATION NOTES")
 	(property "GIT_HASH_PCB" "")
 	(property "GIT_HASH_SCH" "")
-	(property "GIT_URL" "https://github.com/foukouda/PhaseSense-8586")
-	(property "PROJECT_NAME" "PhaseSense-8586")
+	(property "GIT_URL" "https://github.com/foukouda/OPEN_PHASE")
+	(property "PROJECT_NAME" "OPEN_PHASE")
 	(property "RELEASE_BODY_1.0.0" "")
 	(property "RELEASE_BODY_1.0.1" "")
 	(property "RELEASE_BODY_1.0.2" "")
@@ -239,7 +239,7 @@
 	(property "SHEET_NAME_8" "Holes - Fiducials")
 	(property "SHEET_NAME_9" "Power - Sequencing")
 	(property "VARIANT" "")
-	(footprint "PhaseSense-8586:MountingHole_3.2mm_M3_Pad_Via"
+	(footprint "OPEN_PHASE:MountingHole_3.2mm_M3_Pad_Via"
 		(layer "F.Cu")
 		(uuid "00e86f08-08ec-4519-bebf-d4afeca93aa9")
 		(at 177.5 75)
@@ -458,7 +458,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "PhaseSense-8586:R_0603_1608Metric"
+	(footprint "OPEN_PHASE:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "049e807b-0c9e-4fd9-a290-c23e95f1e915")
 		(at 170.02 68.53 90)
@@ -618,7 +618,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "0a9e9914-c952-4aa7-ba6b-4773a27c96c4")
 		(at 164.85 66.3)
@@ -778,7 +778,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+	(footprint "OPEN_PHASE:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "1463844c-8b9d-4c71-a9bc-dd00a27a7555")
 		(at -70.001 74.5058)
@@ -938,7 +938,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:SON45P300X300X80-13N-D"
+	(footprint "OPEN_PHASE:SON45P300X300X80-13N-D"
 		(layer "F.Cu")
 		(uuid "156e063d-9d0c-4b8a-81e1-1ba8b1778c4d")
 		(at 143.175 50.425)
@@ -1371,7 +1371,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "16e9ed33-da8b-4656-9fb3-9f06d7548713")
 		(at 140.3 50.75 -90)
@@ -1533,7 +1533,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:R_0603_1608Metric"
+	(footprint "OPEN_PHASE:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "193314e4-a437-4f26-9b9f-5754bd685ae5")
 		(at 167.055 68.5225 90)
@@ -1693,7 +1693,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:SOP65P490X110-8N"
+	(footprint "OPEN_PHASE:SOP65P490X110-8N"
 		(layer "F.Cu")
 		(uuid "1fff0df5-9f00-4b32-aa92-c6d403f9d451")
 		(at 143.18 53.675)
@@ -2083,7 +2083,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "24e4ed05-c881-4135-a426-3519694ad5fc")
 		(at 166 48.25 -90)
@@ -2245,7 +2245,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "27898cb3-78f8-4f5c-b043-285393837dfb")
 		(at 157.025 56.5 180)
@@ -2406,7 +2406,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:R_0603_1608Metric"
+	(footprint "OPEN_PHASE:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "27c16d8a-0d28-41af-98c5-bfb9f489fb9e")
 		(at 156.69 68.525 90)
@@ -2566,7 +2566,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:QFP50P1200X1200X160-64N"
+	(footprint "OPEN_PHASE:QFP50P1200X1200X160-64N"
 		(layer "F.Cu")
 		(uuid "291fef67-3276-4940-81a9-2b0400564ba3")
 		(at 165.25 56.5 180)
@@ -3465,7 +3465,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0805_2012Metric"
+	(footprint "OPEN_PHASE:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "2df9dd6a-543e-4f4e-9523-8589fbe2f1d4")
 		(at 156.8 59.45)
@@ -3625,7 +3625,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:R_0603_1608Metric"
+	(footprint "OPEN_PHASE:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "2f6d8565-ec55-4664-bce9-cfc3b2544623")
 		(at 155.19 68.525 90)
@@ -3785,7 +3785,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:R_0603_1608Metric"
+	(footprint "OPEN_PHASE:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "330e6ddb-7a72-4b30-b741-8a97ddc0c091")
 		(at 158.16 68.525 90)
@@ -3945,7 +3945,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:R_0603_1608Metric"
+	(footprint "OPEN_PHASE:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "3425e1c8-32ac-4f78-b90f-4c0c84e03163")
 		(at 159.66 68.525 90)
@@ -4105,7 +4105,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0805_2012Metric"
+	(footprint "OPEN_PHASE:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "378c13c3-05a5-4043-8040-a8ed999ccdab")
 		(at 148.25 51.6)
@@ -4264,7 +4264,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0805_2012Metric"
+	(footprint "OPEN_PHASE:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "3c85eaba-41bf-4aac-892a-f28296ce8c74")
 		(at 148.25 56.34)
@@ -4423,7 +4423,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "3f8333b6-292c-4021-bbad-7d186046d5b5")
 		(at -70.001 71.1558)
@@ -4583,7 +4583,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:MR60PW"
+	(footprint "OPEN_PHASE:MR60PW"
 		(layer "F.Cu")
 		(uuid "4ae49ff5-b886-42bc-aa76-b060338305df")
 		(at 132.22 84.845 -90)
@@ -4998,7 +4998,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "4d252610-3178-43da-af72-e9474611404e")
 		(at -70.001 67.8058)
@@ -5158,7 +5158,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:R_0603_1608Metric"
+	(footprint "OPEN_PHASE:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "515ea666-8492-4f49-a746-86befda7dc0d")
 		(at 149.31 53.24 180)
@@ -5317,7 +5317,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:R_0603_1608Metric"
+	(footprint "OPEN_PHASE:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "527d8e7d-0a86-4235-91d6-a6a536664356")
 		(at 165.6 68.525 90)
@@ -5477,7 +5477,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:R_0603_1608Metric"
+	(footprint "OPEN_PHASE:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "563b379d-851c-4aad-a08f-139c80e60779")
 		(at -53.603 83.63)
@@ -5637,7 +5637,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:R_0603_1608Metric"
+	(footprint "OPEN_PHASE:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "58e35928-5e7d-40e2-b14b-0908d49d8279")
 		(at 147.06 53.99 90)
@@ -5796,7 +5796,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "5aa8cf15-4c71-4fb7-af58-04edcc778b1a")
 		(at 149.31 54.74)
@@ -5955,7 +5955,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:R_0603_1608Metric"
+	(footprint "OPEN_PHASE:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "5c1399d0-2c96-4ad5-8f0d-985f4124dcdd")
 		(at -42.103 113.16 -90)
@@ -6117,7 +6117,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:R_0603_1608Metric"
+	(footprint "OPEN_PHASE:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "64173fb8-7979-433d-a9a1-67c1306291e9")
 		(at 149.325 59.75)
@@ -6276,7 +6276,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:R_0603_1608Metric"
+	(footprint "OPEN_PHASE:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "64c5470b-48db-4cac-a847-32832fd55af5")
 		(at 147.1 60.5 90)
@@ -6435,7 +6435,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:R_0603_1608Metric"
+	(footprint "OPEN_PHASE:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "66ed0cea-1026-4f9d-ba8f-5f0996a1f3be")
 		(at 161.14 68.525 90)
@@ -6595,7 +6595,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:XT60PWM"
+	(footprint "OPEN_PHASE:XT60PWM"
 		(layer "F.Cu")
 		(uuid "6a1ece16-6868-41e4-97fe-ac335daaa8f1")
 		(at 132.2 35.2 90)
@@ -7018,7 +7018,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:XT60PWM"
+	(footprint "OPEN_PHASE:XT60PWM"
 		(layer "F.Cu")
 		(uuid "6a965afc-341e-4e08-b535-4e176c68408e")
 		(at 164.6 27.2 -90)
@@ -7441,7 +7441,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "6f2a0179-20de-46fe-b44b-29f3a03f0424")
 		(at -76.011 74.5058)
@@ -7601,7 +7601,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:MountingHole_3.2mm_M3_Pad_Via"
+	(footprint "OPEN_PHASE:MountingHole_3.2mm_M3_Pad_Via"
 		(layer "F.Cu")
 		(uuid "75d50399-fc8e-4674-bd1b-cf81231a209d")
 		(at 119.4 46)
@@ -7820,7 +7820,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "76268ee5-e510-49ad-84b0-0f2a3e41ad7f")
 		(at 157 57.85)
@@ -7980,7 +7980,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:R_0603_1608Metric"
+	(footprint "OPEN_PHASE:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "76b27da9-cbe3-4e28-8e4e-220062fad372")
 		(at -44.983 115.42 -90)
@@ -8142,7 +8142,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:PBVR001F110"
+	(footprint "OPEN_PHASE:PBVR001F110"
 		(layer "F.Cu")
 		(uuid "85128177-296a-449d-ae47-f43140713b34")
 		(at 139.62 98.995)
@@ -8526,7 +8526,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:PBVR001F110"
+	(footprint "OPEN_PHASE:PBVR001F110"
 		(layer "F.Cu")
 		(uuid "878d2ad3-3628-4a41-aa34-2d7dc2e9f039")
 		(at 139.62 82.295)
@@ -8910,7 +8910,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:R_0603_1608Metric"
+	(footprint "OPEN_PHASE:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "9000e3f4-10cf-4308-aaae-fa0903cc6425")
 		(at 162.64 68.525 90)
@@ -9070,7 +9070,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "928ff76c-cd12-435e-ad0d-c2a0f29ced75")
 		(at -76.011 81.2058)
@@ -9230,7 +9230,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "934fb4d1-2695-4437-a996-f5504a9211e8")
 		(at 157.025 55)
@@ -9390,7 +9390,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:INDPM135125X620N"
+	(footprint "OPEN_PHASE:INDPM135125X620N"
 		(layer "F.Cu")
 		(uuid "977eccd3-d630-40a4-8daf-40e14851b845")
 		(at -49.143 102.72)
@@ -9686,7 +9686,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:MR60PW"
+	(footprint "OPEN_PHASE:MR60PW"
 		(layer "F.Cu")
 		(uuid "9780ab0e-6859-4f73-a919-21ed593c4212")
 		(at 164.77 95.845 90)
@@ -10101,7 +10101,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:R_0603_1608Metric"
+	(footprint "OPEN_PHASE:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "99594ed0-8931-424f-bf4e-b3fba665d0e7")
 		(at 164.1 68.525 90)
@@ -10261,7 +10261,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "99a919d2-dd46-4a1a-b8f5-b4cd38e30605")
 		(at 140.3 57.25 -90)
@@ -10423,7 +10423,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:R_0603_1608Metric"
+	(footprint "OPEN_PHASE:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "9bcb62e2-277a-4f73-89e6-28e42b8d977b")
 		(at -45.823 84.22)
@@ -10583,7 +10583,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:LT8362EMSEPBF"
+	(footprint "OPEN_PHASE:LT8362EMSEPBF"
 		(layer "F.Cu")
 		(uuid "a2e7a53e-70ca-4e5a-9d18-ce6a530ed36a")
 		(at -49.333 112.38 -90)
@@ -11019,7 +11019,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:D_SOD-123F"
+	(footprint "OPEN_PHASE:D_SOD-123F"
 		(layer "F.Cu")
 		(uuid "a332d602-1c5f-4b79-8fd9-2bc8debe6b72")
 		(at -43.573 110.48 180)
@@ -11311,7 +11311,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0805_2012Metric"
+	(footprint "OPEN_PHASE:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "a4317337-4ddc-456f-82c4-4fd281bd927d")
 		(at 148.25 58.13)
@@ -11470,7 +11470,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:MountingHole_3.2mm_M3_Pad_Via"
+	(footprint "OPEN_PHASE:MountingHole_3.2mm_M3_Pad_Via"
 		(layer "F.Cu")
 		(uuid "a95144d5-b487-46f7-aa96-8276df0409d2")
 		(at 177.5 46)
@@ -11689,7 +11689,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "PhaseSense-8586:R_0603_1608Metric"
+	(footprint "OPEN_PHASE:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "adcb46d6-105f-4dc4-8dfb-4e7670f9fbc6")
 		(at 168.555 68.5225 90)
@@ -11849,7 +11849,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:SON45P300X300X80-13N-D"
+	(footprint "OPEN_PHASE:SON45P300X300X80-13N-D"
 		(layer "F.Cu")
 		(uuid "add0dc92-d139-4159-87d6-f174f8a78770")
 		(at 143.175 56.9225)
@@ -12282,7 +12282,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "b3932c93-1468-4936-af11-77f299805dc9")
 		(at -76.011 71.1558)
@@ -12442,7 +12442,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "b7883c26-fade-4ea6-9499-6abc66a39194")
 		(at -76.011 77.8558)
@@ -12602,7 +12602,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "c231e9cb-fa0c-4efa-bcb4-d3a31fdb6600")
 		(at 158.91 66.3)
@@ -14072,7 +14072,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "c92764f6-0ee4-4429-9ed2-4043f21a9862")
 		(at 157.025 53.5 180)
@@ -14234,7 +14234,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:SOP65P490X110-8N"
+	(footprint "OPEN_PHASE:SOP65P490X110-8N"
 		(layer "F.Cu")
 		(uuid "c98bc41a-4168-4207-8b7f-6e6b6d31f82b")
 		(at 143.18 60.1675)
@@ -14624,7 +14624,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "cb0dbb7e-d3dc-4aa6-a20e-d1fb04a7781c")
 		(at 161.89 66.3)
@@ -14784,7 +14784,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0805_2012Metric"
+	(footprint "OPEN_PHASE:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "cc83e9c6-a168-4037-a094-6720a72556e5")
 		(at 148.24 49.8)
@@ -14943,7 +14943,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "de2da9d5-1e58-4c17-ae0d-24e4ef92bc62")
 		(at 170.77 66.305)
@@ -15103,7 +15103,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:PBVR001F110"
+	(footprint "OPEN_PHASE:PBVR001F110"
 		(layer "F.Cu")
 		(uuid "e04eed5b-4ad9-42df-a2bf-5565d52d0825")
 		(at 139.61 90.325)
@@ -15487,7 +15487,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "e6882ca7-b07f-406d-8066-8ee1d9922153")
 		(at 155.94 66.3)
@@ -15647,7 +15647,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "e6a581fe-641d-4ac7-8508-f370aa039e41")
 		(at 149.325 61.25)
@@ -15806,7 +15806,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:R_0603_1608Metric"
+	(footprint "OPEN_PHASE:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "e7187c1c-b268-4f0c-9ce9-644488741cc7")
 		(at 171.52 68.53 90)
@@ -15966,7 +15966,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "eac0faea-d990-40f5-ac48-1da43bc63acb")
 		(at 173.475 60.95)
@@ -16126,7 +16126,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:MountingHole_3.2mm_M3_Pad_Via"
+	(footprint "OPEN_PHASE:MountingHole_3.2mm_M3_Pad_Via"
 		(layer "F.Cu")
 		(uuid "efaeea77-7965-44ef-853a-57e1148c1960")
 		(at 119.4 74.975)
@@ -16345,7 +16345,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "PhaseSense-8586:T491B"
+	(footprint "OPEN_PHASE:T491B"
 		(layer "F.Cu")
 		(uuid "fb3a2bc1-dfac-4106-975d-3f0409849475")
 		(at -40.093 77.81 180)
@@ -16631,7 +16631,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "fb713747-6839-4f92-96eb-842c953614e7")
 		(at 157.05 61.2)
@@ -16791,7 +16791,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "ff9bdffb-9aef-4dcb-a34c-83e99d8d1fee")
 		(at 167.805 66.2975)
@@ -16951,7 +16951,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:R_0805_2012Metric"
+	(footprint "OPEN_PHASE:R_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "087bb4b8-5c97-4813-a3cd-b1a23bab6535")
 		(at 150.2125 92.15 180)
@@ -17116,7 +17116,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "105e5970-9154-4a1d-9b92-543e64c03049")
 		(at 153.12 86.92)
@@ -17281,7 +17281,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:SOP65P490X110-8N"
+	(footprint "OPEN_PHASE:SOP65P490X110-8N"
 		(layer "B.Cu")
 		(uuid "16cb75de-a98b-42f2-8c05-b0ad0aba2ade")
 		(at 148.47 87.995)
@@ -17683,7 +17683,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "16e2db72-485b-4979-9dc5-607946b67bfc")
 		(at 153.195 80.42)
@@ -17849,7 +17849,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:SOP65P490X110-8N"
+	(footprint "OPEN_PHASE:SOP65P490X110-8N"
 		(layer "B.Cu")
 		(uuid "1ae7a9ff-2013-47b1-b076-01388b28fb12")
 		(at 148.52 79.995)
@@ -18251,7 +18251,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "22188fb6-a117-4394-b731-2495d7ef4fc9")
 		(at 153.17 97.095)
@@ -18416,7 +18416,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "6177e345-e768-4496-a350-a5a6e2a4c4fe")
 		(at 153.12 88.37)
@@ -18581,7 +18581,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:R_0805_2012Metric"
+	(footprint "OPEN_PHASE:R_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "6bea2894-5f66-45d7-b834-027a32a8bcab")
 		(at 146.8375 100.85)
@@ -18747,7 +18747,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:R_0805_2012Metric"
+	(footprint "OPEN_PHASE:R_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "7a2dfc64-7d06-4b5c-8484-a14edfb5217d")
 		(at 150.2 100.85 180)
@@ -18913,7 +18913,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:SOP65P490X110-8N"
+	(footprint "OPEN_PHASE:SOP65P490X110-8N"
 		(layer "B.Cu")
 		(uuid "9b41b8a8-451f-4a53-878b-a316349b3fd4")
 		(at 148.52 96.695)
@@ -19315,7 +19315,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "d898cbad-8f4c-437f-88b7-eee2ec7807cb")
 		(at 153.195 78.92)
@@ -19481,7 +19481,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:C_0603_1608Metric"
+	(footprint "OPEN_PHASE:C_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "dea7d9fb-e55d-4d3f-96e8-17f590643108")
 		(at 153.17 95.62)
@@ -19646,7 +19646,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:R_0805_2012Metric"
+	(footprint "OPEN_PHASE:R_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "f13b979b-e081-41bc-a073-acf8d2744300")
 		(at 150.2625 84.15 180)
@@ -19811,7 +19811,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:R_0805_2012Metric"
+	(footprint "OPEN_PHASE:R_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "f241f751-813d-416c-9025-cacb17fe409b")
 		(at 146.85 92.15)
@@ -19976,7 +19976,7 @@
 			)
 		)
 	)
-	(footprint "PhaseSense-8586:R_0805_2012Metric"
+	(footprint "OPEN_PHASE:R_0805_2012Metric"
 		(layer "B.Cu")
 		(uuid "f7e0b29f-95e3-4eaa-98ed-ace54471fef6")
 		(at 146.8625 84.15)

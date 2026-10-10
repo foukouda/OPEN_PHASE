@@ -11,7 +11,7 @@
 		(company "${COMPANY}")
 	)
 	(lib_symbols
-		(symbol "PhaseSense-8586:AD7606C-18BSTZ"
+		(symbol "OPEN_PHASE:AD7606C-18BSTZ"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -39,7 +39,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "PhaseSense-8586:QFP50P1200X1200X160-64N"
+			(property "Footprint" "OPEN_PHASE:QFP50P1200X1200X160-64N"
 				(at 49.53 -84.76 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1325,7 +1325,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PhaseSense-8586:C"
+		(symbol "OPEN_PHASE:C"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1480,7 +1480,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PhaseSense-8586:C_4T"
+		(symbol "OPEN_PHASE:C_4T"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1514,7 +1514,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "PhaseSense-8586:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(property "Footprint" "OPEN_PHASE:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 				(at 0.9652 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3046,7 +3046,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PhaseSense-8586:C")
+		(lib_id "OPEN_PHASE:C")
 		(at 223.52 95.25 180)
 		(unit 1)
 		(body_style 1)
@@ -3078,7 +3078,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PhaseSense-8586:C_0603_1608Metric"
+		(property "Footprint" "OPEN_PHASE:C_0603_1608Metric"
 			(at 222.5548 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -3118,7 +3118,7 @@
 			(uuid "521dfde8-8e8f-4df2-a86f-cac36e85bda4")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "C21")
 					(unit 1)
@@ -3127,7 +3127,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PhaseSense-8586:C")
+		(lib_id "OPEN_PHASE:C")
 		(at 172.72 45.72 270)
 		(unit 1)
 		(body_style 1)
@@ -3159,7 +3159,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PhaseSense-8586:C_0603_1608Metric"
+		(property "Footprint" "OPEN_PHASE:C_0603_1608Metric"
 			(at 168.91 46.6852 0)
 			(hide yes)
 			(show_name no)
@@ -3199,7 +3199,7 @@
 			(uuid "838a597c-a0ad-4b35-a3c9-d1dbeb35ce24")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "C41")
 					(unit 1)
@@ -3277,7 +3277,7 @@
 			(uuid "67afedc4-7863-4566-b1b7-06727c968a8f")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "#PWR05")
 					(unit 1)
@@ -3355,7 +3355,7 @@
 			(uuid "a1d77790-ed0f-49fe-a8f6-6521a8a4bd58")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "#PWR038")
 					(unit 1)
@@ -3433,7 +3433,7 @@
 			(uuid "12338d15-2d6f-44a5-95dc-e945eaad3a78")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "#PWR041")
 					(unit 1)
@@ -3511,7 +3511,7 @@
 			(uuid "717f7630-ef9b-4cb5-abf9-f45dec30c345")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "#PWR040")
 					(unit 1)
@@ -3589,7 +3589,7 @@
 			(uuid "6079e1a0-12dd-4275-b50f-e43efffee23f")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "#PWR030")
 					(unit 1)
@@ -3667,7 +3667,7 @@
 			(uuid "95c21a41-8e26-405f-a8b1-467d9e924b9d")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "#PWR026")
 					(unit 1)
@@ -3745,7 +3745,7 @@
 			(uuid "e039534a-a517-4be0-afeb-0c6e771ab83b")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "#PWR037")
 					(unit 1)
@@ -3754,7 +3754,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PhaseSense-8586:AD7606C-18BSTZ")
+		(lib_id "OPEN_PHASE:AD7606C-18BSTZ")
 		(at 153.67 114.3 90)
 		(unit 1)
 		(body_style 1)
@@ -3785,7 +3785,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PhaseSense-8586:QFP50P1200X1200X160-64N"
+		(property "Footprint" "OPEN_PHASE:QFP50P1200X1200X160-64N"
 			(at 238.43 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -4097,7 +4097,7 @@
 			(uuid "40547dbd-307b-4a93-a536-adfa5dccedef")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "IC1")
 					(unit 1)
@@ -4175,7 +4175,7 @@
 			(uuid "5c647bbe-21cd-4d88-b765-65fc4b75d148")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "#PWR029")
 					(unit 1)
@@ -4184,7 +4184,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PhaseSense-8586:C")
+		(lib_id "OPEN_PHASE:C")
 		(at 157.48 124.46 90)
 		(unit 1)
 		(body_style 1)
@@ -4216,7 +4216,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PhaseSense-8586:C_0603_1608Metric"
+		(property "Footprint" "OPEN_PHASE:C_0603_1608Metric"
 			(at 161.29 123.4948 0)
 			(hide yes)
 			(show_name no)
@@ -4256,7 +4256,7 @@
 			(uuid "935346bd-a36d-41df-92aa-8120fb922848")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "C20")
 					(unit 1)
@@ -4265,7 +4265,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PhaseSense-8586:C")
+		(lib_id "OPEN_PHASE:C")
 		(at 176.53 55.88 180)
 		(unit 1)
 		(body_style 1)
@@ -4297,7 +4297,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PhaseSense-8586:C_0603_1608Metric"
+		(property "Footprint" "OPEN_PHASE:C_0603_1608Metric"
 			(at 175.5648 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -4337,7 +4337,7 @@
 			(uuid "fc98525a-c498-478f-b078-67fadcbffd0a")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "C36")
 					(unit 1)
@@ -4415,7 +4415,7 @@
 			(uuid "08769016-8b5a-430b-bea8-e93866cd3ad6")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "#PWR048")
 					(unit 1)
@@ -4492,7 +4492,7 @@
 			(uuid "43ae339d-639c-43f5-8c9e-3f00c634a239")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "#PWR028")
 					(unit 1)
@@ -4501,7 +4501,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PhaseSense-8586:C")
+		(lib_id "OPEN_PHASE:C")
 		(at 154.94 49.53 270)
 		(unit 1)
 		(body_style 1)
@@ -4533,7 +4533,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PhaseSense-8586:C_0603_1608Metric"
+		(property "Footprint" "OPEN_PHASE:C_0603_1608Metric"
 			(at 151.13 50.4952 0)
 			(hide yes)
 			(show_name no)
@@ -4573,7 +4573,7 @@
 			(uuid "07406336-fc68-453f-926d-a8df8485e490")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "C35")
 					(unit 1)
@@ -4651,7 +4651,7 @@
 			(uuid "45b49ab7-0656-43f6-9692-89182fa67320")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "#PWR039")
 					(unit 1)
@@ -4660,7 +4660,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PhaseSense-8586:C")
+		(lib_id "OPEN_PHASE:C")
 		(at 182.88 55.88 180)
 		(unit 1)
 		(body_style 1)
@@ -4692,7 +4692,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PhaseSense-8586:C_0603_1608Metric"
+		(property "Footprint" "OPEN_PHASE:C_0603_1608Metric"
 			(at 181.9148 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -4732,7 +4732,7 @@
 			(uuid "89a49c2d-e32e-41f7-8708-74e9cb0244fb")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "C37")
 					(unit 1)
@@ -4741,7 +4741,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PhaseSense-8586:C")
+		(lib_id "OPEN_PHASE:C")
 		(at 184.15 46.99 270)
 		(unit 1)
 		(body_style 1)
@@ -4773,7 +4773,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PhaseSense-8586:C_0603_1608Metric"
+		(property "Footprint" "OPEN_PHASE:C_0603_1608Metric"
 			(at 180.34 47.9552 0)
 			(hide yes)
 			(show_name no)
@@ -4813,7 +4813,7 @@
 			(uuid "5826ea83-7160-4b87-8098-26c444a44e96")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "C38")
 					(unit 1)
@@ -4822,7 +4822,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PhaseSense-8586:C_4T")
+		(lib_id "OPEN_PHASE:C_4T")
 		(at 162.56 53.34 0)
 		(unit 1)
 		(body_style 1)
@@ -4854,7 +4854,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PhaseSense-8586:C_0805_2012Metric"
+		(property "Footprint" "OPEN_PHASE:C_0805_2012Metric"
 			(at 163.5252 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -4900,7 +4900,7 @@
 			(uuid "920128eb-a441-478d-bab5-e7a8897075ba")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "C39")
 					(unit 1)

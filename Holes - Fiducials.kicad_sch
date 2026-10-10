@@ -11,7 +11,7 @@
 		(company "${COMPANY}")
 	)
 	(lib_symbols
-		(symbol "PhaseSense-8586:MountingHole_Pad"
+		(symbol "OPEN_PHASE:MountingHole_Pad"
 			(pin_numbers
 				(hide yes)
 			)
@@ -714,7 +714,7 @@
 			(uuid "91c344b6-f966-45e8-9df1-27b972dbe9b5")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/b825b9f2-4a7b-44ab-b000-02167519e5f9"
 					(reference "#PWR02")
 					(unit 1)
@@ -723,7 +723,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PhaseSense-8586:MountingHole_Pad")
+		(lib_id "OPEN_PHASE:MountingHole_Pad")
 		(at 156.21 74.93 0)
 		(unit 1)
 		(body_style 1)
@@ -757,7 +757,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PhaseSense-8586:MountingHole_3.2mm_M3_Pad_Via"
+		(property "Footprint" "OPEN_PHASE:MountingHole_3.2mm_M3_Pad_Via"
 			(at 156.21 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -794,7 +794,7 @@
 			(uuid "1b9493e7-213d-45d6-8bbc-d38bf38a2597")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/b825b9f2-4a7b-44ab-b000-02167519e5f9"
 					(reference "H1")
 					(unit 1)
@@ -803,7 +803,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PhaseSense-8586:MountingHole_Pad")
+		(lib_id "OPEN_PHASE:MountingHole_Pad")
 		(at 179.07 74.93 0)
 		(unit 1)
 		(body_style 1)
@@ -837,7 +837,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PhaseSense-8586:MountingHole_3.2mm_M3_Pad_Via"
+		(property "Footprint" "OPEN_PHASE:MountingHole_3.2mm_M3_Pad_Via"
 			(at 179.07 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -874,7 +874,7 @@
 			(uuid "b8059dae-ea1f-4c1f-bb97-74835c701dd4")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/b825b9f2-4a7b-44ab-b000-02167519e5f9"
 					(reference "H4")
 					(unit 1)
@@ -883,7 +883,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PhaseSense-8586:MountingHole_Pad")
+		(lib_id "OPEN_PHASE:MountingHole_Pad")
 		(at 163.83 74.93 0)
 		(unit 1)
 		(body_style 1)
@@ -917,7 +917,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PhaseSense-8586:MountingHole_3.2mm_M3_Pad_Via"
+		(property "Footprint" "OPEN_PHASE:MountingHole_3.2mm_M3_Pad_Via"
 			(at 163.83 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -954,7 +954,7 @@
 			(uuid "68b17ec0-b53a-48d4-8949-abb12fbd74fb")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/b825b9f2-4a7b-44ab-b000-02167519e5f9"
 					(reference "H2")
 					(unit 1)
@@ -963,7 +963,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PhaseSense-8586:MountingHole_Pad")
+		(lib_id "OPEN_PHASE:MountingHole_Pad")
 		(at 171.45 74.93 0)
 		(unit 1)
 		(body_style 1)
@@ -997,7 +997,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PhaseSense-8586:MountingHole_3.2mm_M3_Pad_Via"
+		(property "Footprint" "OPEN_PHASE:MountingHole_3.2mm_M3_Pad_Via"
 			(at 171.45 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -1034,7 +1034,7 @@
 			(uuid "ae966be2-6fb2-48df-960e-bc57e7fc379a")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/b825b9f2-4a7b-44ab-b000-02167519e5f9"
 					(reference "H3")
 					(unit 1)

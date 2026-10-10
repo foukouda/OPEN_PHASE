@@ -557,14 +557,14 @@ definitions:
 
   # Metadata ===================================================================
 
-  PROJECT_NAME: PhaseSense-8586
+  PROJECT_NAME: OPEN_PHASE
   BOARD_NAME: PHASETRACKER
 
   COMPANY: OPEN THRUST LAB
   DESIGNER: SIEBERT DIMITRY
 
   LOGO: 'Logos/LOGO.png'
-  GIT_URL: 'https://github.com/foukouda/PhaseSense-8586'
+  GIT_URL: 'https://github.com/foukouda/OPEN_PHASE'
 
   # Preflight ==================================================================
 

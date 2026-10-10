@@ -1,4 +1,4 @@
 (sym_lib_table
 	(version 7)
-	(lib (name "PhaseSense-8586")(type "KiCad")(uri "${KIPRJMOD}/lib/lib_sym/PhaseSense-8586.kicad_sym")(options "")(descr "PhaseSense-8586 project symbols (all parts used on the board)"))
+	(lib (name "OPEN_PHASE")(type "KiCad")(uri "${KIPRJMOD}/lib/lib_sym/OPEN_PHASE.kicad_sym")(options "")(descr "OPEN_PHASE project symbols (all parts used on the board)"))
 )

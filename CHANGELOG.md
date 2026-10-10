@@ -18,7 +18,7 @@ Keep entries short: the `[Unreleased]` section is printed on the schematic Revis
 
 ### Changed
 
--   Renamed to PhaseSense-8586, KiCad 10
+-   Renamed to OPEN_PHASE, KiCad 10
 -   Sheets named after their function
 -   IC3: LTC6655LN-2.5 -> LTC6655-2.5 (pin 6 = VOUT_S)
 -   R12: 49.9k -> 24.9k (+2.5VA = 2.500 V)

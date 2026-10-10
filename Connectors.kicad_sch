@@ -11,7 +11,7 @@
 		(company "${COMPANY}")
 	)
 	(lib_symbols
-		(symbol "PhaseSense-8586:MR60PW"
+		(symbol "OPEN_PHASE:MR60PW"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -39,7 +39,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "PhaseSense-8586:MR60PW"
+			(property "Footprint" "OPEN_PHASE:MR60PW"
 				(at 19.05 -94.92 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -263,7 +263,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PhaseSense-8586:XT60PW-M"
+		(symbol "OPEN_PHASE:XT60PW-M"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -291,7 +291,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "PhaseSense-8586:XT60PWM"
+			(property "Footprint" "OPEN_PHASE:XT60PWM"
 				(at 19.05 -94.92 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1230,7 +1230,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PhaseSense-8586:XT60PW-M")
+		(lib_id "OPEN_PHASE:XT60PW-M")
 		(at 209.55 104.14 180)
 		(unit 1)
 		(body_style 1)
@@ -1261,7 +1261,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PhaseSense-8586:XT60PWM"
+		(property "Footprint" "OPEN_PHASE:XT60PWM"
 			(at 190.5 9.22 0)
 			(hide yes)
 			(show_name no)
@@ -1393,7 +1393,7 @@
 			(uuid "3683fd68-f29d-447f-847b-e7249f116d06")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61"
 					(reference "J6")
 					(unit 1)
@@ -1402,7 +1402,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PhaseSense-8586:MR60PW")
+		(lib_id "OPEN_PHASE:MR60PW")
 		(at 186.69 49.53 0)
 		(unit 1)
 		(body_style 1)
@@ -1433,7 +1433,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PhaseSense-8586:MR60PW"
+		(property "Footprint" "OPEN_PHASE:MR60PW"
 			(at 205.74 144.45 0)
 			(hide yes)
 			(show_name no)
@@ -1568,7 +1568,7 @@
 			(uuid "777f1a89-743d-4f7b-961c-b4b30b588ce9")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61"
 					(reference "J1")
 					(unit 1)
@@ -1646,7 +1646,7 @@
 			(uuid "fbe917d9-31c1-42b9-84fc-e150fa87689c")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61"
 					(reference "#PWR03")
 					(unit 1)
@@ -1655,7 +1655,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PhaseSense-8586:XT60PW-M")
+		(lib_id "OPEN_PHASE:XT60PW-M")
 		(at 209.55 91.44 180)
 		(unit 1)
 		(body_style 1)
@@ -1686,7 +1686,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PhaseSense-8586:XT60PWM"
+		(property "Footprint" "OPEN_PHASE:XT60PWM"
 			(at 190.5 -3.48 0)
 			(hide yes)
 			(show_name no)
@@ -1818,7 +1818,7 @@
 			(uuid "b97efe77-dde1-428c-9f7d-45303756eeff")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61"
 					(reference "J5")
 					(unit 1)
@@ -1827,7 +1827,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PhaseSense-8586:MR60PW")
+		(lib_id "OPEN_PHASE:MR60PW")
 		(at 186.69 69.85 0)
 		(unit 1)
 		(body_style 1)
@@ -1857,7 +1857,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PhaseSense-8586:MR60PW"
+		(property "Footprint" "OPEN_PHASE:MR60PW"
 			(at 205.74 164.77 0)
 			(hide yes)
 			(show_name no)
@@ -1992,7 +1992,7 @@
 			(uuid "e76f919a-f86c-4a5e-8cd2-cc930d94e782")
 		)
 		(instances
-			(project "PhaseSense-8586"
+			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61"
 					(reference "J2")
 					(unit 1)

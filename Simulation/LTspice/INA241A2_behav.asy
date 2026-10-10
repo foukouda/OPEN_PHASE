@@ -15,7 +15,7 @@ WINDOW 0 24 -112 Left 2
 SYMATTR Value INA241A2_BEHAV
 SYMATTR Prefix X
 SYMATTR ModelFile INA241A2_behav.sub
-SYMATTR Description Behavioral model of TI INA241A2 current-sense amplifier (written for PhaseSense-8586, not a TI model)
+SYMATTR Description Behavioral model of TI INA241A2 current-sense amplifier (written for OPEN_PHASE, not a TI model)
 PIN -128 -48 NONE 0
 PINATTR PinName IN+
 PINATTR SpiceOrder 1
