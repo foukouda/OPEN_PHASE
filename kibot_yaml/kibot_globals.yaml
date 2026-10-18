@@ -9,6 +9,12 @@ global:
   dnp_cross_top_layer: '@LAYER_DNP_TOP@'
   dnp_cross_bottom_layer: '@LAYER_DNP_BOTTOM@'
   disable_kicad_cross_on_fab: true
+  # The stackup uses a custom opaque white (#F4F4F0F5) so the 3D renders do not turn pink;
+  # these names are what the fabrication notes print instead of the hex value.
+  solder_mask_color_top: white
+  solder_mask_color_bottom: white
+  silk_screen_color_top: black
+  silk_screen_color_bottom: black
   extra_pth_drill: 0 # for annular ring computation.
   filters:
     # 'KiCad config without environment.vars section'

@@ -166,7 +166,8 @@ def fig03():
     span = abs(yb - y.mean()).max() * 1e3
     a.set_ylim(-2.2 * span, 2.4 * span)          # room for the legend above, the note below
     a.legend(loc="upper right", fontsize=8, ncol=2)
-    a.set_title("03 - LT8362 steady-state ripple on +6V, 65 mA load (5 us window)")
+    load = measurement_quality.params("03_Boost_Ripple")[0]["I6"]
+    a.set_title(f"03 - LT8362 steady-state ripple on +6V, {load * 1e3:.0f} mA load (5 us window)")
     a.text(0.01, 0.05, "after the LT3045-1 (PSRR at 2 MHz, simulation 04):  "
            + ",  ".join(f"{n} = {v * 1e6:.2f} uV pp" for n, v in left.items()),
            transform=a.transAxes, color=INK2, fontsize=9)
@@ -204,8 +205,8 @@ def fig04():
 def fig05():
     volt, curr = split_steps(read_raw(os.path.join(HERE, "05_Measurement_Channels_AC.raw")))
     fig, a = plt.subplots(figsize=(9, 4.4))
-    for d, kp, kn, lab, unit, col in ((curr, "v(v6+)", "v(v6-)", "Current channel", "mV/A", C1),
-                                      (volt, "v(v5+)", "v(v5-)", "Voltage channel", "mV/V", C2)):
+    for d, kp, kn, lab, unit, col in ((curr, "v(v8+)", "v(v8-)", "Current channel", "mV/A", C1),
+                                      (volt, "v(v7+)", "v(v7-)", "Voltage channel", "mV/V", C2)):
         f = d["frequency"]
         g = np.abs(d[kp] - d[kn])
         db = 20 * np.log10(g / g[0])
@@ -228,16 +229,16 @@ def fig06():
     d = read_raw(os.path.join(HERE, "06_Measurement_Channels_Step.raw"))
     t = d["time"] * 1e6
     fig, (a, b) = plt.subplots(1, 2, figsize=(11.5, 4.2))
-    vv = d["v(v5+)"] - d["v(v5-)"]
+    vv = d["v(v7+)"] - d["v(v7-)"]
     m = (t > 90) & (t < 170)
     a.plot(t[m] - 100, vv[m], color=C2)
     a.axhline(vv[np.argmin(np.abs(t - 290))], color=INK2, lw=1, ls="--")
     a.text(68, vv[np.argmin(np.abs(t - 290))] - 0.15, f"{vv[np.argmin(np.abs(t - 290))]:.3f} V for 25.2 V",
            color=INK2, fontsize=9, ha="right", va="top")
     a.set_xlabel("Time after the voltage step (us)")
-    a.set_ylabel("V(V5+) - V(V5-) (V)")
+    a.set_ylabel("V(V7+) - V(V7-) (V)")
     a.set_title("06 - Voltage channel: 0 -> 25.2 V phase step")
-    vi = d["v(v6+)"] - d["v(v6-)"]
+    vi = d["v(v8+)"] - d["v(v8-)"]
     m = (t > 280) & (t < 420)
     b.plot(t[m] - 300, vi[m], color=C1)
     for tx, ha, dx in ((250, "left", -18), (590, "right", 118)):
@@ -245,7 +246,7 @@ def fig06():
         b.axhline(y, color=INK2, lw=1, ls="--")
         b.text(dx, y + 0.02, f"{y:.4f} V", color=INK2, fontsize=9, ha=ha)
     b.set_xlabel("Time after the current step (us)")
-    b.set_ylabel("V(V6+) - V(V6-) (V)")
+    b.set_ylabel("V(V8+) - V(V8-) (V)")
     b.set_title("Current channel: 0 -> 35 A step (J1 -> J2)")
     save(fig, "sim06_channels_step.png")
 

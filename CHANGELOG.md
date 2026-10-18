@@ -15,6 +15,9 @@ Keep entries short: the `[Unreleased]` section is printed on the schematic Revis
 -   Self-contained libs and 3D models (lib/)
 -   LTspice simulations (Simulation/LTspice)
 -   Predicted measurement quality (sim 07, 08)
+-   openEMS shunt inductance model (Simulation/openEMS)
+-   Thermal / current density model (Simulation/Thermal)
+-   3D animation (Images/OPEN_PHASE.mp4)
 
 ### Changed
 
@@ -22,3 +25,5 @@ Keep entries short: the `[Unreleased]` section is printed on the schematic Revis
 -   Sheets named after their function
 -   IC3: LTC6655LN-2.5 -> LTC6655-2.5 (pin 6 = VOUT_S)
 -   R12: 49.9k -> 24.9k (+2.5VA = 2.500 V)
+-   L1: 744373965022 -> WE-MAPI 4030 74438357022 (4.1 x 4.1 mm)
+-   Solder mask white, silkscreen black

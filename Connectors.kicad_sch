@@ -11,6 +11,148 @@
 		(company "${COMPANY}")
 	)
 	(lib_symbols
+		(symbol "Device:NetTie_2"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "NT"
+				(at 0 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "NetTie_2"
+				(at 0 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Net tie, 2 pins"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "net tie short"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Net*Tie*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "NetTie_2_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "NetTie_2_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "OPEN_PHASE:MR60PW"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -253,6 +395,240 @@
 						)
 					)
 					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "OPEN_PHASE:XT60PW-F"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 19.05 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "XT60PW-F"
+				(at 19.05 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "OPEN_PHASE:AMASS_XT60PW-F_1x02_P7.20mm_Horizontal"
+				(at 19.05 -94.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Datasheet" "https://www.tme.eu/Document/1191bc2fa3aee3c446e5a895fd8f7983/XT60PW-F.pdf"
+				(at 19.05 -194.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Description" "Connector: DC supply; socket; XT60; female; PIN: 2; on PCBs; THT; 30A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Height" "8.4"
+				(at 19.05 -394.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Name" "Amass"
+				(at 19.05 -494.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Part_Number" "XT60PW-F"
+				(at 19.05 -594.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Part Number" ""
+				(at 19.05 -694.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Price/Stock" ""
+				(at 19.05 -794.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Arrow Part Number" ""
+				(at 19.05 -894.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Arrow Price/Stock" ""
+				(at 19.05 -994.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(symbol "XT60PW-F_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 17.78 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 0 180)
+					(length 5.08)
+					(name "MH1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -2.54 180)
+					(length 5.08)
+					(name "MH2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -591,6 +967,121 @@
 				)
 			)
 			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND1"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND1"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND1_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND1_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
@@ -976,12 +1467,6 @@
 		(uuid "4858b1c5-8c37-4618-84f3-245c677214cf")
 	)
 	(junction
-		(at 186.69 104.14)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "51538b92-3fe9-4090-a05b-ac86b1846158")
-	)
-	(junction
 		(at 186.69 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -997,7 +1482,13 @@
 		(at 186.69 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d335dd2f-a3f4-4071-8795-d32ad1014fad")
+		(uuid "cb05b842-cccf-4912-ada4-d72898cc1ced")
+	)
+	(junction
+		(at 186.69 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d510cdc9-42f3-4c10-bb17-880416684674")
 	)
 	(junction
 		(at 186.69 52.07)
@@ -1017,6 +1508,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 101.6) (xy 209.55 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fe195db-59ad-4664-89f0-ef48917923af")
+	)
+	(wire
+		(pts
 			(xy 186.69 52.07) (xy 186.69 69.85)
 		)
 		(stroke
@@ -1024,26 +1525,6 @@
 			(type default)
 		)
 		(uuid "557d9b2d-5dd0-40bb-8497-27f18f0a1227")
-	)
-	(wire
-		(pts
-			(xy 186.69 101.6) (xy 186.69 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "632fa83e-ae86-4c60-8987-b373f86068f0")
-	)
-	(wire
-		(pts
-			(xy 186.69 91.44) (xy 186.69 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ba15e43-d97c-4741-a6ce-e74b59d73517")
 	)
 	(wire
 		(pts
@@ -1057,6 +1538,16 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 88.9) (xy 209.55 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a95b107e-3118-470e-904b-7682099ca61d")
+	)
+	(wire
+		(pts
 			(xy 186.69 49.53) (xy 186.69 52.07)
 		)
 		(stroke
@@ -1064,6 +1555,16 @@
 			(type default)
 		)
 		(uuid "c23dc9af-0534-4605-99f8-36ad93c9afc3")
+	)
+	(wire
+		(pts
+			(xy 186.69 101.6) (xy 186.69 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9cee875-b0cd-49bf-a4e1-96180f260838")
 	)
 	(wire
 		(pts
@@ -1083,9 +1584,19 @@
 			(width 0)
 			(type default)
 		)
+		(uuid "e6e5b4f3-0d8d-4ab2-b314-d3e6dd116cdc")
+	)
+	(wire
+		(pts
+			(xy 186.69 91.44) (xy 186.69 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
 		(uuid "f4e86d8f-5b5c-40dd-a409-efa849cd2365")
 	)
-	(global_label "IN-A"
+	(global_label "IN-U"
 		(shape input)
 		(at 209.55 49.53 0)
 		(fields_autoplaced yes)
@@ -1109,7 +1620,7 @@
 			)
 		)
 	)
-	(global_label "OUT-C"
+	(global_label "OUT-W"
 		(shape input)
 		(at 209.55 69.85 0)
 		(fields_autoplaced yes)
@@ -1133,7 +1644,7 @@
 			)
 		)
 	)
-	(global_label "IN-B"
+	(global_label "IN-V"
 		(shape input)
 		(at 209.55 52.07 0)
 		(fields_autoplaced yes)
@@ -1157,7 +1668,55 @@
 			)
 		)
 	)
-	(global_label "OUT-A"
+	(global_label "OUT-B"
+		(shape input)
+		(at 217.17 88.9 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4e1bb336-4687-463a-acb8-d0d003d424be")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 226.6262 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "IN-B"
+		(shape input)
+		(at 218.44 101.6 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9fa6ffb1-681c-4f5d-a587-8f69f5559869")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 226.2029 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "OUT-U"
 		(shape input)
 		(at 209.55 74.93 0)
 		(fields_autoplaced yes)
@@ -1181,7 +1740,7 @@
 			)
 		)
 	)
-	(global_label "OUT-B"
+	(global_label "OUT-V"
 		(shape input)
 		(at 209.55 72.39 0)
 		(fields_autoplaced yes)
@@ -1205,7 +1764,7 @@
 			)
 		)
 	)
-	(global_label "IN-C"
+	(global_label "IN-W"
 		(shape input)
 		(at 209.55 54.61 0)
 		(fields_autoplaced yes)
@@ -1230,8 +1789,88 @@
 		)
 	)
 	(symbol
-		(lib_id "OPEN_PHASE:XT60PW-M")
-		(at 209.55 104.14 180)
+		(lib_id "Device:NetTie_2")
+		(at 201.93 124.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "130990ae-ec2c-428f-aea2-f0bf86fcf6d8")
+		(property "Reference" "NT1"
+			(at 201.93 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 201.93 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
+			(at 201.93 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 201.93 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 201.93 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "102c31cc-fe89-42e3-9099-77b19d1e2bbc")
+		)
+		(pin "1"
+			(uuid "08c4fb6d-355c-4525-83f9-a905a4827460")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61"
+					(reference "NT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 199.39 124.46 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1240,53 +1879,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "14d824c2-4611-4d49-9247-f356ce4fd4b6")
-		(property "Reference" "J6"
-			(at 198.12 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XT60PW-M"
-			(at 198.12 96.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "OPEN_PHASE:XT60PWM"
-			(at 190.5 9.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "https://www.tme.eu/Document/b13629717d44ae038681dba08d18c0b6/XT60PW-M.pdf"
-			(at 190.5 -90.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "Connector: DC supply; socket; XT60; male; PIN: 2; on PCBs; THT; 30A"
-			(at 209.55 104.14 0)
+		(uuid "1e980e15-3852-4f75-a620-3908eeb486cc")
+		(property "Reference" "#PWR08"
+			(at 199.39 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1296,8 +1891,18 @@
 				)
 			)
 		)
-		(property "Height" "8.4"
-			(at 190.5 -290.78 0)
+		(property "Value" "GND"
+			(at 199.39 129.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1305,11 +1910,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 			)
 		)
-		(property "Manufacturer_Name" "Amass"
-			(at 190.5 -390.78 0)
+		(property "Datasheet" ""
+			(at 199.39 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1317,11 +1921,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 			)
 		)
-		(property "Manufacturer_Part_Number" "XT60PW-M"
-			(at 190.5 -490.78 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 199.39 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1329,73 +1932,15 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 			)
-		)
-		(property "Mouser Part Number" ""
-			(at 190.5 -590.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 190.5 -690.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 190.5 -790.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 190.5 -890.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "2"
-			(uuid "5d7102cc-b635-4b66-86eb-2c380d01db32")
-		)
-		(pin "3"
-			(uuid "e8ca09ba-2389-476b-972b-de90a21028bb")
-		)
-		(pin "4"
-			(uuid "bb2be9de-8805-4513-bf31-bc38ca450177")
 		)
 		(pin "1"
-			(uuid "3683fd68-f29d-447f-847b-e7249f116d06")
+			(uuid "d6323f97-a077-4c03-adfa-944a16f78a79")
 		)
 		(instances
 			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61"
-					(reference "J6")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -1571,6 +2116,256 @@
 			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND1")
+		(at 204.47 124.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "621ca436-4041-43d8-8eae-4b04053ce253")
+		(property "Reference" "#PWR012"
+			(at 204.47 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND1"
+			(at 204.47 129.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 204.47 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "086380dc-5450-4c38-bfa5-382e70464b23")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OPEN_PHASE:XT60PW-F")
+		(at 209.55 104.14 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "66d6115f-4351-47dc-8ef4-69a91e9c32bc")
+		(property "Reference" "J3"
+			(at 198.12 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XT60PW-F"
+			(at 198.12 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "OPEN_PHASE:AMASS_XT60PW-F_1x02_P7.20mm_Horizontal"
+			(at 190.5 9.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.tme.eu/Document/1191bc2fa3aee3c446e5a895fd8f7983/XT60PW-F.pdf"
+			(at 190.5 -90.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Connector: DC supply; socket; XT60; female; PIN: 2; on PCBs; THT; 30A"
+			(at 209.55 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "8.4"
+			(at 190.5 -290.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Amass"
+			(at 190.5 -390.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "XT60PW-F"
+			(at 190.5 -490.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 190.5 -590.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 190.5 -690.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 190.5 -790.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 190.5 -890.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "3"
+			(uuid "aa28221b-9563-4495-a766-6254f3025c5c")
+		)
+		(pin "2"
+			(uuid "31af5a48-b934-4088-9803-cd9d60ca7b36")
+		)
+		(pin "4"
+			(uuid "619ac6a2-adf3-4668-9bd8-061dfb7ad34e")
+		)
+		(pin "1"
+			(uuid "f7060d9c-5166-4274-ad07-dbe02ca82da1")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -1821,6 +2616,162 @@
 			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61"
 					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND1")
+		(at 209.55 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a51b20a8-e66f-4455-ac03-b28c641281b5")
+		(property "Reference" "#PWR07"
+			(at 209.55 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND1"
+			(at 209.55 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 209.55 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "da1eb86f-b847-4aa0-ae13-adcef44341a7")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND1")
+		(at 209.55 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa34a51d-9457-4fe1-a2fb-2f3de02b9b88")
+		(property "Reference" "#PWR06"
+			(at 209.55 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND1"
+			(at 209.55 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 209.55 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "323c3c65-11f5-4b80-96dd-58ec498301a4")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)

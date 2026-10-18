@@ -1,16 +1,18 @@
 """Measurement quality predicted from the simulations (called by run_simulations.py).
 
 07_Measurement_Quality_Waveforms
-    A realistic ESC waveform goes through both channels of phase A. The phase voltage and the motor
+    A realistic ESC waveform goes through both channels of phase U. The phase voltage and the motor
     current of the simulation are the truth. The readings are rebuilt from the AD7606C pin voltages
     the way a firmware would do it, then compared with the truth. Three runs: shunt without
     inductance, then with half and with the whole inductance allowed by its datasheet.
+    The DC bus channel (battery -> R9 -> ESC) carries the three phases together and is analysed the
+    same way: battery current, bus voltage, power from the battery, ESC efficiency read by the board.
 08_Measurement_Quality_Tolerances
     Monte Carlo on the component tolerances: spread of the DC readings before any calibration.
 
 What the simulations cannot give comes from the datasheets and is gathered in the constants below:
 the AD7606C-18 (input filter, sampling, noise, gain and zero errors) and the drift with temperature.
-Results are written to measurement_quality.md and to two figures.
+Results are written to measurement_quality.md and to three figures.
 """
 import os
 import re
@@ -18,16 +20,16 @@ import re
 import numpy as np
 
 from ltraw import read_raw, split_steps
-from plotstyle import C1, C2, C3, GRID, HERE, INK2, plt, save
+from plotstyle import C1, C2, C3, C4, GRID, HERE, INK2, plt, save
 
 SIM7, SIM8 = "07_Measurement_Quality_Waveforms", "08_Measurement_Quality_Tolerances"
 
 # Constants a firmware would use when it only knows the schematic
 K_I = 1e-3 * 20                      # V/A  : 1 mohm shunt x 20 V/V
-K_V = 10e3 / (40.2e3 + 10e3)         # V/V  : R28 / (R27 + R28)
+K_V = 10e3 / (40.2e3 + 10e3)         # V/V  : R18 / (R17 + R18)
 V_ZERO = 2.5                         # V    : zero-current level of the INA241 (+2.5VA)
 
-# R1 / R4 / R7 = PBV-R001-F1-0.5, Isabellenhuette datasheet (issue 10-Nov-2016, link stored in the KiCad symbol)
+# R1 / R4 / R7 / R9 = PBV-R001-F1-0.5, Isabellenhuette datasheet (issue 10-Nov-2016, link stored in the KiCad symbol)
 SHUNT = {"r": 1e-3, "tol": 0.005,    # 1 mohm, +/-0.5 % (last field of the ordering code)
          "tcr": 75e-6,               # /K, maximum for values below 10 mohm (20 ... 60 degC)
          "rth": 15.0,                # K/W to ambient, maximum, without heatsink
@@ -48,7 +50,7 @@ INA_NOISE = 49e-9                    # V/sqrt(Hz), input-referred, INA241A2 data
 DRIFT = {"ina_gain": 1e-6, "ina_vos": 150e-9,       # INA241A2
          "adc_fs": 3e-6, "adc_zero": 2.5e-6,        # AD7606C-18, of the 20 V span
          "ref": 2e-6,                               # LTC6655B
-         "r_tcr": 100e-6}                           # R27 / R28: no part number in the schematic, thick film assumed
+         "r_tcr": 100e-6}                           # R17 / R18: no part number in the schematic, thick film assumed
 DT_AMB = 20.0                        # K : temperature change since the calibration
 DT = 25e-9                           # resampling step of the simulated waveforms
 PERIODS = 4                          # electrical periods analysed (end of the simulation)
@@ -96,8 +98,8 @@ def calibration():
         m = (t >= a) & (t <= b)
         return float(np.mean(d[key_p][m] - d[key_n][m]))
 
-    i_zero, i_35 = avg("v(v6+)", "v(v6-)", 50e-6, 90e-6), avg("v(v6+)", "v(v6-)", 550e-6, 600e-6)
-    v_zero, v_25 = avg("v(v5+)", "v(v5-)", 50e-6, 90e-6), avg("v(v5+)", "v(v5-)", 250e-6, 290e-6)
+    i_zero, i_35 = avg("v(v8+)", "v(v8-)", 50e-6, 90e-6), avg("v(v8+)", "v(v8-)", 550e-6, 600e-6)
+    v_zero, v_25 = avg("v(v7+)", "v(v7-)", 50e-6, 90e-6), avg("v(v7+)", "v(v7-)", 250e-6, 290e-6)
     return {"i_zero": i_zero, "k_i": (i_zero - i_35) / 35.0, "v_zero": v_zero, "k_v": (v_25 - v_zero) / 25.2}
 
 
@@ -105,7 +107,7 @@ def bandwidths():
     """-3 dB corners of both channels, from simulation 05."""
     volt, curr = split_steps(read_raw(os.path.join(HERE, "05_Measurement_Channels_AC.raw")))
     out = []
-    for d, kp, kn in ((curr, "v(v6+)", "v(v6-)"), (volt, "v(v5+)", "v(v5-)")):
+    for d, kp, kn in ((curr, "v(v8+)", "v(v8-)"), (volt, "v(v7+)", "v(v7-)")):
         g = np.abs(d[kp] - d[kn])
         db = 20 * np.log10(g / g[0])
         out.append(float(10 ** np.interp(3.0103, -db, np.log10(d["frequency"]))))
@@ -134,9 +136,9 @@ def analyse(d, fe, cal, f_i, f_v):
     g = {k: np.interp(tu, d["time"], d[k]) for k in d if k != "time"}
     w = tu >= t_end - PERIODS / fe - DT / 2             # analysis window, whole electrical periods
     tw = tu[w]
-    r = {"tu": tu, "w": w, "i_true": g["i(l_m)"], "v_true": g["v(out-a)"]}
-    adc_i = lowpass(g["v(v6+)"] - g["v(v6-)"], ADC["f_lp"])                      # AD7606C input filter
-    adc_v = lowpass(g["v(v5+)"] - g["v(v5-)"], ADC["f_lp"])
+    r = {"tu": tu, "w": w, "i_true": g["i(l_m)"], "v_true": g["v(out-u)"]}
+    adc_i = lowpass(g["v(v8+)"] - g["v(v8-)"], ADC["f_lp"])                      # AD7606C input filter
+    adc_v = lowpass(g["v(v7+)"] - g["v(v7-)"], ADC["f_lp"])
     r["i_nom"], r["v_nom"] = (V_ZERO - adc_i) / K_I, adc_v / K_V                 # schematic constants only
     r["i_cal"], r["v_cal"] = (cal["i_zero"] - adc_i) / cal["k_i"], (adc_v - cal["v_zero"]) / cal["k_v"]
     # matched channels: each reading also gets the corner of the other channel, so both see the same filtering
@@ -180,12 +182,105 @@ def sampling(r, fe, i_key, v_key):
     return out
 
 
+def analyse_bus(d, fe, cal):
+    """Truth and readings of the DC bus channel (battery -> R9 -> ESC) for one run of simulation 07.
+
+    The channel has the same parts and values as phase U, so it is read with the same calibration."""
+    t_end = d["time"][-1]
+    tu = np.arange(0.0, t_end, DT)
+    g = {k: np.interp(tu, d["time"], d[k]) for k in ("i(l_bat)", "v(out-b)", "v(v2+)", "v(v2-)", "v(v1+)", "v(v1-)")}
+    w = tu >= t_end - PERIODS / fe - DT / 2
+    r = {"tu": tu, "w": w, "i_true": g["i(l_bat)"], "v_true": g["v(out-b)"]}
+    adc_i = lowpass(g["v(v2+)"] - g["v(v2-)"], ADC["f_lp"])
+    adc_v = lowpass(g["v(v1+)"] - g["v(v1-)"], ADC["f_lp"])
+    r["i_nom"], r["v_nom"] = (V_ZERO - adc_i) / K_I, adc_v / K_V
+    r["i_cal"], r["v_cal"] = (cal["i_zero"] - adc_i) / cal["k_i"], (adc_v - cal["v_zero"]) / cal["k_v"]
+    r["p_true"] = float(np.mean(r["v_true"][w] * r["i_true"][w]))
+    r["power"] = {"schematic constants": float(np.mean(r["v_nom"][w] * r["i_nom"][w])),
+                  "after DC calibration": float(np.mean(r["v_cal"][w] * r["i_cal"][w]))}
+    for key in ("i", "v"):
+        sig = [r[key + "_true"][w], r[key + "_nom"][w], r[key + "_cal"][w]]
+        r[key + "_mean"] = tuple(float(np.mean(x)) for x in sig)
+        r[key + "_ripple"] = tuple(float(np.std(x)) for x in sig)                # rms around the mean
+        r[key + "_pp"] = tuple(float(np.ptp(x)) for x in sig)
+    return r
+
+
+def efficiency(phase, bus):
+    """ESC efficiency as the board reads it: power to the motor (three phases like phase U) over power from the battery."""
+    pp, pb = phase["power"], bus["power"]
+    return {"truth": 100 * 3 * phase["p_true"] / bus["p_true"],
+            "schematic constants": 100 * 3 * pp["schematic constants"] / pb["schematic constants"],
+            "after DC calibration": 100 * 3 * pp["after DC calibration"] / pb["after DC calibration"],
+            "DC calibration + matched channel filters":
+                100 * 3 * pp["DC calibration + matched channel filters"] / pb["after DC calibration"]}
+
+
+def fig07_bus(p, lsh, runs, bus, rates):
+    """Figure of the DC bus channel; `rates` is the sampling study of phase U, for comparison."""
+    base = bus[0]                                         # shunts without inductance
+    bus_rates = sampling(base, p["fe"], "i_cal", "v_cal")
+    eff = [efficiency(a, b) for a, b in zip(runs, bus)]
+    err_bus = [pct(b["power"]["after DC calibration"], b["p_true"]) for b in bus]
+    err_ph = [pct(a["power"]["after DC calibration"], a["p_true"]) for a in runs]
+    keep = ("p_true", "power", "i_mean", "v_mean", "i_ripple", "v_ripple", "i_pp", "v_pp")
+    _report["07"]["bus"] = dict(runs=[{k: r[k] for k in keep} for r in bus], eff=eff, rates=bus_rates,
+                                err_bus=err_bus, err_ph=err_ph)
+
+    fig, ax = plt.subplots(2, 2, figsize=(12, 7.6))
+    a, b, c, e = ax[0, 0], ax[0, 1], ax[1, 0], ax[1, 1]
+    tu, w = base["tu"], base["w"]
+    us = (tu - tu[w][0]) * 1e6
+    m = (us >= 0) & (us <= 6e6 / p["fpwm"])               # six PWM periods
+    a.plot(us[m], base["i_true"][m], color=INK2, lw=1.2, label="battery current (truth)")
+    a.plot(us[m], base["i_cal"][m], color=C1, label="reading")
+    a.set_ylim(0, a.get_ylim()[1] * 1.22)
+    a.set_xlabel("Time (us)")
+    a.set_ylabel("DC bus current (A)")
+    a.set_title(f"07 - DC bus current: {base['i_mean'][0]:.1f} A, the reading keeps "
+                f"{100 * base['i_ripple'][2] / base['i_ripple'][0]:.0f} % of the ripple")
+    a.legend(loc="upper right", fontsize=9, ncol=2)
+
+    b.plot(us[m], base["v_true"][m], color=INK2, lw=1.2, label="bus voltage at the ESC connector (truth)")
+    b.plot(us[m], base["v_cal"][m], color=C2, label="reading")
+    lo, hi = b.get_ylim()
+    b.set_ylim(lo, hi + 0.35 * (hi - lo))
+    b.set_xlabel("Time (us)")
+    b.set_ylabel("DC bus voltage (V)")
+    b.set_title(f"DC bus voltage: {base['v_mean'][0]:.2f} V on average, {base['v_pp'][0]:.1f} V pp of ripple")
+    b.legend(loc="upper right", fontsize=9, ncol=2)
+
+    nh = [v * 1e9 for v in lsh]
+    c.axhline(0, color=INK2, lw=1, ls="--")
+    c.plot(nh, err_ph, "o-", color=C4, ms=8, label="power to the motor (three phases)")
+    c.plot(nh, err_bus, "o-", color=C3, ms=8, label="power from the battery (DC bus)")
+    span = max(abs(v) for v in err_ph + err_bus)
+    c.set_ylim(-1.25 * span, 1.9 * span)
+    c.set_xticks(nh)
+    c.set_xlabel("Inductance of the shunts (nH)")
+    c.set_ylabel("Error on the power (%)")
+    c.set_title("Power read after DC calibration: the DC bus does not depend on the shunt")
+    c.legend(loc="upper left", fontsize=9)
+
+    fs = np.array(RATES) / 1e3
+    e.semilogx(fs, [x[1] for x in rates["built"]], "o-", color=C4, ms=8, label="power to the motor (phase U)")
+    e.semilogx(fs, [x[1] for x in bus_rates], "o-", color=C3, ms=8, label="power from the battery (DC bus)")
+    e.set_ylim(0, None)
+    e.set_xlabel("ADC sampling rate (kSPS)")
+    e.set_ylabel("Error on the power (%)")
+    e.set_title(f"Power error, worst sampling phase, {PERIODS * 1e3 / p['fe']:.0f} ms window")
+    e.legend(loc="upper right", fontsize=9)
+    fig.tight_layout()
+    save(fig, "sim07_dc_bus.png")
+
+
 def fig07():
     p, lsh = params(SIM7)
     fe, fpwm = p["fe"], p["fpwm"]
     cal = calibration()
     f_i, f_v = bandwidths()
-    runs = [analyse(d, fe, cal, f_i, f_v) for d in split_steps(read_raw(os.path.join(HERE, SIM7 + ".raw")))]
+    steps = split_steps(read_raw(os.path.join(HERE, SIM7 + ".raw")))
+    runs = [analyse(d, fe, cal, f_i, f_v) for d in steps]
     lsh = [0.0 if v < 1e-10 else v for v in lsh] or [0.0]
     base, worst = runs[0], runs[-1]                      # shunt without inductance / with the datasheet maximum
     rates = {"built": sampling(base, fe, "i_cal", "v_cal"), "matched": sampling(base, fe, "i_eq", "v_eq"),
@@ -245,14 +340,15 @@ def fig07():
     e.legend(loc="upper right", fontsize=9)
     fig.tight_layout()
     save(fig, "sim07_measurement_quality.png")
+    fig07_bus(p, lsh, runs, [analyse_bus(d, fe, cal) for d in steps], rates)
 
 
 # ------------------------------------------------------------------ 08 : tolerances
 def fig08():
     d = read_raw(os.path.join(HERE, SIM8 + ".raw"))
     n = len(d["i_m"]) // 4                               # per run: (0 A, 0 V) (35 A, 0 V) (0 A, 25.2 V) (35 A, 25.2 V)
-    pin_i = (d["v(v6+)"] - d["v(v6-)"]).reshape(n, 4)
-    pin_v = (d["v(v5+)"] - d["v(v5-)"]).reshape(n, 4)
+    pin_i = (d["v(v8+)"] - d["v(v8-)"]).reshape(n, 4)
+    pin_v = (d["v(v7+)"] - d["v(v7-)"]).reshape(n, 4)
     v25 = d["v(+2.5va)"].reshape(n, 4)[:, 0]
 
     def readings(code_i, code_v):
@@ -337,11 +433,14 @@ def write_report():
     p_cal = [e["after DC calibration"] for e in err]
     drift, rows = budget(cal, m["boards"])
     fast = [fs for fs, x in zip(RATES, q["rates"]["built"]) if x[1] <= abs(p_cal[0]) + 0.5]
+    b = q["bus"]                                          # DC bus channel
+    br, eff = b["runs"][0], b["eff"]
+    eff_cal = [e["after DC calibration"] for e in eff]
     heat35 = SHUNT["rth"] * 35 ** 2 * SHUNT["r"]
 
     L = ["# Predicted measurement quality (generated by run_simulations.py)", "",
-         "Phase A, from simulations 07 (ESC waveforms) and 08 (Monte Carlo on the tolerances), completed with the datasheets",
-         "for what is not simulated: the AD7606C-18 and the drift with temperature.", "",
+         "Phase U and the DC bus (battery to ESC, channel B), from simulations 07 (ESC waveforms) and 08 (Monte Carlo on the tolerances),",
+         "completed with the datasheets for what is not simulated: the AD7606C-18 and the drift with temperature.", "",
          "## How far a reading is from the truth", "",
          "Error of one reading of a steady value, for three levels of calibration:", "",
          "- **None**: the firmware uses the schematic values.",
@@ -366,8 +465,13 @@ def write_report():
           f"After DC calibration the power reads {p_cal[0]:+.1f} % without inductance and {p_cal[-1]:+.1f} % with {lsh[-1] * 1e9:.0f} nH: "
           "the phase between the two channels has to be measured on a real board.",
           f"- **Sample fast.** Below {fast[0] / 1e3:g} kSPS the PWM aliases into the power "
-          f"(up to {max(x[1] for x in q['rates']['built']):.0f} % at the worst sampling phase over {PERIODS * 1e3 / p['fe']:.0f} ms).", "",
-          "## Shunt R1 / R4 / R7: PBV-R001-F1-0.5 (datasheet)", "",
+          f"(up to {max(x[1] for x in q['rates']['built']):.0f} % at the worst sampling phase over {PERIODS * 1e3 / p['fe']:.0f} ms).",
+          f"- **The DC bus is the accurate side.** After DC calibration the power from the battery reads within "
+          f"{max(x[1] for x in b['rates']):.2f} %, whatever the inductance of the shunt and from {RATES[0] / 1e3:g} kSPS: "
+          "both readings are almost steady, so the delay between the two channels does not matter.",
+          f"- **The ESC efficiency is not readable yet.** For a true {eff[0]['truth']:.1f} %, the board reads {min(eff_cal):.1f} % to "
+          f"{max(eff_cal):.1f} % depending on the inductance of the phase shunts: the error on the phase power is larger than the losses of an ESC.", "",
+          "## Shunt R1 / R4 / R7 / R9: PBV-R001-F1-0.5 (datasheet)", "",
           "| Datasheet figure | Value | Effect on the current reading |", "| --- | --- | --- |",
           f"| Tolerance | ±{SHUNT['tol'] * 100:g} % | ±{SHUNT['tol'] * 100:g} % of gain, removed by a gain calibration |",
           f"| Temperature coefficient | < {SHUNT['tcr'] * 1e6:.0f} ppm/K | ±{SHUNT['tcr'] * DT_AMB * 100:.2f} % for {DT_AMB:.0f} K |",
@@ -413,6 +517,37 @@ def write_report():
           "| --- | --- | --- | --- |"]
     L += [f"| {fs / 1e3:g} kSPS | {a[0]:.2f} % / {a[1]:.2f} % | {b[0]:.2f} % / {b[1]:.2f} % | {c[0]:.2f} % / {c[1]:.2f} % |"
           for fs, a, b, c in zip(RATES, q["rates"]["built"], q["rates"]["lmax"], q["rates"]["matched"])]
+    L += ["", "## DC bus, battery to ESC (simulation 07)", "",
+          "The DC bus channel (shunt R9, IC10, divider R32 / R33) has the same parts and values as the phase channels. The static",
+          "accuracy, the noise and the drift given in this report apply to it, and it is read here with the same DC calibration.",
+          "It is read on the ADC inputs V2 (current) and V1 (voltage); phase U is on V8 (current) and V7 (voltage).", "",
+          f"- Load: the three phases together, {3 * r['p_true']:.0f} W to the motor.",
+          f"- Battery and leads: {p['Rb'] * 1e3:g} mΩ, {p['Lb'] * 1e9:g} nH. ESC input capacitor: {p['Cdc'] * 1e6:g} µF, {p['Resr'] * 1e3:g} mΩ. "
+          "These four values are assumed, no battery or ESC is specified in the project. They set the ripple, not the mean values.", "",
+          "| Quantity | Truth | Reading, schematic constants | Reading, after DC calibration |", "| --- | --- | --- | --- |",
+          f"| Mean battery current | {br['i_mean'][0]:.3f} A | {br['i_mean'][1]:.3f} A ({pct(br['i_mean'][1], br['i_mean'][0]):+.2f} %) | "
+          f"{br['i_mean'][2]:.3f} A ({pct(br['i_mean'][2], br['i_mean'][0]):+.2f} %) |",
+          f"| Current ripple | {br['i_pp'][0]:.1f} A pp | {br['i_pp'][1]:.1f} A pp | {br['i_pp'][2]:.1f} A pp |",
+          f"| Mean bus voltage | {br['v_mean'][0]:.3f} V | {br['v_mean'][1]:.3f} V ({pct(br['v_mean'][1], br['v_mean'][0]):+.2f} %) | "
+          f"{br['v_mean'][2]:.3f} V ({pct(br['v_mean'][2], br['v_mean'][0]):+.2f} %) |",
+          f"| Voltage ripple | {br['v_pp'][0]:.2f} V pp | {br['v_pp'][1]:.2f} V pp | {br['v_pp'][2]:.2f} V pp |",
+          f"| Power from the battery | {br['p_true']:.2f} W | {br['power']['schematic constants']:.2f} W "
+          f"({pct(br['power']['schematic constants'], br['p_true']):+.2f} %) | {br['power']['after DC calibration']:.2f} W "
+          f"({pct(br['power']['after DC calibration'], br['p_true']):+.2f} %) |", "",
+          f"The filters keep {100 * br['i_ripple'][2] / br['i_ripple'][0]:.0f} % of the current ripple and "
+          f"{100 * br['v_ripple'][2] / br['v_ripple'][0]:.0f} % of the voltage ripple: the ripple of the DC bus cannot be read, its mean values can.",
+          f"Sampling rate: the power from the battery stays within {max(x[1] for x in b['rates']):.2f} % from {RATES[0] / 1e3:g} kSPS to "
+          f"{RATES[-1] / 1e3:g} kSPS, at the worst sampling phase.", "",
+          "### ESC efficiency read by the board", "",
+          "Power to the motor (three phases, each read like phase U) divided by the power from the battery. The truth is what perfect",
+          "sensors would read at the same points: the phase voltage is taken on the motor side of the shunts, and in this model the ESC",
+          "only loses what its input capacitor dissipates.", "",
+          "| Shunt inductance | Truth | Schematic constants | After DC calibration | DC calibration + matched channel filters |",
+          "| --- | --- | --- | --- | --- |"]
+    L += [f"| {value * 1e9:.0f} nH | {e['truth']:.2f} % | {e['schematic constants']:.2f} % | {e['after DC calibration']:.2f} % | "
+          f"{e['DC calibration + matched channel filters']:.2f} % |" for value, e in zip(lsh, eff)]
+    L += ["", "The error on the efficiency is the error on the phase power: over the three runs the power from the battery reads "
+              f"{min(b['err_bus']):+.2f} % to {max(b['err_bus']):+.2f} %, the power to the motor {min(b['err_ph']):+.2f} % to {max(b['err_ph']):+.2f} %."]
     L += ["", "## Noise and resolution of one sample", "",
           "Computed from the datasheets with the simulated gains and bandwidths "
           f"(current channel {q['f_i'] / 1e3:.1f} kHz, voltage channel {q['f_v'] / 1e3:.1f} kHz, then 25 kHz in the ADC).", "",
@@ -439,7 +574,9 @@ def write_report():
           "## Not covered by these simulations", "",
           "- INA241A2 common-mode rejection and its 1 µs output hold at each PWM edge (behavioural model).",
           "- Layout: Kelvin routing of the shunt, coupling of the PWM edges into the sense traces.",
-          "- The other two phases and the real motor: the waveform is a single-phase equivalent.", ""]
+          "- The other two phases and the real motor: the waveform is a single-phase equivalent.",
+          "- The real battery and ESC: the DC bus values are assumed, the half-bridges have no loss and their PWM uses the nominal",
+          "  battery voltage, not the sagging bus voltage.", ""]
     with open(os.path.join(HERE, "measurement_quality.md"), "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(L))
     print("  measurement_quality.md written")

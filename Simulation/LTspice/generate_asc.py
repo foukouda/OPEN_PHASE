@@ -12,6 +12,7 @@ PINS = {  # R0 pin coordinates
     "voltage": {"+": (0, 16), "-": (0, 96)},
     "bv": {"+": (0, 16), "-": (0, 96)},
     "current": {"+": (0, 0), "-": (0, 80)},
+    "bi": {"+": (0, 0), "-": (0, 80)},
     "schottky": {"A": (16, 0), "K": (16, 64)},
     "LT8362": {"EN": (-160, -144), "MODE": (-160, -48), "RT": (-160, 48), "SS": (-160, 144),
                "VIN": (-80, -208), "SW": (80, -208), "INTVCC": (160, -144), "FBX": (160, -48),
@@ -45,13 +46,18 @@ class Sch:
     def __init__(self, w, h):
         self.head = ["Version 4", f"SHEET 1 {w} {h}"]
         self.w, self.f, self.s, self.t = [], [], [], []
+        self.dx = self.dy = 0
+
+    def at(self, x, y):
+        """Origin of the block drawn next: every coordinate given afterwards is shifted by (x, y)."""
+        self.dx, self.dy = x, y
 
     def part(self, sym, pin, at, name, value=None, rot="R0", spiceline=None, value2=None,
              windows=None):
         """Place `sym` so that its pin `pin` lands on `at`; return all pin positions."""
         px, py = tf(rot, PINS[sym][pin])
         ox, oy = at[0] - px, at[1] - py
-        s = [f"SYMBOL {sym} {ox} {oy} {rot}"]
+        s = [f"SYMBOL {sym} {ox + self.dx} {oy + self.dy} {rot}"]
         s += windows if windows is not None else WIN.get((sym, rot), [])
         s.append(f"SYMATTR InstName {name}")
         if value is not None:
@@ -65,7 +71,7 @@ class Sch:
 
     def wire(self, *pts):
         for a, b in zip(pts[:-1], pts[1:]):
-            self.w.append(f"WIRE {a[0]} {a[1]} {b[0]} {b[1]}")
+            self.w.append(f"WIRE {a[0] + self.dx} {a[1] + self.dy} {b[0] + self.dx} {b[1] + self.dy}")
 
     def bus(self, y, xs):
         """Horizontal rail split at every tap so each tap is a real junction."""
@@ -77,13 +83,14 @@ class Sch:
         if drop:
             self.wire(p, (p[0], p[1] + drop))
             p = (p[0], p[1] + drop)
-        self.f.append(f"FLAG {p[0]} {p[1]} 0")
+        self.f.append(f"FLAG {p[0] + self.dx} {p[1] + self.dy} 0")
 
     def label(self, p, name):
-        self.f.append(f"FLAG {p[0]} {p[1]} {name}")
+        self.f.append(f"FLAG {p[0] + self.dx} {p[1] + self.dy} {name}")
 
     def text(self, x, y, txt, size=2, directive=False):
-        self.t.append(f"TEXT {x} {y} Left {size} {'!' if directive else ';'}{txt.replace(chr(10), chr(92) + 'n')}")
+        self.t.append(f"TEXT {x + self.dx} {y + self.dy} Left {size} "
+                      f"{'!' if directive else ';'}{txt.replace(chr(10), chr(92) + 'n')}")
 
     def shunt_cap(self, x, y, name, value, spiceline=None):
         c = self.part("cap", "A", (x, y), name, value, spiceline=spiceline)
@@ -224,15 +231,15 @@ def analog_rails(s, rail6):
     Y5 = 144
     s.label((3648, Y5), "+5VA")
     s.shunt_cap(3744, Y5, "C14", "10u", "Rser=5m")
-    s.shunt_cap(3872, Y5, "C1", "0.1u", "m=6 Rser=20m")
-    s.shunt_cap(4000, Y5, "C5", "1u", "m=3 Rser=10m")
+    s.shunt_cap(3872, Y5, "C1", "0.1u", "m=7 Rser=20m")
+    s.shunt_cap(4000, Y5, "C5", "1u", "m=4 Rser=10m")
     i = s.part("current", "+", (4128, Y5), "I_AVCC", "{Iavcc}")
     s.gnd(i["-"])
-    i = s.part("current", "+", (4288, Y5), "I_INA", "7.5m")
+    i = s.part("current", "+", (4288, Y5), "I_INA", "10m")
     s.gnd(i["-"])
     s.bus(Y5, rail5 + [3648, 3744, 3872, 4000, 4128, 4288])
-    s.text(3840, 256, "C1 (x6) = C1 C2 C17 C20 C35 C38\nC5 (x3) = C5 C10 C18", 1)
-    s.text(4096, 256, "I_AVCC = AD7606C AVCC (1 MSPS)\nI_INA = 3 x INA241 IQ", 1)
+    s.text(3840, 256, "C1 (x7) = C1 C2 C3 C17 C20 C35 C38\nC5 (x4) = C5 C10 C16 C18", 1)
+    s.text(4096, 256, "I_AVCC = AD7606C AVCC (1 MSPS)\nI_INA = 4 x INA241 IQ\n(3 phases + DC bus)", 1)
     s.text(2080, -240, "+5VA : LTC6655-5 (IC7) reference buffered by LT3045-1 (IC8)", 3)
     # --- +2.5VA : IC3 LTC6655-2.5 -> R11 -> SET of IC9
     YB = 880
@@ -304,7 +311,7 @@ s.bus(0, r6 + [1968, 2096])
 s.label((1968, 0), "+6V")
 s.text(2120, 96, "I_6V = input current of both LT3045-1\nand both LTC6655 (simulation 02)", 1)
 s.text(DX, DY, ".tran 0 6m 0 5n", 2, True)
-s.text(DX, DY + 40, ".param I6=65.3m\n.options plotwinsize=0", 2, True)
+s.text(DX, DY + 40, ".param I6=67.9m\n.options plotwinsize=0", 2, True)
 s.text(DX, DY + 120, ".save V(+3.3V) V(+6V) V(SW) I(L1) I(V1) V(VC)", 2, True)
 s.text(DX, DY + 160, ".meas tran V6_avg AVG V(+6V) FROM 5m TO 6m\n.meas tran V6_pp PP V(+6V) FROM 5m TO 6m\n"
                      ".meas tran I3V3 AVG I(V1) FROM 5m TO 6m\n.meas tran IL_pk MAX I(L1) FROM 5m TO 6m\n"
@@ -346,32 +353,67 @@ def adc_input(s, x, yp, yn, tag, name_p, name_n, rin=("1.2Meg", "1.2Meg")):
     return x - 336, x - 240, x - 144
 
 
-def channels(s, vph, vph_ac, im, im_ac, pwm=False, motor=None, mc=False, lsh=None):
-    """Phase A: shunt R1 + INA241A2 (IC2) -> V6, and divider R27/R28 -> V5 (sheets INA241 and AD7606C).
+# One measurement channel pair = shunt + INA241A2 + filter -> one ADC input, divider + filter -> another one.
+# The battery channel B (DC bus, battery to ESC) has the same parts and values as the phase channels.
+# The four channels are numbered alike: n = 33R, n+1 = 9.1k (current filter), n+2 / n+3 = divider,
+# n+4 = 9.1k (voltage filter), with n = 15 (U), 20 (V), 25 (W), 30 (B), and Re1 ... Re4.
+PHASE_U = {"what": "phase U", "in": "IN-U", "out": "OUT-U", "sng": "SNG-A1N", "tags": ("I", "V"),
+           "rsh": "R1", "lsh": "L_SH", "ic": "IC2", "rs": "R15", "cf": "C25", "rg": "R16", "adc_i": "V8",
+           "rt": "R17", "rb": "R18", "re": "Re1", "cv": "C31", "rgv": "R19", "adc_v": "V7"}
+DC_BUS = {"what": "battery B", "in": "IN-B", "out": "OUT-B", "sng": "SNG-A4N", "tags": ("IB", "VB"),
+          "rsh": "R9", "lsh": "L_SHB", "ic": "IC10", "rs": "R30", "cf": "C42", "rg": "R31", "adc_i": "V2",
+          "rt": "R32", "rb": "R33", "re": "Re4", "cv": "C40", "rgv": "R34", "adc_v": "V1"}
+
+
+def channels(s, vph, vph_ac, im, im_ac, pwm=False, motor=None, mc=False, lsh=None, ch=PHASE_U, bus=None,
+             supplies=True):
+    """One channel pair, by default phase U: shunt R1 + INA241A2 (IC2) -> V8, and divider R17/R18 -> V7
+    (sheets INA241 and AD7606C).
 
     pwm:   the phase source is a behavioural source (PWM expression `vph`).
     motor: {"L", "R", "E"} replaces the ideal current source by a motor phase (L, R, back-EMF source).
     mc:    every value is drawn inside its tolerance (Monte Carlo, see the .param lines of simulation 08).
     lsh:   inductance of the shunt, in series with R1 between the two Kelvin taps.
+    ch:    names of the parts and nets of the channel pair (PHASE_U or DC_BUS).
+    bus:   {"V", "R", "L", "C", "Cline", "I"} draws the DC bus instead of a phase: battery with its
+           resistance and lead inductance before the shunt, ESC input capacitor and ESC current after it.
     """
     def tol(nominal, param):
         return "{%s}" % param if mc else nominal
 
-    # --- phase conductor J1 -> shunt -> J2
-    if pwm:
-        v = s.part("bv", "+", (0, 0), "B_PH", vph,
-                   windows=["WINDOW 0 -112 40 Left 2", "WINDOW 3 -560 88 Left 1"])
+    # --- conductor: source -> shunt -> load (phase: J1 -> J2, DC bus: battery -> ESC)
+    if bus:
+        v = s.part("voltage", "+", (-336, 0), "V_BAT", bus["V"],
+                   windows=["WINDOW 0 -112 40 Left 2", "WINDOW 3 -112 68 Left 2"])
+        s.gnd(v["-"])
+        rb = s.part("res", "A", (-272, 0), "R_BAT", bus["R"], rot="R270")
+        lb = s.part("ind", "A", (-144, 0), "L_BAT", bus["L"], rot="R270", spiceline="Rser=0")
+        s.wire(v["+"], rb["A"])
+        s.wire(rb["B"], lb["A"])
+        s.wire(lb["B"], (0, 0))
+        s.text(-448, 152, "Battery and its leads\n(resistance and inductance: assumed)", 1)
     else:
-        v = s.part("voltage", "+", (0, 0), "V_PH", vph, value2=vph_ac,
-                   windows=["WINDOW 0 -112 40 Left 2", "WINDOW 3 -232 88 Left 1", "WINDOW 123 -232 112 Left 1"])
-    s.gnd(v["-"])
-    s.text(-232, 152, "ESC phase A\n(J1 pin 1)", 1)
-    r1 = s.part("res", "A", (160, 0), "R1", tol("1m", "R1v"), rot="R270")
+        if pwm:
+            v = s.part("bv", "+", (0, 0), "B_PH", vph,
+                       windows=["WINDOW 0 -112 40 Left 2", "WINDOW 3 -560 88 Left 1"])
+        else:
+            v = s.part("voltage", "+", (0, 0), "V_PH", vph, value2=vph_ac,
+                       windows=["WINDOW 0 -112 40 Left 2", "WINDOW 3 -232 88 Left 1", "WINDOW 123 -232 112 Left 1"])
+        s.gnd(v["-"])
+        s.text(-232, 152, "ESC phase U\n(J1 pin 1)", 1)
+    r1 = s.part("res", "A", (160, 0), ch["rsh"], tol("1m", ch["rsh"] + "v"), rot="R270")
     s.bus(0, [0, 96, 160])
-    tap = r1["B"][0]                                   # Kelvin tap of IN+, J2 side of the shunt
+    tap = r1["B"][0]                                   # Kelvin tap of IN+, load side of the shunt
     if lsh:
-        tap = s.part("ind", "A", (tap, 0), "L_SH", lsh, rot="R270", spiceline="Rser=0")["B"][0]
-    if motor:
+        tap = s.part("ind", "A", (tap, 0), ch["lsh"], lsh, rot="R270", spiceline="Rser=0")["B"][0]
+    if bus:
+        s.shunt_cap(864, 0, "C_DC", bus["C"], bus["Cline"])
+        i = s.part("bi", "+", (1056, 0), "B_ESC", bus["I"],
+                   windows=["WINDOW 0 24 16 Left 2", "WINDOW 3 -160 -136 Left 1"])
+        s.gnd(i["-"])
+        s.bus(0, [tap, 720, 864, 1056])
+        s.text(784, -88, "ESC: input capacitor (assumed) and DC side of the three half-bridges", 1)
+    elif motor:
         lm = s.part("ind", "A", (784, 0), "L_M", motor["L"], rot="R270", spiceline="Rser=0")
         rm = s.part("res", "A", (912, 0), "R_M", motor["R"], rot="R270")
         vb = s.part("voltage", "+", (1056, 0), "V_BEMF", motor["E"],
@@ -380,18 +422,18 @@ def channels(s, vph, vph_ac, im, im_ac, pwm=False, motor=None, mc=False, lsh=Non
         s.bus(0, [tap, 720, 784])
         s.wire(lm["B"], rm["A"])
         s.wire(rm["B"], vb["+"])
-        s.text(784, -88, "Motor phase A (J2 pin 3): inductance, resistance, back-EMF around Vbat / 2", 1)
+        s.text(784, -88, "Motor phase U (J2 pin 3): inductance, resistance, back-EMF around Vbat / 2", 1)
     else:
         i = s.part("current", "+", (304, 0), "I_M", im, value2=im_ac,
                    windows=["WINDOW 0 24 16 Left 2", "WINDOW 3 24 44 Left 1", "WINDOW 123 24 68 Left 1"])
         s.gnd(i["-"])
         s.text(336, -88, "I_M = motor phase current (J2 pin 3)", 1)
         s.bus(0, [tap, 304, 720])
-    s.label((96, 0), "IN-A")
-    s.label((720, 0), "OUT-A")
-    s.text(144, -88, "PBV-R001 shunt, L_SH = its inductance (datasheet: < 10 nH)" if lsh else "PBV-R001 shunt", 1)
+    s.label((96, 0), ch["in"])
+    s.label((720, 0), ch["out"])
+    s.text(144, -88, f"PBV-R001 shunt, {ch['lsh']} = its inductance (datasheet: < 10 nH)" if lsh else "PBV-R001 shunt", 1)
     # --- INA241A2, Kelvin connection
-    u = s.part("INA241A2_behav", "IN+", (384, 256), "IC2",
+    u = s.part("INA241A2_behav", "IN+", (384, 256), ch["ic"],
                spiceline="G={mc(20,tolG)} Vos={flat(15u)}" if mc else None)
     s.wire((tap, 0), (tap, 256), u["IN+"])
     s.wire((160, 0), (160, 352), u["IN-"])
@@ -401,38 +443,42 @@ def channels(s, vph, vph_ac, im, im_ac, pwm=False, motor=None, mc=False, lsh=Non
     s.wire(u["REF1"], (448, 464), (576, 464), u["REF2"])
     s.wire((576, 464), (640, 464))
     s.label((640, 464), "+2.5VA")
-    # --- current channel filter: R13 / C25 / R15 -> V6+ / V6-
+    # --- current channel filter (phase U: R15 / C25 / R16 -> V8+ / V8-)
     YP, YN = 304, 432
     s.wire(u["OUT"], (688, YP))
-    s.label((688, YP), "SNG-A1N")
-    r13 = s.part("res", "A", (736, YP), "R13", tol("33", "R13v"), rot="R270")
+    s.label((688, YP), ch["sng"])
+    r13 = s.part("res", "A", (736, YP), ch["rs"], tol("33", ch["rs"] + "v"), rot="R270")
     s.wire((688, YP), r13["A"])
-    c25 = s.part("cap", "A", (912, YP), "C25", "1n")
+    c25 = s.part("cap", "A", (912, YP), ch["cf"], "1n")
     s.wire(c25["B"], (912, YN))
-    r15 = s.part("res", "A", (784, YN), "R15", tol("9.1k", "R15v"))
+    r15 = s.part("res", "A", (784, YN), ch["rg"], tol("9.1k", ch["rg"] + "v"))
     s.gnd(r15["B"])
-    xl, xcn, xcp = adc_input(s, 1392, YP, YN, "I", "V6+", "V6-", (tol("1.2Meg", "RiP"), tol("1.2Meg", "RiN")))
+    xl, xcn, xcp = adc_input(s, 1392, YP, YN, ch["tags"][0], ch["adc_i"] + "+", ch["adc_i"] + "-",
+                             (tol("1.2Meg", "RiP"), tol("1.2Meg", "RiN")))
     s.bus(YP, [r13["B"][0], 912, xl, xcp, 1392])
     s.bus(YN, [784, 912, xl, xcn, 1392])
-    s.text(0, -216, "CURRENT CHANNEL  (phase A : R1, IC2, R13, C25, R15 -> AD7606C V6)", 3)
-    # --- voltage channel: R27 / R28 / Re2 / C31 / R19 -> V5+ / V5-
+    s.text(0, -216, "CURRENT CHANNEL  ({what} : {rsh}, {ic}, {rs}, {cf}, {rg} -> AD7606C {adc_i})".format(**ch), 3)
+    # --- voltage channel (phase U: R17 / R18 / Re1 / C31 / R19 -> V7+ / V7-)
     YP, YN = 800, 928
-    s.label((96, YP), "OUT-A")
-    r27 = s.part("res", "A", (160, YP), "R27", tol("40.2k", "R27v"), rot="R270")
+    s.label((96, YP), ch["out"])
+    r27 = s.part("res", "A", (160, YP), ch["rt"], tol("40.2k", ch["rt"] + "v"), rot="R270")
     s.wire((96, YP), r27["A"])
-    r28 = s.part("res", "A", (336, YP), "R28", tol("10k", "R28v"))
+    r28 = s.part("res", "A", (336, YP), ch["rb"], tol("10k", ch["rb"] + "v"))
     s.gnd(r28["B"])
-    re2 = s.part("res", "A", (432, YP), "Re2", tol("1k", "Re2v"), rot="R270")
+    re2 = s.part("res", "A", (432, YP), ch["re"], tol("1k", ch["re"] + "v"), rot="R270")
     s.bus(YP, [r27["B"][0], 336, 432])
-    c31 = s.part("cap", "A", (912, YP), "C31", "180p")
+    c31 = s.part("cap", "A", (912, YP), ch["cv"], "180p")
     s.wire(c31["B"], (912, YN))
-    r19 = s.part("res", "A", (784, YN), "R19", tol("9.1k", "R19v"))
+    r19 = s.part("res", "A", (784, YN), ch["rgv"], tol("9.1k", ch["rgv"] + "v"))
     s.gnd(r19["B"])
-    xl, xcn, xcp = adc_input(s, 1392, YP, YN, "V", "V5+", "V5-", (tol("1.2Meg", "RvP"), tol("1.2Meg", "RvN")))
+    xl, xcn, xcp = adc_input(s, 1392, YP, YN, ch["tags"][1], ch["adc_v"] + "+", ch["adc_v"] + "-",
+                             (tol("1.2Meg", "RvP"), tol("1.2Meg", "RvN")))
     s.bus(YP, [re2["B"][0], 912, xl, xcp, 1392])
     s.bus(YN, [784, 912, xl, xcn, 1392])
-    s.text(0, 664, "VOLTAGE CHANNEL  (phase A : R27, R28, Re2, C31, R19 -> AD7606C V5)", 3)
+    s.text(0, 664, "VOLTAGE CHANNEL  ({what} : {rt}, {rb}, {re}, {cv}, {rgv} -> AD7606C {adc_v})".format(**ch), 3)
     # --- supplies
+    if not supplies:
+        return
     for x, n, val, lab in ((-320, "V_5VA", "5", "+5VA"), (-176, "V_2V5A", "{V25}" if mc else "2.5", "+2.5VA")):
         v = s.part("voltage", "+", (x, 432), n, val,
                    windows=["WINDOW 0 -40 120 Left 2", "WINDOW 3 -40 148 Left 2"])
@@ -447,10 +493,10 @@ header(s, "OPEN_PHASE - 05 - Measurement channels : frequency response (shunt / 
        "k = 1 : AC on the phase current (current channel, V/A).  k = 0 : AC on the phase voltage (voltage channel, V/V).")
 channels(s, "12", "AC {1-k}", "0", "AC {k}")
 s.text(-400, 1120, ".ac dec 100 10 10Meg\n.step param k list 0 1", 2, True)
-s.text(-400, 1200, ".meas ac G_I FIND mag(V(V6+,V6-)) AT 10\n.meas ac F3dB_I WHEN mag(V(V6+,V6-))=G_I/sqrt(2)\n"
-                   ".meas ac G_I_24k FIND mag(V(V6+,V6-)) AT 24k\n.meas ac G_I_2M FIND mag(V(V6+,V6-)) AT 2Meg", 2, True)
-s.text(640, 1200, ".meas ac G_V FIND mag(V(V5+,V5-)) AT 10\n.meas ac F3dB_V WHEN mag(V(V5+,V5-))=G_V/sqrt(2)\n"
-                  ".meas ac G_V_24k FIND mag(V(V5+,V5-)) AT 24k\n.meas ac G_V_2M FIND mag(V(V5+,V5-)) AT 2Meg", 2, True)
+s.text(-400, 1200, ".meas ac G_I FIND mag(V(V8+,V8-)) AT 10\n.meas ac F3dB_I WHEN mag(V(V8+,V8-))=G_I/sqrt(2)\n"
+                   ".meas ac G_I_24k FIND mag(V(V8+,V8-)) AT 24k\n.meas ac G_I_2M FIND mag(V(V8+,V8-)) AT 2Meg", 2, True)
+s.text(640, 1200, ".meas ac G_V FIND mag(V(V7+,V7-)) AT 10\n.meas ac F3dB_V WHEN mag(V(V7+,V7-))=G_V/sqrt(2)\n"
+                  ".meas ac G_V_24k FIND mag(V(V7+,V7-)) AT 24k\n.meas ac G_V_2M FIND mag(V(V7+,V7-)) AT 2Meg", 2, True)
 s.save("05_Measurement_Channels_AC.asc")
 
 s = Sch(2100, 1500)
@@ -458,21 +504,59 @@ header(s, "OPEN_PHASE - 06 - Measurement channels : DC transfer and step respons
        "Phase voltage steps 0 -> 25.2 V (6S battery) at 100 us, phase current steps 0 -> 35 A (MR60 rating, J1 -> J2) at 300 us.")
 channels(s, "PWL(0 0 100u 0 100.1u 25.2)", None, "PWL(0 0 300u 0 300.1u 35)", None)
 s.text(-400, 1120, ".tran 0 600u 0 20n", 2, True)
-s.text(-400, 1160, ".meas tran VI_zero AVG V(V6+,V6-) FROM 50u TO 90u\n.meas tran VI_35A AVG V(V6+,V6-) FROM 550u TO 600u\n"
-                   ".meas tran V6N_bias AVG V(V6-) FROM 550u TO 600u\n.meas tran T_I_1pct WHEN V(V6+,V6-)=VI_zero+0.99*(VI_35A-VI_zero) FALL=1", 2, True)
-s.text(720, 1160, ".meas tran VV_zero AVG V(V5+,V5-) FROM 50u TO 90u\n.meas tran VV_25V AVG V(V5+,V5-) FROM 250u TO 290u\n"
-                  ".meas tran VOUTA AVG V(OUT-A) FROM 250u TO 290u\n.meas tran T_V_1pct WHEN V(V5+,V5-)=VV_zero+0.99*(VV_25V-VV_zero) RISE=1", 2, True)
+s.text(-400, 1160, ".meas tran VI_zero AVG V(V8+,V8-) FROM 50u TO 90u\n.meas tran VI_35A AVG V(V8+,V8-) FROM 550u TO 600u\n"
+                   ".meas tran V8N_bias AVG V(V8-) FROM 550u TO 600u\n.meas tran T_I_1pct WHEN V(V8+,V8-)=VI_zero+0.99*(VI_35A-VI_zero) FALL=1", 2, True)
+s.text(720, 1160, ".meas tran VV_zero AVG V(V7+,V7-) FROM 50u TO 90u\n.meas tran VV_25V AVG V(V7+,V7-) FROM 250u TO 290u\n"
+                  ".meas tran VOUTU AVG V(OUT-U) FROM 250u TO 290u\n.meas tran T_V_1pct WHEN V(V7+,V7-)=VV_zero+0.99*(VV_25V-VV_zero) RISE=1", 2, True)
 s.save("06_Measurement_Channels_Step.asc")
 
 # ============================================================ 07 / 08 measurement quality
 # 07: what the ADC pins see for a realistic ESC waveform. The phase voltage (PWM) and the motor
 # current (R-L + back-EMF, so it carries the real PWM ripple) are the reference; run_simulations.py
 # compares them with the readings and writes measurement_quality.md.
-s = Sch(2100, 1500)
-header(s, "OPEN_PHASE - 07 - Measurement quality : ESC waveforms through both channels (phase A)",
-       "The PWM phase voltage and the motor current are the reference. run_simulations.py compares them with what the AD7606C pins see.")
+# The battery channel (battery -> R9 -> ESC) is loaded by the three half-bridges together: phases V
+# and W are the same single-phase equivalent as phase U, 120 and 240 degrees later, and B_ESC draws
+# from the bus the power that the three of them deliver.
+def other_phases(s):
+    """Phases V and W, power path only: PWM source, motor phase (with its shunt), back-EMF."""
+    for k, (ph, deg) in enumerate((("V", 120), ("W", 240))):
+        y = 240 * k
+        v = s.part("bv", "+", (0, y), f"B_PH{ph}", "V={Vbat}*limit(0,1,0.5+{kedge}*(V(MOD%s)-V(CAR)))" % ph,
+                   windows=["WINDOW 0 -112 40 Left 2", "WINDOW 3 -560 88 Left 1"])
+        s.gnd(v["-"])
+        lm = s.part("ind", "A", (160, y), f"L_M{ph}", "{Lm+Lsh}", rot="R270", spiceline="Rser=0")
+        rm = s.part("res", "A", (288, y), f"R_M{ph}", "{Rm+1m}", rot="R270")
+        vb = s.part("voltage", "+", (432, y), f"V_BEMF{ph}", "SINE({Vbat/2} {Eb} {fe} 0 0 -%d)" % deg,
+                    windows=["WINDOW 0 24 16 Left 2", "WINDOW 3 24 104 Left 1"])
+        s.gnd(vb["-"])
+        s.bus(y, [0, 96, 160])
+        s.wire(lm["B"], rm["A"])
+        s.wire(rm["B"], vb["+"])
+        s.label((96, y), f"IN-{ph}")
+        m = s.part("voltage", "+", (896, y + 32), f"V_MOD{ph}", "SINE(0.5 {m/2} {fe} 0 0 {phi-%d})" % deg,
+                   windows=["WINDOW 0 24 56 Left 2", "WINDOW 3 24 84 Left 1"])
+        s.wire(m["+"], (896, y))
+        s.label((896, y), f"MOD{ph}")
+        s.gnd(m["-"])
+    s.text(-560, -176, "PHASES V AND W  (power path only, to load the DC bus)", 3)
+    s.text(-560, -112, "Same PWM and same motor phase as U, 120 and 240 degrees later.\n"
+                       "L_MV, L_MW and R_MV, R_MW include the shunts R4 and R7.", 1)
+
+
+s = Sch(4700, 1900)
+header(s, "OPEN_PHASE - 07 - Measurement quality : ESC waveforms through the phase U and battery channels",
+       "The phase voltage, the motor current, the DC bus voltage and the battery current are the reference. "
+       "run_simulations.py compares them with what the AD7606C pins see.")
 channels(s, "V={Vbat}*limit(0,1,0.5+{kedge}*(V(MOD)-V(CAR)))", None, None, None, pwm=True,
          motor={"L": "{Lm}", "R": "{Rm}", "E": "SINE({Vbat/2} {Eb} {fe})"}, lsh="{Lsh}")
+s.at(2800, 0)
+channels(s, None, None, None, None, lsh="{Lsh}", ch=DC_BUS, supplies=False,
+         bus={"V": "{Vbat}", "R": "{Rb}", "L": "{Lb}", "C": "{Cdc}", "Cline": "Rser={Resr} IC={Vbat}",
+              "I": "I=(V(IN-U)*I(L_M)+V(IN-V)*I(L_MV)+V(IN-W)*I(L_MW))/max(V(OUT-B),1)"})
+s.text(784, 120, "B_ESC: the DC bus supplies the power that the three half-bridges deliver to the phases", 1)
+s.at(3100, 1320)
+other_phases(s)
+s.at(0, 0)
 for x, n, val, lab, wy in ((-320, "V_MOD", "SINE(0.5 {m/2} {fe} 0 0 {phi})", "MOD", 148),
                            (-176, "V_CAR", "PULSE(0 1 0 {0.5/fpwm} {0.5/fpwm} 0 {1/fpwm})", "CAR", 176)):
     v = s.part("voltage", "+", (x, 832), n, val,
@@ -482,27 +566,31 @@ for x, n, val, lab, wy in ((-320, "V_MOD", "SINE(0.5 {m/2} {fe} 0 0 {phi})", "MO
     s.gnd(v["-"])
 s.text(-400, 1040, "PWM modulator: sine reference (MOD) against a triangle carrier (CAR)", 1)
 s.text(-400, 1120, ".tran 0 8m 0 50n uic\n.options plotwinsize=0\n.step param Lsh list 1p 5n 10n", 2, True)
-s.text(-400, 1250, ".param Vbat=25.2 fpwm=24k fe=1k m=0.774 phi=22.7 kedge=200\n.param Lm=30u Rm=50m Eb=8", 2, True)
-s.text(-400, 1340, "6S battery, 24 kHz PWM, 1 kHz electrical frequency. Three runs: shunt without inductance, 5 nH, 10 nH.\n"
-                   "20 A peak in phase with the back-EMF: 90 W in the phase, PWM ripple of about 8 A pp.", 2)
-s.text(720, 1120, ".save V(IN-A) V(OUT-A) I(L_M) V(V6+) V(V6-) V(V5+) V(V5-)", 2, True)
+s.text(-400, 1250, ".param Vbat=25.2 fpwm=24k fe=1k m=0.774 phi=22.7 kedge=200\n.param Lm=30u Rm=50m Eb=8\n"
+                   ".param Rb=20m Lb=300n Cdc=470u Resr=30m", 2, True)
+s.text(-400, 1390, "6S battery, 24 kHz PWM, 1 kHz electrical frequency. Three runs: shunts without inductance, 5 nH, 10 nH.\n"
+                   "20 A peak in phase with the back-EMF: 90 W in each phase, PWM ripple of about 8 A pp.\n"
+                   "DC bus: battery and leads 20 mOhm / 300 nH, ESC input capacitor 470 uF / 30 mOhm.\n"
+                   "These four values are assumed (no battery or ESC is specified in the project).", 2)
+s.text(720, 1120, ".save V(IN-U) V(OUT-U) I(L_M) V(V8+) V(V8-) V(V7+) V(V7-)\n"
+                  ".save V(OUT-B) I(L_BAT) V(V2+) V(V2-) V(V1+) V(V1-)", 2, True)
 s.save("07_Measurement_Quality_Waveforms.asc")
 
 # 08: spread of the DC readings when every tolerance is drawn again (before any calibration).
 s = Sch(2100, 1500)
-header(s, "OPEN_PHASE - 08 - Measurement quality : Monte Carlo on the tolerances (phase A, DC readings)",
+header(s, "OPEN_PHASE - 08 - Measurement quality : Monte Carlo on the tolerances (phase U, DC readings)",
        "Each run draws every tolerance again. The readings at 0 / 35 A and 0 / 25.2 V give the spread of offset and gain before calibration.")
 channels(s, "0", None, "0", None, mc=True)
 s.text(-400, 1120, ".dc I_M 0 35 35 V_PH 0 25.2 25.2\n.step param run 1 1000 1", 2, True)
 s.text(-400, 1200, ".param tolSh=0.005 tolR=0.01 tolG=100u tolRin=0.167\n"
-                   ".param R1v={mc(1m,tolSh)} R13v={mc(33,tolR)} R15v={mc(9.1k,tolR)}\n"
-                   ".param R27v={mc(40.2k,tolR)} R28v={mc(10k,tolR)} Re2v={mc(1k,tolR)} R19v={mc(9.1k,tolR)}\n"
+                   ".param R1v={mc(1m,tolSh)} R15v={mc(33,tolR)} R16v={mc(9.1k,tolR)}\n"
+                   ".param R17v={mc(40.2k,tolR)} R18v={mc(10k,tolR)} Re1v={mc(1k,tolR)} R19v={mc(9.1k,tolR)}\n"
                    ".param RiP={mc(1.2Meg,tolRin)} RiN={mc(1.2Meg,tolRin)} RvP={mc(1.2Meg,tolRin)} RvN={mc(1.2Meg,tolRin)}\n"
                    ".param R11v={mc(1k,tolR)} R12v={mc(24.9k,tolR)} Iset={mc(100u,0.02)}\n"
                    ".param V25={(2.5*(1+flat(250u))/R11v+Iset)/(1/R11v+1/R12v)+flat(2m)}", 2, True)
 s.text(-400, 1450, "tolSh: PBV shunt 0.5 %.  tolR: resistors, 1 % assumed.  IC2: gain 20 V/V +/-0.01 %, offset +/-15 uV (INA241A2 datasheet maximum).\n"
                    "RiP, RiN, RvP, RvN: AD7606C input resistances, 1.0 ... 1.4 Meg.  V25: +2.5VA from the LTC6655B (0.025 %), the SET network\n"
                    "(ISET 100 uA +/-2 %, R11, R12) and the LT3045-1 offset (+/-2 mV).", 1)
-s.text(720, 1120, ".save V(IN-A) V(OUT-A) V(V6+) V(V6-) V(V5+) V(V5-) V(+2.5VA)", 2, True)
+s.text(720, 1120, ".save V(IN-U) V(OUT-U) V(V8+) V(V8-) V(V7+) V(V7-) V(+2.5VA)", 2, True)
 s.save("08_Measurement_Quality_Tolerances.asc")
 print("ok")

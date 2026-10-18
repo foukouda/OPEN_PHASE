@@ -1,0 +1,66 @@
+grids: current 442 x 258 x 4 at 0.100 mm (269463 copper cells), heat 326 x 388 x 4 at 0.200 mm; set up in 7 s
+phase pours after meshing (mm2 per layer, polygon area in brackets):
+  IN-U    107.9 ( 107.1)   107.9 ( 107.1)   106.1 ( 105.4)   107.9 ( 107.1)
+  IN-V    123.9 ( 124.6)   123.9 ( 124.6)   122.7 ( 123.2)   123.9 ( 124.6)
+  IN-W    105.4 ( 106.0)   105.4 ( 106.0)   104.0 ( 104.5)   105.4 ( 106.0)
+  OUT-U   106.6 ( 107.1)   106.6 ( 107.1)   105.3 ( 105.7)   108.6 ( 109.0)
+  OUT-V   124.6 ( 124.0)   124.6 ( 124.0)   123.1 ( 122.5)   125.6 ( 124.9)
+  OUT-W   106.0 ( 106.0)   106.0 ( 106.0)   105.2 ( 105.2)   108.3 ( 108.2)
+  513 vias in the phase pours, 0 via ends without copper of their net nearby
+
+Copper and shunts, 35 A rms in each phase: 6 iterations, h = 8.3 W/m2K (top) / 4.2 (bottom) + radiation
+  heat 4.416 W in, 4.416 W out (top 1.754, bottom 1.255, shunt bodies 1.406)
+  phase    R J1-R    R R-J2  P cu in P cu out  P shunt    I shunt    via max
+  U      0.104 mO  0.105 mO  0.128 W  0.129 W  1.225 W   35.000 A   0.00/0.01 A
+        current per layer L1/L2/L3/L6: J1 side 33%/17%/17%/33%, J2 side 33%/17%/17%/33%; max density 59/59/59/59 A/mm2
+  V      0.089 mO  0.089 mO  0.109 W  0.109 W  1.225 W   35.000 A   0.00/0.02 A
+        current per layer L1/L2/L3/L6: J1 side 33%/17%/17%/33%, J2 side 33%/17%/17%/33%; max density 49/49/49/49 A/mm2
+  W      0.109 mO  0.108 mO  0.134 W  0.132 W  1.225 W   35.000 A   0.00/0.02 A
+        current per layer L1/L2/L3/L6: J1 side 33%/17%/17%/33%, J2 side 33%/17%/17%/33%; max density 59/59/59/59 A/mm2
+  layer 0: max 69.6 C at (3.9, -35.7), mean 48.9 C
+  layer 1: max 69.6 C at (3.9, -35.7), mean 48.9 C
+  layer 2: max 69.6 C at (3.9, -35.7), mean 49.0 C
+  layer 3: max 69.6 C at (3.9, -35.7), mean 49.0 C
+  U: PBV body 62.6 C, terminals 61.3 / 61.3 C, J1 pin 59.2 C, J2 pin 59.2 C, IC2 55.1 C
+  V: PBV body 67.6 C, terminals 66.2 / 66.2 C, J1 pin 63.7 C, J2 pin 63.7 C, IC4 62.3 C
+  W: PBV body 70.0 C, terminals 68.8 / 68.8 C, J1 pin 65.7 C, J2 pin 65.8 C, IC6 65.6 C
+  solved in 60 s
+  sweep board   10 A: PBV terminal 29.7 C, J pin 29.4 C, board max 29.7 C
+  sweep board   20 A: PBV terminal 41.2 C, J pin 40.2 C, board max 41.5 C
+  sweep board   30 A: PBV terminal 58.4 C, J pin 56.1 C, board max 59.0 C
+  sweep board   35 A: PBV terminal 68.8 C, J pin 65.8 C, board max 69.6 C
+  sweep board   40 A: PBV terminal 80.4 C, J pin 76.6 C, board max 81.5 C
+  sweep board   50 A: PBV terminal 107.0 C, J pin 101.2 C, board max 108.6 C
+
+Plus MR60PW contacts at 1.0 mOhm, 35 A rms in each phase: 7 iterations, h = 9.4 W/m2K (top) / 4.7 (bottom) + radiation
+  heat 8.161 W in, 8.161 W out (top 3.289, bottom 2.344, shunt bodies 2.528)
+  phase    R J1-R    R R-J2  P cu in P cu out  P shunt    I shunt    via max
+  U      0.113 mO  0.114 mO  0.139 W  0.140 W  1.225 W   35.000 A   0.00/0.01 A
+        current per layer L1/L2/L3/L6: J1 side 33%/17%/17%/33%, J2 side 33%/17%/17%/33%; max density 59/59/59/59 A/mm2
+  V      0.098 mO  0.097 mO  0.120 W  0.119 W  1.225 W   35.000 A   0.00/0.02 A
+        current per layer L1/L2/L3/L6: J1 side 33%/17%/17%/33%, J2 side 33%/17%/17%/33%; max density 49/49/49/49 A/mm2
+  W      0.120 mO  0.119 mO  0.147 W  0.146 W  1.225 W   35.000 A   0.00/0.02 A
+        current per layer L1/L2/L3/L6: J1 side 33%/17%/17%/33%, J2 side 33%/17%/17%/33%; max density 59/59/59/59 A/mm2
+  layer 0: max 98.9 C at (15.9, -32.3), mean 65.1 C
+  layer 1: max 98.9 C at (15.9, -32.9), mean 65.2 C
+  layer 2: max 98.9 C at (15.9, -32.9), mean 65.3 C
+  layer 3: max 98.9 C at (15.9, -32.7), mean 65.3 C
+  U: PBV body 85.1 C, terminals 84.7 / 84.7 C, J1 pin 87.4 C, J2 pin 87.4 C, IC2 74.3 C
+  V: PBV body 94.1 C, terminals 93.7 / 93.6 C, J1 pin 95.3 C, J2 pin 95.3 C, IC4 86.0 C
+  W: PBV body 97.3 C, terminals 97.2 / 97.2 C, J1 pin 98.7 C, J2 pin 98.9 C, IC6 91.2 C
+  solved in 19 s
+  sweep contacts   10 A: PBV terminal 32.9 C, J pin 33.0 C, board max 33.0 C
+  sweep contacts   20 A: PBV terminal 52.2 C, J pin 52.7 C, board max 52.7 C
+  sweep contacts   30 A: PBV terminal 80.3 C, J pin 81.5 C, board max 81.5 C
+  sweep contacts   35 A: PBV terminal 97.2 C, J pin 98.9 C, board max 98.9 C
+  sweep contacts   40 A: PBV terminal 115.8 C, J pin 118.2 C, board max 118.2 C
+  sweep contacts   50 A: PBV terminal 157.4 C, J pin 161.4 C, board max 161.4 C
+without loss from the PBV bodies, board: PBV terminal 88.3 C, board max 89.8 C
+without loss from the PBV bodies, contacts: PBV terminal 128.8 C, board max 129.8 C
+grid 0.05 / 0.2 mm: R J1-R1 0.1037 mO, PBV U terminal 61.24 C, board max 69.57 C (88 s)
+grid 0.1 / 0.4 mm: R J1-R1 0.1049 mO, PBV U terminal 62.83 C, board max 71.34 C (12 s)
+results.json and fields.npz written; report.py makes the figures and results.md
+  figure: Images/Simulation/thermal_current_density.png
+  figure: Images/Simulation/thermal_temperature.png
+  figure: Images/Simulation/thermal_vs_current.png
+  results.md written

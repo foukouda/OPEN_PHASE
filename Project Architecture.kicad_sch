@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "Project Architecture")
-		(date "2026-10-06")
+		(date "2026-10-11")
 		(rev "${REVISION}")
 		(company "${COMPANY}")
 	)
@@ -673,7 +673,7 @@
 		)
 		(uuid "0c96590d-0aae-5727-8f34-93d3c9d5c3a3")
 	)
-	(text "3 x current"
+	(text "4 x current"
 		(exclude_from_sim no)
 		(at 210.185 92.71 0)
 		(effects
@@ -687,7 +687,7 @@
 		)
 		(uuid "104414ab-01b2-53d2-8854-f7704b4fe241")
 	)
-	(text "SNG-V1±, V2±, V3±"
+	(text "SNG-V1± to SNG-V4±"
 		(exclude_from_sim no)
 		(at 210.185 108.58 0)
 		(effects
@@ -727,7 +727,7 @@
 		)
 		(uuid "2361d631-c312-5205-86db-0cbb8194ae23")
 	)
-	(text "SNG-1F/G, 2F/G, 3F/G"
+	(text "SNG-1F/G to SNG-4F/G"
 		(exclude_from_sim no)
 		(at 210.185 95.88 0)
 		(effects
@@ -1023,7 +1023,7 @@
 		)
 		(uuid "6947fea7-47a5-5b59-8129-a68f0c78fa5f")
 	)
-	(text "J1, from the ESC"
+	(text "J1 from the ESC, J3 from the battery"
 		(exclude_from_sim no)
 		(at 109.855 95.88 0)
 		(effects
@@ -1104,7 +1104,7 @@
 		)
 		(uuid "89c2217a-61bd-5f77-b26f-df27dbbb2bf7")
 	)
-	(text "Phase conductor, 35 A"
+	(text "Power conductor: phases 35 A, battery 30 A"
 		(exclude_from_sim no)
 		(at 40.64 211.455 0)
 		(effects
@@ -1162,7 +1162,7 @@
 		)
 		(uuid "a198cfa0-e61b-507d-80c9-14a88cd756a4")
 	)
-	(text "IC1 AD7606C-18  8 ch, 18 bit, 1 MSPS\nSimultaneous sampling, 6 inputs used\nV6 / V4 / V2 = Ia / Ib / Ic\nV5 / V3 / V1 = Va / Vb / Vc\nReference input REFIN/REFOUT = +2.5VA"
+	(text "IC1 AD7606C-18  8 ch, 18 bit, 1 MSPS\nSimultaneous sampling, 8 inputs used\nV8 / V6 / V4 / V2 = Iu / Iv / Iw / Ib\nV7 / V5 / V3 / V1 = Vu / Vv / Vw / Vb\nReference input REFIN/REFOUT = +2.5VA"
 		(exclude_from_sim no)
 		(at 229.87 85.09 0)
 		(effects
@@ -1175,7 +1175,7 @@
 		)
 		(uuid "a39299d8-081e-5120-a7b8-5b84d0aba264")
 	)
-	(text "J2, to the motor"
+	(text "J2 to the motor, J5 to the ESC"
 		(exclude_from_sim no)
 		(at 109.855 108.58 0)
 		(effects
@@ -1188,7 +1188,7 @@
 		)
 		(uuid "b132a179-5bd9-5301-bc50-6ae7d0e71c22")
 	)
-	(text "3 x voltage"
+	(text "4 x voltage"
 		(exclude_from_sim no)
 		(at 210.185 105.41 0)
 		(effects
@@ -1287,7 +1287,7 @@
 		)
 		(uuid "d36aa973-50b6-5203-a0d6-2ffe65254a82")
 	)
-	(text "IN-A / B / C"
+	(text "IN-U / V / W, IN-B"
 		(exclude_from_sim no)
 		(at 109.855 92.71 0)
 		(effects
@@ -1315,7 +1315,7 @@
 		)
 		(uuid "d9f3c7c0-f661-56fe-94ab-ee63c3770926")
 	)
-	(text "PHASE CONNECTORS"
+	(text "POWER CONNECTORS"
 		(exclude_from_sim no)
 		(at 26.67 72.39 0)
 		(effects
@@ -1371,7 +1371,7 @@
 		)
 		(uuid "ec79d342-8485-52b5-b2b8-68bd692e0594")
 	)
-	(text "J1  MR60PW, from the ESC: IN-A / B / C\nJ2  MR60PW, to the motor: OUT-A / B / C\n3 phases, 35 A (connector rating)\nMounting pins 4-5 tied to GND"
+	(text "J1  MR60PW, from the ESC: IN-U / V / W\nJ2  MR60PW, to the motor: OUT-U / V / W\nJ3  XT60PW-F, from the battery: IN-B\nJ5  XT60PW-M, to the ESC: OUT-B\n35 A per phase, 30 A for the battery\nMounting pins tied to GND"
 		(exclude_from_sim no)
 		(at 29.21 85.09 0)
 		(effects
@@ -1411,7 +1411,7 @@
 		)
 		(uuid "f6c5e1a7-d0bc-56da-a40c-a4a5e5f68ca6")
 	)
-	(text "OUT-A / B / C"
+	(text "OUT-U / V / W, OUT-B"
 		(exclude_from_sim no)
 		(at 109.855 105.41 0)
 		(effects
@@ -1440,7 +1440,7 @@
 		)
 		(uuid "f83a04a6-4dbd-54d7-80a8-93b67263dfdb")
 	)
-	(text "3 identical channels, phases A / B / C\nR1 / R4 / R7  PBV-R001 1 mΩ Kelvin shunt\nIC2 / IC4 / IC6  INA241A2, 20 V/V = 20 mV/A\nDividers 40.2 kΩ / 10 kΩ = 0.198 V/V\nRC filters: 17.5 kHz (I), 48.5 kHz (V)"
+	(text "4 identical channels: U / V / W and battery B\nR1 / R4 / R7 / R9  PBV-R001 1 mΩ Kelvin shunt\nIC2 / 4 / 6 / 10  INA241A2, 20 V/V = 20 mV/A\nDividers 40.2 kΩ / 10 kΩ = 0.198 V/V\nRC filters: 17.5 kHz (I), 48.5 kHz (V)"
 		(exclude_from_sim no)
 		(at 129.54 85.09 0)
 		(effects
