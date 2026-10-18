@@ -633,20 +633,6 @@
 		)
 		(uuid "0733990f-1fcc-5243-b4e5-8e6319e94012")
 	)
-	(text "DATA ACQUISITION"
-		(exclude_from_sim no)
-		(at 227.33 72.39 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.4 2.4)
-				(bold yes)
-				(color 111 84 181 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "08e169c9-b492-5fae-9bf2-58e67f218adc")
-	)
 	(text "IC5 LT8362 boost  +3.3V -> +6V, 2 MHz\nIC7 LTC6655-5 + IC8 LT3045-1 -> +5VA\nIC3 LTC6655-2.5 + IC9 LT3045-1 -> +2.5VA\nEach reference drives its LDO SET pin\nL1 2.2 µH, Schottky D2 PMEG2020EH"
 		(exclude_from_sim no)
 		(at 129.54 153.67 0)
@@ -700,20 +686,6 @@
 		)
 		(uuid "2092ef3c-bead-539d-8984-17c0b8ae7562")
 	)
-	(text "POWER SUPPLY"
-		(exclude_from_sim no)
-		(at 127 140.97 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.4 2.4)
-				(bold yes)
-				(color 176 64 102 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "23003ab5-f1e8-5015-8863-ec37efe3bdc9")
-	)
 	(text "AVCC"
 		(exclude_from_sim no)
 		(at 239.09 126.78 0)
@@ -739,20 +711,6 @@
 			(justify top)
 		)
 		(uuid "26f09a56-5a39-5df0-8621-a9ae1903c25a")
-	)
-	(text "MECHANICAL"
-		(exclude_from_sim no)
-		(at 26.67 140.97 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.4 2.4)
-				(bold yes)
-				(color 120 120 120 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "28f3e33e-be05-553c-bfbd-9a6878183fa0")
 	)
 	(text "+5VA"
 		(exclude_from_sim no)
@@ -994,20 +952,6 @@
 		)
 		(uuid "658075a0-1f51-5b3b-9a4a-a5831c3c49a5")
 	)
-	(text "HOST INTERFACE"
-		(exclude_from_sim no)
-		(at 327.66 72.39 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.4 2.4)
-				(bold yes)
-				(color 120 120 120 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "685e7641-a9f0-5d7e-b597-2d8177ef6bd9")
-	)
 	(text "[1]  Title Page"
 		(exclude_from_sim no)
 		(at 127 211.455 0)
@@ -1231,20 +1175,6 @@
 		)
 		(uuid "bc913d1d-e7e5-5105-bfb7-97c6e454819d")
 	)
-	(text "LEGEND"
-		(exclude_from_sim no)
-		(at 26.67 203.2 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.4 2.4)
-				(bold yes)
-				(color 40 40 40 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "bf87135f-9acc-5215-82af-3e95fc7dc518")
-	)
 	(text "+2.5VA"
 		(exclude_from_sim no)
 		(at 215.265 163.83 0)
@@ -1300,48 +1230,6 @@
 			(justify bottom)
 		)
 		(uuid "d9937572-fc02-54c1-9ca1-f8cd077e6f36")
-	)
-	(text "ANALOG FRONT-END"
-		(exclude_from_sim no)
-		(at 127 72.39 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.4 2.4)
-				(bold yes)
-				(color 21 128 61 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "d9f3c7c0-f661-56fe-94ab-ee63c3770926")
-	)
-	(text "POWER CONNECTORS"
-		(exclude_from_sim no)
-		(at 26.67 72.39 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.4 2.4)
-				(bold yes)
-				(color 74 155 203 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "e1d18ce1-f561-525d-a94d-f67205dca60f")
-	)
-	(text "DOCUMENT INDEX"
-		(exclude_from_sim no)
-		(at 127 203.2 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.4 2.4)
-				(bold yes)
-				(color 40 40 40 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "e6704f87-3e6e-520e-9574-c89523b79242")
 	)
 	(text "VDRIVE"
 		(exclude_from_sim no)
@@ -1931,5 +1819,205 @@
 				)
 			)
 		)
+	)
+	(text_box "POWER CONNECTORS"
+		(exclude_from_sim no)
+		(at 26.67 67.79 0)
+		(size 66.04 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 74 155 203 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "708c8b24-4ed9-407e-8e1c-b0503785434d")
+	)
+	(text_box "ANALOG FRONT-END"
+		(exclude_from_sim no)
+		(at 127 67.79 0)
+		(size 66.04 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 21 128 61 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "5af0832d-f40a-4223-b83a-e5b981ab9cf9")
+	)
+	(text_box "DATA ACQUISITION"
+		(exclude_from_sim no)
+		(at 227.33 67.79 0)
+		(size 66.04 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 111 84 181 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "15360e9c-7fd9-48fb-a3f0-5f47b5cc0a7d")
+	)
+	(text_box "HOST INTERFACE"
+		(exclude_from_sim no)
+		(at 327.66 67.79 0)
+		(size 66.04 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 120 120 120 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "c2eeaeb0-8407-428e-9f37-8240ff1fdb9b")
+	)
+	(text_box "MECHANICAL"
+		(exclude_from_sim no)
+		(at 26.67 136.37 0)
+		(size 66.04 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 120 120 120 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "424d60b5-e371-433f-b374-fc88f1fc6312")
+	)
+	(text_box "POWER SUPPLY"
+		(exclude_from_sim no)
+		(at 127 136.37 0)
+		(size 66.04 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 176 64 102 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "5bc37490-a5e7-411a-8b3e-a45104389a2c")
+	)
+	(text_box "LEGEND"
+		(exclude_from_sim no)
+		(at 26.67 198.6 0)
+		(size 85.09 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 70 70 70 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "3832227f-a409-4da5-9e15-8ba6d25fdbf1")
+	)
+	(text_box "DOCUMENT INDEX"
+		(exclude_from_sim no)
+		(at 127 198.6 0)
+		(size 101.6 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 70 70 70 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "80ede1a5-af42-4c09-bce9-8080b2c560aa")
 	)
 )

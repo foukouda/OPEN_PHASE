@@ -1104,99 +1104,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(rectangle
-		(start 139.7 39.37)
-		(end 255.27 240.03)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "56bbc7e8-82ff-4997-8cc3-14dc8588427f")
-	)
-	(rectangle
-		(start 45.72 172.72)
-		(end 134.62 238.76)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "5fef3290-f9ea-4dcf-a597-5a24ef655fb0")
-	)
-	(rectangle
-		(start 45.72 39.37)
-		(end 134.62 90.17)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "717f1726-63f5-4231-bad4-bd4fecc48193")
-	)
-	(rectangle
-		(start 257.81 39.37)
-		(end 313.69 240.03)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "bec0bc30-9903-476b-9358-ac1b90f65bd9")
-	)
-	(rectangle
-		(start 317.5 39.37)
-		(end 373.38 240.03)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "d53fd781-cc31-4f43-bbfc-c2023c2faf29")
-	)
-	(text "Vout≈Vref+(Gain)×(I×Rshunt)"
-		(exclude_from_sim no)
-		(at 48.514 177.546 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.54 2.54)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "046fca06-7be1-4ced-b367-518c7aaabc0c")
-	)
-	(text "Flexible I/O source configuration"
-		(exclude_from_sim no)
-		(at 265.43 256.54 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-			(href "https://jpieper.com/2022/06/28/flexible-i-o-source-configuration/")
-		)
-		(uuid "2b1ac3e3-a5bf-4778-aed2-939a5ca691b3")
-	)
 	(text "References:"
 		(exclude_from_sim no)
 		(at 265.43 250.19 0)
@@ -1211,81 +1118,6 @@
 			(justify left bottom)
 		)
 		(uuid "2cc19dfd-0fbf-485d-87bc-70ce8bcda7da")
-	)
-	(text "MR60PW stat :\n\n- Current: 35 A max (with specified temperature rise < 85°C)\n- Voltage: 600 V DC\n- Insulation resistance: ≥ 2000 MΩ\n- Contact resistance: ≤ 1.0 mΩ\n- Mating cycles (lifetime): 100 cycles\n- Salt spray: 48 h\n- Ingress protection rating: IP40\n- Operating temperature: -20°C to 120°C\n- Flammability rating: UL94 V-0 (0.8 mm wall thickness)\n"
-		(exclude_from_sim no)
-		(at 47.498 60.452 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.032 2.032)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "a9de553b-fed6-40b3-b234-95e073f2d97f")
-	)
-	(text "Flexible I/O worked examples"
-		(exclude_from_sim no)
-		(at 265.43 254 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-			(href "https://jpieper.com/2022/06/30/flexible-i-o-worked-examples/")
-		)
-		(uuid "e41e4842-01c7-40d4-92b4-7a4362c15108")
-	)
-	(text_box "FILTRE"
-		(exclude_from_sim no)
-		(at 259.08 228.6 0)
-		(size 53.34 9.525)
-		(margins 1.9049 1.9049 1.9049 1.9049)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "21eea41f-36d6-4a72-a205-cc9d3c02a258")
-	)
-	(text_box "DESIGN NOTE:\nCapacitor Découplage\n0603\nCeramique X7R\n>16V"
-		(exclude_from_sim no)
-		(at 77.47 143.51 0)
-		(size 21.59 15.24)
-		(margins 1.3525 1.3525 1.3525 1.3525)
-		(stroke
-			(width 0.8)
-			(type solid)
-			(color 255 165 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "777faf22-6f79-495d-8f94-2af176bc47fd")
 	)
 	(text_box "[${#}] ${TITLE}"
 		(exclude_from_sim no)
@@ -1310,195 +1142,51 @@
 		)
 		(uuid "927067aa-9b49-4ea8-aae6-17ea0c3e5189")
 	)
-	(text_box "Test Point"
-		(exclude_from_sim no)
-		(at 318.77 228.6 0)
-		(size 53.34 9.525)
-		(margins 1.9049 1.9049 1.9049 1.9049)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "959dedf1-d454-4e47-bccd-c98c82d9564b")
-	)
-	(text_box "DESIGN NOTE:\nGain A1->A5 (INA241)\nINA241A1 : 10V/V\nINA241A2 : 20V/V (fitted)\nINA241A3 : 50V/V\nINA241A4 : 100V/V\nINA241A5 : 200V/V"
-		(exclude_from_sim no)
-		(at 53.34 143.51 0)
-		(size 21.59 15.24)
-		(margins 1.3525 1.3525 1.3525 1.3525)
-		(stroke
-			(width 0.8)
-			(type solid)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "aa2279af-b349-4d7b-aac2-0eac8c5cddaf")
-	)
-	(text_box "Shouse your INA240A..."
-		(exclude_from_sim no)
-		(at 49.53 226.695 0)
-		(size 86.36 9.525)
-		(margins 1.9049 1.9049 1.9049 1.9049)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "c764bb58-0a57-4093-8abf-ac535447a02b")
-	)
-	(text_box "MR60PW"
-		(exclude_from_sim no)
-		(at 46.99 78.105 0)
-		(size 86.36 9.525)
-		(margins 1.9049 1.9049 1.9049 1.9049)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "ca7364a3-fb33-4443-8f72-223f5e53a1f1")
-	)
-	(text_box "CONNECTEUR"
-		(exclude_from_sim no)
-		(at 142.24 228.6 0)
-		(size 110.49 9.525)
-		(margins 1.9049 1.9049 1.9049 1.9049)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "dc881da1-bee4-425f-af60-e0c5165b42bf")
-	)
-	(text_box "LAYOUT NOTE:\nblabla"
-		(exclude_from_sim no)
-		(at 101.6 143.51 0)
-		(size 26.67 15.24)
-		(margins 1.4525 1.4525 1.4525 1.4525)
-		(stroke
-			(width 1)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 255 1)
-			)
-			(justify left top)
-		)
-		(uuid "f980293f-51a0-4e7f-96e3-4798eedcd13b")
-	)
 	(junction
-		(at 186.69 69.85)
+		(at 140.97 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "09c516dd-f1b7-446e-9eec-40e9541468b1")
 	)
 	(junction
-		(at 186.69 88.9)
+		(at 140.97 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4858b1c5-8c37-4618-84f3-245c677214cf")
 	)
 	(junction
-		(at 186.69 72.39)
+		(at 140.97 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9355d242-5528-429b-b243-aa2ee7c8a481")
 	)
 	(junction
-		(at 186.69 91.44)
+		(at 140.97 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bfeb6231-df9a-4607-ae64-b11d7bc01adb")
 	)
 	(junction
-		(at 186.69 101.6)
+		(at 140.97 157.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cb05b842-cccf-4912-ada4-d72898cc1ced")
 	)
 	(junction
-		(at 186.69 104.14)
+		(at 140.97 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d510cdc9-42f3-4c10-bb17-880416684674")
 	)
 	(junction
-		(at 186.69 52.07)
+		(at 140.97 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ee1714c0-e2bc-4f90-ac66-e651837eb521")
 	)
 	(wire
 		(pts
-			(xy 186.69 88.9) (xy 186.69 91.44)
+			(xy 140.97 144.78) (xy 140.97 147.32)
 		)
 		(stroke
 			(width 0)
@@ -1508,7 +1196,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 101.6) (xy 209.55 101.6)
+			(xy 172.72 157.48) (xy 163.83 157.48)
 		)
 		(stroke
 			(width 0)
@@ -1518,7 +1206,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 52.07) (xy 186.69 69.85)
+			(xy 140.97 107.95) (xy 140.97 125.73)
 		)
 		(stroke
 			(width 0)
@@ -1528,7 +1216,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 72.39) (xy 186.69 88.9)
+			(xy 140.97 128.27) (xy 140.97 144.78)
 		)
 		(stroke
 			(width 0)
@@ -1538,7 +1226,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 88.9) (xy 209.55 88.9)
+			(xy 171.45 144.78) (xy 163.83 144.78)
 		)
 		(stroke
 			(width 0)
@@ -1548,7 +1236,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 49.53) (xy 186.69 52.07)
+			(xy 140.97 105.41) (xy 140.97 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1558,7 +1246,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 101.6) (xy 186.69 104.14)
+			(xy 140.97 157.48) (xy 140.97 160.02)
 		)
 		(stroke
 			(width 0)
@@ -1568,7 +1256,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 69.85) (xy 186.69 72.39)
+			(xy 140.97 125.73) (xy 140.97 128.27)
 		)
 		(stroke
 			(width 0)
@@ -1578,7 +1266,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 104.14) (xy 186.69 113.03)
+			(xy 140.97 160.02) (xy 140.97 168.91)
 		)
 		(stroke
 			(width 0)
@@ -1588,7 +1276,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 91.44) (xy 186.69 101.6)
+			(xy 140.97 147.32) (xy 140.97 157.48)
 		)
 		(stroke
 			(width 0)
@@ -1598,7 +1286,7 @@
 	)
 	(global_label "IN-U"
 		(shape input)
-		(at 209.55 49.53 0)
+		(at 163.83 105.41 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1608,7 +1296,7 @@
 		)
 		(uuid "07e8bdcd-4f10-49a9-b30d-4e5ef3cb0bdd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 217.1315 49.53 0)
+			(at 171.411 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1622,7 +1310,7 @@
 	)
 	(global_label "OUT-W"
 		(shape input)
-		(at 209.55 69.85 0)
+		(at 163.83 125.73 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1632,7 +1320,7 @@
 		)
 		(uuid "12f4c679-ed5a-4844-b1bb-14ad2d210d4c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.0062 69.85 0)
+			(at 173.286 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1646,7 +1334,7 @@
 	)
 	(global_label "IN-V"
 		(shape input)
-		(at 209.55 52.07 0)
+		(at 163.83 107.95 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1656,7 +1344,7 @@
 		)
 		(uuid "1b77ddf4-685e-4ee7-ba52-9bdb3d4f4a75")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 217.3129 52.07 0)
+			(at 171.593 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1670,7 +1358,7 @@
 	)
 	(global_label "OUT-B"
 		(shape input)
-		(at 217.17 88.9 0)
+		(at 171.45 144.78 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1680,7 +1368,7 @@
 		)
 		(uuid "4e1bb336-4687-463a-acb8-d0d003d424be")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 226.6262 88.9 0)
+			(at 180.906 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1694,7 +1382,7 @@
 	)
 	(global_label "IN-B"
 		(shape input)
-		(at 218.44 101.6 0)
+		(at 172.72 157.48 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1704,7 +1392,7 @@
 		)
 		(uuid "9fa6ffb1-681c-4f5d-a587-8f69f5559869")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 226.2029 101.6 0)
+			(at 180.483 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1718,7 +1406,7 @@
 	)
 	(global_label "OUT-U"
 		(shape input)
-		(at 209.55 74.93 0)
+		(at 163.83 130.81 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1728,7 +1416,7 @@
 		)
 		(uuid "d31554bf-9d1e-4ea0-af83-c8293c2baf48")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 218.8248 74.93 0)
+			(at 173.105 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1742,7 +1430,7 @@
 	)
 	(global_label "OUT-V"
 		(shape input)
-		(at 209.55 72.39 0)
+		(at 163.83 128.27 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1752,7 +1440,7 @@
 		)
 		(uuid "ef609bc4-d307-4a50-abbc-e3b297b7c8ef")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.0062 72.39 0)
+			(at 173.286 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1766,7 +1454,7 @@
 	)
 	(global_label "IN-W"
 		(shape input)
-		(at 209.55 54.61 0)
+		(at 163.83 110.49 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1776,7 +1464,7 @@
 		)
 		(uuid "f01acfb4-294b-44e2-abd8-eb59262b8f8e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 217.3129 54.61 0)
+			(at 171.593 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1790,7 +1478,7 @@
 	)
 	(symbol
 		(lib_id "Device:NetTie_2")
-		(at 201.93 124.46 0)
+		(at 156.21 180.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1801,7 +1489,7 @@
 		(fields_autoplaced yes)
 		(uuid "130990ae-ec2c-428f-aea2-f0bf86fcf6d8")
 		(property "Reference" "NT1"
-			(at 201.93 119.38 0)
+			(at 156.21 175.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1811,7 +1499,7 @@
 			)
 		)
 		(property "Value" "NetTie_2"
-			(at 201.93 121.92 0)
+			(at 156.21 177.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1821,7 +1509,7 @@
 			)
 		)
 		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
-			(at 201.93 124.46 0)
+			(at 156.21 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1832,7 +1520,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 201.93 124.46 0)
+			(at 156.21 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1843,7 +1531,7 @@
 			)
 		)
 		(property "Description" "Net tie, 2 pins"
-			(at 201.93 124.46 0)
+			(at 156.21 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1870,7 +1558,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 199.39 124.46 0)
+		(at 153.67 180.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1881,7 +1569,7 @@
 		(fields_autoplaced yes)
 		(uuid "1e980e15-3852-4f75-a620-3908eeb486cc")
 		(property "Reference" "#PWR08"
-			(at 199.39 130.81 0)
+			(at 153.67 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1892,7 +1580,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 199.39 129.54 0)
+			(at 153.67 185.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1902,7 +1590,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 199.39 124.46 0)
+			(at 153.67 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1913,7 +1601,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 199.39 124.46 0)
+			(at 153.67 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1924,7 +1612,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 199.39 124.46 0)
+			(at 153.67 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1948,7 +1636,7 @@
 	)
 	(symbol
 		(lib_id "OPEN_PHASE:MR60PW")
-		(at 186.69 49.53 0)
+		(at 140.97 105.41 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1959,7 +1647,7 @@
 		(fields_autoplaced yes)
 		(uuid "3a45c7f9-bb39-40c0-80b6-48f687d2ab0e")
 		(property "Reference" "J1"
-			(at 198.12 41.91 0)
+			(at 152.4 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1969,7 +1657,7 @@
 			)
 		)
 		(property "Value" "MR60PW"
-			(at 198.12 44.45 0)
+			(at 152.4 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1979,7 +1667,7 @@
 			)
 		)
 		(property "Footprint" "OPEN_PHASE:MR60PW"
-			(at 205.74 144.45 0)
+			(at 160.02 200.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1991,7 +1679,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tme.eu/Document/fd4b3517709a946d7b01cf4810656931/MR60PW-M.pdf"
-			(at 205.74 244.45 0)
+			(at 160.02 300.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2003,7 +1691,7 @@
 			)
 		)
 		(property "Description" "Connector: DC supply; socket; MR60; male; PIN: 3; on PCBs; THT; black"
-			(at 186.69 49.53 0)
+			(at 140.97 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2014,7 +1702,7 @@
 			)
 		)
 		(property "Height" "8.2"
-			(at 205.74 444.45 0)
+			(at 160.02 500.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2026,7 +1714,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Amass"
-			(at 205.74 544.45 0)
+			(at 160.02 600.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2038,7 +1726,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "MR60PW"
-			(at 205.74 644.45 0)
+			(at 160.02 700.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2050,7 +1738,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 205.74 744.45 0)
+			(at 160.02 800.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2062,7 +1750,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 205.74 844.45 0)
+			(at 160.02 900.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2074,7 +1762,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 205.74 944.45 0)
+			(at 160.02 1000.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2086,7 +1774,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 205.74 1044.45 0)
+			(at 160.02 1100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2123,7 +1811,7 @@
 	)
 	(symbol
 		(lib_id "power:GND1")
-		(at 204.47 124.46 0)
+		(at 158.75 180.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2134,7 +1822,7 @@
 		(fields_autoplaced yes)
 		(uuid "621ca436-4041-43d8-8eae-4b04053ce253")
 		(property "Reference" "#PWR012"
-			(at 204.47 130.81 0)
+			(at 158.75 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2145,7 +1833,7 @@
 			)
 		)
 		(property "Value" "GND1"
-			(at 204.47 129.54 0)
+			(at 158.75 185.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2155,7 +1843,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 204.47 124.46 0)
+			(at 158.75 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2166,7 +1854,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 204.47 124.46 0)
+			(at 158.75 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2177,7 +1865,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
-			(at 204.47 124.46 0)
+			(at 158.75 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2201,7 +1889,7 @@
 	)
 	(symbol
 		(lib_id "OPEN_PHASE:XT60PW-F")
-		(at 209.55 104.14 180)
+		(at 163.83 160.02 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2212,7 +1900,7 @@
 		(fields_autoplaced yes)
 		(uuid "66d6115f-4351-47dc-8ef4-69a91e9c32bc")
 		(property "Reference" "J3"
-			(at 198.12 93.98 0)
+			(at 152.4 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2222,7 +1910,7 @@
 			)
 		)
 		(property "Value" "XT60PW-F"
-			(at 198.12 96.52 0)
+			(at 152.4 152.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2232,7 +1920,7 @@
 			)
 		)
 		(property "Footprint" "OPEN_PHASE:AMASS_XT60PW-F_1x02_P7.20mm_Horizontal"
-			(at 190.5 9.22 0)
+			(at 144.78 65.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2244,7 +1932,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tme.eu/Document/1191bc2fa3aee3c446e5a895fd8f7983/XT60PW-F.pdf"
-			(at 190.5 -90.78 0)
+			(at 144.78 -34.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2256,7 +1944,7 @@
 			)
 		)
 		(property "Description" "Connector: DC supply; socket; XT60; female; PIN: 2; on PCBs; THT; 30A"
-			(at 209.55 104.14 0)
+			(at 163.83 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2267,7 +1955,7 @@
 			)
 		)
 		(property "Height" "8.4"
-			(at 190.5 -290.78 0)
+			(at 144.78 -234.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2279,7 +1967,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Amass"
-			(at 190.5 -390.78 0)
+			(at 144.78 -334.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2291,7 +1979,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "XT60PW-F"
-			(at 190.5 -490.78 0)
+			(at 144.78 -434.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2303,7 +1991,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 190.5 -590.78 0)
+			(at 144.78 -534.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2315,7 +2003,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 190.5 -690.78 0)
+			(at 144.78 -634.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2327,7 +2015,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 190.5 -790.78 0)
+			(at 144.78 -734.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2339,7 +2027,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 190.5 -890.78 0)
+			(at 144.78 -834.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2373,7 +2061,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 186.69 113.03 0)
+		(at 140.97 168.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2384,7 +2072,7 @@
 		(fields_autoplaced yes)
 		(uuid "70125abc-6dff-457b-889d-4d098656cfbd")
 		(property "Reference" "#PWR03"
-			(at 186.69 119.38 0)
+			(at 140.97 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2395,7 +2083,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 186.69 118.11 0)
+			(at 140.97 173.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2405,7 +2093,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 113.03 0)
+			(at 140.97 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2416,7 +2104,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 113.03 0)
+			(at 140.97 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2427,7 +2115,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 186.69 113.03 0)
+			(at 140.97 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2451,7 +2139,7 @@
 	)
 	(symbol
 		(lib_id "OPEN_PHASE:XT60PW-M")
-		(at 209.55 91.44 180)
+		(at 163.83 147.32 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2462,7 +2150,7 @@
 		(fields_autoplaced yes)
 		(uuid "94790a6d-4c6e-4f1b-8601-dbd0f1a9b6a0")
 		(property "Reference" "J5"
-			(at 198.12 81.28 0)
+			(at 152.4 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2472,7 +2160,7 @@
 			)
 		)
 		(property "Value" "XT60PW-M"
-			(at 198.12 83.82 0)
+			(at 152.4 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2482,7 +2170,7 @@
 			)
 		)
 		(property "Footprint" "OPEN_PHASE:XT60PWM"
-			(at 190.5 -3.48 0)
+			(at 144.78 52.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2494,7 +2182,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tme.eu/Document/b13629717d44ae038681dba08d18c0b6/XT60PW-M.pdf"
-			(at 190.5 -103.48 0)
+			(at 144.78 -47.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2506,7 +2194,7 @@
 			)
 		)
 		(property "Description" "Connector: DC supply; socket; XT60; male; PIN: 2; on PCBs; THT; 30A"
-			(at 209.55 91.44 0)
+			(at 163.83 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2517,7 +2205,7 @@
 			)
 		)
 		(property "Height" "8.4"
-			(at 190.5 -303.48 0)
+			(at 144.78 -247.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2529,7 +2217,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Amass"
-			(at 190.5 -403.48 0)
+			(at 144.78 -347.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2541,7 +2229,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "XT60PW-M"
-			(at 190.5 -503.48 0)
+			(at 144.78 -447.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2553,7 +2241,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 190.5 -603.48 0)
+			(at 144.78 -547.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2565,7 +2253,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 190.5 -703.48 0)
+			(at 144.78 -647.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2577,7 +2265,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 190.5 -803.48 0)
+			(at 144.78 -747.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2589,7 +2277,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 190.5 -903.48 0)
+			(at 144.78 -847.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2623,7 +2311,7 @@
 	)
 	(symbol
 		(lib_id "power:GND1")
-		(at 209.55 104.14 0)
+		(at 163.83 160.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2634,7 +2322,7 @@
 		(fields_autoplaced yes)
 		(uuid "a51b20a8-e66f-4455-ac03-b28c641281b5")
 		(property "Reference" "#PWR07"
-			(at 209.55 110.49 0)
+			(at 163.83 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2645,7 +2333,7 @@
 			)
 		)
 		(property "Value" "GND1"
-			(at 209.55 109.22 0)
+			(at 163.83 165.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2655,7 +2343,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 209.55 104.14 0)
+			(at 163.83 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2666,7 +2354,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 209.55 104.14 0)
+			(at 163.83 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2677,7 +2365,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
-			(at 209.55 104.14 0)
+			(at 163.83 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2701,7 +2389,7 @@
 	)
 	(symbol
 		(lib_id "power:GND1")
-		(at 209.55 91.44 0)
+		(at 163.83 147.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2712,7 +2400,7 @@
 		(fields_autoplaced yes)
 		(uuid "aa34a51d-9457-4fe1-a2fb-2f3de02b9b88")
 		(property "Reference" "#PWR06"
-			(at 209.55 97.79 0)
+			(at 163.83 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2723,7 +2411,7 @@
 			)
 		)
 		(property "Value" "GND1"
-			(at 209.55 96.52 0)
+			(at 163.83 152.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2733,7 +2421,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 209.55 91.44 0)
+			(at 163.83 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2744,7 +2432,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 209.55 91.44 0)
+			(at 163.83 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2755,7 +2443,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
-			(at 209.55 91.44 0)
+			(at 163.83 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2779,7 +2467,7 @@
 	)
 	(symbol
 		(lib_id "OPEN_PHASE:MR60PW")
-		(at 186.69 69.85 0)
+		(at 140.97 125.73 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2789,7 +2477,7 @@
 		(dnp no)
 		(uuid "e82cd9ed-973c-441b-b6ab-7d8935584394")
 		(property "Reference" "J2"
-			(at 198.12 62.23 0)
+			(at 152.4 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2799,7 +2487,7 @@
 			)
 		)
 		(property "Value" "MR60PW"
-			(at 198.12 64.77 0)
+			(at 152.4 120.65 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2809,7 +2497,7 @@
 			)
 		)
 		(property "Footprint" "OPEN_PHASE:MR60PW"
-			(at 205.74 164.77 0)
+			(at 160.02 220.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2821,7 +2509,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tme.eu/Document/fd4b3517709a946d7b01cf4810656931/MR60PW-M.pdf"
-			(at 205.74 264.77 0)
+			(at 160.02 320.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2833,7 +2521,7 @@
 			)
 		)
 		(property "Description" "Connector: DC supply; socket; MR60; male; PIN: 3; on PCBs; THT; black"
-			(at 186.69 69.85 0)
+			(at 140.97 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2844,7 +2532,7 @@
 			)
 		)
 		(property "Height" "8.2"
-			(at 205.74 464.77 0)
+			(at 160.02 520.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2856,7 +2544,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Amass"
-			(at 205.74 564.77 0)
+			(at 160.02 620.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2868,7 +2556,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "MR60PW"
-			(at 205.74 664.77 0)
+			(at 160.02 720.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2880,7 +2568,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 205.74 764.77 0)
+			(at 160.02 820.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2892,7 +2580,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 205.74 864.77 0)
+			(at 160.02 920.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2904,7 +2592,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 205.74 964.77 0)
+			(at 160.02 1020.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2916,7 +2604,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 205.74 1064.77 0)
+			(at 160.02 1120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2950,5 +2638,324 @@
 				)
 			)
 		)
+	)
+	(rectangle
+		(start 45.72 39.37)
+		(end 266.7 240.03)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "8785a9ea-a659-453a-9e33-628104e4a82b")
+	)
+	(text_box "CONNECTEURS DE PUISSANCE   ·   J1 / J2 MR60PW (PHASES)   ·   J3 / J5 XT60PW (BATTERIE)"
+		(exclude_from_sim no)
+		(at 45.72 39.37 0)
+		(size 220.98 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 162 22 34 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "e67e4cee-4ca8-4d34-ad6c-f887ee8d1714")
+	)
+	(text_box "DESCRIPTION"
+		(exclude_from_sim no)
+		(at 270.51 39.37 0)
+		(size 102.87 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 0 105 120 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "6fa71311-6c41-44fc-8f3d-f6ccaa8ba161")
+	)
+	(text_box "La carte s'insère entre l'ESC et le moteur (phases U, V, W) et entre la batterie et l'ESC (ligne B).\n• J1 MR60PW : arrivée des trois phases depuis l'ESC (IN-U / IN-V / IN-W, broches 1 à 3).\n• J2 MR60PW : sortie vers le moteur. Broche 1 = OUT-W, broche 3 = OUT-U : ordre inverse de J1.\n• J3 XT60PW-F (depuis la batterie) et J5 XT60PW-M (vers l'ESC) : la ligne B (broche 2) traverse le shunt R9 ; la broche 1 (GND1) va directement de J3 à J5.\n• Entre l'entrée et la sortie de chaque ligne, le courant passe par un shunt de la page 5 (R1 / R4 / R7 / R9).\n• Broches de fixation (MH) des quatre connecteurs au GND."
+		(exclude_from_sim no)
+		(at 270.51 45.72 0)
+		(size 102.87 20.0)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 230 243 245 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "c4557a01-2714-43da-b625-642e01393dfc")
+	)
+	(text_box "DESIGN NOTE · CONNECTEURS"
+		(exclude_from_sim no)
+		(at 270.51 66.99 0)
+		(size 102.87 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 205 100 0 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "c81d8e14-967b-4954-b209-8d150d7d723f")
+	)
+	(text_box "• MR60PW : 35 A max (échauffement < 85 °C), 60 A crête, 600 V DC, contact ≤ 1.0 mΩ, −20 à 120 °C, UL94 V-0, IP40, 100 cycles de connexion.\n• XT60PW : 30 A en continu, 2 broches + 2 broches de fixation.\n• NT1 (net tie) relie GND1 (broche 1, de J3 à J5) au GND de la carte en un seul point : le retour batterie reste sur son cuivre et ne traverse pas le plan de masse analogique.\n• La tension de chaque ligne est mesurée côté sortie (J2 / J5), après le shunt.\n• Le README dit encore « broche 1 non connectée » pour J3 / J5 : le schéma la relie à GND1."
+		(exclude_from_sim no)
+		(at 270.51 73.34 0)
+		(size 102.87 22.0)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 253 241 226 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "fc08b174-7ac7-4c37-a88a-58bbc1d5bf5a")
+	)
+	(text_box "LAYOUT NOTE"
+		(exclude_from_sim no)
+		(at 270.51 96.61 0)
+		(size 102.87 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 0 82 165 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "48c7a983-c6f5-4149-b434-c044fa2d2591")
+	)
+	(text_box "• Cuivre des phases sur les 4 couches ; le courant se partage selon l'épaisseur : L1 33 %, L2 17 %, L3 17 %, L6 33 % (simulation thermique).\n• Broches de fixation des MR60PW / XT60PW au plan GND : tenue mécanique et retour de masse.\n• NT1 près des connecteurs batterie ; GND1 en cuivre large de J3 à J5.\n• Pistes de mesure Kelvin (page 5) à l'écart des broches de puissance."
+		(exclude_from_sim no)
+		(at 270.51 102.96 0)
+		(size 102.87 15.0)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 228 238 250 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "a9d1d04a-90a6-4e6f-957f-788d87347285")
+	)
+	(text_box "CALCULS & BUDGET"
+		(exclude_from_sim no)
+		(at 270.51 119.23 0)
+		(size 102.87 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 46 125 50 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "4230da6a-a1fb-461f-8af3-767b575e4708")
+	)
+	(text_box "Pertes à 35 A rms par phase (simulation thermique, Simulation/Thermal)\n   Cuivre J1 → shunt → J2 : 0.18 à 0.22 mΩ → 0.22 à 0.27 W par phase\n   Contact MR60PW : P = I² × R = 35² × 1.0 mΩ = 1.23 W (valeur max)\n   Chaleur dans la carte : 4.42 W (cuivre + shunts), 8.16 W avec les contacts\n   Broche J1 / J2 la plus chaude (phase W) : 66 °C, 99 °C avec les contacts\n   Limite MR60PW : 120 °C\n\nBatterie\n   30 A dans R9 : P = 30² × 1 mΩ = 0.9 W"
+		(exclude_from_sim no)
+		(at 270.51 125.58 0)
+		(size 102.87 22.0)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 232 245 233 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "ae40d5a2-d213-4bc4-9c30-21bb0a6eca56")
+	)
+	(text_box "TEST POINTS"
+		(exclude_from_sim no)
+		(at 45.72 243 0)
+		(size 172.72 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 106 27 154 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "86d0d00b-1c66-4bdd-96ba-bec60ed363a7")
+	)
+	(text_box "Zone réservée aux test points (symbole TestPoint + label du net). Suggestion : un point GND près des connecteurs pour la masse de la sonde ; les tensions de phase se mesurent après pont (SNG-Vn±, page 5)."
+		(exclude_from_sim no)
+		(at 45.72 249.35 0)
+		(size 172.72 35.65)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 243 232 246 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 110 90 120 1)
+			)
+			(justify left top)
+		)
+		(uuid "06bb61bc-92d8-4dd1-bb19-7a5765a473ad")
+	)
+	(text "Amass MR60PW / XT60PW datasheets"
+		(exclude_from_sim no)
+		(at 265.43 254 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "276459f7-04d7-4876-a1dc-af5bc4047fb7")
+	)
+	(text "README : Schematic architecture"
+		(exclude_from_sim no)
+		(at 265.43 256.54 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+			(href "https://github.com/foukouda/OPEN_PHASE#schematic-architecture")
+		)
+		(uuid "c590ca3a-d577-4789-9a09-7f47af312fb0")
+	)
+	(text "Simulation thermique"
+		(exclude_from_sim no)
+		(at 265.43 259.08 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+			(href "https://github.com/foukouda/OPEN_PHASE/tree/dev/Simulation/Thermal")
+		)
+		(uuid "db60c827-22fe-41ea-a3a3-bbf62ae39926")
 	)
 )

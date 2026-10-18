@@ -675,20 +675,6 @@
 		)
 		(uuid "701d40a5-7fcc-4d35-a582-e3de3695524c")
 	)
-	(text "BOTTOM VIEW"
-		(exclude_from_sim no)
-		(at 128.27 166.37 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 5 5)
-				(bold yes)
-				(color 53 60 207 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "703db123-558f-4f87-9ff5-c08a220fcdc6")
-	)
 	(text "${SHEET_NAME_14}"
 		(exclude_from_sim no)
 		(at 144.78 106.68 0)
@@ -914,20 +900,6 @@
 			(justify left bottom)
 		)
 		(uuid "8cf431a6-8908-4048-b4aa-271da433a961")
-	)
-	(text "NOTES"
-		(exclude_from_sim no)
-		(at 220.98 167.005 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 5 5)
-				(bold yes)
-				(color 53 60 207 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "8e0f503c-d18d-404c-84d2-434629c63a09")
 	)
 	(text "${SHEET_NAME_40}"
 		(exclude_from_sim no)
@@ -1194,20 +1166,6 @@
 		)
 		(uuid "cd70c2d3-2fc1-43f3-bef3-88f512b1207b")
 	)
-	(text "TOP VIEW"
-		(exclude_from_sim no)
-		(at 26.67 166.37 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 5 5)
-				(bold yes)
-				(color 53 60 207 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "ce023428-5906-4952-b62a-b62507403698")
-	)
 	(text "34"
 		(exclude_from_sim no)
 		(at 332.74 106.68 0)
@@ -1446,32 +1404,18 @@
 		)
 		(uuid "fa27d78d-b2a9-4762-a3f3-e3c37db14fec")
 	)
-	(text "DESIGN CONSIDERATIONS"
-		(exclude_from_sim no)
-		(at 26.67 255.27 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 5 5)
-				(bold yes)
-				(color 53 60 207 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "faea8a5f-3a8f-49cb-9832-569be941b06b")
-	)
 	(text_box "DESIGN NOTE:\nAD7606C digital pins and +3.3V input not wired yet."
 		(exclude_from_sim no)
 		(at 96.52 258.445 0)
 		(size 30.48 20.32)
 		(margins 2 2 2 2)
 		(stroke
-			(width 1)
+			(width -0.0001)
 			(type solid)
-			(color 250 236 0 1)
 		)
 		(fill
-			(type none)
+			(type color)
+			(color 253 241 226 1)
 		)
 		(effects
 			(font
@@ -1489,12 +1433,12 @@
 		(size 30.48 20.32)
 		(margins 2 2 2 2)
 		(stroke
-			(width 1)
+			(width -0.0001)
 			(type solid)
-			(color 255 165 0 1)
 		)
 		(fill
-			(type none)
+			(type color)
+			(color 253 241 226 1)
 		)
 		(effects
 			(font
@@ -1512,12 +1456,12 @@
 		(size 30.48 20.32)
 		(margins 2.25 2.25 2.25 2.25)
 		(stroke
-			(width 1.5)
+			(width -0.0001)
 			(type solid)
-			(color 255 0 0 1)
 		)
 		(fill
-			(type none)
+			(type color)
+			(color 250 232 232 1)
 		)
 		(effects
 			(font
@@ -1537,12 +1481,12 @@
 		(size 30.48 20.32)
 		(margins 2.25 2.25 2.25 2.25)
 		(stroke
-			(width 1.5)
+			(width -0.0001)
 			(type solid)
-			(color 0 0 255 1)
 		)
 		(fill
-			(type none)
+			(type color)
+			(color 228 238 250 1)
 		)
 		(effects
 			(font
@@ -1582,12 +1526,12 @@
 		(size 30.48 20.32)
 		(margins 2 2 2 2)
 		(stroke
-			(width 1)
+			(width -0.0001)
 			(type solid)
-			(color 200 200 200 1)
 		)
 		(fill
-			(type none)
+			(type color)
+			(color 253 241 226 1)
 		)
 		(effects
 			(font
@@ -1924,6 +1868,106 @@
 				)
 			)
 		)
+	)
+	(text_box "TOP VIEW"
+		(exclude_from_sim no)
+		(at 22.86 159.39 0)
+		(size 69.85 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 162 22 34 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "006d226d-cc4a-45f6-a34f-6f83f14efa3d")
+	)
+	(text_box "BOTTOM VIEW"
+		(exclude_from_sim no)
+		(at 123.19 159.39 0)
+		(size 69.85 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 162 22 34 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "0dddcf43-f087-4097-b3d4-1fd742318c1a")
+	)
+	(text_box "NOTES"
+		(exclude_from_sim no)
+		(at 220.98 160.02 0)
+		(size 180.34 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 0 105 120 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "4fda5cf3-342b-4295-956a-65dd47f01ae9")
+	)
+	(text_box "DESIGN CONSIDERATIONS"
+		(exclude_from_sim no)
+		(at 26.67 250.19 0)
+		(size 170.18 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 205 100 0 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "df2aa0ac-1684-4f07-8b55-73b1a0812047")
 	)
 	(sheet_instances
 		(path "/"

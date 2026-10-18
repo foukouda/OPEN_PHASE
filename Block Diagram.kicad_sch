@@ -873,20 +873,6 @@
 		)
 		(uuid "ee9c9577-69c1-4ee8-9609-15bb32da52c0")
 	)
-	(text "Target specifications:"
-		(exclude_from_sim no)
-		(at 318 181 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.6 2.6)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "ef789378-0578-4134-b0e9-96f3b707b36d")
-	)
 	(text "60 A peak (MR60PW)"
 		(exclude_from_sim no)
 		(at 352 202 0)
@@ -1421,17 +1407,6 @@
 	)
 	(polyline
 		(pts
-			(xy 318 183) (xy 400 183)
-		)
-		(stroke
-			(width 0.8)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "d2779b7a-14eb-4299-ac87-009af44ae0fd")
-	)
-	(polyline
-		(pts
 			(xy 110 207) (xy 128 207)
 		)
 		(stroke
@@ -1440,5 +1415,55 @@
 			(color 235 104 52 1)
 		)
 		(uuid "f2964abc-0304-43fc-a2de-64f87c19bdce")
+	)
+	(text_box "SCHÉMA BLOC   ·   CHAÎNE DE MESURE (BATTERIE, PHASES) ET ALIMENTATION"
+		(exclude_from_sim no)
+		(at 27.94 39.37 0)
+		(size 373.38 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 162 22 34 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "aeb87929-dac2-4df2-95ca-cb3561b30d7b")
+	)
+	(text_box "SPÉCIFICATIONS CIBLES"
+		(exclude_from_sim no)
+		(at 318 176.53 0)
+		(size 82 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 0 105 120 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "e2377938-472f-4bca-8716-a8c1cc2ad233")
 	)
 )

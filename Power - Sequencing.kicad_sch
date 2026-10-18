@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "26e99a33-043b-499d-a26e-816ff79b487a")
-	(paper "A4")
+	(paper "A3")
 	(title_block
 		(title "Power - Sequencing")
 		(date "2026-10-06")
@@ -11,294 +11,9 @@
 		(company "${COMPANY}")
 	)
 	(lib_symbols)
-	(polyline
-		(pts
-			(xy 160 100) (xy 160.629 92.653) (xy 161.258 92.693) (xy 161.887 92.734) (xy 162.516 92.775) (xy 163.145 92.816)
-			(xy 163.774 92.857) (xy 164.403 92.897) (xy 165.031 92.938) (xy 165.66 92.979) (xy 166.289 93.02)
-			(xy 166.918 92.509) (xy 167.547 91.95) (xy 168.176 91.426) (xy 168.805 90.934) (xy 169.434 90.474)
-			(xy 170.063 90.042) (xy 170.692 89.638) (xy 171.321 89.259) (xy 171.95 88.903) (xy 172.579 88.57)
-			(xy 173.208 88.258) (xy 173.836 87.966) (xy 174.465 87.691) (xy 175.094 87.434) (xy 175.723 87.194)
-			(xy 176.352 86.968) (xy 176.981 86.756) (xy 177.61 86.558) (xy 178.239 86.372) (xy 178.868 86.198)
-			(xy 179.497 86.034) (xy 180.126 85.881) (xy 180.755 85.738) (xy 181.384 85.603) (xy 182.013 85.477)
-			(xy 182.642 85.359) (xy 183.27 85.248) (xy 183.899 85.144) (xy 184.528 85.047) (xy 185.157 84.955)
-			(xy 185.786 84.87) (xy 186.415 84.789) (xy 187.044 84.714) (xy 187.673 84.644) (xy 188.302 84.577)
-			(xy 188.931 84.515) (xy 189.56 84.457) (xy 190.189 84.403) (xy 190.818 84.352) (xy 191.447 84.304)
-			(xy 192.075 84.259) (xy 192.704 84.217) (xy 193.333 84.177) (xy 193.962 84.14) (xy 194.591 84.105)
-			(xy 195.22 84.073) (xy 195.849 84.042) (xy 196.478 84.014) (xy 197.107 83.987) (xy 197.736 83.961)
-			(xy 198.365 83.938) (xy 198.994 83.916) (xy 199.623 83.895) (xy 200.252 83.875) (xy 200.881 83.857)
-			(xy 201.509 83.84) (xy 202.138 83.824) (xy 202.767 83.808) (xy 203.396 83.794) (xy 204.025 83.781)
-			(xy 204.654 83.768) (xy 205.283 83.757) (xy 205.912 83.746) (xy 206.541 83.735) (xy 207.17 83.726)
-			(xy 207.799 83.717) (xy 208.428 83.708) (xy 209.057 83.7) (xy 209.686 83.692) (xy 210.314 83.685)
-			(xy 210.943 83.679) (xy 211.572 83.673) (xy 212.201 83.667) (xy 212.83 83.661) (xy 213.459 83.656)
-			(xy 214.088 83.651) (xy 214.717 83.647) (xy 215.346 83.642) (xy 215.975 83.638) (xy 216.604 83.635)
-			(xy 217.233 83.631) (xy 217.862 83.628) (xy 218.491 83.625) (xy 219.119 83.622) (xy 219.748 83.619)
-			(xy 220.377 83.616) (xy 221.006 83.614) (xy 221.635 83.612) (xy 222.264 83.609) (xy 222.893 83.607)
-			(xy 223.522 83.605) (xy 224.151 83.604) (xy 224.78 83.602) (xy 225.409 83.6) (xy 226.038 83.599)
-			(xy 226.667 83.597) (xy 227.296 83.596) (xy 227.925 83.595) (xy 228.553 83.594) (xy 229.182 83.593)
-			(xy 229.811 83.592) (xy 230.44 83.591) (xy 231.069 83.59) (xy 231.698 83.589) (xy 232.327 83.588)
-			(xy 232.956 83.587) (xy 233.585 83.587) (xy 234.214 83.586) (xy 234.843 83.585) (xy 235.472 83.585)
-			(xy 236.101 83.584) (xy 236.73 83.584) (xy 237.358 83.583) (xy 237.987 83.583) (xy 238.616 83.582)
-			(xy 239.245 83.582) (xy 239.874 83.581) (xy 240.503 83.581) (xy 241.132 83.581) (xy 241.761 83.58)
-			(xy 242.39 83.58) (xy 243.019 83.58) (xy 243.648 83.579) (xy 244.277 83.579) (xy 244.906 83.579)
-			(xy 245.535 83.579) (xy 246.164 83.578) (xy 246.792 83.578) (xy 247.421 83.578) (xy 248.05 83.578)
-			(xy 248.679 83.578) (xy 249.308 83.577) (xy 249.937 83.577) (xy 250.566 83.577) (xy 251.195 83.577)
-			(xy 251.824 83.577) (xy 252.453 83.577) (xy 253.082 83.577) (xy 253.711 83.576) (xy 254.34 83.576)
-			(xy 254.969 83.576) (xy 255.597 83.576) (xy 256.226 83.576) (xy 256.855 83.576) (xy 257.484 83.576)
-			(xy 258.113 83.576) (xy 258.742 83.576) (xy 259.371 83.576) (xy 260 83.576)
-		)
-		(stroke
-			(width 0.5)
-			(type default)
-			(color 237 161 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "03349e80-8e04-4e7d-9e14-30207d45c9ff")
-	)
-	(polyline
-		(pts
-			(xy 160 100) (xy 160.629 75.374) (xy 161.258 60.841) (xy 161.887 60.84) (xy 162.516 60.84) (xy 163.145 60.84)
-			(xy 163.774 60.839) (xy 164.403 60.839) (xy 165.031 60.839) (xy 165.66 60.839) (xy 166.289 60.839)
-			(xy 166.918 60.839) (xy 167.547 60.839) (xy 168.176 60.839) (xy 168.805 60.839) (xy 169.434 60.839)
-			(xy 170.063 60.839) (xy 170.692 60.839) (xy 171.321 60.839) (xy 171.95 60.839) (xy 172.579 60.839)
-			(xy 173.208 60.839) (xy 173.836 60.839) (xy 174.465 60.839) (xy 175.094 60.839) (xy 175.723 60.839)
-			(xy 176.352 60.839) (xy 176.981 60.839) (xy 177.61 60.839) (xy 178.239 60.839) (xy 178.868 60.839)
-			(xy 179.497 60.839) (xy 180.126 60.839) (xy 180.755 60.839) (xy 181.384 60.839) (xy 182.013 60.839)
-			(xy 182.642 60.839) (xy 183.27 60.839) (xy 183.899 60.839) (xy 184.528 60.839) (xy 185.157 60.839)
-			(xy 185.786 60.839) (xy 186.415 60.839) (xy 187.044 60.839) (xy 187.673 60.839) (xy 188.302 60.839)
-			(xy 188.931 60.839) (xy 189.56 60.839) (xy 190.189 60.839) (xy 190.818 60.839) (xy 191.447 60.839)
-			(xy 192.075 60.839) (xy 192.704 60.839) (xy 193.333 60.839) (xy 193.962 60.839) (xy 194.591 60.839)
-			(xy 195.22 60.839) (xy 195.849 60.839) (xy 196.478 60.839) (xy 197.107 60.839) (xy 197.736 60.839)
-			(xy 198.365 60.839) (xy 198.994 60.839) (xy 199.623 60.839) (xy 200.252 60.839) (xy 200.881 60.839)
-			(xy 201.509 60.839) (xy 202.138 60.839) (xy 202.767 60.839) (xy 203.396 60.839) (xy 204.025 60.839)
-			(xy 204.654 60.839) (xy 205.283 60.839) (xy 205.912 60.839) (xy 206.541 60.839) (xy 207.17 60.839)
-			(xy 207.799 60.839) (xy 208.428 60.839) (xy 209.057 60.839) (xy 209.686 60.839) (xy 210.314 60.839)
-			(xy 210.943 60.839) (xy 211.572 60.839) (xy 212.201 60.839) (xy 212.83 60.839) (xy 213.459 60.839)
-			(xy 214.088 60.839) (xy 214.717 60.839) (xy 215.346 60.839) (xy 215.975 60.839) (xy 216.604 60.839)
-			(xy 217.233 60.839) (xy 217.862 60.839) (xy 218.491 60.839) (xy 219.119 60.839) (xy 219.748 60.839)
-			(xy 220.377 60.839) (xy 221.006 60.839) (xy 221.635 60.839) (xy 222.264 60.839) (xy 222.893 60.839)
-			(xy 223.522 60.839) (xy 224.151 60.839) (xy 224.78 60.839) (xy 225.409 60.839) (xy 226.038 60.839)
-			(xy 226.667 60.839) (xy 227.296 60.839) (xy 227.925 60.839) (xy 228.553 60.839) (xy 229.182 60.839)
-			(xy 229.811 60.839) (xy 230.44 60.839) (xy 231.069 60.839) (xy 231.698 60.839) (xy 232.327 60.839)
-			(xy 232.956 60.839) (xy 233.585 60.839) (xy 234.214 60.839) (xy 234.843 60.839) (xy 235.472 60.839)
-			(xy 236.101 60.839) (xy 236.73 60.839) (xy 237.358 60.839) (xy 237.987 60.839) (xy 238.616 60.839)
-			(xy 239.245 60.839) (xy 239.874 60.839) (xy 240.503 60.839) (xy 241.132 60.839) (xy 241.761 60.839)
-			(xy 242.39 60.839) (xy 243.019 60.839) (xy 243.648 60.839) (xy 244.277 60.839) (xy 244.906 60.839)
-			(xy 245.535 60.839) (xy 246.164 60.839) (xy 246.792 60.839) (xy 247.421 60.839) (xy 248.05 60.839)
-			(xy 248.679 60.839) (xy 249.308 60.839) (xy 249.937 60.839) (xy 250.566 60.839) (xy 251.195 60.839)
-			(xy 251.824 60.839) (xy 252.453 60.839) (xy 253.082 60.839) (xy 253.711 60.839) (xy 254.34 60.839)
-			(xy 254.969 60.839) (xy 255.597 60.839) (xy 256.226 60.839) (xy 256.855 60.839) (xy 257.484 60.839)
-			(xy 258.113 60.839) (xy 258.742 60.839) (xy 259.371 60.839) (xy 260 60.839)
-		)
-		(stroke
-			(width 0.5)
-			(type default)
-			(color 235 104 52 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "29e693a1-f40a-4084-be88-8253407f7837")
-	)
-	(polyline
-		(pts
-			(xy 28 52) (xy 28 100) (xy 118 100)
-		)
-		(stroke
-			(width 0.4)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "81a4e40d-bd8b-454b-9616-ee0eb971b818")
-	)
-	(polyline
-		(pts
-			(xy 28 100) (xy 28.553 99.415) (xy 29.107 95.801) (xy 29.66 91.878) (xy 30.214 83.957) (xy 30.767 83.02)
-			(xy 31.321 79.418) (xy 31.874 79.164) (xy 32.428 79.545) (xy 32.981 79.871) (xy 33.535 80.046) (xy 34.088 80.078)
-			(xy 34.642 79.385) (xy 35.195 78.779) (xy 35.748 78.914) (xy 36.302 78.889) (xy 36.855 78.729) (xy 37.409 78.464)
-			(xy 37.962 78.117) (xy 38.516 77.728) (xy 39.069 77.3) (xy 39.623 76.851) (xy 40.176 76.407) (xy 40.73 75.939)
-			(xy 41.283 75.478) (xy 41.836 75.04) (xy 42.39 74.566) (xy 42.943 74.118) (xy 43.497 73.682) (xy 44.05 73.218)
-			(xy 44.604 72.784) (xy 45.157 72.344) (xy 45.711 71.887) (xy 46.264 71.462) (xy 46.818 70.998) (xy 47.371 70.525)
-			(xy 47.925 70.081) (xy 48.478 69.57) (xy 49.031 69.069) (xy 49.585 68.586) (xy 50.138 68.043) (xy 50.692 67.526)
-			(xy 51.245 67.013) (xy 51.799 66.46) (xy 52.352 65.949) (xy 52.906 65.424) (xy 53.459 64.878) (xy 54.013 64.394)
-			(xy 54.566 63.847) (xy 55.119 63.307) (xy 55.673 62.818) (xy 56.226 62.265) (xy 56.78 61.728) (xy 57.333 61.225)
-			(xy 57.887 60.701) (xy 58.44 60.409) (xy 58.994 60.337) (xy 59.547 60.353) (xy 60.101 60.444) (xy 60.654 60.58)
-			(xy 61.208 60.691) (xy 61.761 60.779) (xy 62.314 60.859) (xy 62.868 60.889) (xy 63.421 60.889) (xy 63.975 60.893)
-			(xy 64.528 60.868) (xy 65.082 60.857) (xy 65.635 60.849) (xy 66.189 60.824) (xy 66.742 60.825) (xy 67.296 60.813)
-			(xy 67.849 60.797) (xy 68.403 60.819) (xy 68.956 60.812) (xy 69.509 60.805) (xy 70.063 60.83) (xy 70.616 60.822)
-			(xy 71.17 60.814) (xy 71.723 60.835) (xy 72.277 60.824) (xy 72.83 60.816) (xy 73.384 60.832) (xy 73.937 60.82)
-			(xy 74.491 60.818) (xy 75.044 60.829) (xy 75.597 60.818) (xy 76.151 60.824) (xy 76.704 60.827) (xy 77.258 60.816)
-			(xy 77.811 60.837) (xy 78.365 60.826) (xy 78.918 60.814) (xy 79.472 60.836) (xy 80.025 60.824) (xy 80.579 60.813)
-			(xy 81.132 60.834) (xy 81.686 60.823) (xy 82.239 60.814) (xy 82.792 60.832) (xy 83.346 60.821) (xy 83.899 60.817)
-			(xy 84.453 60.83) (xy 85.006 60.819) (xy 85.56 60.821) (xy 86.113 60.829) (xy 86.667 60.817) (xy 87.22 60.828)
-			(xy 87.774 60.827) (xy 88.327 60.815) (xy 88.881 60.837) (xy 89.434 60.825) (xy 89.987 60.813) (xy 90.541 60.835)
-			(xy 91.094 60.824) (xy 91.648 60.814) (xy 92.201 60.839) (xy 92.755 60.847) (xy 93.308 60.832) (xy 93.862 60.832)
-			(xy 94.415 60.855) (xy 94.969 60.846) (xy 95.522 60.847) (xy 96.075 60.87) (xy 96.629 60.848) (xy 97.182 60.838)
-			(xy 97.736 60.856) (xy 98.289 60.87) (xy 98.843 60.854) (xy 99.396 60.842) (xy 99.95 60.839) (xy 100.503 60.845)
-			(xy 101.057 60.873) (xy 101.61 60.886) (xy 102.164 60.863) (xy 102.717 60.847) (xy 103.27 60.837)
-			(xy 103.824 60.832) (xy 104.377 60.844) (xy 104.931 60.859) (xy 105.484 60.883) (xy 106.038 60.911)
-			(xy 106.591 60.894) (xy 107.145 60.874) (xy 107.698 60.849) (xy 108.252 60.833) (xy 108.805 60.828)
-			(xy 109.358 60.822) (xy 109.912 60.828) (xy 110.465 60.832) (xy 111.019 60.847) (xy 111.572 60.862)
-			(xy 112.126 60.888) (xy 112.679 60.92) (xy 113.233 60.948) (xy 113.786 60.957) (xy 114.34 60.918)
-			(xy 114.893 60.883) (xy 115.447 60.861) (xy 116 60.843)
-		)
-		(stroke
-			(width 0.5)
-			(type default)
-			(color 235 104 52 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "8a575338-9d20-425f-95a8-eac24f5e6dd3")
-	)
-	(polyline
-		(pts
-			(xy 160 100) (xy 160.629 99.918) (xy 161.258 99.422) (xy 161.887 98.546) (xy 162.516 97.342) (xy 163.145 95.852)
-			(xy 163.774 94.139) (xy 164.403 92.475) (xy 165.031 90.912) (xy 165.66 89.445) (xy 166.289 88.069)
-			(xy 166.918 86.777) (xy 167.547 85.565) (xy 168.176 84.428) (xy 168.805 83.361) (xy 169.434 82.359)
-			(xy 170.063 81.42) (xy 170.692 80.539) (xy 171.321 79.712) (xy 171.95 78.936) (xy 172.579 78.209)
-			(xy 173.208 77.526) (xy 173.836 76.885) (xy 174.465 76.284) (xy 175.094 75.72) (xy 175.723 75.191)
-			(xy 176.352 74.695) (xy 176.981 74.229) (xy 177.61 73.793) (xy 178.239 73.383) (xy 178.868 72.998)
-			(xy 179.497 72.637) (xy 180.126 72.299) (xy 180.755 71.981) (xy 181.384 71.683) (xy 182.013 71.404)
-			(xy 182.642 71.142) (xy 183.27 70.896) (xy 183.899 70.665) (xy 184.528 70.448) (xy 185.157 70.245)
-			(xy 185.786 70.054) (xy 186.415 69.875) (xy 187.044 69.707) (xy 187.673 69.55) (xy 188.302 69.402)
-			(xy 188.931 69.263) (xy 189.56 69.133) (xy 190.189 69.011) (xy 190.818 68.896) (xy 191.447 68.789)
-			(xy 192.075 68.688) (xy 192.704 68.593) (xy 193.333 68.504) (xy 193.962 68.421) (xy 194.591 68.343)
-			(xy 195.22 68.269) (xy 195.849 68.201) (xy 196.478 68.136) (xy 197.107 68.075) (xy 197.736 68.018)
-			(xy 198.365 67.965) (xy 198.994 67.915) (xy 199.623 67.868) (xy 200.252 67.823) (xy 200.881 67.782)
-			(xy 201.509 67.743) (xy 202.138 67.707) (xy 202.767 67.672) (xy 203.396 67.64) (xy 204.025 67.61)
-			(xy 204.654 67.582) (xy 205.283 67.555) (xy 205.912 67.53) (xy 206.541 67.507) (xy 207.17 67.485)
-			(xy 207.799 67.464) (xy 208.428 67.444) (xy 209.057 67.426) (xy 209.686 67.409) (xy 210.314 67.393)
-			(xy 210.943 67.378) (xy 211.572 67.364) (xy 212.201 67.351) (xy 212.83 67.338) (xy 213.459 67.326)
-			(xy 214.088 67.315) (xy 214.717 67.305) (xy 215.346 67.295) (xy 215.975 67.286) (xy 216.604 67.278)
-			(xy 217.233 67.27) (xy 217.862 67.262) (xy 218.491 67.255) (xy 219.119 67.248) (xy 219.748 67.242)
-			(xy 220.377 67.236) (xy 221.006 67.231) (xy 221.635 67.226) (xy 222.264 67.221) (xy 222.893 67.216)
-			(xy 223.522 67.212) (xy 224.151 67.208) (xy 224.78 67.204) (xy 225.409 67.201) (xy 226.038 67.197)
-			(xy 226.667 67.194) (xy 227.296 67.191) (xy 227.925 67.188) (xy 228.553 67.186) (xy 229.182 67.183)
-			(xy 229.811 67.181) (xy 230.44 67.179) (xy 231.069 67.177) (xy 231.698 67.175) (xy 232.327 67.173)
-			(xy 232.956 67.171) (xy 233.585 67.17) (xy 234.214 67.168) (xy 234.843 67.167) (xy 235.472 67.166)
-			(xy 236.101 67.164) (xy 236.73 67.163) (xy 237.358 67.162) (xy 237.987 67.161) (xy 238.616 67.16)
-			(xy 239.245 67.159) (xy 239.874 67.158) (xy 240.503 67.157) (xy 241.132 67.157) (xy 241.761 67.156)
-			(xy 242.39 67.155) (xy 243.019 67.155) (xy 243.648 67.154) (xy 244.277 67.153) (xy 244.906 67.153)
-			(xy 245.535 67.152) (xy 246.164 67.152) (xy 246.792 67.152) (xy 247.421 67.151) (xy 248.05 67.151)
-			(xy 248.679 67.15) (xy 249.308 67.15) (xy 249.937 67.15) (xy 250.566 67.149) (xy 251.195 67.149)
-			(xy 251.824 67.149) (xy 252.453 67.149) (xy 253.082 67.148) (xy 253.711 67.148) (xy 254.34 67.148)
-			(xy 254.969 67.148) (xy 255.597 67.147) (xy 256.226 67.147) (xy 256.855 67.147) (xy 257.484 67.147)
-			(xy 258.113 67.147) (xy 258.742 67.147) (xy 259.371 67.147) (xy 260 67.146)
-		)
-		(stroke
-			(width 0.5)
-			(type default)
-			(color 27 175 122 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "b1662fd8-45e1-4a69-bfb9-4649d1ac3c73")
-	)
-	(polyline
-		(pts
-			(xy 160 52) (xy 160 100) (xy 262 100)
-		)
-		(stroke
-			(width 0.4)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "dfae832e-2615-403b-9026-0ec77ac2be7b")
-	)
-	(polyline
-		(pts
-			(xy 28 100) (xy 28.553 96.009) (xy 29.107 92.059) (xy 29.66 88.151) (xy 30.214 83.768) (xy 30.767 79.636)
-			(xy 31.321 78.421) (xy 31.874 78.317) (xy 32.428 78.318) (xy 32.981 78.321) (xy 33.535 78.327) (xy 34.088 78.33)
-			(xy 34.642 78.373) (xy 35.195 78.328) (xy 35.748 78.322) (xy 36.302 78.33) (xy 36.855 78.342) (xy 37.409 78.331)
-			(xy 37.962 78.342) (xy 38.516 78.355) (xy 39.069 78.335) (xy 39.623 78.351) (xy 40.176 78.362) (xy 40.73 78.337)
-			(xy 41.283 78.359) (xy 41.836 78.35) (xy 42.39 78.341) (xy 42.943 78.369) (xy 43.497 78.334) (xy 44.05 78.347)
-			(xy 44.604 78.379) (xy 45.157 78.323) (xy 45.711 78.356) (xy 46.264 78.385) (xy 46.818 78.322) (xy 47.371 78.368)
-			(xy 47.925 78.376) (xy 48.478 78.33) (xy 49.031 78.382) (xy 49.585 78.363) (xy 50.138 78.34) (xy 50.692 78.398)
-			(xy 51.245 78.349) (xy 51.799 78.351) (xy 52.352 78.411) (xy 52.906 78.336) (xy 53.459 78.366) (xy 54.013 78.413)
-			(xy 54.566 78.325) (xy 55.119 78.383) (xy 55.673 78.397) (xy 56.226 78.322) (xy 56.78 78.403) (xy 57.333 78.382)
-			(xy 57.887 78.321) (xy 58.44 78.369) (xy 58.994 78.365) (xy 59.547 78.315) (xy 60.101 78.327) (xy 60.654 78.351)
-			(xy 61.208 78.315) (xy 61.761 78.348) (xy 62.314 78.336) (xy 62.868 78.317) (xy 63.421 78.375) (xy 63.975 78.325)
-			(xy 64.528 78.32) (xy 65.082 78.385) (xy 65.635 78.316) (xy 66.189 78.325) (xy 66.742 78.385) (xy 67.296 78.315)
-			(xy 67.849 78.333) (xy 68.403 78.372) (xy 68.956 78.315) (xy 69.509 78.345) (xy 70.063 78.357) (xy 70.616 78.315)
-			(xy 71.17 78.358) (xy 71.723 78.343) (xy 72.277 78.316) (xy 72.83 78.371) (xy 73.384 78.33) (xy 73.937 78.317)
-			(xy 74.491 78.38) (xy 75.044 78.32) (xy 75.597 78.32) (xy 76.151 78.385) (xy 76.704 78.315) (xy 77.258 78.327)
-			(xy 77.811 78.379) (xy 78.365 78.315) (xy 78.918 78.34) (xy 79.472 78.364) (xy 80.025 78.315) (xy 80.579 78.353)
-			(xy 81.132 78.35) (xy 81.686 78.316) (xy 82.239 78.365) (xy 82.792 78.336) (xy 83.346 78.317) (xy 83.899 78.376)
-			(xy 84.453 78.325) (xy 85.006 78.32) (xy 85.56 78.383) (xy 86.113 78.316) (xy 86.667 78.324) (xy 87.22 78.385)
-			(xy 87.774 78.315) (xy 88.327 78.332) (xy 88.881 78.373) (xy 89.434 78.315) (xy 89.987 78.345) (xy 90.541 78.359)
-			(xy 91.094 78.315) (xy 91.648 78.351) (xy 92.201 78.373) (xy 92.755 78.357) (xy 93.308 78.33) (xy 93.862 78.347)
-			(xy 94.415 78.316) (xy 94.969 78.316) (xy 95.522 78.375) (xy 96.075 78.371) (xy 96.629 78.324) (xy 97.182 78.331)
-			(xy 97.736 78.333) (xy 98.289 78.324) (xy 98.843 78.363) (xy 99.396 78.368) (xy 99.95 78.32) (xy 100.503 78.324)
-			(xy 101.057 78.346) (xy 101.61 78.335) (xy 102.164 78.357) (xy 102.717 78.364) (xy 103.27 78.323)
-			(xy 103.824 78.331) (xy 104.377 78.335) (xy 104.931 78.322) (xy 105.484 78.359) (xy 106.038 78.344)
-			(xy 106.591 78.354) (xy 107.145 78.362) (xy 107.698 78.339) (xy 108.252 78.355) (xy 108.805 78.327)
-			(xy 109.358 78.348) (xy 109.912 78.324) (xy 110.465 78.346) (xy 111.019 78.325) (xy 111.572 78.35)
-			(xy 112.126 78.334) (xy 112.679 78.354) (xy 113.233 78.348) (xy 113.786 78.345) (xy 114.34 78.356)
-			(xy 114.893 78.33) (xy 115.447 78.332) (xy 116 78.348)
-		)
-		(stroke
-			(width 0.5)
-			(type default)
-			(color 42 120 214 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "e9dd1390-1bbd-447c-86f9-dc53508d22a3")
-	)
-	(text "20"
-		(exclude_from_sim no)
-		(at 180 104 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify bottom)
-		)
-		(uuid "015ed586-3c89-4c3e-95aa-542512d6aaba")
-	)
-	(text "2"
-		(exclude_from_sim no)
-		(at 86.667 104 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify bottom)
-		)
-		(uuid "01f69fd8-3c3e-4ae0-aaa6-0778f6c4039a")
-	)
-	(text "+5VA"
-		(exclude_from_sim no)
-		(at 261.5 67.146 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.7 1.7)
-				(bold yes)
-				(color 27 175 122 1)
-			)
-			(justify left)
-		)
-		(uuid "02a08a82-4dc8-4af0-ae50-f103014dc38c")
-	)
 	(text "5.96 V"
 		(exclude_from_sim no)
-		(at 129 134 0)
+		(at 154.72 189.24 0)
 		(effects
 			(font
 				(face "Arial")
@@ -309,64 +24,9 @@
 		)
 		(uuid "12be48c8-1e51-4987-a1f8-26d806552d48")
 	)
-	(text "Boost soft-start (LTspice simulation 01)"
-		(exclude_from_sim no)
-		(at 40 50 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.9 1.9)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "13880106-badb-40b4-adba-c3dff7dbd749")
-	)
-	(text "+6V"
-		(exclude_from_sim no)
-		(at 261.5 60.839 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.7 1.7)
-				(bold yes)
-				(color 235 104 52 1)
-			)
-			(justify left)
-		)
-		(uuid "1797927c-c4b3-48b1-9f5c-e4a1787563eb")
-	)
-	(text "6"
-		(exclude_from_sim no)
-		(at 26.5 60.571 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "19fba266-0f79-444a-8f72-bb73d49f0c41")
-	)
 	(text "+2.5VA"
 		(exclude_from_sim no)
-		(at 261.5 83.576 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.7 1.7)
-				(bold yes)
-				(color 237 161 0 1)
-			)
-			(justify left)
-		)
-		(uuid "1bd08ed3-3472-4ee8-b616-b3a630d51b51")
-	)
-	(text "+2.5VA"
-		(exclude_from_sim no)
-		(at 21 147 0)
+		(at 46.72 202.24 0)
 		(effects
 			(font
 				(face "Arial")
@@ -378,35 +38,9 @@
 		)
 		(uuid "284df133-f27e-4c34-ae79-2ab736a4bd02")
 	)
-	(text "Time [ms]"
-		(exclude_from_sim no)
-		(at 116 108 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify right bottom)
-		)
-		(uuid "295c5786-5797-4c09-91ed-cf2252dfcea1")
-	)
-	(text "2"
-		(exclude_from_sim no)
-		(at 26.5 86.857 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "2fd13d33-6115-4309-b08c-8155c9ecb3a7")
-	)
 	(text "t = 0"
 		(exclude_from_sim no)
-		(at 157 127.5 0)
+		(at 182.72 182.74 0)
 		(effects
 			(font
 				(face "Arial")
@@ -417,49 +51,9 @@
 		)
 		(uuid "32d4e1d7-151b-4660-88fa-75d47c17a8a9")
 	)
-	(text "+3.3V"
+	(text "NIVEAU"
 		(exclude_from_sim no)
-		(at 117.5 78.348 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.7 1.7)
-				(bold yes)
-				(color 42 120 214 1)
-			)
-			(justify left)
-		)
-		(uuid "34e79833-4496-42fb-911d-22c5638486c7")
-	)
-	(text "100"
-		(exclude_from_sim no)
-		(at 260 104 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify bottom)
-		)
-		(uuid "35b427b9-38bf-458c-a649-7697228da103")
-	)
-	(text "0"
-		(exclude_from_sim no)
-		(at 28 104 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify bottom)
-		)
-		(uuid "38a36425-27cd-4cae-907b-d129516c867d")
-	)
-	(text "LEVEL"
-		(exclude_from_sim no)
-		(at 129 121 0)
+		(at 154.72 176.24 0)
 		(effects
 			(font
 				(face "Arial")
@@ -471,22 +65,9 @@
 		)
 		(uuid "3e3bbf4c-2339-45ae-ba46-5c112fb2e492")
 	)
-	(text "0"
+	(text "TEMPS (après application du +3.3V)"
 		(exclude_from_sim no)
-		(at 158.5 100 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "42343191-6251-438f-be85-873bf10b3a3a")
-	)
-	(text "TIMING (after +3.3V is applied)"
-		(exclude_from_sim no)
-		(at 157 121 0)
+		(at 182.72 176.24 0)
 		(effects
 			(font
 				(face "Arial")
@@ -498,22 +79,9 @@
 		)
 		(uuid "455a4128-3c00-4758-8d36-bf060f066169")
 	)
-	(text "40"
-		(exclude_from_sim no)
-		(at 200 104 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify bottom)
-		)
-		(uuid "49f397b7-2f4a-4c4b-8bab-407d1eaa9fb1")
-	)
 	(text "+6V"
 		(exclude_from_sim no)
-		(at 21 134 0)
+		(at 46.72 189.24 0)
 		(effects
 			(font
 				(face "Arial")
@@ -527,7 +95,7 @@
 	)
 	(text "IC3 LTC6655-2.5 -> R11 -> SET of IC9 LT3045-1"
 		(exclude_from_sim no)
-		(at 43 147 0)
+		(at 68.72 202.24 0)
 		(effects
 			(font
 				(face "Arial")
@@ -538,35 +106,9 @@
 		)
 		(uuid "5541b134-0eff-4032-903a-fdaada69be16")
 	)
-	(text "3"
+	(text "90 % après 0.88 ms"
 		(exclude_from_sim no)
-		(at 158.5 80.286 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "5975f2f1-a061-41bc-ba4b-068b0110cfaf")
-	)
-	(text "5"
-		(exclude_from_sim no)
-		(at 26.5 67.143 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "63cca6bc-bc98-4fad-84b0-c5a9f9c7a927")
-	)
-	(text "90 % after 0.9 ms"
-		(exclude_from_sim no)
-		(at 157 134 0)
+		(at 182.72 189.24 0)
 		(effects
 			(font
 				(face "Arial")
@@ -577,22 +119,9 @@
 		)
 		(uuid "69a0d90d-c584-49a0-9bbd-c265cea286bb")
 	)
-	(text "3"
-		(exclude_from_sim no)
-		(at 116 104 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify bottom)
-		)
-		(uuid "6cabfee7-0b90-4ddb-913d-9e522df777d7")
-	)
 	(text "SOURCE"
 		(exclude_from_sim no)
-		(at 43 121 0)
+		(at 68.72 176.24 0)
 		(effects
 			(font
 				(face "Arial")
@@ -604,61 +133,9 @@
 		)
 		(uuid "6fd60003-2998-484d-affa-5688b7f89533")
 	)
-	(text "2"
-		(exclude_from_sim no)
-		(at 158.5 86.857 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "70970530-9055-4d8b-9150-a975c6ac0109")
-	)
-	(text "6"
-		(exclude_from_sim no)
-		(at 158.5 60.571 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "720ed9b2-7fd0-4e58-b062-199d5835f164")
-	)
-	(text "4"
-		(exclude_from_sim no)
-		(at 26.5 73.714 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "7387cfdd-542c-49e4-8f6c-a9dc6edb3014")
-	)
-	(text "4"
-		(exclude_from_sim no)
-		(at 158.5 73.714 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "74dfbfa7-cde0-4c09-b75a-a06434bbda21")
-	)
 	(text "3.3 V"
 		(exclude_from_sim no)
-		(at 129 127.5 0)
+		(at 154.72 182.74 0)
 		(effects
 			(font
 				(face "Arial")
@@ -669,9 +146,9 @@
 		)
 		(uuid "787c6d72-b4f6-40ec-9811-afac0c77fbe8")
 	)
-	(text "2.500 V (*)"
+	(text "2.500 V"
 		(exclude_from_sim no)
-		(at 129 147 0)
+		(at 154.72 202.24 0)
 		(effects
 			(font
 				(face "Arial")
@@ -682,23 +159,9 @@
 		)
 		(uuid "7c1d9a60-afc6-4df4-ae8a-d116aff3f2dc")
 	)
-	(text "Analog rails (simulation 02, R12 = 24.9 kOhm)"
+	(text "1 % après 48 ms, 0.1 % après 71 ms (τ = 9.8 ms)"
 		(exclude_from_sim no)
-		(at 172 50 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.9 1.9)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "7d65c580-4fe3-4ef4-aa55-d7d37d5c68d7")
-	)
-	(text "1 % after 48 ms, 0.1 % after 71 ms (tau = 9.8 ms)"
-		(exclude_from_sim no)
-		(at 157 140.5 0)
+		(at 182.72 195.74 0)
 		(effects
 			(font
 				(face "Arial")
@@ -709,74 +172,9 @@
 		)
 		(uuid "82777f15-8b80-4739-9d99-997b919bee68")
 	)
-	(text "1"
+	(text "Hôte (pas encore de connecteur sur la carte)"
 		(exclude_from_sim no)
-		(at 57.333 104 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify bottom)
-		)
-		(uuid "88f8298d-333a-4796-87b3-7044c4d70604")
-	)
-	(text "[V]"
-		(exclude_from_sim no)
-		(at 158.5 50 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify right bottom)
-		)
-		(uuid "9294c7c7-4962-40f1-9084-9f1cc6ef48a0")
-	)
-	(text "7"
-		(exclude_from_sim no)
-		(at 158.5 54 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "98f1de57-d827-4139-bbd7-f50f380b2b06")
-	)
-	(text "5"
-		(exclude_from_sim no)
-		(at 158.5 67.143 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "9a35f193-8cff-481d-9694-0b38abb361ef")
-	)
-	(text "3"
-		(exclude_from_sim no)
-		(at 26.5 80.286 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "9b392d7a-3187-4eee-a5d7-a63a5c6103ae")
-	)
-	(text "Host (no connector on the board yet)"
-		(exclude_from_sim no)
-		(at 43 127.5 0)
+		(at 68.72 182.74 0)
 		(effects
 			(font
 				(face "Arial")
@@ -789,7 +187,7 @@
 	)
 	(text "IC7 LTC6655-5 -> R8 -> SET of IC8 LT3045-1"
 		(exclude_from_sim no)
-		(at 43 140.5 0)
+		(at 68.72 195.74 0)
 		(effects
 			(font
 				(face "Arial")
@@ -800,36 +198,9 @@
 		)
 		(uuid "9f1a1aeb-a67c-48f9-9c66-4e5966685828")
 	)
-	(text "+6V"
+	(text "NOM"
 		(exclude_from_sim no)
-		(at 117.5 60.843 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.7 1.7)
-				(bold yes)
-				(color 235 104 52 1)
-			)
-			(justify left)
-		)
-		(uuid "a4a2c719-0324-4919-9363-b41ab5951584")
-	)
-	(text "0"
-		(exclude_from_sim no)
-		(at 26.5 100 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "af0d05ee-93bc-4bd2-b3c5-e587a099eec2")
-	)
-	(text "NAME"
-		(exclude_from_sim no)
-		(at 21 121 0)
+		(at 46.72 176.24 0)
 		(effects
 			(font
 				(face "Arial")
@@ -841,22 +212,9 @@
 		)
 		(uuid "b41af55c-44e2-4e6a-a6fb-e6b0f7129c5e")
 	)
-	(text "80"
-		(exclude_from_sim no)
-		(at 240 104 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify bottom)
-		)
-		(uuid "bc6f7d79-538d-4d75-9f9f-a2fb0909c3ea")
-	)
 	(text "+5VA"
 		(exclude_from_sim no)
-		(at 21 140.5 0)
+		(at 46.72 195.74 0)
 		(effects
 			(font
 				(face "Arial")
@@ -870,7 +228,7 @@
 	)
 	(text "IC5 LT8362 boost, 2 MHz, soft-start C24 = 10 nF"
 		(exclude_from_sim no)
-		(at 43 134 0)
+		(at 68.72 189.24 0)
 		(effects
 			(font
 				(face "Arial")
@@ -881,74 +239,9 @@
 		)
 		(uuid "d8481058-8525-446d-820b-3812001bbf52")
 	)
-	(text "0"
-		(exclude_from_sim no)
-		(at 160 104 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify bottom)
-		)
-		(uuid "dcf63af8-3720-4e73-986a-29f11ed25221")
-	)
-	(text "1"
-		(exclude_from_sim no)
-		(at 158.5 93.429 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "dcfc639d-3b44-4041-8d94-81271b1832bc")
-	)
-	(text "[V]"
-		(exclude_from_sim no)
-		(at 26.5 50 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify right bottom)
-		)
-		(uuid "df10190c-a88c-4ccc-9b46-b79eb3ae80f0")
-	)
-	(text "1.5"
-		(exclude_from_sim no)
-		(at 72 104 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify bottom)
-		)
-		(uuid "df3de89b-d46a-4e9e-94a0-51704a9d8e9f")
-	)
-	(text "7"
-		(exclude_from_sim no)
-		(at 26.5 54 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "dfcdef1d-660e-4996-ace1-2dca5f0a3aa2")
-	)
 	(text "5.000 V"
 		(exclude_from_sim no)
-		(at 129 140.5 0)
+		(at 154.72 195.74 0)
 		(effects
 			(font
 				(face "Arial")
@@ -961,7 +254,7 @@
 	)
 	(text "+3.3V"
 		(exclude_from_sim no)
-		(at 21 127.5 0)
+		(at 46.72 182.74 0)
 		(effects
 			(font
 				(face "Arial")
@@ -973,22 +266,9 @@
 		)
 		(uuid "e40f4c69-e178-4c56-aed6-eb62845af996")
 	)
-	(text "1"
+	(text "même constante de temps que +5VA"
 		(exclude_from_sim no)
-		(at 26.5 93.429 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "e4c69d50-5438-44ab-897f-b6b9858d42ba")
-	)
-	(text "same time constant as +5VA"
-		(exclude_from_sim no)
-		(at 157 147 0)
+		(at 182.72 202.24 0)
 		(effects
 			(font
 				(face "Arial")
@@ -999,107 +279,11 @@
 		)
 		(uuid "e5a96f5f-3d73-435a-82f6-0705d6a37a6e")
 	)
-	(text "0.5"
+(text_box "[${#}] ${TITLE}"
 		(exclude_from_sim no)
-		(at 42.667 104 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify bottom)
-		)
-		(uuid "eb01f482-e5ae-4ac5-bd35-73d3868ee7b6")
-	)
-	(text "60"
-		(exclude_from_sim no)
-		(at 220 104 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify bottom)
-		)
-		(uuid "ed1b706f-6cce-4a8e-b2ec-c491474cfb7b")
-	)
-	(text "Time [ms]"
-		(exclude_from_sim no)
-		(at 260 108 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify right bottom)
-		)
-		(uuid "f01b9d54-173f-4fee-b768-39a0f6e35426")
-	)
-	(text "2.5"
-		(exclude_from_sim no)
-		(at 101.333 104 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify bottom)
-		)
-		(uuid "f8a8aa31-491b-4e36-bd87-1598a369502c")
-	)
-	(text_box "(*) As built R12 = 49.9 kOhm gives 2.549 V. The curve and the level are given for R12 = 24.9 kOhm. See README, DESIGN REVIEW 1."
-		(exclude_from_sim no)
-		(at 18 158 0)
-		(size 76 17)
-		(margins 1 1 1 1)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 175 30 30 1)
-			)
-			(justify left top)
-		)
-		(uuid "21caef38-20b3-4af1-9899-42caf5ebcac2")
-	)
-	(text_box "No Power-Good signal (PGFB tied to IN): wait at least 100 ms after power-up before the first conversion."
-		(exclude_from_sim no)
-		(at 18 176 0)
-		(size 76 14)
-		(margins 1 1 1 1)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.5 1.5)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "4f823fe0-7f24-4cd1-9554-342a6f59ee1b")
-	)
-	(text_box "[${#}] ${TITLE}"
-		(exclude_from_sim no)
-		(at 80.01 16.51 0)
-		(size 137.16 12.7)
-		(margins 4.4999 4.4999 4.4999 4.4999)
+		(at 161.29 20.32 0)
+		(size 96.52 12.7)
+		(margins 5.9999 5.9999 5.9999 5.9999)
 		(stroke
 			(width -0.0001)
 			(type default)
@@ -1110,7 +294,7 @@
 		(effects
 			(font
 				(face "Times New Roman")
-				(size 6 6)
+				(size 8 8)
 				(thickness 1.2)
 				(bold yes)
 				(color 162 22 34 1)
@@ -1120,84 +304,7 @@
 	)
 	(polyline
 		(pts
-			(xy 116 100) (xy 116 101.2)
-		)
-		(stroke
-			(width 0.25)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "0168ca0e-48ca-4f09-974e-9579a87478ab")
-	)
-	(polyline
-		(pts
-			(xy 28 73.714) (xy 116 73.714)
-		)
-		(stroke
-			(width 0.1)
-			(type default)
-			(color 205 205 205 1)
-		)
-		(uuid "024c2c4e-2dd5-42d2-af24-853f18da145b")
-	)
-	(polyline
-		(pts
-			(xy 160 100) (xy 160 101.2)
-		)
-		(stroke
-			(width 0.25)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "0677f275-0731-4374-bb09-a823bdaf4526")
-	)
-	(polyline
-		(pts
-			(xy 220 100) (xy 220 101.2)
-		)
-		(stroke
-			(width 0.25)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "0ad03572-22da-4ad0-8598-fc77696a4a7c")
-	)
-	(polyline
-		(pts
-			(xy 72 100) (xy 72 101.2)
-		)
-		(stroke
-			(width 0.25)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "1176abb1-be2f-42d1-8613-2435883edea3")
-	)
-	(polyline
-		(pts
-			(xy 28 93.429) (xy 116 93.429)
-		)
-		(stroke
-			(width 0.1)
-			(type default)
-			(color 205 205 205 1)
-		)
-		(uuid "33499c90-3d1f-47d1-8bdb-6b1a77996cd7")
-	)
-	(polyline
-		(pts
-			(xy 160 93.429) (xy 260 93.429)
-		)
-		(stroke
-			(width 0.1)
-			(type default)
-			(color 205 205 205 1)
-		)
-		(uuid "47d98f98-8821-4b7d-b5a2-959e010b86f6")
-	)
-	(polyline
-		(pts
-			(xy 20 142.5) (xy 282 142.5)
+			(xy 45.72 197.74) (xy 307.72 197.74)
 		)
 		(stroke
 			(width 0.12)
@@ -1208,29 +315,7 @@
 	)
 	(polyline
 		(pts
-			(xy 28 54) (xy 116 54)
-		)
-		(stroke
-			(width 0.1)
-			(type default)
-			(color 205 205 205 1)
-		)
-		(uuid "55d0a62d-6577-4ff0-a988-58e8f973eccb")
-	)
-	(polyline
-		(pts
-			(xy 160 60.571) (xy 260 60.571)
-		)
-		(stroke
-			(width 0.1)
-			(type default)
-			(color 205 205 205 1)
-		)
-		(uuid "5b583c33-7b6e-413a-9b41-22acdf89d9ac")
-	)
-	(polyline
-		(pts
-			(xy 20 136) (xy 282 136)
+			(xy 45.72 191.24) (xy 307.72 191.24)
 		)
 		(stroke
 			(width 0.12)
@@ -1241,29 +326,7 @@
 	)
 	(polyline
 		(pts
-			(xy 160 80.286) (xy 260 80.286)
-		)
-		(stroke
-			(width 0.1)
-			(type default)
-			(color 205 205 205 1)
-		)
-		(uuid "613c93e9-1b30-41aa-9797-b82ed80df2ff")
-	)
-	(polyline
-		(pts
-			(xy 240 100) (xy 240 101.2)
-		)
-		(stroke
-			(width 0.25)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "6cf588be-fad4-4857-be32-8ddd9033fd1b")
-	)
-	(polyline
-		(pts
-			(xy 20 149) (xy 282 149)
+			(xy 45.72 204.24) (xy 307.72 204.24)
 		)
 		(stroke
 			(width 0.5)
@@ -1274,106 +337,7 @@
 	)
 	(polyline
 		(pts
-			(xy 28 67.143) (xy 116 67.143)
-		)
-		(stroke
-			(width 0.1)
-			(type default)
-			(color 205 205 205 1)
-		)
-		(uuid "7839bf47-f94a-4b77-a4fe-0c09134e56b2")
-	)
-	(polyline
-		(pts
-			(xy 160 54) (xy 260 54)
-		)
-		(stroke
-			(width 0.1)
-			(type default)
-			(color 205 205 205 1)
-		)
-		(uuid "9efd0b6f-6ca2-47e7-8e37-916d3a706319")
-	)
-	(polyline
-		(pts
-			(xy 101.333 100) (xy 101.333 101.2)
-		)
-		(stroke
-			(width 0.25)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "aed8c3d6-794f-40ff-a2a7-0e1db11583ee")
-	)
-	(polyline
-		(pts
-			(xy 260 100) (xy 260 101.2)
-		)
-		(stroke
-			(width 0.25)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "b08a1891-84fe-458a-970e-a84a36f935c8")
-	)
-	(polyline
-		(pts
-			(xy 57.333 100) (xy 57.333 101.2)
-		)
-		(stroke
-			(width 0.25)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "bdaa596f-7174-4f28-b961-b9c75246db67")
-	)
-	(polyline
-		(pts
-			(xy 160 73.714) (xy 260 73.714)
-		)
-		(stroke
-			(width 0.1)
-			(type default)
-			(color 205 205 205 1)
-		)
-		(uuid "c63fd425-5bfb-48bf-89d0-177243358e80")
-	)
-	(polyline
-		(pts
-			(xy 42.667 100) (xy 42.667 101.2)
-		)
-		(stroke
-			(width 0.25)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "c72ec2a1-78b1-4688-81cb-e45e61bf7ff1")
-	)
-	(polyline
-		(pts
-			(xy 160 67.143) (xy 260 67.143)
-		)
-		(stroke
-			(width 0.1)
-			(type default)
-			(color 205 205 205 1)
-		)
-		(uuid "c9cbcfe4-db94-4a30-ab6f-ed8fee169c30")
-	)
-	(polyline
-		(pts
-			(xy 180 100) (xy 180 101.2)
-		)
-		(stroke
-			(width 0.25)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "ca9310bb-9881-4f71-95ab-83ea292133b5")
-	)
-	(polyline
-		(pts
-			(xy 20 116.5) (xy 282 116.5)
+			(xy 45.72 171.74) (xy 307.72 171.74)
 		)
 		(stroke
 			(width 0.5)
@@ -1384,51 +348,7 @@
 	)
 	(polyline
 		(pts
-			(xy 28 86.857) (xy 116 86.857)
-		)
-		(stroke
-			(width 0.1)
-			(type default)
-			(color 205 205 205 1)
-		)
-		(uuid "d97f07d0-62b7-42fa-a424-f111c16601c8")
-	)
-	(polyline
-		(pts
-			(xy 160 86.857) (xy 260 86.857)
-		)
-		(stroke
-			(width 0.1)
-			(type default)
-			(color 205 205 205 1)
-		)
-		(uuid "de771236-03ab-4765-bff8-67b7dcefc7ac")
-	)
-	(polyline
-		(pts
-			(xy 28 100) (xy 28 101.2)
-		)
-		(stroke
-			(width 0.25)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "df274e41-1042-4dc5-b0a4-a807205c53ee")
-	)
-	(polyline
-		(pts
-			(xy 28 100) (xy 116 100)
-		)
-		(stroke
-			(width 0.1)
-			(type default)
-			(color 205 205 205 1)
-		)
-		(uuid "e7e433de-ddd4-4d9a-9979-9a90cfd2b5e0")
-	)
-	(polyline
-		(pts
-			(xy 20 129.5) (xy 282 129.5)
+			(xy 45.72 184.74) (xy 307.72 184.74)
 		)
 		(stroke
 			(width 0.12)
@@ -1439,40 +359,7 @@
 	)
 	(polyline
 		(pts
-			(xy 28 80.286) (xy 116 80.286)
-		)
-		(stroke
-			(width 0.1)
-			(type default)
-			(color 205 205 205 1)
-		)
-		(uuid "eb885317-5372-418b-994a-a5badd58d913")
-	)
-	(polyline
-		(pts
-			(xy 160 100) (xy 260 100)
-		)
-		(stroke
-			(width 0.1)
-			(type default)
-			(color 205 205 205 1)
-		)
-		(uuid "ec98ba4e-271f-4e06-806d-06a33b9e631e")
-	)
-	(polyline
-		(pts
-			(xy 28 60.571) (xy 116 60.571)
-		)
-		(stroke
-			(width 0.1)
-			(type default)
-			(color 205 205 205 1)
-		)
-		(uuid "ed8ff8ed-632d-44a7-a2e6-a4f1c28ff9f4")
-	)
-	(polyline
-		(pts
-			(xy 20 123) (xy 282 123)
+			(xy 45.72 178.24) (xy 307.72 178.24)
 		)
 		(stroke
 			(width 0.5)
@@ -1481,26 +368,3480 @@
 		)
 		(uuid "f3fc67a8-5479-40b1-a1a5-4e4a33bffe1f")
 	)
-	(polyline
-		(pts
-			(xy 200 100) (xy 200 101.2)
-		)
+	(text_box "SÉQUENCE DES RAILS (APRÈS APPLICATION DU +3.3V)"
+		(exclude_from_sim no)
+		(at 45.72 165.1 0)
+		(size 262 6.35)
+		(margins 1.6 1.6 1.6 1.6)
 		(stroke
-			(width 0.25)
-			(type default)
-			(color 0 0 0 1)
+			(width -0.0001)
+			(type solid)
 		)
-		(uuid "f5c7137a-c55b-4f3f-8fa1-0f92cf56f1f5")
+		(fill
+			(type color)
+			(color 162 22 34 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "b783f1ff-9021-42b6-9603-8e4d392b65dd")
+	)
+	(text_box "BOOST SOFT-START   ·   SIMULATION 01"
+		(exclude_from_sim no)
+		(at 45.72 41.91 0)
+		(size 105.41 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 162 22 34 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "912356db-c3a7-4a67-bedf-cd7f564f8407")
 	)
 	(polyline
 		(pts
-			(xy 86.667 100) (xy 86.667 101.2)
+			(xy 54.72 50.26) (xy 54.72 96.76)
 		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "0ae3f2e1-ccc7-4d57-822c-7244b11ea999")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 54.72 97.76 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "549eae0a-f073-4117-8d99-61ddc94f3a72")
+	)
+	(polyline
+		(pts
+			(xy 68.6217 50.26) (xy 68.6217 96.76)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "21507b5f-b690-4923-a231-0f38c8a21ad8")
+	)
+	(text "0.5"
+		(exclude_from_sim no)
+		(at 68.6217 97.76 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "d3a744e0-e6a2-459b-8bbe-e4a264db01cb")
+	)
+	(polyline
+		(pts
+			(xy 82.5233 50.26) (xy 82.5233 96.76)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "461e5022-a993-4e64-80ea-42ecd91653aa")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 82.5233 97.76 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "6e0bdcce-9bdc-49cc-bf09-25368d08c58c")
+	)
+	(polyline
+		(pts
+			(xy 96.425 50.26) (xy 96.425 96.76)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "4f53a55d-92ca-4aec-9261-f1b39d626ce0")
+	)
+	(text "1.5"
+		(exclude_from_sim no)
+		(at 96.425 97.76 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "e4dc688a-912e-466b-959f-9ecc11a336ec")
+	)
+	(polyline
+		(pts
+			(xy 110.327 50.26) (xy 110.327 96.76)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "6b5ee0b1-6677-45c4-bd5b-22cf6e57d591")
+	)
+	(text "2"
+		(exclude_from_sim no)
+		(at 110.327 97.76 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "702d7493-eab4-4e54-ab25-a6c3102e3d8d")
+	)
+	(polyline
+		(pts
+			(xy 124.228 50.26) (xy 124.228 96.76)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "c4338efc-be7c-48fe-a090-4ff31619f493")
+	)
+	(text "2.5"
+		(exclude_from_sim no)
+		(at 124.228 97.76 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "2d74041f-150d-47dd-9b00-89554b653362")
+	)
+	(polyline
+		(pts
+			(xy 138.13 50.26) (xy 138.13 96.76)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "ac25c2e7-5b00-41b7-9fb3-7703143bfafa")
+	)
+	(text "3"
+		(exclude_from_sim no)
+		(at 138.13 97.76 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "77dc2963-4180-4bd9-9fdb-a392144010e9")
+	)
+	(polyline
+		(pts
+			(xy 54.72 96.76) (xy 138.13 96.76)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "ed9074c6-186e-4db3-8564-b5bf4c002cb9")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 53.72 96.76 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "84f7c3b5-cf08-4f45-916f-0cf4b9ba0633")
+	)
+	(polyline
+		(pts
+			(xy 54.72 90.1171) (xy 138.13 90.1171)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "b5394369-b7ea-46f7-baea-64d757cf807b")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 53.72 90.1171 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "fb210953-465e-4e32-b091-a851894f8403")
+	)
+	(polyline
+		(pts
+			(xy 54.72 83.4743) (xy 138.13 83.4743)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "c92d41a0-3745-40cb-801f-c91f7942cb6e")
+	)
+	(text "2"
+		(exclude_from_sim no)
+		(at 53.72 83.4743 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "0c57f7c5-c605-4065-acb5-2e88b655f70c")
+	)
+	(polyline
+		(pts
+			(xy 54.72 76.8314) (xy 138.13 76.8314)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "d9d2688b-4433-42c6-a0dc-8077946a2aed")
+	)
+	(text "3"
+		(exclude_from_sim no)
+		(at 53.72 76.8314 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "605a6e99-c5d2-4aa4-b5aa-58a26e024dd8")
+	)
+	(polyline
+		(pts
+			(xy 54.72 70.1886) (xy 138.13 70.1886)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "49cd9492-18dc-4f32-9169-9d84c6291f19")
+	)
+	(text "4"
+		(exclude_from_sim no)
+		(at 53.72 70.1886 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "9bc863cb-1241-4036-88d6-72d5821ded59")
+	)
+	(polyline
+		(pts
+			(xy 54.72 63.5457) (xy 138.13 63.5457)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "32e9cc94-f12f-496d-a0b2-2542e8cf7bba")
+	)
+	(text "5"
+		(exclude_from_sim no)
+		(at 53.72 63.5457 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "a0f6fa95-3303-4cf9-9ed8-7b054740a6b0")
+	)
+	(polyline
+		(pts
+			(xy 54.72 56.9029) (xy 138.13 56.9029)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "56b6c705-9297-4c56-b207-4c5d6abab10f")
+	)
+	(text "6"
+		(exclude_from_sim no)
+		(at 53.72 56.9029 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "0e08887b-5eaa-444f-a348-43e6ca648b95")
+	)
+	(polyline
+		(pts
+			(xy 54.72 50.26) (xy 138.13 50.26)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "69ed4c00-c5d2-4d64-8332-1f95a04b2602")
+	)
+	(text "7"
+		(exclude_from_sim no)
+		(at 53.72 50.26 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "2ba9cd96-d3b1-4d9f-bd75-9d93358201b9")
+	)
+	(rectangle
+		(start 54.72 50.26)
+		(end 138.13 96.76)
 		(stroke
 			(width 0.25)
 			(type default)
-			(color 0 0 0 1)
+			(color 120 120 120 1)
 		)
-		(uuid "f9c3c674-c48f-48f7-bbca-b3cf6e6e96dd")
+		(fill
+			(type none)
+		)
+		(uuid "35b56190-6ae3-4f27-9444-816740b94757")
+	)
+	(text "Temps [ms]"
+		(exclude_from_sim no)
+		(at 138.13 102.36 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "e8ee9051-240b-43ef-903d-61d86855083c")
+	)
+	(text "[V]"
+		(exclude_from_sim no)
+		(at 45.72 49.96 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "48ce5736-ea25-4bf9-a276-0a866374de68")
+	)
+	(polyline
+		(pts
+			(xy 54.72 96.76) (xy 61.7747 74.8462) (xy 64.4687 74.8569) (xy 67.164 74.854) (xy 69.8186 74.8495) (xy 72.4034 74.9065) (xy 75.0045 74.8454) (xy 77.66 74.8485) (xy 80.271 74.8472) (xy 82.8459 74.8534) (xy 85.0816 74.839) (xy 87.1115 74.839) (xy 89.2298 74.8388) (xy 91.3364 74.8415) (xy 93.4518 74.8416) (xy 95.6179 74.84) (xy 97.7613 74.8436) (xy 99.847 74.8387) (xy 101.939 74.8948) (xy 103.996 74.8391) (xy 106.061 74.84) (xy 108.104 74.8427) (xy 110.153 74.8912) (xy 112.204 74.8396) (xy 114.241 74.8391) (xy 116.299 74.8979) (xy 118.264 74.8404) (xy 120.096 74.8635) (xy 121.853 74.8405) (xy 123.468 74.8491) (xy 125.073 74.8437) (xy 126.512 74.8827) (xy 127.991 74.8814) (xy 129.423 74.8449) (xy 130.812 74.8465) (xy 132.083 74.8487) (xy 133.392 74.849) (xy 134.666 74.8487) (xy 135.902 74.8762) (xy 137.135 74.8737)
+		)
+		(stroke
+			(width 0.45)
+			(type solid)
+			(color 42 120 214 1)
+		)
+		(uuid "385e898c-5b83-4b4c-8884-adb6309a9ffe")
+	)
+	(text "+3.3V"
+		(exclude_from_sim no)
+		(at 138.135 74.8737 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 42 120 214 1)
+			)
+			(justify left)
+		)
+		(uuid "ab47c4f7-78fe-43e6-bfb9-98e55998b9f2")
+	)
+	(polyline
+		(pts
+			(xy 54.72 96.76) (xy 61.7747 75.4257) (xy 64.4687 74.4748) (xy 67.164 72.1764) (xy 69.8186 69.8734) (xy 72.4034 67.6954) (xy 75.0045 65.3182) (xy 77.66 62.6791) (xy 80.271 60.0194) (xy 82.8459 57.3974) (xy 85.0816 56.7339) (xy 87.1115 57.1507) (xy 89.2298 57.2258) (xy 91.3364 57.1637) (xy 93.4518 57.1415) (xy 95.6179 57.1523) (xy 97.7613 57.0898) (xy 99.847 57.1335) (xy 101.939 57.1711) (xy 103.996 57.1751) (xy 106.061 57.1521) (xy 108.104 57.1608) (xy 110.153 57.1487) (xy 112.204 57.1575) (xy 114.241 57.1606) (xy 116.299 57.1601) (xy 118.264 57.1708) (xy 120.096 57.1918) (xy 121.853 57.1761) (xy 123.468 57.1865) (xy 125.073 57.1718) (xy 126.512 57.2173) (xy 127.991 57.1726) (xy 129.423 57.1655) (xy 130.812 57.2185) (xy 132.083 57.2307) (xy 133.392 57.1729) (xy 134.666 57.1549) (xy 135.902 57.1609) (xy 137.135 57.1832)
+		)
+		(stroke
+			(width 0.45)
+			(type solid)
+			(color 235 104 52 1)
+		)
+		(uuid "3a125ac4-58a6-4b3c-a3b0-734d46e06f3d")
+	)
+	(text "+6V"
+		(exclude_from_sim no)
+		(at 138.135 57.1832 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 235 104 52 1)
+			)
+			(justify left)
+		)
+		(uuid "04c5d509-b355-4340-ae55-721160278efc")
+	)
+	(polyline
+		(pts
+			(xy 79.1782 50.26) (xy 79.1782 96.76)
+		)
+		(stroke
+			(width 0.25)
+			(type dash)
+			(color 235 104 52 1)
+		)
+		(uuid "89a2badb-a076-4e1c-b94c-508fc288e205")
+	)
+	(text "+6V à 90 % : 0.88 ms"
+		(exclude_from_sim no)
+		(at 79.9782 52.26 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.1 1.1)
+				(color 235 104 52 1)
+			)
+			(justify left top)
+		)
+		(uuid "87b76150-cd08-4b7f-9db3-583ef07d923c")
+	)
+	(text_box "COURANT DANS L1 AU DÉMARRAGE   ·   SIMULATION 01"
+		(exclude_from_sim no)
+		(at 156.21 41.91 0)
+		(size 105.41 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 162 22 34 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "59949dce-0648-4f3c-b5fc-f94218c783e6")
+	)
+	(rectangle
+		(start 165.21 53.515)
+		(end 248.62 54.445)
+		(stroke
+			(width 0.01)
+			(type default)
+			(color 250 220 220 1)
+		)
+		(fill
+			(type color)
+			(color 250 220 220 1)
+		)
+		(uuid "e5c06ec9-89f1-48dc-badd-9a5034c39023")
+	)
+	(polyline
+		(pts
+			(xy 165.21 50.26) (xy 165.21 96.76)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "588f0aed-8664-46e6-ae7f-84881c729b02")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 165.21 97.76 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "6d213dc8-fa25-42e6-8564-81f8b5e46a74")
+	)
+	(polyline
+		(pts
+			(xy 179.112 50.26) (xy 179.112 96.76)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "087feee3-d832-4847-bb38-32c4f63fadcb")
+	)
+	(text "0.5"
+		(exclude_from_sim no)
+		(at 179.112 97.76 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "229238c8-72f8-452f-8f53-b6551f04c99e")
+	)
+	(polyline
+		(pts
+			(xy 193.013 50.26) (xy 193.013 96.76)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "9ae9084d-fede-4467-a6cb-b79ed4e3fb56")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 193.013 97.76 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "a6653730-ad8b-4282-b8a5-a3db0cd2a400")
+	)
+	(polyline
+		(pts
+			(xy 206.915 50.26) (xy 206.915 96.76)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "3cf0c39f-f0fe-471a-ac6a-e51354bea9f7")
+	)
+	(text "1.5"
+		(exclude_from_sim no)
+		(at 206.915 97.76 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "55addb8a-01cd-45b9-b906-a97929f69a16")
+	)
+	(polyline
+		(pts
+			(xy 220.817 50.26) (xy 220.817 96.76)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "626e7150-ef24-4a92-ac30-7f9ce956bbe0")
+	)
+	(text "2"
+		(exclude_from_sim no)
+		(at 220.817 97.76 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "cc6e0033-d77c-4954-be91-f8bbe05c3332")
+	)
+	(polyline
+		(pts
+			(xy 234.718 50.26) (xy 234.718 96.76)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "d6b9c423-c4d3-4f27-949d-c0969b20b26e")
+	)
+	(text "2.5"
+		(exclude_from_sim no)
+		(at 234.718 97.76 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "c3c396fa-2032-4784-b18d-aa2a3c55044c")
+	)
+	(polyline
+		(pts
+			(xy 248.62 50.26) (xy 248.62 96.76)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "66b45da7-67a3-49e0-b846-0824f9c36e3b")
+	)
+	(text "3"
+		(exclude_from_sim no)
+		(at 248.62 97.76 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "417b4b90-919f-4e0e-858b-76ad4405474b")
+	)
+	(polyline
+		(pts
+			(xy 165.21 96.76) (xy 248.62 96.76)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "0ff55791-dd65-440a-aff9-e0c100d8dbc5")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 164.21 96.76 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "866fc936-75e5-41b5-8a4a-8a65296567c4")
+	)
+	(polyline
+		(pts
+			(xy 165.21 87.46) (xy 248.62 87.46)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "a9ccac12-20c5-4b55-8d51-a75f1da3bb24")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 164.21 87.46 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "4e215002-e60f-4670-b64c-cbd691abfd06")
+	)
+	(polyline
+		(pts
+			(xy 165.21 78.16) (xy 248.62 78.16)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "de43250a-1285-42a5-8cf3-83f72945e45a")
+	)
+	(text "2"
+		(exclude_from_sim no)
+		(at 164.21 78.16 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "25bfa2a0-0469-4102-9ba9-e74f2071bc65")
+	)
+	(polyline
+		(pts
+			(xy 165.21 68.86) (xy 248.62 68.86)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "6eb66af8-ba24-4204-84a4-7552092c13c9")
+	)
+	(text "3"
+		(exclude_from_sim no)
+		(at 164.21 68.86 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "870cb738-2d9d-4598-a928-7d9c3357de8b")
+	)
+	(polyline
+		(pts
+			(xy 165.21 59.56) (xy 248.62 59.56)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "f0935b1b-8fe6-4cda-91dd-19b04b8c0451")
+	)
+	(text "4"
+		(exclude_from_sim no)
+		(at 164.21 59.56 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "1ac2af7c-0a0b-4dc7-92b8-0bccb06b227a")
+	)
+	(polyline
+		(pts
+			(xy 165.21 50.26) (xy 248.62 50.26)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "5decb478-b755-45bc-bddf-38a039272802")
+	)
+	(text "5"
+		(exclude_from_sim no)
+		(at 164.21 50.26 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "935c9301-3af7-48f8-847e-f16547614687")
+	)
+	(rectangle
+		(start 165.21 50.26)
+		(end 248.62 96.76)
+		(stroke
+			(width 0.25)
+			(type default)
+			(color 120 120 120 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "14c91ad2-7f0f-4436-8689-bbeba53bc291")
+	)
+	(text "Temps [ms]"
+		(exclude_from_sim no)
+		(at 248.62 102.36 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "4d226b7a-0193-41a7-a759-985a35752f90")
+	)
+	(text "[A]"
+		(exclude_from_sim no)
+		(at 156.21 49.96 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "0298e76d-a3e2-4d77-a425-1a7905bfcf41")
+	)
+	(text "Isat L1 (−10 %) : 4.6 A"
+		(exclude_from_sim no)
+		(at 166.878 51.19 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.1 1.1)
+				(color 180 40 40 1)
+			)
+			(justify left)
+		)
+		(uuid "3be5839a-63b7-4f1f-a4bb-bfc4b2a4f80e")
+	)
+	(polyline
+		(pts
+			(xy 165.766 80.5387) (xy 166.878 68.5873) (xy 167.99 86.9483) (xy 169.102 95.2334) (xy 170.215 95.8005) (xy 171.327 92.1145) (xy 172.439 94.7324) (xy 173.551 94.1717) (xy 174.663 93.4794) (xy 175.775 92.9481) (xy 176.887 92.4922) (xy 178 92.0961) (xy 179.112 91.7346) (xy 180.224 91.394) (xy 181.336 91.0766) (xy 182.448 90.725) (xy 183.56 90.333) (xy 184.672 89.9248) (xy 185.785 89.5202) (xy 186.897 89.1604) (xy 188.009 88.8233) (xy 189.121 88.5225) (xy 190.233 88.2291) (xy 191.345 87.9394) (xy 192.457 87.6497) (xy 193.569 87.5267) (xy 194.681 89.1375) (xy 195.794 91.1346) (xy 196.906 91.2151) (xy 198.018 90.7344) (xy 199.13 90.6241) (xy 200.242 90.5492) (xy 201.354 90.5487) (xy 202.466 90.5805) (xy 203.579 90.6238) (xy 204.691 90.6451) (xy 205.803 90.6579) (xy 206.915 90.6684) (xy 208.027 90.8431) (xy 209.139 91.1933) (xy 210.251 91.2477) (xy 211.363 91.202) (xy 212.476 91.1247) (xy 213.588 91.0447) (xy 214.7 91.0417) (xy 215.812 91.0589) (xy 216.924 91.0864) (xy 218.036 91.0986) (xy 219.149 91.0955) (xy 220.261 91.0904) (xy 221.373 91.0876) (xy 222.485 91.086) (xy 223.597 91.0848) (xy 224.709 91.0848) (xy 225.821 91.0873) (xy 226.933 91.1121) (xy 228.046 91.4291) (xy 229.158 91.6546) (xy 230.27 91.7082) (xy 231.382 91.8811) (xy 232.494 92.0098) (xy 233.606 92.1623) (xy 234.718 92.2003) (xy 235.831 92.4261) (xy 236.943 92.4833) (xy 238.055 92.4934) (xy 239.167 92.6328) (xy 240.279 92.8027) (xy 241.391 92.9802) (xy 242.503 92.8309) (xy 243.615 92.8593) (xy 244.727 92.9969) (xy 245.84 93.115) (xy 246.952 93.2001) (xy 248.064 93.2898)
+		)
+		(stroke
+			(width 0.4)
+			(type solid)
+			(color 42 120 214 1)
+		)
+		(uuid "fb308b73-ddfd-422e-b6dd-634e1622fcba")
+	)
+	(text "crête"
+		(exclude_from_sim no)
+		(at 249.064 93.2898 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 42 120 214 1)
+			)
+			(justify left)
+		)
+		(uuid "6100d8a7-3da2-496f-9e2d-35bddf448667")
+	)
+	(polyline
+		(pts
+			(xy 166.129 68.5873) (xy 167.529 68.5873)
+		)
+		(stroke
+			(width 0.9)
+			(type solid)
+			(color 180 40 40 1)
+		)
+		(uuid "5fbb8381-6f86-45c7-9022-82b2cea996eb")
+	)
+	(text "pic d'appel 3.03 A à 58 µs"
+		(exclude_from_sim no)
+		(at 170.165 68.5873 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.1 1.1)
+				(color 180 40 40 1)
+			)
+			(justify left)
+		)
+		(uuid "ad744939-9fda-48c9-8241-cee13dfacd8c")
+	)
+	(text_box "RAILS ANALOGIQUES   ·   SIMULATION 02"
+		(exclude_from_sim no)
+		(at 267.97 41.91 0)
+		(size 105.41 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 162 22 34 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "9c3b0c27-61bb-4973-896a-86fb533925c7")
+	)
+	(polyline
+		(pts
+			(xy 276.97 50.26) (xy 276.97 96.76)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "bcd70e08-94b1-47f2-b079-2acdc76022a2")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 276.97 97.76 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "d62d0e0f-f837-4506-a3c5-a42a2b744997")
+	)
+	(polyline
+		(pts
+			(xy 293.652 50.26) (xy 293.652 96.76)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "0ebacf4d-1fe8-49ed-921c-15954d1150e9")
+	)
+	(text "20"
+		(exclude_from_sim no)
+		(at 293.652 97.76 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "dbd5fbf7-4b44-4724-a32b-8bbf945968b7")
+	)
+	(polyline
+		(pts
+			(xy 310.334 50.26) (xy 310.334 96.76)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "a9b9ed68-8670-4080-8f86-39e4fa0659c5")
+	)
+	(text "40"
+		(exclude_from_sim no)
+		(at 310.334 97.76 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "e56098e2-deea-41aa-a489-d1c3b9bcc7ed")
+	)
+	(polyline
+		(pts
+			(xy 327.016 50.26) (xy 327.016 96.76)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "f45f13a7-72d7-428c-bb18-30064d8fd5a2")
+	)
+	(text "60"
+		(exclude_from_sim no)
+		(at 327.016 97.76 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "fab3fffe-9291-46bf-840d-96e73e55fecf")
+	)
+	(polyline
+		(pts
+			(xy 343.698 50.26) (xy 343.698 96.76)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "54798197-562a-41b9-bd49-3532ae9f71b9")
+	)
+	(text "80"
+		(exclude_from_sim no)
+		(at 343.698 97.76 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "42df29fa-d53c-452c-afaf-1b6734f7963c")
+	)
+	(polyline
+		(pts
+			(xy 360.38 50.26) (xy 360.38 96.76)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "9a5c4669-bed9-4600-8078-e181b47746cc")
+	)
+	(text "100"
+		(exclude_from_sim no)
+		(at 360.38 97.76 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "d1e26c38-5ca7-432e-8905-330249d54819")
+	)
+	(polyline
+		(pts
+			(xy 276.97 96.76) (xy 360.38 96.76)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "7a20f894-925c-449c-a69c-bccc4c8b5c1a")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 275.97 96.76 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "f6d6a6ff-6429-4d5f-9476-4e52ecf54c22")
+	)
+	(polyline
+		(pts
+			(xy 276.97 90.1171) (xy 360.38 90.1171)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "813d6762-723c-4b8e-8681-ca05acd26c50")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 275.97 90.1171 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "10d52d15-b687-4d40-a638-21a4bedb898a")
+	)
+	(polyline
+		(pts
+			(xy 276.97 83.4743) (xy 360.38 83.4743)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "7a440b00-0b7c-450b-9bdb-8a9e886a73d0")
+	)
+	(text "2"
+		(exclude_from_sim no)
+		(at 275.97 83.4743 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "c838fdd3-3201-4d95-8287-a08f47678b62")
+	)
+	(polyline
+		(pts
+			(xy 276.97 76.8314) (xy 360.38 76.8314)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "696a7466-4f1a-4929-a8ad-baf04d4fc8f1")
+	)
+	(text "3"
+		(exclude_from_sim no)
+		(at 275.97 76.8314 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "193ec9fc-541e-4b93-9207-8b6541c0bb91")
+	)
+	(polyline
+		(pts
+			(xy 276.97 70.1886) (xy 360.38 70.1886)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "13dde9fb-8a9c-4248-8231-f83199dff524")
+	)
+	(text "4"
+		(exclude_from_sim no)
+		(at 275.97 70.1886 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "6b993782-6431-4e49-a740-0f5819b58728")
+	)
+	(polyline
+		(pts
+			(xy 276.97 63.5457) (xy 360.38 63.5457)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "c79bf131-5323-46ba-a358-a31eddd6e7d7")
+	)
+	(text "5"
+		(exclude_from_sim no)
+		(at 275.97 63.5457 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "0599a2d7-9195-4f62-8bd1-8bf48c016c71")
+	)
+	(polyline
+		(pts
+			(xy 276.97 56.9029) (xy 360.38 56.9029)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "f0dcc4d6-04b1-4ff5-bf20-440fbe75d0b4")
+	)
+	(text "6"
+		(exclude_from_sim no)
+		(at 275.97 56.9029 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "cebf8df2-8708-4ad4-a6a3-e4038f691731")
+	)
+	(polyline
+		(pts
+			(xy 276.97 50.26) (xy 360.38 50.26)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "350eaeff-52aa-465a-ac7f-56668f2b5e7e")
+	)
+	(text "7"
+		(exclude_from_sim no)
+		(at 275.97 50.26 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "87385c18-c0ff-4385-ae39-49e234eca8c9")
+	)
+	(rectangle
+		(start 276.97 50.26)
+		(end 360.38 96.76)
+		(stroke
+			(width 0.25)
+			(type default)
+			(color 120 120 120 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "df54ea57-985f-411f-8d3c-7416647e04b1")
+	)
+	(text "Temps [ms]"
+		(exclude_from_sim no)
+		(at 360.38 102.36 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "9dc95f37-ce62-4597-b4eb-735ee47f5723")
+	)
+	(text "[V]"
+		(exclude_from_sim no)
+		(at 267.97 49.96 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "f5611053-295a-4314-a627-5ffc4f127df9")
+	)
+	(polyline
+		(pts
+			(xy 276.97 96.76) (xy 276.989 95.8458) (xy 277.019 94.4588) (xy 277.032 93.9128) (xy 277.043 93.3392) (xy 277.058 92.5837) (xy 277.141 88.6514) (xy 277.142 88.576) (xy 277.249 83.5073) (xy 277.254 83.2708) (xy 277.382 77.1843) (xy 277.389 76.8664) (xy 277.593 67.1977) (xy 277.971 57.1755) (xy 278.404 57.1756) (xy 278.664 57.1746) (xy 279.11 57.1747) (xy 279.544 57.1747) (xy 279.914 57.1747) (xy 280.176 57.1739) (xy 280.627 57.1738) (xy 281.06 57.1738) (xy 281.494 57.1737) (xy 281.928 57.1737) (xy 282.294 57.1737) (xy 282.305 57.1739) (xy 282.503 57.1738) (xy 282.937 57.1737) (xy 283.387 57.1737) (xy 283.821 57.1737) (xy 284.254 57.1736) (xy 284.688 57.1736) (xy 285.139 57.1736) (xy 285.572 57.1736) (xy 286.006 57.1735) (xy 286.456 57.1735) (xy 286.89 57.1735) (xy 287.324 57.1735) (xy 287.758 57.1734) (xy 288.208 57.1734) (xy 288.642 57.1734) (xy 289.075 57.1734) (xy 289.509 57.1734) (xy 289.96 57.1734) (xy 290.393 57.1733) (xy 290.827 57.1733) (xy 291.261 57.1733) (xy 291.711 57.1733) (xy 292.145 57.1733) (xy 292.579 57.1733) (xy 293.012 57.1733) (xy 293.463 57.1733) (xy 293.897 57.1733) (xy 294.33 57.1732) (xy 294.764 57.1732) (xy 295.214 57.1732) (xy 295.648 57.1732) (xy 296.082 57.1732) (xy 296.516 57.1732) (xy 296.966 57.1732) (xy 297.4 57.1732) (xy 297.834 57.1732) (xy 298.267 57.1732) (xy 298.718 57.1732) (xy 299.151 57.1732) (xy 299.585 57.1732) (xy 300.019 57.1732) (xy 300.469 57.1732) (xy 300.903 57.1732) (xy 301.337 57.1732) (xy 301.787 57.1731) (xy 302.221 57.1731) (xy 302.655 57.1731) (xy 303.088 57.1731) (xy 303.539 57.1731) (xy 303.973 57.1731) (xy 304.406 57.1731) (xy 304.84 57.1731) (xy 305.29 57.1731) (xy 305.724 57.1731) (xy 306.158 57.1731) (xy 306.592 57.1731) (xy 307.042 57.1731) (xy 307.476 57.1731) (xy 307.909 57.1731) (xy 308.343 57.1731) (xy 308.794 57.1731) (xy 309.227 57.1731) (xy 309.661 57.1731) (xy 310.095 57.1731) (xy 310.545 57.1731) (xy 310.979 57.1731) (xy 311.413 57.1731) (xy 311.846 57.1731) (xy 312.297 57.1731) (xy 312.731 57.1731) (xy 313.164 57.1731) (xy 313.598 57.1731) (xy 314.048 57.1731) (xy 314.482 57.1731) (xy 314.916 57.1731) (xy 315.366 57.1731) (xy 315.8 57.1731) (xy 316.234 57.1731) (xy 316.668 57.1731) (xy 317.118 57.1731) (xy 317.552 57.1731) (xy 317.985 57.1731) (xy 318.419 57.1731) (xy 318.87 57.1731) (xy 319.303 57.1731) (xy 319.737 57.1731) (xy 320.171 57.1731) (xy 320.621 57.1731) (xy 321.055 57.1731) (xy 321.489 57.1731) (xy 321.922 57.1731) (xy 322.373 57.1731) (xy 322.807 57.1731) (xy 323.24 57.1731) (xy 323.674 57.1731) (xy 324.124 57.1731) (xy 324.558 57.1731) (xy 324.992 57.1731) (xy 325.426 57.1731) (xy 325.876 57.1731) (xy 326.31 57.1731) (xy 326.743 57.1731) (xy 327.177 57.1731) (xy 327.628 57.1731) (xy 328.061 57.1731) (xy 328.495 57.1731) (xy 328.929 57.1731) (xy 329.379 57.1731) (xy 329.813 57.1731) (xy 330.247 57.1731) (xy 330.697 57.1731) (xy 331.131 57.1731) (xy 331.565 57.1731) (xy 331.998 57.1731) (xy 332.449 57.1731) (xy 332.882 57.1731) (xy 333.316 57.1731) (xy 333.75 57.1731) (xy 334.2 57.1731) (xy 334.634 57.1731) (xy 335.068 57.1731) (xy 335.502 57.1731) (xy 335.952 57.1731) (xy 336.386 57.1731) (xy 336.819 57.1731) (xy 337.253 57.1731) (xy 337.704 57.1731) (xy 338.137 57.1731) (xy 338.571 57.1731) (xy 339.005 57.1731) (xy 339.455 57.1731) (xy 339.889 57.1731) (xy 340.323 57.1731) (xy 340.756 57.1731) (xy 341.207 57.1731) (xy 341.64 57.1731) (xy 342.074 57.1731) (xy 342.508 57.1731) (xy 342.958 57.1731) (xy 343.392 57.1731) (xy 343.826 57.1731) (xy 344.276 57.1731) (xy 344.71 57.1731) (xy 345.144 57.1731) (xy 345.577 57.1731) (xy 346.028 57.1731) (xy 346.462 57.1731) (xy 346.895 57.1731) (xy 347.329 57.1731) (xy 347.779 57.1731) (xy 348.213 57.1731) (xy 348.647 57.1731) (xy 349.081 57.1731) (xy 349.531 57.1731) (xy 349.965 57.1731) (xy 350.399 57.1731) (xy 350.832 57.1731) (xy 351.283 57.1731) (xy 351.716 57.1731) (xy 352.15 57.1731) (xy 352.584 57.1731) (xy 353.034 57.1731) (xy 353.468 57.1731) (xy 353.902 57.1731) (xy 354.336 57.1731) (xy 354.786 57.1731) (xy 355.22 57.1731) (xy 355.653 57.1731) (xy 356.087 57.1731) (xy 356.538 57.1731) (xy 356.971 57.1731) (xy 357.405 57.1731) (xy 357.839 57.1731) (xy 358.289 57.1731) (xy 358.723 57.1731) (xy 359.157 57.1731) (xy 359.607 57.1731) (xy 360.041 57.1731)
+		)
+		(stroke
+			(width 0.45)
+			(type solid)
+			(color 235 104 52 1)
+		)
+		(uuid "73e4a16e-483c-40b6-a967-2d9a62ff49d2")
+	)
+	(text "+6V"
+		(exclude_from_sim no)
+		(at 361.041 57.1731 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 235 104 52 1)
+			)
+			(justify left)
+		)
+		(uuid "1d1e2b0b-b804-4946-bf69-884fa130cfa5")
+	)
+	(polyline
+		(pts
+			(xy 276.97 96.76) (xy 276.989 96.76) (xy 277.019 96.76) (xy 277.032 96.76) (xy 277.043 96.76) (xy 277.058 93.568) (xy 277.141 89.5841) (xy 277.142 89.6036) (xy 277.249 92.785) (xy 277.254 92.9351) (xy 277.382 96.7558) (xy 277.389 96.76) (xy 277.593 96.6161) (xy 277.971 96.2388) (xy 278.404 95.559) (xy 278.664 95.0385) (xy 279.11 93.9623) (xy 279.544 92.7182) (xy 279.914 91.5173) (xy 280.176 90.6422) (xy 280.627 89.2013) (xy 281.06 87.8856) (xy 281.494 86.6371) (xy 281.928 85.4524) (xy 282.294 84.5001) (xy 282.305 84.4721) (xy 282.503 83.9745) (xy 282.937 82.9261) (xy 283.387 81.8943) (xy 283.821 80.9527) (xy 284.254 80.0593) (xy 284.688 79.2119) (xy 285.139 78.3778) (xy 285.572 77.6167) (xy 286.006 76.8947) (xy 286.456 76.1841) (xy 286.89 75.5357) (xy 287.324 74.9206) (xy 287.758 74.3371) (xy 288.208 73.7628) (xy 288.642 73.2388) (xy 289.075 72.7417) (xy 289.509 72.2702) (xy 289.96 71.8061) (xy 290.393 71.3826) (xy 290.827 70.9809) (xy 291.261 70.5998) (xy 291.711 70.2248) (xy 292.145 69.8826) (xy 292.579 69.5579) (xy 293.012 69.25) (xy 293.463 68.9469) (xy 293.897 68.6703) (xy 294.33 68.4079) (xy 294.764 68.159) (xy 295.214 67.9141) (xy 295.648 67.6905) (xy 296.082 67.4785) (xy 296.516 67.2773) (xy 296.966 67.0793) (xy 297.4 66.8986) (xy 297.834 66.7272) (xy 298.267 66.5646) (xy 298.718 66.4045) (xy 299.151 66.2585) (xy 299.585 66.1199) (xy 300.019 65.9885) (xy 300.469 65.8591) (xy 300.903 65.741) (xy 301.337 65.629) (xy 301.787 65.5187) (xy 302.221 65.4181) (xy 302.655 65.3226) (xy 303.088 65.2321) (xy 303.539 65.1429) (xy 303.973 65.0615) (xy 304.406 64.9843) (xy 304.84 64.9111) (xy 305.29 64.839) (xy 305.724 64.7732) (xy 306.158 64.7108) (xy 306.592 64.6515) (xy 307.042 64.5932) (xy 307.476 64.54) (xy 307.909 64.4895) (xy 308.343 64.4416) (xy 308.794 64.3944) (xy 309.227 64.3514) (xy 309.661 64.3105) (xy 310.095 64.2718) (xy 310.545 64.2336) (xy 310.979 64.1988) (xy 311.413 64.1657) (xy 311.846 64.1343) (xy 312.297 64.1035) (xy 312.731 64.0753) (xy 313.164 64.0485) (xy 313.598 64.0231) (xy 314.048 63.9981) (xy 314.482 63.9753) (xy 314.916 63.9537) (xy 315.366 63.9323) (xy 315.8 63.9129) (xy 316.234 63.8944) (xy 316.668 63.8769) (xy 317.118 63.8596) (xy 317.552 63.8438) (xy 317.985 63.8289) (xy 318.419 63.8147) (xy 318.87 63.8007) (xy 319.303 63.7879) (xy 319.737 63.7758) (xy 320.171 63.7643) (xy 320.621 63.753) (xy 321.055 63.7427) (xy 321.489 63.7328) (xy 321.922 63.7235) (xy 322.373 63.7143) (xy 322.807 63.706) (xy 323.24 63.698) (xy 323.674 63.6904) (xy 324.124 63.683) (xy 324.558 63.6762) (xy 324.992 63.6698) (xy 325.426 63.6636) (xy 325.876 63.6576) (xy 326.31 63.6521) (xy 326.743 63.6469) (xy 327.177 63.6419) (xy 327.628 63.637) (xy 328.061 63.6325) (xy 328.495 63.6283) (xy 328.929 63.6242) (xy 329.379 63.6203) (xy 329.813 63.6166) (xy 330.247 63.6132) (xy 330.697 63.6098) (xy 331.131 63.6067) (xy 331.565 63.6038) (xy 331.998 63.601) (xy 332.449 63.5982) (xy 332.882 63.5957) (xy 333.316 63.5933) (xy 333.75 63.591) (xy 334.2 63.5888) (xy 334.634 63.5867) (xy 335.068 63.5848) (xy 335.502 63.5829) (xy 335.952 63.5811) (xy 336.386 63.5794) (xy 336.819 63.5779) (xy 337.253 63.5764) (xy 337.704 63.5749) (xy 338.137 63.5735) (xy 338.571 63.5722) (xy 339.005 63.571) (xy 339.455 63.5698) (xy 339.889 63.5687) (xy 340.323 63.5677) (xy 340.756 63.5667) (xy 341.207 63.5657) (xy 341.64 63.5648) (xy 342.074 63.5639) (xy 342.508 63.5631) (xy 342.958 63.5623) (xy 343.392 63.5616) (xy 343.826 63.5609) (xy 344.276 63.5602) (xy 344.71 63.5596) (xy 345.144 63.559) (xy 345.577 63.5584) (xy 346.028 63.5579) (xy 346.462 63.5573) (xy 346.895 63.5569) (xy 347.329 63.5564) (xy 347.779 63.5559) (xy 348.213 63.5555) (xy 348.647 63.5551) (xy 349.081 63.5547) (xy 349.531 63.5544) (xy 349.965 63.554) (xy 350.399 63.5537) (xy 350.832 63.5534) (xy 351.283 63.5531) (xy 351.716 63.5528) (xy 352.15 63.5525) (xy 352.584 63.5523) (xy 353.034 63.552) (xy 353.468 63.5518) (xy 353.902 63.5516) (xy 354.336 63.5514) (xy 354.786 63.5512) (xy 355.22 63.551) (xy 355.653 63.5508) (xy 356.087 63.5506) (xy 356.538 63.5505) (xy 356.971 63.5503) (xy 357.405 63.5502) (xy 357.839 63.55) (xy 358.289 63.5499) (xy 358.723 63.5498) (xy 359.157 63.5496) (xy 359.607 63.5495) (xy 360.041 63.5494)
+		)
+		(stroke
+			(width 0.45)
+			(type solid)
+			(color 27 175 122 1)
+		)
+		(uuid "f0923bdc-37cb-4a22-91e4-dfffd5e2ddc7")
+	)
+	(text "+5VA"
+		(exclude_from_sim no)
+		(at 361.041 63.5494 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 27 175 122 1)
+			)
+			(justify left)
+		)
+		(uuid "7fb45c5d-62df-472c-b178-b3ba86d4569b")
+	)
+	(polyline
+		(pts
+			(xy 276.97 96.76) (xy 276.989 96.76) (xy 277.019 96.76) (xy 277.032 96.6316) (xy 277.043 94.0633) (xy 277.058 93.2292) (xy 277.141 89.3208) (xy 277.142 89.3057) (xy 277.249 89.3136) (xy 277.254 89.3139) (xy 277.382 89.3236) (xy 277.389 89.3242) (xy 277.593 89.3397) (xy 277.971 89.369) (xy 278.404 89.4032) (xy 278.664 89.4236) (xy 279.11 89.4588) (xy 279.544 89.493) (xy 279.914 89.5222) (xy 280.176 89.5428) (xy 280.627 89.5783) (xy 281.06 89.6125) (xy 281.494 89.6467) (xy 281.928 89.6809) (xy 282.294 89.7098) (xy 282.305 89.6928) (xy 282.503 89.4551) (xy 282.937 88.9712) (xy 283.387 88.4952) (xy 283.821 88.0613) (xy 284.254 87.6499) (xy 284.688 87.26) (xy 285.139 86.8766) (xy 285.572 86.527) (xy 286.006 86.1957) (xy 286.456 85.8698) (xy 286.89 85.5728) (xy 287.324 85.2912) (xy 287.758 85.0243) (xy 288.208 84.7618) (xy 288.642 84.5225) (xy 289.075 84.2957) (xy 289.509 84.0807) (xy 289.96 83.8693) (xy 290.393 83.6766) (xy 290.827 83.4939) (xy 291.261 83.3207) (xy 291.711 83.1504) (xy 292.145 82.9951) (xy 292.579 82.848) (xy 293.012 82.7084) (xy 293.463 82.5712) (xy 293.897 82.4461) (xy 294.33 82.3276) (xy 294.764 82.2152) (xy 295.214 82.1046) (xy 295.648 82.0038) (xy 296.082 81.9083) (xy 296.516 81.8177) (xy 296.966 81.7286) (xy 297.4 81.6474) (xy 297.834 81.5703) (xy 298.267 81.4973) (xy 298.718 81.4255) (xy 299.151 81.36) (xy 299.585 81.298) (xy 300.019 81.2391) (xy 300.469 81.1812) (xy 300.903 81.1284) (xy 301.337 81.0784) (xy 301.787 81.0292) (xy 302.221 80.9843) (xy 302.655 80.9417) (xy 303.088 80.9013) (xy 303.539 80.8616) (xy 303.973 80.8254) (xy 304.406 80.791) (xy 304.84 80.7585) (xy 305.29 80.7265) (xy 305.724 80.6972) (xy 306.158 80.6695) (xy 306.592 80.6432) (xy 307.042 80.6174) (xy 307.476 80.5938) (xy 307.909 80.5715) (xy 308.343 80.5502) (xy 308.794 80.5294) (xy 309.227 80.5103) (xy 309.661 80.4923) (xy 310.095 80.4752) (xy 310.545 80.4583) (xy 310.979 80.4429) (xy 311.413 80.4284) (xy 311.846 80.4145) (xy 312.297 80.4009) (xy 312.731 80.3885) (xy 313.164 80.3767) (xy 313.598 80.3655) (xy 314.048 80.3545) (xy 314.482 80.3445) (xy 314.916 80.335) (xy 315.366 80.3256) (xy 315.8 80.317) (xy 316.234 80.3089) (xy 316.668 80.3012) (xy 317.118 80.2936) (xy 317.552 80.2867) (xy 317.985 80.2801) (xy 318.419 80.2739) (xy 318.87 80.2678) (xy 319.303 80.2622) (xy 319.737 80.2568) (xy 320.171 80.2518) (xy 320.621 80.2468) (xy 321.055 80.2423) (xy 321.489 80.238) (xy 321.922 80.2339) (xy 322.373 80.2299) (xy 322.807 80.2262) (xy 323.24 80.2227) (xy 323.674 80.2194) (xy 324.124 80.2161) (xy 324.558 80.2131) (xy 324.992 80.2103) (xy 325.426 80.2076) (xy 325.876 80.205) (xy 326.31 80.2025) (xy 326.743 80.2002) (xy 327.177 80.1981) (xy 327.628 80.1959) (xy 328.061 80.194) (xy 328.495 80.1921) (xy 328.929 80.1903) (xy 329.379 80.1886) (xy 329.813 80.187) (xy 330.247 80.1855) (xy 330.697 80.184) (xy 331.131 80.1826) (xy 331.565 80.1813) (xy 331.998 80.1801) (xy 332.449 80.1788) (xy 332.882 80.1777) (xy 333.316 80.1767) (xy 333.75 80.1757) (xy 334.2 80.1747) (xy 334.634 80.1738) (xy 335.068 80.1729) (xy 335.502 80.1721) (xy 335.952 80.1713) (xy 336.386 80.1705) (xy 336.819 80.1698) (xy 337.253 80.1692) (xy 337.704 80.1685) (xy 338.137 80.1679) (xy 338.571 80.1673) (xy 339.005 80.1668) (xy 339.455 80.1662) (xy 339.889 80.1658) (xy 340.323 80.1653) (xy 340.756 80.1648) (xy 341.207 80.1644) (xy 341.64 80.164) (xy 342.074 80.1636) (xy 342.508 80.1632) (xy 342.958 80.1629) (xy 343.392 80.1626) (xy 343.826 80.1622) (xy 344.276 80.1619) (xy 344.71 80.1616) (xy 345.144 80.1614) (xy 345.577 80.1611) (xy 346.028 80.1609) (xy 346.462 80.1606) (xy 346.895 80.1604) (xy 347.329 80.1602) (xy 347.779 80.16) (xy 348.213 80.1598) (xy 348.647 80.1596) (xy 349.081 80.1594) (xy 349.531 80.1593) (xy 349.965 80.1591) (xy 350.399 80.1589) (xy 350.832 80.1588) (xy 351.283 80.1587) (xy 351.716 80.1585) (xy 352.15 80.1584) (xy 352.584 80.1583) (xy 353.034 80.1582) (xy 353.468 80.1581) (xy 353.902 80.158) (xy 354.336 80.1579) (xy 354.786 80.1578) (xy 355.22 80.1577) (xy 355.653 80.1576) (xy 356.087 80.1575) (xy 356.538 80.1574) (xy 356.971 80.1573) (xy 357.405 80.1573) (xy 357.839 80.1572) (xy 358.289 80.1571) (xy 358.723 80.1571) (xy 359.157 80.157) (xy 359.607 80.157) (xy 360.041 80.1569)
+		)
+		(stroke
+			(width 0.45)
+			(type solid)
+			(color 237 161 0 1)
+		)
+		(uuid "2b3a4061-32af-4bae-ba43-f83a9817a1c1")
+	)
+	(text "+2.5VA"
+		(exclude_from_sim no)
+		(at 361.041 80.1569 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 237 161 0 1)
+			)
+			(justify left)
+		)
+		(uuid "ad6c641c-252f-4397-86f7-b5468b88fc15")
+	)
+	(polyline
+		(pts
+			(xy 316.651 50.26) (xy 316.651 96.76)
+		)
+		(stroke
+			(width 0.25)
+			(type dash)
+			(color 27 175 122 1)
+		)
+		(uuid "7772d44a-8921-4746-8f0a-5290eb7e9413")
+	)
+	(text "1 % : 48 ms"
+		(exclude_from_sim no)
+		(at 317.451 52.26 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.1 1.1)
+				(color 27 175 122 1)
+			)
+			(justify left top)
+		)
+		(uuid "e634246e-c4d1-4923-a965-a0157ea1d047")
+	)
+	(polyline
+		(pts
+			(xy 336.536 50.26) (xy 336.536 96.76)
+		)
+		(stroke
+			(width 0.25)
+			(type dash)
+			(color 70 70 70 1)
+		)
+		(uuid "830cb778-e2c7-445a-a424-e15eb71bdb28")
+	)
+	(text "0.1 % : 71 ms"
+		(exclude_from_sim no)
+		(at 337.336 52.26 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.1 1.1)
+				(color 70 70 70 1)
+			)
+			(justify left top)
+		)
+		(uuid "15ad3fd8-b0dc-4cd0-a7d6-b7ac20793cf5")
+	)
+	(text_box "RIPPLE SUR +6V EN RÉGIME ÉTABLI   ·   SIMULATION 03"
+		(exclude_from_sim no)
+		(at 45.72 108.59 0)
+		(size 105.41 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 162 22 34 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "20732163-ae91-44da-b206-aef487f6acae")
+	)
+	(polyline
+		(pts
+			(xy 54.72 116.94) (xy 54.72 153.44)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "7a457e21-c90a-4765-9894-3664f4a8e00f")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 54.72 154.44 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "f5d5ae8a-10b7-428d-a04f-a20bacc82c3a")
+	)
+	(polyline
+		(pts
+			(xy 71.402 116.94) (xy 71.402 153.44)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "fe710fb2-4236-485f-9c1c-1063f374c88a")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 71.402 154.44 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "eff91d72-a989-4a3d-9fdc-e034da28f47c")
+	)
+	(polyline
+		(pts
+			(xy 88.084 116.94) (xy 88.084 153.44)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "da2ddd69-5384-4923-b56a-84504f4acf1f")
+	)
+	(text "2"
+		(exclude_from_sim no)
+		(at 88.084 154.44 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "c60abd91-000a-45b4-9c2f-21049a96ec4b")
+	)
+	(polyline
+		(pts
+			(xy 104.766 116.94) (xy 104.766 153.44)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "dcc37ba3-08d7-462a-a984-a3b876ddd138")
+	)
+	(text "3"
+		(exclude_from_sim no)
+		(at 104.766 154.44 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "133e3865-3654-4bec-9198-52f4bf9ce50a")
+	)
+	(polyline
+		(pts
+			(xy 121.448 116.94) (xy 121.448 153.44)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "b807a3dd-7684-4ffb-8949-fd861279b4f1")
+	)
+	(text "4"
+		(exclude_from_sim no)
+		(at 121.448 154.44 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "dd4dd428-6d35-4dca-8383-b46718a45bba")
+	)
+	(polyline
+		(pts
+			(xy 138.13 116.94) (xy 138.13 153.44)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "cdfd3fa3-a636-4a6c-839d-43c480c1ca6a")
+	)
+	(text "5"
+		(exclude_from_sim no)
+		(at 138.13 154.44 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "c5546751-4bff-4f43-af11-6c24a65626db")
+	)
+	(polyline
+		(pts
+			(xy 54.72 153.44) (xy 138.13 153.44)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "baa43d7f-a28a-449f-a2af-596d658264a6")
+	)
+	(text "-1"
+		(exclude_from_sim no)
+		(at 53.72 153.44 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "21b7c27c-0abc-4c97-bfdd-63dc28657879")
+	)
+	(polyline
+		(pts
+			(xy 54.72 144.315) (xy 138.13 144.315)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "3ad3063b-a3fb-4df3-a179-bb1f616c152d")
+	)
+	(text "-0.5"
+		(exclude_from_sim no)
+		(at 53.72 144.315 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "7c40bb2c-95b2-4a71-843f-cdb5f9239dc8")
+	)
+	(polyline
+		(pts
+			(xy 54.72 135.19) (xy 138.13 135.19)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "44a047e8-6891-44c4-ac2b-37e5971a84ca")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 53.72 135.19 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "34cf9044-bdd2-4ebd-a931-227f6a432991")
+	)
+	(polyline
+		(pts
+			(xy 54.72 126.065) (xy 138.13 126.065)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "6c76ea3d-b718-491b-a044-4bb2c9fe66ab")
+	)
+	(text "0.5"
+		(exclude_from_sim no)
+		(at 53.72 126.065 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "9766bb21-09d4-42ab-898d-6436b963874e")
+	)
+	(polyline
+		(pts
+			(xy 54.72 116.94) (xy 138.13 116.94)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "f0381403-74dd-497a-87ee-af47835b5fbd")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 53.72 116.94 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "a17d1768-be12-425f-9cd0-bfc8db31b09a")
+	)
+	(rectangle
+		(start 54.72 116.94)
+		(end 138.13 153.44)
+		(stroke
+			(width 0.25)
+			(type default)
+			(color 120 120 120 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "c6b54aca-4a5a-4213-935a-e2c4d1675b1a")
+	)
+	(text "Temps [µs]"
+		(exclude_from_sim no)
+		(at 138.13 159.04 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "e605679a-5eeb-406b-bdfe-101dddc42874")
+	)
+	(text "[mV]"
+		(exclude_from_sim no)
+		(at 45.72 116.64 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "c52e8c10-4d02-4a8c-878f-64a6da5e1979")
+	)
+	(polyline
+		(pts
+			(xy 54.72 128.083) (xy 55.3873 129.675) (xy 56.0927 132.643) (xy 56.4761 133.965) (xy 56.5506 134.043) (xy 56.5613 134.052) (xy 56.5633 134.052) (xy 56.578 134.052) (xy 56.609 134.043) (xy 56.6359 134.078) (xy 56.6528 134.113) (xy 56.7569 134.148) (xy 56.8718 134.2) (xy 56.912 134.235) (xy 56.9336 134.261) (xy 56.9738 134.322) (xy 57.0913 134.574) (xy 57.1379 141.275) (xy 57.1614 135.384) (xy 57.2214 135.488) (xy 57.3292 135.74) (xy 57.5409 136.237) (xy 58.0728 137.498) (xy 58.1554 137.698) (xy 58.1941 137.786) (xy 58.4989 138.508) (xy 59.2496 140.283) (xy 60.0003 142.058) (xy 60.1513 142.415) (xy 60.2095 142.546) (xy 60.2807 142.641) (xy 60.3551 136.306) (xy 60.3737 135.349) (xy 60.4224 134.757) (xy 60.5092 133.974) (xy 60.5809 133.417) (xy 60.6649 132.825) (xy 61.2174 129.91) (xy 61.9681 127.987) (xy 62.6354 127.813) (xy 63.3861 129.162) (xy 64.0533 131.668) (xy 64.6191 133.93) (xy 64.6958 134.026) (xy 64.7267 134.052) (xy 64.7282 134.052) (xy 64.7403 134.061) (xy 64.7637 134.035) (xy 64.7979 134.078) (xy 64.8113 134.096) (xy 64.8936 134.139) (xy 65.025 134.191) (xy 65.0657 134.226) (xy 65.0978 134.261) (xy 65.1186 134.287) (xy 65.2439 134.531) (xy 65.2923 139.126) (xy 65.3199 135.462) (xy 65.3634 135.427) (xy 65.4254 135.575) (xy 65.6443 136.089) (xy 66.1035 137.176) (xy 66.3134 137.681) (xy 66.348 137.759) (xy 66.4977 138.116) (xy 67.2484 139.892) (xy 67.9157 141.467) (xy 68.3137 142.406) (xy 68.3573 142.511) (xy 68.4056 142.607) (xy 68.5057 139.108) (xy 68.5352 135.427) (xy 68.5676 134.983) (xy 68.6367 134.296) (xy 68.7434 133.443) (xy 68.8091 132.973) (xy 69.2162 130.632) (xy 69.8835 128.405) (xy 70.6341 127.726) (xy 71.3014 128.535) (xy 72.0521 130.928) (xy 72.743 133.843) (xy 72.8549 134.026) (xy 72.8921 134.052) (xy 72.8931 134.052) (xy 72.9001 134.061) (xy 72.915 134.052) (xy 72.9621 134.07) (xy 72.9723 134.087) (xy 73.0365 134.165) (xy 73.1631 134.174) (xy 73.2278 134.226) (xy 73.2545 134.252) (xy 73.2781 134.279) (xy 73.3429 134.392) (xy 73.4443 135.253) (xy 73.4825 135.671) (xy 73.5061 135.384) (xy 73.5702 135.523) (xy 73.7572 135.967) (xy 74.1023 136.785) (xy 74.4588 137.629) (xy 74.5023 137.733) (xy 74.5778 137.907) (xy 75.1637 139.3) (xy 75.9144 141.075) (xy 76.4643 142.372) (xy 76.5188 142.502) (xy 76.5558 142.581) (xy 76.6671 139.996) (xy 76.6966 135.584) (xy 76.7248 135.07) (xy 76.7706 134.583) (xy 76.894 133.556) (xy 76.9484 133.156) (xy 77.1315 131.964) (xy 77.8822 128.805) (xy 78.6329 127.726) (xy 79.3002 128.213) (xy 80.0509 130.258) (xy 80.6583 132.964) (xy 81.0024 134) (xy 81.0527 134.052) (xy 81.0584 134.052) (xy 81.0606 134.061) (xy 81.0779 134.052) (xy 81.111 134.043) (xy 81.1335 134.078) (xy 81.1779 134.157) (xy 81.2717 134.148) (xy 81.3794 134.209) (xy 81.4119 134.244) (xy 81.4359 134.27) (xy 81.4918 134.357) (xy 81.6006 134.696) (xy 81.6414 137.812) (xy 81.6612 135.375) (xy 81.7267 135.506) (xy 81.8496 135.793) (xy 82.1231 136.445) (xy 82.58 137.524) (xy 82.6609 137.716) (xy 82.7093 137.829) (xy 83.1625 138.899) (xy 83.9132 140.683) (xy 84.5805 142.258) (xy 84.6606 142.45) (xy 84.7127 142.563) (xy 84.8085 142.328) (xy 84.8529 136.202) (xy 84.8772 135.244) (xy 84.9283 134.661) (xy 85.0313 133.765) (xy 85.0902 133.321) (xy 85.181 132.695) (xy 85.881 129.31) (xy 86.5483 127.891) (xy 87.299 127.969) (xy 87.9663 129.405) (xy 88.6957 132.355) (xy 89.1384 133.965) (xy 89.2026 134.035) (xy 89.2237 134.052) (xy 89.2253 134.052) (xy 89.2404 134.052) (xy 89.2626 134.035) (xy 89.2979 134.078) (xy 89.3105 134.105) (xy 89.4086 134.139) (xy 89.5342 134.2) (xy 89.5711 134.235) (xy 89.596 134.261) (xy 89.6223 134.296) (xy 89.7537 134.574) (xy 89.7959 141.606) (xy 89.8209 135.392) (xy 89.8694 135.445) (xy 89.9663 135.68) (xy 90.2033 136.237) (xy 90.7247 137.472) (xy 90.8178 137.698) (xy 90.8499 137.768) (xy 91.1613 138.508) (xy 91.8286 140.083) (xy 92.5793 141.867) (xy 92.8116 142.415) (xy 92.8686 142.537) (xy 92.9431 142.641) (xy 93.0106 137.376) (xy 93.0361 135.349) (xy 93.0727 134.879) (xy 93.1715 133.974) (xy 93.2412 133.434) (xy 93.3176 132.886) (xy 93.7964 130.258) (xy 94.5471 128.1) (xy 95.2978 127.813) (xy 95.7696 128.474) (xy 96.293 129.936) (xy 96.9172 132.625) (xy 97.3231 133.991) (xy 97.3786 134.052) (xy 97.3895 134.052) (xy 97.3913 134.061) (xy 97.4086 134.052) (xy 97.4402 134.043) (xy 97.4639 134.078) (xy 97.4902 134.131) (xy 97.5848 134.148) (xy 97.7048 134.2) (xy 97.7397 134.235) (xy 97.7632 134.27) (xy 97.775 134.279) (xy 97.8022 134.322) (xy 97.8463 134.4) (xy 97.8499 134.409) (xy 97.9107 134.548) (xy 97.9592 141.084) (xy 97.9843 135.41) (xy 98.0255 135.427) (xy 98.1134 135.636) (xy 98.3134 136.106) (xy 98.868 137.42) (xy 98.9781 137.681) (xy 99.0101 137.759) (xy 99.2432 138.308) (xy 99.9105 139.892) (xy 100.661 141.667) (xy 100.976 142.406) (xy 101.032 142.546) (xy 101.068 142.607) (xy 101.17 138.638) (xy 101.199 135.392) (xy 101.23 134.975) (xy 101.333 134.009) (xy 101.406 133.443) (xy 101.478 132.921) (xy 101.878 130.632) (xy 102.629 128.239) (xy 103.296 127.726) (xy 104.047 128.718) (xy 104.798 131.285) (xy 105.405 133.843) (xy 105.522 134.026) (xy 105.554 134.052) (xy 105.555 134.052) (xy 105.562 134.061) (xy 105.581 134.043) (xy 105.624 134.07) (xy 105.637 134.096) (xy 105.709 134.148) (xy 105.825 134.174) (xy 105.891 134.218) (xy 105.917 134.252) (xy 105.941 134.279) (xy 106.005 134.383) (xy 106.111 135.993) (xy 106.144 135.706) (xy 106.173 135.392) (xy 106.237 135.532) (xy 106.415 135.958) (xy 106.837 136.95) (xy 107.121 137.629) (xy 107.167 137.733) (xy 107.24 137.907) (xy 107.909 139.491) (xy 108.66 141.266) (xy 109.128 142.38) (xy 109.183 142.502) (xy 109.218 142.581) (xy 109.331 139.543) (xy 109.359 135.584) (xy 109.389 135.053) (xy 109.433 134.583) (xy 109.558 133.53) (xy 109.612 133.138) (xy 109.877 131.485) (xy 110.628 128.596) (xy 111.295 127.726) (xy 112.046 128.361) (xy 112.713 130.258) (xy 113.404 133.321) (xy 113.664 134) (xy 113.718 134.052) (xy 113.721 134.052) (xy 113.724 134.052) (xy 113.741 134.052) (xy 113.773 134.043) (xy 113.797 134.078) (xy 113.84 134.157) (xy 113.97 134.165) (xy 114.041 134.209) (xy 114.076 134.244) (xy 114.105 134.279) (xy 114.154 134.357) (xy 114.267 134.87) (xy 114.304 137.681) (xy 114.328 135.375) (xy 114.389 135.497) (xy 114.534 135.845) (xy 114.782 136.428) (xy 115.256 137.551) (xy 115.328 137.725) (xy 115.371 137.829) (xy 115.908 139.1) (xy 116.575 140.675) (xy 117.29 142.363) (xy 117.323 142.441) (xy 117.379 142.563) (xy 117.471 142.328) (xy 117.517 136.002) (xy 117.545 135.166) (xy 117.59 134.661) (xy 117.719 133.565) (xy 117.752 133.321) (xy 117.882 132.434) (xy 118.543 129.301) (xy 119.294 127.813) (xy 119.961 127.969) (xy 120.712 129.666) (xy 121.417 132.634) (xy 121.8 133.957) (xy 121.875 134.043) (xy 121.886 134.052) (xy 121.888 134.052) (xy 121.902 134.052) (xy 121.933 134.035) (xy 121.96 134.078) (xy 121.977 134.105) (xy 122.081 134.139) (xy 122.196 134.2) (xy 122.236 134.235) (xy 122.258 134.261) (xy 122.298 134.313) (xy 122.415 134.566) (xy 122.463 141.153) (xy 122.483 135.384) (xy 122.546 135.479) (xy 122.654 135.732) (xy 122.866 136.237) (xy 123.397 137.498) (xy 123.48 137.69) (xy 123.518 137.786) (xy 123.823 138.499) (xy 124.574 140.283) (xy 125.241 141.858) (xy 125.476 142.415) (xy 125.534 142.537) (xy 125.605 142.641) (xy 125.679 136.306) (xy 125.698 135.34) (xy 125.747 134.748) (xy 125.834 133.965) (xy 125.905 133.408) (xy 125.98 132.886) (xy 126.542 129.91) (xy 127.292 127.978) (xy 127.96 127.804) (xy 128.71 129.153) (xy 129.378 131.659) (xy 129.943 133.922) (xy 130.02 134.026) (xy 130.051 134.052) (xy 130.052 134.052) (xy 130.065 134.052) (xy 130.088 134.035) (xy 130.122 134.07) (xy 130.136 134.096) (xy 130.218 134.131) (xy 130.349 134.183) (xy 130.39 134.218) (xy 130.422 134.252) (xy 130.439 134.279) (xy 130.567 134.522) (xy 130.617 139.187) (xy 130.644 135.453) (xy 130.689 135.427) (xy 130.752 135.575) (xy 130.971 136.097) (xy 131.435 137.194) (xy 131.638 137.672) (xy 131.667 137.742) (xy 131.822 138.107) (xy 132.573 139.883) (xy 133.24 141.467) (xy 133.638 142.406) (xy 133.682 142.511) (xy 133.73 142.607) (xy 133.83 139.108) (xy 133.859 135.418) (xy 133.888 135.018) (xy 133.961 134.287) (xy 134.068 133.434) (xy 134.133 132.964) (xy 134.541 130.624) (xy 135.208 128.405) (xy 135.958 127.726) (xy 136.626 128.526) (xy 137.376 130.919) (xy 138.067 133.835)
+		)
+		(stroke
+			(width 0.25)
+			(type solid)
+			(color 200 200 200 1)
+		)
+		(uuid "21dc30f5-3519-4155-a859-11a14f4bcec0")
+	)
+	(polyline
+		(pts
+			(xy 54.72 128.083) (xy 54.9285 128.261) (xy 55.137 128.647) (xy 55.3456 129.176) (xy 55.5541 129.824) (xy 55.7626 130.597) (xy 55.9711 131.483) (xy 56.1797 132.447) (xy 56.3882 133.321) (xy 56.5967 133.858) (xy 56.8052 134.082) (xy 57.0138 134.241) (xy 57.2223 135.425) (xy 57.4308 135.725) (xy 57.6393 136.179) (xy 57.8479 136.665) (xy 58.0564 137.155) (xy 58.2649 137.649) (xy 58.4734 138.142) (xy 58.682 138.636) (xy 58.8905 139.13) (xy 59.099 139.624) (xy 59.3075 140.116) (xy 59.5161 140.611) (xy 59.7329 141.125) (xy 59.9415 141.619) (xy 60.15 142.111) (xy 60.3585 141.36) (xy 60.567 135.642) (xy 60.7756 133.226) (xy 60.9841 131.741) (xy 61.1926 130.626) (xy 61.4011 129.743) (xy 61.6097 129.039) (xy 61.8182 128.499) (xy 62.0267 128.113) (xy 62.2352 127.866) (xy 62.4438 127.753) (xy 62.6523 127.775) (xy 62.8608 127.921) (xy 63.0693 128.192) (xy 63.2779 128.586) (xy 63.4864 129.105) (xy 63.6949 129.741) (xy 63.9034 130.499) (xy 64.112 131.372) (xy 64.3205 132.332) (xy 64.5374 133.262) (xy 64.7459 133.835) (xy 64.9544 134.071) (xy 65.1629 134.223) (xy 65.3715 135.418) (xy 65.58 135.693) (xy 65.7885 136.141) (xy 65.997 136.626) (xy 66.2056 137.116) (xy 66.4141 137.61) (xy 66.6226 138.103) (xy 66.8311 138.598) (xy 67.0397 139.091) (xy 67.2482 139.584) (xy 67.4567 140.077) (xy 67.6652 140.573) (xy 67.8738 141.067) (xy 68.0823 141.56) (xy 68.2908 142.052) (xy 68.4993 142.219) (xy 68.7079 136.065) (xy 68.9164 133.443) (xy 69.1249 131.894) (xy 69.3334 130.745) (xy 69.5503 129.805) (xy 69.7588 129.088) (xy 69.9673 128.536) (xy 70.1759 128.138) (xy 70.3844 127.881) (xy 70.5929 127.757) (xy 70.8014 127.768) (xy 71.01 127.905) (xy 71.2185 128.167) (xy 71.427 128.551) (xy 71.6355 129.06) (xy 71.8441 129.687) (xy 72.0526 130.435) (xy 72.2611 131.299) (xy 72.4696 132.255) (xy 72.6782 133.169) (xy 72.8867 133.79) (xy 73.0952 134.055) (xy 73.3037 134.198) (xy 73.5123 135.415) (xy 73.7208 135.647) (xy 73.9293 136.084) (xy 74.1378 136.567) (xy 74.3547 137.077) (xy 74.5632 137.572) (xy 74.7718 138.065) (xy 74.9803 138.559) (xy 75.1888 139.053) (xy 75.3973 139.545) (xy 75.6059 140.038) (xy 75.8144 140.534) (xy 76.0229 141.028) (xy 76.2314 141.521) (xy 76.44 142.013) (xy 76.6485 142.399) (xy 76.857 136.373) (xy 77.0655 133.595) (xy 77.2741 131.998) (xy 77.4826 130.826) (xy 77.6911 129.902) (xy 77.8996 129.164) (xy 78.1082 128.594) (xy 78.3167 128.178) (xy 78.5252 127.904) (xy 78.7337 127.764) (xy 78.9423 127.76) (xy 79.1508 127.882) (xy 79.3677 128.142) (xy 79.5762 128.516) (xy 79.7847 129.016) (xy 79.9932 129.633) (xy 80.2018 130.372) (xy 80.4103 131.227) (xy 80.6188 132.178) (xy 80.8273 133.105) (xy 81.0359 133.756) (xy 81.2444 134.043) (xy 81.4529 134.183) (xy 81.6614 135.418) (xy 81.87 135.617) (xy 82.0785 136.047) (xy 82.287 136.529) (xy 82.4955 137.019) (xy 82.7041 137.513) (xy 82.9126 138.007) (xy 83.1211 138.501) (xy 83.3296 138.994) (xy 83.5382 139.486) (xy 83.7467 139.979) (xy 83.9552 140.476) (xy 84.1721 140.989) (xy 84.3806 141.482) (xy 84.5891 141.974) (xy 84.7976 142.426) (xy 85.0062 136.703) (xy 85.2147 133.753) (xy 85.4232 132.104) (xy 85.6317 130.908) (xy 85.8403 129.967) (xy 86.0488 129.216) (xy 86.2573 128.633) (xy 86.4658 128.205) (xy 86.6744 127.921) (xy 86.8829 127.77) (xy 87.0914 127.756) (xy 87.2999 127.868) (xy 87.5085 128.105) (xy 87.717 128.466) (xy 87.9255 128.95) (xy 88.134 129.554) (xy 88.3426 130.278) (xy 88.5511 131.119) (xy 88.7596 132.062) (xy 88.9681 133.004) (xy 89.185 133.719) (xy 89.3935 134.03) (xy 89.6021 134.169) (xy 89.8106 135.423) (xy 90.0191 135.589) (xy 90.2276 136.01) (xy 90.4362 136.49) (xy 90.6447 136.98) (xy 90.8532 137.474) (xy 91.0617 137.969) (xy 91.2703 138.462) (xy 91.4788 138.955) (xy 91.6873 139.447) (xy 91.8958 139.94) (xy 92.1044 140.437) (xy 92.3129 140.93) (xy 92.5214 141.423) (xy 92.7299 141.916) (xy 92.9385 142.395) (xy 93.147 137.25) (xy 93.3555 134.005) (xy 93.564 132.269) (xy 93.7726 131.035) (xy 93.9894 130.033) (xy 94.198 129.269) (xy 94.4065 128.674) (xy 94.615 128.233) (xy 94.8235 127.938) (xy 95.0321 127.778) (xy 95.2406 127.752) (xy 95.4491 127.855) (xy 95.6576 128.082) (xy 95.8662 128.433) (xy 96.0747 128.909) (xy 96.2832 129.504) (xy 96.4917 130.216) (xy 96.7003 131.047) (xy 96.9088 131.986) (xy 97.1173 132.934) (xy 97.3258 133.661) (xy 97.5344 134.009) (xy 97.7429 134.151) (xy 97.9514 134.679) (xy 98.1599 135.549) (xy 98.3685 135.956) (xy 98.577 136.431) (xy 98.7855 136.924) (xy 99.0024 137.436) (xy 99.2109 137.931) (xy 99.4194 138.424) (xy 99.6279 138.916) (xy 99.8365 139.409) (xy 100.045 139.905) (xy 100.254 140.399) (xy 100.462 140.892) (xy 100.671 141.384) (xy 100.879 141.877) (xy 101.088 142.363) (xy 101.296 137.643) (xy 101.505 134.178) (xy 101.713 132.381) (xy 101.922 131.12) (xy 102.13 130.135) (xy 102.339 129.348) (xy 102.547 128.735) (xy 102.756 128.276) (xy 102.964 127.966) (xy 103.173 127.789) (xy 103.381 127.748) (xy 103.59 127.835) (xy 103.807 128.06) (xy 104.015 128.399) (xy 104.224 128.862) (xy 104.432 129.448) (xy 104.641 130.153) (xy 104.849 130.977) (xy 105.058 131.908) (xy 105.266 132.866) (xy 105.475 133.615) (xy 105.683 133.985) (xy 105.892 134.137) (xy 106.101 134.396) (xy 106.309 135.52) (xy 106.518 135.919) (xy 106.726 136.392) (xy 106.935 136.881) (xy 107.143 137.376) (xy 107.352 137.868) (xy 107.56 138.364) (xy 107.769 138.857) (xy 107.977 139.35) (xy 108.186 139.844) (xy 108.394 140.338) (xy 108.603 140.831) (xy 108.82 141.344) (xy 109.028 141.836) (xy 109.237 142.327) (xy 109.445 138.073) (xy 109.654 134.36) (xy 109.862 132.496) (xy 110.071 131.207) (xy 110.279 130.202) (xy 110.488 129.401) (xy 110.697 128.778) (xy 110.905 128.306) (xy 111.114 127.981) (xy 111.322 127.797) (xy 111.531 127.744) (xy 111.739 127.819) (xy 111.948 128.021) (xy 112.156 128.35) (xy 112.365 128.8) (xy 112.573 129.372) (xy 112.782 130.063) (xy 112.99 130.871) (xy 113.199 131.79) (xy 113.407 132.755) (xy 113.624 133.569) (xy 113.833 133.961) (xy 114.041 134.126) (xy 114.25 134.351) (xy 114.458 135.497) (xy 114.667 135.88) (xy 114.875 136.353) (xy 115.084 136.842) (xy 115.292 137.336) (xy 115.501 137.828) (xy 115.709 138.323) (xy 115.918 138.817) (xy 116.126 139.309) (xy 116.335 139.802) (xy 116.543 140.295) (xy 116.752 140.788) (xy 116.96 141.282) (xy 117.169 141.776) (xy 117.378 142.269) (xy 117.586 138.795) (xy 117.795 134.657) (xy 118.003 132.67) (xy 118.212 131.339) (xy 118.42 130.308) (xy 118.637 129.457) (xy 118.846 128.818) (xy 119.054 128.337) (xy 119.263 128.001) (xy 119.471 127.807) (xy 119.68 127.744) (xy 119.888 127.808) (xy 120.097 128.001) (xy 120.305 128.32) (xy 120.514 128.761) (xy 120.722 129.32) (xy 120.931 130.004) (xy 121.139 130.804) (xy 121.348 131.714) (xy 121.556 132.678) (xy 121.765 133.493) (xy 121.974 133.924) (xy 122.182 134.108) (xy 122.391 134.308) (xy 122.599 135.468) (xy 122.808 135.829) (xy 123.016 136.292) (xy 123.225 136.783) (xy 123.442 137.295) (xy 123.65 137.789) (xy 123.859 138.281) (xy 124.067 138.777) (xy 124.276 139.27) (xy 124.484 139.763) (xy 124.693 140.256) (xy 124.901 140.75) (xy 125.11 141.244) (xy 125.318 141.737) (xy 125.527 142.229) (xy 125.735 139.327) (xy 125.944 134.868) (xy 126.152 132.793) (xy 126.361 131.431) (xy 126.569 130.38) (xy 126.778 129.544) (xy 126.986 128.885) (xy 127.195 128.386) (xy 127.403 128.033) (xy 127.612 127.82) (xy 127.82 127.744) (xy 128.029 127.794) (xy 128.238 127.972) (xy 128.454 128.287) (xy 128.663 128.721) (xy 128.871 129.272) (xy 129.08 129.946) (xy 129.288 130.736) (xy 129.497 131.639) (xy 129.706 132.604) (xy 129.914 133.441) (xy 130.123 133.902) (xy 130.331 134.097) (xy 130.54 134.283) (xy 130.748 135.453) (xy 130.957 135.794) (xy 131.165 136.255) (xy 131.374 136.743) (xy 131.582 137.235) (xy 131.791 137.73) (xy 131.999 138.223) (xy 132.208 138.717) (xy 132.416 139.21) (xy 132.625 139.702) (xy 132.833 140.198) (xy 133.042 140.692) (xy 133.259 141.205) (xy 133.467 141.697) (xy 133.676 142.19) (xy 133.884 139.906) (xy 134.093 135.093) (xy 134.302 132.921) (xy 134.51 131.52) (xy 134.719 130.449) (xy 134.927 129.601) (xy 135.136 128.928) (xy 135.344 128.419) (xy 135.553 128.055) (xy 135.761 127.83) (xy 135.97 127.742) (xy 136.178 127.784) (xy 136.387 127.951) (xy 136.595 128.244) (xy 136.804 128.663) (xy 137.012 129.2) (xy 137.221 129.86) (xy 137.429 130.636) (xy 137.638 131.526) (xy 137.846 132.492) (xy 138.063 133.384)
+		)
+		(stroke
+			(width 0.4)
+			(type solid)
+			(color 235 104 52 1)
+		)
+		(uuid "2a469dde-9d9f-4381-b5c8-c5a4107cda08")
+	)
+	(text "+6V"
+		(exclude_from_sim no)
+		(at 139.063 133.384 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 235 104 52 1)
+			)
+			(justify left)
+		)
+		(uuid "3f6a075a-9715-43b3-a508-c0dc85af194f")
+	)
+	(text "0.80 mV crête-à-crête (bande 20 MHz), charge 68 mA"
+		(exclude_from_sim no)
+		(at 56.3882 119.86 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.1 1.1)
+				(color 70 70 70 1)
+			)
+			(justify left)
+		)
+		(uuid "2112c879-b383-4569-bbc0-723c080fb2c1")
+	)
+	(text "gris : simulation brute"
+		(exclude_from_sim no)
+		(at 56.3882 150.52 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.1 1.1)
+				(color 150 150 150 1)
+			)
+			(justify left)
+		)
+		(uuid "1272825d-36a2-4d6f-a1cb-4bfafb87ce0e")
+	)
+	(text_box "PSRR +6V → RAILS ANALOGIQUES   ·   SIMULATION 04"
+		(exclude_from_sim no)
+		(at 156.21 108.59 0)
+		(size 105.41 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 162 22 34 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "cc032f19-86c0-4415-a4f6-2dc866b2a44e")
+	)
+	(polyline
+		(pts
+			(xy 165.21 116.94) (xy 165.21 153.44)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "5da5db83-9624-44f8-a18c-5a57aff2f532")
+	)
+	(text "10"
+		(exclude_from_sim no)
+		(at 165.21 154.44 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "f56804b1-ce08-4263-ae9b-e4aa0fcab49f")
+	)
+	(polyline
+		(pts
+			(xy 179.112 116.94) (xy 179.112 153.44)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "c82b1b78-152a-4930-ad19-7fee048f5c9c")
+	)
+	(text "100"
+		(exclude_from_sim no)
+		(at 179.112 154.44 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "7c332099-c05c-4a07-a8f8-bf7e0dc75763")
+	)
+	(polyline
+		(pts
+			(xy 193.013 116.94) (xy 193.013 153.44)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "435f5ffe-b548-4954-8e00-a66c74916385")
+	)
+	(text "1k"
+		(exclude_from_sim no)
+		(at 193.013 154.44 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "af902e4f-08ab-4cbd-9b77-c159ed6cde31")
+	)
+	(polyline
+		(pts
+			(xy 206.915 116.94) (xy 206.915 153.44)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "bed8ae38-7af6-4b2e-9eb8-530878303ea1")
+	)
+	(text "10k"
+		(exclude_from_sim no)
+		(at 206.915 154.44 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "9f066900-987c-49a3-9b6e-0dfff22705af")
+	)
+	(polyline
+		(pts
+			(xy 220.817 116.94) (xy 220.817 153.44)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "72bd8f0d-7784-41ae-a687-573cd8b8c987")
+	)
+	(text "100k"
+		(exclude_from_sim no)
+		(at 220.817 154.44 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "507cecaf-295c-46df-bffe-2bf63eb0107a")
+	)
+	(polyline
+		(pts
+			(xy 234.718 116.94) (xy 234.718 153.44)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "e8c90221-9ef6-491f-96d0-0ef52588c455")
+	)
+	(text "1M"
+		(exclude_from_sim no)
+		(at 234.718 154.44 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "3a32eb35-0919-4f48-9725-25639ca8e715")
+	)
+	(polyline
+		(pts
+			(xy 248.62 116.94) (xy 248.62 153.44)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "331295ac-db4e-468b-ac0b-e6ed018f96eb")
+	)
+	(text "10M"
+		(exclude_from_sim no)
+		(at 248.62 154.44 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "be081986-5dc4-4126-8b51-66402ec27f3c")
+	)
+	(polyline
+		(pts
+			(xy 165.21 153.44) (xy 248.62 153.44)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "17b30a28-41b5-4f1e-8409-71e1f7b5f02f")
+	)
+	(text "40"
+		(exclude_from_sim no)
+		(at 164.21 153.44 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "2bdfcb16-d5d3-4b8a-9f53-a23583cbac84")
+	)
+	(polyline
+		(pts
+			(xy 165.21 146.14) (xy 248.62 146.14)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "70169473-2ad2-465f-8e64-f8cc3921b4fc")
+	)
+	(text "60"
+		(exclude_from_sim no)
+		(at 164.21 146.14 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "c446edbc-8d84-42cb-989f-7588b2298de1")
+	)
+	(polyline
+		(pts
+			(xy 165.21 138.84) (xy 248.62 138.84)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "72bf8aae-d72b-4e54-b095-febf463fbf0c")
+	)
+	(text "80"
+		(exclude_from_sim no)
+		(at 164.21 138.84 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "022bbde3-4585-4d22-99f5-24dcf7ccf1e1")
+	)
+	(polyline
+		(pts
+			(xy 165.21 131.54) (xy 248.62 131.54)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "94348ff9-24f9-411f-8539-46beb14b18a3")
+	)
+	(text "100"
+		(exclude_from_sim no)
+		(at 164.21 131.54 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "f44e8914-e34b-4f26-9df9-d445adba08ce")
+	)
+	(polyline
+		(pts
+			(xy 165.21 124.24) (xy 248.62 124.24)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "d34c4031-39ee-4be0-945c-6b66e7dc0603")
+	)
+	(text "120"
+		(exclude_from_sim no)
+		(at 164.21 124.24 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "8156c30a-bbd2-4508-bbfc-8d40ff302e6a")
+	)
+	(polyline
+		(pts
+			(xy 165.21 116.94) (xy 248.62 116.94)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "58fd0ba3-0360-4172-aaae-6c946fb678eb")
+	)
+	(text "140"
+		(exclude_from_sim no)
+		(at 164.21 116.94 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "b406b5a1-4c29-4a5d-b11f-877db000716c")
+	)
+	(rectangle
+		(start 165.21 116.94)
+		(end 248.62 153.44)
+		(stroke
+			(width 0.25)
+			(type default)
+			(color 120 120 120 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "ad4f63c9-63c0-4039-96ce-c56dd0a282e1")
+	)
+	(text "Fréquence [Hz]"
+		(exclude_from_sim no)
+		(at 248.62 159.04 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "a6d09714-5a2e-4e38-b623-81d3f88f112f")
+	)
+	(text "[dB]"
+		(exclude_from_sim no)
+		(at 156.21 116.64 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "9cf93bbe-d256-4faa-bff3-aaa345cf786e")
+	)
+	(polyline
+		(pts
+			(xy 165.21 135.333) (xy 165.591 135.455) (xy 165.972 135.575) (xy 166.353 135.692) (xy 166.733 135.805) (xy 167.114 135.913) (xy 167.495 136.017) (xy 167.876 136.115) (xy 168.257 136.209) (xy 168.638 136.297) (xy 169.019 136.38) (xy 169.399 136.458) (xy 169.78 136.529) (xy 170.161 136.596) (xy 170.542 136.657) (xy 170.923 136.714) (xy 171.304 136.766) (xy 171.685 136.813) (xy 172.066 136.856) (xy 172.446 136.894) (xy 172.827 136.929) (xy 173.208 136.961) (xy 173.589 136.99) (xy 173.97 137.015) (xy 174.351 137.038) (xy 174.732 137.059) (xy 175.113 137.077) (xy 175.493 137.094) (xy 175.874 137.108) (xy 176.255 137.121) (xy 176.636 137.132) (xy 177.017 137.143) (xy 177.398 137.152) (xy 177.779 137.16) (xy 178.16 137.167) (xy 178.54 137.173) (xy 178.921 137.178) (xy 179.302 137.183) (xy 179.683 137.187) (xy 180.064 137.191) (xy 180.445 137.194) (xy 180.826 137.197) (xy 181.206 137.199) (xy 181.587 137.201) (xy 181.968 137.203) (xy 182.349 137.204) (xy 182.73 137.205) (xy 183.111 137.206) (xy 183.492 137.207) (xy 183.873 137.207) (xy 184.253 137.207) (xy 184.634 137.207) (xy 185.015 137.207) (xy 185.396 137.206) (xy 185.777 137.205) (xy 186.158 137.204) (xy 186.539 137.203) (xy 186.919 137.201) (xy 187.3 137.199) (xy 187.681 137.197) (xy 188.062 137.194) (xy 188.443 137.191) (xy 188.824 137.187) (xy 189.205 137.183) (xy 189.585 137.179) (xy 189.966 137.173) (xy 190.347 137.167) (xy 190.728 137.16) (xy 191.109 137.152) (xy 191.49 137.143) (xy 191.871 137.133) (xy 192.252 137.122) (xy 192.632 137.109) (xy 193.013 137.095) (xy 193.394 137.078) (xy 193.775 137.06) (xy 194.156 137.04) (xy 194.537 137.018) (xy 194.918 136.993) (xy 195.298 136.965) (xy 195.679 136.934) (xy 196.06 136.899) (xy 196.441 136.862) (xy 196.822 136.82) (xy 197.203 136.774) (xy 197.584 136.724) (xy 197.965 136.669) (xy 198.345 136.61) (xy 198.726 136.546) (xy 199.107 136.477) (xy 199.488 136.403) (xy 199.869 136.323) (xy 200.25 136.239) (xy 200.631 136.149) (xy 201.012 136.055) (xy 201.392 135.956) (xy 201.773 135.853) (xy 202.154 135.746) (xy 202.535 135.634) (xy 202.916 135.52) (xy 203.297 135.403) (xy 203.678 135.283) (xy 204.059 135.162) (xy 204.439 135.04) (xy 204.82 134.917) (xy 205.201 134.795) (xy 205.582 134.674) (xy 205.963 134.555) (xy 206.344 134.438) (xy 206.725 134.325) (xy 207.105 134.215) (xy 207.486 134.111) (xy 207.867 134.013) (xy 208.248 133.921) (xy 208.629 133.837) (xy 209.01 133.761) (xy 209.391 133.694) (xy 209.772 133.637) (xy 210.152 133.589) (xy 210.533 133.552) (xy 210.914 133.526) (xy 211.295 133.512) (xy 211.676 133.509) (xy 212.057 133.518) (xy 212.438 133.538) (xy 212.818 133.57) (xy 213.199 133.613) (xy 213.58 133.667) (xy 213.961 133.732) (xy 214.342 133.806) (xy 214.723 133.89) (xy 215.104 133.984) (xy 215.484 134.087) (xy 215.865 134.198) (xy 216.246 134.318) (xy 216.627 134.446) (xy 217.008 134.584) (xy 217.389 134.73) (xy 217.77 134.884) (xy 218.151 135.047) (xy 218.531 135.218) (xy 218.912 135.396) (xy 219.293 135.579) (xy 219.674 135.767) (xy 220.055 135.956) (xy 220.436 136.147) (xy 220.817 136.337) (xy 221.197 136.525) (xy 221.578 136.71) (xy 221.959 136.893) (xy 222.34 137.072) (xy 222.721 137.248) (xy 223.102 137.421) (xy 223.483 137.59) (xy 223.864 137.757) (xy 224.244 137.921) (xy 224.625 138.083) (xy 225.006 138.242) (xy 225.387 138.4) (xy 225.768 138.557) (xy 226.149 138.713) (xy 226.53 138.867) (xy 226.911 139.02) (xy 227.291 139.173) (xy 227.672 139.324) (xy 228.053 139.474) (xy 228.434 139.622) (xy 228.815 139.768) (xy 229.196 139.912) (xy 229.577 140.052) (xy 229.958 140.187) (xy 230.338 140.316) (xy 230.719 140.438) (xy 231.1 140.551) (xy 231.481 140.653) (xy 231.862 140.744) (xy 232.243 140.821) (xy 232.624 140.881) (xy 233.004 140.925) (xy 233.385 140.952) (xy 233.766 140.959) (xy 234.147 140.949) (xy 234.528 140.92) (xy 234.909 140.874) (xy 235.29 140.812) (xy 235.671 140.736) (xy 236.051 140.647) (xy 236.432 140.548) (xy 236.813 140.44) (xy 237.194 140.326) (xy 237.575 140.206) (xy 237.956 140.083) (xy 238.337 139.957) (xy 238.717 139.83) (xy 239.098 139.703) (xy 239.479 139.577) (xy 239.86 139.453) (xy 240.241 139.331) (xy 240.622 139.212) (xy 241.003 139.096) (xy 241.383 138.984) (xy 241.764 138.875) (xy 242.145 138.77) (xy 242.526 138.668) (xy 242.907 138.57) (xy 243.288 138.475) (xy 243.669 138.384) (xy 244.05 138.295) (xy 244.43 138.209) (xy 244.811 138.125) (xy 245.192 138.043) (xy 245.573 137.963) (xy 245.954 137.884) (xy 246.335 137.806) (xy 246.716 137.728) (xy 247.096 137.651) (xy 247.477 137.574) (xy 247.858 137.498) (xy 248.239 137.422) (xy 248.62 137.346)
+		)
+		(stroke
+			(width 0.45)
+			(type solid)
+			(color 27 175 122 1)
+		)
+		(uuid "118c3305-0842-4196-aca5-156d8c140f73")
+	)
+	(text "+5VA"
+		(exclude_from_sim no)
+		(at 249.62 137.346 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 27 175 122 1)
+			)
+			(justify left)
+		)
+		(uuid "448ed538-22fa-4d6f-b68b-04a9bc7bb423")
+	)
+	(polyline
+		(pts
+			(xy 238.203 139.773) (xy 239.603 139.773)
+		)
+		(stroke
+			(width 0.9)
+			(type solid)
+			(color 27 175 122 1)
+		)
+		(uuid "9cfeb082-7022-42ab-b39c-4100d88d9aef")
+	)
+	(text "+5VA : 77 dB à 2 MHz"
+		(exclude_from_sim no)
+		(at 166.878 119.86 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.1 1.1)
+				(color 27 175 122 1)
+			)
+			(justify left)
+		)
+		(uuid "6d59c59e-7b14-41b5-97a0-474c88d98212")
+	)
+	(polyline
+		(pts
+			(xy 165.21 135.288) (xy 165.591 135.413) (xy 165.972 135.535) (xy 166.353 135.654) (xy 166.733 135.768) (xy 167.114 135.879) (xy 167.495 135.984) (xy 167.876 136.085) (xy 168.257 136.18) (xy 168.638 136.27) (xy 169.019 136.355) (xy 169.399 136.434) (xy 169.78 136.507) (xy 170.161 136.576) (xy 170.542 136.639) (xy 170.923 136.697) (xy 171.304 136.75) (xy 171.685 136.799) (xy 172.066 136.843) (xy 172.446 136.883) (xy 172.827 136.919) (xy 173.208 136.952) (xy 173.589 136.982) (xy 173.97 137.008) (xy 174.351 137.032) (xy 174.732 137.053) (xy 175.113 137.072) (xy 175.493 137.089) (xy 175.874 137.104) (xy 176.255 137.118) (xy 176.636 137.13) (xy 177.017 137.14) (xy 177.398 137.15) (xy 177.779 137.158) (xy 178.16 137.165) (xy 178.54 137.172) (xy 178.921 137.177) (xy 179.302 137.182) (xy 179.683 137.187) (xy 180.064 137.191) (xy 180.445 137.194) (xy 180.826 137.197) (xy 181.206 137.199) (xy 181.587 137.201) (xy 181.968 137.203) (xy 182.349 137.204) (xy 182.73 137.206) (xy 183.111 137.207) (xy 183.492 137.207) (xy 183.873 137.208) (xy 184.253 137.208) (xy 184.634 137.208) (xy 185.015 137.207) (xy 185.396 137.207) (xy 185.777 137.206) (xy 186.158 137.205) (xy 186.539 137.203) (xy 186.919 137.202) (xy 187.3 137.2) (xy 187.681 137.197) (xy 188.062 137.194) (xy 188.443 137.191) (xy 188.824 137.187) (xy 189.205 137.183) (xy 189.585 137.178) (xy 189.966 137.173) (xy 190.347 137.166) (xy 190.728 137.159) (xy 191.109 137.151) (xy 191.49 137.142) (xy 191.871 137.131) (xy 192.252 137.12) (xy 192.632 137.107) (xy 193.013 137.092) (xy 193.394 137.075) (xy 193.775 137.057) (xy 194.156 137.036) (xy 194.537 137.012) (xy 194.918 136.987) (xy 195.298 136.958) (xy 195.679 136.926) (xy 196.06 136.89) (xy 196.441 136.851) (xy 196.822 136.808) (xy 197.203 136.76) (xy 197.584 136.708) (xy 197.965 136.651) (xy 198.345 136.589) (xy 198.726 136.522) (xy 199.107 136.45) (xy 199.488 136.372) (xy 199.869 136.289) (xy 200.25 136.2) (xy 200.631 136.105) (xy 201.012 136.005) (xy 201.392 135.9) (xy 201.773 135.789) (xy 202.154 135.673) (xy 202.535 135.553) (xy 202.916 135.428) (xy 203.297 135.299) (xy 203.678 135.167) (xy 204.059 135.032) (xy 204.439 134.894) (xy 204.82 134.754) (xy 205.201 134.612) (xy 205.582 134.47) (xy 205.963 134.328) (xy 206.344 134.186) (xy 206.725 134.045) (xy 207.105 133.907) (xy 207.486 133.772) (xy 207.867 133.641) (xy 208.248 133.514) (xy 208.629 133.394) (xy 209.01 133.28) (xy 209.391 133.175) (xy 209.772 133.079) (xy 210.152 132.994) (xy 210.533 132.919) (xy 210.914 132.858) (xy 211.295 132.809) (xy 211.676 132.775) (xy 212.057 132.755) (xy 212.438 132.75) (xy 212.818 132.759) (xy 213.199 132.784) (xy 213.58 132.821) (xy 213.961 132.874) (xy 214.342 132.939) (xy 214.723 133.015) (xy 215.104 133.104) (xy 215.484 133.203) (xy 215.865 133.312) (xy 216.246 133.432) (xy 216.627 133.561) (xy 217.008 133.701) (xy 217.389 133.851) (xy 217.77 134.011) (xy 218.151 134.181) (xy 218.531 134.359) (xy 218.912 134.544) (xy 219.293 134.733) (xy 219.674 134.925) (xy 220.055 135.117) (xy 220.436 135.306) (xy 220.817 135.492) (xy 221.197 135.671) (xy 221.578 135.845) (xy 221.959 136.012) (xy 222.34 136.173) (xy 222.721 136.327) (xy 223.102 136.474) (xy 223.483 136.614) (xy 223.864 136.748) (xy 224.244 136.875) (xy 224.625 136.995) (xy 225.006 137.108) (xy 225.387 137.212) (xy 225.768 137.309) (xy 226.149 137.396) (xy 226.53 137.471) (xy 226.911 137.536) (xy 227.291 137.586) (xy 227.672 137.621) (xy 228.053 137.641) (xy 228.434 137.642) (xy 228.815 137.625) (xy 229.196 137.591) (xy 229.577 137.536) (xy 229.958 137.465) (xy 230.338 137.377) (xy 230.719 137.273) (xy 231.1 137.155) (xy 231.481 137.025) (xy 231.862 136.885) (xy 232.243 136.736) (xy 232.624 136.58) (xy 233.004 136.418) (xy 233.385 136.253) (xy 233.766 136.084) (xy 234.147 135.914) (xy 234.528 135.742) (xy 234.909 135.57) (xy 235.29 135.398) (xy 235.671 135.228) (xy 236.051 135.059) (xy 236.432 134.892) (xy 236.813 134.728) (xy 237.194 134.567) (xy 237.575 134.409) (xy 237.956 134.256) (xy 238.337 134.107) (xy 238.717 133.963) (xy 239.098 133.823) (xy 239.479 133.69) (xy 239.86 133.562) (xy 240.241 133.441) (xy 240.622 133.326) (xy 241.003 133.218) (xy 241.383 133.117) (xy 241.764 133.023) (xy 242.145 132.937) (xy 242.526 132.857) (xy 242.907 132.786) (xy 243.288 132.722) (xy 243.669 132.665) (xy 244.05 132.616) (xy 244.43 132.574) (xy 244.811 132.54) (xy 245.192 132.513) (xy 245.573 132.492) (xy 245.954 132.48) (xy 246.335 132.474) (xy 246.716 132.476) (xy 247.096 132.484) (xy 247.477 132.5) (xy 247.858 132.523) (xy 248.239 132.553) (xy 248.62 132.589)
+		)
+		(stroke
+			(width 0.45)
+			(type solid)
+			(color 237 161 0 1)
+		)
+		(uuid "947aea82-22a9-4f2e-ac89-c0cbeaa8a2e3")
+	)
+	(text "+2.5VA"
+		(exclude_from_sim no)
+		(at 249.62 132.589 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 237 161 0 1)
+			)
+			(justify left)
+		)
+		(uuid "c69b1d19-73ac-4683-a5e4-f49c039ce8ad")
+	)
+	(polyline
+		(pts
+			(xy 238.203 133.899) (xy 239.603 133.899)
+		)
+		(stroke
+			(width 0.9)
+			(type solid)
+			(color 237 161 0 1)
+		)
+		(uuid "7346ef53-fde4-4cbd-8613-43d008185a82")
+	)
+	(text "+2.5VA : 94 dB à 2 MHz"
+		(exclude_from_sim no)
+		(at 166.878 123.51 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.1 1.1)
+				(color 237 161 0 1)
+			)
+			(justify left)
+		)
+		(uuid "cf9a5753-00f3-4de1-8924-5e2d4e796ee2")
+	)
+	(polyline
+		(pts
+			(xy 238.903 116.94) (xy 238.903 153.44)
+		)
+		(stroke
+			(width 0.25)
+			(type dash)
+			(color 70 70 70 1)
+		)
+		(uuid "7adadaa4-300f-407f-887a-b2f3f79932c3")
+	)
+	(text "LT8362"
+		(exclude_from_sim no)
+		(at 239.703 118.94 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.1 1.1)
+				(color 70 70 70 1)
+			)
+			(justify left top)
+		)
+		(uuid "b5046d1e-3bc5-4af4-8458-31e0419a6a56")
+	)
+	(text_box "+2.5VA DANS LA FENÊTRE DE L'AD7606C   ·   SIM 02"
+		(exclude_from_sim no)
+		(at 267.97 108.59 0)
+		(size 105.41 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 162 22 34 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "424ad303-ee77-4562-92c5-97553563a941")
+	)
+	(rectangle
+		(start 276.97 123.784)
+		(end 360.38 128.346)
+		(stroke
+			(width 0.01)
+			(type default)
+			(color 225 232 240 1)
+		)
+		(fill
+			(type color)
+			(color 225 232 240 1)
+		)
+		(uuid "7151695a-5d0d-42fd-ac81-ccc34dc7332e")
+	)
+	(polyline
+		(pts
+			(xy 276.97 116.94) (xy 276.97 153.44)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "9509e66f-09ef-4523-b172-58b87e6ec3ef")
+	)
+	(text "0"
+		(exclude_from_sim no)
+		(at 276.97 154.44 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "ce624a21-1433-4468-b8c3-d528106c62cb")
+	)
+	(polyline
+		(pts
+			(xy 290.872 116.94) (xy 290.872 153.44)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "6d937810-5450-45fe-9da2-6c4600e4c884")
+	)
+	(text "25"
+		(exclude_from_sim no)
+		(at 290.872 154.44 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "530a42aa-8299-45b9-8494-879609876e20")
+	)
+	(polyline
+		(pts
+			(xy 304.773 116.94) (xy 304.773 153.44)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "128a3ebc-db04-44d1-acaf-ebeba6e3bcb9")
+	)
+	(text "50"
+		(exclude_from_sim no)
+		(at 304.773 154.44 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "d8e741d3-2eee-461e-8abe-149ace6f79f3")
+	)
+	(polyline
+		(pts
+			(xy 318.675 116.94) (xy 318.675 153.44)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "8295a1d5-3354-4aba-b57b-b4d3ded73da2")
+	)
+	(text "75"
+		(exclude_from_sim no)
+		(at 318.675 154.44 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "d4dacc37-d73a-47d8-930c-63ba16c5bf20")
+	)
+	(polyline
+		(pts
+			(xy 332.577 116.94) (xy 332.577 153.44)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "1a5d4c0a-958e-4b7b-8dad-aaf14fce3687")
+	)
+	(text "100"
+		(exclude_from_sim no)
+		(at 332.577 154.44 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "2b431b27-c8a1-4024-b2df-170a9cccaf7b")
+	)
+	(polyline
+		(pts
+			(xy 346.478 116.94) (xy 346.478 153.44)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "b55c666e-8775-4122-be40-2c4bc0a7e46f")
+	)
+	(text "125"
+		(exclude_from_sim no)
+		(at 346.478 154.44 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "564e28c9-cd9e-4e33-9345-095742c5dd7c")
+	)
+	(polyline
+		(pts
+			(xy 360.38 116.94) (xy 360.38 153.44)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "5977f115-1e0e-472b-a217-c35bc4b29373")
+	)
+	(text "150"
+		(exclude_from_sim no)
+		(at 360.38 154.44 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "22d63ddf-b37a-4659-be4b-65fe86faf5c1")
+	)
+	(polyline
+		(pts
+			(xy 276.97 153.44) (xy 360.38 153.44)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "f45b694e-734b-45b4-bceb-8b06cb4f9f52")
+	)
+	(text "2.44"
+		(exclude_from_sim no)
+		(at 275.97 153.44 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "7a7aeed2-8b7c-4d39-a0f0-e31957abeb06")
+	)
+	(polyline
+		(pts
+			(xy 276.97 144.315) (xy 360.38 144.315)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "f50fd91e-d41e-433b-9e39-184154d1c388")
+	)
+	(text "2.46"
+		(exclude_from_sim no)
+		(at 275.97 144.315 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "32411b50-9834-418a-9a4f-2082b5d4a1fb")
+	)
+	(polyline
+		(pts
+			(xy 276.97 135.19) (xy 360.38 135.19)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "5c42ab79-0087-4b7e-a122-79eb4ab6a925")
+	)
+	(text "2.48"
+		(exclude_from_sim no)
+		(at 275.97 135.19 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "fa991c1a-69c0-47fa-889f-fb6e52ce3a80")
+	)
+	(polyline
+		(pts
+			(xy 276.97 126.065) (xy 360.38 126.065)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "57484e76-558e-419e-94d0-55068257e052")
+	)
+	(text "2.50"
+		(exclude_from_sim no)
+		(at 275.97 126.065 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "9accf555-9093-466b-8e57-f3800d6dbe16")
+	)
+	(polyline
+		(pts
+			(xy 276.97 116.94) (xy 360.38 116.94)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "8c4940dc-d95c-4f6b-b2c8-fef952325316")
+	)
+	(text "2.52"
+		(exclude_from_sim no)
+		(at 275.97 116.94 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right)
+		)
+		(uuid "f2b65d25-3457-4d7c-97d4-bde4fbd21bd2")
+	)
+	(rectangle
+		(start 276.97 116.94)
+		(end 360.38 153.44)
+		(stroke
+			(width 0.25)
+			(type default)
+			(color 120 120 120 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "a1e4e836-126f-4ba1-be64-71ce74009229")
+	)
+	(text "Temps [ms]"
+		(exclude_from_sim no)
+		(at 360.38 159.04 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "7aeb99dd-8b21-423d-85a7-8b215bcac1ea")
+	)
+	(text "[V]"
+		(exclude_from_sim no)
+		(at 267.97 116.64 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "e2d27d40-4223-474c-ac32-5b259a4244ff")
+	)
+	(text "fenêtre REFIN de l'AD7606C : 2.495 – 2.505 V"
+		(exclude_from_sim no)
+		(at 277.97 123.384 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.1 1.1)
+				(color 70 70 70 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "46b4a513-3eee-4f7e-baff-9901dea30949")
+	)
+	(polyline
+		(pts
+			(xy 276.97 153.44) (xy 276.983 153.44) (xy 277.003 153.44) (xy 277.011 153.44) (xy 277.019 153.44) (xy 277.029 153.44) (xy 277.084 153.44) (xy 277.085 153.44) (xy 277.156 153.44) (xy 277.159 153.44) (xy 277.245 153.44) (xy 277.25 153.44) (xy 277.385 153.44) (xy 277.637 153.44) (xy 277.926 153.44) (xy 278.099 153.44) (xy 278.397 153.44) (xy 278.686 153.44) (xy 278.933 153.44) (xy 279.107 153.44) (xy 279.408 153.44) (xy 279.697 153.44) (xy 279.986 153.44) (xy 280.275 153.44) (xy 280.519 153.44) (xy 280.526 153.44) (xy 280.659 153.44) (xy 280.948 153.44) (xy 281.248 153.44) (xy 281.537 153.44) (xy 281.826 153.44) (xy 282.115 153.44) (xy 282.416 153.44) (xy 282.705 153.44) (xy 282.994 153.44) (xy 283.294 153.44) (xy 283.584 153.44) (xy 283.873 153.44) (xy 284.162 153.44) (xy 284.462 153.44) (xy 284.751 153.44) (xy 285.04 153.44) (xy 285.329 153.44) (xy 285.63 153.44) (xy 285.919 153.44) (xy 286.208 153.44) (xy 286.497 153.44) (xy 286.798 153.44) (xy 287.087 153.44) (xy 287.376 153.44) (xy 287.665 153.44) (xy 287.965 153.44) (xy 288.254 153.44) (xy 288.544 153.44) (xy 288.833 153.44) (xy 289.133 153.44) (xy 289.422 153.44) (xy 289.711 153.44) (xy 290 153.44) (xy 290.301 153.44) (xy 290.59 153.44) (xy 290.879 153.44) (xy 291.168 153.44) (xy 291.469 153.44) (xy 291.758 153.44) (xy 292.047 153.44) (xy 292.336 153.44) (xy 292.636 153.44) (xy 292.925 153.44) (xy 293.214 153.44) (xy 293.515 153.44) (xy 293.804 153.44) (xy 294.093 153.44) (xy 294.382 153.44) (xy 294.683 153.44) (xy 294.972 153.44) (xy 295.261 153.44) (xy 295.55 153.44) (xy 295.85 153.44) (xy 296.139 153.44) (xy 296.429 153.44) (xy 296.718 153.44) (xy 297.018 153.44) (xy 297.307 153.44) (xy 297.596 153.44) (xy 297.885 153.359) (xy 298.186 151.926) (xy 298.475 150.618) (xy 298.764 149.378) (xy 299.053 148.202) (xy 299.353 147.044) (xy 299.643 145.988) (xy 299.932 144.987) (xy 300.221 144.037) (xy 300.521 143.102) (xy 300.81 142.248) (xy 301.1 141.439) (xy 301.389 140.671) (xy 301.689 139.916) (xy 301.978 139.226) (xy 302.267 138.572) (xy 302.568 137.928) (xy 302.857 137.34) (xy 303.146 136.782) (xy 303.435 136.253) (xy 303.735 135.733) (xy 304.024 135.257) (xy 304.314 134.806) (xy 304.603 134.378) (xy 304.903 133.956) (xy 305.192 133.572) (xy 305.481 133.206) (xy 305.771 132.86) (xy 306.071 132.518) (xy 306.36 132.207) (xy 306.649 131.911) (xy 306.938 131.63) (xy 307.238 131.354) (xy 307.528 131.101) (xy 307.817 130.861) (xy 308.106 130.634) (xy 308.406 130.41) (xy 308.695 130.205) (xy 308.985 130.01) (xy 309.274 129.826) (xy 309.574 129.644) (xy 309.863 129.478) (xy 310.152 129.32) (xy 310.442 129.17) (xy 310.742 129.023) (xy 311.031 128.887) (xy 311.32 128.759) (xy 311.609 128.638) (xy 311.909 128.518) (xy 312.199 128.408) (xy 312.488 128.304) (xy 312.788 128.201) (xy 313.077 128.107) (xy 313.366 128.018) (xy 313.656 127.933) (xy 313.956 127.85) (xy 314.245 127.773) (xy 314.534 127.701) (xy 314.823 127.632) (xy 315.124 127.564) (xy 315.413 127.501) (xy 315.702 127.442) (xy 315.991 127.386) (xy 316.291 127.33) (xy 316.58 127.28) (xy 316.87 127.231) (xy 317.159 127.185) (xy 317.459 127.14) (xy 317.748 127.099) (xy 318.037 127.059) (xy 318.327 127.022) (xy 318.627 126.985) (xy 318.916 126.951) (xy 319.205 126.919) (xy 319.494 126.888) (xy 319.795 126.858) (xy 320.084 126.83) (xy 320.373 126.803) (xy 320.662 126.778) (xy 320.962 126.754) (xy 321.251 126.731) (xy 321.541 126.709) (xy 321.841 126.688) (xy 322.13 126.668) (xy 322.419 126.65) (xy 322.708 126.632) (xy 323.009 126.614) (xy 323.298 126.598) (xy 323.587 126.583) (xy 323.876 126.568) (xy 324.176 126.554) (xy 324.466 126.541) (xy 324.755 126.528) (xy 325.044 126.516) (xy 325.344 126.504) (xy 325.633 126.493) (xy 325.922 126.483) (xy 326.212 126.473) (xy 326.512 126.463) (xy 326.801 126.454) (xy 327.09 126.446) (xy 327.379 126.438) (xy 327.68 126.429) (xy 327.969 126.422) (xy 328.258 126.415) (xy 328.547 126.408) (xy 328.847 126.401) (xy 329.136 126.395) (xy 329.426 126.389) (xy 329.715 126.384) (xy 330.015 126.378) (xy 330.304 126.373) (xy 330.593 126.368) (xy 330.882 126.364) (xy 331.183 126.359) (xy 331.472 126.355) (xy 331.761 126.351) (xy 332.061 126.347) (xy 332.351 126.343) (xy 332.64 126.339) (xy 332.929 126.336) (xy 333.229 126.333) (xy 333.518 126.33) (xy 333.807 126.327) (xy 334.096 126.324) (xy 334.397 126.321) (xy 334.686 126.319) (xy 334.975 126.316) (xy 335.264 126.314) (xy 335.565 126.311) (xy 335.854 126.309) (xy 336.143 126.307) (xy 336.432 126.305) (xy 336.732 126.303) (xy 337.022 126.302) (xy 337.311 126.3) (xy 337.6 126.298) (xy 337.9 126.296) (xy 338.189 126.295) (xy 338.478 126.293) (xy 338.767 126.292) (xy 339.068 126.291) (xy 339.357 126.29) (xy 339.646 126.288) (xy 339.935 126.287) (xy 340.236 126.286) (xy 340.525 126.285) (xy 340.814 126.284) (xy 341.114 126.283) (xy 341.403 126.282) (xy 341.692 126.281) (xy 341.982 126.28) (xy 342.282 126.279) (xy 342.571 126.278) (xy 342.86 126.278) (xy 343.149 126.277) (xy 343.45 126.276) (xy 343.739 126.276) (xy 344.028 126.275) (xy 344.317 126.274) (xy 344.617 126.274) (xy 344.906 126.273) (xy 345.196 126.272) (xy 345.485 126.272) (xy 345.785 126.272) (xy 346.074 126.271) (xy 346.363 126.27) (xy 346.652 126.27) (xy 346.953 126.27) (xy 347.242 126.269) (xy 347.531 126.269) (xy 347.82 126.268) (xy 348.121 126.268) (xy 348.41 126.268) (xy 348.699 126.267) (xy 348.988 126.267) (xy 349.288 126.267) (xy 349.577 126.266) (xy 349.867 126.266) (xy 350.156 126.266) (xy 350.456 126.266) (xy 350.745 126.265) (xy 351.034 126.265) (xy 351.335 126.265) (xy 351.624 126.264) (xy 351.913 126.264) (xy 352.202 126.264) (xy 352.502 126.264) (xy 352.791 126.264) (xy 353.081 126.263) (xy 353.37 126.263) (xy 353.67 126.263) (xy 353.959 126.263) (xy 354.248 126.263) (xy 354.538 126.263) (xy 354.838 126.262) (xy 355.127 126.262) (xy 355.416 126.262) (xy 355.705 126.262) (xy 356.006 126.262) (xy 356.295 126.262) (xy 356.584 126.262) (xy 356.873 126.261) (xy 357.173 126.261) (xy 357.462 126.261) (xy 357.752 126.261) (xy 358.041 126.261) (xy 358.341 126.261) (xy 358.63 126.261) (xy 358.919 126.261) (xy 359.209 126.261) (xy 359.509 126.261) (xy 359.798 126.26) (xy 360.087 126.26) (xy 360.38 126.26)
+		)
+		(stroke
+			(width 0.45)
+			(type solid)
+			(color 237 161 0 1)
+		)
+		(uuid "b3692270-b82f-4769-95c8-68b81f3df490")
+	)
+	(text "2.4996 V"
+		(exclude_from_sim no)
+		(at 361.38 126.26 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 237 161 0 1)
+			)
+			(justify left)
+		)
+		(uuid "102bcff2-dab3-4c1d-99b0-99fc9389ce64")
+	)
+	(text_box "CHRONOLOGIE DU DÉMARRAGE (ÉCHELLE LOG)"
+		(exclude_from_sim no)
+		(at 45.72 243 0)
+		(size 105.41 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 162 22 34 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "0e4c46de-d4b3-4ac5-9cf1-3be0404aa115")
+	)
+	(polyline
+		(pts
+			(xy 62.72 250.85) (xy 62.72 278.5)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "a9c968f4-2831-4cb9-96cb-f82d5fedbbf4")
+	)
+	(polyline
+		(pts
+			(xy 79.602 250.85) (xy 79.602 278.5)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "24ec89b3-215c-4cc7-a462-d9427d69f3e6")
+	)
+	(polyline
+		(pts
+			(xy 96.484 250.85) (xy 96.484 278.5)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "216e361d-523c-4d45-a765-745abad231c7")
+	)
+	(polyline
+		(pts
+			(xy 113.366 250.85) (xy 113.366 278.5)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "d77c46f1-0bea-4692-8a64-a941e103fa98")
+	)
+	(polyline
+		(pts
+			(xy 130.248 250.85) (xy 130.248 278.5)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "cf1d33d1-1802-4910-87e4-36ed26471502")
+	)
+	(polyline
+		(pts
+			(xy 147.13 250.85) (xy 147.13 278.5)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+			(color 222 222 222 1)
+		)
+		(uuid "f8479776-d434-40d8-a0aa-3d0b98f85010")
+	)
+	(rectangle
+		(start 62.72 250.85)
+		(end 147.13 278.5)
+		(stroke
+			(width 0.25)
+			(type default)
+			(color 120 120 120 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "47e91921-e661-4ffa-b211-9774043eb637")
+	)
+	(text ""
+		(exclude_from_sim no)
+		(at 147.13 284.1 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "2495a150-960d-44bb-8a2f-867ed7bfa6d0")
+	)
+	(text ""
+		(exclude_from_sim no)
+		(at 45.72 250.55 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "d6f43ed8-7bdc-4889-a3c2-462ab032cfef")
+	)
+	(text "10 µs"
+		(exclude_from_sim no)
+		(at 62.72 279.5 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "485a47b7-05ba-4923-9a23-d0caf258f92d")
+	)
+	(text "0.1 ms"
+		(exclude_from_sim no)
+		(at 79.602 279.5 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "4d308bec-bb21-4b65-b5a2-0740f8417e56")
+	)
+	(text "1 ms"
+		(exclude_from_sim no)
+		(at 96.484 279.5 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "50e07d3b-de8b-4197-9f15-96809a7dc599")
+	)
+	(text "10 ms"
+		(exclude_from_sim no)
+		(at 113.366 279.5 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "f0ed6119-7ea4-4613-9f34-ac20cd4e0d83")
+	)
+	(text "100 ms"
+		(exclude_from_sim no)
+		(at 130.248 279.5 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "6b190d29-5b03-44cd-8592-6c1e09d8264a")
+	)
+	(text "1 s"
+		(exclude_from_sim no)
+		(at 147.13 279.5 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 70 70 70 1)
+			)
+			(justify top)
+		)
+		(uuid "dd9851e8-2640-454f-8925-db521ac5383a")
+	)
+	(text "+6V"
+		(exclude_from_sim no)
+		(at 61.72 254.8 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 235 104 52 1)
+			)
+			(justify right)
+		)
+		(uuid "49e84590-8302-444a-88c3-6355d031f9a6")
+	)
+	(polyline
+		(pts
+			(xy 67.802 254.8) (xy 95.5441 254.8)
+		)
+		(stroke
+			(width 1.6)
+			(type solid)
+			(color 235 104 52 1)
+		)
+		(uuid "c5b12899-4555-4431-a47d-e536e96afad1")
+	)
+	(text "90 % à 0.88 ms"
+		(exclude_from_sim no)
+		(at 67.802 253.5 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.1 1.1)
+				(color 70 70 70 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "367ac742-7fbf-49ea-845d-02bdcff778d8")
+	)
+	(text "+5VA"
+		(exclude_from_sim no)
+		(at 61.72 261.383 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 27 175 122 1)
+			)
+			(justify right)
+		)
+		(uuid "ecb99a94-21de-483a-a7cb-b026d8ac8aa1")
+	)
+	(polyline
+		(pts
+			(xy 80.2776 261.383) (xy 127.779 261.383)
+		)
+		(stroke
+			(width 1.6)
+			(type solid)
+			(color 27 175 122 1)
+		)
+		(uuid "de4d59df-4d85-4e2f-93e0-edafdb6cef29")
+	)
+	(text "1 % : 48 ms, 0.1 % : 71 ms"
+		(exclude_from_sim no)
+		(at 80.2776 260.083 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.1 1.1)
+				(color 70 70 70 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "be5bf4c4-f459-470d-b47f-2a3ab531e755")
+	)
+	(text "+2.5VA"
+		(exclude_from_sim no)
+		(at 61.72 267.967 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 237 161 0 1)
+			)
+			(justify right)
+		)
+		(uuid "18010aed-3a0b-4843-8af8-5c8dd0a11bc0")
+	)
+	(polyline
+		(pts
+			(xy 80.2776 267.967) (xy 127.779 267.967)
+		)
+		(stroke
+			(width 1.6)
+			(type solid)
+			(color 237 161 0 1)
+		)
+		(uuid "aaeacda4-7716-45fe-8808-0617580c4d52")
+	)
+	(text "même constante de temps"
+		(exclude_from_sim no)
+		(at 80.2776 266.667 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.1 1.1)
+				(color 70 70 70 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "1a988e9f-50f7-40dd-8e54-18c734ed6ae5")
+	)
+	(text "Hôte"
+		(exclude_from_sim no)
+		(at 61.72 274.55 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 120 120 120 1)
+			)
+			(justify right)
+		)
+		(uuid "5301aa66-aa93-4e4a-b4d8-b738666bd648")
+	)
+	(polyline
+		(pts
+			(xy 67.802 274.55) (xy 130.248 274.55)
+		)
+		(stroke
+			(width 1.6)
+			(type solid)
+			(color 120 120 120 1)
+		)
+		(uuid "c7d7f139-d6db-492e-984e-f49e45a72b3b")
+	)
+	(text "attente ≥ 100 ms"
+		(exclude_from_sim no)
+		(at 67.802 273.25 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.1 1.1)
+				(color 70 70 70 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "1a758fc9-bbec-40e0-862d-c224eebb0caf")
+	)
+	(polyline
+		(pts
+			(xy 130.248 250.85) (xy 130.248 278.5)
+		)
+		(stroke
+			(width 0.3)
+			(type dash)
+			(color 180 40 40 1)
+		)
+		(uuid "c9f5d796-36ae-4d53-bc92-e4919fc07b7b")
+	)
+	(text "RESET puis 1re conversion"
+		(exclude_from_sim no)
+		(at 129.248 252.45 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.1 1.1)
+				(color 180 40 40 1)
+			)
+			(justify right top)
+		)
+		(uuid "dfaedff7-19b2-4357-8c9a-5acac17ebf4d")
+	)
+	(text_box "DESCRIPTION"
+		(exclude_from_sim no)
+		(at 45.72 208.28 0)
+		(size 80.01 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 0 105 120 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "1bfb0e4a-25fe-47fa-bbc0-35e77204733d")
+	)
+	(text_box "Ordre et temps d'établissement des rails après l'arrivée du +3.3V (simulations LTspice 01 à 04).\nLe boost monte en premier : +6V à 90 % en 0.88 ms. Les références et les LDO suivent avec la constante de temps du filtre SET (9.8 ms) : +5VA et +2.5VA arrivent ensemble, à 0.1 % après 71 ms.\nAucun signal Power-Good : c'est l'hôte qui doit attendre."
+		(exclude_from_sim no)
+		(at 45.72 214.63 0)
+		(size 80.01 25.4)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 230 243 245 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "9c0417f3-74c2-4091-b23d-617f1f59d379")
+	)
+	(text_box "DESIGN NOTE · +2.5VA ET R12"
+		(exclude_from_sim no)
+		(at 128.27 208.28 0)
+		(size 80.01 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 205 100 0 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "8eeb54d7-f4fd-4444-b61d-0488de975e51")
+	)
+	(text_box "R12 = 24.9 kΩ : 100 µA × 24.9 kΩ = 2.49 V, +2.5VA = 2.4996 V, dans la fenêtre 2.495–2.505 V de l'AD7606C. L'ancienne valeur 49.9 kΩ donnait 2.549 V (corrigé, README Design review)."
+		(exclude_from_sim no)
+		(at 128.27 214.63 0)
+		(size 80.01 25.4)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 253 241 226 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "1fb3f606-3f98-471b-a577-752b97fd94ef")
+	)
+	(text_box "DESIGN NOTE · DÉMARRAGE"
+		(exclude_from_sim no)
+		(at 210.82 208.28 0)
+		(size 80.01 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 205 100 0 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "6ae80aff-873a-4abc-a597-5d75fa0dc2db")
+	)
+	(text_box "Pas de signal Power-Good (PGFB relié à IN) : attendre au moins 100 ms après la mise sous tension avant la première conversion. Le fast start-up des LT3045-1 est désactivé par le même branchement."
+		(exclude_from_sim no)
+		(at 210.82 214.63 0)
+		(size 80.01 25.4)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 253 241 226 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "3aa2af5c-1623-472d-8564-82bda9ef8eb0")
+	)
+	(text_box "CALCULS & BUDGET"
+		(exclude_from_sim no)
+		(at 293.37 208.28 0)
+		(size 80.01 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 46 125 50 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "53cc5504-6696-47ce-946f-abe2d191743e")
+	)
+	(text_box "Boost : soft-start C24 = 10 nF chargé à 2 µA, +6V à 90 % en 0.88 ms\nRails : τ = (R8 // R14) × C13 = 980 Ω × 10 µF = 9.8 ms\n   1 % : ln(100) × τ = 45 ms (sim : 48 ms) ; 0.1 % : ln(1000) × τ = 68 ms (sim : 71 ms)\nAppel : 3.03 A crête dans L1 / D2 (front du +3.3V en 100 µs) < Isat 4.6 A"
+		(exclude_from_sim no)
+		(at 293.37 214.63 0)
+		(size 80.01 25.4)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 232 245 233 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "d40957fb-d8c2-4743-a7a9-a745cc6bb2db")
+	)
+	(text_box "DESIGN NOTE · SEUILS DE DÉMARRAGE"
+		(exclude_from_sim no)
+		(at 312.42 165.1 0)
+		(size 60.96 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 205 100 0 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "dab87e83-fcd4-4de2-afd8-68bffc20df10")
+	)
+	(text_box "• LT8362 : EN/UVLO = VIN, démarre à 1.68 V sur EN (VIN ≥ 2.8 V), s'arrête sous 1.6 V.\n• LT3045-1 : EN/UV = +6V, actif au-dessus de 1.24 V (hystérésis 130 mV).\n• LTC6655-5 : VIN ≥ VOUT + 0.5 V = 5.5 V pour ±0.1 % sous ±5 mA : +5VA n'est juste qu'avec +6V > 5.5 V.\n• LTC6655-2.5 : VIN ≥ 3.0 V.\n• LT3045-1 : dropout 260 mV typ. à 500 mA."
+		(exclude_from_sim no)
+		(at 312.42 171.45 0)
+		(size 60.96 33.0)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 253 241 226 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "add48712-1201-4ef1-9aac-3ade94dca71d")
+	)
+	(text_box "SÉQUENCE CÔTÉ HÔTE (RECOMMANDÉE)"
+		(exclude_from_sim no)
+		(at 156.21 243 0)
+		(size 62.23 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 55 71 79 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "d0d8af60-d3bb-4b69-b2a4-2eb751b78971")
+	)
+	(text_box "1. Appliquer le +3.3V : le boost démarre seul (EN/UVLO = VIN).\n2. Attendre ≥ 100 ms : rails à 0.1 %, pas de Power-Good.\n3. Reset complet de l'AD7606C (impulsion RESET, datasheet).\n4. Mode logiciel : plages ±5 V différentielles, suréchantillonnage ; REF SELECT à 0 (référence +2.5VA).\n5. Mesurer le zéro des 4 courants à courant nul (offset 15 mV, Design review 5), puis lancer CONVST."
+		(exclude_from_sim no)
+		(at 156.21 249.35 0)
+		(size 62.23 35.65)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 236 239 241 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "036f11d6-3e29-45f9-a7b7-d5463d55195f")
 	)
 )

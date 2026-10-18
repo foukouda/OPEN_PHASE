@@ -250,99 +250,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(rectangle
-		(start 317.5 39.37)
-		(end 373.38 240.03)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "1d9edcfe-b949-46c5-adca-40f822b4bd2a")
-	)
-	(rectangle
-		(start 45.72 172.72)
-		(end 134.62 238.76)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "5d23fe69-1b57-41a7-86cd-8987bca3e109")
-	)
-	(rectangle
-		(start 257.81 39.37)
-		(end 313.69 240.03)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "920cf63e-f040-4bf0-adcd-a07e336e1f2d")
-	)
-	(rectangle
-		(start 45.72 39.37)
-		(end 134.62 167.64)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "ed047b56-79da-45e9-8381-b3465e9473b3")
-	)
-	(rectangle
-		(start 139.7 39.37)
-		(end 255.27 240.03)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "ed78b7e7-9d87-4eba-bb13-ab88d26954ef")
-	)
-	(text "Flexible I/O worked examples"
-		(exclude_from_sim no)
-		(at 265.43 254 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-			(href "https://jpieper.com/2022/06/30/flexible-i-o-worked-examples/")
-		)
-		(uuid "16842e9f-eef2-418b-80ee-4eca09c5cd4a")
-	)
-	(text "Vout≈Vref+(Gain)×(I×Rshunt)"
-		(exclude_from_sim no)
-		(at 48.514 177.546 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.54 2.54)
-				(bold yes)
-				(color 0 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "6082bef2-b19b-46ad-acec-49ee0316f2e0")
-	)
 	(text "References:"
 		(exclude_from_sim no)
 		(at 265.43 250.19 0)
@@ -357,44 +264,6 @@
 			(justify left bottom)
 		)
 		(uuid "ca73a951-c39c-4a3c-9e12-06e6bc2f3311")
-	)
-	(text "Flexible I/O source configuration"
-		(exclude_from_sim no)
-		(at 265.43 256.54 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-			(href "https://jpieper.com/2022/06/28/flexible-i-o-source-configuration/")
-		)
-		(uuid "ff128f57-01dd-404e-9bb2-8208299d438c")
-	)
-	(text_box "Shouse your INA240A..."
-		(exclude_from_sim no)
-		(at 49.53 226.695 0)
-		(size 86.36 9.525)
-		(margins 1.9049 1.9049 1.9049 1.9049)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "22f68459-86b0-4160-81dc-9d64d58e4265")
 	)
 	(text_box "[${#}] ${TITLE}"
 		(exclude_from_sim no)
@@ -419,194 +288,27 @@
 		)
 		(uuid "524c500e-48b2-4d74-9c30-5c34bf6c2558")
 	)
-	(text_box "FILTRE"
-		(exclude_from_sim no)
-		(at 259.08 228.6 0)
-		(size 53.34 9.525)
-		(margins 1.9049 1.9049 1.9049 1.9049)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "52b7f9ab-ff60-4fad-81b5-370c46c366ed")
-	)
-	(text_box "DESIGN NOTE:\nCapacitor Découplage\n0603\nCeramique X7R\n>16V"
-		(exclude_from_sim no)
-		(at 77.47 143.51 0)
-		(size 21.59 15.24)
-		(margins 1.3525 1.3525 1.3525 1.3525)
-		(stroke
-			(width 0.8)
-			(type solid)
-			(color 255 165 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "7118d66d-27ed-4a42-9d0f-29873dd1133d")
-	)
-	(text_box "LAYOUT NOTE:\nblabla"
-		(exclude_from_sim no)
-		(at 101.6 143.51 0)
-		(size 26.67 15.24)
-		(margins 1.4525 1.4525 1.4525 1.4525)
-		(stroke
-			(width 1)
-			(type solid)
-			(color 0 0 255 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 255 1)
-			)
-			(justify left top)
-		)
-		(uuid "789bb8df-08ec-4683-a441-f4ff02e08c1e")
-	)
-	(text_box "Description"
-		(exclude_from_sim no)
-		(at 46.99 156.21 0)
-		(size 86.36 9.525)
-		(margins 1.9049 1.9049 1.9049 1.9049)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "904a8349-50c0-42c2-9fb8-b365e5e4dae5")
-	)
-	(text_box "INA240 + Shunt"
-		(exclude_from_sim no)
-		(at 142.24 228.6 0)
-		(size 110.49 9.525)
-		(margins 1.9049 1.9049 1.9049 1.9049)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "96ca24d3-fb87-492b-b46b-2ff8e6f8597a")
-	)
-	(text_box "Test Point"
-		(exclude_from_sim no)
-		(at 318.77 228.6 0)
-		(size 53.34 9.525)
-		(margins 1.9049 1.9049 1.9049 1.9049)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "ac59a6b3-731c-4363-a803-7459ac300c4a")
-	)
-	(text_box "DESIGN NOTE:\nGain A1->A5 (INA241)\nINA241A1 : 10V/V\nINA241A2 : 20V/V (fitted)\nINA241A3 : 50V/V\nINA241A4 : 100V/V\nINA241A5 : 200V/V"
-		(exclude_from_sim no)
-		(at 53.34 143.51 0)
-		(size 21.59 15.24)
-		(margins 1.3525 1.3525 1.3525 1.3525)
-		(stroke
-			(width 0.8)
-			(type solid)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "b30fc753-248d-41ea-b0ab-815ff2704544")
-	)
 	(junction
-		(at 163.83 77.47)
+		(at 152.4 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9352a0d1-1440-442e-b15f-96a8275f1c7b")
 	)
 	(junction
-		(at 167.64 77.47)
+		(at 156.21 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a5c19f8e-ba1f-46a1-9843-d0a6c174079d")
 	)
 	(junction
-		(at 171.45 77.47)
+		(at 160.02 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c584c600-8d43-4d75-b477-bcced066ad74")
 	)
 	(wire
 		(pts
-			(xy 156.21 77.47) (xy 163.83 77.47)
+			(xy 144.78 144.78) (xy 152.4 144.78)
 		)
 		(stroke
 			(width 0)
@@ -616,7 +318,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 77.47) (xy 179.07 77.47)
+			(xy 160.02 144.78) (xy 167.64 144.78)
 		)
 		(stroke
 			(width 0)
@@ -626,7 +328,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 77.47) (xy 171.45 77.47)
+			(xy 156.21 144.78) (xy 160.02 144.78)
 		)
 		(stroke
 			(width 0)
@@ -636,7 +338,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 77.47) (xy 167.64 77.47)
+			(xy 152.4 144.78) (xy 156.21 144.78)
 		)
 		(stroke
 			(width 0)
@@ -646,7 +348,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 167.64 77.47 0)
+		(at 156.21 144.78 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -657,7 +359,7 @@
 		(fields_autoplaced yes)
 		(uuid "45c2789a-2b38-4edc-9a87-a38ef4ae33fc")
 		(property "Reference" "#PWR02"
-			(at 167.64 83.82 0)
+			(at 156.21 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -668,7 +370,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 167.64 82.55 0)
+			(at 156.21 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -678,7 +380,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 167.64 77.47 0)
+			(at 156.21 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -689,7 +391,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 77.47 0)
+			(at 156.21 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -700,7 +402,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 167.64 77.47 0)
+			(at 156.21 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -724,7 +426,7 @@
 	)
 	(symbol
 		(lib_id "OPEN_PHASE:MountingHole_Pad")
-		(at 156.21 74.93 0)
+		(at 144.78 142.24 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -735,7 +437,7 @@
 		(fields_autoplaced yes)
 		(uuid "91cc39bd-d20d-4b90-8cc9-89cb90bec5f3")
 		(property "Reference" "H1"
-			(at 158.75 72.3899 0)
+			(at 147.32 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -746,7 +448,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 158.75 74.9299 0)
+			(at 147.32 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -758,7 +460,7 @@
 			)
 		)
 		(property "Footprint" "OPEN_PHASE:MountingHole_3.2mm_M3_Pad_Via"
-			(at 156.21 74.93 0)
+			(at 144.78 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -769,7 +471,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 156.21 74.93 0)
+			(at 144.78 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -780,7 +482,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 156.21 74.93 0)
+			(at 144.78 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -804,7 +506,7 @@
 	)
 	(symbol
 		(lib_id "OPEN_PHASE:MountingHole_Pad")
-		(at 179.07 74.93 0)
+		(at 167.64 142.24 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -815,7 +517,7 @@
 		(fields_autoplaced yes)
 		(uuid "d48e21a0-3772-4bc3-8394-bfcdfc154564")
 		(property "Reference" "H4"
-			(at 181.61 72.3899 0)
+			(at 170.18 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -826,7 +528,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 181.61 74.9299 0)
+			(at 170.18 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -838,7 +540,7 @@
 			)
 		)
 		(property "Footprint" "OPEN_PHASE:MountingHole_3.2mm_M3_Pad_Via"
-			(at 179.07 74.93 0)
+			(at 167.64 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -849,7 +551,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 74.93 0)
+			(at 167.64 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -860,7 +562,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 179.07 74.93 0)
+			(at 167.64 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -884,7 +586,7 @@
 	)
 	(symbol
 		(lib_id "OPEN_PHASE:MountingHole_Pad")
-		(at 163.83 74.93 0)
+		(at 152.4 142.24 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -895,7 +597,7 @@
 		(fields_autoplaced yes)
 		(uuid "d6d949ea-ff1f-43bc-8e8d-6e950c0164da")
 		(property "Reference" "H2"
-			(at 166.37 72.3899 0)
+			(at 154.94 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -906,7 +608,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 166.37 74.9299 0)
+			(at 154.94 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -918,7 +620,7 @@
 			)
 		)
 		(property "Footprint" "OPEN_PHASE:MountingHole_3.2mm_M3_Pad_Via"
-			(at 163.83 74.93 0)
+			(at 152.4 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -929,7 +631,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 74.93 0)
+			(at 152.4 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -940,7 +642,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 163.83 74.93 0)
+			(at 152.4 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -964,7 +666,7 @@
 	)
 	(symbol
 		(lib_id "OPEN_PHASE:MountingHole_Pad")
-		(at 171.45 74.93 0)
+		(at 160.02 142.24 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -975,7 +677,7 @@
 		(fields_autoplaced yes)
 		(uuid "e44d5142-f3e1-438b-9262-cef2badf6bff")
 		(property "Reference" "H3"
-			(at 173.99 72.3899 0)
+			(at 162.56 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -986,7 +688,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 173.99 74.9299 0)
+			(at 162.56 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -998,7 +700,7 @@
 			)
 		)
 		(property "Footprint" "OPEN_PHASE:MountingHole_3.2mm_M3_Pad_Via"
-			(at 171.45 74.93 0)
+			(at 160.02 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1009,7 +711,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 171.45 74.93 0)
+			(at 160.02 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1020,7 +722,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 171.45 74.93 0)
+			(at 160.02 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1041,5 +743,297 @@
 				)
 			)
 		)
+	)
+	(rectangle
+		(start 45.72 39.37)
+		(end 266.7 240.03)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "b177edc8-6f58-4486-a3b9-1a91310fdbb9")
+	)
+	(text_box "TROUS DE FIXATION   ·   H1 À H4, M3, RELIÉS AU GND"
+		(exclude_from_sim no)
+		(at 45.72 39.37 0)
+		(size 220.98 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 162 22 34 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "4f851948-f1fa-4d57-8583-7f762538d254")
+	)
+	(text_box "DESCRIPTION"
+		(exclude_from_sim no)
+		(at 270.51 39.37 0)
+		(size 102.87 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 0 105 120 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "43e9417c-0e62-4792-85b0-5e56e95eec38")
+	)
+	(text_box "Quatre trous de fixation M3 (H1 à H4), métallisés et reliés au GND. Ils tiennent la carte et peuvent ramener sa masse au support quand celui-ci est conducteur.\nPas de fiducial sur cette révision."
+		(exclude_from_sim no)
+		(at 270.51 45.72 0)
+		(size 102.87 10.0)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 230 243 245 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "2534d84b-c4b0-4af8-aff5-25766b1e457f")
+	)
+	(text_box "DESIGN NOTE · FIXATION"
+		(exclude_from_sim no)
+		(at 270.51 56.99 0)
+		(size 102.87 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 205 100 0 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "b1e6a119-a56f-42b5-aed9-e7a02b05f266")
+	)
+	(text_box "• Empreinte MountingHole_3.2mm_M3_Pad_Via : perçage 3.2 mm, pastille Ø6.4 mm, 8 vias Ø0.5 mm autour pour relier toutes les couches.\n• Reliés au GND : la vis met la masse de la carte au potentiel du support. Pour garder une masse flottante, utiliser des entretoises isolantes.\n• Fiducials : aucun pour l'instant ; à ajouter (3 en coin, 1 mm de cuivre, 2 mm d'ouverture de vernis) si l'assembleur les demande."
+		(exclude_from_sim no)
+		(at 270.51 63.34 0)
+		(size 102.87 22.0)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 253 241 226 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "c1c29da0-4e97-4a13-bcae-2830780b2bb0")
+	)
+	(text_box "LAYOUT NOTE"
+		(exclude_from_sim no)
+		(at 270.51 86.61 0)
+		(size 102.87 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 0 82 165 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "a1323cca-2614-492b-a96a-475f3f9556bc")
+	)
+	(text_box "• Garder libre l'appui de la tête de vis et de la rondelle autour de chaque trou.\n• Pas de composant sensible aux contraintes mécaniques près des trous (LTC6655, page 6)."
+		(exclude_from_sim no)
+		(at 270.51 92.96 0)
+		(size 102.87 9.0)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 228 238 250 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "fdf5c24c-4dc5-463b-a807-e664b15100f7")
+	)
+	(text_box "CALCULS & BUDGET"
+		(exclude_from_sim no)
+		(at 270.51 103.23 0)
+		(size 102.87 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 46 125 50 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "13ebe038-c999-418e-b75b-dec827992038")
+	)
+	(text_box "Vis M3\n   Tête bombée ISO 7380 : Ø5.7 mm ; tête cylindrique ISO 4762 : Ø5.5 mm\n   Rondelle M3 (ISO 7089) : Ø7 mm → anneau libre de Ø7 mm autour de chaque trou\n   Pastille Ø6.4 mm : la rondelle appuie sur le cuivre GND"
+		(exclude_from_sim no)
+		(at 270.51 109.58 0)
+		(size 102.87 12.0)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 232 245 233 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "beabd656-0f65-456c-835e-68d60a69f3a9")
+	)
+	(text_box "TEST POINTS"
+		(exclude_from_sim no)
+		(at 45.72 243 0)
+		(size 172.72 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 106 27 154 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "07f98575-a3d2-4090-892d-5aa55320170c")
+	)
+	(text_box "Zone réservée aux test points. Les pastilles GND des trous peuvent servir de point de masse pour la sonde."
+		(exclude_from_sim no)
+		(at 45.72 249.35 0)
+		(size 172.72 35.65)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 243 232 246 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 110 90 120 1)
+			)
+			(justify left top)
+		)
+		(uuid "f07f44a1-d0b0-4da1-aed5-b817c99b24e2")
+	)
+	(text "README : Physical specifications"
+		(exclude_from_sim no)
+		(at 265.43 254 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+			(href "https://github.com/foukouda/OPEN_PHASE#physical-specifications")
+		)
+		(uuid "cbc5d64c-866d-4c40-a8be-5233a1c0f57c")
 	)
 )

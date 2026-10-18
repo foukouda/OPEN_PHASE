@@ -193,7 +193,7 @@ The power chain and the two measurement channels are simulated with **LTspice 26
 - **LT8362, LT3045-1, LTC6655-5, LTC6655-2.5**: official Analog Devices models shipped with LTspice.
 - **INA241A2**: TI does not provide an LTspice model, so `INA241A2_behav.sub` / `.asy` is a **behavioral model** written for this project from the datasheet (SBOSA30D): gain 20 V/V around (REF1 + REF2) / 2, 1.1 MHz bandwidth, 8 V/µs slew rate, output swing, 2.5 mA supply current, 35 µA input bias. Gain and input offset are parameters, nominal except in simulation 08. It does not model noise, CMRR or the 1 µs output hold of the enhanced PWM rejection.
 - **AD7606C-18**: loads only. AVCC and VDRIVE are current sources (45 mA and 1.8 mA, the 1 MSPS figures). Each analog input is 1.2 MΩ to an internal 2 V node plus 5 pF, from the datasheet (*"Analog Input Current = (VIN − 2)/RIN"*).
-- **D2**: PMEG2020EH modelled with the LTspice PMEG2020AEA (same 20 V / 2 A Nexperia MEGA Schottky family). **L1**: 2.2 µH, 3.2 mΩ.
+- **D2**: PMEG2020EH modelled with the LTspice PMEG2020AEA (same 20 V / 2 A Nexperia MEGA Schottky family). **L1**: 2.2 µH, 22 mΩ (Würth WE-MAPI 4030, 74438357022).
 - Ceramic capacitors use their nominal value (no DC-bias derating).
 
 **Results**
@@ -202,8 +202,8 @@ The power chain and the two measurement channels are simulated with **LTspice 26
 | --- | --- | --- |
 | +6V output (LT8362) | 5.96 V | 1.6 V × (1 + 1 MΩ / 365 kΩ) = 5.98 V |
 | +6V reaches 90 % | 0.88 ms | 5.9 V after 1.0 ms, 6.04 V overshoot |
-| Inrush in L1 / D2 when +3.3V is applied | 3.1 A peak | the 31 µF on +6V charge to VIN through L1 and D2; depends on the rise time of the host rail (100 µs assumed) |
-| Peak inductor current during soft-start / steady state | 0.98 A / 0.30 A | L1 saturates at 20.7 A, LT8362 switch limit 2 A min |
+| Inrush in L1 / D2 when +3.3V is applied | 3.0 A peak | the 31 µF on +6V charge to VIN through L1 and D2; depends on the rise time of the host rail (100 µs assumed) |
+| Peak inductor current during soft-start / steady state | 0.99 A / 0.30 A | L1 (WE-MAPI 4030) loses 10 % at 4.6 A, LT8362 switch limit 2 A min / 3.1 A max |
 | +6V ripple, 20 MHz bandwidth | 0.81 mV pp | discontinuous conduction, 68 mA load |
 | Current drawn from +3.3V | 133 mA | AD7606C at 1 MSPS |
 | +5VA | 4.9998 V | reference 5.0000 V; 100 µA × R14 = 4.99 V, almost no current in R8 |
