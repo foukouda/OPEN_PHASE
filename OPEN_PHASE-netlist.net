@@ -1,7 +1,7 @@
 (export
 	(version "E")
 	(design
-		(source "/tmp/tmp-kibot-net_sch_print-xfgtw54h/OPEN_PHASE.kicad_sch")
+		(source "/tmp/tmp-kibot-net_sch_print-9vm_zrgn/OPEN_PHASE.kicad_sch")
 		(date "Date")
 		(tool "Eeschema 10.0.5-unknown-202607221313~667fa36054~ubuntu25.10.1")
 		(textvar
@@ -13,9 +13,9 @@
 		(textvar
 			(name "DESIGNER") "SIEBERT DIMITRY")
 		(textvar
-			(name "FABRICATION_NOTES") "FABRICATION NOTES (UNLESS OTHERWISE SPECIFIED)\n\n1)	FABRICATE PER IPC-6012A CLASS 2.\n\n2)	OUTLINE DEFINED IN SEPARATE GERBER FILE WITH\n	\"Edge_Cuts.GBR\" SUFFIX.\n\n	DIMENSIONS OF CIRCUMSIZED RECTANGLE SHOWN ON THIS\n	DRAWING FOR REFERENCE ONLY.\n\n3)	SEE SEPARATE DRILL FILES WITH \".DRL\" SUFFIX \n	FOR HOLE LOCATIONS.\n\n	SELECTED HOLE LOCATIONS SHOWN ON THIS DRAWING \n	FOR REFERENCE ONLY.\n\n4)	SURFACE FINISH: IMMERSION GOLD\n\n5)	SOLDERMASK ON BOTH SIDES OF THE BOARD SHALL \n	BE LPI, COLOR BLACK.\n\n6)	SILK SCREEN LEGEND TO BE APPLIED PER LAYER \n	STACKUP USING YELLOW NON-CONDUCTIVE EPOXY INK.\n\n7)	ALL VIAS ARE TENTED ON BOTH SIDES UNLESS \n	SOLDERMASK OPENED IN GERBER.\n\n8)	VENDOR SHOULD FOLLOW ROHS COMPLIANT PROCESS \n	AND Pb FREE FOR MANUFACTURING\n\n9)	PCB MATERIAL REQUIREMENTS:\n\n	A.	FLAMMABILITY RATING MUST MEET OR EXCEED \n		UL94V-0 REQUIREMENTS.\n	B.	Tg 170 C OR EQUIVALENT.\n	C.	EQUIVALENT MATERIAL SHALL BE RoHS COMPLIANT, \n		HALOGEN FREE AND APPROVED BY OPEN THRUST LAB.\n\n10)	DESIGN GEOMETRY MINIMUM FEATURE SIZES:\n\n	BOARD SIZE				65.050 × 59.500 mm\n	BOARD THICKNESS		1.660 mm\n	TRACE WIDTH			0.200 mm\n	TRACE TO TRACE		0.200 mm\n	MIN. HOLE (PTH)			0.250 mm\n	MIN. HOLE (NPTH)		N/A mm\n	ANNULAR RING			0.150 mm\n	COPPER TO HOLE		0.254 mm\n	COPPER TO EDGE		0.250 mm\n	HOLE TO HOLE			0.254 mm\n\n11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.\n\n12)	CONFIRM SPACE WIDTHS AND SPACINGS.")
+			(name "FABRICATION_NOTES") "FABRICATION NOTES (UNLESS OTHERWISE SPECIFIED)\n\n1)	FABRICATE PER IPC-6012A CLASS 2.\n\n2)	OUTLINE DEFINED IN SEPARATE GERBER FILE WITH\n	\"Edge_Cuts.GBR\" SUFFIX.\n\n	DIMENSIONS OF CIRCUMSIZED RECTANGLE SHOWN ON THIS\n	DRAWING FOR REFERENCE ONLY.\n\n3)	SEE SEPARATE DRILL FILES WITH \".DRL\" SUFFIX \n	FOR HOLE LOCATIONS.\n\n	SELECTED HOLE LOCATIONS SHOWN ON THIS DRAWING \n	FOR REFERENCE ONLY.\n\n4)	SURFACE FINISH: IMMERSION GOLD\n\n5)	SOLDERMASK ON BOTH SIDES OF THE BOARD SHALL \n	BE LPI, COLOR WHITE.\n\n6)	SILK SCREEN LEGEND TO BE APPLIED PER LAYER \n	STACKUP USING BLACK NON-CONDUCTIVE EPOXY INK.\n\n7)	ALL VIAS ARE TENTED ON BOTH SIDES UNLESS \n	SOLDERMASK OPENED IN GERBER.\n\n8)	VENDOR SHOULD FOLLOW ROHS COMPLIANT PROCESS \n	AND Pb FREE FOR MANUFACTURING\n\n9)	PCB MATERIAL REQUIREMENTS:\n\n	A.	FLAMMABILITY RATING MUST MEET OR EXCEED \n		UL94V-0 REQUIREMENTS.\n	B.	Tg 170 C OR EQUIVALENT.\n	C.	EQUIVALENT MATERIAL SHALL BE RoHS COMPLIANT, \n		HALOGEN FREE AND APPROVED BY OPEN THRUST LAB.\n\n10)	DESIGN GEOMETRY MINIMUM FEATURE SIZES:\n\n	BOARD SIZE				65.050 × 77.500 mm\n	BOARD THICKNESS		1.660 mm\n	TRACE WIDTH			0.200 mm\n	TRACE TO TRACE		0.200 mm\n	MIN. HOLE (PTH)			0.250 mm\n	MIN. HOLE (NPTH)		N/A mm\n	ANNULAR RING			0.150 mm\n	COPPER TO HOLE		0.254 mm\n	COPPER TO EDGE		0.250 mm\n	HOLE TO HOLE			0.254 mm\n\n11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.\n\n12)	CONFIRM SPACE WIDTHS AND SPACINGS.")
 		(textvar
-			(name "GIT_HASH_PCB") "7703dc5")
+			(name "GIT_HASH_PCB") "720b69a")
 		(textvar
 			(name "GIT_HASH_SCH") "7703dc5")
 		(textvar
@@ -35,11 +35,11 @@
 			(name "RELEASE_BODY_1.1.0")
 		)
 		(textvar
-			(name "RELEASE_BODY_UNRELEASED") "___________________________________\n\nAdded\n\n-   3x PBV 1 mOhm shunt + INA241A2 (20 V/V)\n\n-   3x phase voltage divider 40.2k / 10k\n\n-   AD7606C-18 ADC, 6 inputs used\n\n-   +3.3V -> LT8362 6 V -> LT3045-1 +5VA / +2.5VA\n\n-   Self-contained libs and 3D models (lib/)\n\n-   LTspice simulations (Simulation/LTspice)\n\n-   Predicted measurement quality (sim 07, 08)\n\n___________________________________\n\nChanged\n\n-   Renamed to OPEN_PHASE, KiCad 10\n\n-   Sheets named after their function\n\n-   IC3: LTC6655LN-2.5 -> LTC6655-2.5 (pin 6 = VOUT_S)\n\n-   R12: 49.9k -> 24.9k (+2.5VA = 2.500 V)")
+			(name "RELEASE_BODY_UNRELEASED") "___________________________________\n\nAdded\n\n-   3x PBV 1 mOhm shunt + INA241A2 (20 V/V)\n\n-   3x phase voltage divider 40.2k / 10k\n\n-   AD7606C-18 ADC, 6 inputs used\n\n-   +3.3V -> LT8362 6 V -> LT3045-1 +5VA / +2.5VA\n\n-   Self-contained libs and 3D models (lib/)\n\n-   LTspice simulations (Simulation/LTspice)\n\n-   Predicted measurement quality (sim 07, 08)\n\n-   openEMS shunt inductance model (Simulation/openEMS)\n\n-   Thermal / current density model (Simulation/Thermal)\n\n-   3D animation (Images/OPEN_PHASE.mp4)\n\n___________________________________\n\nChanged\n\n-   Renamed to OPEN_PHASE, KiCad 10\n\n-   Sheets named after their function\n\n-   IC3: LTC6655LN-2.5 -> LTC6655-2.5 (pin 6 = VOUT_S)\n\n-   R12: 49.9k -> 24.9k (+2.5VA = 2.500 V)\n\n-   L1: 744373965022 -> WE-MAPI 4030 74438357022 (4.1 x 4.1 mm)\n\n-   Solder mask white, silkscreen black")
 		(textvar
-			(name "RELEASE_DATE") "10-Oct-2026")
+			(name "RELEASE_DATE") "18-Oct-2026")
 		(textvar
-			(name "RELEASE_DATE_NUM") "2026-10-10")
+			(name "RELEASE_DATE_NUM") "2026-10-18")
 		(textvar
 			(name "RELEASE_TITLE_1.0.0")
 		)
@@ -59,83 +59,83 @@
 		(textvar
 			(name "SHEET_NAME_1") "Cover Page")
 		(textvar
-			(name "SHEET_NAME_10") "Error: XML File not found")
+			(name "SHEET_NAME_10") "Revision History")
 		(textvar
-			(name "SHEET_NAME_11") "Error: XML File not found")
+			(name "SHEET_NAME_11") "......................................")
 		(textvar
-			(name "SHEET_NAME_12") "Error: XML File not found")
+			(name "SHEET_NAME_12") "......................................")
 		(textvar
-			(name "SHEET_NAME_13") "Error: XML File not found")
+			(name "SHEET_NAME_13") "......................................")
 		(textvar
-			(name "SHEET_NAME_14") "Error: XML File not found")
+			(name "SHEET_NAME_14") "......................................")
 		(textvar
-			(name "SHEET_NAME_15") "Error: XML File not found")
+			(name "SHEET_NAME_15") "......................................")
 		(textvar
-			(name "SHEET_NAME_16") "Error: XML File not found")
+			(name "SHEET_NAME_16") "......................................")
 		(textvar
-			(name "SHEET_NAME_17") "Error: XML File not found")
+			(name "SHEET_NAME_17") "......................................")
 		(textvar
-			(name "SHEET_NAME_18") "Error: XML File not found")
+			(name "SHEET_NAME_18") "......................................")
 		(textvar
-			(name "SHEET_NAME_19") "Error: XML File not found")
+			(name "SHEET_NAME_19") "......................................")
 		(textvar
-			(name "SHEET_NAME_2") "Error: XML File not found")
+			(name "SHEET_NAME_2") "Block Diagram")
 		(textvar
-			(name "SHEET_NAME_20") "Error: XML File not found")
+			(name "SHEET_NAME_20") "......................................")
 		(textvar
-			(name "SHEET_NAME_21") "Error: XML File not found")
+			(name "SHEET_NAME_21") "......................................")
 		(textvar
-			(name "SHEET_NAME_22") "Error: XML File not found")
+			(name "SHEET_NAME_22") "......................................")
 		(textvar
-			(name "SHEET_NAME_23") "Error: XML File not found")
+			(name "SHEET_NAME_23") "......................................")
 		(textvar
-			(name "SHEET_NAME_24") "Error: XML File not found")
+			(name "SHEET_NAME_24") "......................................")
 		(textvar
-			(name "SHEET_NAME_25") "Error: XML File not found")
+			(name "SHEET_NAME_25") "......................................")
 		(textvar
-			(name "SHEET_NAME_26") "Error: XML File not found")
+			(name "SHEET_NAME_26") "......................................")
 		(textvar
-			(name "SHEET_NAME_27") "Error: XML File not found")
+			(name "SHEET_NAME_27") "......................................")
 		(textvar
-			(name "SHEET_NAME_28") "Error: XML File not found")
+			(name "SHEET_NAME_28") "......................................")
 		(textvar
-			(name "SHEET_NAME_29") "Error: XML File not found")
+			(name "SHEET_NAME_29") "......................................")
 		(textvar
-			(name "SHEET_NAME_3") "Error: XML File not found")
+			(name "SHEET_NAME_3") "Project Architecture")
 		(textvar
-			(name "SHEET_NAME_30") "Error: XML File not found")
+			(name "SHEET_NAME_30") "......................................")
 		(textvar
-			(name "SHEET_NAME_31") "Error: XML File not found")
+			(name "SHEET_NAME_31") "......................................")
 		(textvar
-			(name "SHEET_NAME_32") "Error: XML File not found")
+			(name "SHEET_NAME_32") "......................................")
 		(textvar
-			(name "SHEET_NAME_33") "Error: XML File not found")
+			(name "SHEET_NAME_33") "......................................")
 		(textvar
-			(name "SHEET_NAME_34") "Error: XML File not found")
+			(name "SHEET_NAME_34") "......................................")
 		(textvar
-			(name "SHEET_NAME_35") "Error: XML File not found")
+			(name "SHEET_NAME_35") "......................................")
 		(textvar
-			(name "SHEET_NAME_36") "Error: XML File not found")
+			(name "SHEET_NAME_36") "......................................")
 		(textvar
-			(name "SHEET_NAME_37") "Error: XML File not found")
+			(name "SHEET_NAME_37") "......................................")
 		(textvar
-			(name "SHEET_NAME_38") "Error: XML File not found")
+			(name "SHEET_NAME_38") "......................................")
 		(textvar
-			(name "SHEET_NAME_39") "Error: XML File not found")
+			(name "SHEET_NAME_39") "......................................")
 		(textvar
-			(name "SHEET_NAME_4") "Error: XML File not found")
+			(name "SHEET_NAME_4") "AD7606C-18_ADC")
 		(textvar
-			(name "SHEET_NAME_40") "Error: XML File not found")
+			(name "SHEET_NAME_40") "......................................")
 		(textvar
-			(name "SHEET_NAME_5") "Error: XML File not found")
+			(name "SHEET_NAME_5") "INA241_Phase_Sense")
 		(textvar
-			(name "SHEET_NAME_6") "Error: XML File not found")
+			(name "SHEET_NAME_6") "Power_Supply")
 		(textvar
-			(name "SHEET_NAME_7") "Error: XML File not found")
+			(name "SHEET_NAME_7") "Connectors")
 		(textvar
-			(name "SHEET_NAME_8") "Error: XML File not found")
+			(name "SHEET_NAME_8") "Holes, Fiducials")
 		(textvar
-			(name "SHEET_NAME_9") "Error: XML File not found")
+			(name "SHEET_NAME_9") "Power - Sequencing")
 		(textvar
 			(name "VARIANT") "PRELIMINARY")
 		(sheet
@@ -1501,6 +1501,66 @@
 			)
 		)
 		(comp
+			(ref "C3")
+			(value "0.1µF")
+			(footprint "OPEN_PHASE:C_0603_1608Metric")
+			(description "Unpolarized capacitor")
+			(fields
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "INA241_Phase_Sense")
+			)
+			(property
+				(name "Sheetfile")
+				(value "INA241 - Phase Sensing.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Project Architecture/INA241_Phase_Sense/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
+			)
+			(tstamps "5e6c64b9-d888-471b-9e42-7489b658456d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "C5")
 			(value "1µF")
 			(footprint "OPEN_PHASE:C_0603_1608Metric")
@@ -1606,6 +1666,66 @@
 				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
 			)
 			(tstamps "aa53037c-2491-4929-bd15-634e7f20e5a1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C16")
+			(value "1µF")
+			(footprint "OPEN_PHASE:C_0603_1608Metric")
+			(description "Unpolarized capacitor")
+			(fields
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "INA241_Phase_Sense")
+			)
+			(property
+				(name "Sheetfile")
+				(value "INA241 - Phase Sensing.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Project Architecture/INA241_Phase_Sense/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
+			)
+			(tstamps "04af183b-f62c-4504-91f9-887d21388a1f")
 			(units
 				(unit
 					(name "A")
@@ -2101,6 +2221,126 @@
 			)
 		)
 		(comp
+			(ref "C40")
+			(value "180 pF C0G/NP0, 50 V, 0603")
+			(footprint "OPEN_PHASE:C_0603_1608Metric")
+			(description "Unpolarized capacitor")
+			(fields
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "INA241_Phase_Sense")
+			)
+			(property
+				(name "Sheetfile")
+				(value "INA241 - Phase Sensing.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Project Architecture/INA241_Phase_Sense/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
+			)
+			(tstamps "dd1d7b8f-2109-426f-977e-8596aa546708")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C42")
+			(value "1nF C0G")
+			(footprint "OPEN_PHASE:C_0603_1608Metric")
+			(description "Unpolarized capacitor")
+			(fields
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "INA241_Phase_Sense")
+			)
+			(property
+				(name "Sheetfile")
+				(value "INA241 - Phase Sensing.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Project Architecture/INA241_Phase_Sense/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
+			)
+			(tstamps "9f327df2-af7f-48ba-81c7-74511217f9a2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "IC2")
 			(value "INA241A2IDGKR")
 			(footprint "OPEN_PHASE:SOP65P490X110-8N")
@@ -2386,6 +2626,112 @@
 				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
 			)
 			(tstamps "07f4132d-cb9a-4d9a-b179-2b5a8bc6f56e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "IC10")
+			(value "INA241A2IDGKR")
+			(footprint "OPEN_PHASE:SOP65P490X110-8N")
+			(datasheet "https://www.ti.com/lit/ds/symlink/ina241a.pdf?ts=1698648582718&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FINA241A%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-amps-null-44700045336317476_prodfolderdynamic-cpc-pf-go")
+			(description "Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP")
+			(fields
+				(field
+					(name "Height") "1.1")
+				(field
+					(name "Manufacturer_Name") "Texas Instruments")
+				(field
+					(name "Manufacturer_Part_Number") "INA241A2IDGKR")
+				(field
+					(name "Mouser Part Number") "595-INA241A2IDGKR")
+				(field
+					(name "Mouser Price/Stock") "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA241A2IDGKR?qs=Imq1NPwxi772hZtuitx1Tg%3D%3D")
+				(field
+					(name "Arrow Part Number") "INA241A2IDGKR")
+				(field
+					(name "Arrow Price/Stock") "https://www.arrow.com/en/products/ina241a2idgkr/texas-instruments?utm_currency=USD&region=nac")
+				(field
+					(name "Footprint") "OPEN_PHASE:SOP65P490X110-8N")
+				(field
+					(name "Datasheet") "https://www.ti.com/lit/ds/symlink/ina241a.pdf?ts=1698648582718&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FINA241A%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-amps-null-44700045336317476_prodfolderdynamic-cpc-pf-go")
+				(field
+					(name "Description") "Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "INA241A2IDGKR")
+				(description "Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP")
+			)
+			(property
+				(name "Height")
+				(value "1.1")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Texas Instruments")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "INA241A2IDGKR")
+			)
+			(property
+				(name "Mouser Part Number")
+				(value "595-INA241A2IDGKR")
+			)
+			(property
+				(name "Mouser Price/Stock")
+				(value "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA241A2IDGKR?qs=Imq1NPwxi772hZtuitx1Tg%3D%3D")
+			)
+			(property
+				(name "Arrow Part Number")
+				(value "INA241A2IDGKR")
+			)
+			(property
+				(name "Arrow Price/Stock")
+				(value "https://www.arrow.com/en/products/ina241a2idgkr/texas-instruments?utm_currency=USD&region=nac")
+			)
+			(property
+				(name "Sheetname")
+				(value "INA241_Phase_Sense")
+			)
+			(property
+				(name "Sheetfile")
+				(value "INA241 - Phase Sensing.kicad_sch")
+			)
+			(sheetpath
+				(names "/Project Architecture/INA241_Phase_Sense/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
+			)
+			(tstamps "4aac8201-93bf-4e11-ab84-108cfe43ad9d")
 			(units
 				(unit
 					(name "A")
@@ -2713,7 +3059,105 @@
 			)
 		)
 		(comp
-			(ref "R13")
+			(ref "R9")
+			(value "PBV-R001-F1-1.0")
+			(footprint "OPEN_PHASE:PBVR001F110")
+			(datasheet "https://cms.nacsemi.com/content/AuthDatasheets/Isabellehuette/PBV.pdf")
+			(description "ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %")
+			(fields
+				(field
+					(name "Height") "20.7")
+				(field
+					(name "Manufacturer_Name") "Isabellenhutte")
+				(field
+					(name "Manufacturer_Part_Number") "PBV-R001-F1-1.0")
+				(field
+					(name "Mouser Part Number")
+				)
+				(field
+					(name "Mouser Price/Stock")
+				)
+				(field
+					(name "Arrow Part Number")
+				)
+				(field
+					(name "Arrow Price/Stock")
+				)
+				(field
+					(name "Footprint") "OPEN_PHASE:PBVR001F110")
+				(field
+					(name "Datasheet") "https://cms.nacsemi.com/content/AuthDatasheets/Isabellehuette/PBV.pdf")
+				(field
+					(name "Description") "ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "PBV-R001-F1-1.0")
+				(description "ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %")
+			)
+			(property
+				(name "Height")
+				(value "20.7")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Isabellenhutte")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "PBV-R001-F1-1.0")
+			)
+			(property
+				(name "Mouser Part Number")
+				(value "")
+			)
+			(property
+				(name "Mouser Price/Stock")
+				(value "")
+			)
+			(property
+				(name "Arrow Part Number")
+				(value "")
+			)
+			(property
+				(name "Arrow Price/Stock")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "INA241_Phase_Sense")
+			)
+			(property
+				(name "Sheetfile")
+				(value "INA241 - Phase Sensing.kicad_sch")
+			)
+			(sheetpath
+				(names "/Project Architecture/INA241_Phase_Sense/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
+			)
+			(tstamps "e7976e72-baa4-42d0-acd1-1cc81bee1c34")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R15")
 			(value "33Ω")
 			(footprint "OPEN_PHASE:R_0603_1608Metric")
 			(description "Resistor")
@@ -2773,7 +3217,7 @@
 			)
 		)
 		(comp
-			(ref "R15")
+			(ref "R16")
 			(value "9.1kΩ")
 			(footprint "OPEN_PHASE:R_0603_1608Metric")
 			(description "Resistor")
@@ -2833,75 +3277,15 @@
 			)
 		)
 		(comp
-			(ref "R16")
-			(value "9.1kΩ")
-			(footprint "OPEN_PHASE:R_0603_1608Metric")
-			(description "Resistor")
-			(fields
-				(field
-					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
-				(field
-					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Resistor")
-			)
-			(libsource
-				(lib "OPEN_PHASE")
-				(part "R")
-				(description "Resistor")
-			)
-			(property
-				(name "KiLib_Generator")
-				(value "SMD_2terminal_chip_molded")
-			)
-			(property
-				(name "Sheetname")
-				(value "INA241_Phase_Sense")
-			)
-			(property
-				(name "Sheetfile")
-				(value "INA241 - Phase Sensing.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/Project Architecture/INA241_Phase_Sense/")
-				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
-			)
-			(tstamps "20ee71e5-ec58-424f-9ce7-bdc925fa4a7a")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
 			(ref "R17")
-			(value "33Ω")
-			(footprint "OPEN_PHASE:R_0603_1608Metric")
+			(value "40.2kΩ")
+			(footprint "OPEN_PHASE:R_0805_2012Metric")
 			(description "Resistor")
 			(fields
 				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
-					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
+					(name "Footprint") "OPEN_PHASE:R_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -2937,7 +3321,7 @@
 				(names "/Project Architecture/INA241_Phase_Sense/")
 				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
 			)
-			(tstamps "f6c757ec-2e60-487b-8f89-a41f4e13d108")
+			(tstamps "5f44ee5c-e653-46d2-92da-e98374f3c988")
 			(units
 				(unit
 					(name "A")
@@ -2954,14 +3338,14 @@
 		)
 		(comp
 			(ref "R18")
-			(value "9.1kΩ")
-			(footprint "OPEN_PHASE:R_0603_1608Metric")
+			(value "10kΩ")
+			(footprint "OPEN_PHASE:R_0805_2012Metric")
 			(description "Resistor")
 			(fields
 				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
-					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
+					(name "Footprint") "OPEN_PHASE:R_0805_2012Metric")
 				(field
 					(name "Datasheet")
 				)
@@ -2997,7 +3381,7 @@
 				(names "/Project Architecture/INA241_Phase_Sense/")
 				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
 			)
-			(tstamps "3627d060-59e8-4dc0-a17e-60ea2222ce84")
+			(tstamps "86eb8b00-0720-4173-8ff3-88fe9312031c")
 			(units
 				(unit
 					(name "A")
@@ -3074,66 +3458,6 @@
 		)
 		(comp
 			(ref "R20")
-			(value "9.1kΩ")
-			(footprint "OPEN_PHASE:R_0603_1608Metric")
-			(description "Resistor")
-			(fields
-				(field
-					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
-				(field
-					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Resistor")
-			)
-			(libsource
-				(lib "OPEN_PHASE")
-				(part "R")
-				(description "Resistor")
-			)
-			(property
-				(name "KiLib_Generator")
-				(value "SMD_2terminal_chip_molded")
-			)
-			(property
-				(name "Sheetname")
-				(value "INA241_Phase_Sense")
-			)
-			(property
-				(name "Sheetfile")
-				(value "INA241 - Phase Sensing.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/Project Architecture/INA241_Phase_Sense/")
-				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
-			)
-			(tstamps "2ac30af1-d691-48b6-88a1-a335def8363e")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R21")
 			(value "33Ω")
 			(footprint "OPEN_PHASE:R_0603_1608Metric")
 			(description "Resistor")
@@ -3177,7 +3501,7 @@
 				(names "/Project Architecture/INA241_Phase_Sense/")
 				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
 			)
-			(tstamps "6379c60e-1bdd-4e34-a687-b03190e373b1")
+			(tstamps "f6c757ec-2e60-487b-8f89-a41f4e13d108")
 			(units
 				(unit
 					(name "A")
@@ -3193,7 +3517,7 @@
 			)
 		)
 		(comp
-			(ref "R22")
+			(ref "R21")
 			(value "9.1kΩ")
 			(footprint "OPEN_PHASE:R_0603_1608Metric")
 			(description "Resistor")
@@ -3237,7 +3561,7 @@
 				(names "/Project Architecture/INA241_Phase_Sense/")
 				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
 			)
-			(tstamps "ff0ec5d1-0d6d-42d9-bb97-7232d38b3873")
+			(tstamps "20ee71e5-ec58-424f-9ce7-bdc925fa4a7a")
 			(units
 				(unit
 					(name "A")
@@ -3253,127 +3577,7 @@
 			)
 		)
 		(comp
-			(ref "R27")
-			(value "40.2kΩ")
-			(footprint "OPEN_PHASE:R_0805_2012Metric")
-			(description "Resistor")
-			(fields
-				(field
-					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
-				(field
-					(name "Footprint") "OPEN_PHASE:R_0805_2012Metric")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Resistor")
-			)
-			(libsource
-				(lib "OPEN_PHASE")
-				(part "R")
-				(description "Resistor")
-			)
-			(property
-				(name "KiLib_Generator")
-				(value "SMD_2terminal_chip_molded")
-			)
-			(property
-				(name "Sheetname")
-				(value "INA241_Phase_Sense")
-			)
-			(property
-				(name "Sheetfile")
-				(value "INA241 - Phase Sensing.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/Project Architecture/INA241_Phase_Sense/")
-				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
-			)
-			(tstamps "5f44ee5c-e653-46d2-92da-e98374f3c988")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R28")
-			(value "10kΩ")
-			(footprint "OPEN_PHASE:R_0805_2012Metric")
-			(description "Resistor")
-			(fields
-				(field
-					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
-				(field
-					(name "Footprint") "OPEN_PHASE:R_0805_2012Metric")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Resistor")
-			)
-			(libsource
-				(lib "OPEN_PHASE")
-				(part "R")
-				(description "Resistor")
-			)
-			(property
-				(name "KiLib_Generator")
-				(value "SMD_2terminal_chip_molded")
-			)
-			(property
-				(name "Sheetname")
-				(value "INA241_Phase_Sense")
-			)
-			(property
-				(name "Sheetfile")
-				(value "INA241 - Phase Sensing.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/Project Architecture/INA241_Phase_Sense/")
-				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
-			)
-			(tstamps "86eb8b00-0720-4173-8ff3-88fe9312031c")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R31")
+			(ref "R22")
 			(value "40.2kΩ")
 			(footprint "OPEN_PHASE:R_0805_2012Metric")
 			(description "Resistor")
@@ -3433,7 +3637,7 @@
 			)
 		)
 		(comp
-			(ref "R32")
+			(ref "R23")
 			(value "10kΩ")
 			(footprint "OPEN_PHASE:R_0805_2012Metric")
 			(description "Resistor")
@@ -3493,7 +3697,187 @@
 			)
 		)
 		(comp
-			(ref "R35")
+			(ref "R24")
+			(value "9.1kΩ")
+			(footprint "OPEN_PHASE:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "INA241_Phase_Sense")
+			)
+			(property
+				(name "Sheetfile")
+				(value "INA241 - Phase Sensing.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Project Architecture/INA241_Phase_Sense/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
+			)
+			(tstamps "2ac30af1-d691-48b6-88a1-a335def8363e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R25")
+			(value "33Ω")
+			(footprint "OPEN_PHASE:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "INA241_Phase_Sense")
+			)
+			(property
+				(name "Sheetfile")
+				(value "INA241 - Phase Sensing.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Project Architecture/INA241_Phase_Sense/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
+			)
+			(tstamps "6379c60e-1bdd-4e34-a687-b03190e373b1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R26")
+			(value "9.1kΩ")
+			(footprint "OPEN_PHASE:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "INA241_Phase_Sense")
+			)
+			(property
+				(name "Sheetfile")
+				(value "INA241 - Phase Sensing.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Project Architecture/INA241_Phase_Sense/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
+			)
+			(tstamps "3627d060-59e8-4dc0-a17e-60ea2222ce84")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R27")
 			(value "40.2kΩ")
 			(footprint "OPEN_PHASE:R_0805_2012Metric")
 			(description "Resistor")
@@ -3553,7 +3937,7 @@
 			)
 		)
 		(comp
-			(ref "R36")
+			(ref "R28")
 			(value "10kΩ")
 			(footprint "OPEN_PHASE:R_0805_2012Metric")
 			(description "Resistor")
@@ -3613,6 +3997,366 @@
 			)
 		)
 		(comp
+			(ref "R29")
+			(value "9.1kΩ")
+			(footprint "OPEN_PHASE:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "INA241_Phase_Sense")
+			)
+			(property
+				(name "Sheetfile")
+				(value "INA241 - Phase Sensing.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Project Architecture/INA241_Phase_Sense/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
+			)
+			(tstamps "ff0ec5d1-0d6d-42d9-bb97-7232d38b3873")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R30")
+			(value "33Ω")
+			(footprint "OPEN_PHASE:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "INA241_Phase_Sense")
+			)
+			(property
+				(name "Sheetfile")
+				(value "INA241 - Phase Sensing.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Project Architecture/INA241_Phase_Sense/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
+			)
+			(tstamps "990d4b9c-4a80-454a-a70e-b87a804a1ffb")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R31")
+			(value "9.1kΩ")
+			(footprint "OPEN_PHASE:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "INA241_Phase_Sense")
+			)
+			(property
+				(name "Sheetfile")
+				(value "INA241 - Phase Sensing.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Project Architecture/INA241_Phase_Sense/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
+			)
+			(tstamps "412e6dbc-e019-463d-9eba-aa1ee2d25c88")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R32")
+			(value "40.2kΩ")
+			(footprint "OPEN_PHASE:R_0805_2012Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "OPEN_PHASE:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "INA241_Phase_Sense")
+			)
+			(property
+				(name "Sheetfile")
+				(value "INA241 - Phase Sensing.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Project Architecture/INA241_Phase_Sense/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
+			)
+			(tstamps "9345ca51-3f48-4850-a239-244f71f9ff61")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R33")
+			(value "10kΩ")
+			(footprint "OPEN_PHASE:R_0805_2012Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "OPEN_PHASE:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "INA241_Phase_Sense")
+			)
+			(property
+				(name "Sheetfile")
+				(value "INA241 - Phase Sensing.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Project Architecture/INA241_Phase_Sense/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
+			)
+			(tstamps "b2310747-abfe-4013-92d6-944b4ba6ca99")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R34")
+			(value "9.1kΩ")
+			(footprint "OPEN_PHASE:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "INA241_Phase_Sense")
+			)
+			(property
+				(name "Sheetfile")
+				(value "INA241 - Phase Sensing.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Project Architecture/INA241_Phase_Sense/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
+			)
+			(tstamps "4258a0ea-50e5-4912-bc3d-f100e8f120a2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "Re1")
 			(value "1kΩ")
 			(footprint "OPEN_PHASE:R_0603_1608Metric")
@@ -3657,7 +4401,7 @@
 				(names "/Project Architecture/INA241_Phase_Sense/")
 				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
 			)
-			(tstamps "b7d8b942-6f33-4be9-b8ee-8880db7f3b0a")
+			(tstamps "4046500a-a4c4-4468-aac5-acf42674198e")
 			(units
 				(unit
 					(name "A")
@@ -3717,7 +4461,7 @@
 				(names "/Project Architecture/INA241_Phase_Sense/")
 				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
 			)
-			(tstamps "4046500a-a4c4-4468-aac5-acf42674198e")
+			(tstamps "b7d8b942-6f33-4be9-b8ee-8880db7f3b0a")
 			(units
 				(unit
 					(name "A")
@@ -3778,6 +4522,66 @@
 				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
 			)
 			(tstamps "61b89881-ddba-4cdb-b2d4-9913b1d09962")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Re4")
+			(value "1kΩ")
+			(footprint "OPEN_PHASE:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "INA241_Phase_Sense")
+			)
+			(property
+				(name "Sheetfile")
+				(value "INA241 - Phase Sensing.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Project Architecture/INA241_Phase_Sense/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
+			)
+			(tstamps "d31a5e86-ab47-4bf6-8b8c-83acc990c4c1")
 			(units
 				(unit
 					(name "A")
@@ -5338,21 +6142,21 @@
 		)
 		(comp
 			(ref "L1")
-			(value "744373965022")
-			(footprint "OPEN_PHASE:INDPM135125X620N")
-			(datasheet "https://www.we-online.com/catalog/datasheet/744373965022.pdf")
-			(description "WE-LHMI SMT Power Inductor Size 1365; L = 2,2 H ; IR = 17 A; Isat = 41,1 A; RDC = 4,2 m")
+			(value "74438357022")
+			(footprint "OPEN_PHASE:L_Wuerth_MAPI-4030")
+			(datasheet "https://www.we-online.com/components/products/datasheet/74438357022.pdf")
+			(description "WE-MAPI SMT Power Inductor Size 4030; L = 2,2 µH; IRP,40K = 7,1 A; Isat,10% = 4,6 A; Isat,30% = 9,2 A; RDC = 22 mΩ typ / 26 mΩ max")
 			(fields
 				(field
-					(name "Height") "6.2")
+					(name "Height") "3.1")
 				(field
 					(name "Manufacturer_Name") "Wurth Elektronik")
 				(field
-					(name "Manufacturer_Part_Number") "744373965022")
+					(name "Manufacturer_Part_Number") "74438357022")
 				(field
-					(name "Mouser Part Number") "710-744373965022")
+					(name "Mouser Part Number") "710-74438357022")
 				(field
-					(name "Mouser Price/Stock") "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/744373965022?qs=BZBei1rCqCC1TQlqJ2wRyg%3D%3D")
+					(name "Mouser Price/Stock") "https://www.mouser.com/ProductDetail/Wurth-Elektronik/74438357022")
 				(field
 					(name "Arrow Part Number")
 				)
@@ -5360,20 +6164,22 @@
 					(name "Arrow Price/Stock")
 				)
 				(field
-					(name "Footprint") "OPEN_PHASE:INDPM135125X620N")
+					(name "KiLib_Generator") "inductor/SMD")
 				(field
-					(name "Datasheet") "https://www.we-online.com/catalog/datasheet/744373965022.pdf")
+					(name "Footprint") "OPEN_PHASE:L_Wuerth_MAPI-4030")
 				(field
-					(name "Description") "WE-LHMI SMT Power Inductor Size 1365; L = 2,2 H ; IR = 17 A; Isat = 41,1 A; RDC = 4,2 m")
+					(name "Datasheet") "https://www.we-online.com/components/products/datasheet/74438357022.pdf")
+				(field
+					(name "Description") "WE-MAPI SMT Power Inductor Size 4030; L = 2,2 µH; IRP,40K = 7,1 A; Isat,10% = 4,6 A; Isat,30% = 9,2 A; RDC = 22 mΩ typ / 26 mΩ max")
 			)
 			(libsource
 				(lib "OPEN_PHASE")
-				(part "744373965022")
-				(description "WE-LHMI SMT Power Inductor Size 1365; L = 2,2 H ; IR = 17 A; Isat = 41,1 A; RDC = 4,2 m")
+				(part "74438357022")
+				(description "WE-MAPI SMT Power Inductor Size 4030; L = 2,2 µH; IRP,40K = 7,1 A; Isat,10% = 4,6 A; Isat,30% = 9,2 A; RDC = 22 mΩ typ / 26 mΩ max")
 			)
 			(property
 				(name "Height")
-				(value "6.2")
+				(value "3.1")
 			)
 			(property
 				(name "Manufacturer_Name")
@@ -5381,15 +6187,15 @@
 			)
 			(property
 				(name "Manufacturer_Part_Number")
-				(value "744373965022")
+				(value "74438357022")
 			)
 			(property
 				(name "Mouser Part Number")
-				(value "710-744373965022")
+				(value "710-74438357022")
 			)
 			(property
 				(name "Mouser Price/Stock")
-				(value "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/744373965022?qs=BZBei1rCqCC1TQlqJ2wRyg%3D%3D")
+				(value "https://www.mouser.com/ProductDetail/Wurth-Elektronik/74438357022")
 			)
 			(property
 				(name "Arrow Part Number")
@@ -5398,6 +6204,10 @@
 			(property
 				(name "Arrow Price/Stock")
 				(value "")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "inductor/SMD")
 			)
 			(property
 				(name "Sheetname")
@@ -6109,6 +6919,104 @@
 			)
 		)
 		(comp
+			(ref "J3")
+			(value "XT60PW-F")
+			(footprint "OPEN_PHASE:AMASS_XT60PW-F_1x02_P7.20mm_Horizontal")
+			(datasheet "https://www.tme.eu/Document/1191bc2fa3aee3c446e5a895fd8f7983/XT60PW-F.pdf")
+			(description "Connector: DC supply; socket; XT60; female; PIN: 2; on PCBs; THT; 30A")
+			(fields
+				(field
+					(name "Height") "8.4")
+				(field
+					(name "Manufacturer_Name") "Amass")
+				(field
+					(name "Manufacturer_Part_Number") "XT60PW-F")
+				(field
+					(name "Mouser Part Number")
+				)
+				(field
+					(name "Mouser Price/Stock")
+				)
+				(field
+					(name "Arrow Part Number")
+				)
+				(field
+					(name "Arrow Price/Stock")
+				)
+				(field
+					(name "Footprint") "OPEN_PHASE:AMASS_XT60PW-F_1x02_P7.20mm_Horizontal")
+				(field
+					(name "Datasheet") "https://www.tme.eu/Document/1191bc2fa3aee3c446e5a895fd8f7983/XT60PW-F.pdf")
+				(field
+					(name "Description") "Connector: DC supply; socket; XT60; female; PIN: 2; on PCBs; THT; 30A")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "XT60PW-F")
+				(description "Connector: DC supply; socket; XT60; female; PIN: 2; on PCBs; THT; 30A")
+			)
+			(property
+				(name "Height")
+				(value "8.4")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Amass")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "XT60PW-F")
+			)
+			(property
+				(name "Mouser Part Number")
+				(value "")
+			)
+			(property
+				(name "Mouser Price/Stock")
+				(value "")
+			)
+			(property
+				(name "Arrow Part Number")
+				(value "")
+			)
+			(property
+				(name "Arrow Price/Stock")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Connectors")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Connectors.kicad_sch")
+			)
+			(sheetpath
+				(names "/Project Architecture/Connectors/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/")
+			)
+			(tstamps "66d6115f-4351-47dc-8ef4-69a91e9c32bc")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "J5")
 			(value "XT60PW-M")
 			(footprint "OPEN_PHASE:XT60PWM")
@@ -6207,69 +7115,23 @@
 			)
 		)
 		(comp
-			(ref "J6")
-			(value "XT60PW-M")
-			(footprint "OPEN_PHASE:XT60PWM")
-			(datasheet "https://www.tme.eu/Document/b13629717d44ae038681dba08d18c0b6/XT60PW-M.pdf")
-			(description "Connector: DC supply; socket; XT60; male; PIN: 2; on PCBs; THT; 30A")
+			(ref "NT1")
+			(value "NetTie_2")
+			(footprint "NetTie:NetTie-2_SMD_Pad0.5mm")
+			(description "Net tie, 2 pins")
 			(fields
 				(field
-					(name "Height") "8.4")
+					(name "Footprint") "NetTie:NetTie-2_SMD_Pad0.5mm")
 				(field
-					(name "Manufacturer_Name") "Amass")
-				(field
-					(name "Manufacturer_Part_Number") "XT60PW-M")
-				(field
-					(name "Mouser Part Number")
+					(name "Datasheet")
 				)
 				(field
-					(name "Mouser Price/Stock")
-				)
-				(field
-					(name "Arrow Part Number")
-				)
-				(field
-					(name "Arrow Price/Stock")
-				)
-				(field
-					(name "Footprint") "OPEN_PHASE:XT60PWM")
-				(field
-					(name "Datasheet") "https://www.tme.eu/Document/b13629717d44ae038681dba08d18c0b6/XT60PW-M.pdf")
-				(field
-					(name "Description") "Connector: DC supply; socket; XT60; male; PIN: 2; on PCBs; THT; 30A")
+					(name "Description") "Net tie, 2 pins")
 			)
 			(libsource
-				(lib "OPEN_PHASE")
-				(part "XT60PW-M")
-				(description "Connector: DC supply; socket; XT60; male; PIN: 2; on PCBs; THT; 30A")
-			)
-			(property
-				(name "Height")
-				(value "8.4")
-			)
-			(property
-				(name "Manufacturer_Name")
-				(value "Amass")
-			)
-			(property
-				(name "Manufacturer_Part_Number")
-				(value "XT60PW-M")
-			)
-			(property
-				(name "Mouser Part Number")
-				(value "")
-			)
-			(property
-				(name "Mouser Price/Stock")
-				(value "")
-			)
-			(property
-				(name "Arrow Part Number")
-				(value "")
-			)
-			(property
-				(name "Arrow Price/Stock")
-				(value "")
+				(lib "Device")
+				(part "NetTie_2")
+				(description "Net tie, 2 pins")
 			)
 			(property
 				(name "Sheetname")
@@ -6279,11 +7141,22 @@
 				(name "Sheetfile")
 				(value "Connectors.kicad_sch")
 			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "net tie short")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Net*Tie*")
+			)
 			(sheetpath
 				(names "/Project Architecture/Connectors/")
 				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/")
 			)
-			(tstamps "14d824c2-4611-4d49-9247-f356ce4fd4b6")
+			(tstamps "130990ae-ec2c-428f-aea2-f0bf86fcf6d8")
 			(units
 				(unit
 					(name "A")
@@ -6293,12 +7166,6 @@
 						)
 						(pin
 							(num "2")
-						)
-						(pin
-							(num "3")
-						)
-						(pin
-							(num "4")
 						)
 					)
 				)
@@ -6549,31 +7416,65 @@
 	(variants)
 	(libparts
 		(libpart
+			(lib "Device")
+			(part "NetTie_2")
+			(description "Net tie, 2 pins")
+			(footprints
+				(fp "Net*Tie*")
+			)
+			(fields
+				(field
+					(name "Reference") "NT")
+				(field
+					(name "Value") "NetTie_2")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Net tie, 2 pins")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
 			(lib "OPEN_PHASE")
-			(part "744373965022")
-			(description "WE-LHMI SMT Power Inductor Size 1365; L = 2,2 H ; IR = 17 A; Isat = 41,1 A; RDC = 4,2 m")
-			(docs "https://www.we-online.com/catalog/datasheet/744373965022.pdf")
+			(part "74438357022")
+			(description "WE-MAPI SMT Power Inductor Size 4030; L = 2,2 µH; IRP,40K = 7,1 A; Isat,10% = 4,6 A; Isat,30% = 9,2 A; RDC = 22 mΩ typ / 26 mΩ max")
+			(docs "https://www.we-online.com/components/products/datasheet/74438357022.pdf")
 			(fields
 				(field
 					(name "Reference") "L")
 				(field
-					(name "Value") "744373965022")
+					(name "Value") "74438357022")
 				(field
-					(name "Footprint") "OPEN_PHASE:INDPM135125X620N")
+					(name "Footprint") "OPEN_PHASE:L_Wuerth_MAPI-4030")
 				(field
-					(name "Datasheet") "https://www.we-online.com/catalog/datasheet/744373965022.pdf")
+					(name "Datasheet") "https://www.we-online.com/components/products/datasheet/74438357022.pdf")
 				(field
-					(name "Description") "WE-LHMI SMT Power Inductor Size 1365; L = 2,2 H ; IR = 17 A; Isat = 41,1 A; RDC = 4,2 m")
+					(name "Description") "WE-MAPI SMT Power Inductor Size 4030; L = 2,2 µH; IRP,40K = 7,1 A; Isat,10% = 4,6 A; Isat,30% = 9,2 A; RDC = 22 mΩ typ / 26 mΩ max")
 				(field
-					(name "Height") "6.2")
+					(name "Height") "3.1")
 				(field
 					(name "Manufacturer_Name") "Wurth Elektronik")
 				(field
-					(name "Manufacturer_Part_Number") "744373965022")
+					(name "Manufacturer_Part_Number") "74438357022")
 				(field
-					(name "Mouser Part Number") "710-744373965022")
+					(name "Mouser Part Number") "710-74438357022")
 				(field
-					(name "Mouser Price/Stock") "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/744373965022?qs=BZBei1rCqCC1TQlqJ2wRyg%3D%3D")
+					(name "Mouser Price/Stock") "https://www.mouser.com/ProductDetail/Wurth-Elektronik/74438357022")
 				(field
 					(name "Arrow Part Number")
 				)
@@ -7667,6 +8568,64 @@
 		)
 		(libpart
 			(lib "OPEN_PHASE")
+			(part "XT60PW-F")
+			(description "Connector: DC supply; socket; XT60; female; PIN: 2; on PCBs; THT; 30A")
+			(docs "https://www.tme.eu/Document/1191bc2fa3aee3c446e5a895fd8f7983/XT60PW-F.pdf")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "XT60PW-F")
+				(field
+					(name "Footprint") "OPEN_PHASE:AMASS_XT60PW-F_1x02_P7.20mm_Horizontal")
+				(field
+					(name "Datasheet") "https://www.tme.eu/Document/1191bc2fa3aee3c446e5a895fd8f7983/XT60PW-F.pdf")
+				(field
+					(name "Description") "Connector: DC supply; socket; XT60; female; PIN: 2; on PCBs; THT; 30A")
+				(field
+					(name "Height") "8.4")
+				(field
+					(name "Manufacturer_Name") "Amass")
+				(field
+					(name "Manufacturer_Part_Number") "XT60PW-F")
+				(field
+					(name "Mouser Part Number")
+				)
+				(field
+					(name "Mouser Price/Stock")
+				)
+				(field
+					(name "Arrow Part Number")
+				)
+				(field
+					(name "Arrow Price/Stock")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "MH1")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "MH2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "OPEN_PHASE")
 			(part "XT60PW-M")
 			(description "Connector: DC supply; socket; XT60; male; PIN: 2; on PCBs; THT; 30A")
 			(docs "https://www.tme.eu/Document/b13629717d44ae038681dba08d18c0b6/XT60PW-M.pdf")
@@ -7724,7 +8683,12 @@
 			)
 		)
 	)
-	(libraries)
+	(libraries
+		(library
+			(logical "Device")
+			(uri "${KICAD10_SYMBOL_DIR}/Device.kicad_sym")
+		)
+	)
 	(nets
 		(net
 			(code "1")
@@ -7749,6 +8713,18 @@
 				(ref "IC1")
 				(pin "42")
 				(pinfunction "REFIN/REFOUT_42")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC10")
+				(pin "3")
+				(pinfunction "REF2_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC10")
+				(pin "7")
+				(pinfunction "REF1_7")
 				(pintype "passive")
 			)
 			(node
@@ -7875,6 +8851,11 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "C16")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
 				(ref "C17")
 				(pin "1")
 				(pintype "passive")
@@ -7891,6 +8872,11 @@
 			)
 			(node
 				(ref "C20")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C3")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -7931,6 +8917,12 @@
 				(ref "IC1")
 				(pin "48")
 				(pinfunction "AVCC_4_48")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC10")
+				(pin "6")
+				(pinfunction "VS_6")
 				(pintype "passive")
 			)
 			(node
@@ -8202,6 +9194,11 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "C16")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
 				(ref "C17")
 				(pin "2")
 				(pintype "passive")
@@ -8253,6 +9250,11 @@
 			)
 			(node
 				(ref "C27")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C3")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -8369,6 +9371,12 @@
 				(ref "IC1")
 				(pin "47")
 				(pinfunction "AGND_6_47")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC10")
+				(pin "2")
+				(pinfunction "GND_2")
 				(pintype "passive")
 			)
 			(node
@@ -8510,6 +9518,18 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "J3")
+				(pin "3")
+				(pinfunction "MH1_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "4")
+				(pinfunction "MH2_4")
+				(pintype "passive")
+			)
+			(node
 				(ref "J5")
 				(pin "3")
 				(pinfunction "MH1_3")
@@ -8522,15 +9542,9 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "J6")
-				(pin "3")
-				(pinfunction "MH1_3")
-				(pintype "passive")
-			)
-			(node
-				(ref "J6")
-				(pin "4")
-				(pinfunction "MH2_4")
+				(ref "NT1")
+				(pin "1")
+				(pinfunction "1_1")
 				(pintype "passive")
 			)
 			(node
@@ -8540,11 +9554,6 @@
 			)
 			(node
 				(ref "R14")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R15")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -8569,12 +9578,22 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R20")
+				(ref "R21")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "R22")
+				(ref "R23")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R24")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R26")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -8584,12 +9603,22 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R32")
+				(ref "R29")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "R36")
+				(ref "R31")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R33")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R34")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -8601,6 +9630,29 @@
 		)
 		(net
 			(code "11")
+			(name "GND1")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J5")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "NT1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "12")
 			(name "IN-1")
 			(class "Default")
 			(node
@@ -8617,7 +9669,7 @@
 			)
 		)
 		(net
-			(code "12")
+			(code "13")
 			(name "IN-2")
 			(class "Default")
 			(node
@@ -8634,7 +9686,7 @@
 			)
 		)
 		(net
-			(code "13")
+			(code "14")
 			(name "IN-3")
 			(class "Default")
 			(node
@@ -8651,8 +9703,42 @@
 			)
 		)
 		(net
-			(code "14")
-			(name "IN-A")
+			(code "15")
+			(name "IN-4")
+			(class "Default")
+			(node
+				(ref "IC10")
+				(pin "1")
+				(pinfunction "IN-_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R9")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "16")
+			(name "IN-B")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R9")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "17")
+			(name "IN-U")
 			(class "Default")
 			(node
 				(ref "J1")
@@ -8668,8 +9754,8 @@
 			)
 		)
 		(net
-			(code "15")
-			(name "IN-B")
+			(code "18")
+			(name "IN-V")
 			(class "Default")
 			(node
 				(ref "J1")
@@ -8685,8 +9771,8 @@
 			)
 		)
 		(net
-			(code "16")
-			(name "IN-C")
+			(code "19")
+			(name "IN-W")
 			(class "Default")
 			(node
 				(ref "J1")
@@ -8702,7 +9788,7 @@
 			)
 		)
 		(net
-			(code "17")
+			(code "20")
 			(name "Net-(C26-Pad2)")
 			(class "Default")
 			(node
@@ -8717,7 +9803,7 @@
 			)
 		)
 		(net
-			(code "18")
+			(code "21")
 			(name "Net-(D2-A)")
 			(class "Default")
 			(node
@@ -8746,7 +9832,7 @@
 			)
 		)
 		(net
-			(code "19")
+			(code "22")
 			(name "Net-(IC1-REFCAPA)")
 			(class "Default")
 			(node
@@ -8773,7 +9859,7 @@
 			)
 		)
 		(net
-			(code "20")
+			(code "23")
 			(name "Net-(IC1-REGCAP_1)")
 			(class "Default")
 			(node
@@ -8789,7 +9875,7 @@
 			)
 		)
 		(net
-			(code "21")
+			(code "24")
 			(name "Net-(IC1-REGCAP_2)")
 			(class "Default")
 			(node
@@ -8805,7 +9891,7 @@
 			)
 		)
 		(net
-			(code "22")
+			(code "25")
 			(name "Net-(IC3-VOUT_F)")
 			(class "Default")
 			(node
@@ -8832,7 +9918,7 @@
 			)
 		)
 		(net
-			(code "23")
+			(code "26")
 			(name "Net-(IC5-SS)")
 			(class "Default")
 			(node
@@ -8848,7 +9934,7 @@
 			)
 		)
 		(net
-			(code "24")
+			(code "27")
 			(name "Net-(IC7-VOUT_F)")
 			(class "Default")
 			(node
@@ -8875,7 +9961,7 @@
 			)
 		)
 		(net
-			(code "25")
+			(code "28")
 			(name "Net-(IC8-SET)")
 			(class "Default")
 			(node
@@ -8901,7 +9987,7 @@
 			)
 		)
 		(net
-			(code "26")
+			(code "29")
 			(name "Net-(IC9-SET)")
 			(class "Default")
 			(node
@@ -8927,7 +10013,47 @@
 			)
 		)
 		(net
-			(code "27")
+			(code "30")
+			(name "Net-(R17-Pad2)")
+			(class "Default")
+			(node
+				(ref "R17")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R18")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Re1")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "31")
+			(name "Net-(R22-Pad2)")
+			(class "Default")
+			(node
+				(ref "R22")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R23")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Re2")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "32")
 			(name "Net-(R27-Pad2)")
 			(class "Default")
 			(node
@@ -8941,53 +10067,33 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "Re2")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "28")
-			(name "Net-(R31-Pad2)")
-			(class "Default")
-			(node
-				(ref "R31")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R32")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "Re1")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "29")
-			(name "Net-(R35-Pad2)")
-			(class "Default")
-			(node
-				(ref "R35")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R36")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
 				(ref "Re3")
 				(pin "1")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "30")
+			(code "33")
+			(name "Net-(R32-Pad2)")
+			(class "Default")
+			(node
+				(ref "R32")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R33")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "Re4")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "34")
 			(name "OUT-1")
 			(class "Default")
 			(node
@@ -9004,7 +10110,7 @@
 			)
 		)
 		(net
-			(code "31")
+			(code "35")
 			(name "OUT-2")
 			(class "Default")
 			(node
@@ -9021,7 +10127,7 @@
 			)
 		)
 		(net
-			(code "32")
+			(code "36")
 			(name "OUT-3")
 			(class "Default")
 			(node
@@ -9038,8 +10144,47 @@
 			)
 		)
 		(net
-			(code "33")
-			(name "OUT-A")
+			(code "37")
+			(name "OUT-4")
+			(class "Default")
+			(node
+				(ref "IC10")
+				(pin "8")
+				(pinfunction "IN+_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "R9")
+				(pin "3")
+				(pinfunction "3_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "38")
+			(name "OUT-B")
+			(class "Default")
+			(node
+				(ref "J5")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R32")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R9")
+				(pin "4")
+				(pinfunction "4_4")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "39")
+			(name "OUT-U")
 			(class "Default")
 			(node
 				(ref "J2")
@@ -9054,14 +10199,14 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R27")
+				(ref "R17")
 				(pin "1")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "34")
-			(name "OUT-B")
+			(code "40")
+			(name "OUT-V")
 			(class "Default")
 			(node
 				(ref "J2")
@@ -9070,7 +10215,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R31")
+				(ref "R22")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -9082,8 +10227,8 @@
 			)
 		)
 		(net
-			(code "35")
-			(name "OUT-C")
+			(code "41")
+			(name "OUT-W")
 			(class "Default")
 			(node
 				(ref "J2")
@@ -9092,7 +10237,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R35")
+				(ref "R27")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -9104,11 +10249,53 @@
 			)
 		)
 		(net
-			(code "36")
+			(code "42")
 			(name "SNG-1F")
 			(class "Default")
 			(node
 				(ref "C25")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "63")
+				(pinfunction "V8+_63")
+				(pintype "passive")
+			)
+			(node
+				(ref "R15")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "43")
+			(name "SNG-1G")
+			(class "Default")
+			(node
+				(ref "C25")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "64")
+				(pinfunction "V8-_64")
+				(pintype "passive")
+			)
+			(node
+				(ref "R16")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "44")
+			(name "SNG-2F")
+			(class "Default")
+			(node
+				(ref "C29")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -9119,17 +10306,17 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R13")
+				(ref "R20")
 				(pin "2")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "37")
-			(name "SNG-1G")
+			(code "45")
+			(name "SNG-2G")
 			(class "Default")
 			(node
-				(ref "C25")
+				(ref "C29")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -9140,17 +10327,17 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R15")
+				(ref "R21")
 				(pin "2")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "38")
-			(name "SNG-2F")
+			(code "46")
+			(name "SNG-3F")
 			(class "Default")
 			(node
-				(ref "C29")
+				(ref "C33")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -9161,17 +10348,17 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R17")
+				(ref "R25")
 				(pin "2")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "39")
-			(name "SNG-2G")
+			(code "47")
+			(name "SNG-3G")
 			(class "Default")
 			(node
-				(ref "C29")
+				(ref "C33")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -9182,17 +10369,17 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R16")
+				(ref "R26")
 				(pin "2")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "40")
-			(name "SNG-3F")
+			(code "48")
+			(name "SNG-4F")
 			(class "Default")
 			(node
-				(ref "C33")
+				(ref "C42")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -9203,17 +10390,17 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R21")
+				(ref "R30")
 				(pin "2")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "41")
-			(name "SNG-3G")
+			(code "49")
+			(name "SNG-4G")
 			(class "Default")
 			(node
-				(ref "C33")
+				(ref "C42")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -9224,13 +10411,13 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R18")
+				(ref "R31")
 				(pin "2")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "42")
+			(code "50")
 			(name "SNG-A1N")
 			(class "Default")
 			(node
@@ -9240,13 +10427,13 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R13")
+				(ref "R15")
 				(pin "1")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "43")
+			(code "51")
 			(name "SNG-A2N")
 			(class "Default")
 			(node
@@ -9256,13 +10443,13 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R17")
+				(ref "R20")
 				(pin "1")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "44")
+			(code "52")
 			(name "SNG-A3N")
 			(class "Default")
 			(node
@@ -9272,17 +10459,75 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R21")
+				(ref "R25")
 				(pin "1")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "45")
+			(code "53")
+			(name "SNG-A4N")
+			(class "Default")
+			(node
+				(ref "IC10")
+				(pin "5")
+				(pinfunction "OUT_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "R30")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "54")
 			(name "SNG-V1+")
 			(class "Default")
 			(node
 				(ref "C31")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "61")
+				(pinfunction "V7+_61")
+				(pintype "passive")
+			)
+			(node
+				(ref "Re1")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "55")
+			(name "SNG-V1-")
+			(class "Default")
+			(node
+				(ref "C31")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "62")
+				(pinfunction "V7-_62")
+				(pintype "passive")
+			)
+			(node
+				(ref "R19")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "56")
+			(name "SNG-V2+")
+			(class "Default")
+			(node
+				(ref "C32")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -9299,11 +10544,11 @@
 			)
 		)
 		(net
-			(code "46")
-			(name "SNG-V1-")
+			(code "57")
+			(name "SNG-V2-")
 			(class "Default")
 			(node
-				(ref "C31")
+				(ref "C32")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -9314,17 +10559,17 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R19")
+				(ref "R24")
 				(pin "2")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "47")
-			(name "SNG-V2+")
+			(code "58")
+			(name "SNG-V3+")
 			(class "Default")
 			(node
-				(ref "C32")
+				(ref "C34")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -9335,17 +10580,17 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "Re1")
+				(ref "Re3")
 				(pin "2")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "48")
-			(name "SNG-V2-")
+			(code "59")
+			(name "SNG-V3-")
 			(class "Default")
 			(node
-				(ref "C32")
+				(ref "C34")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -9356,17 +10601,17 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R20")
+				(ref "R29")
 				(pin "2")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "49")
-			(name "SNG-V3+")
+			(code "60")
+			(name "SNG-V4+")
 			(class "Default")
 			(node
-				(ref "C34")
+				(ref "C40")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -9377,17 +10622,17 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "Re3")
+				(ref "Re4")
 				(pin "2")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "50")
-			(name "SNG-V3-")
+			(code "61")
+			(name "SNG-V4-")
 			(class "Default")
 			(node
-				(ref "C34")
+				(ref "C40")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -9398,13 +10643,13 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R22")
+				(ref "R34")
 				(pin "2")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "51")
+			(code "62")
 			(name "unconnected-(IC1-AGND_2-Pad26)")
 			(class "Default")
 			(node
@@ -9415,7 +10660,7 @@
 			)
 		)
 		(net
-			(code "52")
+			(code "63")
 			(name "unconnected-(IC1-BUSY-Pad14)")
 			(class "Default")
 			(node
@@ -9426,7 +10671,7 @@
 			)
 		)
 		(net
-			(code "53")
+			(code "64")
 			(name "unconnected-(IC1-CONVST-Pad9)")
 			(class "Default")
 			(node
@@ -9437,7 +10682,7 @@
 			)
 		)
 		(net
-			(code "54")
+			(code "65")
 			(name "unconnected-(IC1-DB2-Pad16)")
 			(class "Default")
 			(node
@@ -9448,7 +10693,7 @@
 			)
 		)
 		(net
-			(code "55")
+			(code "66")
 			(name "unconnected-(IC1-DB3-Pad17)")
 			(class "Default")
 			(node
@@ -9459,7 +10704,7 @@
 			)
 		)
 		(net
-			(code "56")
+			(code "67")
 			(name "unconnected-(IC1-DB4-Pad18)")
 			(class "Default")
 			(node
@@ -9470,7 +10715,7 @@
 			)
 		)
 		(net
-			(code "57")
+			(code "68")
 			(name "unconnected-(IC1-DB5{slash}DOUTE-Pad19)")
 			(class "Default")
 			(node
@@ -9481,7 +10726,7 @@
 			)
 		)
 		(net
-			(code "58")
+			(code "69")
 			(name "unconnected-(IC1-DB6{slash}DOUTF-Pad20)")
 			(class "Default")
 			(node
@@ -9492,7 +10737,7 @@
 			)
 		)
 		(net
-			(code "59")
+			(code "70")
 			(name "unconnected-(IC1-DB7{slash}DOUTG-Pad21)")
 			(class "Default")
 			(node
@@ -9503,7 +10748,7 @@
 			)
 		)
 		(net
-			(code "60")
+			(code "71")
 			(name "unconnected-(IC1-DB8{slash}DOUTH-Pad22)")
 			(class "Default")
 			(node
@@ -9514,7 +10759,7 @@
 			)
 		)
 		(net
-			(code "61")
+			(code "72")
 			(name "unconnected-(IC1-DB9{slash}DOUTA-Pad24)")
 			(class "Default")
 			(node
@@ -9525,7 +10770,7 @@
 			)
 		)
 		(net
-			(code "62")
+			(code "73")
 			(name "unconnected-(IC1-DB10{slash}DOUTB-Pad25)")
 			(class "Default")
 			(node
@@ -9536,7 +10781,7 @@
 			)
 		)
 		(net
-			(code "63")
+			(code "74")
 			(name "unconnected-(IC1-DB11{slash}DOUTC-Pad27)")
 			(class "Default")
 			(node
@@ -9547,7 +10792,7 @@
 			)
 		)
 		(net
-			(code "64")
+			(code "75")
 			(name "unconnected-(IC1-DB12{slash}DOUTD-Pad28)")
 			(class "Default")
 			(node
@@ -9558,7 +10803,7 @@
 			)
 		)
 		(net
-			(code "65")
+			(code "76")
 			(name "unconnected-(IC1-DB13{slash}SDI-Pad29)")
 			(class "Default")
 			(node
@@ -9569,7 +10814,7 @@
 			)
 		)
 		(net
-			(code "66")
+			(code "77")
 			(name "unconnected-(IC1-DB14-Pad30)")
 			(class "Default")
 			(node
@@ -9580,7 +10825,7 @@
 			)
 		)
 		(net
-			(code "67")
+			(code "78")
 			(name "unconnected-(IC1-DB15-Pad31)")
 			(class "Default")
 			(node
@@ -9591,7 +10836,7 @@
 			)
 		)
 		(net
-			(code "68")
+			(code "79")
 			(name "unconnected-(IC1-DB16{slash}DB0-Pad32)")
 			(class "Default")
 			(node
@@ -9602,7 +10847,7 @@
 			)
 		)
 		(net
-			(code "69")
+			(code "80")
 			(name "unconnected-(IC1-DB17{slash}DB1-Pad33)")
 			(class "Default")
 			(node
@@ -9613,7 +10858,7 @@
 			)
 		)
 		(net
-			(code "70")
+			(code "81")
 			(name "unconnected-(IC1-FRSTDATA-Pad15)")
 			(class "Default")
 			(node
@@ -9624,7 +10869,7 @@
 			)
 		)
 		(net
-			(code "71")
+			(code "82")
 			(name "unconnected-(IC1-OS_0-Pad3)")
 			(class "Default")
 			(node
@@ -9635,7 +10880,7 @@
 			)
 		)
 		(net
-			(code "72")
+			(code "83")
 			(name "unconnected-(IC1-OS_1-Pad4)")
 			(class "Default")
 			(node
@@ -9646,7 +10891,7 @@
 			)
 		)
 		(net
-			(code "73")
+			(code "84")
 			(name "unconnected-(IC1-OS_2-Pad5)")
 			(class "Default")
 			(node
@@ -9657,7 +10902,7 @@
 			)
 		)
 		(net
-			(code "74")
+			(code "85")
 			(name "unconnected-(IC1-RANGE-Pad8)")
 			(class "Default")
 			(node
@@ -9668,7 +10913,7 @@
 			)
 		)
 		(net
-			(code "75")
+			(code "86")
 			(name "unconnected-(IC1-REFGND_2-Pad46)")
 			(class "Default")
 			(node
@@ -9679,7 +10924,7 @@
 			)
 		)
 		(net
-			(code "76")
+			(code "87")
 			(name "unconnected-(IC1-REF_SELECT-Pad34)")
 			(class "Default")
 			(node
@@ -9690,7 +10935,7 @@
 			)
 		)
 		(net
-			(code "77")
+			(code "88")
 			(name "unconnected-(IC1-RESET-Pad11)")
 			(class "Default")
 			(node
@@ -9701,51 +10946,7 @@
 			)
 		)
 		(net
-			(code "78")
-			(name "unconnected-(IC1-V7+-Pad61)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "61")
-				(pinfunction "V7+_61")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "79")
-			(name "unconnected-(IC1-V7--Pad62)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "62")
-				(pinfunction "V7-_62")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "80")
-			(name "unconnected-(IC1-V8+-Pad63)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "63")
-				(pinfunction "V8+_63")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "81")
-			(name "unconnected-(IC1-V8--Pad64)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "64")
-				(pinfunction "V8-_64")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "82")
+			(code "89")
 			(name "unconnected-(IC1-~{CS}-Pad13)")
 			(class "Default")
 			(node
@@ -9756,7 +10957,7 @@
 			)
 		)
 		(net
-			(code "83")
+			(code "90")
 			(name "unconnected-(IC1-~{PAR}{slash}SER_SEL-Pad6)")
 			(class "Default")
 			(node
@@ -9767,7 +10968,7 @@
 			)
 		)
 		(net
-			(code "84")
+			(code "91")
 			(name "unconnected-(IC1-~{RD}{slash}SCLK-Pad12)")
 			(class "Default")
 			(node
@@ -9778,7 +10979,7 @@
 			)
 		)
 		(net
-			(code "85")
+			(code "92")
 			(name "unconnected-(IC1-~{STBY}-Pad7)")
 			(class "Default")
 			(node
@@ -9789,7 +10990,7 @@
 			)
 		)
 		(net
-			(code "86")
+			(code "93")
 			(name "unconnected-(IC1-~{WR}-Pad10)")
 			(class "Default")
 			(node
@@ -9800,7 +11001,7 @@
 			)
 		)
 		(net
-			(code "87")
+			(code "94")
 			(name "unconnected-(IC2-NC-Pad4)")
 			(class "Default")
 			(node
@@ -9811,7 +11012,7 @@
 			)
 		)
 		(net
-			(code "88")
+			(code "95")
 			(name "unconnected-(IC4-NC-Pad4)")
 			(class "Default")
 			(node
@@ -9822,7 +11023,7 @@
 			)
 		)
 		(net
-			(code "89")
+			(code "96")
 			(name "unconnected-(IC5-NC-Pad6)")
 			(class "Default")
 			(node
@@ -9833,7 +11034,7 @@
 			)
 		)
 		(net
-			(code "90")
+			(code "97")
 			(name "unconnected-(IC5-SYNC{slash}MODE-Pad12)")
 			(class "Default")
 			(node
@@ -9844,7 +11045,7 @@
 			)
 		)
 		(net
-			(code "91")
+			(code "98")
 			(name "unconnected-(IC6-NC-Pad4)")
 			(class "Default")
 			(node
@@ -9855,7 +11056,7 @@
 			)
 		)
 		(net
-			(code "92")
+			(code "99")
 			(name "unconnected-(IC8-PG-Pad5)")
 			(class "Default")
 			(node
@@ -9866,7 +11067,7 @@
 			)
 		)
 		(net
-			(code "93")
+			(code "100")
 			(name "unconnected-(IC8-VIOC-Pad3)")
 			(class "Default")
 			(node
@@ -9877,7 +11078,7 @@
 			)
 		)
 		(net
-			(code "94")
+			(code "101")
 			(name "unconnected-(IC9-PG-Pad5)")
 			(class "Default")
 			(node
@@ -9888,7 +11089,7 @@
 			)
 		)
 		(net
-			(code "95")
+			(code "102")
 			(name "unconnected-(IC9-VIOC-Pad3)")
 			(class "Default")
 			(node
@@ -9899,47 +11100,14 @@
 			)
 		)
 		(net
-			(code "96")
-			(name "unconnected-(J5-Pad1)")
+			(code "103")
+			(name "unconnected-(IC10-NC-Pad4)")
 			(class "Default")
 			(node
-				(ref "J5")
-				(pin "1")
-				(pinfunction "1_1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "97")
-			(name "unconnected-(J5-Pad2)")
-			(class "Default")
-			(node
-				(ref "J5")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "98")
-			(name "unconnected-(J6-Pad1)")
-			(class "Default")
-			(node
-				(ref "J6")
-				(pin "1")
-				(pinfunction "1_1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "99")
-			(name "unconnected-(J6-Pad2)")
-			(class "Default")
-			(node
-				(ref "J6")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "passive")
+				(ref "IC10")
+				(pin "4")
+				(pinfunction "NC_4")
+				(pintype "no_connect")
 			)
 		)
 	)

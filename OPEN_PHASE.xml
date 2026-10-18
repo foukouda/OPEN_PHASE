@@ -39,10 +39,10 @@
 4)	SURFACE FINISH: IMMERSION GOLD
 
 5)	SOLDERMASK ON BOTH SIDES OF THE BOARD SHALL 
-	BE LPI, COLOR BLACK.
+	BE LPI, COLOR WHITE.
 
 6)	SILK SCREEN LEGEND TO BE APPLIED PER LAYER 
-	STACKUP USING YELLOW NON-CONDUCTIVE EPOXY INK.
+	STACKUP USING BLACK NON-CONDUCTIVE EPOXY INK.
 
 7)	ALL VIAS ARE TENTED ON BOTH SIDES UNLESS 
 	SOLDERMASK OPENED IN GERBER.
@@ -60,7 +60,7 @@
 
 10)	DESIGN GEOMETRY MINIMUM FEATURE SIZES:
 
-	BOARD SIZE				65.050 × 59.500 mm
+	BOARD SIZE				65.050 × 77.500 mm
 	BOARD THICKNESS		1.660 mm
 	TRACE WIDTH			0.200 mm
 	TRACE TO TRACE		0.200 mm
@@ -74,7 +74,7 @@
 11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.
 
 12)	CONFIRM SPACE WIDTHS AND SPACINGS.</textvar>
-    <textvar name="GIT_HASH_PCB">7703dc5</textvar>
+    <textvar name="GIT_HASH_PCB">720b69a</textvar>
     <textvar name="GIT_HASH_SCH">7703dc5</textvar>
     <textvar name="GIT_URL">https://github.com/foukouda/OPEN_PHASE</textvar>
     <textvar name="PROJECT_NAME">OPEN_PHASE</textvar>
@@ -100,6 +100,12 @@ Added
 
 -   Predicted measurement quality (sim 07, 08)
 
+-   openEMS shunt inductance model (Simulation/openEMS)
+
+-   Thermal / current density model (Simulation/Thermal)
+
+-   3D animation (Images/OPEN_PHASE.mp4)
+
 ___________________________________
 
 Changed
@@ -110,9 +116,13 @@ Changed
 
 -   IC3: LTC6655LN-2.5 -&gt; LTC6655-2.5 (pin 6 = VOUT_S)
 
--   R12: 49.9k -&gt; 24.9k (+2.5VA = 2.500 V)</textvar>
-    <textvar name="RELEASE_DATE">10-Oct-2026</textvar>
-    <textvar name="RELEASE_DATE_NUM">2026-10-10</textvar>
+-   R12: 49.9k -&gt; 24.9k (+2.5VA = 2.500 V)
+
+-   L1: 744373965022 -&gt; WE-MAPI 4030 74438357022 (4.1 x 4.1 mm)
+
+-   Solder mask white, silkscreen black</textvar>
+    <textvar name="RELEASE_DATE">18-Oct-2026</textvar>
+    <textvar name="RELEASE_DATE_NUM">2026-10-18</textvar>
     <textvar name="RELEASE_TITLE_1.0.0"/>
     <textvar name="RELEASE_TITLE_1.0.1"/>
     <textvar name="RELEASE_TITLE_1.0.2"/>
@@ -120,45 +130,45 @@ Changed
     <textvar name="RELEASE_TITLE_UNRELEASED">Version Unreleased</textvar>
     <textvar name="REVISION">+ (Unreleased)</textvar>
     <textvar name="SHEET_NAME_1">Cover Page</textvar>
-    <textvar name="SHEET_NAME_10">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_11">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_12">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_13">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_14">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_15">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_16">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_17">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_18">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_19">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_2">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_20">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_21">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_22">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_23">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_24">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_25">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_26">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_27">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_28">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_29">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_3">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_30">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_31">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_32">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_33">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_34">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_35">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_36">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_37">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_38">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_39">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_4">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_40">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_5">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_6">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_7">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_8">Error: XML File not found</textvar>
-    <textvar name="SHEET_NAME_9">Error: XML File not found</textvar>
+    <textvar name="SHEET_NAME_10">Revision History</textvar>
+    <textvar name="SHEET_NAME_11">......................................</textvar>
+    <textvar name="SHEET_NAME_12">......................................</textvar>
+    <textvar name="SHEET_NAME_13">......................................</textvar>
+    <textvar name="SHEET_NAME_14">......................................</textvar>
+    <textvar name="SHEET_NAME_15">......................................</textvar>
+    <textvar name="SHEET_NAME_16">......................................</textvar>
+    <textvar name="SHEET_NAME_17">......................................</textvar>
+    <textvar name="SHEET_NAME_18">......................................</textvar>
+    <textvar name="SHEET_NAME_19">......................................</textvar>
+    <textvar name="SHEET_NAME_2">Block Diagram</textvar>
+    <textvar name="SHEET_NAME_20">......................................</textvar>
+    <textvar name="SHEET_NAME_21">......................................</textvar>
+    <textvar name="SHEET_NAME_22">......................................</textvar>
+    <textvar name="SHEET_NAME_23">......................................</textvar>
+    <textvar name="SHEET_NAME_24">......................................</textvar>
+    <textvar name="SHEET_NAME_25">......................................</textvar>
+    <textvar name="SHEET_NAME_26">......................................</textvar>
+    <textvar name="SHEET_NAME_27">......................................</textvar>
+    <textvar name="SHEET_NAME_28">......................................</textvar>
+    <textvar name="SHEET_NAME_29">......................................</textvar>
+    <textvar name="SHEET_NAME_3">Project Architecture</textvar>
+    <textvar name="SHEET_NAME_30">......................................</textvar>
+    <textvar name="SHEET_NAME_31">......................................</textvar>
+    <textvar name="SHEET_NAME_32">......................................</textvar>
+    <textvar name="SHEET_NAME_33">......................................</textvar>
+    <textvar name="SHEET_NAME_34">......................................</textvar>
+    <textvar name="SHEET_NAME_35">......................................</textvar>
+    <textvar name="SHEET_NAME_36">......................................</textvar>
+    <textvar name="SHEET_NAME_37">......................................</textvar>
+    <textvar name="SHEET_NAME_38">......................................</textvar>
+    <textvar name="SHEET_NAME_39">......................................</textvar>
+    <textvar name="SHEET_NAME_4">AD7606C-18_ADC</textvar>
+    <textvar name="SHEET_NAME_40">......................................</textvar>
+    <textvar name="SHEET_NAME_5">INA241_Phase_Sense</textvar>
+    <textvar name="SHEET_NAME_6">Power_Supply</textvar>
+    <textvar name="SHEET_NAME_7">Connectors</textvar>
+    <textvar name="SHEET_NAME_8">Holes, Fiducials</textvar>
+    <textvar name="SHEET_NAME_9">Power - Sequencing</textvar>
     <textvar name="VARIANT">PRELIMINARY</textvar>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -694,6 +704,31 @@ Changed
         </unit>
       </units>
     </comp>
+    <comp ref="C3">
+      <value>0.1µF</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>5e6c64b9-d888-471b-9e42-7489b658456d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
     <comp ref="C5">
       <value>1µF</value>
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
@@ -735,6 +770,31 @@ Changed
       <property name="ki_fp_filters" value="C_*"/>
       <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
       <tstamps>aa53037c-2491-4929-bd15-634e7f20e5a1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C16">
+      <value>1µF</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>04af183b-f62c-4504-91f9-887d21388a1f</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -944,6 +1004,56 @@ Changed
         </unit>
       </units>
     </comp>
+    <comp ref="C40">
+      <value>180 pF C0G/NP0, 50 V, 0603</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>dd1d7b8f-2109-426f-977e-8596aa546708</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C42">
+      <value>1nF C0G</value>
+      <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>9f327df2-af7f-48ba-81c7-74511217f9a2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
     <comp ref="IC2">
       <value>INA241A2IDGKR</value>
       <footprint>OPEN_PHASE:SOP65P490X110-8N</footprint>
@@ -1061,6 +1171,50 @@ Changed
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
       <tstamps>07f4132d-cb9a-4d9a-b179-2b5a8bc6f56e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="8"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="IC10">
+      <value>INA241A2IDGKR</value>
+      <footprint>OPEN_PHASE:SOP65P490X110-8N</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/ina241a.pdf?ts=1698648582718&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FINA241A%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-amps-null-44700045336317476_prodfolderdynamic-cpc-pf-go</datasheet>
+      <description>Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP</description>
+      <fields>
+        <field name="Height">1.1</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">INA241A2IDGKR</field>
+        <field name="Mouser Part Number">595-INA241A2IDGKR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA241A2IDGKR?qs=Imq1NPwxi772hZtuitx1Tg%3D%3D</field>
+        <field name="Arrow Part Number">INA241A2IDGKR</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/ina241a2idgkr/texas-instruments?utm_currency=USD&amp;region=nac</field>
+        <field name="Footprint">OPEN_PHASE:SOP65P490X110-8N</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ina241a.pdf?ts=1698648582718&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FINA241A%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-amps-null-44700045336317476_prodfolderdynamic-cpc-pf-go</field>
+        <field name="Description">Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="INA241A2IDGKR" description="Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP"/>
+      <property name="Height" value="1.1"/>
+      <property name="Manufacturer_Name" value="Texas Instruments"/>
+      <property name="Manufacturer_Part_Number" value="INA241A2IDGKR"/>
+      <property name="Mouser Part Number" value="595-INA241A2IDGKR"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA241A2IDGKR?qs=Imq1NPwxi772hZtuitx1Tg%3D%3D"/>
+      <property name="Arrow Part Number" value="INA241A2IDGKR"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/ina241a2idgkr/texas-instruments?utm_currency=USD&amp;region=nac"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>4aac8201-93bf-4e11-ab84-108cfe43ad9d</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -1196,7 +1350,47 @@ Changed
         </unit>
       </units>
     </comp>
-    <comp ref="R13">
+    <comp ref="R9">
+      <value>PBV-R001-F1-1.0</value>
+      <footprint>OPEN_PHASE:PBVR001F110</footprint>
+      <datasheet>https://cms.nacsemi.com/content/AuthDatasheets/Isabellehuette/PBV.pdf</datasheet>
+      <description>ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %</description>
+      <fields>
+        <field name="Height">20.7</field>
+        <field name="Manufacturer_Name">Isabellenhutte</field>
+        <field name="Manufacturer_Part_Number">PBV-R001-F1-1.0</field>
+        <field name="Mouser Part Number"/>
+        <field name="Mouser Price/Stock"/>
+        <field name="Arrow Part Number"/>
+        <field name="Arrow Price/Stock"/>
+        <field name="Footprint">OPEN_PHASE:PBVR001F110</field>
+        <field name="Datasheet">https://cms.nacsemi.com/content/AuthDatasheets/Isabellehuette/PBV.pdf</field>
+        <field name="Description">ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="PBV-R001-F1-1.0" description="ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %"/>
+      <property name="Height" value="20.7"/>
+      <property name="Manufacturer_Name" value="Isabellenhutte"/>
+      <property name="Manufacturer_Part_Number" value="PBV-R001-F1-1.0"/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>e7976e72-baa4-42d0-acd1-1cc81bee1c34</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R15">
       <value>33Ω</value>
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
@@ -1221,7 +1415,7 @@ Changed
         </unit>
       </units>
     </comp>
-    <comp ref="R15">
+    <comp ref="R16">
       <value>9.1kΩ</value>
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
@@ -1246,37 +1440,12 @@ Changed
         </unit>
       </units>
     </comp>
-    <comp ref="R16">
-      <value>9.1kΩ</value>
-      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
-      <description>Resistor</description>
-      <fields>
-        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description">Resistor</field>
-      </fields>
-      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
-      <property name="Sheetname" value="INA241_Phase_Sense"/>
-      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
-      <tstamps>20ee71e5-ec58-424f-9ce7-bdc925fa4a7a</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
     <comp ref="R17">
-      <value>33Ω</value>
-      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <value>40.2kΩ</value>
+      <footprint>OPEN_PHASE:R_0805_2012Metric</footprint>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Footprint">OPEN_PHASE:R_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
@@ -1286,7 +1455,7 @@ Changed
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
-      <tstamps>f6c757ec-2e60-487b-8f89-a41f4e13d108</tstamps>
+      <tstamps>5f44ee5c-e653-46d2-92da-e98374f3c988</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -1297,11 +1466,11 @@ Changed
       </units>
     </comp>
     <comp ref="R18">
-      <value>9.1kΩ</value>
-      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <value>10kΩ</value>
+      <footprint>OPEN_PHASE:R_0805_2012Metric</footprint>
       <description>Resistor</description>
       <fields>
-        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Footprint">OPEN_PHASE:R_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
@@ -1311,7 +1480,7 @@ Changed
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
-      <tstamps>3627d060-59e8-4dc0-a17e-60ea2222ce84</tstamps>
+      <tstamps>86eb8b00-0720-4173-8ff3-88fe9312031c</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -1347,31 +1516,6 @@ Changed
       </units>
     </comp>
     <comp ref="R20">
-      <value>9.1kΩ</value>
-      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
-      <description>Resistor</description>
-      <fields>
-        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description">Resistor</field>
-      </fields>
-      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
-      <property name="Sheetname" value="INA241_Phase_Sense"/>
-      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
-      <tstamps>2ac30af1-d691-48b6-88a1-a335def8363e</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R21">
       <value>33Ω</value>
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
@@ -1386,7 +1530,7 @@ Changed
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
-      <tstamps>6379c60e-1bdd-4e34-a687-b03190e373b1</tstamps>
+      <tstamps>f6c757ec-2e60-487b-8f89-a41f4e13d108</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -1396,7 +1540,7 @@ Changed
         </unit>
       </units>
     </comp>
-    <comp ref="R22">
+    <comp ref="R21">
       <value>9.1kΩ</value>
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
@@ -1411,7 +1555,7 @@ Changed
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
-      <tstamps>ff0ec5d1-0d6d-42d9-bb97-7232d38b3873</tstamps>
+      <tstamps>20ee71e5-ec58-424f-9ce7-bdc925fa4a7a</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -1421,57 +1565,7 @@ Changed
         </unit>
       </units>
     </comp>
-    <comp ref="R27">
-      <value>40.2kΩ</value>
-      <footprint>OPEN_PHASE:R_0805_2012Metric</footprint>
-      <description>Resistor</description>
-      <fields>
-        <field name="Footprint">OPEN_PHASE:R_0805_2012Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description">Resistor</field>
-      </fields>
-      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
-      <property name="Sheetname" value="INA241_Phase_Sense"/>
-      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
-      <tstamps>5f44ee5c-e653-46d2-92da-e98374f3c988</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R28">
-      <value>10kΩ</value>
-      <footprint>OPEN_PHASE:R_0805_2012Metric</footprint>
-      <description>Resistor</description>
-      <fields>
-        <field name="Footprint">OPEN_PHASE:R_0805_2012Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description">Resistor</field>
-      </fields>
-      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
-      <property name="Sheetname" value="INA241_Phase_Sense"/>
-      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
-      <tstamps>86eb8b00-0720-4173-8ff3-88fe9312031c</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R31">
+    <comp ref="R22">
       <value>40.2kΩ</value>
       <footprint>OPEN_PHASE:R_0805_2012Metric</footprint>
       <description>Resistor</description>
@@ -1496,7 +1590,7 @@ Changed
         </unit>
       </units>
     </comp>
-    <comp ref="R32">
+    <comp ref="R23">
       <value>10kΩ</value>
       <footprint>OPEN_PHASE:R_0805_2012Metric</footprint>
       <description>Resistor</description>
@@ -1521,7 +1615,82 @@ Changed
         </unit>
       </units>
     </comp>
-    <comp ref="R35">
+    <comp ref="R24">
+      <value>9.1kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>2ac30af1-d691-48b6-88a1-a335def8363e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R25">
+      <value>33Ω</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>6379c60e-1bdd-4e34-a687-b03190e373b1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R26">
+      <value>9.1kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>3627d060-59e8-4dc0-a17e-60ea2222ce84</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R27">
       <value>40.2kΩ</value>
       <footprint>OPEN_PHASE:R_0805_2012Metric</footprint>
       <description>Resistor</description>
@@ -1546,7 +1715,7 @@ Changed
         </unit>
       </units>
     </comp>
-    <comp ref="R36">
+    <comp ref="R28">
       <value>10kΩ</value>
       <footprint>OPEN_PHASE:R_0805_2012Metric</footprint>
       <description>Resistor</description>
@@ -1571,6 +1740,156 @@ Changed
         </unit>
       </units>
     </comp>
+    <comp ref="R29">
+      <value>9.1kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>ff0ec5d1-0d6d-42d9-bb97-7232d38b3873</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R30">
+      <value>33Ω</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>990d4b9c-4a80-454a-a70e-b87a804a1ffb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R31">
+      <value>9.1kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>412e6dbc-e019-463d-9eba-aa1ee2d25c88</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R32">
+      <value>40.2kΩ</value>
+      <footprint>OPEN_PHASE:R_0805_2012Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>9345ca51-3f48-4850-a239-244f71f9ff61</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R33">
+      <value>10kΩ</value>
+      <footprint>OPEN_PHASE:R_0805_2012Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>b2310747-abfe-4013-92d6-944b4ba6ca99</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R34">
+      <value>9.1kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>4258a0ea-50e5-4912-bc3d-f100e8f120a2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
     <comp ref="Re1">
       <value>1kΩ</value>
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
@@ -1586,7 +1905,7 @@ Changed
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
-      <tstamps>b7d8b942-6f33-4be9-b8ee-8880db7f3b0a</tstamps>
+      <tstamps>4046500a-a4c4-4468-aac5-acf42674198e</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -1611,7 +1930,7 @@ Changed
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
-      <tstamps>4046500a-a4c4-4468-aac5-acf42674198e</tstamps>
+      <tstamps>b7d8b942-6f33-4be9-b8ee-8880db7f3b0a</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -1637,6 +1956,31 @@ Changed
       <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
       <tstamps>61b89881-ddba-4cdb-b2d4-9913b1d09962</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Re4">
+      <value>1kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="INA241_Phase_Sense"/>
+      <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/INA241_Phase_Sense/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/"/>
+      <tstamps>d31a5e86-ab47-4bf6-8b8c-83acc990c4c1</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -2287,28 +2631,28 @@ Changed
       </units>
     </comp>
     <comp ref="L1">
-      <value>744373965022</value>
-      <footprint>OPEN_PHASE:INDPM135125X620N</footprint>
-      <datasheet>https://www.we-online.com/catalog/datasheet/744373965022.pdf</datasheet>
-      <description>WE-LHMI SMT Power Inductor Size 1365; L = 2,2 H ; IR = 17 A; Isat = 41,1 A; RDC = 4,2 m</description>
+      <value>74438357022</value>
+      <footprint>OPEN_PHASE:L_Wuerth_MAPI-4030</footprint>
+      <datasheet>https://www.we-online.com/components/products/datasheet/74438357022.pdf</datasheet>
+      <description>WE-MAPI SMT Power Inductor Size 4030; L = 2,2 µH; IRP,40K = 7,1 A; Isat,10% = 4,6 A; Isat,30% = 9,2 A; RDC = 22 mΩ typ / 26 mΩ max</description>
       <fields>
-        <field name="Height">6.2</field>
+        <field name="Height">3.1</field>
         <field name="Manufacturer_Name">Wurth Elektronik</field>
-        <field name="Manufacturer_Part_Number">744373965022</field>
-        <field name="Mouser Part Number">710-744373965022</field>
-        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/744373965022?qs=BZBei1rCqCC1TQlqJ2wRyg%3D%3D</field>
+        <field name="Manufacturer_Part_Number">74438357022</field>
+        <field name="Mouser Part Number">710-74438357022</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/ProductDetail/Wurth-Elektronik/74438357022</field>
         <field name="Arrow Part Number"/>
         <field name="Arrow Price/Stock"/>
-        <field name="Footprint">OPEN_PHASE:INDPM135125X620N</field>
-        <field name="Datasheet">https://www.we-online.com/catalog/datasheet/744373965022.pdf</field>
-        <field name="Description">WE-LHMI SMT Power Inductor Size 1365; L = 2,2 H ; IR = 17 A; Isat = 41,1 A; RDC = 4,2 m</field>
+        <field name="Footprint">OPEN_PHASE:L_Wuerth_MAPI-4030</field>
+        <field name="Datasheet">https://www.we-online.com/components/products/datasheet/74438357022.pdf</field>
+        <field name="Description">WE-MAPI SMT Power Inductor Size 4030; L = 2,2 µH; IRP,40K = 7,1 A; Isat,10% = 4,6 A; Isat,30% = 9,2 A; RDC = 22 mΩ typ / 26 mΩ max</field>
       </fields>
-      <libsource lib="OPEN_PHASE" part="744373965022" description="WE-LHMI SMT Power Inductor Size 1365; L = 2,2 H ; IR = 17 A; Isat = 41,1 A; RDC = 4,2 m"/>
-      <property name="Height" value="6.2"/>
+      <libsource lib="OPEN_PHASE" part="74438357022" description="WE-MAPI SMT Power Inductor Size 4030; L = 2,2 µH; IRP,40K = 7,1 A; Isat,10% = 4,6 A; Isat,30% = 9,2 A; RDC = 22 mΩ typ / 26 mΩ max"/>
+      <property name="Height" value="3.1"/>
       <property name="Manufacturer_Name" value="Wurth Elektronik"/>
-      <property name="Manufacturer_Part_Number" value="744373965022"/>
-      <property name="Mouser Part Number" value="710-744373965022"/>
-      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/744373965022?qs=BZBei1rCqCC1TQlqJ2wRyg%3D%3D"/>
+      <property name="Manufacturer_Part_Number" value="74438357022"/>
+      <property name="Mouser Part Number" value="710-74438357022"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.com/ProductDetail/Wurth-Elektronik/74438357022"/>
       <property name="Arrow Part Number" value=""/>
       <property name="Arrow Price/Stock" value=""/>
       <property name="Sheetname" value="Power_Supply"/>
@@ -2606,6 +2950,46 @@ Changed
         </unit>
       </units>
     </comp>
+    <comp ref="J3">
+      <value>XT60PW-F</value>
+      <footprint>OPEN_PHASE:AMASS_XT60PW-F_1x02_P7.20mm_Horizontal</footprint>
+      <datasheet>https://www.tme.eu/Document/1191bc2fa3aee3c446e5a895fd8f7983/XT60PW-F.pdf</datasheet>
+      <description>Connector: DC supply; socket; XT60; female; PIN: 2; on PCBs; THT; 30A</description>
+      <fields>
+        <field name="Height">8.4</field>
+        <field name="Manufacturer_Name">Amass</field>
+        <field name="Manufacturer_Part_Number">XT60PW-F</field>
+        <field name="Mouser Part Number"/>
+        <field name="Mouser Price/Stock"/>
+        <field name="Arrow Part Number"/>
+        <field name="Arrow Price/Stock"/>
+        <field name="Footprint">OPEN_PHASE:AMASS_XT60PW-F_1x02_P7.20mm_Horizontal</field>
+        <field name="Datasheet">https://www.tme.eu/Document/1191bc2fa3aee3c446e5a895fd8f7983/XT60PW-F.pdf</field>
+        <field name="Description">Connector: DC supply; socket; XT60; female; PIN: 2; on PCBs; THT; 30A</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="XT60PW-F" description="Connector: DC supply; socket; XT60; female; PIN: 2; on PCBs; THT; 30A"/>
+      <property name="Height" value="8.4"/>
+      <property name="Manufacturer_Name" value="Amass"/>
+      <property name="Manufacturer_Part_Number" value="XT60PW-F"/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Sheetname" value="Connectors"/>
+      <property name="Sheetfile" value="Connectors.kicad_sch"/>
+      <sheetpath names="/Project Architecture/Connectors/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/"/>
+      <tstamps>66d6115f-4351-47dc-8ef4-69a91e9c32bc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
     <comp ref="J5">
       <value>XT60PW-M</value>
       <footprint>OPEN_PHASE:XT60PWM</footprint>
@@ -2646,42 +3030,28 @@ Changed
         </unit>
       </units>
     </comp>
-    <comp ref="J6">
-      <value>XT60PW-M</value>
-      <footprint>OPEN_PHASE:XT60PWM</footprint>
-      <datasheet>https://www.tme.eu/Document/b13629717d44ae038681dba08d18c0b6/XT60PW-M.pdf</datasheet>
-      <description>Connector: DC supply; socket; XT60; male; PIN: 2; on PCBs; THT; 30A</description>
+    <comp ref="NT1">
+      <value>NetTie_2</value>
+      <footprint>NetTie:NetTie-2_SMD_Pad0.5mm</footprint>
+      <description>Net tie, 2 pins</description>
       <fields>
-        <field name="Height">8.4</field>
-        <field name="Manufacturer_Name">Amass</field>
-        <field name="Manufacturer_Part_Number">XT60PW-M</field>
-        <field name="Mouser Part Number"/>
-        <field name="Mouser Price/Stock"/>
-        <field name="Arrow Part Number"/>
-        <field name="Arrow Price/Stock"/>
-        <field name="Footprint">OPEN_PHASE:XT60PWM</field>
-        <field name="Datasheet">https://www.tme.eu/Document/b13629717d44ae038681dba08d18c0b6/XT60PW-M.pdf</field>
-        <field name="Description">Connector: DC supply; socket; XT60; male; PIN: 2; on PCBs; THT; 30A</field>
+        <field name="Footprint">NetTie:NetTie-2_SMD_Pad0.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Net tie, 2 pins</field>
       </fields>
-      <libsource lib="OPEN_PHASE" part="XT60PW-M" description="Connector: DC supply; socket; XT60; male; PIN: 2; on PCBs; THT; 30A"/>
-      <property name="Height" value="8.4"/>
-      <property name="Manufacturer_Name" value="Amass"/>
-      <property name="Manufacturer_Part_Number" value="XT60PW-M"/>
-      <property name="Mouser Part Number" value=""/>
-      <property name="Mouser Price/Stock" value=""/>
-      <property name="Arrow Part Number" value=""/>
-      <property name="Arrow Price/Stock" value=""/>
+      <libsource lib="Device" part="NetTie_2" description="Net tie, 2 pins"/>
       <property name="Sheetname" value="Connectors"/>
       <property name="Sheetfile" value="Connectors.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="net tie short"/>
+      <property name="ki_fp_filters" value="Net*Tie*"/>
       <sheetpath names="/Project Architecture/Connectors/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/"/>
-      <tstamps>14d824c2-4611-4d49-9247-f356ce4fd4b6</tstamps>
+      <tstamps>130990ae-ec2c-428f-aea2-f0bf86fcf6d8</tstamps>
       <units>
         <unit name="A">
           <pins>
             <pin num="1"/>
             <pin num="2"/>
-            <pin num="3"/>
-            <pin num="4"/>
           </pins>
         </unit>
       </units>
@@ -2788,20 +3158,37 @@ Changed
     </comp>
   </components>
   <libparts>
-    <libpart lib="OPEN_PHASE" part="744373965022">
-      <description>WE-LHMI SMT Power Inductor Size 1365; L = 2,2 H ; IR = 17 A; Isat = 41,1 A; RDC = 4,2 m</description>
-      <docs>https://www.we-online.com/catalog/datasheet/744373965022.pdf</docs>
+    <libpart lib="Device" part="NetTie_2">
+      <description>Net tie, 2 pins</description>
+      <footprints>
+        <fp>Net*Tie*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">NT</field>
+        <field name="Value">NetTie_2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Net tie, 2 pins</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="OPEN_PHASE" part="74438357022">
+      <description>WE-MAPI SMT Power Inductor Size 4030; L = 2,2 µH; IRP,40K = 7,1 A; Isat,10% = 4,6 A; Isat,30% = 9,2 A; RDC = 22 mΩ typ / 26 mΩ max</description>
+      <docs>https://www.we-online.com/components/products/datasheet/74438357022.pdf</docs>
       <fields>
         <field name="Reference">L</field>
-        <field name="Value">744373965022</field>
-        <field name="Footprint">OPEN_PHASE:INDPM135125X620N</field>
-        <field name="Datasheet">https://www.we-online.com/catalog/datasheet/744373965022.pdf</field>
-        <field name="Description">WE-LHMI SMT Power Inductor Size 1365; L = 2,2 H ; IR = 17 A; Isat = 41,1 A; RDC = 4,2 m</field>
-        <field name="Height">6.2</field>
+        <field name="Value">74438357022</field>
+        <field name="Footprint">OPEN_PHASE:L_Wuerth_MAPI-4030</field>
+        <field name="Datasheet">https://www.we-online.com/components/products/datasheet/74438357022.pdf</field>
+        <field name="Description">WE-MAPI SMT Power Inductor Size 4030; L = 2,2 µH; IRP,40K = 7,1 A; Isat,10% = 4,6 A; Isat,30% = 9,2 A; RDC = 22 mΩ typ / 26 mΩ max</field>
+        <field name="Height">3.1</field>
         <field name="Manufacturer_Name">Wurth Elektronik</field>
-        <field name="Manufacturer_Part_Number">744373965022</field>
-        <field name="Mouser Part Number">710-744373965022</field>
-        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/744373965022?qs=BZBei1rCqCC1TQlqJ2wRyg%3D%3D</field>
+        <field name="Manufacturer_Part_Number">74438357022</field>
+        <field name="Mouser Part Number">710-74438357022</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/ProductDetail/Wurth-Elektronik/74438357022</field>
         <field name="Arrow Part Number"/>
         <field name="Arrow Price/Stock"/>
       </fields>
@@ -3180,6 +3567,30 @@ Changed
         <pin num="2" name="" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="OPEN_PHASE" part="XT60PW-F">
+      <description>Connector: DC supply; socket; XT60; female; PIN: 2; on PCBs; THT; 30A</description>
+      <docs>https://www.tme.eu/Document/1191bc2fa3aee3c446e5a895fd8f7983/XT60PW-F.pdf</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">XT60PW-F</field>
+        <field name="Footprint">OPEN_PHASE:AMASS_XT60PW-F_1x02_P7.20mm_Horizontal</field>
+        <field name="Datasheet">https://www.tme.eu/Document/1191bc2fa3aee3c446e5a895fd8f7983/XT60PW-F.pdf</field>
+        <field name="Description">Connector: DC supply; socket; XT60; female; PIN: 2; on PCBs; THT; 30A</field>
+        <field name="Height">8.4</field>
+        <field name="Manufacturer_Name">Amass</field>
+        <field name="Manufacturer_Part_Number">XT60PW-F</field>
+        <field name="Mouser Part Number"/>
+        <field name="Mouser Price/Stock"/>
+        <field name="Arrow Part Number"/>
+        <field name="Arrow Price/Stock"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="MH1" type="passive"/>
+        <pin num="4" name="MH2" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="OPEN_PHASE" part="XT60PW-M">
       <description>Connector: DC supply; socket; XT60; male; PIN: 2; on PCBs; THT; 30A</description>
       <docs>https://www.tme.eu/Document/b13629717d44ae038681dba08d18c0b6/XT60PW-M.pdf</docs>
@@ -3206,6 +3617,9 @@ Changed
     </libpart>
   </libparts>
   <libraries>
+    <library logical="Device">
+      <uri>${KICAD10_SYMBOL_DIR}/Device.kicad_sym</uri>
+    </library>
     <library logical="OPEN_PHASE">
       <uri>${KIPRJMOD}/lib/lib_sym/OPEN_PHASE.kicad_sym</uri>
     </library>
@@ -3216,6 +3630,8 @@ Changed
       <node ref="C15" pin="4" pintype="passive"/>
       <node ref="C41" pin="2" pintype="passive"/>
       <node ref="IC1" pin="42" pinfunction="REFIN/REFOUT_42" pintype="passive"/>
+      <node ref="IC10" pin="3" pinfunction="REF2_3" pintype="passive"/>
+      <node ref="IC10" pin="7" pinfunction="REF1_7" pintype="passive"/>
       <node ref="IC2" pin="3" pinfunction="REF2_3" pintype="passive"/>
       <node ref="IC2" pin="7" pinfunction="REF1_7" pintype="passive"/>
       <node ref="IC4" pin="3" pinfunction="REF2_3" pintype="passive"/>
@@ -3240,10 +3656,12 @@ Changed
       <node ref="C10" pin="1" pintype="passive"/>
       <node ref="C14" pin="1" pintype="passive"/>
       <node ref="C14" pin="4" pintype="passive"/>
+      <node ref="C16" pin="1" pintype="passive"/>
       <node ref="C17" pin="1" pintype="passive"/>
       <node ref="C18" pin="1" pintype="passive"/>
       <node ref="C2" pin="1" pintype="passive"/>
       <node ref="C20" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
       <node ref="C35" pin="2" pintype="passive"/>
       <node ref="C38" pin="2" pintype="passive"/>
       <node ref="C5" pin="1" pintype="passive"/>
@@ -3251,6 +3669,7 @@ Changed
       <node ref="IC1" pin="37" pinfunction="AVCC_2_37" pintype="passive"/>
       <node ref="IC1" pin="38" pinfunction="AVCC_3_38" pintype="passive"/>
       <node ref="IC1" pin="48" pinfunction="AVCC_4_48" pintype="passive"/>
+      <node ref="IC10" pin="6" pinfunction="VS_6" pintype="passive"/>
       <node ref="IC2" pin="6" pinfunction="VS_6" pintype="passive"/>
       <node ref="IC4" pin="6" pinfunction="VS_6" pintype="passive"/>
       <node ref="IC6" pin="6" pinfunction="VS_6" pintype="passive"/>
@@ -3306,6 +3725,7 @@ Changed
       <node ref="C14" pin="3" pintype="passive"/>
       <node ref="C15" pin="2" pintype="passive"/>
       <node ref="C15" pin="3" pintype="passive"/>
+      <node ref="C16" pin="2" pintype="passive"/>
       <node ref="C17" pin="2" pintype="passive"/>
       <node ref="C18" pin="2" pintype="passive"/>
       <node ref="C19" pin="2" pintype="passive"/>
@@ -3317,6 +3737,7 @@ Changed
       <node ref="C24" pin="2" pintype="passive"/>
       <node ref="C26" pin="1" pintype="passive"/>
       <node ref="C27" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
       <node ref="C30" pin="2" pintype="passive"/>
       <node ref="C35" pin="1" pintype="passive"/>
       <node ref="C36" pin="2" pintype="passive"/>
@@ -3338,6 +3759,7 @@ Changed
       <node ref="IC1" pin="41" pinfunction="AGND_5_41" pintype="passive"/>
       <node ref="IC1" pin="43" pinfunction="REFGND_1_43" pintype="passive"/>
       <node ref="IC1" pin="47" pinfunction="AGND_6_47" pintype="passive"/>
+      <node ref="IC10" pin="2" pinfunction="GND_2" pintype="passive"/>
       <node ref="IC2" pin="2" pinfunction="GND_2" pintype="passive"/>
       <node ref="IC3" pin="3" pinfunction="GND_1_3" pintype="passive"/>
       <node ref="IC3" pin="4" pinfunction="GND_2_4" pintype="passive"/>
@@ -3361,360 +3783,394 @@ Changed
       <node ref="J1" pin="5" pinfunction="MH2_5" pintype="passive"/>
       <node ref="J2" pin="4" pinfunction="MH1_4" pintype="passive"/>
       <node ref="J2" pin="5" pinfunction="MH2_5" pintype="passive"/>
+      <node ref="J3" pin="3" pinfunction="MH1_3" pintype="passive"/>
+      <node ref="J3" pin="4" pinfunction="MH2_4" pintype="passive"/>
       <node ref="J5" pin="3" pinfunction="MH1_3" pintype="passive"/>
       <node ref="J5" pin="4" pinfunction="MH2_4" pintype="passive"/>
-      <node ref="J6" pin="3" pinfunction="MH1_3" pintype="passive"/>
-      <node ref="J6" pin="4" pinfunction="MH2_4" pintype="passive"/>
+      <node ref="NT1" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="R12" pin="2" pintype="passive"/>
       <node ref="R14" pin="1" pintype="passive"/>
-      <node ref="R15" pin="1" pintype="passive"/>
       <node ref="R16" pin="1" pintype="passive"/>
       <node ref="R18" pin="1" pintype="passive"/>
       <node ref="R19" pin="1" pintype="passive"/>
       <node ref="R2" pin="2" pintype="passive"/>
-      <node ref="R20" pin="1" pintype="passive"/>
-      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="R23" pin="1" pintype="passive"/>
+      <node ref="R24" pin="1" pintype="passive"/>
+      <node ref="R26" pin="1" pintype="passive"/>
       <node ref="R28" pin="1" pintype="passive"/>
-      <node ref="R32" pin="1" pintype="passive"/>
-      <node ref="R36" pin="1" pintype="passive"/>
+      <node ref="R29" pin="1" pintype="passive"/>
+      <node ref="R31" pin="1" pintype="passive"/>
+      <node ref="R33" pin="1" pintype="passive"/>
+      <node ref="R34" pin="1" pintype="passive"/>
       <node ref="R6" pin="2" pintype="passive"/>
     </net>
-    <net code="11" name="IN-1" class="Default">
+    <net code="11" name="GND1" class="Default">
+      <node ref="J3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="NT1" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="12" name="IN-1" class="Default">
       <node ref="IC2" pin="1" pinfunction="IN-_1" pintype="passive"/>
       <node ref="R1" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
-    <net code="12" name="IN-2" class="Default">
+    <net code="13" name="IN-2" class="Default">
       <node ref="IC4" pin="1" pinfunction="IN-_1" pintype="passive"/>
       <node ref="R4" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
-    <net code="13" name="IN-3" class="Default">
+    <net code="14" name="IN-3" class="Default">
       <node ref="IC6" pin="1" pinfunction="IN-_1" pintype="passive"/>
       <node ref="R7" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
-    <net code="14" name="IN-A" class="Default">
+    <net code="15" name="IN-4" class="Default">
+      <node ref="IC10" pin="1" pinfunction="IN-_1" pintype="passive"/>
+      <node ref="R9" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="16" name="IN-B" class="Default">
+      <node ref="J3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R9" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="17" name="IN-U" class="Default">
       <node ref="J1" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="R1" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="15" name="IN-B" class="Default">
+    <net code="18" name="IN-V" class="Default">
       <node ref="J1" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R4" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="16" name="IN-C" class="Default">
+    <net code="19" name="IN-W" class="Default">
       <node ref="J1" pin="3" pinfunction="3_3" pintype="passive"/>
       <node ref="R7" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="17" name="Net-(C26-Pad2)" class="Default">
+    <net code="20" name="Net-(C26-Pad2)" class="Default">
       <node ref="C26" pin="2" pintype="passive"/>
       <node ref="R3" pin="2" pintype="passive"/>
     </net>
-    <net code="18" name="Net-(D2-A)" class="Default">
+    <net code="21" name="Net-(D2-A)" class="Default">
       <node ref="D2" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="IC5" pin="14" pinfunction="SW2_14" pintype="passive"/>
       <node ref="IC5" pin="16" pinfunction="SW1_16" pintype="passive"/>
       <node ref="L1" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
-    <net code="19" name="Net-(IC1-REFCAPA)" class="Default">
+    <net code="22" name="Net-(IC1-REFCAPA)" class="Default">
       <node ref="C39" pin="2" pintype="passive"/>
       <node ref="C39" pin="3" pintype="passive"/>
       <node ref="IC1" pin="44" pinfunction="REFCAPA_44" pintype="passive"/>
       <node ref="IC1" pin="45" pinfunction="REFCAPB_45" pintype="passive"/>
     </net>
-    <net code="20" name="Net-(IC1-REGCAP_1)" class="Default">
+    <net code="23" name="Net-(IC1-REGCAP_1)" class="Default">
       <node ref="C37" pin="1" pintype="passive"/>
       <node ref="IC1" pin="36" pinfunction="REGCAP_1_36" pintype="passive"/>
     </net>
-    <net code="21" name="Net-(IC1-REGCAP_2)" class="Default">
+    <net code="24" name="Net-(IC1-REGCAP_2)" class="Default">
       <node ref="C36" pin="1" pintype="passive"/>
       <node ref="IC1" pin="39" pinfunction="REGCAP_2_39" pintype="passive"/>
     </net>
-    <net code="22" name="Net-(IC3-VOUT_F)" class="Default">
+    <net code="25" name="Net-(IC3-VOUT_F)" class="Default">
       <node ref="C12" pin="1" pintype="passive"/>
       <node ref="IC3" pin="6" pinfunction="VOUT_S_6" pintype="passive"/>
       <node ref="IC3" pin="7" pinfunction="VOUT_F_7" pintype="passive"/>
       <node ref="R11" pin="1" pintype="passive"/>
     </net>
-    <net code="23" name="Net-(IC5-SS)" class="Default">
+    <net code="26" name="Net-(IC5-SS)" class="Default">
       <node ref="C24" pin="1" pintype="passive"/>
       <node ref="IC5" pin="11" pinfunction="SS_11" pintype="passive"/>
     </net>
-    <net code="24" name="Net-(IC7-VOUT_F)" class="Default">
+    <net code="27" name="Net-(IC7-VOUT_F)" class="Default">
       <node ref="C8" pin="1" pintype="passive"/>
       <node ref="IC7" pin="6" pinfunction="VOUT_S_6" pintype="passive"/>
       <node ref="IC7" pin="7" pinfunction="VOUT_F_7" pintype="passive"/>
       <node ref="R8" pin="1" pintype="passive"/>
     </net>
-    <net code="25" name="Net-(IC8-SET)" class="Default">
+    <net code="28" name="Net-(IC8-SET)" class="Default">
       <node ref="C13" pin="1" pintype="passive"/>
       <node ref="IC8" pin="8" pinfunction="SET_8" pintype="passive"/>
       <node ref="R14" pin="2" pintype="passive"/>
       <node ref="R8" pin="2" pintype="passive"/>
     </net>
-    <net code="26" name="Net-(IC9-SET)" class="Default">
+    <net code="29" name="Net-(IC9-SET)" class="Default">
       <node ref="C19" pin="1" pintype="passive"/>
       <node ref="IC9" pin="8" pinfunction="SET_8" pintype="passive"/>
       <node ref="R11" pin="2" pintype="passive"/>
       <node ref="R12" pin="1" pintype="passive"/>
     </net>
-    <net code="27" name="Net-(R27-Pad2)" class="Default">
-      <node ref="R27" pin="2" pintype="passive"/>
-      <node ref="R28" pin="2" pintype="passive"/>
-      <node ref="Re2" pin="1" pintype="passive"/>
-    </net>
-    <net code="28" name="Net-(R31-Pad2)" class="Default">
-      <node ref="R31" pin="2" pintype="passive"/>
-      <node ref="R32" pin="2" pintype="passive"/>
+    <net code="30" name="Net-(R17-Pad2)" class="Default">
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
       <node ref="Re1" pin="1" pintype="passive"/>
     </net>
-    <net code="29" name="Net-(R35-Pad2)" class="Default">
-      <node ref="R35" pin="2" pintype="passive"/>
-      <node ref="R36" pin="2" pintype="passive"/>
+    <net code="31" name="Net-(R22-Pad2)" class="Default">
+      <node ref="R22" pin="2" pintype="passive"/>
+      <node ref="R23" pin="2" pintype="passive"/>
+      <node ref="Re2" pin="1" pintype="passive"/>
+    </net>
+    <net code="32" name="Net-(R27-Pad2)" class="Default">
+      <node ref="R27" pin="2" pintype="passive"/>
+      <node ref="R28" pin="2" pintype="passive"/>
       <node ref="Re3" pin="1" pintype="passive"/>
     </net>
-    <net code="30" name="OUT-1" class="Default">
+    <net code="33" name="Net-(R32-Pad2)" class="Default">
+      <node ref="R32" pin="2" pintype="passive"/>
+      <node ref="R33" pin="2" pintype="passive"/>
+      <node ref="Re4" pin="1" pintype="passive"/>
+    </net>
+    <net code="34" name="OUT-1" class="Default">
       <node ref="IC2" pin="8" pinfunction="IN+_8" pintype="passive"/>
       <node ref="R1" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="31" name="OUT-2" class="Default">
+    <net code="35" name="OUT-2" class="Default">
       <node ref="IC4" pin="8" pinfunction="IN+_8" pintype="passive"/>
       <node ref="R4" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="32" name="OUT-3" class="Default">
+    <net code="36" name="OUT-3" class="Default">
       <node ref="IC6" pin="8" pinfunction="IN+_8" pintype="passive"/>
       <node ref="R7" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="33" name="OUT-A" class="Default">
+    <net code="37" name="OUT-4" class="Default">
+      <node ref="IC10" pin="8" pinfunction="IN+_8" pintype="passive"/>
+      <node ref="R9" pin="3" pinfunction="3_3" pintype="passive"/>
+    </net>
+    <net code="38" name="OUT-B" class="Default">
+      <node ref="J5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R32" pin="1" pintype="passive"/>
+      <node ref="R9" pin="4" pinfunction="4_4" pintype="passive"/>
+    </net>
+    <net code="39" name="OUT-U" class="Default">
       <node ref="J2" pin="3" pinfunction="3_3" pintype="passive"/>
       <node ref="R1" pin="4" pinfunction="4_4" pintype="passive"/>
-      <node ref="R27" pin="1" pintype="passive"/>
-    </net>
-    <net code="34" name="OUT-B" class="Default">
-      <node ref="J2" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="R31" pin="1" pintype="passive"/>
-      <node ref="R4" pin="4" pinfunction="4_4" pintype="passive"/>
-    </net>
-    <net code="35" name="OUT-C" class="Default">
-      <node ref="J2" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="R35" pin="1" pintype="passive"/>
-      <node ref="R7" pin="4" pinfunction="4_4" pintype="passive"/>
-    </net>
-    <net code="36" name="SNG-1F" class="Default">
-      <node ref="C25" pin="1" pintype="passive"/>
-      <node ref="IC1" pin="59" pinfunction="V6+_59" pintype="passive"/>
-      <node ref="R13" pin="2" pintype="passive"/>
-    </net>
-    <net code="37" name="SNG-1G" class="Default">
-      <node ref="C25" pin="2" pintype="passive"/>
-      <node ref="IC1" pin="60" pinfunction="V6-_60" pintype="passive"/>
-      <node ref="R15" pin="2" pintype="passive"/>
-    </net>
-    <net code="38" name="SNG-2F" class="Default">
-      <node ref="C29" pin="1" pintype="passive"/>
-      <node ref="IC1" pin="55" pinfunction="V4+_55" pintype="passive"/>
-      <node ref="R17" pin="2" pintype="passive"/>
-    </net>
-    <net code="39" name="SNG-2G" class="Default">
-      <node ref="C29" pin="2" pintype="passive"/>
-      <node ref="IC1" pin="56" pinfunction="V4-_56" pintype="passive"/>
-      <node ref="R16" pin="2" pintype="passive"/>
-    </net>
-    <net code="40" name="SNG-3F" class="Default">
-      <node ref="C33" pin="1" pintype="passive"/>
-      <node ref="IC1" pin="51" pinfunction="V2+_51" pintype="passive"/>
-      <node ref="R21" pin="2" pintype="passive"/>
-    </net>
-    <net code="41" name="SNG-3G" class="Default">
-      <node ref="C33" pin="2" pintype="passive"/>
-      <node ref="IC1" pin="52" pinfunction="V2-_52" pintype="passive"/>
-      <node ref="R18" pin="2" pintype="passive"/>
-    </net>
-    <net code="42" name="SNG-A1N" class="Default">
-      <node ref="IC2" pin="5" pinfunction="OUT_5" pintype="passive"/>
-      <node ref="R13" pin="1" pintype="passive"/>
-    </net>
-    <net code="43" name="SNG-A2N" class="Default">
-      <node ref="IC4" pin="5" pinfunction="OUT_5" pintype="passive"/>
       <node ref="R17" pin="1" pintype="passive"/>
     </net>
-    <net code="44" name="SNG-A3N" class="Default">
-      <node ref="IC6" pin="5" pinfunction="OUT_5" pintype="passive"/>
-      <node ref="R21" pin="1" pintype="passive"/>
+    <net code="40" name="OUT-V" class="Default">
+      <node ref="J2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="R4" pin="4" pinfunction="4_4" pintype="passive"/>
     </net>
-    <net code="45" name="SNG-V1+" class="Default">
+    <net code="41" name="OUT-W" class="Default">
+      <node ref="J2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R27" pin="1" pintype="passive"/>
+      <node ref="R7" pin="4" pinfunction="4_4" pintype="passive"/>
+    </net>
+    <net code="42" name="SNG-1F" class="Default">
+      <node ref="C25" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="63" pinfunction="V8+_63" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+    </net>
+    <net code="43" name="SNG-1G" class="Default">
+      <node ref="C25" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="64" pinfunction="V8-_64" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+    </net>
+    <net code="44" name="SNG-2F" class="Default">
+      <node ref="C29" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="59" pinfunction="V6+_59" pintype="passive"/>
+      <node ref="R20" pin="2" pintype="passive"/>
+    </net>
+    <net code="45" name="SNG-2G" class="Default">
+      <node ref="C29" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="60" pinfunction="V6-_60" pintype="passive"/>
+      <node ref="R21" pin="2" pintype="passive"/>
+    </net>
+    <net code="46" name="SNG-3F" class="Default">
+      <node ref="C33" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="55" pinfunction="V4+_55" pintype="passive"/>
+      <node ref="R25" pin="2" pintype="passive"/>
+    </net>
+    <net code="47" name="SNG-3G" class="Default">
+      <node ref="C33" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="56" pinfunction="V4-_56" pintype="passive"/>
+      <node ref="R26" pin="2" pintype="passive"/>
+    </net>
+    <net code="48" name="SNG-4F" class="Default">
+      <node ref="C42" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="51" pinfunction="V2+_51" pintype="passive"/>
+      <node ref="R30" pin="2" pintype="passive"/>
+    </net>
+    <net code="49" name="SNG-4G" class="Default">
+      <node ref="C42" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="52" pinfunction="V2-_52" pintype="passive"/>
+      <node ref="R31" pin="2" pintype="passive"/>
+    </net>
+    <net code="50" name="SNG-A1N" class="Default">
+      <node ref="IC2" pin="5" pinfunction="OUT_5" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+    </net>
+    <net code="51" name="SNG-A2N" class="Default">
+      <node ref="IC4" pin="5" pinfunction="OUT_5" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+    </net>
+    <net code="52" name="SNG-A3N" class="Default">
+      <node ref="IC6" pin="5" pinfunction="OUT_5" pintype="passive"/>
+      <node ref="R25" pin="1" pintype="passive"/>
+    </net>
+    <net code="53" name="SNG-A4N" class="Default">
+      <node ref="IC10" pin="5" pinfunction="OUT_5" pintype="passive"/>
+      <node ref="R30" pin="1" pintype="passive"/>
+    </net>
+    <net code="54" name="SNG-V1+" class="Default">
       <node ref="C31" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="61" pinfunction="V7+_61" pintype="passive"/>
+      <node ref="Re1" pin="2" pintype="passive"/>
+    </net>
+    <net code="55" name="SNG-V1-" class="Default">
+      <node ref="C31" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="62" pinfunction="V7-_62" pintype="passive"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+    </net>
+    <net code="56" name="SNG-V2+" class="Default">
+      <node ref="C32" pin="1" pintype="passive"/>
       <node ref="IC1" pin="57" pinfunction="V5+_57" pintype="passive"/>
       <node ref="Re2" pin="2" pintype="passive"/>
     </net>
-    <net code="46" name="SNG-V1-" class="Default">
-      <node ref="C31" pin="2" pintype="passive"/>
-      <node ref="IC1" pin="58" pinfunction="V5-_58" pintype="passive"/>
-      <node ref="R19" pin="2" pintype="passive"/>
-    </net>
-    <net code="47" name="SNG-V2+" class="Default">
-      <node ref="C32" pin="1" pintype="passive"/>
-      <node ref="IC1" pin="53" pinfunction="V3+_53" pintype="passive"/>
-      <node ref="Re1" pin="2" pintype="passive"/>
-    </net>
-    <net code="48" name="SNG-V2-" class="Default">
+    <net code="57" name="SNG-V2-" class="Default">
       <node ref="C32" pin="2" pintype="passive"/>
-      <node ref="IC1" pin="54" pinfunction="V3-_54" pintype="passive"/>
-      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="58" pinfunction="V5-_58" pintype="passive"/>
+      <node ref="R24" pin="2" pintype="passive"/>
     </net>
-    <net code="49" name="SNG-V3+" class="Default">
+    <net code="58" name="SNG-V3+" class="Default">
       <node ref="C34" pin="1" pintype="passive"/>
-      <node ref="IC1" pin="49" pinfunction="V1+_49" pintype="passive"/>
+      <node ref="IC1" pin="53" pinfunction="V3+_53" pintype="passive"/>
       <node ref="Re3" pin="2" pintype="passive"/>
     </net>
-    <net code="50" name="SNG-V3-" class="Default">
+    <net code="59" name="SNG-V3-" class="Default">
       <node ref="C34" pin="2" pintype="passive"/>
-      <node ref="IC1" pin="50" pinfunction="V1-_50" pintype="passive"/>
-      <node ref="R22" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="54" pinfunction="V3-_54" pintype="passive"/>
+      <node ref="R29" pin="2" pintype="passive"/>
     </net>
-    <net code="51" name="unconnected-(IC1-AGND_2-Pad26)" class="Default">
+    <net code="60" name="SNG-V4+" class="Default">
+      <node ref="C40" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="49" pinfunction="V1+_49" pintype="passive"/>
+      <node ref="Re4" pin="2" pintype="passive"/>
+    </net>
+    <net code="61" name="SNG-V4-" class="Default">
+      <node ref="C40" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="50" pinfunction="V1-_50" pintype="passive"/>
+      <node ref="R34" pin="2" pintype="passive"/>
+    </net>
+    <net code="62" name="unconnected-(IC1-AGND_2-Pad26)" class="Default">
       <node ref="IC1" pin="26" pinfunction="AGND_2_26" pintype="passive"/>
     </net>
-    <net code="52" name="unconnected-(IC1-BUSY-Pad14)" class="Default">
+    <net code="63" name="unconnected-(IC1-BUSY-Pad14)" class="Default">
       <node ref="IC1" pin="14" pinfunction="BUSY_14" pintype="passive"/>
     </net>
-    <net code="53" name="unconnected-(IC1-CONVST-Pad9)" class="Default">
+    <net code="64" name="unconnected-(IC1-CONVST-Pad9)" class="Default">
       <node ref="IC1" pin="9" pinfunction="CONVST_9" pintype="passive"/>
     </net>
-    <net code="54" name="unconnected-(IC1-DB2-Pad16)" class="Default">
+    <net code="65" name="unconnected-(IC1-DB2-Pad16)" class="Default">
       <node ref="IC1" pin="16" pinfunction="DB2_16" pintype="passive"/>
     </net>
-    <net code="55" name="unconnected-(IC1-DB3-Pad17)" class="Default">
+    <net code="66" name="unconnected-(IC1-DB3-Pad17)" class="Default">
       <node ref="IC1" pin="17" pinfunction="DB3_17" pintype="passive"/>
     </net>
-    <net code="56" name="unconnected-(IC1-DB4-Pad18)" class="Default">
+    <net code="67" name="unconnected-(IC1-DB4-Pad18)" class="Default">
       <node ref="IC1" pin="18" pinfunction="DB4_18" pintype="passive"/>
     </net>
-    <net code="57" name="unconnected-(IC1-DB5/DOUTE-Pad19)" class="Default">
+    <net code="68" name="unconnected-(IC1-DB5/DOUTE-Pad19)" class="Default">
       <node ref="IC1" pin="19" pinfunction="DB5/DOUTE_19" pintype="passive"/>
     </net>
-    <net code="58" name="unconnected-(IC1-DB6/DOUTF-Pad20)" class="Default">
+    <net code="69" name="unconnected-(IC1-DB6/DOUTF-Pad20)" class="Default">
       <node ref="IC1" pin="20" pinfunction="DB6/DOUTF_20" pintype="passive"/>
     </net>
-    <net code="59" name="unconnected-(IC1-DB7/DOUTG-Pad21)" class="Default">
+    <net code="70" name="unconnected-(IC1-DB7/DOUTG-Pad21)" class="Default">
       <node ref="IC1" pin="21" pinfunction="DB7/DOUTG_21" pintype="passive"/>
     </net>
-    <net code="60" name="unconnected-(IC1-DB8/DOUTH-Pad22)" class="Default">
+    <net code="71" name="unconnected-(IC1-DB8/DOUTH-Pad22)" class="Default">
       <node ref="IC1" pin="22" pinfunction="DB8/DOUTH_22" pintype="passive"/>
     </net>
-    <net code="61" name="unconnected-(IC1-DB9/DOUTA-Pad24)" class="Default">
+    <net code="72" name="unconnected-(IC1-DB9/DOUTA-Pad24)" class="Default">
       <node ref="IC1" pin="24" pinfunction="DB9/DOUTA_24" pintype="passive"/>
     </net>
-    <net code="62" name="unconnected-(IC1-DB10/DOUTB-Pad25)" class="Default">
+    <net code="73" name="unconnected-(IC1-DB10/DOUTB-Pad25)" class="Default">
       <node ref="IC1" pin="25" pinfunction="DB10/DOUTB_25" pintype="passive"/>
     </net>
-    <net code="63" name="unconnected-(IC1-DB11/DOUTC-Pad27)" class="Default">
+    <net code="74" name="unconnected-(IC1-DB11/DOUTC-Pad27)" class="Default">
       <node ref="IC1" pin="27" pinfunction="DB11/DOUTC_27" pintype="passive"/>
     </net>
-    <net code="64" name="unconnected-(IC1-DB12/DOUTD-Pad28)" class="Default">
+    <net code="75" name="unconnected-(IC1-DB12/DOUTD-Pad28)" class="Default">
       <node ref="IC1" pin="28" pinfunction="DB12/DOUTD_28" pintype="passive"/>
     </net>
-    <net code="65" name="unconnected-(IC1-DB13/SDI-Pad29)" class="Default">
+    <net code="76" name="unconnected-(IC1-DB13/SDI-Pad29)" class="Default">
       <node ref="IC1" pin="29" pinfunction="DB13/SDI_29" pintype="passive"/>
     </net>
-    <net code="66" name="unconnected-(IC1-DB14-Pad30)" class="Default">
+    <net code="77" name="unconnected-(IC1-DB14-Pad30)" class="Default">
       <node ref="IC1" pin="30" pinfunction="DB14_30" pintype="passive"/>
     </net>
-    <net code="67" name="unconnected-(IC1-DB15-Pad31)" class="Default">
+    <net code="78" name="unconnected-(IC1-DB15-Pad31)" class="Default">
       <node ref="IC1" pin="31" pinfunction="DB15_31" pintype="passive"/>
     </net>
-    <net code="68" name="unconnected-(IC1-DB16/DB0-Pad32)" class="Default">
+    <net code="79" name="unconnected-(IC1-DB16/DB0-Pad32)" class="Default">
       <node ref="IC1" pin="32" pinfunction="DB16/DB0_32" pintype="passive"/>
     </net>
-    <net code="69" name="unconnected-(IC1-DB17/DB1-Pad33)" class="Default">
+    <net code="80" name="unconnected-(IC1-DB17/DB1-Pad33)" class="Default">
       <node ref="IC1" pin="33" pinfunction="DB17/DB1_33" pintype="passive"/>
     </net>
-    <net code="70" name="unconnected-(IC1-FRSTDATA-Pad15)" class="Default">
+    <net code="81" name="unconnected-(IC1-FRSTDATA-Pad15)" class="Default">
       <node ref="IC1" pin="15" pinfunction="FRSTDATA_15" pintype="passive"/>
     </net>
-    <net code="71" name="unconnected-(IC1-OS_0-Pad3)" class="Default">
+    <net code="82" name="unconnected-(IC1-OS_0-Pad3)" class="Default">
       <node ref="IC1" pin="3" pinfunction="OS_0_3" pintype="passive"/>
     </net>
-    <net code="72" name="unconnected-(IC1-OS_1-Pad4)" class="Default">
+    <net code="83" name="unconnected-(IC1-OS_1-Pad4)" class="Default">
       <node ref="IC1" pin="4" pinfunction="OS_1_4" pintype="passive"/>
     </net>
-    <net code="73" name="unconnected-(IC1-OS_2-Pad5)" class="Default">
+    <net code="84" name="unconnected-(IC1-OS_2-Pad5)" class="Default">
       <node ref="IC1" pin="5" pinfunction="OS_2_5" pintype="passive"/>
     </net>
-    <net code="74" name="unconnected-(IC1-RANGE-Pad8)" class="Default">
+    <net code="85" name="unconnected-(IC1-RANGE-Pad8)" class="Default">
       <node ref="IC1" pin="8" pinfunction="RANGE_8" pintype="passive"/>
     </net>
-    <net code="75" name="unconnected-(IC1-REFGND_2-Pad46)" class="Default">
+    <net code="86" name="unconnected-(IC1-REFGND_2-Pad46)" class="Default">
       <node ref="IC1" pin="46" pinfunction="REFGND_2_46" pintype="passive"/>
     </net>
-    <net code="76" name="unconnected-(IC1-REF_SELECT-Pad34)" class="Default">
+    <net code="87" name="unconnected-(IC1-REF_SELECT-Pad34)" class="Default">
       <node ref="IC1" pin="34" pinfunction="REF_SELECT_34" pintype="passive"/>
     </net>
-    <net code="77" name="unconnected-(IC1-RESET-Pad11)" class="Default">
+    <net code="88" name="unconnected-(IC1-RESET-Pad11)" class="Default">
       <node ref="IC1" pin="11" pinfunction="RESET_11" pintype="passive"/>
     </net>
-    <net code="78" name="unconnected-(IC1-V7+-Pad61)" class="Default">
-      <node ref="IC1" pin="61" pinfunction="V7+_61" pintype="passive"/>
-    </net>
-    <net code="79" name="unconnected-(IC1-V7--Pad62)" class="Default">
-      <node ref="IC1" pin="62" pinfunction="V7-_62" pintype="passive"/>
-    </net>
-    <net code="80" name="unconnected-(IC1-V8+-Pad63)" class="Default">
-      <node ref="IC1" pin="63" pinfunction="V8+_63" pintype="passive"/>
-    </net>
-    <net code="81" name="unconnected-(IC1-V8--Pad64)" class="Default">
-      <node ref="IC1" pin="64" pinfunction="V8-_64" pintype="passive"/>
-    </net>
-    <net code="82" name="unconnected-(IC1-~{CS}-Pad13)" class="Default">
+    <net code="89" name="unconnected-(IC1-~{CS}-Pad13)" class="Default">
       <node ref="IC1" pin="13" pinfunction="~{CS}_13" pintype="passive"/>
     </net>
-    <net code="83" name="unconnected-(IC1-~{PAR}/SER_SEL-Pad6)" class="Default">
+    <net code="90" name="unconnected-(IC1-~{PAR}/SER_SEL-Pad6)" class="Default">
       <node ref="IC1" pin="6" pinfunction="~{PAR}/SER_SEL_6" pintype="passive"/>
     </net>
-    <net code="84" name="unconnected-(IC1-~{RD}/SCLK-Pad12)" class="Default">
+    <net code="91" name="unconnected-(IC1-~{RD}/SCLK-Pad12)" class="Default">
       <node ref="IC1" pin="12" pinfunction="~{RD}/SCLK_12" pintype="passive"/>
     </net>
-    <net code="85" name="unconnected-(IC1-~{STBY}-Pad7)" class="Default">
+    <net code="92" name="unconnected-(IC1-~{STBY}-Pad7)" class="Default">
       <node ref="IC1" pin="7" pinfunction="~{STBY}_7" pintype="passive"/>
     </net>
-    <net code="86" name="unconnected-(IC1-~{WR}-Pad10)" class="Default">
+    <net code="93" name="unconnected-(IC1-~{WR}-Pad10)" class="Default">
       <node ref="IC1" pin="10" pinfunction="~{WR}_10" pintype="passive"/>
     </net>
-    <net code="87" name="unconnected-(IC2-NC-Pad4)" class="Default">
+    <net code="94" name="unconnected-(IC2-NC-Pad4)" class="Default">
       <node ref="IC2" pin="4" pinfunction="NC_4" pintype="no_connect"/>
     </net>
-    <net code="88" name="unconnected-(IC4-NC-Pad4)" class="Default">
+    <net code="95" name="unconnected-(IC4-NC-Pad4)" class="Default">
       <node ref="IC4" pin="4" pinfunction="NC_4" pintype="no_connect"/>
     </net>
-    <net code="89" name="unconnected-(IC5-NC-Pad6)" class="Default">
+    <net code="96" name="unconnected-(IC5-NC-Pad6)" class="Default">
       <node ref="IC5" pin="6" pinfunction="NC_6" pintype="no_connect"/>
     </net>
-    <net code="90" name="unconnected-(IC5-SYNC/MODE-Pad12)" class="Default">
+    <net code="97" name="unconnected-(IC5-SYNC/MODE-Pad12)" class="Default">
       <node ref="IC5" pin="12" pinfunction="SYNC/MODE_12" pintype="passive+no_connect"/>
     </net>
-    <net code="91" name="unconnected-(IC6-NC-Pad4)" class="Default">
+    <net code="98" name="unconnected-(IC6-NC-Pad4)" class="Default">
       <node ref="IC6" pin="4" pinfunction="NC_4" pintype="no_connect"/>
     </net>
-    <net code="92" name="unconnected-(IC8-PG-Pad5)" class="Default">
+    <net code="99" name="unconnected-(IC8-PG-Pad5)" class="Default">
       <node ref="IC8" pin="5" pinfunction="PG_5" pintype="passive+no_connect"/>
     </net>
-    <net code="93" name="unconnected-(IC8-VIOC-Pad3)" class="Default">
+    <net code="100" name="unconnected-(IC8-VIOC-Pad3)" class="Default">
       <node ref="IC8" pin="3" pinfunction="VIOC_3" pintype="passive+no_connect"/>
     </net>
-    <net code="94" name="unconnected-(IC9-PG-Pad5)" class="Default">
+    <net code="101" name="unconnected-(IC9-PG-Pad5)" class="Default">
       <node ref="IC9" pin="5" pinfunction="PG_5" pintype="passive+no_connect"/>
     </net>
-    <net code="95" name="unconnected-(IC9-VIOC-Pad3)" class="Default">
+    <net code="102" name="unconnected-(IC9-VIOC-Pad3)" class="Default">
       <node ref="IC9" pin="3" pinfunction="VIOC_3" pintype="passive+no_connect"/>
     </net>
-    <net code="96" name="unconnected-(J5-Pad1)" class="Default">
-      <node ref="J5" pin="1" pinfunction="1_1" pintype="passive"/>
-    </net>
-    <net code="97" name="unconnected-(J5-Pad2)" class="Default">
-      <node ref="J5" pin="2" pinfunction="2_2" pintype="passive"/>
-    </net>
-    <net code="98" name="unconnected-(J6-Pad1)" class="Default">
-      <node ref="J6" pin="1" pinfunction="1_1" pintype="passive"/>
-    </net>
-    <net code="99" name="unconnected-(J6-Pad2)" class="Default">
-      <node ref="J6" pin="2" pinfunction="2_2" pintype="passive"/>
+    <net code="103" name="unconnected-(IC10-NC-Pad4)" class="Default">
+      <node ref="IC10" pin="4" pinfunction="NC_4" pintype="no_connect"/>
     </net>
   </nets>
 </export>
