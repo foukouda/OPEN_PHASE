@@ -75,7 +75,7 @@
 
 12)	CONFIRM SPACE WIDTHS AND SPACINGS.</textvar>
     <textvar name="GIT_HASH_PCB">720b69a</textvar>
-    <textvar name="GIT_HASH_SCH">7703dc5</textvar>
+    <textvar name="GIT_HASH_SCH">8ad9441</textvar>
     <textvar name="GIT_URL">https://github.com/foukouda/OPEN_PHASE</textvar>
     <textvar name="PROJECT_NAME">OPEN_PHASE</textvar>
     <textvar name="RELEASE_BODY_1.0.0"/>
