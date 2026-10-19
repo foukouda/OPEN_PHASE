@@ -250,6 +250,19 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 45.72 39.37)
+		(end 266.7 240.03)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "b177edc8-6f58-4486-a3b9-1a91310fdbb9")
+	)
 	(text "References:"
 		(exclude_from_sim no)
 		(at 265.43 250.19 0)
@@ -264,6 +277,143 @@
 			(justify left bottom)
 		)
 		(uuid "ca73a951-c39c-4a3c-9e12-06e6bc2f3311")
+	)
+	(text "README : Physical specifications"
+		(exclude_from_sim no)
+		(at 265.43 254 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+			(href "https://github.com/foukouda/OPEN_PHASE#physical-specifications")
+		)
+		(uuid "cbc5d64c-866d-4c40-a8be-5233a1c0f57c")
+	)
+	(text_box "TEST POINTS"
+		(exclude_from_sim no)
+		(at 45.72 243 0)
+		(size 172.72 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 106 27 154 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "07f98575-a3d2-4090-892d-5aa55320170c")
+	)
+	(text_box "CALCULS & BUDGET"
+		(exclude_from_sim no)
+		(at 270.51 103.23 0)
+		(size 102.87 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 46 125 50 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "13ebe038-c999-418e-b75b-dec827992038")
+	)
+	(text_box "Quatre trous de fixation M3 (H1 à H4), métallisés et reliés au GND. Ils tiennent la carte et peuvent ramener sa masse au support quand celui-ci est conducteur.\nPas de fiducial sur cette révision."
+		(exclude_from_sim no)
+		(at 270.51 45.72 0)
+		(size 102.87 10)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 230 243 245 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "2534d84b-c4b0-4af8-aff5-25766b1e457f")
+	)
+	(text_box "DESCRIPTION"
+		(exclude_from_sim no)
+		(at 270.51 39.37 0)
+		(size 102.87 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 0 105 120 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "43e9417c-0e62-4792-85b0-5e56e95eec38")
+	)
+	(text_box "TROUS DE FIXATION   ·   H1 À H4, M3, RELIÉS AU GND"
+		(exclude_from_sim no)
+		(at 45.72 39.37 0)
+		(size 220.98 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 162 22 34 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "4f851948-f1fa-4d57-8583-7f762538d254")
 	)
 	(text_box "[${#}] ${TITLE}"
 		(exclude_from_sim no)
@@ -287,6 +437,148 @@
 			)
 		)
 		(uuid "524c500e-48b2-4d74-9c30-5c34bf6c2558")
+	)
+	(text_box "LAYOUT NOTE"
+		(exclude_from_sim no)
+		(at 270.51 86.61 0)
+		(size 102.87 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 0 82 165 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "a1323cca-2614-492b-a96a-475f3f9556bc")
+	)
+	(text_box "DESIGN NOTE · FIXATION"
+		(exclude_from_sim no)
+		(at 270.51 56.99 0)
+		(size 102.87 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 205 100 0 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "b1e6a119-a56f-42b5-aed9-e7a02b05f266")
+	)
+	(text_box "Vis M3\n   Tête bombée ISO 7380 : Ø5.7 mm ; tête cylindrique ISO 4762 : Ø5.5 mm\n   Rondelle M3 (ISO 7089) : Ø7 mm → anneau libre de Ø7 mm autour de chaque trou\n   Pastille Ø6.4 mm : la rondelle appuie sur le cuivre GND"
+		(exclude_from_sim no)
+		(at 270.51 109.58 0)
+		(size 102.87 12)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 232 245 233 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "beabd656-0f65-456c-835e-68d60a69f3a9")
+	)
+	(text_box "• Empreinte MountingHole_3.2mm_M3_Pad_Via : perçage 3.2 mm, pastille Ø6.4 mm, 8 vias Ø0.5 mm autour pour relier toutes les couches.\n• Reliés au GND : la vis met la masse de la carte au potentiel du support. Pour garder une masse flottante, utiliser des entretoises isolantes.\n• Fiducials : aucun pour l'instant ; à ajouter (3 en coin, 1 mm de cuivre, 2 mm d'ouverture de vernis) si l'assembleur les demande."
+		(exclude_from_sim no)
+		(at 270.51 63.34 0)
+		(size 102.87 22)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 253 241 226 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "c1c29da0-4e97-4a13-bcae-2830780b2bb0")
+	)
+	(text_box "Zone réservée aux test points. Les pastilles GND des trous peuvent servir de point de masse pour la sonde."
+		(exclude_from_sim no)
+		(at 45.72 249.35 0)
+		(size 172.72 35.65)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 243 232 246 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 110 90 120 1)
+			)
+			(justify left top)
+		)
+		(uuid "f07f44a1-d0b0-4da1-aed5-b817c99b24e2")
+	)
+	(text_box "• Garder libre l'appui de la tête de vis et de la rondelle autour de chaque trou.\n• Pas de composant sensible aux contraintes mécaniques près des trous (LTC6655, page 6)."
+		(exclude_from_sim no)
+		(at 270.51 92.96 0)
+		(size 102.87 9)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 228 238 250 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "fdf5c24c-4dc5-463b-a807-e664b15100f7")
 	)
 	(junction
 		(at 152.4 144.78)
@@ -743,297 +1035,5 @@
 				)
 			)
 		)
-	)
-	(rectangle
-		(start 45.72 39.37)
-		(end 266.7 240.03)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "b177edc8-6f58-4486-a3b9-1a91310fdbb9")
-	)
-	(text_box "TROUS DE FIXATION   ·   H1 À H4, M3, RELIÉS AU GND"
-		(exclude_from_sim no)
-		(at 45.72 39.37 0)
-		(size 220.98 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 162 22 34 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "4f851948-f1fa-4d57-8583-7f762538d254")
-	)
-	(text_box "DESCRIPTION"
-		(exclude_from_sim no)
-		(at 270.51 39.37 0)
-		(size 102.87 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 0 105 120 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "43e9417c-0e62-4792-85b0-5e56e95eec38")
-	)
-	(text_box "Quatre trous de fixation M3 (H1 à H4), métallisés et reliés au GND. Ils tiennent la carte et peuvent ramener sa masse au support quand celui-ci est conducteur.\nPas de fiducial sur cette révision."
-		(exclude_from_sim no)
-		(at 270.51 45.72 0)
-		(size 102.87 10.0)
-		(margins 1.3525 1.3525 1.3525 1.3525)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 230 243 245 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "2534d84b-c4b0-4af8-aff5-25766b1e457f")
-	)
-	(text_box "DESIGN NOTE · FIXATION"
-		(exclude_from_sim no)
-		(at 270.51 56.99 0)
-		(size 102.87 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 205 100 0 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "b1e6a119-a56f-42b5-aed9-e7a02b05f266")
-	)
-	(text_box "• Empreinte MountingHole_3.2mm_M3_Pad_Via : perçage 3.2 mm, pastille Ø6.4 mm, 8 vias Ø0.5 mm autour pour relier toutes les couches.\n• Reliés au GND : la vis met la masse de la carte au potentiel du support. Pour garder une masse flottante, utiliser des entretoises isolantes.\n• Fiducials : aucun pour l'instant ; à ajouter (3 en coin, 1 mm de cuivre, 2 mm d'ouverture de vernis) si l'assembleur les demande."
-		(exclude_from_sim no)
-		(at 270.51 63.34 0)
-		(size 102.87 22.0)
-		(margins 1.3525 1.3525 1.3525 1.3525)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 253 241 226 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "c1c29da0-4e97-4a13-bcae-2830780b2bb0")
-	)
-	(text_box "LAYOUT NOTE"
-		(exclude_from_sim no)
-		(at 270.51 86.61 0)
-		(size 102.87 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 0 82 165 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "a1323cca-2614-492b-a96a-475f3f9556bc")
-	)
-	(text_box "• Garder libre l'appui de la tête de vis et de la rondelle autour de chaque trou.\n• Pas de composant sensible aux contraintes mécaniques près des trous (LTC6655, page 6)."
-		(exclude_from_sim no)
-		(at 270.51 92.96 0)
-		(size 102.87 9.0)
-		(margins 1.3525 1.3525 1.3525 1.3525)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 228 238 250 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "fdf5c24c-4dc5-463b-a807-e664b15100f7")
-	)
-	(text_box "CALCULS & BUDGET"
-		(exclude_from_sim no)
-		(at 270.51 103.23 0)
-		(size 102.87 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 46 125 50 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "13ebe038-c999-418e-b75b-dec827992038")
-	)
-	(text_box "Vis M3\n   Tête bombée ISO 7380 : Ø5.7 mm ; tête cylindrique ISO 4762 : Ø5.5 mm\n   Rondelle M3 (ISO 7089) : Ø7 mm → anneau libre de Ø7 mm autour de chaque trou\n   Pastille Ø6.4 mm : la rondelle appuie sur le cuivre GND"
-		(exclude_from_sim no)
-		(at 270.51 109.58 0)
-		(size 102.87 12.0)
-		(margins 1.3525 1.3525 1.3525 1.3525)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 232 245 233 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "beabd656-0f65-456c-835e-68d60a69f3a9")
-	)
-	(text_box "TEST POINTS"
-		(exclude_from_sim no)
-		(at 45.72 243 0)
-		(size 172.72 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 106 27 154 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "07f98575-a3d2-4090-892d-5aa55320170c")
-	)
-	(text_box "Zone réservée aux test points. Les pastilles GND des trous peuvent servir de point de masse pour la sonde."
-		(exclude_from_sim no)
-		(at 45.72 249.35 0)
-		(size 172.72 35.65)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 243 232 246 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 110 90 120 1)
-			)
-			(justify left top)
-		)
-		(uuid "f07f44a1-d0b0-4da1-aed5-b817c99b24e2")
-	)
-	(text "README : Physical specifications"
-		(exclude_from_sim no)
-		(at 265.43 254 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-			(href "https://github.com/foukouda/OPEN_PHASE#physical-specifications")
-		)
-		(uuid "cbc5d64c-866d-4c40-a8be-5233a1c0f57c")
 	)
 )

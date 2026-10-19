@@ -1404,6 +1404,56 @@
 		)
 		(uuid "fa27d78d-b2a9-4762-a3f3-e3c37db14fec")
 	)
+	(text_box "TOP VIEW"
+		(exclude_from_sim no)
+		(at 22.86 159.39 0)
+		(size 69.85 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 162 22 34 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "006d226d-cc4a-45f6-a34f-6f83f14efa3d")
+	)
+	(text_box "BOTTOM VIEW"
+		(exclude_from_sim no)
+		(at 123.19 159.39 0)
+		(size 69.85 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 162 22 34 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "0dddcf43-f087-4097-b3d4-1fd742318c1a")
+	)
 	(text_box "DESIGN NOTE:\nAD7606C digital pins and +3.3V input not wired yet."
 		(exclude_from_sim no)
 		(at 96.52 258.445 0)
@@ -1520,6 +1570,31 @@
 		)
 		(uuid "33c3f6da-ba9e-4d58-9257-d85394a72b7b")
 	)
+	(text_box "NOTES"
+		(exclude_from_sim no)
+		(at 220.98 160.02 0)
+		(size 180.34 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 0 105 120 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "4fda5cf3-342b-4295-956a-65dd47f01ae9")
+	)
 	(text_box "DESIGN NOTE:\nCurrent: 2.5 V - 20 mV/A x I(J1->J2). Voltage: 0.198 V/V."
 		(exclude_from_sim no)
 		(at 26.67 258.445 0)
@@ -1562,6 +1637,31 @@
 			(justify left top)
 		)
 		(uuid "62b01781-ae4a-4e68-9a17-1436f3c897e5")
+	)
+	(text_box "DESIGN CONSIDERATIONS"
+		(exclude_from_sim no)
+		(at 26.67 250.19 0)
+		(size 170.18 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 205 100 0 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "df2aa0ac-1684-4f07-8b55-73b1a0812047")
 	)
 	(polyline
 		(pts
@@ -1868,106 +1968,6 @@
 				)
 			)
 		)
-	)
-	(text_box "TOP VIEW"
-		(exclude_from_sim no)
-		(at 22.86 159.39 0)
-		(size 69.85 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 162 22 34 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "006d226d-cc4a-45f6-a34f-6f83f14efa3d")
-	)
-	(text_box "BOTTOM VIEW"
-		(exclude_from_sim no)
-		(at 123.19 159.39 0)
-		(size 69.85 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 162 22 34 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "0dddcf43-f087-4097-b3d4-1fd742318c1a")
-	)
-	(text_box "NOTES"
-		(exclude_from_sim no)
-		(at 220.98 160.02 0)
-		(size 180.34 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 0 105 120 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "4fda5cf3-342b-4295-956a-65dd47f01ae9")
-	)
-	(text_box "DESIGN CONSIDERATIONS"
-		(exclude_from_sim no)
-		(at 26.67 250.19 0)
-		(size 170.18 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 205 100 0 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "df2aa0ac-1684-4f07-8b55-73b1a0812047")
 	)
 	(sheet_instances
 		(path "/"

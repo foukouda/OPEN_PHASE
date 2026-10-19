@@ -1703,6 +1703,129 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "OPEN_PHASE:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3.3V"
 			(power global)
 			(pin_numbers
@@ -2110,6 +2233,21 @@
 		)
 		(uuid "bb86d4de-8a6c-49fd-bb3c-0c8f9cc72e55")
 	)
+	(text "References:"
+		(exclude_from_sim no)
+		(at 265.43 250.19 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "356afd34-ded8-4b2c-ac2a-ee5b19de5dd1")
+	)
 	(text "J. Pieper ADC investigation"
 		(exclude_from_sim no)
 		(at 265.43 261.62 0)
@@ -2152,6 +2290,139 @@
 		)
 		(uuid "f25578fd-4ab6-4599-95bc-eaa8a509f479")
 	)
+	(text "AD7606C-18 datasheet (Rev. B)"
+		(exclude_from_sim no)
+		(at 265.43 254 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+			(href "https://www.analog.com/en/products/ad7606c-18.html")
+		)
+		(uuid "f52683f0-4f5b-4749-b0dd-019f2f0ca368")
+	)
+	(text_box "DESCRIPTION"
+		(exclude_from_sim no)
+		(at 270.51 39.37 0)
+		(size 102.87 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 0 105 120 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "18186f5c-4b01-47fb-ac95-4da60f9e09c1")
+	)
+	(text_box "Pastilles de test CMS Ø1,5 mm (TestPoint_Pad_D1.5mm), face avant, hors BOM. REFIN (+2.5VA) au plus près de l'AD7606C. TP15 (CONVST) et TP16 (BUSY) : début et fin de conversion, pour déclencher l'oscilloscope."
+		(exclude_from_sim no)
+		(at 45.72 249.35 0)
+		(size 172.72 35.65)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 243 232 246 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 110 90 120 1)
+			)
+			(justify left top)
+		)
+		(uuid "288894da-bf56-47f1-b2eb-7246cebdda3f")
+	)
+	(text_box "V1 : tension batterie (ADC_BAT_V±)\nV2 : courant batterie (ADC_BAT_I±)\nV3 : tension phase W (ADC_W_V±)\nV4 : courant phase W (ADC_W_I±)\nV5 : tension phase V (ADC_V_V±)\nV6 : courant phase V (ADC_V_I±)\nV7 : tension phase U (ADC_U_V±)\nV8 : courant phase U (ADC_U_I±)\n• Courant et tension d'une même ligne sur deux voies voisines.\n• Entrées câblées en différentiel (filtre entre V+ et V−) : les plages différentielles (±5 V…) ne sont accessibles qu'en mode logiciel (registres 0x03–0x06). En mode matériel, RANGE ne donne que ±10 V ou ±5 V single-ended sur les 8 voies.\n• Chaque entrée : 1.2 MΩ vers un nœud interne à 2 V, I = (VIN − 2 V) / RIN : d'où les 9.1 kΩ de retour sur V− (page 5)."
+		(exclude_from_sim no)
+		(at 270.51 80.34 0)
+		(size 102.87 34)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 253 241 226 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "2e133edb-1de2-4138-a47d-5667f6c23d7f")
+	)
+	(text_box "Plage ±5 V différentielle (mode logiciel)\n   1 LSB = 10 V / 2^18 = 38.1 µV\n   Courant : 38.1 µV / 20 mV/A = 1.9 mA par LSB ; 35 A = ±0.7 V = 14 % de la plage\n   Tension : 38.1 µV / 0.1977 = 0.19 mV par LSB ; 5 V / 0.1977 = 25.3 V max\n   (6S chargée : 25.2 V → 4.98 V, juste sous la limite)\n\nEntrées\n   RIN = 1.2 MΩ typ (1 MΩ min) vers 2 V : I = (VIN − 2 V) / RIN = −1.7 µA à 0 V\n   Filtre interne : 25 kHz (mode basse bande), en série avec les RC de la page 5\n\nDébit et bruit\n   1 MSPS sur les 8 voies à la fois\n   SNR 93 dB (±20 V diff.), 102 dB en suréchantillonnage ×32\n\nConsommation (datasheet)\n   AVCC : 8.5 mA à 10 kSPS, 45 mA à 1 MSPS (+5VA)\n   VDRIVE : < 2 mA (+3.3V)"
+		(exclude_from_sim no)
+		(at 270.51 188.2 0)
+		(size 102.87 38)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 232 245 233 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "441f3698-3434-4de6-b077-d6f21256d404")
+	)
+	(text_box "CALCULS & BUDGET"
+		(exclude_from_sim no)
+		(at 270.51 181.85 0)
+		(size 102.87 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 46 125 50 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "4f823f6a-f34f-445a-be8f-5189271d4f8b")
+	)
 	(text_box "• Plan de masse plein sous l'AD7606C, sans séparation analogique / numérique (datasheet).\n• Un via (ou plusieurs) par broche de masse, jamais un via partagé.\n• C39, C36/C37, C41 et les 100 nF d'AVCC collés à leurs broches.\n• Aucune piste numérique sous le boîtier ; CONVST et les horloges entourées de masse, loin des entrées V1–V8 ; pas de croisement analogique / numérique, couches voisines à angle droit.\n• AVCC et VDRIVE en pistes larges. Entrées en paires V+ / V−, filtres RC de la page 5 près des broches."
 		(exclude_from_sim no)
 		(at 270.51 159.58 0)
@@ -2174,6 +2445,56 @@
 			(justify left top)
 		)
 		(uuid "59800026-abce-490f-af73-e553b627145c")
+	)
+	(text_box "DESIGN NOTE · CANAUX"
+		(exclude_from_sim no)
+		(at 270.51 73.99 0)
+		(size 102.87 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 205 100 0 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "6797eb32-07fa-42b0-99d1-4725620c61e3")
+	)
+	(text_box "LAYOUT NOTE"
+		(exclude_from_sim no)
+		(at 270.51 153.23 0)
+		(size 102.87 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 0 82 165 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "9070543d-fbeb-48df-92c5-fde17a5bd293")
 	)
 	(text_box "[${#}] ${TITLE}"
 		(exclude_from_sim no)
@@ -2198,7 +2519,57 @@
 		)
 		(uuid "b2c13488-4f2f-433b-bdc6-d210d1646aca")
 	)
-	(text_box "• REFIN/REFOUT = +2.5VA, C41 100 nF. REF SELECT doit être à 0 pour prendre cette référence externe (à 1 : référence interne).\n• REFCAPA + REFCAPB reliés, C39 10 µF faible ESR (tampon de référence à 4.4 V).\n• REGCAP : C36 et C37 1 µF chacun, séparément (LDO internes 1.9 V).\n• AVCC : C20, C35, C38 100 nF. VDRIVE : C21 100 nF.\n• À câbler : CONVST, BUSY, CS, RD/SCLK, DOUTA–D, FRSTDATA, RESET, OS0–2, RANGE, PAR/SER SEL, STBY, WR, REF SELECT (connecteur hôte, Design review 1). RANGE doit être tiré haut ou bas, même en mode logiciel.\n• AGND broche 26 et REFGND broche 46 ouvertes : à relier à GND (Design review 2).\n• Reset complet après la mise sous tension (datasheet).\n• C39 : symbole 4 broches sur une empreinte 2 pads (Design review 7)."
+	(text_box "DESIGN NOTE · RÉFÉRENCE, DÉCOUPLAGE, CONFIGURATION"
+		(exclude_from_sim no)
+		(at 270.51 115.61 0)
+		(size 102.87 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 205 100 0 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "b850bdfa-f4db-431e-8c52-da3cff33cb46")
+	)
+	(text_box "TEST POINTS"
+		(exclude_from_sim no)
+		(at 45.72 243 0)
+		(size 172.72 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 106 27 154 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "d87e307a-3be0-49d3-a0ff-bde2fa28d84b")
+	)
+	(text_box "• REFIN/REFOUT = +2.5VA, C41 100 nF. REF SELECT doit être à 0 pour prendre cette référence externe (à 1 : référence interne).\n• REFCAPA + REFCAPB reliés, C39 10 µF faible ESR (tampon de référence à 4.4 V).\n• REGCAP : C36 et C37 1 µF chacun, séparément (LDO internes 1.9 V).\n• AVCC : C20, C35, C38 100 nF. VDRIVE : C21 100 nF.\n• Mode logiciel : OS0–OS2 = 1 (Table 14). Plages, suréchantillonnage et calibration par registres. STBY et RANGE ignorés mais tirés à +3.3V (Figure 123), WR à +3.3V (écriture parallèle seulement).\n• Série : PAR/SER SEL = 1. Vers J4 : CONVST, BUSY, ~{CS}, SCLK, SDI, DOUTA–D, RESET, FRSTDATA. DOUTE–H en l'air (mode 8 lignes, Table 23). DB2–DB4, DB14, DB15, DB16/DB0, DB17/DB1 à AGND (Table 9).\n• REF SELECT à AGND : référence externe +2.5VA. AGND broche 26 et REFGND broche 46 à GND.\n• RESET : impulsion ≥ 3.2 µs, 10 ms au moins après des alimentations stables. Première conversion 2 s au plus tôt après la mise sous tension (Table 3, note 3).\n• C39 : symbole 4 broches sur une empreinte 2 pads (Design review 7)."
 		(exclude_from_sim no)
 		(at 270.51 121.96 0)
 		(size 102.87 30)
@@ -2220,6 +2591,54 @@
 			(justify left top)
 		)
 		(uuid "e0003229-9448-4893-9fb1-bea9e839bb75")
+	)
+	(text_box "IC1 AD7606C-18 : ADC 8 voies, 18 bits, 1 MSPS, échantillonnage simultané.\nLes 8 entrées différentielles reçoivent les 4 courants (sorties INA241 filtrées) et les 4 tensions (ponts 40.2 kΩ / 10 kΩ) de la page 5.\nPourquoi cet ADC : les 8 voies sont prises au même instant (front montant de CONVST), donc le courant et la tension d'une même ligne n'ont aucun décalage d'échantillonnage et la puissance V × I est juste en instantané. Entrées tamponnées (1 MΩ min.) avec clamp ±21 V, filtre anti-repliement interne (25 kHz), suréchantillonnage jusqu'à ×256, calibration gain / offset / phase par voie.\nAlimentations : AVCC = +5VA (4.75–5.25 V), VDRIVE = +3.3V (niveau logique de l'hôte), référence externe +2.5VA (fenêtre 2.495–2.505 V) sur REFIN/REFOUT.\nInterface : série, mode logiciel, vers le connecteur hôte J4 (page 7)."
+		(exclude_from_sim no)
+		(at 270.51 45.72 0)
+		(size 102.87 27)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 230 243 245 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "f3fa09c0-7a31-4564-b6b6-d338d3cf6011")
+	)
+	(text_box "AD7606C-18   ·   ADC 8 VOIES SIMULTANÉES, 18 BITS, 1 MSPS"
+		(exclude_from_sim no)
+		(at 45.72 39.37 0)
+		(size 220.98 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 162 22 34 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "f5350e03-541d-4515-8a39-9cf407cc9b91")
 	)
 	(junction
 		(at 156.21 102.87)
@@ -2426,6 +2845,16 @@
 			(type default)
 		)
 		(uuid "4769c965-f1a7-4718-9019-5934c4cabd1a")
+	)
+	(wire
+		(pts
+			(xy 57.15 269.24) (xy 62.23 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c1b32b7-db0c-486d-904e-60ea9f36df4d")
 	)
 	(wire
 		(pts
@@ -2699,6 +3128,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 269.24) (xy 95.25 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6cf15ba-fada-4bb8-afb5-e6b057c9fa01")
+	)
+	(wire
+		(pts
 			(xy 162.56 116.84) (xy 162.56 118.11)
 		)
 		(stroke
@@ -2707,7 +3146,7 @@
 		)
 		(uuid "f995b4b5-f486-4545-82ba-758109d93969")
 	)
-	(global_label "SNG-3F"
+	(global_label "ADC_W_I+"
 		(shape input)
 		(at 115.57 140.97 180)
 		(fields_autoplaced yes)
@@ -2731,7 +3170,7 @@
 			)
 		)
 	)
-	(global_label "SNG-V4+"
+	(global_label "ADC_BAT_V+"
 		(shape input)
 		(at 115.57 125.73 180)
 		(fields_autoplaced yes)
@@ -2755,7 +3194,7 @@
 			)
 		)
 	)
-	(global_label "SNG-1F"
+	(global_label "ADC_U_I+"
 		(shape input)
 		(at 115.57 161.29 180)
 		(fields_autoplaced yes)
@@ -2779,7 +3218,7 @@
 			)
 		)
 	)
-	(global_label "SNG-1G"
+	(global_label "ADC_U_I-"
 		(shape input)
 		(at 115.57 163.83 180)
 		(fields_autoplaced yes)
@@ -2803,7 +3242,7 @@
 			)
 		)
 	)
-	(global_label "SNG-V3-"
+	(global_label "ADC_W_V-"
 		(shape input)
 		(at 115.57 138.43 180)
 		(fields_autoplaced yes)
@@ -2827,7 +3266,7 @@
 			)
 		)
 	)
-	(global_label "SNG-2G"
+	(global_label "ADC_V_I-"
 		(shape input)
 		(at 115.57 153.67 180)
 		(fields_autoplaced yes)
@@ -2851,7 +3290,7 @@
 			)
 		)
 	)
-	(global_label "SNG-V2-"
+	(global_label "ADC_V_V-"
 		(shape input)
 		(at 115.57 148.59 180)
 		(fields_autoplaced yes)
@@ -2875,7 +3314,7 @@
 			)
 		)
 	)
-	(global_label "SNG-4G"
+	(global_label "ADC_BAT_I-"
 		(shape input)
 		(at 115.57 133.35 180)
 		(fields_autoplaced yes)
@@ -2899,7 +3338,7 @@
 			)
 		)
 	)
-	(global_label "SNG-V1+"
+	(global_label "ADC_U_V+"
 		(shape input)
 		(at 115.57 156.21 180)
 		(fields_autoplaced yes)
@@ -2923,7 +3362,7 @@
 			)
 		)
 	)
-	(global_label "SNG-V3+"
+	(global_label "ADC_W_V+"
 		(shape input)
 		(at 115.57 135.89 180)
 		(fields_autoplaced yes)
@@ -2947,7 +3386,7 @@
 			)
 		)
 	)
-	(global_label "SNG-V2+"
+	(global_label "ADC_V_V+"
 		(shape input)
 		(at 115.57 146.05 180)
 		(fields_autoplaced yes)
@@ -2971,7 +3410,7 @@
 			)
 		)
 	)
-	(global_label "SNG-V1-"
+	(global_label "ADC_U_V-"
 		(shape input)
 		(at 115.57 158.75 180)
 		(fields_autoplaced yes)
@@ -2995,7 +3434,7 @@
 			)
 		)
 	)
-	(global_label "SNG-V4-"
+	(global_label "ADC_BAT_V-"
 		(shape input)
 		(at 115.57 128.27 180)
 		(fields_autoplaced yes)
@@ -3019,7 +3458,7 @@
 			)
 		)
 	)
-	(global_label "SNG-4F"
+	(global_label "ADC_BAT_I+"
 		(shape input)
 		(at 115.57 130.81 180)
 		(fields_autoplaced yes)
@@ -3043,7 +3482,7 @@
 			)
 		)
 	)
-	(global_label "SNG-3G"
+	(global_label "ADC_W_I-"
 		(shape input)
 		(at 115.57 143.51 180)
 		(fields_autoplaced yes)
@@ -3067,7 +3506,7 @@
 			)
 		)
 	)
-	(global_label "SNG-2F"
+	(global_label "ADC_V_I+"
 		(shape input)
 		(at 115.57 151.13 180)
 		(fields_autoplaced yes)
@@ -3255,7 +3694,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 203.2 148.59 0)
+		(at 213.36 151.13 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3263,10 +3702,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "1f221e3c-34d3-4f81-86e5-8c03ebe4d8e5")
 		(property "Reference" "#PWR05"
-			(at 203.2 152.4 0)
+			(at 213.36 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3277,17 +3715,18 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 203.2 143.51 0)
+			(at 215.9 155.194 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 203.2 148.59 0)
+			(at 213.36 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3298,7 +3737,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.2 148.59 0)
+			(at 213.36 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3309,7 +3748,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 203.2 148.59 0)
+			(at 213.36 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3644,6 +4083,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5VA")
+		(at 57.15 269.24 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "345393da-e929-40df-9b66-6c898a60b661")
+		(property "Reference" "#PWR053"
+			(at 57.15 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+2.5VA"
+			(at 57.15 265.684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VA\""
+			(at 57.15 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d9ba0a3a-8cd4-48d4-aeaa-9c29cc9db273")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 143.51 104.14 180)
 		(unit 1)
@@ -3809,10 +4326,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5c28dd7c-d15f-455e-8f30-a4005776e6e2")
 		(property "Reference" "IC1"
-			(at 199.39 120.285 90)
+			(at 199.39 116.475 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3822,7 +4338,7 @@
 			)
 		)
 		(property "Value" "AD7606C-18BSTZ"
-			(at 199.39 122.825 90)
+			(at 199.39 119.015 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4152,6 +4668,85 @@
 		)
 	)
 	(symbol
+		(lib_id "OPEN_PHASE:TestPoint")
+		(at 62.23 269.24 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "741f06ee-c749-4968-a7bd-3e31143775f1")
+		(property "Reference" "TP1"
+			(at 67.31 269.24 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 67.31 271.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "OPEN_PHASE:TestPoint_Pad_D1.5mm"
+			(at 62.23 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 62.23 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3b710ff0-d089-4e0b-8072-0ab8a033bada")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 156.21 102.87 180)
 		(unit 1)
@@ -4224,6 +4819,163 @@
 			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 90.17 269.24 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "87585c8b-50de-41f0-b94c-61b071ff3aa4")
+		(property "Reference" "#PWR054"
+			(at 90.17 275.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 90.17 273.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 90.17 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 90.17 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0d26d78a-a5d7-4a56-90d3-c247bc98c140")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OPEN_PHASE:TestPoint")
+		(at 95.25 269.24 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "98de8942-1933-4d75-bb03-ca61b4000e00")
+		(property "Reference" "TP2"
+			(at 100.33 269.24 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 100.33 271.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "OPEN_PHASE:TestPoint_Pad_D1.5mm"
+			(at 95.25 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 95.25 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f7d529d2-1e31-4b22-8ca5-34542c61a758")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -4954,300 +5706,1515 @@
 			)
 		)
 	)
-	(text_box "IC1 AD7606C-18 : ADC 8 voies, 18 bits, 1 MSPS, échantillonnage simultané.\nLes 8 entrées différentielles reçoivent les 4 courants (sorties INA241 filtrées) et les 4 tensions (ponts 40.2 kΩ / 10 kΩ) de la page 5.\nPourquoi cet ADC : les 8 voies sont prises au même instant (front montant de CONVST), donc le courant et la tension d'une même ligne n'ont aucun décalage d'échantillonnage et la puissance V × I est juste en instantané. Entrées tamponnées (1 MΩ min.) avec clamp ±21 V, filtre anti-repliement interne (25 kHz), suréchantillonnage jusqu'à ×256, calibration gain / offset / phase par voie.\nAlimentations : AVCC = +5VA (4.75–5.25 V), VDRIVE = +3.3V (niveau logique de l'hôte), référence externe +2.5VA (fenêtre 2.495–2.505 V) sur REFIN/REFOUT.\nÉtat : interface numérique et broches de mode pas encore câblées (Design review 1)."
-		(exclude_from_sim no)
-		(at 270.51 45.72 0)
-		(size 102.87 27)
-		(margins 1.3525 1.3525 1.3525 1.3525)
+	(wire
+		(pts
+			(xy 138.43 171.45) (xy 138.43 173.99)
+		)
 		(stroke
-			(width -0.0001)
-			(type solid)
+			(width 0)
+			(type default)
 		)
-		(fill
-			(type color)
-			(color 230 243 245 1)
+		(uuid "cff7c83d-95dc-4775-9e05-2f2c0e1207e2")
+	)
+	(wire
+		(pts
+			(xy 140.97 171.45) (xy 140.97 173.99)
 		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea73e8e6-7457-4c95-a21c-62d8a438fe65")
+	)
+	(wire
+		(pts
+			(xy 143.51 171.45) (xy 143.51 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b00a23e-f662-4f39-b7d9-96a0976c292f")
+	)
+	(wire
+		(pts
+			(xy 146.05 171.45) (xy 146.05 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c007c1e-de2e-4a2a-8879-63bc9eb6b077")
+	)
+	(wire
+		(pts
+			(xy 148.59 171.45) (xy 148.59 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e43c985-397e-4d81-8b5c-5b0378e192dd")
+	)
+	(wire
+		(pts
+			(xy 151.13 171.45) (xy 151.13 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "625fe0df-da59-4fbe-820b-7d16f58006eb")
+	)
+	(wire
+		(pts
+			(xy 138.43 173.99) (xy 140.97 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "231b4f98-3486-4c09-bb2d-60b4c3dc919b")
+	)
+	(wire
+		(pts
+			(xy 140.97 173.99) (xy 143.51 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17cc7d93-9282-4a8a-a098-bd441a9c94c8")
+	)
+	(wire
+		(pts
+			(xy 143.51 173.99) (xy 146.05 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66dfe02e-71ef-4b6f-922b-abaaa932ff3e")
+	)
+	(wire
+		(pts
+			(xy 146.05 173.99) (xy 148.59 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3257a61e-dc6b-4065-b582-776a090864c6")
+	)
+	(wire
+		(pts
+			(xy 148.59 173.99) (xy 151.13 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e35fc493-1480-4bde-bf19-b442952f4b1d")
+	)
+	(junction
+		(at 140.97 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9926afa8-e79f-4700-80e9-e78e06824de4")
+	)
+	(junction
+		(at 143.51 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "72843195-50e8-4b4a-87df-16dd2e8899f8")
+	)
+	(junction
+		(at 146.05 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4ce76f16-ebfe-432e-aec9-b5e5b067e470")
+	)
+	(junction
+		(at 148.59 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d46ed300-8d4c-46d4-ae04-2b05acca582a")
+	)
+	(junction
+		(at 151.13 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "43cb3d63-e118-40dc-835f-128f794f593f")
+	)
+	(wire
+		(pts
+			(xy 151.13 173.99) (xy 151.13 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "650f797e-704b-4e09-b683-1ff645178a70")
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 151.13 176.53 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a4eeafa6-f632-4d94-a648-9e4c4e50b912")
+		(property "Reference" "#PWR063"
+			(at 151.13 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 150.114 180.594 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 151.13 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 151.13 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 151.13 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e8d66bd0-0d32-449b-a23a-62008aced5dd")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "#PWR063")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 156.21 171.45) (xy 156.21 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5e0bb1b-116f-4a6c-bf86-10efef23d65a")
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 156.21 173.99 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fa7efd85-4abe-49dc-820f-e6360f2d3f23")
+		(property "Reference" "#PWR064"
+			(at 156.21 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 156.21 179.578 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 156.21 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "31d7eba1-8f68-4b78-96a0-7a71b5dfd2e8")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "#PWR064")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 171.45 171.45) (xy 171.45 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "733ffcd9-d1ed-406a-b19a-739535d18c2b")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 171.45 173.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5cb161ea-1117-4cf0-a06b-d3206c341ab1")
+		(property "Reference" "#PWR065"
+			(at 171.45 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 171.45 178.054 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 171.45 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "74ec233f-3a2a-4437-9720-82826c62f0b3")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "#PWR065")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 153.67 171.45) (xy 153.67 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1916ca5-9a10-41d3-8b18-39576696cb35")
+	)
+	(global_label "ADC_CONVST"
+		(shape input)
+		(at 153.67 179.07 270)
+		(fields_autoplaced yes)
 		(effects
 			(font
-				(face "Arial")
 				(size 1.27 1.27)
-				(color 0 0 0 1)
 			)
-			(justify left top)
+			(justify right)
 		)
-		(uuid "f3fa09c0-7a31-4564-b6b6-d338d3cf6011")
+		(uuid "981dca53-ee73-4eec-9e91-ee50e873c017")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 153.67 179.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 	)
-	(text_box "V1 : tension batterie (SNG-V4±)\nV2 : courant batterie (SNG-4F/G)\nV3 : tension phase W (SNG-V3±)\nV4 : courant phase W (SNG-3F/G)\nV5 : tension phase V (SNG-V2±)\nV6 : courant phase V (SNG-2F/G)\nV7 : tension phase U (SNG-V1±)\nV8 : courant phase U (SNG-1F/G)\n• Courant et tension d'une même ligne sur deux voies voisines.\n• Entrées câblées en différentiel (filtre entre V+ et V−) : les plages différentielles (±5 V…) ne sont accessibles qu'en mode logiciel (registres 0x03–0x06). En mode matériel, RANGE ne donne que ±10 V ou ±5 V single-ended sur les 8 voies.\n• Chaque entrée : 1.2 MΩ vers un nœud interne à 2 V, I = (VIN − 2 V) / RIN : d'où les 9.1 kΩ de retour sur V− (page 5)."
-		(exclude_from_sim no)
-		(at 270.51 80.34 0)
-		(size 102.87 34)
-		(margins 1.3525 1.3525 1.3525 1.3525)
+	(wire
+		(pts
+			(xy 158.75 171.45) (xy 158.75 179.07)
+		)
 		(stroke
-			(width -0.0001)
-			(type solid)
+			(width 0)
+			(type default)
 		)
-		(fill
-			(type color)
-			(color 253 241 226 1)
-		)
+		(uuid "2c5314a9-f6c5-44b4-b6c0-6b6507b2141e")
+	)
+	(global_label "ADC_RESET"
+		(shape input)
+		(at 158.75 179.07 270)
+		(fields_autoplaced yes)
 		(effects
 			(font
-				(face "Arial")
 				(size 1.27 1.27)
-				(color 0 0 0 1)
 			)
-			(justify left top)
+			(justify right)
 		)
-		(uuid "2e133edb-1de2-4138-a47d-5667f6c23d7f")
+		(uuid "83ab69c6-8004-45d2-9041-1a7c6adadfff")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 158.75 179.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 	)
-	(text_box "Plage ±5 V différentielle (mode logiciel)\n   1 LSB = 10 V / 2^18 = 38.1 µV\n   Courant : 38.1 µV / 20 mV/A = 1.9 mA par LSB ; 35 A = ±0.7 V = 14 % de la plage\n   Tension : 38.1 µV / 0.1977 = 0.19 mV par LSB ; 5 V / 0.1977 = 25.3 V max\n   (6S chargée : 25.2 V → 4.98 V, juste sous la limite)\n\nEntrées\n   RIN = 1.2 MΩ typ (1 MΩ min) vers 2 V : I = (VIN − 2 V) / RIN = −1.7 µA à 0 V\n   Filtre interne : 25 kHz (mode basse bande), en série avec les RC de la page 5\n\nDébit et bruit\n   1 MSPS sur les 8 voies à la fois\n   SNR 93 dB (±20 V diff.), 102 dB en suréchantillonnage ×32\n\nConsommation (datasheet)\n   AVCC : 8.5 mA à 10 kSPS, 45 mA à 1 MSPS (+5VA)\n   VDRIVE : < 2 mA (+3.3V)"
-		(exclude_from_sim no)
-		(at 270.51 188.2 0)
-		(size 102.87 38)
-		(margins 1.3525 1.3525 1.3525 1.3525)
+	(wire
+		(pts
+			(xy 161.29 171.45) (xy 161.29 179.07)
+		)
 		(stroke
-			(width -0.0001)
-			(type solid)
+			(width 0)
+			(type default)
 		)
-		(fill
-			(type color)
-			(color 232 245 233 1)
-		)
+		(uuid "cae905be-0036-4e18-8d93-884242798397")
+	)
+	(global_label "ADC_SCLK"
+		(shape input)
+		(at 161.29 179.07 270)
+		(fields_autoplaced yes)
 		(effects
 			(font
-				(face "Arial")
 				(size 1.27 1.27)
-				(color 0 0 0 1)
 			)
-			(justify left top)
+			(justify right)
 		)
-		(uuid "441f3698-3434-4de6-b077-d6f21256d404")
+		(uuid "09971b9c-ab25-4172-85cb-88157bef40b1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 161.29 179.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 	)
-	(text "References:"
-		(exclude_from_sim no)
-		(at 265.43 250.19 0)
+	(wire
+		(pts
+			(xy 163.83 171.45) (xy 163.83 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24e1bab3-07aa-4c1a-8ad4-8ad842786edf")
+	)
+	(global_label "ADC_~{CS}"
+		(shape input)
+		(at 163.83 179.07 270)
+		(fields_autoplaced yes)
 		(effects
 			(font
-				(face "Arial")
 				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-				(color 0 0 0 1)
 			)
-			(justify left bottom)
+			(justify right)
 		)
-		(uuid "356afd34-ded8-4b2c-ac2a-ee5b19de5dd1")
+		(uuid "c8e0be38-75dc-4871-b558-56ad72c855f5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 163.83 179.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 	)
-	(text "AD7606C-18 datasheet (Rev. A)"
-		(exclude_from_sim no)
-		(at 265.43 254 0)
+	(wire
+		(pts
+			(xy 166.37 171.45) (xy 166.37 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e63b901c-207f-4c79-846c-30d1b72cddcc")
+	)
+	(global_label "ADC_BUSY"
+		(shape output)
+		(at 166.37 179.07 270)
+		(fields_autoplaced yes)
 		(effects
 			(font
-				(face "Arial")
 				(size 1.27 1.27)
-				(color 0 0 0 1)
 			)
-			(justify left bottom)
-			(href "https://www.analog.com/en/products/ad7606c-18.html")
+			(justify right)
 		)
-		(uuid "f52683f0-4f5b-4749-b0dd-019f2f0ca368")
+		(uuid "50b8c368-127b-4d11-94b0-5184c637ca69")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 166.37 179.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 	)
-	(text_box "AD7606C-18   ·   ADC 8 VOIES SIMULTANÉES, 18 BITS, 1 MSPS"
-		(exclude_from_sim no)
-		(at 45.72 39.37 0)
-		(size 220.98 6.35)
-		(margins 1.6 1.6 1.6 1.6)
+	(wire
+		(pts
+			(xy 168.91 171.45) (xy 168.91 179.07)
+		)
 		(stroke
-			(width -0.0001)
-			(type solid)
+			(width 0)
+			(type default)
 		)
-		(fill
-			(type color)
-			(color 162 22 34 1)
-		)
+		(uuid "3530bca3-cae6-49c2-a3f8-9c02f87fe03e")
+	)
+	(global_label "ADC_FRSTDATA"
+		(shape output)
+		(at 168.91 179.07 270)
+		(fields_autoplaced yes)
 		(effects
 			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "f5350e03-541d-4515-8a39-9cf407cc9b91")
-	)
-(text_box "DESCRIPTION"
-		(exclude_from_sim no)
-		(at 270.51 39.37 0)
-		(size 102.87 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 0 105 120 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "18186f5c-4b01-47fb-ac95-4da60f9e09c1")
-	)
-(text_box "DESIGN NOTE · CANAUX"
-		(exclude_from_sim no)
-		(at 270.51 73.99 0)
-		(size 102.87 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 205 100 0 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "6797eb32-07fa-42b0-99d1-4725620c61e3")
-	)
-(text_box "DESIGN NOTE · RÉFÉRENCE, DÉCOUPLAGE, CONFIGURATION"
-		(exclude_from_sim no)
-		(at 270.51 115.61 0)
-		(size 102.87 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 205 100 0 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "b850bdfa-f4db-431e-8c52-da3cff33cb46")
-	)
-(text_box "LAYOUT NOTE"
-		(exclude_from_sim no)
-		(at 270.51 153.23 0)
-		(size 102.87 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 0 82 165 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "9070543d-fbeb-48df-92c5-fde17a5bd293")
-	)
-(text_box "CALCULS & BUDGET"
-		(exclude_from_sim no)
-		(at 270.51 181.85 0)
-		(size 102.87 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 46 125 50 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "4f823f6a-f34f-445a-be8f-5189271d4f8b")
-	)
-	(text_box "TEST POINTS"
-		(exclude_from_sim no)
-		(at 45.72 243 0)
-		(size 172.72 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 106 27 154 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "d87e307a-3be0-49d3-a0ff-bde2fa28d84b")
-	)
-	(text_box "Zone réservée aux test points (symbole TestPoint + label du net). Suggestion : CONVST, BUSY, +2.5VA (REFIN), GND, quand l'interface hôte sera câblée."
-		(exclude_from_sim no)
-		(at 45.72 249.35 0)
-		(size 172.72 35.65)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 243 232 246 1)
-		)
-		(effects
-			(font
-				(face "Arial")
 				(size 1.27 1.27)
-				(color 110 90 120 1)
 			)
-			(justify left top)
+			(justify right)
 		)
-		(uuid "288894da-bf56-47f1-b2eb-7246cebdda3f")
+		(uuid "fdc40c8f-8bea-4056-af3d-5178cf4b122c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 168.91 179.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 194.31 163.83) (xy 196.85 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52f21672-0d63-408a-8480-48c217d0a278")
+	)
+	(wire
+		(pts
+			(xy 194.31 161.29) (xy 196.85 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "786e565c-c101-4a35-bf89-f7ce16837c20")
+	)
+	(wire
+		(pts
+			(xy 196.85 161.29) (xy 196.85 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5089671f-14e2-4fd1-91dd-a861cd2bf0ea")
+	)
+	(junction
+		(at 196.85 163.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "80fc2585-c4b5-444b-b0f9-a818a948f109")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 196.85 163.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dcfc5a73-e043-4660-acad-4f413419534a")
+		(property "Reference" "#PWR066"
+			(at 196.85 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 196.85 167.894 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.85 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 196.85 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8d470083-bde1-4627-b153-3a80d2f69e8b")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "#PWR066")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(no_connect
+		(at 194.31 158.75)
+		(uuid "6692a336-0de3-4818-a233-02af95c17437")
+	)
+	(no_connect
+		(at 194.31 156.21)
+		(uuid "53acca82-a88b-43f7-b9b6-3c49be4fde0e")
+	)
+	(no_connect
+		(at 194.31 153.67)
+		(uuid "856de052-0f8d-43ca-b490-a63d122815c5")
+	)
+	(no_connect
+		(at 194.31 151.13)
+		(uuid "d9c1fd87-61a4-4171-8602-7257feb3d039")
+	)
+	(wire
+		(pts
+			(xy 194.31 140.97) (xy 196.85 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cd535ab-8f8e-42e0-b953-e1584edca409")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 196.85 140.97 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6b510c1b-d5d7-4aca-bba4-70f8445d33e0")
+		(property "Reference" "#PWR067"
+			(at 196.85 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 196.85 145.034 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.85 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 196.85 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "01ad036d-6c47-4be5-b11c-72ba83c87ad3")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "#PWR067")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 194.31 130.81) (xy 196.85 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7ed74b1-8094-4e75-9523-35457e4d6d14")
+	)
+	(wire
+		(pts
+			(xy 194.31 128.27) (xy 196.85 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8be5fcd3-3908-41b7-8ba9-acf727e5c6ec")
+	)
+	(wire
+		(pts
+			(xy 194.31 125.73) (xy 196.85 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2844b1c0-6039-4ac7-a1ce-2c6cc0e17a63")
+	)
+	(wire
+		(pts
+			(xy 196.85 125.73) (xy 196.85 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e881a65-8278-4880-b5ed-5badb9230c59")
+	)
+	(wire
+		(pts
+			(xy 196.85 128.27) (xy 196.85 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7bf17ce-e8fe-41a1-a1d0-f46fd5429f84")
+	)
+	(junction
+		(at 196.85 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "738af5a4-4f9c-496e-aa7e-d82c5cae0839")
+	)
+	(junction
+		(at 196.85 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "78e06f90-9f69-4998-a57a-21be3079ed36")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 196.85 125.73 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8dec69cb-66d3-4321-9740-f3d2a7eecc76")
+		(property "Reference" "#PWR068"
+			(at 196.85 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 196.85 129.794 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.85 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 196.85 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "99807e48-1606-4079-85a8-e1ed06c089b3")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "#PWR068")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 194.31 133.35) (xy 201.93 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d55cd897-5075-404e-a983-9c3c211cea3d")
+	)
+	(global_label "ADC_SDI"
+		(shape input)
+		(at 201.93 133.35 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d04f0d1c-1b0e-438c-8821-5314089aaef0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 201.93 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 194.31 135.89) (xy 201.93 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d2d1109-06a8-423b-8739-c77e9f9b4310")
+	)
+	(global_label "ADC_DOUTD"
+		(shape output)
+		(at 201.93 135.89 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "51f0e39d-0dec-4c06-ae67-91d6096e94ec")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 201.93 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 194.31 138.43) (xy 201.93 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca177ccf-5c62-47da-86da-c9ec34e0da5a")
+	)
+	(global_label "ADC_DOUTC"
+		(shape output)
+		(at 201.93 138.43 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d1e7b0d8-c9f1-4aa5-9745-0cce1f534642")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 201.93 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 194.31 143.51) (xy 201.93 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38bb73aa-e653-4e12-8aa5-cc1b7976dc90")
+	)
+	(global_label "ADC_DOUTB"
+		(shape output)
+		(at 201.93 143.51 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "08473716-3bda-4d21-872c-255baab383f4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 201.93 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 194.31 146.05) (xy 201.93 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e4e3c2f-f3e5-4588-895f-77786e9e9002")
+	)
+	(global_label "ADC_DOUTA"
+		(shape output)
+		(at 201.93 146.05 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "be7c9518-4c37-435f-a955-acdae8a75e3f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 201.93 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 138.43 113.03) (xy 138.43 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "084681e9-3072-44a5-a8cc-18ab41d400b8")
+	)
+	(junction
+		(at 138.43 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "295c9f66-a33b-4792-b24f-1411e957aacb")
+	)
+	(wire
+		(pts
+			(xy 168.91 118.11) (xy 168.91 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fef68f2c-b0c4-42ca-82c0-767c507345b7")
+	)
+	(wire
+		(pts
+			(xy 171.45 118.11) (xy 171.45 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f20aed3-ddae-4662-bf4f-42dc0a3674e7")
+	)
+	(wire
+		(pts
+			(xy 168.91 115.57) (xy 171.45 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b190ff1-2538-405a-a074-9a1dc298e44e")
+	)
+	(junction
+		(at 171.45 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1738ca25-33c7-4bc7-9f5a-740ed072f526")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 171.45 115.57 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7cfca674-f568-4496-9c4a-6ba3e7a48bbd")
+		(property "Reference" "#PWR069"
+			(at 171.45 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 171.45 119.634 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 171.45 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ea706d0e-91a3-49b4-a986-809a8f4c1960")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "#PWR069")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 203.2 148.59) (xy 213.36 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51e10cc0-4ac9-41a0-bf73-bd38e2262e08")
+	)
+	(wire
+		(pts
+			(xy 213.36 148.59) (xy 213.36 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d25e3488-8386-493f-b36f-bc7ee10e2710")
+	)
+	(wire
+		(pts
+			(xy 142.24 269.24) (xy 147.32 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e8538a3-0657-4bb9-9ef2-c17b1dd51787")
+	)
+	(global_label "ADC_CONVST"
+		(shape input)
+		(at 142.24 269.24 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "57b2f3d7-e61f-44a0-880b-159830c1995d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 142.24 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OPEN_PHASE:TestPoint")
+		(at 147.32 269.24 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "7c3fe92d-02bb-4882-abea-9a23439bdf10")
+		(property "Reference" "TP15"
+			(at 152.4 269.24 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 152.4 271.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "OPEN_PHASE:TestPoint_Pad_D1.5mm"
+			(at 147.32 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 147.32 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7663e0a3-fbfd-481c-ad3e-7c1df72826bf")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "TP15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 185.42 269.24) (xy 190.5 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3466b324-c2b0-4d81-9716-59a947160200")
+	)
+	(global_label "ADC_BUSY"
+		(shape output)
+		(at 185.42 269.24 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "16f57858-5195-40fe-8464-d07a178ccb5c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 185.42 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OPEN_PHASE:TestPoint")
+		(at 190.5 269.24 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "13b72b6e-210e-4d57-8a9d-8dc5d76d78aa")
+		(property "Reference" "TP16"
+			(at 195.58 269.24 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 195.58 271.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "OPEN_PHASE:TestPoint_Pad_D1.5mm"
+			(at 190.5 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 190.5 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b0b3c6aa-0ce7-4d71-a081-2f9be619d2a6")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "TP16")
+					(unit 1)
+				)
+			)
+		)
 	)
 )

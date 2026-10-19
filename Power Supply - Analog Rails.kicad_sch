@@ -2225,7 +2225,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
@@ -2286,8 +2286,8 @@
 			)
 			(symbol "R_0_1"
 				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
+					(start -1.016 -3.175)
+					(end 1.016 3.175)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -2300,7 +2300,7 @@
 			(symbol "R_1_1"
 				(pin passive line
 					(at 0 3.81 270)
-					(length 1.27)
+					(length 0.635)
 					(name ""
 						(effects
 							(font
@@ -2318,7 +2318,7 @@
 				)
 				(pin passive line
 					(at 0 -3.81 90)
-					(length 1.27)
+					(length 0.635)
 					(name ""
 						(effects
 							(font
@@ -2327,6 +2327,129 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "OPEN_PHASE:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2883,6 +3006,20 @@
 		)
 		(uuid "5aa4aa96-68ed-4472-a578-3d4e742df1cb")
 	)
+	(text "README : Power budget"
+		(exclude_from_sim no)
+		(at 265.43 261.62 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+			(href "https://github.com/foukouda/OPEN_PHASE#power-budget")
+		)
+		(uuid "3f0c92d8-8d1d-4370-b4e9-73e85bed0217")
+	)
 	(text "LT3045-1 datasheet"
 		(exclude_from_sim no)
 		(at 265.43 256.54 0)
@@ -2896,29 +3033,6 @@
 			(href "https://www.analog.com/en/products/lt3045-1.html")
 		)
 		(uuid "80d93b12-205e-4a9a-bc81-b2a59895d4fb")
-	)
-	(text_box "Boost IC5\n   VOUT = 1.6 V × (1 + R5/R6) = 1.6 × (1 + 1 MΩ / 365 kΩ) = 5.98 V\n   D = (VOUT + VD − VIN) / (VOUT + VD) ≈ 0.48   (VD ≈ 0.35 V)\n   ΔIL = VIN × D / (L × fSW) = 3.3 × 0.48 / (2.2 µH × 2 MHz) ≈ 0.36 A\n   À 68 mA le boost est en conduction discontinue (sim 03)\n   Démarrage : ISS = 2 µA dans C24 = 10 nF → +6V à 90 % en 0.88 ms\n\nRails analogiques\n   VSET = ISET × RSET : 100 µA × 49.9 kΩ = 4.99 V ; 100 µA × 24.9 kΩ = 2.49 V\n   VOUT = (VREF / R8 + ISET) / (1/R8 + 1/R14) = 4.9998 V ; 2.4996 V\n   τ = (R8 // R14) × C13 = 980 Ω × 10 µF = 9.8 ms\n   Marge : 6 V − 5 V = 1 V > 0.5 V (LTC6655) et > 260 mV (LT3045-1 à 500 mA)\n   Pertes IC8 : (6 − 5) V × 55 mA ≈ 55 mW\n\nBudget (1 MSPS, simulé)\n   +5VA : AD7606C 8.5–45 mA + 4 × INA241 2.5 mA = 18.5–55 mA\n   +6V : 68 mA        +3.3V : ≈ 133 mA (0.44 W)\n   Ripple : 0.81 mV p-p sur +6V → 0.11 µV p-p sur +5VA (PSRR 77 dB à 2 MHz)"
-		(exclude_from_sim no)
-		(at 270.51 182.2 0)
-		(size 102.87 51)
-		(margins 1.3525 1.3525 1.3525 1.3525)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 232 245 233 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "082df640-bdc2-4139-858a-151fe904c6e5")
 	)
 	(text "References:"
 		(exclude_from_sim no)
@@ -2937,7 +3051,7 @@
 	)
 	(text "LT8362 datasheet, Fig. 5"
 		(exclude_from_sim no)
-		(at 265.43 254.0 0)
+		(at 265.43 254 0)
 		(effects
 			(font
 				(face "Arial")
@@ -2948,6 +3062,20 @@
 			(href "https://www.analog.com/en/products/lt8362.html")
 		)
 		(uuid "d192e73d-f2b9-4bd5-aeae-ecea2c81e2ff")
+	)
+	(text "LTC6655 datasheet"
+		(exclude_from_sim no)
+		(at 265.43 259.08 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+			(href "https://www.analog.com/en/products/ltc6655.html")
+		)
+		(uuid "d36a1e37-dc8b-4146-8f1e-241327b490ec")
 	)
 	(text_box "• Référence + LDO : la LTC6655 est précise mais ne débite que ±5 mA ; le LT3045-1 est puissant et silencieux mais son SET n'est précis qu'à ±1 %. SET piloté par la référence = les deux qualités.\n• RSET ≈ VREF / 100 µA (R14 49.9 kΩ, R12 24.9 kΩ) : les 100 µA du SET passent dans RSET, presque rien dans R8/R11. Sans RSET : +100 mV d'erreur (R12 = 49.9 kΩ donnait 2.549 V).\n• R8/R11 1 kΩ + C13/C19 10 µF : filtrent le bruit de la référence, τ = 9.8 ms (16 Hz). En contrepartie +5VA à 0.1 % après 71 ms.\n• PGFB = IN : ni Power-Good ni fast start-up → attendre ≥ 100 ms avant la 1re conversion (page Sequencing).\n• ILIM = GND : limite de courant interne. VIOC et PG ouverts : le boost reste fixe à 6 V. EN/UV = IN.\n• C8/C12 10 µF : sortie LTC6655 (2.7–100 µF exigés).\n• C14/C15 10 µF 4 bornes : sortie LT3045-1 (≥ 10 µF, ESR < 20 mΩ, ESL < 2 nH).\n• C9/C11 4.7 µF : entrée des LT3045-1 sur +6V."
 		(exclude_from_sim no)
@@ -2972,6 +3100,29 @@
 		)
 		(uuid "079c1848-de68-4f64-ac9a-d0ecf3fbe27b")
 	)
+	(text_box "Boost IC5\n   VOUT = 1.6 V × (1 + R5/R6) = 1.6 × (1 + 1 MΩ / 365 kΩ) = 5.98 V\n   D = (VOUT + VD − VIN) / (VOUT + VD) ≈ 0.48   (VD ≈ 0.35 V)\n   ΔIL = VIN × D / (L × fSW) = 3.3 × 0.48 / (2.2 µH × 2 MHz) ≈ 0.36 A\n   À 68 mA le boost est en conduction discontinue (sim 03)\n   Démarrage : ISS = 2 µA dans C24 = 10 nF → +6V à 90 % en 0.88 ms\n\nRails analogiques\n   VSET = ISET × RSET : 100 µA × 49.9 kΩ = 4.99 V ; 100 µA × 24.9 kΩ = 2.49 V\n   VOUT = (VREF / R8 + ISET) / (1/R8 + 1/R14) = 4.9998 V ; 2.4996 V\n   τ = (R8 // R14) × C13 = 980 Ω × 10 µF = 9.8 ms\n   Marge : 6 V − 5 V = 1 V > 0.5 V (LTC6655) et > 260 mV (LT3045-1 à 500 mA)\n   Pertes IC8 : (6 − 5) V × 55 mA ≈ 55 mW\n\nBudget (1 MSPS, simulé)\n   +5VA : AD7606C 8.5–45 mA + 4 × INA241 2.5 mA = 18.5–55 mA\n   +6V : 68 mA        +3.3V : ≈ 133 mA (0.44 W)\n   Ripple : 0.81 mV p-p sur +6V → 0.11 µV p-p sur +5VA (PSRR 77 dB à 2 MHz)"
+		(exclude_from_sim no)
+		(at 270.51 182.2 0)
+		(size 102.87 51)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 232 245 233 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "082df640-bdc2-4139-858a-151fe904c6e5")
+	)
 	(text_box "[${#}] ${TITLE}"
 		(exclude_from_sim no)
 		(at 161.29 20.32 0)
@@ -2994,57 +3145,6 @@
 			)
 		)
 		(uuid "0996ea89-ccd8-4236-b901-34a814316fa4")
-	)
-	(text "LTC6655 datasheet"
-		(exclude_from_sim no)
-		(at 265.43 259.08 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-			(href "https://www.analog.com/en/products/ltc6655.html")
-		)
-		(uuid "d36a1e37-dc8b-4146-8f1e-241327b490ec")
-	)
-	(text "README : Power budget"
-		(exclude_from_sim no)
-		(at 265.43 261.62 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-			(href "https://github.com/foukouda/OPEN_PHASE#power-budget")
-		)
-		(uuid "3f0c92d8-8d1d-4370-b4e9-73e85bed0217")
-	)
-	(text_box "Chaîne : +3.3V (hôte) → IC5 LT8362 boost → +6V → LTC6655 + LT3045-1 → +5VA / +2.5VA\nLa carte ne reçoit que le +3.3V de l'hôte. Les INA241 et l'AD7606C demandent un +5VA propre (AVCC) et un +2.5VA précis (REFIN de l'ADC, REF des INA241 = niveau 0 A). Un LDO ne fait pas 5 V à partir de 3.3 V : on monte d'abord à 6 V.\n• IC5 LT8362 : boost 2 MHz. 6 V laisse ~1 V de marge aux LDO et aux références.\n• IC7 LTC6655-5 / IC3 LTC6655-2.5 : références ±0.025 %, 2 ppm/°C max, 0.25 ppm p-p (0.1–10 Hz). Elles fixent la valeur des rails mais ne débitent que ±5 mA.\n• IC8 / IC9 LT3045-1 : LDO 0.8 µVrms, PSRR 76 dB à 1 MHz, 500 mA. Leur SET suit la référence : le LDO est le buffer de puissance de la référence.\nSimulé (LTspice 01–04) : +5VA = 4.9998 V, +2.5VA = 2.4996 V (fenêtre AD7606C 2.495–2.505 V), ripple du boost < 0.2 µV p-p sur les rails."
-		(exclude_from_sim no)
-		(at 270.51 45.72 0)
-		(size 102.87 26)
-		(margins 1.3525 1.3525 1.3525 1.3525)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 230 243 245 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "c973ddf2-a373-47e3-99fc-9e540e8f9b96")
 	)
 	(text_box "Boost : boucle SW → D2 → C30 → GND → pad de IC5 la plus courte possible ; peu de cuivre sur le nœud SW (L1/D2). Pad exposé de IC5 au plan GND avec vias. Masse puissance (C22, C30) côté EN/UVLO et SW, masse signal (R2, C24, R6, C26) côté VC et FBX. C22/C23 collés à VIN, C27 à INTVCC. R5/R6/C28 près de FBX, R5 prend le 6 V sur C30. Ni via ni piste sous L1 (datasheet Würth).\nLDO / références : pads exposés des LT3045-1 au GND avec vias. OUTS en Kelvin sur C14/C15 et la charge ; masses de C13/C19 et de C14/C15 reliées ensemble ; masse de R14/R12 côté charge. VOUT_S de la LTC6655 absorbe 2 mA : piste courte et large vers C8/C12 (0.1 Ω = 200 µV d'erreur). LTC6655 loin des trous de fixation, des connecteurs et des sources de chaleur : la contrainte mécanique déplace VOUT (hystérésis 30 ppm). Boost loin des entrées INA241 / AD7606C et des nœuds SET."
 		(exclude_from_sim no)
@@ -3092,6 +3192,204 @@
 		)
 		(uuid "2d62e74d-12c4-4d25-9863-9915921e0d66")
 	)
+	(text_box "DESIGN NOTE · BOOST"
+		(exclude_from_sim no)
+		(at 270.51 72.99 0)
+		(size 102.87 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 205 100 0 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "33b547f3-7e81-4d19-bddf-801138c8b1a2")
+	)
+	(text_box "BOOST  3.3 V → 6 V   ·   IC5 LT8362, 2 MHz"
+		(exclude_from_sim no)
+		(at 45.72 39.37 0)
+		(size 220.98 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 162 22 34 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "356b290a-ba52-4ee7-aee1-46bfc76217c8")
+	)
+	(text_box "+2.5VA PRÉCISION   ·   IC3 LTC6655-2.5 + IC9 LT3045-1"
+		(exclude_from_sim no)
+		(at 156.21 130.81 0)
+		(size 110.49 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 162 22 34 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "5a338f4d-15fc-4530-ae8b-42564acb860b")
+	)
+	(text_box "LAYOUT NOTE"
+		(exclude_from_sim no)
+		(at 270.51 144.23 0)
+		(size 102.87 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 0 82 165 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "63bf054f-98e4-49c7-8501-4c324a59ab48")
+	)
+	(text_box "TEST POINTS"
+		(exclude_from_sim no)
+		(at 45.72 243 0)
+		(size 172.72 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 106 27 154 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "7f3d7071-86d3-41d1-8738-ca7a01f24eca")
+	)
+	(text_box "CALCULS & BUDGET"
+		(exclude_from_sim no)
+		(at 270.51 175.85 0)
+		(size 102.87 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 46 125 50 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "980176e3-b9f0-4a2d-8498-263d2fe0eb2d")
+	)
+	(text_box "DESCRIPTION"
+		(exclude_from_sim no)
+		(at 270.51 39.37 0)
+		(size 102.87 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 0 105 120 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "9b005f28-9991-4ee8-aa2c-4262115ee700")
+	)
+	(text_box "Pastilles de test CMS Ø1,5 mm (TestPoint_Pad_D1.5mm), face avant, hors BOM. Une par rail, à la sortie de son régulateur. Pas de TP sur le nœud SW du boost."
+		(exclude_from_sim no)
+		(at 45.72 249.35 0)
+		(size 172.72 35.65)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 243 232 246 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 110 90 120 1)
+			)
+			(justify left top)
+		)
+		(uuid "a86de27d-c51c-4ff2-bed9-3e52e4327cf4")
+	)
 	(text_box "• EN/UVLO = VIN : démarre seul avec le +3.3V (seuil 1.68 V), pas de séquencement.\n• SYNC/MODE en l'air = Pulse-skip : à faible charge les impulsions sautées restent calées sur l'horloge 2 MHz, le bruit reste à 2 MHz et ses harmoniques, loin de la bande de mesure. En Burst (GND) la cadence des paquets dépend de la charge et peut tomber dans la bande.\n• RT : R2 = 20 kΩ → 2 MHz, au-dessus du PWM ESC (24 kHz) et de la bande des voies (17.5 kHz) ; petite self.\n• FBX : R5 1 MΩ / R6 365 kΩ → 5.98 V. C28 4.7 pF C0G sur R5 = avance de phase (app. type datasheet).\n• VC : R3 36.5 kΩ + C26 1 nF, compensation.\n• SS : C24 10 nF (2 µA) → +6V à 90 % en 0.88 ms, courant d'appel limité.\n• BIAS = GND (sert seulement si 4.4 V ≤ BIAS ≤ VIN). INTVCC : C27 1 µF.\n• L1 2.2 µH WE-MAPI 4030 : Isat 4.6 A > limite du switch 3.1 A max.\n• D2 PMEG2020EH : Schottky 20 V / 2 A.\n• Entrée C22 4.7 µF + C23 100 nF, sortie C30 22 µF X7R 1206."
 		(exclude_from_sim no)
 		(at 270.51 79.34 0)
@@ -3114,6 +3412,79 @@
 			(justify left top)
 		)
 		(uuid "b0beddc4-31c0-48bc-a91c-db4ad50fb6b9")
+	)
+	(text_box "Chaîne : +3.3V (hôte) → IC5 LT8362 boost → +6V → LTC6655 + LT3045-1 → +5VA / +2.5VA\nLa carte ne reçoit que le +3.3V de l'hôte. Les INA241 et l'AD7606C demandent un +5VA propre (AVCC) et un +2.5VA précis (REFIN de l'ADC, REF des INA241 = niveau 0 A). Un LDO ne fait pas 5 V à partir de 3.3 V : on monte d'abord à 6 V.\n• IC5 LT8362 : boost 2 MHz. 6 V laisse ~1 V de marge aux LDO et aux références.\n• IC7 LTC6655-5 / IC3 LTC6655-2.5 : références ±0.025 %, 2 ppm/°C max, 0.25 ppm p-p (0.1–10 Hz). Elles fixent la valeur des rails mais ne débitent que ±5 mA.\n• IC8 / IC9 LT3045-1 : LDO 0.8 µVrms, PSRR 76 dB à 1 MHz, 500 mA. Leur SET suit la référence : le LDO est le buffer de puissance de la référence.\nSimulé (LTspice 01–04) : +5VA = 4.9998 V, +2.5VA = 2.4996 V (fenêtre AD7606C 2.495–2.505 V), ripple du boost < 0.2 µV p-p sur les rails."
+		(exclude_from_sim no)
+		(at 270.51 45.72 0)
+		(size 102.87 26)
+		(margins 1.3525 1.3525 1.3525 1.3525)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 230 243 245 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "c973ddf2-a373-47e3-99fc-9e540e8f9b96")
+	)
+	(text_box "+5VA PRÉCISION   ·   IC7 LTC6655-5 + IC8 LT3045-1"
+		(exclude_from_sim no)
+		(at 45.72 130.81 0)
+		(size 110.49 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 162 22 34 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "d9cb08e4-97c2-4352-8664-bf99fed20856")
+	)
+	(text_box "DESIGN NOTE · RAILS +5VA / +2.5VA"
+		(exclude_from_sim no)
+		(at 270.51 108.11 0)
+		(size 102.87 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 205 100 0 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "fa343d00-f2a0-4f40-b448-67ff133110f9")
 	)
 	(junction
 		(at 92.71 189.23)
@@ -3533,6 +3904,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 269.24) (xy 128.27 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02ebf618-776d-4f0d-b3ec-7447e9902a91")
+	)
+	(wire
+		(pts
 			(xy 138.43 66.04) (xy 137.16 66.04)
 		)
 		(stroke
@@ -3690,6 +4071,17 @@
 			(type default)
 		)
 		(uuid "26043277-8086-4c6e-b822-181bd20bcb12")
+	)
+	(polyline
+		(pts
+			(xy 156.21 137.16) (xy 156.21 240.03)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 190 190 190 1)
+		)
+		(uuid "260dbbab-e11c-4769-a89a-05083b0aef38")
 	)
 	(wire
 		(pts
@@ -4143,6 +4535,16 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 269.24) (xy 161.29 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "755cf8a5-ccea-43cf-adde-72ce2184ea1d")
+	)
+	(wire
+		(pts
 			(xy 160.02 66.04) (xy 158.75 66.04)
 		)
 		(stroke
@@ -4343,6 +4745,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 269.24) (xy 95.25 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e2df84f-81a4-45a0-8ffa-bd451be9ed6c")
+	)
+	(wire
+		(pts
 			(xy 184.15 166.37) (xy 184.15 199.39)
 		)
 		(stroke
@@ -4463,6 +4875,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 269.24) (xy 62.23 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b66b1d88-8f2b-4de0-93a6-65d63ce2ea5f")
+	)
+	(wire
+		(pts
 			(xy 109.22 200.66) (xy 109.22 203.2)
 		)
 		(stroke
@@ -4470,6 +4892,16 @@
 			(type default)
 		)
 		(uuid "b997abb5-7c79-4e83-9f53-bca6f2bbfd19")
+	)
+	(wire
+		(pts
+			(xy 189.23 269.24) (xy 194.31 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9f767b3-53dd-43a1-88f4-a66c278dd5d4")
 	)
 	(wire
 		(pts
@@ -5728,6 +6160,164 @@
 		)
 	)
 	(symbol
+		(lib_id "OPEN_PHASE:TestPoint")
+		(at 128.27 269.24 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "30e6b949-3383-47dd-b0e9-c1a2ba16ac80")
+		(property "Reference" "TP11"
+			(at 133.35 269.24 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 133.35 271.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "OPEN_PHASE:TestPoint_Pad_D1.5mm"
+			(at 128.27 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 128.27 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c8759ff4-775a-4216-9dda-972381e565c4")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "TP11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OPEN_PHASE:TestPoint")
+		(at 62.23 269.24 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "38e81c73-6a28-4196-9c77-e098477ecf4b")
+		(property "Reference" "TP9"
+			(at 67.31 269.24 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 67.31 271.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "OPEN_PHASE:TestPoint_Pad_D1.5mm"
+			(at 62.23 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 62.23 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1d26b11c-017b-4bf8-a834-50a5a3c522f7")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "TP9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "OPEN_PHASE:C")
 		(at 191.77 71.12 0)
 		(unit 1)
@@ -5831,14 +6421,13 @@
 			)
 		)
 		(property "Value" "20kΩ"
-			(at 137.16 102.616 90)
+			(at 137.16 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "OPEN_PHASE:R_0603_1608Metric"
@@ -5965,6 +6554,84 @@
 			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
 					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 57.15 269.24 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e878f6f-7b30-427f-bb59-762a7aec8046")
+		(property "Reference" "#PWR057"
+			(at 57.15 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 57.15 265.684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 57.15 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "26da6042-fbd3-4ebc-9f91-3a8227b664d7")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -6141,7 +6808,7 @@
 		(dnp no)
 		(uuid "549c39b1-04c2-49f3-a63d-b798b49ec2b4")
 		(property "Reference" "R14"
-			(at 129.286 203.2 0)
+			(at 129.794 202.692 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6152,14 +6819,13 @@
 			)
 		)
 		(property "Value" "49.9kΩ"
-			(at 125.73 205.232 90)
+			(at 125.73 207.01 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "OPEN_PHASE:R_0603_1608Metric"
@@ -6211,6 +6877,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5VA")
+		(at 123.19 269.24 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5e0385be-228d-4301-8eb2-599891158367")
+		(property "Reference" "#PWR059"
+			(at 123.19 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5VA"
+			(at 123.19 265.684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VA\""
+			(at 123.19 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d283f1d1-498f-408c-a0ff-0217643d357b")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "#PWR059")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "OPEN_PHASE:R")
 		(at 121.92 200.66 90)
 		(unit 1)
@@ -6222,25 +6966,23 @@
 		(dnp no)
 		(uuid "601139f1-87ee-470b-a7a2-6804fef1d69b")
 		(property "Reference" "R8"
-			(at 118.364 203.454 0)
+			(at 121.92 198.374 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "1kΩ"
-			(at 123.698 200.66 90)
+			(at 121.92 200.66 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "OPEN_PHASE:R_0603_1608Metric"
@@ -6367,6 +7109,85 @@
 			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
 					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OPEN_PHASE:TestPoint")
+		(at 95.25 269.24 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "62a42b39-cbb1-4ec2-996d-cb84a4921aca")
+		(property "Reference" "TP10"
+			(at 100.33 269.24 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 100.33 271.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "OPEN_PHASE:TestPoint_Pad_D1.5mm"
+			(at 95.25 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 95.25 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0c948f21-1744-4981-bbe3-24161b8c5242")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "TP10")
 					(unit 1)
 				)
 			)
@@ -6713,6 +7534,84 @@
 			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
 					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+6V")
+		(at 90.17 269.24 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7fe8b51a-4de0-4bc0-be0b-7e894438d54d")
+		(property "Reference" "#PWR058"
+			(at 90.17 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+6V"
+			(at 90.17 265.684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 90.17 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+6V\""
+			(at 90.17 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "09ea4714-ca52-4906-8dc9-7d63344f57c2")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -7382,6 +8281,85 @@
 		)
 	)
 	(symbol
+		(lib_id "OPEN_PHASE:TestPoint")
+		(at 161.29 269.24 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "a548ac13-8626-45e0-b2f5-6dcb28849e3a")
+		(property "Reference" "TP12"
+			(at 166.37 269.24 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 166.37 271.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "OPEN_PHASE:TestPoint_Pad_D1.5mm"
+			(at 161.29 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 161.29 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 161.29 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "81ee863f-57ce-44e9-886f-f37a8b90901f")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "TP12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "OPEN_PHASE:R")
 		(at 184.15 81.28 0)
 		(unit 1)
@@ -7404,14 +8382,13 @@
 			)
 		)
 		(property "Value" "365kΩ"
-			(at 181.356 84.836 90)
+			(at 184.15 81.28 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "OPEN_PHASE:R_0603_1608Metric"
@@ -7463,6 +8440,162 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 189.23 269.24 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af70175c-64aa-4362-afb7-7d2605609e8f")
+		(property "Reference" "#PWR061"
+			(at 189.23 275.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 189.23 273.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 189.23 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "31b25eaf-6e83-43d1-9af7-e9c6f3e4c0df")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "#PWR061")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5VA")
+		(at 156.21 269.24 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af8c69e3-e570-4273-a8cc-8875ac4bdbd0")
+		(property "Reference" "#PWR060"
+			(at 156.21 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+2.5VA"
+			(at 156.21 265.684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VA\""
+			(at 156.21 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3ddbad3a-6e12-40ba-930f-8aecc074268a")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "OPEN_PHASE:R")
 		(at 184.15 71.12 0)
 		(unit 1)
@@ -7485,14 +8618,13 @@
 			)
 		)
 		(property "Value" "1MΩ"
-			(at 184.15 73.406 90)
+			(at 184.15 71.12 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "OPEN_PHASE:R_0603_1608Metric"
@@ -7566,14 +8698,13 @@
 			)
 		)
 		(property "Value" "1kΩ"
-			(at 232.664 201.93 90)
+			(at 231.14 201.93 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "OPEN_PHASE:R_0603_1608Metric"
@@ -7934,6 +9065,85 @@
 			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "OPEN_PHASE:TestPoint")
+		(at 194.31 269.24 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "d4596c1d-30da-494f-b81a-4436fd6de461")
+		(property "Reference" "TP13"
+			(at 199.39 269.24 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 199.39 271.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "OPEN_PHASE:TestPoint_Pad_D1.5mm"
+			(at 194.31 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 194.31 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 194.31 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "deffbfc9-7a3b-485f-bb85-1cd7608e5483")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86"
+					(reference "TP13")
 					(unit 1)
 				)
 			)
@@ -8368,14 +9578,13 @@
 			)
 		)
 		(property "Value" "24.9kΩ"
-			(at 234.95 209.296 90)
+			(at 234.95 207.01 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "OPEN_PHASE:R_0603_1608Metric"
@@ -8438,25 +9647,24 @@
 		(dnp no)
 		(uuid "f11a858e-b1e3-46d4-b330-15ff90ab141d")
 		(property "Reference" "R3"
-			(at 157.226 96.774 0)
+			(at 157.48 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "36,5kΩ"
-			(at 162.306 103.378 90)
+			(at 160.02 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "OPEN_PHASE:R_0603_1608Metric"
@@ -8783,264 +9991,5 @@
 				)
 			)
 		)
-	)
-	(text_box "BOOST  3.3 V → 6 V   ·   IC5 LT8362, 2 MHz"
-		(exclude_from_sim no)
-		(at 45.72 39.37 0)
-		(size 220.98 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 162 22 34 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "356b290a-ba52-4ee7-aee1-46bfc76217c8")
-	)
-	(text_box "+5VA PRÉCISION   ·   IC7 LTC6655-5 + IC8 LT3045-1"
-		(exclude_from_sim no)
-		(at 45.72 130.81 0)
-		(size 110.49 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 162 22 34 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "d9cb08e4-97c2-4352-8664-bf99fed20856")
-	)
-	(text_box "+2.5VA PRÉCISION   ·   IC3 LTC6655-2.5 + IC9 LT3045-1"
-		(exclude_from_sim no)
-		(at 156.21 130.81 0)
-		(size 110.49 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 162 22 34 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "5a338f4d-15fc-4530-ae8b-42564acb860b")
-	)
-	(polyline
-		(pts
-			(xy 156.21 137.16) (xy 156.21 240.03)
-		)
-		(stroke
-			(width 0.3)
-			(type solid)
-			(color 190 190 190 1)
-		)
-		(uuid "260dbbab-e11c-4769-a89a-05083b0aef38")
-	)
-(text_box "DESCRIPTION"
-		(exclude_from_sim no)
-		(at 270.51 39.37 0)
-		(size 102.87 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 0 105 120 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "9b005f28-9991-4ee8-aa2c-4262115ee700")
-	)
-(text_box "DESIGN NOTE · BOOST"
-		(exclude_from_sim no)
-		(at 270.51 72.99 0)
-		(size 102.87 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 205 100 0 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "33b547f3-7e81-4d19-bddf-801138c8b1a2")
-	)
-(text_box "DESIGN NOTE · RAILS +5VA / +2.5VA"
-		(exclude_from_sim no)
-		(at 270.51 108.11 0)
-		(size 102.87 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 205 100 0 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "fa343d00-f2a0-4f40-b448-67ff133110f9")
-	)
-(text_box "LAYOUT NOTE"
-		(exclude_from_sim no)
-		(at 270.51 144.23 0)
-		(size 102.87 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 0 82 165 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "63bf054f-98e4-49c7-8501-4c324a59ab48")
-	)
-(text_box "CALCULS & BUDGET"
-		(exclude_from_sim no)
-		(at 270.51 175.85 0)
-		(size 102.87 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 46 125 50 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "980176e3-b9f0-4a2d-8498-263d2fe0eb2d")
-	)
-	(text_box "TEST POINTS"
-		(exclude_from_sim no)
-		(at 45.72 243 0)
-		(size 172.72 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 106 27 154 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "7f3d7071-86d3-41d1-8738-ca7a01f24eca")
-	)
-	(text_box "Zone réservée aux test points (symbole TestPoint + label du net). Suggestion : +3.3V, +6V, +5VA, +2.5VA, GND ; pas de TP sur le nœud SW."
-		(exclude_from_sim no)
-		(at 45.72 249.35 0)
-		(size 172.72 35.65)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 243 232 246 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 110 90 120 1)
-			)
-			(justify left top)
-		)
-		(uuid "a86de27d-c51c-4ff2-bed9-3e52e4327cf4")
 	)
 )

@@ -8,9 +8,9 @@ Keep entries short: the `[Unreleased]` section is printed on the schematic Revis
 
 ### Added
 
--   3x PBV 1 mOhm shunt + INA241A2 (20 V/V)
--   3x phase voltage divider 40.2k / 10k
--   AD7606C-18 ADC, 6 inputs used
+-   4x PBV 1 mOhm shunt + INA241A2 (20 V/V)
+-   4x voltage divider 40.2k / 10k
+-   AD7606C-18 ADC, 8 inputs used
 -   +3.3V -> LT8362 6 V -> LT3045-1 +5VA / +2.5VA
 -   Self-contained libs and 3D models (lib/)
 -   LTspice simulations (Simulation/LTspice)
@@ -18,6 +18,8 @@ Keep entries short: the `[Unreleased]` section is printed on the schematic Revis
 -   openEMS shunt inductance model (Simulation/openEMS)
 -   Thermal / current density model (Simulation/Thermal)
 -   3D animation (Images/OPEN_PHASE.mp4)
+-   J4 host header 2x8: AD7606C serial, software mode
+-   Test points TP1-TP16
 
 ### Changed
 
@@ -27,3 +29,6 @@ Keep entries short: the `[Unreleased]` section is printed on the schematic Revis
 -   R12: 49.9k -> 24.9k (+2.5VA = 2.500 V)
 -   L1: 744373965022 -> WE-MAPI 4030 74438357022 (4.1 x 4.1 mm)
 -   Solder mask white, silkscreen black
+-   Nets renamed SHUNT_*, INA_*, ADC_*
+-   IC1 AGND pin 26, REFGND pin 46 to GND
+-   IC8, IC9: thermal vias on exposed pad 13

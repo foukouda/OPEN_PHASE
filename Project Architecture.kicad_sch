@@ -646,7 +646,7 @@
 		)
 		(uuid "090c4fc1-d0d9-551e-b505-1903be0a16a5")
 	)
-	(text "not wired yet"
+	(text "SPI, 4 DOUT lines"
 		(exclude_from_sim no)
 		(at 310.515 102.23 0)
 		(effects
@@ -673,7 +673,7 @@
 		)
 		(uuid "104414ab-01b2-53d2-8854-f7704b4fe241")
 	)
-	(text "SNG-V1± to SNG-V4±"
+	(text "ADC_U_V± to ADC_BAT_V±"
 		(exclude_from_sim no)
 		(at 210.185 108.58 0)
 		(effects
@@ -699,7 +699,7 @@
 		)
 		(uuid "2361d631-c312-5205-86db-0cbb8194ae23")
 	)
-	(text "SNG-1F/G to SNG-4F/G"
+	(text "ADC_U_I± to ADC_BAT_I±"
 		(exclude_from_sim no)
 		(at 210.185 95.88 0)
 		(effects
@@ -783,7 +783,7 @@
 		)
 		(uuid "4a191e12-b416-5727-ac34-064e26fb3767")
 	)
-	(text "+3.3V from the host: no input connector yet"
+	(text "+3.3V from the host, J4 pin 1"
 		(exclude_from_sim no)
 		(at 318.135 176.53 0)
 		(effects
@@ -896,7 +896,7 @@
 		)
 		(uuid "5bff87b5-d2ca-578a-a825-1fd6c125f093")
 	)
-	(text "Supply input, no connector yet"
+	(text "Supply input from the host (J4)"
 		(exclude_from_sim no)
 		(at 40.64 231.775 0)
 		(effects
@@ -938,7 +938,7 @@
 		)
 		(uuid "5e78ccaf-d387-57ed-988a-8671a913bfe7")
 	)
-	(text "To do"
+	(text "Page 7"
 		(exclude_from_sim no)
 		(at 391.16 116.84 0)
 		(effects
@@ -1008,7 +1008,7 @@
 		)
 		(uuid "7f798c85-66ee-5891-85a8-d349894ab20d")
 	)
-	(text "Digital interface, not wired yet"
+	(text "Digital interface (J4)"
 		(exclude_from_sim no)
 		(at 40.64 226.695 0)
 		(effects
@@ -1021,7 +1021,7 @@
 		)
 		(uuid "815b6ea7-640b-5cc5-a629-d9fff93a4a34")
 	)
-	(text "No sheet yet"
+	(text "Connectors, J4"
 		(exclude_from_sim no)
 		(at 327.66 80.2509 0)
 		(effects
@@ -1341,7 +1341,7 @@
 		)
 		(uuid "fd502d0f-aece-50e0-b0dc-38a422505f2b")
 	)
-	(text "The AD7606C-18 digital pins are open:\nCONVST, BUSY, CS, SCLK, DOUTx,\nRESET, OS, RANGE, PAR/SER, STBY,\nREF SELECT\nNo host connector, no +3.3V input"
+	(text "J4, 2x8 Dupont header to the host:\n+3.3V, GND, CONVST, BUSY, CS, SCLK,\nSDI, DOUTA-D, RESET, FRSTDATA\nAD7606C-18 in software mode,\nserial interface"
 		(exclude_from_sim no)
 		(at 330.2 85.09 0)
 		(effects
@@ -1353,6 +1353,206 @@
 			(justify left top)
 		)
 		(uuid "fe6cbadf-ddc8-524d-8d0f-77a0bbb2f89b")
+	)
+	(text_box "DATA ACQUISITION"
+		(exclude_from_sim no)
+		(at 227.33 67.79 0)
+		(size 66.04 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 111 84 181 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "15360e9c-7fd9-48fb-a3f0-5f47b5cc0a7d")
+	)
+	(text_box "LEGEND"
+		(exclude_from_sim no)
+		(at 26.67 198.6 0)
+		(size 85.09 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 70 70 70 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "3832227f-a409-4da5-9e15-8ba6d25fdbf1")
+	)
+	(text_box "MECHANICAL"
+		(exclude_from_sim no)
+		(at 26.67 136.37 0)
+		(size 66.04 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 120 120 120 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "424d60b5-e371-433f-b374-fc88f1fc6312")
+	)
+	(text_box "ANALOG FRONT-END"
+		(exclude_from_sim no)
+		(at 127 67.79 0)
+		(size 66.04 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 21 128 61 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "5af0832d-f40a-4223-b83a-e5b981ab9cf9")
+	)
+	(text_box "POWER SUPPLY"
+		(exclude_from_sim no)
+		(at 127 136.37 0)
+		(size 66.04 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 176 64 102 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "5bc37490-a5e7-411a-8b3e-a45104389a2c")
+	)
+	(text_box "POWER CONNECTORS"
+		(exclude_from_sim no)
+		(at 26.67 67.79 0)
+		(size 66.04 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 74 155 203 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "708c8b24-4ed9-407e-8e1c-b0503785434d")
+	)
+	(text_box "DOCUMENT INDEX"
+		(exclude_from_sim no)
+		(at 127 198.6 0)
+		(size 101.6 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 70 70 70 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "80ede1a5-af42-4c09-bce9-8080b2c560aa")
+	)
+	(text_box "HOST INTERFACE"
+		(exclude_from_sim no)
+		(at 327.66 67.79 0)
+		(size 66.04 6.35)
+		(margins 1.6 1.6 1.6 1.6)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 120 120 120 1)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(thickness 0.36)
+				(bold yes)
+				(color 255 255 255 1)
+			)
+			(justify left)
+		)
+		(uuid "c2eeaeb0-8407-428e-9f37-8240ff1fdb9b")
 	)
 	(text_box "[${#}] ${TITLE}"
 		(exclude_from_sim no)
@@ -1819,205 +2019,5 @@
 				)
 			)
 		)
-	)
-	(text_box "POWER CONNECTORS"
-		(exclude_from_sim no)
-		(at 26.67 67.79 0)
-		(size 66.04 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 74 155 203 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "708c8b24-4ed9-407e-8e1c-b0503785434d")
-	)
-	(text_box "ANALOG FRONT-END"
-		(exclude_from_sim no)
-		(at 127 67.79 0)
-		(size 66.04 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 21 128 61 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "5af0832d-f40a-4223-b83a-e5b981ab9cf9")
-	)
-	(text_box "DATA ACQUISITION"
-		(exclude_from_sim no)
-		(at 227.33 67.79 0)
-		(size 66.04 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 111 84 181 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "15360e9c-7fd9-48fb-a3f0-5f47b5cc0a7d")
-	)
-	(text_box "HOST INTERFACE"
-		(exclude_from_sim no)
-		(at 327.66 67.79 0)
-		(size 66.04 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 120 120 120 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "c2eeaeb0-8407-428e-9f37-8240ff1fdb9b")
-	)
-	(text_box "MECHANICAL"
-		(exclude_from_sim no)
-		(at 26.67 136.37 0)
-		(size 66.04 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 120 120 120 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "424d60b5-e371-433f-b374-fc88f1fc6312")
-	)
-	(text_box "POWER SUPPLY"
-		(exclude_from_sim no)
-		(at 127 136.37 0)
-		(size 66.04 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 176 64 102 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "5bc37490-a5e7-411a-8b3e-a45104389a2c")
-	)
-	(text_box "LEGEND"
-		(exclude_from_sim no)
-		(at 26.67 198.6 0)
-		(size 85.09 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 70 70 70 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "3832227f-a409-4da5-9e15-8ba6d25fdbf1")
-	)
-	(text_box "DOCUMENT INDEX"
-		(exclude_from_sim no)
-		(at 127 198.6 0)
-		(size 101.6 6.35)
-		(margins 1.6 1.6 1.6 1.6)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 70 70 70 1)
-		)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.8 1.8)
-				(thickness 0.36)
-				(bold yes)
-				(color 255 255 255 1)
-			)
-			(justify left)
-		)
-		(uuid "80ede1a5-af42-4c09-bce9-8080b2c560aa")
 	)
 )
