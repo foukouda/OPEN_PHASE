@@ -1,7 +1,7 @@
 (export
 	(version "E")
 	(design
-		(source "/tmp/tmp-kibot-net_sch_print-ky9kvmma/OPEN_PHASE.kicad_sch")
+		(source "/tmp/tmp-kibot-net_sch_print-flukq_eg/OPEN_PHASE.kicad_sch")
 		(date "Date")
 		(tool "Eeschema 10.0.5-unknown-202607221313~667fa36054~ubuntu25.10.1")
 		(textvar
@@ -15,9 +15,9 @@
 		(textvar
 			(name "FABRICATION_NOTES") "FABRICATION NOTES (UNLESS OTHERWISE SPECIFIED)\n\n1)	FABRICATE PER IPC-6012A CLASS 2.\n\n2)	OUTLINE DEFINED IN SEPARATE GERBER FILE WITH\n	\"Edge_Cuts.GBR\" SUFFIX.\n\n	DIMENSIONS OF CIRCUMSIZED RECTANGLE SHOWN ON THIS\n	DRAWING FOR REFERENCE ONLY.\n\n3)	SEE SEPARATE DRILL FILES WITH \".DRL\" SUFFIX \n	FOR HOLE LOCATIONS.\n\n	SELECTED HOLE LOCATIONS SHOWN ON THIS DRAWING \n	FOR REFERENCE ONLY.\n\n4)	SURFACE FINISH: IMMERSION GOLD\n\n5)	SOLDERMASK ON BOTH SIDES OF THE BOARD SHALL \n	BE LPI, COLOR WHITE.\n\n6)	SILK SCREEN LEGEND TO BE APPLIED PER LAYER \n	STACKUP USING BLACK NON-CONDUCTIVE EPOXY INK.\n\n7)	ALL VIAS ARE TENTED ON BOTH SIDES UNLESS \n	SOLDERMASK OPENED IN GERBER.\n\n8)	VENDOR SHOULD FOLLOW ROHS COMPLIANT PROCESS \n	AND Pb FREE FOR MANUFACTURING\n\n9)	PCB MATERIAL REQUIREMENTS:\n\n	A.	FLAMMABILITY RATING MUST MEET OR EXCEED \n		UL94V-0 REQUIREMENTS.\n	B.	Tg 170 C OR EQUIVALENT.\n	C.	EQUIVALENT MATERIAL SHALL BE RoHS COMPLIANT, \n		HALOGEN FREE AND APPROVED BY OPEN THRUST LAB.\n\n10)	DESIGN GEOMETRY MINIMUM FEATURE SIZES:\n\n	BOARD SIZE				65.050 × 77.500 mm\n	BOARD THICKNESS		1.660 mm\n	TRACE WIDTH			0.200 mm\n	TRACE TO TRACE		0.200 mm\n	MIN. HOLE (PTH)			0.250 mm\n	MIN. HOLE (NPTH)		N/A mm\n	ANNULAR RING			0.150 mm\n	COPPER TO HOLE		0.254 mm\n	COPPER TO EDGE		0.250 mm\n	HOLE TO HOLE			0.254 mm\n\n11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.\n\n12)	CONFIRM SPACE WIDTHS AND SPACINGS.")
 		(textvar
-			(name "GIT_HASH_PCB") "720b69a")
+			(name "GIT_HASH_PCB") "04dd92c")
 		(textvar
-			(name "GIT_HASH_SCH") "8ad9441")
+			(name "GIT_HASH_SCH") "04dd92c")
 		(textvar
 			(name "GIT_URL") "https://github.com/foukouda/OPEN_PHASE")
 		(textvar
@@ -35,11 +35,11 @@
 			(name "RELEASE_BODY_1.1.0")
 		)
 		(textvar
-			(name "RELEASE_BODY_UNRELEASED") "___________________________________\n\nAdded\n\n-   3x PBV 1 mOhm shunt + INA241A2 (20 V/V)\n\n-   3x phase voltage divider 40.2k / 10k\n\n-   AD7606C-18 ADC, 6 inputs used\n\n-   +3.3V -> LT8362 6 V -> LT3045-1 +5VA / +2.5VA\n\n-   Self-contained libs and 3D models (lib/)\n\n-   LTspice simulations (Simulation/LTspice)\n\n-   Predicted measurement quality (sim 07, 08)\n\n-   openEMS shunt inductance model (Simulation/openEMS)\n\n-   Thermal / current density model (Simulation/Thermal)\n\n-   3D animation (Images/OPEN_PHASE.mp4)\n\n___________________________________\n\nChanged\n\n-   Renamed to OPEN_PHASE, KiCad 10\n\n-   Sheets named after their function\n\n-   IC3: LTC6655LN-2.5 -> LTC6655-2.5 (pin 6 = VOUT_S)\n\n-   R12: 49.9k -> 24.9k (+2.5VA = 2.500 V)\n\n-   L1: 744373965022 -> WE-MAPI 4030 74438357022 (4.1 x 4.1 mm)\n\n-   Solder mask white, silkscreen black")
+			(name "RELEASE_BODY_UNRELEASED") "___________________________________\n\nAdded\n\n-   4x PBV 1 mOhm shunt + INA241A2 (20 V/V)\n\n-   4x voltage divider 40.2k / 10k\n\n-   AD7606C-18 ADC, 8 inputs used\n\n-   +3.3V -> LT8362 6 V -> LT3045-1 +5VA / +2.5VA\n\n-   Self-contained libs and 3D models (lib/)\n\n-   LTspice simulations (Simulation/LTspice)\n\n-   Predicted measurement quality (sim 07, 08)\n\n-   openEMS shunt inductance model (Simulation/openEMS)\n\n-   Thermal / current density model (Simulation/Thermal)\n\n-   3D animation (Images/OPEN_PHASE.mp4)\n\n-   J4 host header 2x8: AD7606C serial, software mode\n\n-   Test points TP1-TP16\n\n___________________________________\n\nChanged\n\n-   Renamed to OPEN_PHASE, KiCad 10\n\n-   Sheets named after their function\n\n-   IC3: LTC6655LN-2.5 -> LTC6655-2.5 (pin 6 = VOUT_S)\n\n-   R12: 49.9k -> 24.9k (+2.5VA = 2.500 V)\n\n-   L1: 744373965022 -> WE-MAPI 4030 74438357022 (4.1 x 4.1 mm)\n\n-   Solder mask white, silkscreen black\n\n-   Nets renamed SHUNT_*, INA_*, ADC_*\n\n-   IC1 AGND pin 26, REFGND pin 46 to GND\n\n-   IC8, IC9: thermal vias on exposed pad 13")
 		(textvar
-			(name "RELEASE_DATE") "18-Oct-2026")
+			(name "RELEASE_DATE") "19-Oct-2026")
 		(textvar
-			(name "RELEASE_DATE_NUM") "2026-10-18")
+			(name "RELEASE_DATE_NUM") "2026-10-19")
 		(textvar
 			(name "RELEASE_TITLE_1.0.0")
 		)
@@ -1375,6 +1375,234 @@
 						)
 						(pin
 							(num "33")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP1")
+			(value "TestPoint")
+			(footprint "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+			(datasheet "~")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "AD7606C-18_ADC")
+			)
+			(property
+				(name "Sheetfile")
+				(value "AD7606C-18 - ADC.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/Project Architecture/AD7606C-18_ADC/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/")
+			)
+			(tstamps "741f06ee-c749-4968-a7bd-3e31143775f1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP2")
+			(value "TestPoint")
+			(footprint "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+			(datasheet "~")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "AD7606C-18_ADC")
+			)
+			(property
+				(name "Sheetfile")
+				(value "AD7606C-18 - ADC.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/Project Architecture/AD7606C-18_ADC/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/")
+			)
+			(tstamps "98de8942-1933-4d75-bb03-ca61b4000e00")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP15")
+			(value "TestPoint")
+			(footprint "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+			(datasheet "~")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "AD7606C-18_ADC")
+			)
+			(property
+				(name "Sheetfile")
+				(value "AD7606C-18 - ADC.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/Project Architecture/AD7606C-18_ADC/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/")
+			)
+			(tstamps "7c3fe92d-02bb-4882-abea-9a23439bdf10")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP16")
+			(value "TestPoint")
+			(footprint "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+			(datasheet "~")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "AD7606C-18_ADC")
+			)
+			(property
+				(name "Sheetfile")
+				(value "AD7606C-18 - ADC.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/Project Architecture/AD7606C-18_ADC/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/")
+			)
+			(tstamps "13b72b6e-210e-4d57-8a9d-8dc5d76d78aa")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
 						)
 					)
 				)
@@ -4597,6 +4825,348 @@
 			)
 		)
 		(comp
+			(ref "TP3")
+			(value "TestPoint")
+			(footprint "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+			(datasheet "~")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "INA241_Phase_Sense")
+			)
+			(property
+				(name "Sheetfile")
+				(value "INA241 - Phase Sensing.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/Project Architecture/INA241_Phase_Sense/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
+			)
+			(tstamps "34737a9d-459d-41c1-8a72-53a3cc94021c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP4")
+			(value "TestPoint")
+			(footprint "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+			(datasheet "~")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "INA241_Phase_Sense")
+			)
+			(property
+				(name "Sheetfile")
+				(value "INA241 - Phase Sensing.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/Project Architecture/INA241_Phase_Sense/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
+			)
+			(tstamps "d20a88d4-cd4b-4643-a3e7-da64b22efc3c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP5")
+			(value "TestPoint")
+			(footprint "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+			(datasheet "~")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "INA241_Phase_Sense")
+			)
+			(property
+				(name "Sheetfile")
+				(value "INA241 - Phase Sensing.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/Project Architecture/INA241_Phase_Sense/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
+			)
+			(tstamps "f9a6a0a7-e842-4be9-9afd-a7d7291e88b9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP6")
+			(value "TestPoint")
+			(footprint "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+			(datasheet "~")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "INA241_Phase_Sense")
+			)
+			(property
+				(name "Sheetfile")
+				(value "INA241 - Phase Sensing.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/Project Architecture/INA241_Phase_Sense/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
+			)
+			(tstamps "f436702c-0de2-403b-9194-bdcf8896c85f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP7")
+			(value "TestPoint")
+			(footprint "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+			(datasheet "~")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "INA241_Phase_Sense")
+			)
+			(property
+				(name "Sheetfile")
+				(value "INA241 - Phase Sensing.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/Project Architecture/INA241_Phase_Sense/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
+			)
+			(tstamps "891c62f1-c9db-4d1d-9e4a-9eaa18ffb7f2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP8")
+			(value "TestPoint")
+			(footprint "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+			(datasheet "~")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "INA241_Phase_Sense")
+			)
+			(property
+				(name "Sheetfile")
+				(value "INA241 - Phase Sensing.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/Project Architecture/INA241_Phase_Sense/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/")
+			)
+			(tstamps "158e8c4a-11b6-40dd-a905-012492155e30")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "C8")
 			(value "10µF")
 			(footprint "OPEN_PHASE:C_0603_1608Metric")
@@ -6717,6 +7287,291 @@
 			)
 		)
 		(comp
+			(ref "TP9")
+			(value "TestPoint")
+			(footprint "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+			(datasheet "~")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Power_Supply")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power Supply - Analog Rails.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/Project Architecture/Power_Supply/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/")
+			)
+			(tstamps "38e81c73-6a28-4196-9c77-e098477ecf4b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP10")
+			(value "TestPoint")
+			(footprint "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+			(datasheet "~")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Power_Supply")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power Supply - Analog Rails.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/Project Architecture/Power_Supply/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/")
+			)
+			(tstamps "62a42b39-cbb1-4ec2-996d-cb84a4921aca")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP11")
+			(value "TestPoint")
+			(footprint "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+			(datasheet "~")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Power_Supply")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power Supply - Analog Rails.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/Project Architecture/Power_Supply/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/")
+			)
+			(tstamps "30e6b949-3383-47dd-b0e9-c1a2ba16ac80")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP12")
+			(value "TestPoint")
+			(footprint "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+			(datasheet "~")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Power_Supply")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power Supply - Analog Rails.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/Project Architecture/Power_Supply/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/")
+			)
+			(tstamps "a548ac13-8626-45e0-b2f5-6dcb28849e3a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP13")
+			(value "TestPoint")
+			(footprint "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+			(datasheet "~")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Power_Supply")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Power Supply - Analog Rails.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/Project Architecture/Power_Supply/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/")
+			)
+			(tstamps "d4596c1d-30da-494f-b81a-4436fd6de461")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "J1")
 			(value "MR60PW")
 			(footprint "OPEN_PHASE:MR60PW")
@@ -7017,6 +7872,108 @@
 			)
 		)
 		(comp
+			(ref "J4")
+			(value "PinHeader_2x08")
+			(footprint "OPEN_PHASE:PinHeader_2x08_P2.54mm_Horizontal")
+			(datasheet "~")
+			(description "Pin header, 2x08, 2.54 mm, horizontal (right angle), for Dupont jumper wires (odd pins row 1, even pins row 2). Host interface of the AD7606C-18 and +3.3V input")
+			(fields
+				(field
+					(name "KiLib_Generator") "connector/pin_header_socket")
+				(field
+					(name "Footprint") "OPEN_PHASE:PinHeader_2x08_P2.54mm_Horizontal")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "Pin header, 2x08, 2.54 mm, horizontal (right angle), for Dupont jumper wires (odd pins row 1, even pins row 2). Host interface of the AD7606C-18 and +3.3V input")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "Conn_02x08_Odd_Even")
+				(description "Pin header, 2x08, 2.54 mm, horizontal (right angle), for Dupont jumper wires (odd pins row 1, even pins row 2). Host interface of the AD7606C-18 and +3.3V input")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "connector/pin_header_socket")
+			)
+			(property
+				(name "Sheetname")
+				(value "Connectors")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Connectors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_2x??_*")
+			)
+			(sheetpath
+				(names "/Project Architecture/Connectors/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/")
+			)
+			(tstamps "988b7fdd-5683-4654-8a73-df56213548dd")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "15")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "16")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "J5")
 			(value "XT60PW-M")
 			(footprint "OPEN_PHASE:XT60PWM")
@@ -7166,6 +8123,63 @@
 						)
 						(pin
 							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP14")
+			(value "TestPoint")
+			(footprint "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+			(datasheet "~")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "OPEN_PHASE:TestPoint_Pad_D1.5mm")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Connectors")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Connectors.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "exclude_from_pos_files")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/Project Architecture/Connectors/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/")
+			)
+			(tstamps "bdefac54-dfcd-43c7-b461-c1a2b9e66e97")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
 						)
 					)
 				)
@@ -7928,6 +8942,109 @@
 		)
 		(libpart
 			(lib "OPEN_PHASE")
+			(part "Conn_02x08_Odd_Even")
+			(description "Pin header, 2x08, 2.54 mm, horizontal (right angle), for Dupont jumper wires (odd pins row 1, even pins row 2). Host interface of the AD7606C-18 and +3.3V input")
+			(docs "~")
+			(footprints
+				(fp "Connector*:*_2x??_*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Conn_02x08_Odd_Even")
+				(field
+					(name "Footprint") "OPEN_PHASE:PinHeader_2x08_P2.54mm_Horizontal")
+				(field
+					(name "Datasheet") "~")
+				(field
+					(name "Description") "Pin header, 2x08, 2.54 mm, horizontal (right angle), for Dupont jumper wires (odd pins row 1, even pins row 2). Host interface of the AD7606C-18 and +3.3V input")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "Pin_3")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "Pin_4")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "Pin_5")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "Pin_6")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "Pin_7")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "Pin_8")
+					(type "passive")
+				)
+				(pin
+					(num "9")
+					(name "Pin_9")
+					(type "passive")
+				)
+				(pin
+					(num "10")
+					(name "Pin_10")
+					(type "passive")
+				)
+				(pin
+					(num "11")
+					(name "Pin_11")
+					(type "passive")
+				)
+				(pin
+					(num "12")
+					(name "Pin_12")
+					(type "passive")
+				)
+				(pin
+					(num "13")
+					(name "Pin_13")
+					(type "passive")
+				)
+				(pin
+					(num "14")
+					(name "Pin_14")
+					(type "passive")
+				)
+				(pin
+					(num "15")
+					(name "Pin_15")
+					(type "passive")
+				)
+				(pin
+					(num "16")
+					(name "Pin_16")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "OPEN_PHASE")
 			(part "INA241A2IDGKR")
 			(description "Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP")
 			(docs "https://www.ti.com/lit/ds/symlink/ina241a.pdf?ts=1698648582718&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FINA241A%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-amps-null-44700045336317476_prodfolderdynamic-cpc-pf-go")
@@ -8568,6 +9685,36 @@
 		)
 		(libpart
 			(lib "OPEN_PHASE")
+			(part "TestPoint")
+			(description "test point")
+			(footprints
+				(fp "Pin*")
+				(fp "Test*")
+			)
+			(fields
+				(field
+					(name "Reference") "TP")
+				(field
+					(name "Value") "TestPoint")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "OPEN_PHASE")
 			(part "XT60PW-F")
 			(description "Connector: DC supply; socket; XT60; female; PIN: 2; on PCBs; THT; 30A")
 			(docs "https://www.tme.eu/Document/1191bc2fa3aee3c446e5a895fd8f7983/XT60PW-F.pdf")
@@ -8781,6 +9928,24 @@
 				(pinfunction "OUT_12")
 				(pintype "passive")
 			)
+			(node
+				(ref "TP1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP12")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP7")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
 		)
 		(net
 			(code "2")
@@ -8803,8 +9968,50 @@
 			)
 			(node
 				(ref "IC1")
+				(pin "10")
+				(pinfunction "~{WR}_10")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
 				(pin "23")
 				(pinfunction "VDRIVE_23")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "3")
+				(pinfunction "OS_0_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "4")
+				(pinfunction "OS_1_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "5")
+				(pinfunction "OS_2_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "6")
+				(pinfunction "~{PAR}/SER_SEL_6")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "7")
+				(pinfunction "~{STBY}_7")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "8")
+				(pinfunction "RANGE_8")
 				(pintype "passive")
 			)
 			(node
@@ -8820,7 +10027,19 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "J4")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
 				(ref "L1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP9")
 				(pin "1")
 				(pinfunction "1_1")
 				(pintype "passive")
@@ -8961,6 +10180,12 @@
 				(pinfunction "OUT_12")
 				(pintype "passive")
 			)
+			(node
+				(ref "TP11")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
 		)
 		(net
 			(code "4")
@@ -9069,6 +10294,12 @@
 				(pin "1")
 				(pintype "passive")
 			)
+			(node
+				(ref "TP10")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
 		)
 		(net
 			(code "5")
@@ -9146,6 +10377,541 @@
 		)
 		(net
 			(code "10")
+			(name "ADC_BAT_I+")
+			(class "Default")
+			(node
+				(ref "C42")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "51")
+				(pinfunction "V2+_51")
+				(pintype "passive")
+			)
+			(node
+				(ref "R30")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "11")
+			(name "ADC_BAT_I-")
+			(class "Default")
+			(node
+				(ref "C42")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "52")
+				(pinfunction "V2-_52")
+				(pintype "passive")
+			)
+			(node
+				(ref "R31")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "12")
+			(name "ADC_BAT_V+")
+			(class "Default")
+			(node
+				(ref "C40")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "49")
+				(pinfunction "V1+_49")
+				(pintype "passive")
+			)
+			(node
+				(ref "Re4")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "13")
+			(name "ADC_BAT_V-")
+			(class "Default")
+			(node
+				(ref "C40")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "50")
+				(pinfunction "V1-_50")
+				(pintype "passive")
+			)
+			(node
+				(ref "R34")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "14")
+			(name "ADC_BUSY")
+			(class "Default")
+			(node
+				(ref "IC1")
+				(pin "14")
+				(pinfunction "BUSY_14")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "5")
+				(pinfunction "Pin_5_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP16")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "15")
+			(name "ADC_CONVST")
+			(class "Default")
+			(node
+				(ref "IC1")
+				(pin "9")
+				(pinfunction "CONVST_9")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP15")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "16")
+			(name "ADC_DOUTA")
+			(class "Default")
+			(node
+				(ref "IC1")
+				(pin "24")
+				(pinfunction "DB9/DOUTA_24")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "13")
+				(pinfunction "Pin_13_13")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "17")
+			(name "ADC_DOUTB")
+			(class "Default")
+			(node
+				(ref "IC1")
+				(pin "25")
+				(pinfunction "DB10/DOUTB_25")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "14")
+				(pinfunction "Pin_14_14")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "18")
+			(name "ADC_DOUTC")
+			(class "Default")
+			(node
+				(ref "IC1")
+				(pin "27")
+				(pinfunction "DB11/DOUTC_27")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "15")
+				(pinfunction "Pin_15_15")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "19")
+			(name "ADC_DOUTD")
+			(class "Default")
+			(node
+				(ref "IC1")
+				(pin "28")
+				(pinfunction "DB12/DOUTD_28")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "16")
+				(pinfunction "Pin_16_16")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "20")
+			(name "ADC_FRSTDATA")
+			(class "Default")
+			(node
+				(ref "IC1")
+				(pin "15")
+				(pinfunction "FRSTDATA_15")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "12")
+				(pinfunction "Pin_12_12")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "21")
+			(name "ADC_RESET")
+			(class "Default")
+			(node
+				(ref "IC1")
+				(pin "11")
+				(pinfunction "RESET_11")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "6")
+				(pinfunction "Pin_6_6")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "22")
+			(name "ADC_SCLK")
+			(class "Default")
+			(node
+				(ref "IC1")
+				(pin "12")
+				(pinfunction "~{RD}/SCLK_12")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "9")
+				(pinfunction "Pin_9_9")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "23")
+			(name "ADC_SDI")
+			(class "Default")
+			(node
+				(ref "IC1")
+				(pin "29")
+				(pinfunction "DB13/SDI_29")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "11")
+				(pinfunction "Pin_11_11")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "24")
+			(name "ADC_U_I+")
+			(class "Default")
+			(node
+				(ref "C25")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "63")
+				(pinfunction "V8+_63")
+				(pintype "passive")
+			)
+			(node
+				(ref "R15")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "25")
+			(name "ADC_U_I-")
+			(class "Default")
+			(node
+				(ref "C25")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "64")
+				(pinfunction "V8-_64")
+				(pintype "passive")
+			)
+			(node
+				(ref "R16")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "26")
+			(name "ADC_U_V+")
+			(class "Default")
+			(node
+				(ref "C31")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "61")
+				(pinfunction "V7+_61")
+				(pintype "passive")
+			)
+			(node
+				(ref "Re1")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "27")
+			(name "ADC_U_V-")
+			(class "Default")
+			(node
+				(ref "C31")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "62")
+				(pinfunction "V7-_62")
+				(pintype "passive")
+			)
+			(node
+				(ref "R19")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "28")
+			(name "ADC_V_I+")
+			(class "Default")
+			(node
+				(ref "C29")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "59")
+				(pinfunction "V6+_59")
+				(pintype "passive")
+			)
+			(node
+				(ref "R20")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "29")
+			(name "ADC_V_I-")
+			(class "Default")
+			(node
+				(ref "C29")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "60")
+				(pinfunction "V6-_60")
+				(pintype "passive")
+			)
+			(node
+				(ref "R21")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "30")
+			(name "ADC_V_V+")
+			(class "Default")
+			(node
+				(ref "C32")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "57")
+				(pinfunction "V5+_57")
+				(pintype "passive")
+			)
+			(node
+				(ref "Re2")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "31")
+			(name "ADC_V_V-")
+			(class "Default")
+			(node
+				(ref "C32")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "58")
+				(pinfunction "V5-_58")
+				(pintype "passive")
+			)
+			(node
+				(ref "R24")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "32")
+			(name "ADC_W_I+")
+			(class "Default")
+			(node
+				(ref "C33")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "55")
+				(pinfunction "V4+_55")
+				(pintype "passive")
+			)
+			(node
+				(ref "R25")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "33")
+			(name "ADC_W_I-")
+			(class "Default")
+			(node
+				(ref "C33")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "56")
+				(pinfunction "V4-_56")
+				(pintype "passive")
+			)
+			(node
+				(ref "R26")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "34")
+			(name "ADC_W_V+")
+			(class "Default")
+			(node
+				(ref "C34")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "53")
+				(pinfunction "V3+_53")
+				(pintype "passive")
+			)
+			(node
+				(ref "Re3")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "35")
+			(name "ADC_W_V-")
+			(class "Default")
+			(node
+				(ref "C34")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "54")
+				(pinfunction "V3-_54")
+				(pintype "passive")
+			)
+			(node
+				(ref "R29")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "36")
+			(name "ADC_~{CS}")
+			(class "Default")
+			(node
+				(ref "IC1")
+				(pin "13")
+				(pinfunction "~{CS}_13")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "7")
+				(pinfunction "Pin_7_7")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "37")
 			(name "GND")
 			(class "GND")
 			(node
@@ -9339,8 +11105,62 @@
 			)
 			(node
 				(ref "IC1")
+				(pin "16")
+				(pinfunction "DB2_16")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "17")
+				(pinfunction "DB3_17")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "18")
+				(pinfunction "DB4_18")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
 				(pin "2")
 				(pinfunction "AGND_1_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "26")
+				(pinfunction "AGND_2_26")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "30")
+				(pinfunction "DB14_30")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "31")
+				(pinfunction "DB15_31")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "32")
+				(pinfunction "DB16/DB0_32")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "33")
+				(pinfunction "DB17/DB1_33")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "34")
+				(pinfunction "REF_SELECT_34")
 				(pintype "passive")
 			)
 			(node
@@ -9365,6 +11185,12 @@
 				(ref "IC1")
 				(pin "43")
 				(pinfunction "REFGND_1_43")
+				(pintype "passive")
+			)
+			(node
+				(ref "IC1")
+				(pin "46")
+				(pinfunction "REFGND_2_46")
 				(pintype "passive")
 			)
 			(node
@@ -9530,6 +11356,30 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "J4")
+				(pin "10")
+				(pinfunction "Pin_10_10")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "4")
+				(pinfunction "Pin_4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "8")
+				(pinfunction "Pin_8_8")
+				(pintype "passive")
+			)
+			(node
 				(ref "J5")
 				(pin "3")
 				(pinfunction "MH1_3")
@@ -9627,9 +11477,33 @@
 				(pin "2")
 				(pintype "passive")
 			)
+			(node
+				(ref "TP13")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP14")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP8")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
 		)
 		(net
-			(code "11")
+			(code "38")
 			(name "GND1")
 			(class "Default")
 			(node
@@ -9652,75 +11526,7 @@
 			)
 		)
 		(net
-			(code "12")
-			(name "IN-1")
-			(class "Default")
-			(node
-				(ref "IC2")
-				(pin "1")
-				(pinfunction "IN-_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R1")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "13")
-			(name "IN-2")
-			(class "Default")
-			(node
-				(ref "IC4")
-				(pin "1")
-				(pinfunction "IN-_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R4")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "14")
-			(name "IN-3")
-			(class "Default")
-			(node
-				(ref "IC6")
-				(pin "1")
-				(pinfunction "IN-_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R7")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "15")
-			(name "IN-4")
-			(class "Default")
-			(node
-				(ref "IC10")
-				(pin "1")
-				(pinfunction "IN-_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R9")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "16")
+			(code "39")
 			(name "IN-B")
 			(class "Default")
 			(node
@@ -9737,7 +11543,7 @@
 			)
 		)
 		(net
-			(code "17")
+			(code "40")
 			(name "IN-U")
 			(class "Default")
 			(node
@@ -9754,7 +11560,7 @@
 			)
 		)
 		(net
-			(code "18")
+			(code "41")
 			(name "IN-V")
 			(class "Default")
 			(node
@@ -9771,7 +11577,7 @@
 			)
 		)
 		(net
-			(code "19")
+			(code "42")
 			(name "IN-W")
 			(class "Default")
 			(node
@@ -9788,7 +11594,95 @@
 			)
 		)
 		(net
-			(code "20")
+			(code "43")
+			(name "INA_BAT")
+			(class "Default")
+			(node
+				(ref "IC10")
+				(pin "5")
+				(pinfunction "OUT_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "R30")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP6")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "44")
+			(name "INA_U")
+			(class "Default")
+			(node
+				(ref "IC2")
+				(pin "5")
+				(pinfunction "OUT_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "R15")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "45")
+			(name "INA_V")
+			(class "Default")
+			(node
+				(ref "IC4")
+				(pin "5")
+				(pinfunction "OUT_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "R20")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP4")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "46")
+			(name "INA_W")
+			(class "Default")
+			(node
+				(ref "IC6")
+				(pin "5")
+				(pinfunction "OUT_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "R25")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP5")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "47")
 			(name "Net-(C26-Pad2)")
 			(class "Default")
 			(node
@@ -9803,7 +11697,7 @@
 			)
 		)
 		(net
-			(code "21")
+			(code "48")
 			(name "Net-(D2-A)")
 			(class "Default")
 			(node
@@ -9832,7 +11726,7 @@
 			)
 		)
 		(net
-			(code "22")
+			(code "49")
 			(name "Net-(IC1-REFCAPA)")
 			(class "Default")
 			(node
@@ -9859,7 +11753,7 @@
 			)
 		)
 		(net
-			(code "23")
+			(code "50")
 			(name "Net-(IC1-REGCAP_1)")
 			(class "Default")
 			(node
@@ -9875,7 +11769,7 @@
 			)
 		)
 		(net
-			(code "24")
+			(code "51")
 			(name "Net-(IC1-REGCAP_2)")
 			(class "Default")
 			(node
@@ -9891,7 +11785,7 @@
 			)
 		)
 		(net
-			(code "25")
+			(code "52")
 			(name "Net-(IC3-VOUT_F)")
 			(class "Default")
 			(node
@@ -9918,7 +11812,7 @@
 			)
 		)
 		(net
-			(code "26")
+			(code "53")
 			(name "Net-(IC5-SS)")
 			(class "Default")
 			(node
@@ -9934,7 +11828,7 @@
 			)
 		)
 		(net
-			(code "27")
+			(code "54")
 			(name "Net-(IC7-VOUT_F)")
 			(class "Default")
 			(node
@@ -9961,7 +11855,7 @@
 			)
 		)
 		(net
-			(code "28")
+			(code "55")
 			(name "Net-(IC8-SET)")
 			(class "Default")
 			(node
@@ -9987,7 +11881,7 @@
 			)
 		)
 		(net
-			(code "29")
+			(code "56")
 			(name "Net-(IC9-SET)")
 			(class "Default")
 			(node
@@ -10013,7 +11907,7 @@
 			)
 		)
 		(net
-			(code "30")
+			(code "57")
 			(name "Net-(R17-Pad2)")
 			(class "Default")
 			(node
@@ -10033,7 +11927,7 @@
 			)
 		)
 		(net
-			(code "31")
+			(code "58")
 			(name "Net-(R22-Pad2)")
 			(class "Default")
 			(node
@@ -10053,7 +11947,7 @@
 			)
 		)
 		(net
-			(code "32")
+			(code "59")
 			(name "Net-(R27-Pad2)")
 			(class "Default")
 			(node
@@ -10073,7 +11967,7 @@
 			)
 		)
 		(net
-			(code "33")
+			(code "60")
 			(name "Net-(R32-Pad2)")
 			(class "Default")
 			(node
@@ -10093,75 +11987,7 @@
 			)
 		)
 		(net
-			(code "34")
-			(name "OUT-1")
-			(class "Default")
-			(node
-				(ref "IC2")
-				(pin "8")
-				(pinfunction "IN+_8")
-				(pintype "passive")
-			)
-			(node
-				(ref "R1")
-				(pin "3")
-				(pinfunction "3_3")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "35")
-			(name "OUT-2")
-			(class "Default")
-			(node
-				(ref "IC4")
-				(pin "8")
-				(pinfunction "IN+_8")
-				(pintype "passive")
-			)
-			(node
-				(ref "R4")
-				(pin "3")
-				(pinfunction "3_3")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "36")
-			(name "OUT-3")
-			(class "Default")
-			(node
-				(ref "IC6")
-				(pin "8")
-				(pinfunction "IN+_8")
-				(pintype "passive")
-			)
-			(node
-				(ref "R7")
-				(pin "3")
-				(pinfunction "3_3")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "37")
-			(name "OUT-4")
-			(class "Default")
-			(node
-				(ref "IC10")
-				(pin "8")
-				(pinfunction "IN+_8")
-				(pintype "passive")
-			)
-			(node
-				(ref "R9")
-				(pin "3")
-				(pinfunction "3_3")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "38")
+			(code "61")
 			(name "OUT-B")
 			(class "Default")
 			(node
@@ -10183,7 +12009,7 @@
 			)
 		)
 		(net
-			(code "39")
+			(code "62")
 			(name "OUT-U")
 			(class "Default")
 			(node
@@ -10205,7 +12031,7 @@
 			)
 		)
 		(net
-			(code "40")
+			(code "63")
 			(name "OUT-V")
 			(class "Default")
 			(node
@@ -10227,7 +12053,7 @@
 			)
 		)
 		(net
-			(code "41")
+			(code "64")
 			(name "OUT-W")
 			(class "Default")
 			(node
@@ -10249,759 +12075,187 @@
 			)
 		)
 		(net
-			(code "42")
-			(name "SNG-1F")
-			(class "Default")
-			(node
-				(ref "C25")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "IC1")
-				(pin "63")
-				(pinfunction "V8+_63")
-				(pintype "passive")
-			)
-			(node
-				(ref "R15")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "43")
-			(name "SNG-1G")
-			(class "Default")
-			(node
-				(ref "C25")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "IC1")
-				(pin "64")
-				(pinfunction "V8-_64")
-				(pintype "passive")
-			)
-			(node
-				(ref "R16")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "44")
-			(name "SNG-2F")
-			(class "Default")
-			(node
-				(ref "C29")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "IC1")
-				(pin "59")
-				(pinfunction "V6+_59")
-				(pintype "passive")
-			)
-			(node
-				(ref "R20")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "45")
-			(name "SNG-2G")
-			(class "Default")
-			(node
-				(ref "C29")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "IC1")
-				(pin "60")
-				(pinfunction "V6-_60")
-				(pintype "passive")
-			)
-			(node
-				(ref "R21")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "46")
-			(name "SNG-3F")
-			(class "Default")
-			(node
-				(ref "C33")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "IC1")
-				(pin "55")
-				(pinfunction "V4+_55")
-				(pintype "passive")
-			)
-			(node
-				(ref "R25")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "47")
-			(name "SNG-3G")
-			(class "Default")
-			(node
-				(ref "C33")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "IC1")
-				(pin "56")
-				(pinfunction "V4-_56")
-				(pintype "passive")
-			)
-			(node
-				(ref "R26")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "48")
-			(name "SNG-4F")
-			(class "Default")
-			(node
-				(ref "C42")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "IC1")
-				(pin "51")
-				(pinfunction "V2+_51")
-				(pintype "passive")
-			)
-			(node
-				(ref "R30")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "49")
-			(name "SNG-4G")
-			(class "Default")
-			(node
-				(ref "C42")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "IC1")
-				(pin "52")
-				(pinfunction "V2-_52")
-				(pintype "passive")
-			)
-			(node
-				(ref "R31")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "50")
-			(name "SNG-A1N")
-			(class "Default")
-			(node
-				(ref "IC2")
-				(pin "5")
-				(pinfunction "OUT_5")
-				(pintype "passive")
-			)
-			(node
-				(ref "R15")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "51")
-			(name "SNG-A2N")
-			(class "Default")
-			(node
-				(ref "IC4")
-				(pin "5")
-				(pinfunction "OUT_5")
-				(pintype "passive")
-			)
-			(node
-				(ref "R20")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "52")
-			(name "SNG-A3N")
-			(class "Default")
-			(node
-				(ref "IC6")
-				(pin "5")
-				(pinfunction "OUT_5")
-				(pintype "passive")
-			)
-			(node
-				(ref "R25")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "53")
-			(name "SNG-A4N")
+			(code "65")
+			(name "SHUNT_BAT+")
 			(class "Default")
 			(node
 				(ref "IC10")
-				(pin "5")
-				(pinfunction "OUT_5")
+				(pin "8")
+				(pinfunction "IN+_8")
 				(pintype "passive")
 			)
 			(node
-				(ref "R30")
-				(pin "1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "54")
-			(name "SNG-V1+")
-			(class "Default")
-			(node
-				(ref "C31")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "IC1")
-				(pin "61")
-				(pinfunction "V7+_61")
-				(pintype "passive")
-			)
-			(node
-				(ref "Re1")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "55")
-			(name "SNG-V1-")
-			(class "Default")
-			(node
-				(ref "C31")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "IC1")
-				(pin "62")
-				(pinfunction "V7-_62")
-				(pintype "passive")
-			)
-			(node
-				(ref "R19")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "56")
-			(name "SNG-V2+")
-			(class "Default")
-			(node
-				(ref "C32")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "IC1")
-				(pin "57")
-				(pinfunction "V5+_57")
-				(pintype "passive")
-			)
-			(node
-				(ref "Re2")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "57")
-			(name "SNG-V2-")
-			(class "Default")
-			(node
-				(ref "C32")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "IC1")
-				(pin "58")
-				(pinfunction "V5-_58")
-				(pintype "passive")
-			)
-			(node
-				(ref "R24")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "58")
-			(name "SNG-V3+")
-			(class "Default")
-			(node
-				(ref "C34")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "IC1")
-				(pin "53")
-				(pinfunction "V3+_53")
-				(pintype "passive")
-			)
-			(node
-				(ref "Re3")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "59")
-			(name "SNG-V3-")
-			(class "Default")
-			(node
-				(ref "C34")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "IC1")
-				(pin "54")
-				(pinfunction "V3-_54")
-				(pintype "passive")
-			)
-			(node
-				(ref "R29")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "60")
-			(name "SNG-V4+")
-			(class "Default")
-			(node
-				(ref "C40")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "IC1")
-				(pin "49")
-				(pinfunction "V1+_49")
-				(pintype "passive")
-			)
-			(node
-				(ref "Re4")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "61")
-			(name "SNG-V4-")
-			(class "Default")
-			(node
-				(ref "C40")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "IC1")
-				(pin "50")
-				(pinfunction "V1-_50")
-				(pintype "passive")
-			)
-			(node
-				(ref "R34")
-				(pin "2")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "62")
-			(name "unconnected-(IC1-AGND_2-Pad26)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "26")
-				(pinfunction "AGND_2_26")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "63")
-			(name "unconnected-(IC1-BUSY-Pad14)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "14")
-				(pinfunction "BUSY_14")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "64")
-			(name "unconnected-(IC1-CONVST-Pad9)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "9")
-				(pinfunction "CONVST_9")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "65")
-			(name "unconnected-(IC1-DB2-Pad16)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "16")
-				(pinfunction "DB2_16")
+				(ref "R9")
+				(pin "3")
+				(pinfunction "3_3")
 				(pintype "passive")
 			)
 		)
 		(net
 			(code "66")
-			(name "unconnected-(IC1-DB3-Pad17)")
+			(name "SHUNT_BAT-")
 			(class "Default")
 			(node
-				(ref "IC1")
-				(pin "17")
-				(pinfunction "DB3_17")
+				(ref "IC10")
+				(pin "1")
+				(pinfunction "IN-_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R9")
+				(pin "2")
+				(pinfunction "2_2")
 				(pintype "passive")
 			)
 		)
 		(net
 			(code "67")
-			(name "unconnected-(IC1-DB4-Pad18)")
+			(name "SHUNT_U+")
 			(class "Default")
 			(node
-				(ref "IC1")
-				(pin "18")
-				(pinfunction "DB4_18")
+				(ref "IC2")
+				(pin "8")
+				(pinfunction "IN+_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "R1")
+				(pin "3")
+				(pinfunction "3_3")
 				(pintype "passive")
 			)
 		)
 		(net
 			(code "68")
+			(name "SHUNT_U-")
+			(class "Default")
+			(node
+				(ref "IC2")
+				(pin "1")
+				(pinfunction "IN-_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "69")
+			(name "SHUNT_V+")
+			(class "Default")
+			(node
+				(ref "IC4")
+				(pin "8")
+				(pinfunction "IN+_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "R4")
+				(pin "3")
+				(pinfunction "3_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "70")
+			(name "SHUNT_V-")
+			(class "Default")
+			(node
+				(ref "IC4")
+				(pin "1")
+				(pinfunction "IN-_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R4")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "71")
+			(name "SHUNT_W+")
+			(class "Default")
+			(node
+				(ref "IC6")
+				(pin "8")
+				(pinfunction "IN+_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "R7")
+				(pin "3")
+				(pinfunction "3_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "72")
+			(name "SHUNT_W-")
+			(class "Default")
+			(node
+				(ref "IC6")
+				(pin "1")
+				(pinfunction "IN-_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R7")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "73")
 			(name "unconnected-(IC1-DB5{slash}DOUTE-Pad19)")
 			(class "Default")
 			(node
 				(ref "IC1")
 				(pin "19")
 				(pinfunction "DB5/DOUTE_19")
-				(pintype "passive")
+				(pintype "passive+no_connect")
 			)
 		)
 		(net
-			(code "69")
+			(code "74")
 			(name "unconnected-(IC1-DB6{slash}DOUTF-Pad20)")
 			(class "Default")
 			(node
 				(ref "IC1")
 				(pin "20")
 				(pinfunction "DB6/DOUTF_20")
-				(pintype "passive")
+				(pintype "passive+no_connect")
 			)
 		)
 		(net
-			(code "70")
+			(code "75")
 			(name "unconnected-(IC1-DB7{slash}DOUTG-Pad21)")
 			(class "Default")
 			(node
 				(ref "IC1")
 				(pin "21")
 				(pinfunction "DB7/DOUTG_21")
-				(pintype "passive")
+				(pintype "passive+no_connect")
 			)
 		)
 		(net
-			(code "71")
+			(code "76")
 			(name "unconnected-(IC1-DB8{slash}DOUTH-Pad22)")
 			(class "Default")
 			(node
 				(ref "IC1")
 				(pin "22")
 				(pinfunction "DB8/DOUTH_22")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "72")
-			(name "unconnected-(IC1-DB9{slash}DOUTA-Pad24)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "24")
-				(pinfunction "DB9/DOUTA_24")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "73")
-			(name "unconnected-(IC1-DB10{slash}DOUTB-Pad25)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "25")
-				(pinfunction "DB10/DOUTB_25")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "74")
-			(name "unconnected-(IC1-DB11{slash}DOUTC-Pad27)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "27")
-				(pinfunction "DB11/DOUTC_27")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "75")
-			(name "unconnected-(IC1-DB12{slash}DOUTD-Pad28)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "28")
-				(pinfunction "DB12/DOUTD_28")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "76")
-			(name "unconnected-(IC1-DB13{slash}SDI-Pad29)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "29")
-				(pinfunction "DB13/SDI_29")
-				(pintype "passive")
+				(pintype "passive+no_connect")
 			)
 		)
 		(net
 			(code "77")
-			(name "unconnected-(IC1-DB14-Pad30)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "30")
-				(pinfunction "DB14_30")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "78")
-			(name "unconnected-(IC1-DB15-Pad31)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "31")
-				(pinfunction "DB15_31")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "79")
-			(name "unconnected-(IC1-DB16{slash}DB0-Pad32)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "32")
-				(pinfunction "DB16/DB0_32")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "80")
-			(name "unconnected-(IC1-DB17{slash}DB1-Pad33)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "33")
-				(pinfunction "DB17/DB1_33")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "81")
-			(name "unconnected-(IC1-FRSTDATA-Pad15)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "15")
-				(pinfunction "FRSTDATA_15")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "82")
-			(name "unconnected-(IC1-OS_0-Pad3)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "3")
-				(pinfunction "OS_0_3")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "83")
-			(name "unconnected-(IC1-OS_1-Pad4)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "4")
-				(pinfunction "OS_1_4")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "84")
-			(name "unconnected-(IC1-OS_2-Pad5)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "5")
-				(pinfunction "OS_2_5")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "85")
-			(name "unconnected-(IC1-RANGE-Pad8)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "8")
-				(pinfunction "RANGE_8")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "86")
-			(name "unconnected-(IC1-REFGND_2-Pad46)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "46")
-				(pinfunction "REFGND_2_46")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "87")
-			(name "unconnected-(IC1-REF_SELECT-Pad34)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "34")
-				(pinfunction "REF_SELECT_34")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "88")
-			(name "unconnected-(IC1-RESET-Pad11)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "11")
-				(pinfunction "RESET_11")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "89")
-			(name "unconnected-(IC1-~{CS}-Pad13)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "13")
-				(pinfunction "~{CS}_13")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "90")
-			(name "unconnected-(IC1-~{PAR}{slash}SER_SEL-Pad6)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "6")
-				(pinfunction "~{PAR}/SER_SEL_6")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "91")
-			(name "unconnected-(IC1-~{RD}{slash}SCLK-Pad12)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "12")
-				(pinfunction "~{RD}/SCLK_12")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "92")
-			(name "unconnected-(IC1-~{STBY}-Pad7)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "7")
-				(pinfunction "~{STBY}_7")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "93")
-			(name "unconnected-(IC1-~{WR}-Pad10)")
-			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "10")
-				(pinfunction "~{WR}_10")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "94")
 			(name "unconnected-(IC2-NC-Pad4)")
 			(class "Default")
 			(node
@@ -11012,7 +12266,7 @@
 			)
 		)
 		(net
-			(code "95")
+			(code "78")
 			(name "unconnected-(IC4-NC-Pad4)")
 			(class "Default")
 			(node
@@ -11023,7 +12277,7 @@
 			)
 		)
 		(net
-			(code "96")
+			(code "79")
 			(name "unconnected-(IC5-NC-Pad6)")
 			(class "Default")
 			(node
@@ -11034,7 +12288,7 @@
 			)
 		)
 		(net
-			(code "97")
+			(code "80")
 			(name "unconnected-(IC5-SYNC{slash}MODE-Pad12)")
 			(class "Default")
 			(node
@@ -11045,7 +12299,7 @@
 			)
 		)
 		(net
-			(code "98")
+			(code "81")
 			(name "unconnected-(IC6-NC-Pad4)")
 			(class "Default")
 			(node
@@ -11056,7 +12310,7 @@
 			)
 		)
 		(net
-			(code "99")
+			(code "82")
 			(name "unconnected-(IC8-PG-Pad5)")
 			(class "Default")
 			(node
@@ -11067,7 +12321,7 @@
 			)
 		)
 		(net
-			(code "100")
+			(code "83")
 			(name "unconnected-(IC8-VIOC-Pad3)")
 			(class "Default")
 			(node
@@ -11078,7 +12332,7 @@
 			)
 		)
 		(net
-			(code "101")
+			(code "84")
 			(name "unconnected-(IC9-PG-Pad5)")
 			(class "Default")
 			(node
@@ -11089,7 +12343,7 @@
 			)
 		)
 		(net
-			(code "102")
+			(code "85")
 			(name "unconnected-(IC9-VIOC-Pad3)")
 			(class "Default")
 			(node
@@ -11100,7 +12354,7 @@
 			)
 		)
 		(net
-			(code "103")
+			(code "86")
 			(name "unconnected-(IC10-NC-Pad4)")
 			(class "Default")
 			(node
