@@ -74,7 +74,7 @@
 11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.
 
 12)	CONFIRM SPACE WIDTHS AND SPACINGS.</textvar>
-    <textvar name="GIT_HASH_PCB">04dd92c</textvar>
+    <textvar name="GIT_HASH_PCB">9f53c40</textvar>
     <textvar name="GIT_HASH_SCH">04dd92c</textvar>
     <textvar name="GIT_URL">https://github.com/foukouda/OPEN_PHASE</textvar>
     <textvar name="PROJECT_NAME">OPEN_PHASE</textvar>
@@ -110,6 +110,10 @@ Added
 
 -   Test points TP1-TP16
 
+-   4x rail indicator LED (D1, D3-D5), about 1 mA each
+
+-   Silkscreen: rail names at the LEDs, test point tags, OSHW logo
+
 ___________________________________
 
 Changed
@@ -131,8 +135,8 @@ Changed
 -   IC1 AGND pin 26, REFGND pin 46 to GND
 
 -   IC8, IC9: thermal vias on exposed pad 13</textvar>
-    <textvar name="RELEASE_DATE">19-Oct-2026</textvar>
-    <textvar name="RELEASE_DATE_NUM">2026-10-19</textvar>
+    <textvar name="RELEASE_DATE">23-Oct-2026</textvar>
+    <textvar name="RELEASE_DATE_NUM">2026-10-23</textvar>
     <textvar name="RELEASE_TITLE_1.0.0"/>
     <textvar name="RELEASE_TITLE_1.0.1"/>
     <textvar name="RELEASE_TITLE_1.0.2"/>
@@ -3283,6 +3287,114 @@ Changed
         </unit>
       </units>
     </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <description>Light emitting diode</description>
+      <fields>
+        <field name="Sim.Pins">1=K 2=A</field>
+        <field name="Footprint">LED_SMD:LED_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Light emitting diode</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sim.Pins" value="1=K 2=A"/>
+      <property name="Sheetname" value="Connectors"/>
+      <property name="Sheetfile" value="Connectors.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/Project Architecture/Connectors/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/"/>
+      <tstamps>6058994e-3352-4118-8503-954da175d259</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D3">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <description>Light emitting diode</description>
+      <fields>
+        <field name="Sim.Pins">1=K 2=A</field>
+        <field name="Footprint">LED_SMD:LED_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Light emitting diode</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sim.Pins" value="1=K 2=A"/>
+      <property name="Sheetname" value="Connectors"/>
+      <property name="Sheetfile" value="Connectors.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/Project Architecture/Connectors/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/"/>
+      <tstamps>4f8656e7-6398-4cd0-8471-aaafd3cde36e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D4">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <description>Light emitting diode</description>
+      <fields>
+        <field name="Sim.Pins">1=K 2=A</field>
+        <field name="Footprint">LED_SMD:LED_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Light emitting diode</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sim.Pins" value="1=K 2=A"/>
+      <property name="Sheetname" value="Connectors"/>
+      <property name="Sheetfile" value="Connectors.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/Project Architecture/Connectors/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/"/>
+      <tstamps>aa22c98a-c331-47ab-8f36-857efff143bc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D5">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <description>Light emitting diode</description>
+      <fields>
+        <field name="Sim.Pins">1=K 2=A</field>
+        <field name="Footprint">LED_SMD:LED_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Light emitting diode</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sim.Pins" value="1=K 2=A"/>
+      <property name="Sheetname" value="Connectors"/>
+      <property name="Sheetfile" value="Connectors.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/Project Architecture/Connectors/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/"/>
+      <tstamps>21e9bdb8-fecb-48af-a255-bbbcae6264ea</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
     <comp ref="J1">
       <value>MR60PW</value>
       <footprint>OPEN_PHASE:MR60PW</footprint>
@@ -3511,6 +3623,106 @@ Changed
         </unit>
       </units>
     </comp>
+    <comp ref="R35">
+      <value>750Ω</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Connectors"/>
+      <property name="Sheetfile" value="Connectors.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/Connectors/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/"/>
+      <tstamps>5eedc231-0364-4ce9-ada5-70c41be21057</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R36">
+      <value>3.3kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Connectors"/>
+      <property name="Sheetfile" value="Connectors.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/Connectors/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/"/>
+      <tstamps>3e706f54-3f30-467c-9365-43c66dab4015</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R37">
+      <value>1.5kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Connectors"/>
+      <property name="Sheetfile" value="Connectors.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/Connectors/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/"/>
+      <tstamps>15355271-1c4c-4424-91cd-fce6785ed30f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R38">
+      <value>4.3kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Connectors"/>
+      <property name="Sheetfile" value="Connectors.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/Connectors/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/"/>
+      <tstamps>86189886-260d-4d15-a9b4-c26f518f442b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
     <comp ref="TP14">
       <value>TestPoint</value>
       <footprint>OPEN_PHASE:TestPoint_Pad_D1.5mm</footprint>
@@ -3640,6 +3852,26 @@ Changed
     </comp>
   </components>
   <libparts>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Light emitting diode</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Device" part="NetTie_2">
       <description>Net tie, 2 pins</description>
       <footprints>
@@ -4172,6 +4404,7 @@ Changed
       <node ref="IC9" pin="10" pinfunction="OUTS_10" pintype="passive"/>
       <node ref="IC9" pin="11" pinfunction="OUT_2_11" pintype="passive"/>
       <node ref="IC9" pin="12" pinfunction="OUT_12" pintype="passive"/>
+      <node ref="R35" pin="2" pintype="passive"/>
       <node ref="TP1" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="TP12" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="TP7" pin="1" pinfunction="1_1" pintype="passive"/>
@@ -4192,6 +4425,7 @@ Changed
       <node ref="IC5" pin="3" pinfunction="VIN_3" pintype="passive"/>
       <node ref="J4" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
       <node ref="L1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R37" pin="2" pintype="passive"/>
       <node ref="TP9" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="3" name="+5VA" class="Default">
@@ -4219,6 +4453,7 @@ Changed
       <node ref="IC8" pin="10" pinfunction="OUTS_10" pintype="passive"/>
       <node ref="IC8" pin="11" pinfunction="OUT_2_11" pintype="passive"/>
       <node ref="IC8" pin="12" pinfunction="OUT_12" pintype="passive"/>
+      <node ref="R36" pin="2" pintype="passive"/>
       <node ref="TP11" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="4" name="+6V" class="Default">
@@ -4239,6 +4474,7 @@ Changed
       <node ref="IC9" pin="2" pinfunction="IN_2_2" pintype="passive"/>
       <node ref="IC9" pin="4" pinfunction="EN/UV_4" pintype="passive"/>
       <node ref="IC9" pin="7" pinfunction="PGFB_7" pintype="passive"/>
+      <node ref="R38" pin="2" pintype="passive"/>
       <node ref="R5" pin="1" pintype="passive"/>
       <node ref="TP10" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
@@ -4420,6 +4656,10 @@ Changed
       <node ref="C5" pin="2" pintype="passive"/>
       <node ref="C8" pin="2" pintype="passive"/>
       <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D3" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D4" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D5" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="H1" pin="1" pinfunction="1_1" pintype="input"/>
       <node ref="H2" pin="1" pinfunction="1_1" pintype="input"/>
       <node ref="H3" pin="1" pinfunction="1_1" pintype="input"/>
@@ -4539,166 +4779,182 @@ Changed
       <node ref="C26" pin="2" pintype="passive"/>
       <node ref="R3" pin="2" pintype="passive"/>
     </net>
-    <net code="48" name="Net-(D2-A)" class="Default">
+    <net code="48" name="Net-(D1-A)" class="Default">
+      <node ref="D1" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="R35" pin="1" pintype="passive"/>
+    </net>
+    <net code="49" name="Net-(D2-A)" class="Default">
       <node ref="D2" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="IC5" pin="14" pinfunction="SW2_14" pintype="passive"/>
       <node ref="IC5" pin="16" pinfunction="SW1_16" pintype="passive"/>
       <node ref="L1" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
-    <net code="49" name="Net-(IC1-REFCAPA)" class="Default">
+    <net code="50" name="Net-(D3-A)" class="Default">
+      <node ref="D3" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="R36" pin="1" pintype="passive"/>
+    </net>
+    <net code="51" name="Net-(D4-A)" class="Default">
+      <node ref="D4" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="R37" pin="1" pintype="passive"/>
+    </net>
+    <net code="52" name="Net-(D5-A)" class="Default">
+      <node ref="D5" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="R38" pin="1" pintype="passive"/>
+    </net>
+    <net code="53" name="Net-(IC1-REFCAPA)" class="Default">
       <node ref="C39" pin="2" pintype="passive"/>
       <node ref="C39" pin="3" pintype="passive"/>
       <node ref="IC1" pin="44" pinfunction="REFCAPA_44" pintype="passive"/>
       <node ref="IC1" pin="45" pinfunction="REFCAPB_45" pintype="passive"/>
     </net>
-    <net code="50" name="Net-(IC1-REGCAP_1)" class="Default">
+    <net code="54" name="Net-(IC1-REGCAP_1)" class="Default">
       <node ref="C37" pin="1" pintype="passive"/>
       <node ref="IC1" pin="36" pinfunction="REGCAP_1_36" pintype="passive"/>
     </net>
-    <net code="51" name="Net-(IC1-REGCAP_2)" class="Default">
+    <net code="55" name="Net-(IC1-REGCAP_2)" class="Default">
       <node ref="C36" pin="1" pintype="passive"/>
       <node ref="IC1" pin="39" pinfunction="REGCAP_2_39" pintype="passive"/>
     </net>
-    <net code="52" name="Net-(IC3-VOUT_F)" class="Default">
+    <net code="56" name="Net-(IC3-VOUT_F)" class="Default">
       <node ref="C12" pin="1" pintype="passive"/>
       <node ref="IC3" pin="6" pinfunction="VOUT_S_6" pintype="passive"/>
       <node ref="IC3" pin="7" pinfunction="VOUT_F_7" pintype="passive"/>
       <node ref="R11" pin="1" pintype="passive"/>
     </net>
-    <net code="53" name="Net-(IC5-SS)" class="Default">
+    <net code="57" name="Net-(IC5-SS)" class="Default">
       <node ref="C24" pin="1" pintype="passive"/>
       <node ref="IC5" pin="11" pinfunction="SS_11" pintype="passive"/>
     </net>
-    <net code="54" name="Net-(IC7-VOUT_F)" class="Default">
+    <net code="58" name="Net-(IC7-VOUT_F)" class="Default">
       <node ref="C8" pin="1" pintype="passive"/>
       <node ref="IC7" pin="6" pinfunction="VOUT_S_6" pintype="passive"/>
       <node ref="IC7" pin="7" pinfunction="VOUT_F_7" pintype="passive"/>
       <node ref="R8" pin="1" pintype="passive"/>
     </net>
-    <net code="55" name="Net-(IC8-SET)" class="Default">
+    <net code="59" name="Net-(IC8-SET)" class="Default">
       <node ref="C13" pin="1" pintype="passive"/>
       <node ref="IC8" pin="8" pinfunction="SET_8" pintype="passive"/>
       <node ref="R14" pin="2" pintype="passive"/>
       <node ref="R8" pin="2" pintype="passive"/>
     </net>
-    <net code="56" name="Net-(IC9-SET)" class="Default">
+    <net code="60" name="Net-(IC9-SET)" class="Default">
       <node ref="C19" pin="1" pintype="passive"/>
       <node ref="IC9" pin="8" pinfunction="SET_8" pintype="passive"/>
       <node ref="R11" pin="2" pintype="passive"/>
       <node ref="R12" pin="1" pintype="passive"/>
     </net>
-    <net code="57" name="Net-(R17-Pad2)" class="Default">
+    <net code="61" name="Net-(R17-Pad2)" class="Default">
       <node ref="R17" pin="2" pintype="passive"/>
       <node ref="R18" pin="2" pintype="passive"/>
       <node ref="Re1" pin="1" pintype="passive"/>
     </net>
-    <net code="58" name="Net-(R22-Pad2)" class="Default">
+    <net code="62" name="Net-(R22-Pad2)" class="Default">
       <node ref="R22" pin="2" pintype="passive"/>
       <node ref="R23" pin="2" pintype="passive"/>
       <node ref="Re2" pin="1" pintype="passive"/>
     </net>
-    <net code="59" name="Net-(R27-Pad2)" class="Default">
+    <net code="63" name="Net-(R27-Pad2)" class="Default">
       <node ref="R27" pin="2" pintype="passive"/>
       <node ref="R28" pin="2" pintype="passive"/>
       <node ref="Re3" pin="1" pintype="passive"/>
     </net>
-    <net code="60" name="Net-(R32-Pad2)" class="Default">
+    <net code="64" name="Net-(R32-Pad2)" class="Default">
       <node ref="R32" pin="2" pintype="passive"/>
       <node ref="R33" pin="2" pintype="passive"/>
       <node ref="Re4" pin="1" pintype="passive"/>
     </net>
-    <net code="61" name="OUT-B" class="Default">
+    <net code="65" name="OUT-B" class="Default">
       <node ref="J5" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R32" pin="1" pintype="passive"/>
       <node ref="R9" pin="4" pinfunction="4_4" pintype="passive"/>
     </net>
-    <net code="62" name="OUT-U" class="Default">
+    <net code="66" name="OUT-U" class="Default">
       <node ref="J2" pin="3" pinfunction="3_3" pintype="passive"/>
       <node ref="R1" pin="4" pinfunction="4_4" pintype="passive"/>
       <node ref="R17" pin="1" pintype="passive"/>
     </net>
-    <net code="63" name="OUT-V" class="Default">
+    <net code="67" name="OUT-V" class="Default">
       <node ref="J2" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R22" pin="1" pintype="passive"/>
       <node ref="R4" pin="4" pinfunction="4_4" pintype="passive"/>
     </net>
-    <net code="64" name="OUT-W" class="Default">
+    <net code="68" name="OUT-W" class="Default">
       <node ref="J2" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="R27" pin="1" pintype="passive"/>
       <node ref="R7" pin="4" pinfunction="4_4" pintype="passive"/>
     </net>
-    <net code="65" name="SHUNT_BAT+" class="Default">
+    <net code="69" name="SHUNT_BAT+" class="Default">
       <node ref="IC10" pin="8" pinfunction="IN+_8" pintype="passive"/>
       <node ref="R9" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="66" name="SHUNT_BAT-" class="Default">
+    <net code="70" name="SHUNT_BAT-" class="Default">
       <node ref="IC10" pin="1" pinfunction="IN-_1" pintype="passive"/>
       <node ref="R9" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
-    <net code="67" name="SHUNT_U+" class="Default">
+    <net code="71" name="SHUNT_U+" class="Default">
       <node ref="IC2" pin="8" pinfunction="IN+_8" pintype="passive"/>
       <node ref="R1" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="68" name="SHUNT_U-" class="Default">
+    <net code="72" name="SHUNT_U-" class="Default">
       <node ref="IC2" pin="1" pinfunction="IN-_1" pintype="passive"/>
       <node ref="R1" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
-    <net code="69" name="SHUNT_V+" class="Default">
+    <net code="73" name="SHUNT_V+" class="Default">
       <node ref="IC4" pin="8" pinfunction="IN+_8" pintype="passive"/>
       <node ref="R4" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="70" name="SHUNT_V-" class="Default">
+    <net code="74" name="SHUNT_V-" class="Default">
       <node ref="IC4" pin="1" pinfunction="IN-_1" pintype="passive"/>
       <node ref="R4" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
-    <net code="71" name="SHUNT_W+" class="Default">
+    <net code="75" name="SHUNT_W+" class="Default">
       <node ref="IC6" pin="8" pinfunction="IN+_8" pintype="passive"/>
       <node ref="R7" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="72" name="SHUNT_W-" class="Default">
+    <net code="76" name="SHUNT_W-" class="Default">
       <node ref="IC6" pin="1" pinfunction="IN-_1" pintype="passive"/>
       <node ref="R7" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
-    <net code="73" name="unconnected-(IC1-DB5/DOUTE-Pad19)" class="Default">
+    <net code="77" name="unconnected-(IC1-DB5/DOUTE-Pad19)" class="Default">
       <node ref="IC1" pin="19" pinfunction="DB5/DOUTE_19" pintype="passive+no_connect"/>
     </net>
-    <net code="74" name="unconnected-(IC1-DB6/DOUTF-Pad20)" class="Default">
+    <net code="78" name="unconnected-(IC1-DB6/DOUTF-Pad20)" class="Default">
       <node ref="IC1" pin="20" pinfunction="DB6/DOUTF_20" pintype="passive+no_connect"/>
     </net>
-    <net code="75" name="unconnected-(IC1-DB7/DOUTG-Pad21)" class="Default">
+    <net code="79" name="unconnected-(IC1-DB7/DOUTG-Pad21)" class="Default">
       <node ref="IC1" pin="21" pinfunction="DB7/DOUTG_21" pintype="passive+no_connect"/>
     </net>
-    <net code="76" name="unconnected-(IC1-DB8/DOUTH-Pad22)" class="Default">
+    <net code="80" name="unconnected-(IC1-DB8/DOUTH-Pad22)" class="Default">
       <node ref="IC1" pin="22" pinfunction="DB8/DOUTH_22" pintype="passive+no_connect"/>
     </net>
-    <net code="77" name="unconnected-(IC2-NC-Pad4)" class="Default">
+    <net code="81" name="unconnected-(IC2-NC-Pad4)" class="Default">
       <node ref="IC2" pin="4" pinfunction="NC_4" pintype="no_connect"/>
     </net>
-    <net code="78" name="unconnected-(IC4-NC-Pad4)" class="Default">
+    <net code="82" name="unconnected-(IC4-NC-Pad4)" class="Default">
       <node ref="IC4" pin="4" pinfunction="NC_4" pintype="no_connect"/>
     </net>
-    <net code="79" name="unconnected-(IC5-NC-Pad6)" class="Default">
+    <net code="83" name="unconnected-(IC5-NC-Pad6)" class="Default">
       <node ref="IC5" pin="6" pinfunction="NC_6" pintype="no_connect"/>
     </net>
-    <net code="80" name="unconnected-(IC5-SYNC/MODE-Pad12)" class="Default">
+    <net code="84" name="unconnected-(IC5-SYNC/MODE-Pad12)" class="Default">
       <node ref="IC5" pin="12" pinfunction="SYNC/MODE_12" pintype="passive+no_connect"/>
     </net>
-    <net code="81" name="unconnected-(IC6-NC-Pad4)" class="Default">
+    <net code="85" name="unconnected-(IC6-NC-Pad4)" class="Default">
       <node ref="IC6" pin="4" pinfunction="NC_4" pintype="no_connect"/>
     </net>
-    <net code="82" name="unconnected-(IC8-PG-Pad5)" class="Default">
+    <net code="86" name="unconnected-(IC8-PG-Pad5)" class="Default">
       <node ref="IC8" pin="5" pinfunction="PG_5" pintype="passive+no_connect"/>
     </net>
-    <net code="83" name="unconnected-(IC8-VIOC-Pad3)" class="Default">
+    <net code="87" name="unconnected-(IC8-VIOC-Pad3)" class="Default">
       <node ref="IC8" pin="3" pinfunction="VIOC_3" pintype="passive+no_connect"/>
     </net>
-    <net code="84" name="unconnected-(IC9-PG-Pad5)" class="Default">
+    <net code="88" name="unconnected-(IC9-PG-Pad5)" class="Default">
       <node ref="IC9" pin="5" pinfunction="PG_5" pintype="passive+no_connect"/>
     </net>
-    <net code="85" name="unconnected-(IC9-VIOC-Pad3)" class="Default">
+    <net code="89" name="unconnected-(IC9-VIOC-Pad3)" class="Default">
       <node ref="IC9" pin="3" pinfunction="VIOC_3" pintype="passive+no_connect"/>
     </net>
-    <net code="86" name="unconnected-(IC10-NC-Pad4)" class="Default">
+    <net code="90" name="unconnected-(IC10-NC-Pad4)" class="Default">
       <node ref="IC10" pin="4" pinfunction="NC_4" pintype="no_connect"/>
     </net>
   </nets>
