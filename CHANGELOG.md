@@ -20,6 +20,8 @@ Keep entries short: the `[Unreleased]` section is printed on the schematic Revis
 -   3D animation (Images/OPEN_PHASE.mp4)
 -   J4 host header 2x8: AD7606C serial, software mode
 -   Test points TP1-TP16
+-   4x rail indicator LED (D1, D3-D5), about 1 mA each
+-   Silkscreen: rail names at the LEDs, test point tags, OSHW logo
 
 ### Changed
 
