@@ -1,7 +1,7 @@
 (export
 	(version "E")
 	(design
-		(source "/tmp/tmp-kibot-net_sch_print-0vnb5fya/OPEN_PHASE.kicad_sch")
+		(source "/tmp/tmp-kibot-net_sch_print-vr_rz8zj/OPEN_PHASE.kicad_sch")
 		(date "Date")
 		(tool "Eeschema 10.0.5-unknown-202607221313~667fa36054~ubuntu25.10.1")
 		(textvar
@@ -15,7 +15,7 @@
 		(textvar
 			(name "FABRICATION_NOTES") "FABRICATION NOTES (UNLESS OTHERWISE SPECIFIED)\n\n1)	FABRICATE PER IPC-6012A CLASS 2.\n\n2)	OUTLINE DEFINED IN SEPARATE GERBER FILE WITH\n	\"Edge_Cuts.GBR\" SUFFIX.\n\n	DIMENSIONS OF CIRCUMSIZED RECTANGLE SHOWN ON THIS\n	DRAWING FOR REFERENCE ONLY.\n\n3)	SEE SEPARATE DRILL FILES WITH \".DRL\" SUFFIX \n	FOR HOLE LOCATIONS.\n\n	SELECTED HOLE LOCATIONS SHOWN ON THIS DRAWING \n	FOR REFERENCE ONLY.\n\n4)	SURFACE FINISH: IMMERSION GOLD\n\n5)	SOLDERMASK ON BOTH SIDES OF THE BOARD SHALL \n	BE LPI, COLOR WHITE.\n\n6)	SILK SCREEN LEGEND TO BE APPLIED PER LAYER \n	STACKUP USING BLACK NON-CONDUCTIVE EPOXY INK.\n\n7)	ALL VIAS ARE TENTED ON BOTH SIDES UNLESS \n	SOLDERMASK OPENED IN GERBER.\n\n8)	VENDOR SHOULD FOLLOW ROHS COMPLIANT PROCESS \n	AND Pb FREE FOR MANUFACTURING\n\n9)	PCB MATERIAL REQUIREMENTS:\n\n	A.	FLAMMABILITY RATING MUST MEET OR EXCEED \n		UL94V-0 REQUIREMENTS.\n	B.	Tg 170 C OR EQUIVALENT.\n	C.	EQUIVALENT MATERIAL SHALL BE RoHS COMPLIANT, \n		HALOGEN FREE AND APPROVED BY OPEN THRUST LAB.\n\n10)	DESIGN GEOMETRY MINIMUM FEATURE SIZES:\n\n	BOARD SIZE				65.050 × 77.500 mm\n	BOARD THICKNESS		1.660 mm\n	TRACE WIDTH			0.200 mm\n	TRACE TO TRACE		0.200 mm\n	MIN. HOLE (PTH)			0.250 mm\n	MIN. HOLE (NPTH)		N/A mm\n	ANNULAR RING			0.150 mm\n	COPPER TO HOLE		0.254 mm\n	COPPER TO EDGE		0.250 mm\n	HOLE TO HOLE			0.254 mm\n\n11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.\n\n12)	CONFIRM SPACE WIDTHS AND SPACINGS.")
 		(textvar
-			(name "GIT_HASH_PCB") "04dd92c")
+			(name "GIT_HASH_PCB") "9f53c40")
 		(textvar
 			(name "GIT_HASH_SCH") "04dd92c")
 		(textvar
@@ -35,11 +35,11 @@
 			(name "RELEASE_BODY_1.1.0")
 		)
 		(textvar
-			(name "RELEASE_BODY_UNRELEASED") "___________________________________\n\nAdded\n\n-   4x PBV 1 mOhm shunt + INA241A2 (20 V/V)\n\n-   4x voltage divider 40.2k / 10k\n\n-   AD7606C-18 ADC, 8 inputs used\n\n-   +3.3V -> LT8362 6 V -> LT3045-1 +5VA / +2.5VA\n\n-   Self-contained libs and 3D models (lib/)\n\n-   LTspice simulations (Simulation/LTspice)\n\n-   Predicted measurement quality (sim 07, 08)\n\n-   openEMS shunt inductance model (Simulation/openEMS)\n\n-   Thermal / current density model (Simulation/Thermal)\n\n-   3D animation (Images/OPEN_PHASE.mp4)\n\n-   J4 host header 2x8: AD7606C serial, software mode\n\n-   Test points TP1-TP16\n\n___________________________________\n\nChanged\n\n-   Renamed to OPEN_PHASE, KiCad 10\n\n-   Sheets named after their function\n\n-   IC3: LTC6655LN-2.5 -> LTC6655-2.5 (pin 6 = VOUT_S)\n\n-   R12: 49.9k -> 24.9k (+2.5VA = 2.500 V)\n\n-   L1: 744373965022 -> WE-MAPI 4030 74438357022 (4.1 x 4.1 mm)\n\n-   Solder mask white, silkscreen black\n\n-   Nets renamed SHUNT_*, INA_*, ADC_*\n\n-   IC1 AGND pin 26, REFGND pin 46 to GND\n\n-   IC8, IC9: thermal vias on exposed pad 13")
+			(name "RELEASE_BODY_UNRELEASED") "___________________________________\n\nAdded\n\n-   4x PBV 1 mOhm shunt + INA241A2 (20 V/V)\n\n-   4x voltage divider 40.2k / 10k\n\n-   AD7606C-18 ADC, 8 inputs used\n\n-   +3.3V -> LT8362 6 V -> LT3045-1 +5VA / +2.5VA\n\n-   Self-contained libs and 3D models (lib/)\n\n-   LTspice simulations (Simulation/LTspice)\n\n-   Predicted measurement quality (sim 07, 08)\n\n-   openEMS shunt inductance model (Simulation/openEMS)\n\n-   Thermal / current density model (Simulation/Thermal)\n\n-   3D animation (Images/OPEN_PHASE.mp4)\n\n-   J4 host header 2x8: AD7606C serial, software mode\n\n-   Test points TP1-TP16\n\n-   4x rail indicator LED (D1, D3-D5), about 1 mA each\n\n-   Silkscreen: rail names at the LEDs, test point tags, OSHW logo\n\n___________________________________\n\nChanged\n\n-   Renamed to OPEN_PHASE, KiCad 10\n\n-   Sheets named after their function\n\n-   IC3: LTC6655LN-2.5 -> LTC6655-2.5 (pin 6 = VOUT_S)\n\n-   R12: 49.9k -> 24.9k (+2.5VA = 2.500 V)\n\n-   L1: 744373965022 -> WE-MAPI 4030 74438357022 (4.1 x 4.1 mm)\n\n-   Solder mask white, silkscreen black\n\n-   Nets renamed SHUNT_*, INA_*, ADC_*\n\n-   IC1 AGND pin 26, REFGND pin 46 to GND\n\n-   IC8, IC9: thermal vias on exposed pad 13")
 		(textvar
-			(name "RELEASE_DATE") "19-Oct-2026")
+			(name "RELEASE_DATE") "23-Oct-2026")
 		(textvar
-			(name "RELEASE_DATE_NUM") "2026-10-19")
+			(name "RELEASE_DATE_NUM") "2026-10-23")
 		(textvar
 			(name "RELEASE_TITLE_1.0.0")
 		)
@@ -7572,6 +7572,270 @@
 			)
 		)
 		(comp
+			(ref "D1")
+			(value "LED")
+			(footprint "LED_SMD:LED_0603_1608Metric")
+			(description "Light emitting diode")
+			(fields
+				(field
+					(name "Sim.Pins") "1=K 2=A")
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "LED_SMD:LED_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Light emitting diode")
+			)
+			(libsource
+				(lib "Device")
+				(part "LED")
+				(description "Light emitting diode")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "1=K 2=A")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "Connectors")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Connectors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "LED diode")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "LED* LED_SMD:* LED_THT:*")
+			)
+			(sheetpath
+				(names "/Project Architecture/Connectors/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/")
+			)
+			(tstamps "6058994e-3352-4118-8503-954da175d259")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D3")
+			(value "LED")
+			(footprint "LED_SMD:LED_0603_1608Metric")
+			(description "Light emitting diode")
+			(fields
+				(field
+					(name "Sim.Pins") "1=K 2=A")
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "LED_SMD:LED_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Light emitting diode")
+			)
+			(libsource
+				(lib "Device")
+				(part "LED")
+				(description "Light emitting diode")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "1=K 2=A")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "Connectors")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Connectors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "LED diode")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "LED* LED_SMD:* LED_THT:*")
+			)
+			(sheetpath
+				(names "/Project Architecture/Connectors/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/")
+			)
+			(tstamps "4f8656e7-6398-4cd0-8471-aaafd3cde36e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D4")
+			(value "LED")
+			(footprint "LED_SMD:LED_0603_1608Metric")
+			(description "Light emitting diode")
+			(fields
+				(field
+					(name "Sim.Pins") "1=K 2=A")
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "LED_SMD:LED_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Light emitting diode")
+			)
+			(libsource
+				(lib "Device")
+				(part "LED")
+				(description "Light emitting diode")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "1=K 2=A")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "Connectors")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Connectors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "LED diode")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "LED* LED_SMD:* LED_THT:*")
+			)
+			(sheetpath
+				(names "/Project Architecture/Connectors/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/")
+			)
+			(tstamps "aa22c98a-c331-47ab-8f36-857efff143bc")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D5")
+			(value "LED")
+			(footprint "LED_SMD:LED_0603_1608Metric")
+			(description "Light emitting diode")
+			(fields
+				(field
+					(name "Sim.Pins") "1=K 2=A")
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "LED_SMD:LED_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Light emitting diode")
+			)
+			(libsource
+				(lib "Device")
+				(part "LED")
+				(description "Light emitting diode")
+			)
+			(property
+				(name "Sim.Pins")
+				(value "1=K 2=A")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "Connectors")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Connectors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "LED diode")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "LED* LED_SMD:* LED_THT:*")
+			)
+			(sheetpath
+				(names "/Project Architecture/Connectors/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/")
+			)
+			(tstamps "21e9bdb8-fecb-48af-a255-bbbcae6264ea")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "J1")
 			(value "MR60PW")
 			(footprint "OPEN_PHASE:MR60PW")
@@ -8129,6 +8393,246 @@
 			)
 		)
 		(comp
+			(ref "R35")
+			(value "750Ω")
+			(footprint "OPEN_PHASE:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "Connectors")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Connectors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Project Architecture/Connectors/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/")
+			)
+			(tstamps "5eedc231-0364-4ce9-ada5-70c41be21057")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R36")
+			(value "3.3kΩ")
+			(footprint "OPEN_PHASE:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "Connectors")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Connectors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Project Architecture/Connectors/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/")
+			)
+			(tstamps "3e706f54-3f30-467c-9365-43c66dab4015")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R37")
+			(value "1.5kΩ")
+			(footprint "OPEN_PHASE:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "Connectors")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Connectors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Project Architecture/Connectors/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/")
+			)
+			(tstamps "15355271-1c4c-4424-91cd-fce6785ed30f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R38")
+			(value "4.3kΩ")
+			(footprint "OPEN_PHASE:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "Connectors")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Connectors.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Project Architecture/Connectors/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/")
+			)
+			(tstamps "86189886-260d-4d15-a9b4-c26f518f442b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "TP14")
 			(value "TestPoint")
 			(footprint "OPEN_PHASE:TestPoint_Pad_D1.5mm")
@@ -8429,6 +8933,44 @@
 	(groups)
 	(variants)
 	(libparts
+		(libpart
+			(lib "Device")
+			(part "LED")
+			(description "Light emitting diode")
+			(footprints
+				(fp "LED*")
+				(fp "LED_SMD:*")
+				(fp "LED_THT:*")
+			)
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "LED")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Light emitting diode")
+				(field
+					(name "Sim.Pins") "1=K 2=A")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "K")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "A")
+					(type "passive")
+				)
+			)
+		)
 		(libpart
 			(lib "Device")
 			(part "NetTie_2")
@@ -9929,6 +10471,11 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "R35")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
 				(ref "TP1")
 				(pin "1")
 				(pinfunction "1_1")
@@ -10036,6 +10583,11 @@
 				(ref "L1")
 				(pin "1")
 				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R37")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -10181,6 +10733,11 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "R36")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
 				(ref "TP11")
 				(pin "1")
 				(pinfunction "1_1")
@@ -10287,6 +10844,11 @@
 				(ref "IC9")
 				(pin "7")
 				(pinfunction "PGFB_7")
+				(pintype "passive")
+			)
+			(node
+				(ref "R38")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
@@ -11080,6 +11642,30 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "D1")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D3")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D4")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D5")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
 				(ref "H1")
 				(pin "1")
 				(pinfunction "1_1")
@@ -11698,6 +12284,22 @@
 		)
 		(net
 			(code "48")
+			(name "Net-(D1-A)")
+			(class "Default")
+			(node
+				(ref "D1")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R35")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "49")
 			(name "Net-(D2-A)")
 			(class "Default")
 			(node
@@ -11726,7 +12328,55 @@
 			)
 		)
 		(net
-			(code "49")
+			(code "50")
+			(name "Net-(D3-A)")
+			(class "Default")
+			(node
+				(ref "D3")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R36")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "51")
+			(name "Net-(D4-A)")
+			(class "Default")
+			(node
+				(ref "D4")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R37")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "52")
+			(name "Net-(D5-A)")
+			(class "Default")
+			(node
+				(ref "D5")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R38")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "53")
 			(name "Net-(IC1-REFCAPA)")
 			(class "Default")
 			(node
@@ -11753,7 +12403,7 @@
 			)
 		)
 		(net
-			(code "50")
+			(code "54")
 			(name "Net-(IC1-REGCAP_1)")
 			(class "Default")
 			(node
@@ -11769,7 +12419,7 @@
 			)
 		)
 		(net
-			(code "51")
+			(code "55")
 			(name "Net-(IC1-REGCAP_2)")
 			(class "Default")
 			(node
@@ -11785,7 +12435,7 @@
 			)
 		)
 		(net
-			(code "52")
+			(code "56")
 			(name "Net-(IC3-VOUT_F)")
 			(class "Default")
 			(node
@@ -11812,7 +12462,7 @@
 			)
 		)
 		(net
-			(code "53")
+			(code "57")
 			(name "Net-(IC5-SS)")
 			(class "Default")
 			(node
@@ -11828,7 +12478,7 @@
 			)
 		)
 		(net
-			(code "54")
+			(code "58")
 			(name "Net-(IC7-VOUT_F)")
 			(class "Default")
 			(node
@@ -11855,7 +12505,7 @@
 			)
 		)
 		(net
-			(code "55")
+			(code "59")
 			(name "Net-(IC8-SET)")
 			(class "Default")
 			(node
@@ -11881,7 +12531,7 @@
 			)
 		)
 		(net
-			(code "56")
+			(code "60")
 			(name "Net-(IC9-SET)")
 			(class "Default")
 			(node
@@ -11907,7 +12557,7 @@
 			)
 		)
 		(net
-			(code "57")
+			(code "61")
 			(name "Net-(R17-Pad2)")
 			(class "Default")
 			(node
@@ -11927,7 +12577,7 @@
 			)
 		)
 		(net
-			(code "58")
+			(code "62")
 			(name "Net-(R22-Pad2)")
 			(class "Default")
 			(node
@@ -11947,7 +12597,7 @@
 			)
 		)
 		(net
-			(code "59")
+			(code "63")
 			(name "Net-(R27-Pad2)")
 			(class "Default")
 			(node
@@ -11967,7 +12617,7 @@
 			)
 		)
 		(net
-			(code "60")
+			(code "64")
 			(name "Net-(R32-Pad2)")
 			(class "Default")
 			(node
@@ -11987,7 +12637,7 @@
 			)
 		)
 		(net
-			(code "61")
+			(code "65")
 			(name "OUT-B")
 			(class "Default")
 			(node
@@ -12009,7 +12659,7 @@
 			)
 		)
 		(net
-			(code "62")
+			(code "66")
 			(name "OUT-U")
 			(class "Default")
 			(node
@@ -12031,7 +12681,7 @@
 			)
 		)
 		(net
-			(code "63")
+			(code "67")
 			(name "OUT-V")
 			(class "Default")
 			(node
@@ -12053,7 +12703,7 @@
 			)
 		)
 		(net
-			(code "64")
+			(code "68")
 			(name "OUT-W")
 			(class "Default")
 			(node
@@ -12075,7 +12725,7 @@
 			)
 		)
 		(net
-			(code "65")
+			(code "69")
 			(name "SHUNT_BAT+")
 			(class "Default")
 			(node
@@ -12092,7 +12742,7 @@
 			)
 		)
 		(net
-			(code "66")
+			(code "70")
 			(name "SHUNT_BAT-")
 			(class "Default")
 			(node
@@ -12109,7 +12759,7 @@
 			)
 		)
 		(net
-			(code "67")
+			(code "71")
 			(name "SHUNT_U+")
 			(class "Default")
 			(node
@@ -12126,7 +12776,7 @@
 			)
 		)
 		(net
-			(code "68")
+			(code "72")
 			(name "SHUNT_U-")
 			(class "Default")
 			(node
@@ -12143,7 +12793,7 @@
 			)
 		)
 		(net
-			(code "69")
+			(code "73")
 			(name "SHUNT_V+")
 			(class "Default")
 			(node
@@ -12160,7 +12810,7 @@
 			)
 		)
 		(net
-			(code "70")
+			(code "74")
 			(name "SHUNT_V-")
 			(class "Default")
 			(node
@@ -12177,7 +12827,7 @@
 			)
 		)
 		(net
-			(code "71")
+			(code "75")
 			(name "SHUNT_W+")
 			(class "Default")
 			(node
@@ -12194,7 +12844,7 @@
 			)
 		)
 		(net
-			(code "72")
+			(code "76")
 			(name "SHUNT_W-")
 			(class "Default")
 			(node
@@ -12211,7 +12861,7 @@
 			)
 		)
 		(net
-			(code "73")
+			(code "77")
 			(name "unconnected-(IC1-DB5{slash}DOUTE-Pad19)")
 			(class "Default")
 			(node
@@ -12222,7 +12872,7 @@
 			)
 		)
 		(net
-			(code "74")
+			(code "78")
 			(name "unconnected-(IC1-DB6{slash}DOUTF-Pad20)")
 			(class "Default")
 			(node
@@ -12233,7 +12883,7 @@
 			)
 		)
 		(net
-			(code "75")
+			(code "79")
 			(name "unconnected-(IC1-DB7{slash}DOUTG-Pad21)")
 			(class "Default")
 			(node
@@ -12244,7 +12894,7 @@
 			)
 		)
 		(net
-			(code "76")
+			(code "80")
 			(name "unconnected-(IC1-DB8{slash}DOUTH-Pad22)")
 			(class "Default")
 			(node
@@ -12255,7 +12905,7 @@
 			)
 		)
 		(net
-			(code "77")
+			(code "81")
 			(name "unconnected-(IC2-NC-Pad4)")
 			(class "Default")
 			(node
@@ -12266,7 +12916,7 @@
 			)
 		)
 		(net
-			(code "78")
+			(code "82")
 			(name "unconnected-(IC4-NC-Pad4)")
 			(class "Default")
 			(node
@@ -12277,7 +12927,7 @@
 			)
 		)
 		(net
-			(code "79")
+			(code "83")
 			(name "unconnected-(IC5-NC-Pad6)")
 			(class "Default")
 			(node
@@ -12288,7 +12938,7 @@
 			)
 		)
 		(net
-			(code "80")
+			(code "84")
 			(name "unconnected-(IC5-SYNC{slash}MODE-Pad12)")
 			(class "Default")
 			(node
@@ -12299,7 +12949,7 @@
 			)
 		)
 		(net
-			(code "81")
+			(code "85")
 			(name "unconnected-(IC6-NC-Pad4)")
 			(class "Default")
 			(node
@@ -12310,7 +12960,7 @@
 			)
 		)
 		(net
-			(code "82")
+			(code "86")
 			(name "unconnected-(IC8-PG-Pad5)")
 			(class "Default")
 			(node
@@ -12321,7 +12971,7 @@
 			)
 		)
 		(net
-			(code "83")
+			(code "87")
 			(name "unconnected-(IC8-VIOC-Pad3)")
 			(class "Default")
 			(node
@@ -12332,7 +12982,7 @@
 			)
 		)
 		(net
-			(code "84")
+			(code "88")
 			(name "unconnected-(IC9-PG-Pad5)")
 			(class "Default")
 			(node
@@ -12343,7 +12993,7 @@
 			)
 		)
 		(net
-			(code "85")
+			(code "89")
 			(name "unconnected-(IC9-VIOC-Pad3)")
 			(class "Default")
 			(node
@@ -12354,7 +13004,7 @@
 			)
 		)
 		(net
-			(code "86")
+			(code "90")
 			(name "unconnected-(IC10-NC-Pad4)")
 			(class "Default")
 			(node
