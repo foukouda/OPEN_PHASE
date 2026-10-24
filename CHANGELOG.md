@@ -34,3 +34,5 @@ Keep entries short: the `[Unreleased]` section is printed on the schematic Revis
 -   Nets renamed SHUNT_*, INA_*, ADC_*
 -   IC1 AGND pin 26, REFGND pin 46 to GND
 -   IC8, IC9: thermal vias on exposed pad 13
+-   Licence: MIT -> CERN-OHL-P v2
+-   README / HTML logo: INGENIERIE FRANCE badge

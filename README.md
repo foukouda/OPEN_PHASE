@@ -17,7 +17,7 @@
     <img alt="CI" src="https://github.com/foukouda/OPEN_PHASE/actions/workflows/ci.yaml/badge.svg?branch=dev">
   </a>
   <a href="LICENSE">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-blue">
+    <img alt="License: CERN-OHL-P v2" src="https://img.shields.io/badge/License-CERN--OHL--P%20v2-blue">
   </a>
   <img alt="KiCad 10" src="https://img.shields.io/badge/KiCad-10-brightgreen">
   <img alt="Status" src="https://img.shields.io/badge/Status-Work%20in%20progress-orange">
@@ -130,6 +130,7 @@ Power chain: **+3.3 V (host) → LT8362 → +6 V → LTC6655 + LT3045-1 → +5VA
 | Parent project | OPEN THRUST LAB |
 | CAD tool | KiCad 10 |
 | Automation tooling | KiBot + GitHub Actions |
+| Hardware licence | CERN-OHL-P v2 |
 | Dimensions | 65.05 × 77.5 mm |
 | Stackup | 4 layers, 1.66 mm, 70 µm outer copper, ENIG |
 | Mounting holes | 4 × M3, connected to GND |
@@ -428,4 +429,17 @@ See [CHANGELOG.md](CHANGELOG.md) (Keep a Changelog format, semantic versioning).
 
 ## LICENSE
 
-See [LICENSE](LICENSE) (MIT).
+The hardware design files in this repository are released under the **CERN Open Hardware Licence Version 2 – Permissive (CERN-OHL-P v2)**. See [LICENSE](LICENSE) for the full licence text.
+
+Copyright 2026 Dimitry Siebert, OPEN THRUST LAB. Source location: <https://github.com/foukouda/OPEN_PHASE>.
+
+Under CERN-OHL-P v2:
+- You may use, study, modify and manufacture this design freely
+- Derivative works do **not** need to remain open source
+- Modified files must carry a notice stating that they were modified, with the date and a short description of the changes
+- The original copyright and licence notices must be preserved
+- The design is provided "as is", without any warranty (section 5 of the licence)
+
+The KiBot configuration and CI workflow come from the KDT_Hierarchical_KiBot template by Nguyen Vincent (MIT licence).
+
+> For more on CERN-OHL licences: [cern-ohl.web.cern.ch](https://cern-ohl.web.cern.ch/)
