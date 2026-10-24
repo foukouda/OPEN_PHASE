@@ -1,4 +1,4 @@
-_local_|2026-10-23|root|Local changes not committed|False|True
+_local_|2026-10-24|root|Local changes not committed|False|True
 9f53c40|2026-10-23|foukouda|Add rail indicator LEDs, test point tags and OSHW logo|True|True
 04dd92c|2026-10-19|foukouda|Wire the AD7606C-18 digital side to host header J4, add test points|True|True
 8ad9441|2026-10-18|foukouda|Restyle schematic sheets, new title block logo, WE-MAPI inductor in simulations|True|False

@@ -1,7 +1,7 @@
 (export
 	(version "E")
 	(design
-		(source "/tmp/tmp-kibot-net_sch_print-y3fwum0g/OPEN_PHASE.kicad_sch")
+		(source "/tmp/tmp-kibot-net_sch_print-0hzwgk42/OPEN_PHASE.kicad_sch")
 		(date "Date")
 		(tool "Eeschema 10.0.5-unknown-202607221313~667fa36054~ubuntu25.10.1")
 		(textvar
@@ -35,11 +35,11 @@
 			(name "RELEASE_BODY_1.1.0")
 		)
 		(textvar
-			(name "RELEASE_BODY_UNRELEASED") "___________________________________\n\nAdded\n\n-   4x PBV 1 mOhm shunt + INA241A2 (20 V/V)\n\n-   4x voltage divider 40.2k / 10k\n\n-   AD7606C-18 ADC, 8 inputs used\n\n-   +3.3V -> LT8362 6 V -> LT3045-1 +5VA / +2.5VA\n\n-   Self-contained libs and 3D models (lib/)\n\n-   LTspice simulations (Simulation/LTspice)\n\n-   Predicted measurement quality (sim 07, 08)\n\n-   openEMS shunt inductance model (Simulation/openEMS)\n\n-   Thermal / current density model (Simulation/Thermal)\n\n-   3D animation (Images/OPEN_PHASE.mp4)\n\n-   J4 host header 2x8: AD7606C serial, software mode\n\n-   Test points TP1-TP16\n\n-   4x rail indicator LED (D1, D3-D5), about 1 mA each\n\n-   Silkscreen: rail names at the LEDs, test point tags, OSHW logo\n\n___________________________________\n\nChanged\n\n-   Renamed to OPEN_PHASE, KiCad 10\n\n-   Sheets named after their function\n\n-   IC3: LTC6655LN-2.5 -> LTC6655-2.5 (pin 6 = VOUT_S)\n\n-   R12: 49.9k -> 24.9k (+2.5VA = 2.500 V)\n\n-   L1: 744373965022 -> WE-MAPI 4030 74438357022 (4.1 x 4.1 mm)\n\n-   Solder mask white, silkscreen black\n\n-   Nets renamed SHUNT_*, INA_*, ADC_*\n\n-   IC1 AGND pin 26, REFGND pin 46 to GND\n\n-   IC8, IC9: thermal vias on exposed pad 13")
+			(name "RELEASE_BODY_UNRELEASED") "___________________________________\n\nAdded\n\n-   4x PBV 1 mOhm shunt + INA241A2 (20 V/V)\n\n-   4x voltage divider 40.2k / 10k\n\n-   AD7606C-18 ADC, 8 inputs used\n\n-   +3.3V -> LT8362 6 V -> LT3045-1 +5VA / +2.5VA\n\n-   Self-contained libs and 3D models (lib/)\n\n-   LTspice simulations (Simulation/LTspice)\n\n-   Predicted measurement quality (sim 07, 08)\n\n-   openEMS shunt inductance model (Simulation/openEMS)\n\n-   Thermal / current density model (Simulation/Thermal)\n\n-   3D animation (Images/OPEN_PHASE.mp4)\n\n-   J4 host header 2x8: AD7606C serial, software mode\n\n-   Test points TP1-TP16\n\n-   4x rail indicator LED (D1, D3-D5), about 1 mA each\n\n-   Silkscreen: rail names at the LEDs, test point tags, OSHW logo\n\n___________________________________\n\nChanged\n\n-   Renamed to OPEN_PHASE, KiCad 10\n\n-   Sheets named after their function\n\n-   IC3: LTC6655LN-2.5 -> LTC6655-2.5 (pin 6 = VOUT_S)\n\n-   R12: 49.9k -> 24.9k (+2.5VA = 2.500 V)\n\n-   L1: 744373965022 -> WE-MAPI 4030 74438357022 (4.1 x 4.1 mm)\n\n-   Solder mask white, silkscreen black\n\n-   Nets renamed SHUNT_*, INA_*, ADC_*\n\n-   IC1 AGND pin 26, REFGND pin 46 to GND\n\n-   IC8, IC9: thermal vias on exposed pad 13\n\n-   Licence: MIT -> CERN-OHL-P v2\n\n-   README / HTML logo: INGENIERIE FRANCE badge")
 		(textvar
-			(name "RELEASE_DATE") "23-Oct-2026")
+			(name "RELEASE_DATE") "24-Oct-2026")
 		(textvar
-			(name "RELEASE_DATE_NUM") "2026-10-23")
+			(name "RELEASE_DATE_NUM") "2026-10-24")
 		(textvar
 			(name "RELEASE_TITLE_1.0.0")
 		)
