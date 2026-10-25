@@ -74,7 +74,7 @@
 11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.
 
 12)	CONFIRM SPACE WIDTHS AND SPACINGS.</textvar>
-    <textvar name="GIT_HASH_PCB">7a07aa5</textvar>
+    <textvar name="GIT_HASH_PCB">4cc6142</textvar>
     <textvar name="GIT_HASH_SCH">04dd92c</textvar>
     <textvar name="GIT_URL">https://github.com/foukouda/OPEN_PHASE</textvar>
     <textvar name="PROJECT_NAME">OPEN_PHASE</textvar>
@@ -115,6 +115,8 @@ Added
 -   Silkscreen: rail names at the LEDs, test point tags, OSHW logo
 
 -   100 Ohm in series on the 11 J4 lines: RN1, RN2 (4x0603 array, as OPEN_WEIGHT), R39-R41, bottom side
+
+-   100k pull-up on CS (R42), pull-downs on CONVST (R43) and RESET (R44)
 
 ___________________________________
 
@@ -748,6 +750,81 @@ Fixed
       <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/Project Architecture/AD7606C-18_ADC/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
       <tstamps>f09e4d16-ca1b-40a1-b2c1-c9f36bc69f76</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R42">
+      <value>100kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="AD7606C-18_ADC"/>
+      <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/AD7606C-18_ADC/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>5a7639c2-d448-4f30-90a9-56a8854fa3da</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R43">
+      <value>100kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="AD7606C-18_ADC"/>
+      <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/AD7606C-18_ADC/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>7e5c9c29-3a8f-4fcc-a5eb-6f15260a6807</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R44">
+      <value>100kΩ</value>
+      <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Sheetname" value="AD7606C-18_ADC"/>
+      <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Project Architecture/AD7606C-18_ADC/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/"/>
+      <tstamps>29c21d8b-565c-49f5-90a9-b903bb932033</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -4604,6 +4681,7 @@ Fixed
       <node ref="J4" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
       <node ref="L1" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="R37" pin="2" pintype="passive"/>
+      <node ref="R42" pin="1" pintype="passive"/>
       <node ref="TP9" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="3" name="+5VA" class="Default">
@@ -4664,6 +4742,7 @@ Fixed
     <net code="6" name="/Project Architecture/AD7606C-18_ADC/CONVST" class="Default">
       <node ref="IC1" pin="9" pinfunction="CONVST_9" pintype="passive"/>
       <node ref="R39" pin="1" pintype="passive"/>
+      <node ref="R43" pin="1" pintype="passive"/>
       <node ref="TP15" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="7" name="/Project Architecture/AD7606C-18_ADC/DOUTA" class="Default">
@@ -4689,6 +4768,7 @@ Fixed
     <net code="12" name="/Project Architecture/AD7606C-18_ADC/RESET" class="Default">
       <node ref="IC1" pin="11" pinfunction="RESET_11" pintype="passive"/>
       <node ref="R40" pin="1" pintype="passive"/>
+      <node ref="R44" pin="1" pintype="passive"/>
     </net>
     <net code="13" name="/Project Architecture/AD7606C-18_ADC/SCLK" class="Default">
       <node ref="IC1" pin="12" pinfunction="~{RD}/SCLK_12" pintype="passive"/>
@@ -4700,6 +4780,7 @@ Fixed
     </net>
     <net code="15" name="/Project Architecture/AD7606C-18_ADC/~{CS}" class="Default">
       <node ref="IC1" pin="13" pinfunction="~{CS}_13" pintype="passive"/>
+      <node ref="R42" pin="2" pintype="passive"/>
       <node ref="RN1" pin="3" pinfunction="R3.1_3" pintype="passive"/>
     </net>
     <net code="16" name="/Project Architecture/Power_Supply/FBX" class="Default">
@@ -4950,6 +5031,8 @@ Fixed
       <node ref="R31" pin="1" pintype="passive"/>
       <node ref="R33" pin="1" pintype="passive"/>
       <node ref="R34" pin="1" pintype="passive"/>
+      <node ref="R43" pin="2" pintype="passive"/>
+      <node ref="R44" pin="2" pintype="passive"/>
       <node ref="R6" pin="2" pintype="passive"/>
       <node ref="TP13" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="TP14" pin="1" pinfunction="1_1" pintype="passive"/>
