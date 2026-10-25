@@ -1,0 +1,10 @@
+OPEN_PHASE|OPEN_PHASE.kicad_sch||OPEN_PHASE|OPEN_PHASE
+Block Diagram|Block Diagram.kicad_sch||Block Diagram|OPEN_PHASE-Block Diagram
+Power - Sequencing|Power - Sequencing.kicad_sch||Power - Sequencing|OPEN_PHASE-Power - Sequencing
+Project Architecture|Project Architecture.kicad_sch||Project Architecture|OPEN_PHASE-Project Architecture
+AD7606C-18 - ADC|AD7606C-18 - ADC.kicad_sch||AD7606C-18_ADC|OPEN_PHASE-Project Architecture-AD7606C-18_ADC
+Connectors|Connectors.kicad_sch||Connectors|OPEN_PHASE-Project Architecture-Connectors
+Holes - Fiducials|Holes - Fiducials.kicad_sch||Holes, Fiducials|OPEN_PHASE-Project Architecture-Holes, Fiducials
+INA241 - Phase Sensing|INA241 - Phase Sensing.kicad_sch||INA241_Phase_Sense|OPEN_PHASE-Project Architecture-INA241_Phase_Sense
+Power Supply - Analog Rails|Power Supply - Analog Rails.kicad_sch||Power_Supply|OPEN_PHASE-Project Architecture-Power_Supply
+Revision History|Revision History.kicad_sch||Revision History|OPEN_PHASE-Revision History

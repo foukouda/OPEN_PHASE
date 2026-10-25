@@ -1,7 +1,7 @@
 (export
 	(version "E")
 	(design
-		(source "/tmp/tmp-kibot-net_sch_print-8r0jp__9/OPEN_PHASE.kicad_sch")
+		(source "/tmp/tmp-kibot-net_sch_print-rr9_fivr/OPEN_PHASE.kicad_sch")
 		(date "Date")
 		(tool "Eeschema 10.0.5-unknown-202607221313~667fa36054~ubuntu25.10.1")
 		(textvar
@@ -15,7 +15,7 @@
 		(textvar
 			(name "FABRICATION_NOTES") "FABRICATION NOTES (UNLESS OTHERWISE SPECIFIED)\n\n1)	FABRICATE PER IPC-6012A CLASS 2.\n\n2)	OUTLINE DEFINED IN SEPARATE GERBER FILE WITH\n	\"Edge_Cuts.GBR\" SUFFIX.\n\n	DIMENSIONS OF CIRCUMSIZED RECTANGLE SHOWN ON THIS\n	DRAWING FOR REFERENCE ONLY.\n\n3)	SEE SEPARATE DRILL FILES WITH \".DRL\" SUFFIX \n	FOR HOLE LOCATIONS.\n\n	SELECTED HOLE LOCATIONS SHOWN ON THIS DRAWING \n	FOR REFERENCE ONLY.\n\n4)	SURFACE FINISH: IMMERSION GOLD\n\n5)	SOLDERMASK ON BOTH SIDES OF THE BOARD SHALL \n	BE LPI, COLOR WHITE.\n\n6)	SILK SCREEN LEGEND TO BE APPLIED PER LAYER \n	STACKUP USING BLACK NON-CONDUCTIVE EPOXY INK.\n\n7)	ALL VIAS ARE TENTED ON BOTH SIDES UNLESS \n	SOLDERMASK OPENED IN GERBER.\n\n8)	VENDOR SHOULD FOLLOW ROHS COMPLIANT PROCESS \n	AND Pb FREE FOR MANUFACTURING\n\n9)	PCB MATERIAL REQUIREMENTS:\n\n	A.	FLAMMABILITY RATING MUST MEET OR EXCEED \n		UL94V-0 REQUIREMENTS.\n	B.	Tg 170 C OR EQUIVALENT.\n	C.	EQUIVALENT MATERIAL SHALL BE RoHS COMPLIANT, \n		HALOGEN FREE AND APPROVED BY OPEN THRUST LAB.\n\n10)	DESIGN GEOMETRY MINIMUM FEATURE SIZES:\n\n	BOARD SIZE				65.050 × 77.500 mm\n	BOARD THICKNESS		1.660 mm\n	TRACE WIDTH			0.200 mm\n	TRACE TO TRACE		0.200 mm\n	MIN. HOLE (PTH)			0.250 mm\n	MIN. HOLE (NPTH)		N/A mm\n	ANNULAR RING			0.150 mm\n	COPPER TO HOLE		0.254 mm\n	COPPER TO EDGE		0.250 mm\n	HOLE TO HOLE			0.254 mm\n\n11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.\n\n12)	CONFIRM SPACE WIDTHS AND SPACINGS.")
 		(textvar
-			(name "GIT_HASH_PCB") "9f53c40")
+			(name "GIT_HASH_PCB") "7a07aa5")
 		(textvar
 			(name "GIT_HASH_SCH") "04dd92c")
 		(textvar
@@ -35,11 +35,11 @@
 			(name "RELEASE_BODY_1.1.0")
 		)
 		(textvar
-			(name "RELEASE_BODY_UNRELEASED") "___________________________________\n\nAdded\n\n-   4x PBV 1 mOhm shunt + INA241A2 (20 V/V)\n\n-   4x voltage divider 40.2k / 10k\n\n-   AD7606C-18 ADC, 8 inputs used\n\n-   +3.3V -> LT8362 6 V -> LT3045-1 +5VA / +2.5VA\n\n-   Self-contained libs and 3D models (lib/)\n\n-   LTspice simulations (Simulation/LTspice)\n\n-   Predicted measurement quality (sim 07, 08)\n\n-   openEMS shunt inductance model (Simulation/openEMS)\n\n-   Thermal / current density model (Simulation/Thermal)\n\n-   3D animation (Images/OPEN_PHASE.mp4)\n\n-   J4 host header 2x8: AD7606C serial, software mode\n\n-   Test points TP1-TP16\n\n-   4x rail indicator LED (D1, D3-D5), about 1 mA each\n\n-   Silkscreen: rail names at the LEDs, test point tags, OSHW logo\n\n___________________________________\n\nChanged\n\n-   Renamed to OPEN_PHASE, KiCad 10\n\n-   Sheets named after their function\n\n-   IC3: LTC6655LN-2.5 -> LTC6655-2.5 (pin 6 = VOUT_S)\n\n-   R12: 49.9k -> 24.9k (+2.5VA = 2.500 V)\n\n-   L1: 744373965022 -> WE-MAPI 4030 74438357022 (4.1 x 4.1 mm)\n\n-   Solder mask white, silkscreen black\n\n-   Nets renamed SHUNT_*, INA_*, ADC_*\n\n-   IC1 AGND pin 26, REFGND pin 46 to GND\n\n-   IC8, IC9: thermal vias on exposed pad 13\n\n-   Licence: MIT -> CERN-OHL-P v2\n\n-   README / HTML logo: INGENIERIE FRANCE badge")
+			(name "RELEASE_BODY_UNRELEASED") "___________________________________\n\nAdded\n\n-   4x PBV 1 mOhm shunt + INA241A2 (20 V/V)\n\n-   4x voltage divider 40.2k / 10k\n\n-   AD7606C-18 ADC, 8 inputs used\n\n-   +3.3V -> LT8362 6 V -> LT3045-1 +5VA / +2.5VA\n\n-   Self-contained libs and 3D models (lib/)\n\n-   LTspice simulations (Simulation/LTspice)\n\n-   Predicted measurement quality (sim 07, 08)\n\n-   openEMS shunt inductance model (Simulation/openEMS)\n\n-   Thermal / current density model (Simulation/Thermal)\n\n-   3D animation (Images/OPEN_PHASE.mp4)\n\n-   J4 host header 2x8: AD7606C serial, software mode\n\n-   Test points TP1-TP16\n\n-   4x rail indicator LED (D1, D3-D5), about 1 mA each\n\n-   Silkscreen: rail names at the LEDs, test point tags, OSHW logo\n\n-   100 Ohm in series on the 11 J4 lines: RN1, RN2 (4x0603 array, as OPEN_WEIGHT), R39-R41, bottom side\n\n___________________________________\n\nChanged\n\n-   Renamed to OPEN_PHASE, KiCad 10\n\n-   Sheets named after their function\n\n-   IC3: LTC6655LN-2.5 -> LTC6655-2.5 (pin 6 = VOUT_S)\n\n-   R12: 49.9k -> 24.9k (+2.5VA = 2.500 V)\n\n-   L1: 744373965022 -> WE-MAPI 4030 74438357022 (4.1 x 4.1 mm)\n\n-   Solder mask white, silkscreen black\n\n-   Nets renamed SHUNT_*, INA_*, ADC_*\n\n-   IC1 AGND pin 26, REFGND pin 46 to GND\n\n-   IC8, IC9: thermal vias on exposed pad 13\n\n-   Licence: MIT -> CERN-OHL-P v2\n\n-   README / HTML logo: INGENIERIE FRANCE badge\n\n-   TP15 / TP16 on the AD7606C side of the series resistors\n\n___________________________________\n\nFixed\n\n-   +5VA via of R36 sat on the ADC_~{CS} track (short): bus rerouted around it")
 		(textvar
-			(name "RELEASE_DATE") "24-Oct-2026")
+			(name "RELEASE_DATE") "25-Oct-2026")
 		(textvar
-			(name "RELEASE_DATE_NUM") "2026-10-24")
+			(name "RELEASE_DATE_NUM") "2026-10-25")
 		(textvar
 			(name "RELEASE_TITLE_1.0.0")
 		)
@@ -1375,6 +1375,330 @@
 						)
 						(pin
 							(num "33")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R39")
+			(value "100Ω")
+			(footprint "OPEN_PHASE:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "AD7606C-18_ADC")
+			)
+			(property
+				(name "Sheetfile")
+				(value "AD7606C-18 - ADC.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Project Architecture/AD7606C-18_ADC/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/")
+			)
+			(tstamps "8c072639-c798-499b-9858-2d41be3fc6ef")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R40")
+			(value "100Ω")
+			(footprint "OPEN_PHASE:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "AD7606C-18_ADC")
+			)
+			(property
+				(name "Sheetfile")
+				(value "AD7606C-18 - ADC.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Project Architecture/AD7606C-18_ADC/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/")
+			)
+			(tstamps "b9940cfa-2b55-4654-b58f-e6f2b08642ba")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R41")
+			(value "100Ω")
+			(footprint "OPEN_PHASE:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
+				(field
+					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "KiLib_Generator")
+				(value "SMD_2terminal_chip_molded")
+			)
+			(property
+				(name "Sheetname")
+				(value "AD7606C-18_ADC")
+			)
+			(property
+				(name "Sheetfile")
+				(value "AD7606C-18 - ADC.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Project Architecture/AD7606C-18_ADC/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/")
+			)
+			(tstamps "f09e4d16-ca1b-40a1-b2c1-c9f36bc69f76")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "RN1")
+			(value "RP_100Ω")
+			(footprint "OPEN_PHASE:R_Array_Concave_4x0603")
+			(description "4 resistor network, parallel topology")
+			(fields
+				(field
+					(name "Footprint") "OPEN_PHASE:R_Array_Concave_4x0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "4 resistor network, parallel topology")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "R_Pack04")
+				(description "4 resistor network, parallel topology")
+			)
+			(property
+				(name "Sheetname")
+				(value "AD7606C-18_ADC")
+			)
+			(property
+				(name "Sheetfile")
+				(value "AD7606C-18 - ADC.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R network parallel topology isolated")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "DIP* SOIC* R*Array*Concave* R*Array*Convex* MSOP*")
+			)
+			(sheetpath
+				(names "/Project Architecture/AD7606C-18_ADC/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/")
+			)
+			(tstamps "884ccf3f-7bc4-427d-a03d-cdec9909e199")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "RN2")
+			(value "RP_100Ω")
+			(footprint "OPEN_PHASE:R_Array_Concave_4x0603")
+			(description "4 resistor network, parallel topology")
+			(fields
+				(field
+					(name "Footprint") "OPEN_PHASE:R_Array_Concave_4x0603")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "4 resistor network, parallel topology")
+			)
+			(libsource
+				(lib "OPEN_PHASE")
+				(part "R_Pack04")
+				(description "4 resistor network, parallel topology")
+			)
+			(property
+				(name "Sheetname")
+				(value "AD7606C-18_ADC")
+			)
+			(property
+				(name "Sheetfile")
+				(value "AD7606C-18 - ADC.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R network parallel topology isolated")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "DIP* SOIC* R*Array*Concave* R*Array*Convex* MSOP*")
+			)
+			(sheetpath
+				(names "/Project Architecture/AD7606C-18_ADC/")
+				(tstamps "/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/")
+			)
+			(tstamps "3b3e10e3-8ca8-478c-860c-6657dee4c44e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "4")
 						)
 					)
 				)
@@ -10227,6 +10551,74 @@
 		)
 		(libpart
 			(lib "OPEN_PHASE")
+			(part "R_Pack04")
+			(description "4 resistor network, parallel topology")
+			(footprints
+				(fp "DIP*")
+				(fp "SOIC*")
+				(fp "R*Array*Concave*")
+				(fp "R*Array*Convex*")
+				(fp "MSOP*")
+			)
+			(fields
+				(field
+					(name "Reference") "RN")
+				(field
+					(name "Value") "R_Pack04")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "4 resistor network, parallel topology")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "R1.1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "R2.1")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "R3.1")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "R4.1")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "R4.2")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "R3.2")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "R2.2")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "R1.2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "OPEN_PHASE")
 			(part "TestPoint")
 			(description "test point")
 			(footprints
@@ -10865,6 +11257,202 @@
 		)
 		(net
 			(code "5")
+			(name "/Project Architecture/AD7606C-18_ADC/BUSY")
+			(class "Default")
+			(node
+				(ref "IC1")
+				(pin "14")
+				(pinfunction "BUSY_14")
+				(pintype "passive")
+			)
+			(node
+				(ref "RN1")
+				(pin "4")
+				(pinfunction "R4.1_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP16")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "6")
+			(name "/Project Architecture/AD7606C-18_ADC/CONVST")
+			(class "Default")
+			(node
+				(ref "IC1")
+				(pin "9")
+				(pinfunction "CONVST_9")
+				(pintype "passive")
+			)
+			(node
+				(ref "R39")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP15")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "7")
+			(name "/Project Architecture/AD7606C-18_ADC/DOUTA")
+			(class "Default")
+			(node
+				(ref "IC1")
+				(pin "24")
+				(pinfunction "DB9/DOUTA_24")
+				(pintype "passive")
+			)
+			(node
+				(ref "RN2")
+				(pin "4")
+				(pinfunction "R4.1_4")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "8")
+			(name "/Project Architecture/AD7606C-18_ADC/DOUTB")
+			(class "Default")
+			(node
+				(ref "IC1")
+				(pin "25")
+				(pinfunction "DB10/DOUTB_25")
+				(pintype "passive")
+			)
+			(node
+				(ref "RN2")
+				(pin "3")
+				(pinfunction "R3.1_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "9")
+			(name "/Project Architecture/AD7606C-18_ADC/DOUTC")
+			(class "Default")
+			(node
+				(ref "IC1")
+				(pin "27")
+				(pinfunction "DB11/DOUTC_27")
+				(pintype "passive")
+			)
+			(node
+				(ref "RN2")
+				(pin "2")
+				(pinfunction "R2.1_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "10")
+			(name "/Project Architecture/AD7606C-18_ADC/DOUTD")
+			(class "Default")
+			(node
+				(ref "IC1")
+				(pin "28")
+				(pinfunction "DB12/DOUTD_28")
+				(pintype "passive")
+			)
+			(node
+				(ref "RN2")
+				(pin "1")
+				(pinfunction "R1.1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "11")
+			(name "/Project Architecture/AD7606C-18_ADC/FRSTDATA")
+			(class "Default")
+			(node
+				(ref "IC1")
+				(pin "15")
+				(pinfunction "FRSTDATA_15")
+				(pintype "passive")
+			)
+			(node
+				(ref "RN1")
+				(pin "1")
+				(pinfunction "R1.1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "12")
+			(name "/Project Architecture/AD7606C-18_ADC/RESET")
+			(class "Default")
+			(node
+				(ref "IC1")
+				(pin "11")
+				(pinfunction "RESET_11")
+				(pintype "passive")
+			)
+			(node
+				(ref "R40")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "13")
+			(name "/Project Architecture/AD7606C-18_ADC/SCLK")
+			(class "Default")
+			(node
+				(ref "IC1")
+				(pin "12")
+				(pinfunction "~{RD}/SCLK_12")
+				(pintype "passive")
+			)
+			(node
+				(ref "RN1")
+				(pin "2")
+				(pinfunction "R2.1_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "14")
+			(name "/Project Architecture/AD7606C-18_ADC/SDI")
+			(class "Default")
+			(node
+				(ref "IC1")
+				(pin "29")
+				(pinfunction "DB13/SDI_29")
+				(pintype "passive")
+			)
+			(node
+				(ref "R41")
+				(pin "1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "15")
+			(name "/Project Architecture/AD7606C-18_ADC/~{CS}")
+			(class "Default")
+			(node
+				(ref "IC1")
+				(pin "13")
+				(pinfunction "~{CS}_13")
+				(pintype "passive")
+			)
+			(node
+				(ref "RN1")
+				(pin "3")
+				(pinfunction "R3.1_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "16")
 			(name "/Project Architecture/Power_Supply/FBX")
 			(class "Default")
 			(node
@@ -10890,7 +11478,7 @@
 			)
 		)
 		(net
-			(code "6")
+			(code "17")
 			(name "/Project Architecture/Power_Supply/INTVCC")
 			(class "Default")
 			(node
@@ -10906,7 +11494,7 @@
 			)
 		)
 		(net
-			(code "7")
+			(code "18")
 			(name "/Project Architecture/Power_Supply/RT")
 			(class "Default")
 			(node
@@ -10922,7 +11510,7 @@
 			)
 		)
 		(net
-			(code "9")
+			(code "20")
 			(name "/Project Architecture/Power_Supply/VC")
 			(class "Default")
 			(node
@@ -10938,7 +11526,7 @@
 			)
 		)
 		(net
-			(code "10")
+			(code "21")
 			(name "ADC_BAT_I+")
 			(class "Default")
 			(node
@@ -10959,7 +11547,7 @@
 			)
 		)
 		(net
-			(code "11")
+			(code "22")
 			(name "ADC_BAT_I-")
 			(class "Default")
 			(node
@@ -10980,7 +11568,7 @@
 			)
 		)
 		(net
-			(code "12")
+			(code "23")
 			(name "ADC_BAT_V+")
 			(class "Default")
 			(node
@@ -11001,7 +11589,7 @@
 			)
 		)
 		(net
-			(code "13")
+			(code "24")
 			(name "ADC_BAT_V-")
 			(class "Default")
 			(node
@@ -11022,15 +11610,9 @@
 			)
 		)
 		(net
-			(code "14")
+			(code "25")
 			(name "ADC_BUSY")
 			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "14")
-				(pinfunction "BUSY_14")
-				(pintype "passive")
-			)
 			(node
 				(ref "J4")
 				(pin "5")
@@ -11038,22 +11620,16 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "TP16")
-				(pin "1")
-				(pinfunction "1_1")
+				(ref "RN1")
+				(pin "5")
+				(pinfunction "R4.2_5")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "15")
+			(code "26")
 			(name "ADC_CONVST")
 			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "9")
-				(pinfunction "CONVST_9")
-				(pintype "passive")
-			)
 			(node
 				(ref "J4")
 				(pin "3")
@@ -11061,150 +11637,147 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "TP15")
-				(pin "1")
-				(pinfunction "1_1")
+				(ref "R39")
+				(pin "2")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "16")
+			(code "27")
 			(name "ADC_DOUTA")
 			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "24")
-				(pinfunction "DB9/DOUTA_24")
-				(pintype "passive")
-			)
 			(node
 				(ref "J4")
 				(pin "13")
 				(pinfunction "Pin_13_13")
 				(pintype "passive")
 			)
-		)
-		(net
-			(code "17")
-			(name "ADC_DOUTB")
-			(class "Default")
 			(node
-				(ref "IC1")
-				(pin "25")
-				(pinfunction "DB10/DOUTB_25")
+				(ref "RN2")
+				(pin "5")
+				(pinfunction "R4.2_5")
 				(pintype "passive")
 			)
+		)
+		(net
+			(code "28")
+			(name "ADC_DOUTB")
+			(class "Default")
 			(node
 				(ref "J4")
 				(pin "14")
 				(pinfunction "Pin_14_14")
 				(pintype "passive")
 			)
-		)
-		(net
-			(code "18")
-			(name "ADC_DOUTC")
-			(class "Default")
 			(node
-				(ref "IC1")
-				(pin "27")
-				(pinfunction "DB11/DOUTC_27")
+				(ref "RN2")
+				(pin "6")
+				(pinfunction "R3.2_6")
 				(pintype "passive")
 			)
+		)
+		(net
+			(code "29")
+			(name "ADC_DOUTC")
+			(class "Default")
 			(node
 				(ref "J4")
 				(pin "15")
 				(pinfunction "Pin_15_15")
 				(pintype "passive")
 			)
-		)
-		(net
-			(code "19")
-			(name "ADC_DOUTD")
-			(class "Default")
 			(node
-				(ref "IC1")
-				(pin "28")
-				(pinfunction "DB12/DOUTD_28")
+				(ref "RN2")
+				(pin "7")
+				(pinfunction "R2.2_7")
 				(pintype "passive")
 			)
+		)
+		(net
+			(code "30")
+			(name "ADC_DOUTD")
+			(class "Default")
 			(node
 				(ref "J4")
 				(pin "16")
 				(pinfunction "Pin_16_16")
 				(pintype "passive")
 			)
-		)
-		(net
-			(code "20")
-			(name "ADC_FRSTDATA")
-			(class "Default")
 			(node
-				(ref "IC1")
-				(pin "15")
-				(pinfunction "FRSTDATA_15")
+				(ref "RN2")
+				(pin "8")
+				(pinfunction "R1.2_8")
 				(pintype "passive")
 			)
+		)
+		(net
+			(code "31")
+			(name "ADC_FRSTDATA")
+			(class "Default")
 			(node
 				(ref "J4")
 				(pin "12")
 				(pinfunction "Pin_12_12")
 				(pintype "passive")
 			)
-		)
-		(net
-			(code "21")
-			(name "ADC_RESET")
-			(class "Default")
 			(node
-				(ref "IC1")
-				(pin "11")
-				(pinfunction "RESET_11")
+				(ref "RN1")
+				(pin "8")
+				(pinfunction "R1.2_8")
 				(pintype "passive")
 			)
+		)
+		(net
+			(code "32")
+			(name "ADC_RESET")
+			(class "Default")
 			(node
 				(ref "J4")
 				(pin "6")
 				(pinfunction "Pin_6_6")
 				(pintype "passive")
 			)
-		)
-		(net
-			(code "22")
-			(name "ADC_SCLK")
-			(class "Default")
 			(node
-				(ref "IC1")
-				(pin "12")
-				(pinfunction "~{RD}/SCLK_12")
+				(ref "R40")
+				(pin "2")
 				(pintype "passive")
 			)
+		)
+		(net
+			(code "33")
+			(name "ADC_SCLK")
+			(class "Default")
 			(node
 				(ref "J4")
 				(pin "9")
 				(pinfunction "Pin_9_9")
 				(pintype "passive")
 			)
-		)
-		(net
-			(code "23")
-			(name "ADC_SDI")
-			(class "Default")
 			(node
-				(ref "IC1")
-				(pin "29")
-				(pinfunction "DB13/SDI_29")
+				(ref "RN1")
+				(pin "7")
+				(pinfunction "R2.2_7")
 				(pintype "passive")
 			)
+		)
+		(net
+			(code "34")
+			(name "ADC_SDI")
+			(class "Default")
 			(node
 				(ref "J4")
 				(pin "11")
 				(pinfunction "Pin_11_11")
 				(pintype "passive")
 			)
+			(node
+				(ref "R41")
+				(pin "2")
+				(pintype "passive")
+			)
 		)
 		(net
-			(code "24")
+			(code "35")
 			(name "ADC_U_I+")
 			(class "Default")
 			(node
@@ -11225,7 +11798,7 @@
 			)
 		)
 		(net
-			(code "25")
+			(code "36")
 			(name "ADC_U_I-")
 			(class "Default")
 			(node
@@ -11246,7 +11819,7 @@
 			)
 		)
 		(net
-			(code "26")
+			(code "37")
 			(name "ADC_U_V+")
 			(class "Default")
 			(node
@@ -11267,7 +11840,7 @@
 			)
 		)
 		(net
-			(code "27")
+			(code "38")
 			(name "ADC_U_V-")
 			(class "Default")
 			(node
@@ -11288,7 +11861,7 @@
 			)
 		)
 		(net
-			(code "28")
+			(code "39")
 			(name "ADC_V_I+")
 			(class "Default")
 			(node
@@ -11309,7 +11882,7 @@
 			)
 		)
 		(net
-			(code "29")
+			(code "40")
 			(name "ADC_V_I-")
 			(class "Default")
 			(node
@@ -11330,7 +11903,7 @@
 			)
 		)
 		(net
-			(code "30")
+			(code "41")
 			(name "ADC_V_V+")
 			(class "Default")
 			(node
@@ -11351,7 +11924,7 @@
 			)
 		)
 		(net
-			(code "31")
+			(code "42")
 			(name "ADC_V_V-")
 			(class "Default")
 			(node
@@ -11372,7 +11945,7 @@
 			)
 		)
 		(net
-			(code "32")
+			(code "43")
 			(name "ADC_W_I+")
 			(class "Default")
 			(node
@@ -11393,7 +11966,7 @@
 			)
 		)
 		(net
-			(code "33")
+			(code "44")
 			(name "ADC_W_I-")
 			(class "Default")
 			(node
@@ -11414,7 +11987,7 @@
 			)
 		)
 		(net
-			(code "34")
+			(code "45")
 			(name "ADC_W_V+")
 			(class "Default")
 			(node
@@ -11435,7 +12008,7 @@
 			)
 		)
 		(net
-			(code "35")
+			(code "46")
 			(name "ADC_W_V-")
 			(class "Default")
 			(node
@@ -11456,24 +12029,24 @@
 			)
 		)
 		(net
-			(code "36")
+			(code "47")
 			(name "ADC_~{CS}")
 			(class "Default")
-			(node
-				(ref "IC1")
-				(pin "13")
-				(pinfunction "~{CS}_13")
-				(pintype "passive")
-			)
 			(node
 				(ref "J4")
 				(pin "7")
 				(pinfunction "Pin_7_7")
 				(pintype "passive")
 			)
+			(node
+				(ref "RN1")
+				(pin "6")
+				(pinfunction "R3.2_6")
+				(pintype "passive")
+			)
 		)
 		(net
-			(code "37")
+			(code "48")
 			(name "GND")
 			(class "GND")
 			(node
@@ -12089,7 +12662,7 @@
 			)
 		)
 		(net
-			(code "38")
+			(code "49")
 			(name "GND1")
 			(class "Default")
 			(node
@@ -12112,7 +12685,7 @@
 			)
 		)
 		(net
-			(code "39")
+			(code "50")
 			(name "IN-B")
 			(class "Default")
 			(node
@@ -12129,7 +12702,7 @@
 			)
 		)
 		(net
-			(code "40")
+			(code "51")
 			(name "IN-U")
 			(class "Default")
 			(node
@@ -12146,7 +12719,7 @@
 			)
 		)
 		(net
-			(code "41")
+			(code "52")
 			(name "IN-V")
 			(class "Default")
 			(node
@@ -12163,7 +12736,7 @@
 			)
 		)
 		(net
-			(code "42")
+			(code "53")
 			(name "IN-W")
 			(class "Default")
 			(node
@@ -12180,7 +12753,7 @@
 			)
 		)
 		(net
-			(code "43")
+			(code "54")
 			(name "INA_BAT")
 			(class "Default")
 			(node
@@ -12202,7 +12775,7 @@
 			)
 		)
 		(net
-			(code "44")
+			(code "55")
 			(name "INA_U")
 			(class "Default")
 			(node
@@ -12224,7 +12797,7 @@
 			)
 		)
 		(net
-			(code "45")
+			(code "56")
 			(name "INA_V")
 			(class "Default")
 			(node
@@ -12246,7 +12819,7 @@
 			)
 		)
 		(net
-			(code "46")
+			(code "57")
 			(name "INA_W")
 			(class "Default")
 			(node
@@ -12268,7 +12841,7 @@
 			)
 		)
 		(net
-			(code "47")
+			(code "58")
 			(name "Net-(C26-Pad2)")
 			(class "Default")
 			(node
@@ -12283,7 +12856,7 @@
 			)
 		)
 		(net
-			(code "48")
+			(code "59")
 			(name "Net-(D1-A)")
 			(class "Default")
 			(node
@@ -12299,7 +12872,7 @@
 			)
 		)
 		(net
-			(code "49")
+			(code "60")
 			(name "Net-(D2-A)")
 			(class "Default")
 			(node
@@ -12328,7 +12901,7 @@
 			)
 		)
 		(net
-			(code "50")
+			(code "61")
 			(name "Net-(D3-A)")
 			(class "Default")
 			(node
@@ -12344,7 +12917,7 @@
 			)
 		)
 		(net
-			(code "51")
+			(code "62")
 			(name "Net-(D4-A)")
 			(class "Default")
 			(node
@@ -12360,7 +12933,7 @@
 			)
 		)
 		(net
-			(code "52")
+			(code "63")
 			(name "Net-(D5-A)")
 			(class "Default")
 			(node
@@ -12376,7 +12949,7 @@
 			)
 		)
 		(net
-			(code "53")
+			(code "64")
 			(name "Net-(IC1-REFCAPA)")
 			(class "Default")
 			(node
@@ -12403,7 +12976,7 @@
 			)
 		)
 		(net
-			(code "54")
+			(code "65")
 			(name "Net-(IC1-REGCAP_1)")
 			(class "Default")
 			(node
@@ -12419,7 +12992,7 @@
 			)
 		)
 		(net
-			(code "55")
+			(code "66")
 			(name "Net-(IC1-REGCAP_2)")
 			(class "Default")
 			(node
@@ -12435,7 +13008,7 @@
 			)
 		)
 		(net
-			(code "56")
+			(code "67")
 			(name "Net-(IC3-VOUT_F)")
 			(class "Default")
 			(node
@@ -12462,7 +13035,7 @@
 			)
 		)
 		(net
-			(code "57")
+			(code "68")
 			(name "Net-(IC5-SS)")
 			(class "Default")
 			(node
@@ -12478,7 +13051,7 @@
 			)
 		)
 		(net
-			(code "58")
+			(code "69")
 			(name "Net-(IC7-VOUT_F)")
 			(class "Default")
 			(node
@@ -12505,7 +13078,7 @@
 			)
 		)
 		(net
-			(code "59")
+			(code "70")
 			(name "Net-(IC8-SET)")
 			(class "Default")
 			(node
@@ -12531,7 +13104,7 @@
 			)
 		)
 		(net
-			(code "60")
+			(code "71")
 			(name "Net-(IC9-SET)")
 			(class "Default")
 			(node
@@ -12557,7 +13130,7 @@
 			)
 		)
 		(net
-			(code "61")
+			(code "72")
 			(name "Net-(R17-Pad2)")
 			(class "Default")
 			(node
@@ -12577,7 +13150,7 @@
 			)
 		)
 		(net
-			(code "62")
+			(code "73")
 			(name "Net-(R22-Pad2)")
 			(class "Default")
 			(node
@@ -12597,7 +13170,7 @@
 			)
 		)
 		(net
-			(code "63")
+			(code "74")
 			(name "Net-(R27-Pad2)")
 			(class "Default")
 			(node
@@ -12617,7 +13190,7 @@
 			)
 		)
 		(net
-			(code "64")
+			(code "75")
 			(name "Net-(R32-Pad2)")
 			(class "Default")
 			(node
@@ -12637,7 +13210,7 @@
 			)
 		)
 		(net
-			(code "65")
+			(code "76")
 			(name "OUT-B")
 			(class "Default")
 			(node
@@ -12659,7 +13232,7 @@
 			)
 		)
 		(net
-			(code "66")
+			(code "77")
 			(name "OUT-U")
 			(class "Default")
 			(node
@@ -12681,7 +13254,7 @@
 			)
 		)
 		(net
-			(code "67")
+			(code "78")
 			(name "OUT-V")
 			(class "Default")
 			(node
@@ -12703,7 +13276,7 @@
 			)
 		)
 		(net
-			(code "68")
+			(code "79")
 			(name "OUT-W")
 			(class "Default")
 			(node
@@ -12725,7 +13298,7 @@
 			)
 		)
 		(net
-			(code "69")
+			(code "80")
 			(name "SHUNT_BAT+")
 			(class "Default")
 			(node
@@ -12742,7 +13315,7 @@
 			)
 		)
 		(net
-			(code "70")
+			(code "81")
 			(name "SHUNT_BAT-")
 			(class "Default")
 			(node
@@ -12759,7 +13332,7 @@
 			)
 		)
 		(net
-			(code "71")
+			(code "82")
 			(name "SHUNT_U+")
 			(class "Default")
 			(node
@@ -12776,7 +13349,7 @@
 			)
 		)
 		(net
-			(code "72")
+			(code "83")
 			(name "SHUNT_U-")
 			(class "Default")
 			(node
@@ -12793,7 +13366,7 @@
 			)
 		)
 		(net
-			(code "73")
+			(code "84")
 			(name "SHUNT_V+")
 			(class "Default")
 			(node
@@ -12810,7 +13383,7 @@
 			)
 		)
 		(net
-			(code "74")
+			(code "85")
 			(name "SHUNT_V-")
 			(class "Default")
 			(node
@@ -12827,7 +13400,7 @@
 			)
 		)
 		(net
-			(code "75")
+			(code "86")
 			(name "SHUNT_W+")
 			(class "Default")
 			(node
@@ -12844,7 +13417,7 @@
 			)
 		)
 		(net
-			(code "76")
+			(code "87")
 			(name "SHUNT_W-")
 			(class "Default")
 			(node
@@ -12861,7 +13434,7 @@
 			)
 		)
 		(net
-			(code "77")
+			(code "88")
 			(name "unconnected-(IC1-DB5{slash}DOUTE-Pad19)")
 			(class "Default")
 			(node
@@ -12872,7 +13445,7 @@
 			)
 		)
 		(net
-			(code "78")
+			(code "89")
 			(name "unconnected-(IC1-DB6{slash}DOUTF-Pad20)")
 			(class "Default")
 			(node
@@ -12883,7 +13456,7 @@
 			)
 		)
 		(net
-			(code "79")
+			(code "90")
 			(name "unconnected-(IC1-DB7{slash}DOUTG-Pad21)")
 			(class "Default")
 			(node
@@ -12894,7 +13467,7 @@
 			)
 		)
 		(net
-			(code "80")
+			(code "91")
 			(name "unconnected-(IC1-DB8{slash}DOUTH-Pad22)")
 			(class "Default")
 			(node
@@ -12905,7 +13478,7 @@
 			)
 		)
 		(net
-			(code "81")
+			(code "92")
 			(name "unconnected-(IC2-NC-Pad4)")
 			(class "Default")
 			(node
@@ -12916,7 +13489,7 @@
 			)
 		)
 		(net
-			(code "82")
+			(code "93")
 			(name "unconnected-(IC4-NC-Pad4)")
 			(class "Default")
 			(node
@@ -12927,7 +13500,7 @@
 			)
 		)
 		(net
-			(code "83")
+			(code "94")
 			(name "unconnected-(IC5-NC-Pad6)")
 			(class "Default")
 			(node
@@ -12938,7 +13511,7 @@
 			)
 		)
 		(net
-			(code "84")
+			(code "95")
 			(name "unconnected-(IC5-SYNC{slash}MODE-Pad12)")
 			(class "Default")
 			(node
@@ -12949,7 +13522,7 @@
 			)
 		)
 		(net
-			(code "85")
+			(code "96")
 			(name "unconnected-(IC6-NC-Pad4)")
 			(class "Default")
 			(node
@@ -12960,7 +13533,7 @@
 			)
 		)
 		(net
-			(code "86")
+			(code "97")
 			(name "unconnected-(IC8-PG-Pad5)")
 			(class "Default")
 			(node
@@ -12971,7 +13544,7 @@
 			)
 		)
 		(net
-			(code "87")
+			(code "98")
 			(name "unconnected-(IC8-VIOC-Pad3)")
 			(class "Default")
 			(node
@@ -12982,7 +13555,7 @@
 			)
 		)
 		(net
-			(code "88")
+			(code "99")
 			(name "unconnected-(IC9-PG-Pad5)")
 			(class "Default")
 			(node
@@ -12993,7 +13566,7 @@
 			)
 		)
 		(net
-			(code "89")
+			(code "100")
 			(name "unconnected-(IC9-VIOC-Pad3)")
 			(class "Default")
 			(node
@@ -13004,7 +13577,7 @@
 			)
 		)
 		(net
-			(code "90")
+			(code "101")
 			(name "unconnected-(IC10-NC-Pad4)")
 			(class "Default")
 			(node
