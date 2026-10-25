@@ -1,4 +1,4 @@
 _local_|2026-10-25|root|Local changes not committed|False|True
+454d125|2026-10-25|foukouda|Move the rail LED block down on the Connectors sheet|True|False
 4cc6142|2026-10-25|foukouda|Add 100k pull-up on ADC CS and pull-downs on CONVST and RESET|True|True
 7a07aa5|2026-10-25|foukouda|Add 100 Ohm series resistors on the J4 lines, bottom side|True|True
-9f53c40|2026-10-23|foukouda|Add rail indicator LEDs, test point tags and OSHW logo|True|True
