@@ -13,5 +13,5 @@ TP11,+5VA,Default,78.7000,40.5500,bottom,,TestPoint,TestPoint_Pad_D1.5mm
 TP12,+2.5VA,Default,76.8000,33.5000,bottom,,TestPoint,TestPoint_Pad_D1.5mm
 TP13,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
 TP14,,,-64.0000,106.0000,top,SMT,TestPoint,TestPoint_Pad_D1.5mm
-TP15,ADC_CONVST,Default,103.0000,36.0000,bottom,,TestPoint,TestPoint_Pad_D1.5mm
-TP16,ADC_BUSY,Default,108.5500,36.8000,bottom,,TestPoint,TestPoint_Pad_D1.5mm
+TP15,/Project Architecture/AD7606C-18_ADC/CONVST,Default,103.0000,36.0000,bottom,,TestPoint,TestPoint_Pad_D1.5mm
+TP16,/Project Architecture/AD7606C-18_ADC/BUSY,Default,108.5500,36.8000,bottom,,TestPoint,TestPoint_Pad_D1.5mm
