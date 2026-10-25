@@ -22,6 +22,7 @@ Keep entries short: the `[Unreleased]` section is printed on the schematic Revis
 -   Test points TP1-TP16
 -   4x rail indicator LED (D1, D3-D5), about 1 mA each
 -   Silkscreen: rail names at the LEDs, test point tags, OSHW logo
+-   100 Ohm in series on the 11 J4 lines: RN1, RN2 (4x0603 array, as OPEN_WEIGHT), R39-R41, bottom side
 
 ### Changed
 
@@ -36,3 +37,8 @@ Keep entries short: the `[Unreleased]` section is printed on the schematic Revis
 -   IC8, IC9: thermal vias on exposed pad 13
 -   Licence: MIT -> CERN-OHL-P v2
 -   README / HTML logo: INGENIERIE FRANCE badge
+-   TP15 / TP16 on the AD7606C side of the series resistors
+
+### Fixed
+
+-   +5VA via of R36 sat on the ADC_~{CS} track (short): bus rerouted around it
