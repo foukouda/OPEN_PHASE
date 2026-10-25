@@ -23,6 +23,7 @@ Keep entries short: the `[Unreleased]` section is printed on the schematic Revis
 -   4x rail indicator LED (D1, D3-D5), about 1 mA each
 -   Silkscreen: rail names at the LEDs, test point tags, OSHW logo
 -   100 Ohm in series on the 11 J4 lines: RN1, RN2 (4x0603 array, as OPEN_WEIGHT), R39-R41, bottom side
+-   100k pull-up on CS (R42), pull-downs on CONVST (R43) and RESET (R44)
 
 ### Changed
 
