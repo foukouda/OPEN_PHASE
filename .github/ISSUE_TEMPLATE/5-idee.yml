@@ -1,0 +1,37 @@
+name: 💡 Idée ou amélioration
+description: Une amélioration utile mais pas indispensable.
+labels: ["idée", "à-trier"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Titre** : `Zone : la proposition`, par exemple `PCB : ajouter un point de test sur REFCAPA`.
+  - type: textarea
+    id: proposition
+    attributes:
+      label: Proposition
+    validations:
+      required: true
+  - type: textarea
+    id: pourquoi
+    attributes:
+      label: Ce que ça apporte
+    validations:
+      required: true
+  - type: textarea
+    id: cout
+    attributes:
+      label: Coût et risque
+      description: Place sur la carte, composants en plus, re-routage, délai.
+    validations:
+      required: true
+  - type: dropdown
+    id: quand
+    attributes:
+      label: Pour quand
+      options:
+        - Rev A, si c'est simple et sans risque
+        - Rev B
+        - Plus tard
+    validations:
+      required: true
