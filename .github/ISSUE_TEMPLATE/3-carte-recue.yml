@@ -1,0 +1,61 @@
+name: "🔬 Carte reçue : défaut ou mesure"
+description: Un résultat de mise en route ou de mesure sur une vraie carte, bon ou mauvais.
+labels: ["mise-en-route", "à-trier"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ **Si quelque chose a chauffé, fumé ou sent le brûlé** : couper l'alimentation, ne pas remettre sous tension, photographier la carte des deux côtés, puis écrire cette issue.
+
+        **Titre** : `Carte n° : ce qui a été vu`, par exemple `Carte 2 : +5VA à 4,62 V à vide`.
+  - type: input
+    id: carte
+    attributes:
+      label: Carte
+      description: Révision, numéro de la carte, qui l'a montée et quand.
+      placeholder: "rev A, carte 2, montée par JLCPCB, reçue le 2026-12-03"
+    validations:
+      required: true
+  - type: textarea
+    id: montage
+    attributes:
+      label: Montage
+      description: Alimentation et limite de courant, charge, moteur ou ESC branché, appareils et sondes utilisés.
+      placeholder: "Alim de labo 3,3 V limitée à 100 mA sur J4, rien sur les phases. Multimètre Fluke 87V."
+    validations:
+      required: true
+  - type: textarea
+    id: attendu
+    attributes:
+      label: Attendu
+      description: La valeur attendue et sa source (schéma, simulation, fiche technique).
+      placeholder: "+5VA ≈ 5,0 V (feuille Power Supply - Analog Rails)"
+    validations:
+      required: true
+  - type: textarea
+    id: mesure
+    attributes:
+      label: Mesuré
+      description: Valeur, unité, conditions, point de mesure (TP, pastille). Captures d'oscilloscope et photos se collent ici.
+    validations:
+      required: true
+  - type: dropdown
+    id: verdict
+    attributes:
+      label: Verdict
+      options:
+        - Conforme
+        - Hors tolérance
+        - Ne fonctionne pas
+        - Carte abîmée (chauffe, fumée, composant cassé)
+        - Pas sûr
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Fichiers de fabrication utilisés
+      description: Tag ou commit des Gerbers et de la BOM envoyés au fabricant.
+      placeholder: "tag 0.1.0"
+    validations:
+      required: true

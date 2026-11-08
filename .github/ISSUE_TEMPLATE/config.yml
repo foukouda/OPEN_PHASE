@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📋 Sommaire du projet (issue épinglée)
+    url: https://github.com/foukouda/OPEN_PHASE/issues/1
+    about: Ce qui est fait et ce qui reste, jalon par jalon. Vérifier que le problème n'y est pas déjà.
+  - name: 📖 Règles de travail
+    url: https://github.com/foukouda/OPEN_PHASE/blob/main/CONTRIBUTING.md
+    about: Comment écrire une issue, labels, jalons, branches, preuves.
