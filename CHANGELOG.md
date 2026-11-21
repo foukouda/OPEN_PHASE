@@ -39,6 +39,7 @@ Keep entries short: the `[Unreleased]` section is printed on the schematic Revis
 -   Licence: MIT -> CERN-OHL-P v2
 -   README / HTML logo: INGENIERIE FRANCE badge
 -   TP15 / TP16 on the AD7606C side of the series resistors
+-   Power planes IN/OUT U, V, W, B: 744 stitching vias removed
 
 ### Fixed
 
