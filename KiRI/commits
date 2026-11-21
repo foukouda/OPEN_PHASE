@@ -1,4 +1,4 @@
-_local_|2026-10-25|root|Local changes not committed|False|True
+_local_|2026-11-21|root|Local changes not committed|False|True
+6602dfe|2026-11-21|foukouda|Remove the stitching vias from the power planes|False|True
 454d125|2026-10-25|foukouda|Move the rail LED block down on the Connectors sheet|True|False
 4cc6142|2026-10-25|foukouda|Add 100k pull-up on ADC CS and pull-downs on CONVST and RESET|True|True
-7a07aa5|2026-10-25|foukouda|Add 100 Ohm series resistors on the J4 lines, bottom side|True|True

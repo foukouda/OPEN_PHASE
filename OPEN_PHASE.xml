@@ -74,7 +74,7 @@
 11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.
 
 12)	CONFIRM SPACE WIDTHS AND SPACINGS.</textvar>
-    <textvar name="GIT_HASH_PCB">4cc6142</textvar>
+    <textvar name="GIT_HASH_PCB">6602dfe</textvar>
     <textvar name="GIT_HASH_SCH">04dd92c</textvar>
     <textvar name="GIT_URL">https://github.com/foukouda/OPEN_PHASE</textvar>
     <textvar name="PROJECT_NAME">OPEN_PHASE</textvar>
@@ -146,13 +146,15 @@ Changed
 
 -   TP15 / TP16 on the AD7606C side of the series resistors
 
+-   Power planes IN/OUT U, V, W, B: 744 stitching vias removed
+
 ___________________________________
 
 Fixed
 
 -   +5VA via of R36 sat on the ADC_~{CS} track (short): bus rerouted around it</textvar>
-    <textvar name="RELEASE_DATE">25-Oct-2026</textvar>
-    <textvar name="RELEASE_DATE_NUM">2026-10-25</textvar>
+    <textvar name="RELEASE_DATE">21-Nov-2026</textvar>
+    <textvar name="RELEASE_DATE_NUM">2026-11-21</textvar>
     <textvar name="RELEASE_TITLE_1.0.0"/>
     <textvar name="RELEASE_TITLE_1.0.1"/>
     <textvar name="RELEASE_TITLE_1.0.2"/>
