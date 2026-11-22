@@ -74,8 +74,8 @@
 11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.
 
 12)	CONFIRM SPACE WIDTHS AND SPACINGS.</textvar>
-    <textvar name="GIT_HASH_PCB">87f51a2</textvar>
-    <textvar name="GIT_HASH_SCH">04dd92c</textvar>
+    <textvar name="GIT_HASH_PCB">de61407</textvar>
+    <textvar name="GIT_HASH_SCH">de61407</textvar>
     <textvar name="GIT_URL">https://github.com/foukouda/OPEN_PHASE</textvar>
     <textvar name="PROJECT_NAME">OPEN_PHASE</textvar>
     <textvar name="RELEASE_BODY_1.0.0"/>
@@ -120,6 +120,10 @@ Added
 
 -   Silkscreen: board version table (INA241 A5/A4/A3/A2: motor cells, mV/A, peak current), fitted version ticked
 
+-   D6 PMEG2020EH (+3.3V -&gt; +5VA): AVCC follows VDRIVE at power-up (AD7606C abs. max.)
+
+-   Test points TP1, TP2, TP7, TP8, TP13, TP14 placed on the bottom, with tags
+
 ___________________________________
 
 Changed
@@ -150,13 +154,37 @@ Changed
 
 -   Power planes IN/OUT U, V, W, B: 744 stitching vias removed
 
+-   IC2, IC4, IC6, IC10: INA241A2 -&gt; INA241A4 (100 V/V, 100 mV/A, ±23 A), version for 1205.5 motors on 1S
+
+-   Courtyards to IPC-7351 level C (0.1 mm) on passives, LEDs, SOP/SON, LT8362, MAPI-4030, SOD-123F
+
+-   LED footprint copied into the project library (lib/)
+
 ___________________________________
 
 Fixed
 
--   +5VA via of R36 sat on the ADC_~{CS} track (short): bus rerouted around it</textvar>
-    <textvar name="RELEASE_DATE">21-Nov-2026</textvar>
-    <textvar name="RELEASE_DATE_NUM">2026-11-21</textvar>
+-   +5VA via of R36 sat on the ADC_~{CS} track (short): bus rerouted around it
+
+-   Rail LED anodes (D1, D3-D5) routed to R35-R38; PCB values of R35-R38 updated
+
+-   ERC clean: PWR_FLAG on +6V, +5VA, +2.5VA, GND1; SS label on its net
+
+-   C14, C15, C39 (4-terminal symbol): 0805 footprint with pads 3/4 on pads 2/1
+
+-   IC5 pads 0.305 -&gt; 0.30 mm wide (0.20 mm gap, ADI MSE16 land pattern)
+
+-   INA241 pin 4 (NC) tied to GND, as the datasheet asks
+
+-   DRC errors: IC10 track widths as on IC2/4/6, via spacing (LDO grids, +3.3V row, INA REF vias), GND vias off other nets and off the edge, dangling track and via removed
+
+-   J1/J2 and J5 mounting pads reduced (0.3 mm from the board edge)
+
+-   IC8/IC9 thermal vias tented on the bottom
+
+-   Silkscreen kept off pads, gold bands and board edge (connector outlines, J4, IC5 reference, labels)</textvar>
+    <textvar name="RELEASE_DATE">22-Nov-2026</textvar>
+    <textvar name="RELEASE_DATE_NUM">2026-11-22</textvar>
     <textvar name="RELEASE_TITLE_1.0.0"/>
     <textvar name="RELEASE_TITLE_1.0.1"/>
     <textvar name="RELEASE_TITLE_1.0.2"/>
@@ -538,10 +566,10 @@ Fixed
     </comp>
     <comp ref="C39">
       <value>10µF</value>
-      <footprint>OPEN_PHASE:C_0805_2012Metric</footprint>
+      <footprint>OPEN_PHASE:C_0805_2012Metric_4T</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
-        <field name="Footprint">OPEN_PHASE:C_0805_2012Metric</field>
+        <field name="Footprint">OPEN_PHASE:C_0805_2012Metric_4T</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
@@ -1409,17 +1437,17 @@ Fixed
       </units>
     </comp>
     <comp ref="IC2">
-      <value>INA241A2IDGKR</value>
+      <value>INA241A4IDGKR</value>
       <footprint>OPEN_PHASE:SOP65P490X110-8N</footprint>
       <datasheet>https://www.ti.com/lit/ds/symlink/ina241a.pdf?ts=1698648582718&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FINA241A%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-amps-null-44700045336317476_prodfolderdynamic-cpc-pf-go</datasheet>
       <description>Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP</description>
       <fields>
         <field name="Height">1.1</field>
         <field name="Manufacturer_Name">Texas Instruments</field>
-        <field name="Manufacturer_Part_Number">INA241A2IDGKR</field>
-        <field name="Mouser Part Number">595-INA241A2IDGKR</field>
-        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA241A2IDGKR?qs=Imq1NPwxi772hZtuitx1Tg%3D%3D</field>
-        <field name="Arrow Part Number">INA241A2IDGKR</field>
+        <field name="Manufacturer_Part_Number">INA241A4IDGKR</field>
+        <field name="Mouser Part Number">595-INA241A4IDGKR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/ProductDetail/Texas-Instruments/INA241A4IDGKR</field>
+        <field name="Arrow Part Number">INA241A4IDGKR</field>
         <field name="Arrow Price/Stock">https://www.arrow.com/en/products/ina241a2idgkr/texas-instruments?utm_currency=USD&amp;region=nac</field>
         <field name="Footprint">OPEN_PHASE:SOP65P490X110-8N</field>
         <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ina241a.pdf?ts=1698648582718&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FINA241A%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-amps-null-44700045336317476_prodfolderdynamic-cpc-pf-go</field>
@@ -1428,10 +1456,10 @@ Fixed
       <libsource lib="OPEN_PHASE" part="INA241A2IDGKR" description="Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP"/>
       <property name="Height" value="1.1"/>
       <property name="Manufacturer_Name" value="Texas Instruments"/>
-      <property name="Manufacturer_Part_Number" value="INA241A2IDGKR"/>
-      <property name="Mouser Part Number" value="595-INA241A2IDGKR"/>
-      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA241A2IDGKR?qs=Imq1NPwxi772hZtuitx1Tg%3D%3D"/>
-      <property name="Arrow Part Number" value="INA241A2IDGKR"/>
+      <property name="Manufacturer_Part_Number" value="INA241A4IDGKR"/>
+      <property name="Mouser Part Number" value="595-INA241A4IDGKR"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.com/ProductDetail/Texas-Instruments/INA241A4IDGKR"/>
+      <property name="Arrow Part Number" value="INA241A4IDGKR"/>
       <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/ina241a2idgkr/texas-instruments?utm_currency=USD&amp;region=nac"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
@@ -1453,17 +1481,17 @@ Fixed
       </units>
     </comp>
     <comp ref="IC4">
-      <value>INA241A2IDGKR</value>
+      <value>INA241A4IDGKR</value>
       <footprint>OPEN_PHASE:SOP65P490X110-8N</footprint>
       <datasheet>https://www.ti.com/lit/ds/symlink/ina241a.pdf?ts=1698648582718&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FINA241A%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-amps-null-44700045336317476_prodfolderdynamic-cpc-pf-go</datasheet>
       <description>Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP</description>
       <fields>
         <field name="Height">1.1</field>
         <field name="Manufacturer_Name">Texas Instruments</field>
-        <field name="Manufacturer_Part_Number">INA241A2IDGKR</field>
-        <field name="Mouser Part Number">595-INA241A2IDGKR</field>
-        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA241A2IDGKR?qs=Imq1NPwxi772hZtuitx1Tg%3D%3D</field>
-        <field name="Arrow Part Number">INA241A2IDGKR</field>
+        <field name="Manufacturer_Part_Number">INA241A4IDGKR</field>
+        <field name="Mouser Part Number">595-INA241A4IDGKR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/ProductDetail/Texas-Instruments/INA241A4IDGKR</field>
+        <field name="Arrow Part Number">INA241A4IDGKR</field>
         <field name="Arrow Price/Stock">https://www.arrow.com/en/products/ina241a2idgkr/texas-instruments?utm_currency=USD&amp;region=nac</field>
         <field name="Footprint">OPEN_PHASE:SOP65P490X110-8N</field>
         <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ina241a.pdf?ts=1698648582718&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FINA241A%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-amps-null-44700045336317476_prodfolderdynamic-cpc-pf-go</field>
@@ -1472,10 +1500,10 @@ Fixed
       <libsource lib="OPEN_PHASE" part="INA241A2IDGKR" description="Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP"/>
       <property name="Height" value="1.1"/>
       <property name="Manufacturer_Name" value="Texas Instruments"/>
-      <property name="Manufacturer_Part_Number" value="INA241A2IDGKR"/>
-      <property name="Mouser Part Number" value="595-INA241A2IDGKR"/>
-      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA241A2IDGKR?qs=Imq1NPwxi772hZtuitx1Tg%3D%3D"/>
-      <property name="Arrow Part Number" value="INA241A2IDGKR"/>
+      <property name="Manufacturer_Part_Number" value="INA241A4IDGKR"/>
+      <property name="Mouser Part Number" value="595-INA241A4IDGKR"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.com/ProductDetail/Texas-Instruments/INA241A4IDGKR"/>
+      <property name="Arrow Part Number" value="INA241A4IDGKR"/>
       <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/ina241a2idgkr/texas-instruments?utm_currency=USD&amp;region=nac"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
@@ -1497,17 +1525,17 @@ Fixed
       </units>
     </comp>
     <comp ref="IC6">
-      <value>INA241A2IDGKR</value>
+      <value>INA241A4IDGKR</value>
       <footprint>OPEN_PHASE:SOP65P490X110-8N</footprint>
       <datasheet>https://www.ti.com/lit/ds/symlink/ina241a.pdf?ts=1698648582718&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FINA241A%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-amps-null-44700045336317476_prodfolderdynamic-cpc-pf-go</datasheet>
       <description>Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP</description>
       <fields>
         <field name="Height">1.1</field>
         <field name="Manufacturer_Name">Texas Instruments</field>
-        <field name="Manufacturer_Part_Number">INA241A2IDGKR</field>
-        <field name="Mouser Part Number">595-INA241A2IDGKR</field>
-        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA241A2IDGKR?qs=Imq1NPwxi772hZtuitx1Tg%3D%3D</field>
-        <field name="Arrow Part Number">INA241A2IDGKR</field>
+        <field name="Manufacturer_Part_Number">INA241A4IDGKR</field>
+        <field name="Mouser Part Number">595-INA241A4IDGKR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/ProductDetail/Texas-Instruments/INA241A4IDGKR</field>
+        <field name="Arrow Part Number">INA241A4IDGKR</field>
         <field name="Arrow Price/Stock">https://www.arrow.com/en/products/ina241a2idgkr/texas-instruments?utm_currency=USD&amp;region=nac</field>
         <field name="Footprint">OPEN_PHASE:SOP65P490X110-8N</field>
         <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ina241a.pdf?ts=1698648582718&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FINA241A%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-amps-null-44700045336317476_prodfolderdynamic-cpc-pf-go</field>
@@ -1516,10 +1544,10 @@ Fixed
       <libsource lib="OPEN_PHASE" part="INA241A2IDGKR" description="Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP"/>
       <property name="Height" value="1.1"/>
       <property name="Manufacturer_Name" value="Texas Instruments"/>
-      <property name="Manufacturer_Part_Number" value="INA241A2IDGKR"/>
-      <property name="Mouser Part Number" value="595-INA241A2IDGKR"/>
-      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA241A2IDGKR?qs=Imq1NPwxi772hZtuitx1Tg%3D%3D"/>
-      <property name="Arrow Part Number" value="INA241A2IDGKR"/>
+      <property name="Manufacturer_Part_Number" value="INA241A4IDGKR"/>
+      <property name="Mouser Part Number" value="595-INA241A4IDGKR"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.com/ProductDetail/Texas-Instruments/INA241A4IDGKR"/>
+      <property name="Arrow Part Number" value="INA241A4IDGKR"/>
       <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/ina241a2idgkr/texas-instruments?utm_currency=USD&amp;region=nac"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
@@ -1541,17 +1569,17 @@ Fixed
       </units>
     </comp>
     <comp ref="IC10">
-      <value>INA241A2IDGKR</value>
+      <value>INA241A4IDGKR</value>
       <footprint>OPEN_PHASE:SOP65P490X110-8N</footprint>
       <datasheet>https://www.ti.com/lit/ds/symlink/ina241a.pdf?ts=1698648582718&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FINA241A%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-amps-null-44700045336317476_prodfolderdynamic-cpc-pf-go</datasheet>
       <description>Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP</description>
       <fields>
         <field name="Height">1.1</field>
         <field name="Manufacturer_Name">Texas Instruments</field>
-        <field name="Manufacturer_Part_Number">INA241A2IDGKR</field>
-        <field name="Mouser Part Number">595-INA241A2IDGKR</field>
-        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA241A2IDGKR?qs=Imq1NPwxi772hZtuitx1Tg%3D%3D</field>
-        <field name="Arrow Part Number">INA241A2IDGKR</field>
+        <field name="Manufacturer_Part_Number">INA241A4IDGKR</field>
+        <field name="Mouser Part Number">595-INA241A4IDGKR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/ProductDetail/Texas-Instruments/INA241A4IDGKR</field>
+        <field name="Arrow Part Number">INA241A4IDGKR</field>
         <field name="Arrow Price/Stock">https://www.arrow.com/en/products/ina241a2idgkr/texas-instruments?utm_currency=USD&amp;region=nac</field>
         <field name="Footprint">OPEN_PHASE:SOP65P490X110-8N</field>
         <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ina241a.pdf?ts=1698648582718&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FINA241A%253Futm_source%253Dgoogle%2526utm_medium%253Dcpc%2526utm_campaign%253Dasc-amps-null-44700045336317476_prodfolderdynamic-cpc-pf-go</field>
@@ -1560,10 +1588,10 @@ Fixed
       <libsource lib="OPEN_PHASE" part="INA241A2IDGKR" description="Current Sense Amplifier 1 Circuit Single-Ended 8-VSSOP"/>
       <property name="Height" value="1.1"/>
       <property name="Manufacturer_Name" value="Texas Instruments"/>
-      <property name="Manufacturer_Part_Number" value="INA241A2IDGKR"/>
-      <property name="Mouser Part Number" value="595-INA241A2IDGKR"/>
-      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA241A2IDGKR?qs=Imq1NPwxi772hZtuitx1Tg%3D%3D"/>
-      <property name="Arrow Part Number" value="INA241A2IDGKR"/>
+      <property name="Manufacturer_Part_Number" value="INA241A4IDGKR"/>
+      <property name="Mouser Part Number" value="595-INA241A4IDGKR"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.com/ProductDetail/Texas-Instruments/INA241A4IDGKR"/>
+      <property name="Arrow Part Number" value="INA241A4IDGKR"/>
       <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/ina241a2idgkr/texas-instruments?utm_currency=USD&amp;region=nac"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
@@ -2633,10 +2661,10 @@ Fixed
     </comp>
     <comp ref="C14">
       <value>10µF</value>
-      <footprint>OPEN_PHASE:C_0805_2012Metric</footprint>
+      <footprint>OPEN_PHASE:C_0805_2012Metric_4T</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
-        <field name="Footprint">OPEN_PHASE:C_0805_2012Metric</field>
+        <field name="Footprint">OPEN_PHASE:C_0805_2012Metric_4T</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
@@ -2660,10 +2688,10 @@ Fixed
     </comp>
     <comp ref="C15">
       <value>10µF</value>
-      <footprint>OPEN_PHASE:C_0805_2012Metric</footprint>
+      <footprint>OPEN_PHASE:C_0805_2012Metric_4T</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
-        <field name="Footprint">OPEN_PHASE:C_0805_2012Metric</field>
+        <field name="Footprint">OPEN_PHASE:C_0805_2012Metric_4T</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
@@ -2902,6 +2930,32 @@ Fixed
       <property name="ki_fp_filters" value="D*SOD?123F*"/>
       <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
       <tstamps>9c98ef77-a07f-4cec-bd71-8f216cdfc4f7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D6">
+      <value>PMEG2020EH</value>
+      <footprint>OPEN_PHASE:D_SOD-123F</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/PMEG2020EH_EJ.pdf</datasheet>
+      <description>20V, 2A very low Vf MEGA Schottky barrier rectifier, SOD-123F</description>
+      <fields>
+        <field name="Footprint">OPEN_PHASE:D_SOD-123F</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/PMEG2020EH_EJ.pdf</field>
+        <field name="Description">20V, 2A very low Vf MEGA Schottky barrier rectifier, SOD-123F</field>
+      </fields>
+      <libsource lib="OPEN_PHASE" part="PMEG2020EH" description="20V, 2A very low Vf MEGA Schottky barrier rectifier, SOD-123F"/>
+      <property name="Sheetname" value="Power_Supply"/>
+      <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
+      <property name="ki_keywords" value="forward voltage diode"/>
+      <property name="ki_fp_filters" value="D*SOD?123F*"/>
+      <sheetpath names="/Project Architecture/Power_Supply/" tstamps="/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/"/>
+      <tstamps>0e37272e-a4b3-407d-8fb2-eee51bd11173</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -3521,11 +3575,11 @@ Fixed
     </comp>
     <comp ref="D1">
       <value>LED</value>
-      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <footprint>OPEN_PHASE:LED_0603_1608Metric</footprint>
       <description>Light emitting diode</description>
       <fields>
         <field name="Sim.Pins">1=K 2=A</field>
-        <field name="Footprint">LED_SMD:LED_0603_1608Metric</field>
+        <field name="Footprint">OPEN_PHASE:LED_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Light emitting diode</field>
       </fields>
@@ -3548,11 +3602,11 @@ Fixed
     </comp>
     <comp ref="D3">
       <value>LED</value>
-      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <footprint>OPEN_PHASE:LED_0603_1608Metric</footprint>
       <description>Light emitting diode</description>
       <fields>
         <field name="Sim.Pins">1=K 2=A</field>
-        <field name="Footprint">LED_SMD:LED_0603_1608Metric</field>
+        <field name="Footprint">OPEN_PHASE:LED_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Light emitting diode</field>
       </fields>
@@ -3575,11 +3629,11 @@ Fixed
     </comp>
     <comp ref="D4">
       <value>LED</value>
-      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <footprint>OPEN_PHASE:LED_0603_1608Metric</footprint>
       <description>Light emitting diode</description>
       <fields>
         <field name="Sim.Pins">1=K 2=A</field>
-        <field name="Footprint">LED_SMD:LED_0603_1608Metric</field>
+        <field name="Footprint">OPEN_PHASE:LED_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Light emitting diode</field>
       </fields>
@@ -3602,11 +3656,11 @@ Fixed
     </comp>
     <comp ref="D5">
       <value>LED</value>
-      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <footprint>OPEN_PHASE:LED_0603_1608Metric</footprint>
       <description>Light emitting diode</description>
       <fields>
         <field name="Sim.Pins">1=K 2=A</field>
-        <field name="Footprint">LED_SMD:LED_0603_1608Metric</field>
+        <field name="Footprint">OPEN_PHASE:LED_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Light emitting diode</field>
       </fields>
@@ -4252,7 +4306,7 @@ Fixed
       <fields>
         <field name="Reference">C1</field>
         <field name="Value">C</field>
-        <field name="Footprint">OPEN_PHASE:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</field>
+        <field name="Footprint">OPEN_PHASE:C_0805_2012Metric_4T</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
@@ -4316,7 +4370,7 @@ Fixed
         <pin num="1" name="IN-" type="passive"/>
         <pin num="2" name="GND" type="passive"/>
         <pin num="3" name="REF2" type="passive"/>
-        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="4" name="NC" type="passive"/>
         <pin num="5" name="OUT" type="passive"/>
         <pin num="6" name="VS" type="passive"/>
         <pin num="7" name="REF1" type="passive"/>
@@ -4672,6 +4726,7 @@ Fixed
       <node ref="C21" pin="2" pintype="passive"/>
       <node ref="C22" pin="1" pintype="passive"/>
       <node ref="C23" pin="1" pintype="passive"/>
+      <node ref="D6" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="IC1" pin="10" pinfunction="~{WR}_10" pintype="passive"/>
       <node ref="IC1" pin="23" pinfunction="VDRIVE_23" pintype="passive"/>
       <node ref="IC1" pin="3" pinfunction="OS_0_3" pintype="passive"/>
@@ -4702,6 +4757,7 @@ Fixed
       <node ref="C35" pin="2" pintype="passive"/>
       <node ref="C38" pin="2" pintype="passive"/>
       <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="D6" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="IC1" pin="1" pinfunction="AVCC_1_1" pintype="passive"/>
       <node ref="IC1" pin="37" pinfunction="AVCC_2_37" pintype="passive"/>
       <node ref="IC1" pin="38" pinfunction="AVCC_3_38" pintype="passive"/>
@@ -4800,6 +4856,10 @@ Fixed
     <net code="18" name="/Project Architecture/Power_Supply/RT" class="Default">
       <node ref="IC5" pin="10" pinfunction="RT_10" pintype="passive"/>
       <node ref="R2" pin="1" pintype="passive"/>
+    </net>
+    <net code="19" name="/Project Architecture/Power_Supply/SS" class="Default">
+      <node ref="C24" pin="1" pintype="passive"/>
+      <node ref="IC5" pin="11" pinfunction="SS_11" pintype="passive"/>
     </net>
     <net code="20" name="/Project Architecture/Power_Supply/VC" class="Default">
       <node ref="IC5" pin="8" pinfunction="VC_8" pintype="passive"/>
@@ -4988,15 +5048,19 @@ Fixed
       <node ref="IC1" pin="46" pinfunction="REFGND_2_46" pintype="passive"/>
       <node ref="IC1" pin="47" pinfunction="AGND_6_47" pintype="passive"/>
       <node ref="IC10" pin="2" pinfunction="GND_2" pintype="passive"/>
+      <node ref="IC10" pin="4" pinfunction="NC_4" pintype="passive"/>
       <node ref="IC2" pin="2" pinfunction="GND_2" pintype="passive"/>
+      <node ref="IC2" pin="4" pinfunction="NC_4" pintype="passive"/>
       <node ref="IC3" pin="3" pinfunction="GND_1_3" pintype="passive"/>
       <node ref="IC3" pin="4" pinfunction="GND_2_4" pintype="passive"/>
       <node ref="IC3" pin="5" pinfunction="GND_3_5" pintype="passive"/>
       <node ref="IC3" pin="8" pinfunction="GND_4_8" pintype="passive"/>
       <node ref="IC4" pin="2" pinfunction="GND_2" pintype="passive"/>
+      <node ref="IC4" pin="4" pinfunction="NC_4" pintype="passive"/>
       <node ref="IC5" pin="17" pinfunction="GND_17" pintype="passive"/>
       <node ref="IC5" pin="7" pinfunction="BIAS_7" pintype="passive"/>
       <node ref="IC6" pin="2" pinfunction="GND_2" pintype="passive"/>
+      <node ref="IC6" pin="4" pinfunction="NC_4" pintype="passive"/>
       <node ref="IC7" pin="3" pinfunction="GND_1_3" pintype="passive"/>
       <node ref="IC7" pin="4" pinfunction="GND_2_4" pintype="passive"/>
       <node ref="IC7" pin="5" pinfunction="GND_3_5" pintype="passive"/>
@@ -5130,141 +5194,125 @@ Fixed
       <node ref="IC3" pin="7" pinfunction="VOUT_F_7" pintype="passive"/>
       <node ref="R11" pin="1" pintype="passive"/>
     </net>
-    <net code="68" name="Net-(IC5-SS)" class="Default">
-      <node ref="C24" pin="1" pintype="passive"/>
-      <node ref="IC5" pin="11" pinfunction="SS_11" pintype="passive"/>
-    </net>
-    <net code="69" name="Net-(IC7-VOUT_F)" class="Default">
+    <net code="68" name="Net-(IC7-VOUT_F)" class="Default">
       <node ref="C8" pin="1" pintype="passive"/>
       <node ref="IC7" pin="6" pinfunction="VOUT_S_6" pintype="passive"/>
       <node ref="IC7" pin="7" pinfunction="VOUT_F_7" pintype="passive"/>
       <node ref="R8" pin="1" pintype="passive"/>
     </net>
-    <net code="70" name="Net-(IC8-SET)" class="Default">
+    <net code="69" name="Net-(IC8-SET)" class="Default">
       <node ref="C13" pin="1" pintype="passive"/>
       <node ref="IC8" pin="8" pinfunction="SET_8" pintype="passive"/>
       <node ref="R14" pin="2" pintype="passive"/>
       <node ref="R8" pin="2" pintype="passive"/>
     </net>
-    <net code="71" name="Net-(IC9-SET)" class="Default">
+    <net code="70" name="Net-(IC9-SET)" class="Default">
       <node ref="C19" pin="1" pintype="passive"/>
       <node ref="IC9" pin="8" pinfunction="SET_8" pintype="passive"/>
       <node ref="R11" pin="2" pintype="passive"/>
       <node ref="R12" pin="1" pintype="passive"/>
     </net>
-    <net code="72" name="Net-(R17-Pad2)" class="Default">
+    <net code="71" name="Net-(R17-Pad2)" class="Default">
       <node ref="R17" pin="2" pintype="passive"/>
       <node ref="R18" pin="2" pintype="passive"/>
       <node ref="Re1" pin="1" pintype="passive"/>
     </net>
-    <net code="73" name="Net-(R22-Pad2)" class="Default">
+    <net code="72" name="Net-(R22-Pad2)" class="Default">
       <node ref="R22" pin="2" pintype="passive"/>
       <node ref="R23" pin="2" pintype="passive"/>
       <node ref="Re2" pin="1" pintype="passive"/>
     </net>
-    <net code="74" name="Net-(R27-Pad2)" class="Default">
+    <net code="73" name="Net-(R27-Pad2)" class="Default">
       <node ref="R27" pin="2" pintype="passive"/>
       <node ref="R28" pin="2" pintype="passive"/>
       <node ref="Re3" pin="1" pintype="passive"/>
     </net>
-    <net code="75" name="Net-(R32-Pad2)" class="Default">
+    <net code="74" name="Net-(R32-Pad2)" class="Default">
       <node ref="R32" pin="2" pintype="passive"/>
       <node ref="R33" pin="2" pintype="passive"/>
       <node ref="Re4" pin="1" pintype="passive"/>
     </net>
-    <net code="76" name="OUT-B" class="Default">
+    <net code="75" name="OUT-B" class="Default">
       <node ref="J5" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R32" pin="1" pintype="passive"/>
       <node ref="R9" pin="4" pinfunction="4_4" pintype="passive"/>
     </net>
-    <net code="77" name="OUT-U" class="Default">
+    <net code="76" name="OUT-U" class="Default">
       <node ref="J2" pin="3" pinfunction="3_3" pintype="passive"/>
       <node ref="R1" pin="4" pinfunction="4_4" pintype="passive"/>
       <node ref="R17" pin="1" pintype="passive"/>
     </net>
-    <net code="78" name="OUT-V" class="Default">
+    <net code="77" name="OUT-V" class="Default">
       <node ref="J2" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R22" pin="1" pintype="passive"/>
       <node ref="R4" pin="4" pinfunction="4_4" pintype="passive"/>
     </net>
-    <net code="79" name="OUT-W" class="Default">
+    <net code="78" name="OUT-W" class="Default">
       <node ref="J2" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="R27" pin="1" pintype="passive"/>
       <node ref="R7" pin="4" pinfunction="4_4" pintype="passive"/>
     </net>
-    <net code="80" name="SHUNT_BAT+" class="Default">
+    <net code="79" name="SHUNT_BAT+" class="Default">
       <node ref="IC10" pin="8" pinfunction="IN+_8" pintype="passive"/>
       <node ref="R9" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="81" name="SHUNT_BAT-" class="Default">
+    <net code="80" name="SHUNT_BAT-" class="Default">
       <node ref="IC10" pin="1" pinfunction="IN-_1" pintype="passive"/>
       <node ref="R9" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
-    <net code="82" name="SHUNT_U+" class="Default">
+    <net code="81" name="SHUNT_U+" class="Default">
       <node ref="IC2" pin="8" pinfunction="IN+_8" pintype="passive"/>
       <node ref="R1" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="83" name="SHUNT_U-" class="Default">
+    <net code="82" name="SHUNT_U-" class="Default">
       <node ref="IC2" pin="1" pinfunction="IN-_1" pintype="passive"/>
       <node ref="R1" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
-    <net code="84" name="SHUNT_V+" class="Default">
+    <net code="83" name="SHUNT_V+" class="Default">
       <node ref="IC4" pin="8" pinfunction="IN+_8" pintype="passive"/>
       <node ref="R4" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="85" name="SHUNT_V-" class="Default">
+    <net code="84" name="SHUNT_V-" class="Default">
       <node ref="IC4" pin="1" pinfunction="IN-_1" pintype="passive"/>
       <node ref="R4" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
-    <net code="86" name="SHUNT_W+" class="Default">
+    <net code="85" name="SHUNT_W+" class="Default">
       <node ref="IC6" pin="8" pinfunction="IN+_8" pintype="passive"/>
       <node ref="R7" pin="3" pinfunction="3_3" pintype="passive"/>
     </net>
-    <net code="87" name="SHUNT_W-" class="Default">
+    <net code="86" name="SHUNT_W-" class="Default">
       <node ref="IC6" pin="1" pinfunction="IN-_1" pintype="passive"/>
       <node ref="R7" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
-    <net code="88" name="unconnected-(IC1-DB5/DOUTE-Pad19)" class="Default">
+    <net code="87" name="unconnected-(IC1-DB5/DOUTE-Pad19)" class="Default">
       <node ref="IC1" pin="19" pinfunction="DB5/DOUTE_19" pintype="passive+no_connect"/>
     </net>
-    <net code="89" name="unconnected-(IC1-DB6/DOUTF-Pad20)" class="Default">
+    <net code="88" name="unconnected-(IC1-DB6/DOUTF-Pad20)" class="Default">
       <node ref="IC1" pin="20" pinfunction="DB6/DOUTF_20" pintype="passive+no_connect"/>
     </net>
-    <net code="90" name="unconnected-(IC1-DB7/DOUTG-Pad21)" class="Default">
+    <net code="89" name="unconnected-(IC1-DB7/DOUTG-Pad21)" class="Default">
       <node ref="IC1" pin="21" pinfunction="DB7/DOUTG_21" pintype="passive+no_connect"/>
     </net>
-    <net code="91" name="unconnected-(IC1-DB8/DOUTH-Pad22)" class="Default">
+    <net code="90" name="unconnected-(IC1-DB8/DOUTH-Pad22)" class="Default">
       <node ref="IC1" pin="22" pinfunction="DB8/DOUTH_22" pintype="passive+no_connect"/>
     </net>
-    <net code="92" name="unconnected-(IC2-NC-Pad4)" class="Default">
-      <node ref="IC2" pin="4" pinfunction="NC_4" pintype="no_connect"/>
-    </net>
-    <net code="93" name="unconnected-(IC4-NC-Pad4)" class="Default">
-      <node ref="IC4" pin="4" pinfunction="NC_4" pintype="no_connect"/>
-    </net>
-    <net code="94" name="unconnected-(IC5-NC-Pad6)" class="Default">
+    <net code="91" name="unconnected-(IC5-NC-Pad6)" class="Default">
       <node ref="IC5" pin="6" pinfunction="NC_6" pintype="no_connect"/>
     </net>
-    <net code="95" name="unconnected-(IC5-SYNC/MODE-Pad12)" class="Default">
+    <net code="92" name="unconnected-(IC5-SYNC/MODE-Pad12)" class="Default">
       <node ref="IC5" pin="12" pinfunction="SYNC/MODE_12" pintype="passive+no_connect"/>
     </net>
-    <net code="96" name="unconnected-(IC6-NC-Pad4)" class="Default">
-      <node ref="IC6" pin="4" pinfunction="NC_4" pintype="no_connect"/>
-    </net>
-    <net code="97" name="unconnected-(IC8-PG-Pad5)" class="Default">
+    <net code="93" name="unconnected-(IC8-PG-Pad5)" class="Default">
       <node ref="IC8" pin="5" pinfunction="PG_5" pintype="passive+no_connect"/>
     </net>
-    <net code="98" name="unconnected-(IC8-VIOC-Pad3)" class="Default">
+    <net code="94" name="unconnected-(IC8-VIOC-Pad3)" class="Default">
       <node ref="IC8" pin="3" pinfunction="VIOC_3" pintype="passive+no_connect"/>
     </net>
-    <net code="99" name="unconnected-(IC9-PG-Pad5)" class="Default">
+    <net code="95" name="unconnected-(IC9-PG-Pad5)" class="Default">
       <node ref="IC9" pin="5" pinfunction="PG_5" pintype="passive+no_connect"/>
     </net>
-    <net code="100" name="unconnected-(IC9-VIOC-Pad3)" class="Default">
+    <net code="96" name="unconnected-(IC9-VIOC-Pad3)" class="Default">
       <node ref="IC9" pin="3" pinfunction="VIOC_3" pintype="passive+no_connect"/>
-    </net>
-    <net code="101" name="unconnected-(IC10-NC-Pad4)" class="Default">
-      <node ref="IC10" pin="4" pinfunction="NC_4" pintype="no_connect"/>
     </net>
   </nets>
 </export>
