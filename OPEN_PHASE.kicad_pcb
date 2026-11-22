@@ -19960,7 +19960,7 @@
 			(uuid "1d940902-c559-4edc-b5c1-a43f0babad97")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/lib/3d_models/INA241A4IDGKR.stp"
+		(model "${KIPRJMOD}/lib/3d_models/INA241A2IDGKR.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20499,7 +20499,7 @@
 			(uuid "32972943-136c-4595-b3d7-ce4d28e1967f")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/lib/3d_models/INA241A4IDGKR.stp"
+		(model "${KIPRJMOD}/lib/3d_models/INA241A2IDGKR.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23200,15 +23200,15 @@
 			(uuid "012fe020-620a-4040-92d2-ca51c62c2f66")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/lib/3d_models/LTC6655LNBHMS8-2.5#PBF.stp"
+		(model "${KIPRJMOD}/lib/3d_models/INA241A2IDGKR.stp"
 			(offset
-				(xyz 0 0 0.5799999746)
+				(xyz 0 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -25863,7 +25863,7 @@
 			(uuid "1d11c3dc-b49b-49a1-85fd-3e6a0f4873b7")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/lib/3d_models/INA241A4IDGKR.stp"
+		(model "${KIPRJMOD}/lib/3d_models/INA241A2IDGKR.stp"
 			(offset
 				(xyz 0 0 0)
 			)
