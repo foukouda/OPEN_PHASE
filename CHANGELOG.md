@@ -25,6 +25,8 @@ Keep entries short: the `[Unreleased]` section is printed on the schematic Revis
 -   100 Ohm in series on the 11 J4 lines: RN1, RN2 (4x0603 array, as OPEN_WEIGHT), R39-R41, bottom side
 -   100k pull-up on CS (R42), pull-downs on CONVST (R43) and RESET (R44)
 -   Silkscreen: board version table (INA241 A5/A4/A3/A2: motor cells, mV/A, peak current), fitted version ticked
+-   D6 PMEG2020EH (+3.3V -> +5VA): AVCC follows VDRIVE at power-up (AD7606C abs. max.)
+-   Test points TP1, TP2, TP7, TP8, TP13, TP14 placed on the bottom, with tags
 
 ### Changed
 
@@ -41,7 +43,19 @@ Keep entries short: the `[Unreleased]` section is printed on the schematic Revis
 -   README / HTML logo: INGENIERIE FRANCE badge
 -   TP15 / TP16 on the AD7606C side of the series resistors
 -   Power planes IN/OUT U, V, W, B: 744 stitching vias removed
+-   IC2, IC4, IC6, IC10: INA241A2 -> INA241A4 (100 V/V, 100 mV/A, ±23 A), version for 1205.5 motors on 1S
+-   Courtyards to IPC-7351 level C (0.1 mm) on passives, LEDs, SOP/SON, LT8362, MAPI-4030, SOD-123F
+-   LED footprint copied into the project library (lib/)
 
 ### Fixed
 
 -   +5VA via of R36 sat on the ADC_~{CS} track (short): bus rerouted around it
+-   Rail LED anodes (D1, D3-D5) routed to R35-R38; PCB values of R35-R38 updated
+-   ERC clean: PWR_FLAG on +6V, +5VA, +2.5VA, GND1; SS label on its net
+-   C14, C15, C39 (4-terminal symbol): 0805 footprint with pads 3/4 on pads 2/1
+-   IC5 pads 0.305 -> 0.30 mm wide (0.20 mm gap, ADI MSE16 land pattern)
+-   INA241 pin 4 (NC) tied to GND, as the datasheet asks
+-   DRC errors: IC10 track widths as on IC2/4/6, via spacing (LDO grids, +3.3V row, INA REF vias), GND vias off other nets and off the edge, dangling track and via removed
+-   J1/J2 and J5 mounting pads reduced (0.3 mm from the board edge)
+-   IC8/IC9 thermal vias tented on the bottom
+-   Silkscreen kept off pads, gold bands and board edge (connector outlines, J4, IC5 reference, labels)

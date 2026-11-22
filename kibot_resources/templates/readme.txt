@@ -5,7 +5,7 @@
 <h1 align="center">${PROJECT_NAME} – ${BOARD_NAME}</h1>
 
 <p align="center">
-  3-phase inline current and voltage sensing PCB for BLDC drone motors (INA241A2 + AD7606C-18)
+  3-phase inline current and voltage sensing PCB for BLDC drone motors (INA241A4 + AD7606C-18)
 </p>
 
 <p align="center">
@@ -42,29 +42,29 @@
 
 The board is inserted between the ESC and a 3-phase BLDC motor (two Amass **MR60PW** connectors) and between the battery and the ESC (two Amass **XT60PW** connectors). On each motor phase (U, V, W) and on the battery line (B) it measures:
 
-- the **current**, with a 1 mΩ four-terminal shunt (Isabellenhütte PBV-R001) and a **TI INA241A2** current-sense amplifier (20 V/V, enhanced PWM rejection, bidirectional around a 2.5 V reference);
+- the **current**, with a 1 mΩ four-terminal shunt (Isabellenhütte PBV-R001) and a **TI INA241A4** current-sense amplifier (100 V/V, enhanced PWM rejection, bidirectional around a 2.5 V reference);
 - the **voltage**, with a 40.2 kΩ / 10 kΩ divider.
 
 The eight signals are sampled **simultaneously** by an **Analog Devices AD7606C-18** (8 channels, 18 bits, 1 MSPS), so that power, efficiency and ESC behaviour can be computed from time-aligned Vu/Vv/Vw, Iu/Iv/Iw and the battery voltage and current Vb/Ib.
 
 The board only needs **3.3 V**. An LT8362 boost converter (2 MHz) makes 6 V, and two LT3045-1 ultralow-noise LDOs make the analog rails. Each LDO has its SET pin driven by an LTC6655 precision reference, so the LDO works as a low-noise buffer for the reference: **+5VA** (ADC and amplifier supply) and **+2.5VA** (ADC reference and amplifier zero-current level).
 
-> This project was first published as **PhaseSense-8586**, after the first version of the design (INA240 + ADS8586S). The schematic now uses the **INA241A2** and the **AD7606C-18**; everything in this README is taken from the current netlist.
+> This project was first published as **PhaseSense-8586**, after the first version of the design (INA240 + ADS8586S). The schematic now uses the **INA241A4** and the **AD7606C-18**; everything in this README is taken from the current netlist.
 
 ***
 
 ## STATUS
 
-This revision is **not ready for fabrication**. What is in the repository today:
+This revision has **no ERC / DRC error left**, but it is **not ordered yet**: the BOM has no manufacturer part numbers and there is no firmware. What is in the repository today:
 
 | Area | State |
 | --- | --- |
 | Analog front-end (shunts, INA241A2, dividers, input filters) | Drawn and routed |
 | AD7606C-18 supply, reference and analog inputs | Drawn and routed |
-| AD7606C-18 digital interface (CONVST, BUSY, CS, SCLK, SDI, DOUTA–D, RESET, FRSTDATA) | Drawn: software mode (OS0–2 high), serial (PAR/SER SEL high), external reference (REF SELECT low), to the host connector J4. **Not routed** on the PCB |
+| AD7606C-18 digital interface (CONVST, BUSY, CS, SCLK, SDI, DOUTA–D, RESET, FRSTDATA) | Drawn: software mode (OS0–2 high), serial (PAR/SER SEL high), external reference (REF SELECT low), to the host connector J4. Drawn and routed |
 | +3.3V input | J4 pin 1, from the host |
-| Power supply (LT8362, LTC6655, LT3045-1) | Drawn; the boost stage is **not placed** on the PCB (37 unrouted connections) |
-| ERC / DRC | 43 ERC and 126 DRC violations, CI runs the `PRELIMINARY` variant (no ERC/DRC gate) |
+| Power supply (LT8362, LTC6655, LT3045-1) | Drawn and routed. D6 (PMEG2020EH, +3.3V to +5VA) keeps AVCC within 0.3 V of VDRIVE at power-up |
+| ERC / DRC | ERC 0; DRC 0 errors, 8 warnings (4 copper slivers on In2, 4 footprints edited on the board: IC1, J3, J4, J5); schematic parity 0. CI runs the `PRELIMINARY` variant (no ERC/DRC gate) |
 
 See [DESIGN REVIEW](#design-review) for the points found while documenting and simulating the design.
 
@@ -82,8 +82,8 @@ See [DESIGN REVIEW](#design-review) for the points found while documenting and s
 | Reference rail +2.5VA | 2.500 V — LTC6655-2.5 (IC3) driving the SET pin of an LT3045-1 (IC9) through R11 = 1 kΩ |
 | Digital supply (AD7606C VDRIVE) | 3.3 V, from the host |
 | ADC | AD7606C-18, 8-channel simultaneous sampling, 18 bits, 1 MSPS, external reference on REFIN/REFOUT |
-| Current sensing | 4 × PBV-R001 1 mΩ shunt + INA241A2 (20 V/V): **20 mV/A**, zero current = 2.5 V |
-| Current range | ±35 A continuous on the phases (MR60PW rating) = 2.5 V ± 0.7 V, 30 A on the battery line (XT60PW rating); the amplifier output swing allows about ±115 A |
+| Current sensing | 4 × PBV-R001 1 mΩ shunt + INA241A4 (100 V/V): **100 mV/A**, zero current = 2.5 V. Version A4 of the silkscreen table, for small motors (1205.5 on 1S); A2 (20 mV/A) for large motors |
+| Current range | The amplifier output swing allows about ±23 A (18 A peak in the version table). Connectors: 35 A continuous on the phases (MR60PW), 30 A on the battery line (XT60PW) |
 | Voltage sensing | 4 × divider 40.2 kΩ / 10 kΩ: 0.1992 V/V unloaded, **0.1977 V/V** with the AD7606C input impedance |
 | Voltage range | 50 V on a ±10 V ADC range (25.2 V for a 6S pack gives 4.98 V) |
 | Current channel bandwidth | 17.5 kHz (phase U: R15 = 33 Ω, R16 = 9.1 kΩ, C25 = 1 nF) |
@@ -106,7 +106,7 @@ See [DESIGN REVIEW](#design-review) for the points found while documenting and s
 
 The four channels are numbered alike: Rn = 33 Ω and Rn+1 = 9.1 kΩ (current filter), Rn+2 / Rn+3 = divider, Rn+4 = 9.1 kΩ (voltage filter), with n = 15 (U), 20 (V), 25 (W), 30 (B). Re1 … Re4 are the 1 kΩ series resistors of the voltage filters.
 
-Current sign: IN+ of each INA241 is on the output side of the shunt (J2 for the phases, J5 for the battery), so a current flowing **from J1 to J2**, or from J3 to J5, **lowers** the output: `V = 2.5 V − 20 mV/A × I(J1→J2)`. The voltage is measured on the same output side of the shunt.
+Current sign: IN+ of each INA241 is on the output side of the shunt (J2 for the phases, J5 for the battery), so a current flowing **from J1 to J2**, or from J3 to J5, **lowers** the output: `V = 2.5 V − 100 mV/A × I(J1→J2)`. The voltage is measured on the same output side of the shunt.
 
 ### Power budget
 
@@ -115,7 +115,7 @@ Power chain: **+3.3 V (host) → LT8362 → +6 V → LTC6655 + LT3045-1 → +5VA
 | Load | Rail | Typical current |
 | --- | --- | --- |
 | AD7606C-18 AVCC (datasheet: 8.5 mA at 10 kSPS, 45 mA at 1 MSPS) | +5VA | 8.5 – 45 mA |
-| 4 × INA241A2 (2.5 mA each) | +5VA | 10 mA |
+| 4 × INA241A4 (2.5 mA each) | +5VA | 10 mA |
 | 2 × LTC6655 (5 mA each) and 2 × LT3045-1 | +6V | ≈ 13 mA |
 | **Total on +6V** (simulated, 1 MSPS) | **+6V** | **68 mA** |
 | AD7606C-18 VDRIVE | +3.3V | < 2 mA |
@@ -144,7 +144,7 @@ Five functional hierarchical sheets (under `Project Architecture`), plus the doc
 | Sheet (file) | Description |
 | --- | --- |
 | `AD7606C-18_ADC` (`AD7606C-18 - ADC.kicad_sch`) | AD7606C-18 (IC1). AVCC = +5VA (C20, C35, C38), VDRIVE = +3.3V (C21), REFIN/REFOUT = +2.5VA (C41), REFCAPA/REFCAPB joined on C39 (10 µF), REGCAP pins on C36 / C37 (1 µF each). The eight analog input pairs come from the INA241 sheet through global labels. |
-| `INA241_Phase_Sense` (`INA241 - Phase Sensing.kicad_sch`) | Four identical channels: phases U, V, W and the battery line B. Shunt R1 / R4 / R7 / R9 with Kelvin connection to IC2 / IC4 / IC6 / IC10 (INA241A2, VS = +5VA, REF1 = REF2 = +2.5VA), output filter 33 Ω + 1 nF. Voltage divider 40.2 kΩ / 10 kΩ, 1 kΩ + 180 pF. 9.1 kΩ return resistor on every negative ADC input. |
+| `INA241_Phase_Sense` (`INA241 - Phase Sensing.kicad_sch`) | Four identical channels: phases U, V, W and the battery line B. Shunt R1 / R4 / R7 / R9 with Kelvin connection to IC2 / IC4 / IC6 / IC10 (INA241A4, VS = +5VA, REF1 = REF2 = +2.5VA), output filter 33 Ω + 1 nF. Voltage divider 40.2 kΩ / 10 kΩ, 1 kΩ + 180 pF. 9.1 kΩ return resistor on every negative ADC input. |
 | `Connectors` (`Connectors.kicad_sch`) | J1 and J2, Amass MR60PW: pins 1–3 = phases, mounting pins 4–5 = GND. J3 (XT60PW-F) and J5 (XT60PW-M): pin 2 = battery line, through the shunt R9; pin 1 not connected; mounting pins = GND. J4, 2 × 8 pin header 2.54 mm (horizontal, for Dupont wires) to the host: pin 1 = +3.3V, pins 2, 4, 8, 10 = GND, then CONVST (3), BUSY (5), RESET (6), CS (7), SCLK (9), SDI (11), FRSTDATA (12), DOUTA–D (13–16). |
 | `Holes, Fiducials` (`Holes - Fiducials.kicad_sch`) | Four M3 mounting holes H1–H4 connected to GND. |
 | `Power_Supply` (`Power Supply - Analog Rails.kicad_sch`) | LT8362 boost (IC5, L1 = 2.2 µH, D2 = PMEG2020EH, 2 MHz, pulse-skipping, soft-start C24 = 10 nF). LTC6655-5 (IC7) and LTC6655-2.5 (IC3) references, each driving the SET pin of an LT3045-1 (IC8 / IC9) through 1 kΩ with 10 µF on SET. PGFB tied to IN (no Power-Good, no fast start-up), ILIM to GND, VIOC open. |
@@ -165,13 +165,13 @@ Points found while checking the documentation against the netlist and the datash
 | --- | --- | --- | --- |
 | 1 | **The AD7606C-18 has no digital interface and the board has no +3.3V input.** CONVST, BUSY, CS, RD/SCLK, DOUTA–D, FRSTDATA, RESET, OS0–2, RANGE, PAR/SER SEL, STBY, WR and REF SELECT are open. | Netlist: 32 `unconnected-(IC1-…)` nets; J1 / J2 and J3 / J5 only carry the phases, the battery line and GND. | **Fixed**: host connector J4 added, mode pins strapped (software mode, serial, REF SELECT low). |
 | 2 | **AD7606C-18 pins left open that the datasheet asks to connect**: AGND pin 26 and REFGND pin 46 (*"All six of the AGND pins must connect to the AGND plane"*). | Netlist: `unconnected-(IC1-AGND_2-Pad26)`, `…REFGND_2-Pad46`. | **Fixed**: both on GND. |
-| 3 | **INA241A2 pin 4 (NC) is open** on IC2, IC4, IC6 and IC10. The datasheet pin table says: *"NC — Reserved. Connect to ground."* | Netlist: `unconnected-(IC2-NC-Pad4)` and the same for IC4, IC6, IC10. | Connect pin 4 to GND. |
-| 4 | **The INA241A2 gain is 20 V/V.** The schematic note listed the INA240 gains (A2 = 50 V/V). With 1 mΩ the scale is 20 mV/A: 35 A only uses ±0.7 V of the ±2.5 V available. | TI datasheet SBOSA30D: A1 = 10, A2 = 20, A3 = 50, A4 = 100, A5 = 200 V/V. The note is corrected in the schematic. | Keep 20 V/V (±115 A range) or fit an INA241A3 (50 V/V, ±46 A) for more resolution. |
+| 3 | **INA241A2 pin 4 (NC) is open** on IC2, IC4, IC6 and IC10. The datasheet pin table says: *"NC — Reserved. Connect to ground."* | Netlist: `unconnected-(IC2-NC-Pad4)` and the same for IC4, IC6, IC10. | **Fixed**: pin 4 tied to GND on the four INA241 (schematic and PCB). |
+| 4 | **The INA241A2 gain is 20 V/V.** The schematic note listed the INA240 gains (A2 = 50 V/V). With 1 mΩ the scale is 20 mV/A: 35 A only uses ±0.7 V of the ±2.5 V available. | TI datasheet SBOSA30D: A1 = 10, A2 = 20, A3 = 50, A4 = 100, A5 = 200 V/V. The note is corrected in the schematic. | **Changed**: INA241A4 (100 V/V, ±23 A) fitted for small motors; the silkscreen table lists the other versions. |
 | 5 | **Current channels: the 9.1 kΩ return resistor creates a 15 mV offset.** The AD7606C inputs are 1.2 MΩ to an internal 2 V node. On the voltage channels both inputs see about 9 kΩ, so the two bias drops cancel (−0.15 mV). On the current channels the positive input sees 33 Ω and the negative one 9.1 kΩ: V− sits at +15 mV. | Simulation 06: 2.4849 V at zero current instead of 2.5000 V, which reads as +0.75 A. | Constant offset: remove it with a zero-current calibration. Do not shrink R16 / R21 / R26 / R31 without recomputing the filter: the capacitor is differential, so they set the 17.5 kHz corner. |
 | 6 | **Voltage channels: −0.75 % gain error** from the 9 kΩ source impedance into the 1.2 MΩ input (−0.9 % at the 1 MΩ minimum). | Simulation 05: 0.1977 V/V instead of 0.1992 V/V. | Calibrate, or use the AD7606C per-channel gain register (software mode, 9 kΩ). |
-| 7 | **PCB not finished**: IC5, L1 and the boost passives are outside the board outline, C16 has no schematic symbol, C14 / C15 / C39 use a 4-pin capacitor symbol on a 2-pad footprint. | DRC: 37 unconnected items, 20 schematic parity warnings. | Place and route the boost stage; align symbol and footprint of the 4-terminal capacitors. |
+| 7 | **PCB not finished**: IC5, L1 and the boost passives are outside the board outline, C16 has no schematic symbol, C14 / C15 / C39 use a 4-pin capacitor symbol on a 2-pad footprint. | DRC: 37 unconnected items, 20 schematic parity warnings. | **Fixed**: boost stage placed and routed; C14 / C15 / C39 on a 4-pad 0805 footprint (pads 3 / 4 stacked on 2 / 1). |
 | 8 | **The delay between the current and voltage readings is not known before a board exists.** The current channel has a 17.5 kHz filter and the voltage channel a 48.5 kHz one, and the inductance of the shunt (datasheet: below 10 nH) acts against the filter of the current channel. Under PWM, a phase difference between the two readings at the switching frequency turns reactive power into measured power. | Simulation 07, phase power after DC calibration: −4.2 % with 0 nH, +0.3 % with 5 nH, +4.7 % with 10 nH. With a time shift of the current calibrated at the electrical frequency: within ±1.5 %. | Measure the phase between the two channels on the first board, then choose C31 / C32 / C34 or correct the delay in the firmware. |
-| 9 | **AD7606C-18 VDRIVE is above AVCC + 0.3 V at power-up.** VDRIVE = +3.3V comes from the host and is there at once, while AVCC = +5VA (boost, then LTC6655 + LT3045-1) only passes 3.0 V after about 10 ms. | Datasheet Rev. B, Table 6: *"VDRIVE to AGND −0.3 V to AVCC + 0.3 V"*. | Low-Vf Schottky from +3.3V (anode) to +5VA (cathode), reverse-biased in operation, or VDRIVE from a 3.3 V LDO on +5VA with the host keeping its pins low until the rails are up. |
+| 9 | **AD7606C-18 VDRIVE is above AVCC + 0.3 V at power-up.** VDRIVE = +3.3V comes from the host and is there at once, while AVCC = +5VA (boost, then LTC6655 + LT3045-1) only passes 3.0 V after about 10 ms. | Datasheet Rev. B, Table 6: *"VDRIVE to AGND −0.3 V to AVCC + 0.3 V"*. | **Fixed**: D6, PMEG2020EH low-Vf Schottky from +3.3V (anode) to +5VA (cathode), under IC1 on the bottom side; reverse-biased in operation. |
 
 ***
 

@@ -1328,7 +1328,7 @@
 		)
 		(uuid "f83a04a6-4dbd-54d7-80a8-93b67263dfdb")
 	)
-	(text "4 identical channels: U / V / W and battery B\nR1 / R4 / R7 / R9  PBV-R001 1 mΩ Kelvin shunt\nIC2 / 4 / 6 / 10  INA241A2, 20 V/V = 20 mV/A\nDividers 40.2 kΩ / 10 kΩ = 0.198 V/V\nRC filters: 17.5 kHz (I), 48.5 kHz (V)"
+	(text "4 identical channels: U / V / W and battery B\nR1 / R4 / R7 / R9  PBV-R001 1 mΩ Kelvin shunt\nIC2 / 4 / 6 / 10  INA241A4, 100 V/V = 100 mV/A\nDividers 40.2 kΩ / 10 kΩ = 0.198 V/V\nRC filters: 17.5 kHz (I), 48.5 kHz (V)"
 		(exclude_from_sim no)
 		(at 129.54 85.09 0)
 		(effects

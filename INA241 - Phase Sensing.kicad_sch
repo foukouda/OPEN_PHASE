@@ -379,7 +379,7 @@
 						)
 					)
 				)
-				(pin no_connect line
+				(pin passive line
 					(at 0 -7.62 0)
 					(length 5.08)
 					(name "NC"
@@ -1545,7 +1545,7 @@
 		)
 		(uuid "030d49cf-e095-42fd-9d52-9a6a3b37b36c")
 	)
-	(text_box "Mesure du courant des trois phases (U, V, W) et de la batterie (B), et de la tension des mêmes lignes.\nLe courant traverse un shunt 4 fils de 1 mΩ (R1 / R4 / R7 / R9, Isabellenhütte PBV). L'INA241A2 lit la tension entre les deux broches de mesure du shunt (Kelvin) et l'amplifie 20 fois autour du +2.5VA : V = 2.5 V − 20 mV/A × I(J1→J2), J3→J5 pour la batterie.\nPourquoi l'INA241 : la tension de mode commun d'une phase saute de 0 à VBAT à chaque front du PWM de l'ESC. L'INA241 accepte −5 V à 110 V de mode commun, a un rejet PWM renforcé (CMRR 166 dB DC, 104 dB à 100 kHz), ±10 µV d'offset et ±0.01 % d'erreur de gain (version A).\nUn pont 40.2 kΩ / 10 kΩ par ligne ramène la tension (côté J2 / J5) dans la plage de l'AD7606C.\nNoms des signaux, x = U, V, W ou BAT : SHUNT_x± prises Kelvin du shunt vers IN± de l'INA241 → INA_x sortie de l'INA241 (TP3 à TP6) → filtre RC → ADC_x_I± (courant). Pont → ADC_x_V± (tension). Vers l'AD7606C page 4."
+	(text_box "Mesure du courant des trois phases (U, V, W) et de la batterie (B), et de la tension des mêmes lignes.\nLe courant traverse un shunt 4 fils de 1 mΩ (R1 / R4 / R7 / R9, Isabellenhütte PBV). L'INA241A4 lit la tension entre les deux broches de mesure du shunt (Kelvin) et l'amplifie 100 fois autour du +2.5VA : V = 2.5 V − 100 mV/A × I(J1→J2), J3→J5 pour la batterie.\nPourquoi l'INA241 : la tension de mode commun d'une phase saute de 0 à VBAT à chaque front du PWM de l'ESC. L'INA241 accepte −5 V à 110 V de mode commun, a un rejet PWM renforcé (CMRR 166 dB DC, 104 dB à 100 kHz), ±10 µV d'offset et ±0.01 % d'erreur de gain (version A).\nUn pont 40.2 kΩ / 10 kΩ par ligne ramène la tension (côté J2 / J5) dans la plage de l'AD7606C.\nNoms des signaux, x = U, V, W ou BAT : SHUNT_x± prises Kelvin du shunt vers IN± de l'INA241 → INA_x sortie de l'INA241 (TP3 à TP6) → filtre RC → ADC_x_I± (courant). Pont → ADC_x_V± (tension). Vers l'AD7606C page 4."
 		(exclude_from_sim no)
 		(at 270.51 45.72 0)
 		(size 102.87 25)
@@ -1738,7 +1738,7 @@
 		)
 		(uuid "82004653-89e0-44e5-bcb6-d0ea9a5f52ba")
 	)
-	(text_box "INA241A2 + SHUNT 1 mΩ   ·   4 VOIES : U, V, W, BATTERIE"
+	(text_box "INA241A4 + SHUNT 1 mΩ   ·   4 VOIES : U, V, W, BATTERIE"
 		(exclude_from_sim no)
 		(at 45.72 39.37 0)
 		(size 144.78 6.35)
@@ -1811,7 +1811,7 @@
 		)
 		(uuid "afa35490-36b2-41c3-a05b-1405b20cec63")
 	)
-	(text_box "INA241A1 : 10 V/V\nINA241A2 : 20 V/V (monté)\nINA241A3 : 50 V/V\nINA241A4 : 100 V/V\nINA241A5 : 200 V/V\n• Avec 1 mΩ et 20 V/V : 20 mV/A, saturation vers ±115 A. 35 A n'utilise que ±0.7 V des ±2.5 V : un A3 (50 V/V, ±46 A) donnerait 2.5 × plus de résolution (Design review 4).\n• REF1 = REF2 = +2.5VA : zéro au milieu, mesure dans les deux sens (freinage, récupération).\n• Shunt PBV-R001 : 1 mΩ 4 fils, < 75 ppm/K, Rth < 15 K/W, inductance < 10 nH (openEMS : 2.3 à 2.7 nH sur ce routage).\n• NC (broche 4) laissée ouverte : la datasheet demande GND (Design review 3)."
+	(text_box "INA241A1 : 10 V/V\nINA241A2 : 20 V/V\nINA241A3 : 50 V/V\nINA241A4 : 100 V/V (monté)\nINA241A5 : 200 V/V\n• Avec 1 mΩ et 100 V/V : 100 mV/A, saturation vers ±23 A. Version petits moteurs (1205.5 en 1S, pointes vers 18 A) ; A2 (20 V/V, ±115 A) pour les gros moteurs.\n• REF1 = REF2 = +2.5VA : zéro au milieu, mesure dans les deux sens (freinage, récupération).\n• Shunt PBV-R001 : 1 mΩ 4 fils, < 75 ppm/K, Rth < 15 K/W, inductance < 10 nH (openEMS : 2.3 à 2.7 nH sur ce routage).\n• NC (broche 4) reliée à GND, comme le demande la datasheet."
 		(exclude_from_sim no)
 		(at 270.51 78.34 0)
 		(size 102.87 30)
@@ -1834,7 +1834,7 @@
 		)
 		(uuid "ba1cc911-1a11-498a-89d1-1340b778d4e9")
 	)
-	(text_box "Voie courant (×4)\n   V = 2.5 V − G × Rs × I = 2.5 V − 20 V/V × 1 mΩ × I = 2.5 V − 20 mV/A × I\n   35 A → ±0.7 V ; saturation vers ±115 A\n   fc = 1 / (2π × R16 × C25) = 1 / (2π × 9.1 kΩ × 1 nF) = 17.5 kHz\n   Offset : I(V−) = (0 − 2 V) / 1.2 MΩ = −1.7 µA → V− = 1.7 µA × 9.1 kΩ = 15 mV ≈ 0.75 A\n   Shunt : P = I² × Rs = 35² × 1 mΩ = 1.23 W → +18 K (Rth < 15 K/W)\n   Inductance : R = 2π f L → f = 1 mΩ / (2π × 2.4 nH) ≈ 66 kHz\n\nVoie tension (×4)\n   k = R18 / (R17 + R18) = 10 / 50.2 = 0.1992 → 25 V = 4.98 V\n   Source : R17 // R18 + Re1 = 8.01 kΩ + 1 kΩ = 9.01 kΩ ≈ R19 = 9.1 kΩ\n   fc = 1 / (2π × (9.01 + 9.1) kΩ × 180 pF) ≈ 48.8 kHz (sim 05 : 48.5 kHz)\n   Gain réel : 0.1992 × 1.2 MΩ / (1.2 MΩ + 9.01 kΩ) = 0.1977 (−0.75 %)\n\nBudget\n   4 × INA241A2 × 2.5 mA = 10 mA sur +5VA\n   Pertes : 1.23 W par shunt à 35 A"
+	(text_box "Voie courant (×4)\n   V = 2.5 V − G × Rs × I = 2.5 V − 100 V/V × 1 mΩ × I = 2.5 V − 100 mV/A × I\n   18 A → ±1.8 V ; saturation vers ±23 A\n   fc = 1 / (2π × R16 × C25) = 1 / (2π × 9.1 kΩ × 1 nF) = 17.5 kHz\n   Offset : I(V−) = (0 − 2 V) / 1.2 MΩ = −1.7 µA → V− = 1.7 µA × 9.1 kΩ = 15 mV ≈ 0.15 A\n   Shunt : P = I² × Rs = 35² × 1 mΩ = 1.23 W → +18 K (Rth < 15 K/W)\n   Inductance : R = 2π f L → f = 1 mΩ / (2π × 2.4 nH) ≈ 66 kHz\n\nVoie tension (×4)\n   k = R18 / (R17 + R18) = 10 / 50.2 = 0.1992 → 25 V = 4.98 V\n   Source : R17 // R18 + Re1 = 8.01 kΩ + 1 kΩ = 9.01 kΩ ≈ R19 = 9.1 kΩ\n   fc = 1 / (2π × (9.01 + 9.1) kΩ × 180 pF) ≈ 48.8 kHz (sim 05 : 48.5 kHz)\n   Gain réel : 0.1992 × 1.2 MΩ / (1.2 MΩ + 9.01 kΩ) = 0.1977 (−0.75 %)\n\nBudget\n   4 × INA241A4 × 2.5 mA = 10 mA sur +5VA\n   Pertes : 1.23 W par shunt à 35 A"
 		(exclude_from_sim no)
 		(at 270.51 190.2 0)
 		(size 102.87 44)
@@ -3150,7 +3150,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 118.11) (xy 110.49 118.11)
+			(xy 113.03 118.11) (xy 111.76 118.11)
 		)
 		(stroke
 			(width 0)
@@ -5853,7 +5853,7 @@
 				)
 			)
 		)
-		(property "Value" "INA241A2IDGKR"
+		(property "Value" "INA241A4IDGKR"
 			(at 124.46 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5922,7 +5922,7 @@
 				(justify left top)
 			)
 		)
-		(property "Manufacturer_Part_Number" "INA241A2IDGKR"
+		(property "Manufacturer_Part_Number" "INA241A4IDGKR"
 			(at 134.62 740.97 0)
 			(hide yes)
 			(show_name no)
@@ -5934,7 +5934,7 @@
 				(justify left top)
 			)
 		)
-		(property "Mouser Part Number" "595-INA241A2IDGKR"
+		(property "Mouser Part Number" "595-INA241A4IDGKR"
 			(at 134.62 840.97 0)
 			(hide yes)
 			(show_name no)
@@ -5946,7 +5946,7 @@
 				(justify left top)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA241A2IDGKR?qs=Imq1NPwxi772hZtuitx1Tg%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Texas-Instruments/INA241A4IDGKR"
 			(at 134.62 940.97 0)
 			(hide yes)
 			(show_name no)
@@ -5958,7 +5958,7 @@
 				(justify left top)
 			)
 		)
-		(property "Arrow Part Number" "INA241A2IDGKR"
+		(property "Arrow Part Number" "INA241A4IDGKR"
 			(at 134.62 1040.97 0)
 			(hide yes)
 			(show_name no)
@@ -7481,7 +7481,7 @@
 				)
 			)
 		)
-		(property "Value" "INA241A2IDGKR"
+		(property "Value" "INA241A4IDGKR"
 			(at 124.46 186.69 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7550,7 +7550,7 @@
 				(justify left top)
 			)
 		)
-		(property "Manufacturer_Part_Number" "INA241A2IDGKR"
+		(property "Manufacturer_Part_Number" "INA241A4IDGKR"
 			(at 134.62 786.69 0)
 			(hide yes)
 			(show_name no)
@@ -7562,7 +7562,7 @@
 				(justify left top)
 			)
 		)
-		(property "Mouser Part Number" "595-INA241A2IDGKR"
+		(property "Mouser Part Number" "595-INA241A4IDGKR"
 			(at 134.62 886.69 0)
 			(hide yes)
 			(show_name no)
@@ -7574,7 +7574,7 @@
 				(justify left top)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA241A2IDGKR?qs=Imq1NPwxi772hZtuitx1Tg%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Texas-Instruments/INA241A4IDGKR"
 			(at 134.62 986.69 0)
 			(hide yes)
 			(show_name no)
@@ -7586,7 +7586,7 @@
 				(justify left top)
 			)
 		)
-		(property "Arrow Part Number" "INA241A2IDGKR"
+		(property "Arrow Part Number" "INA241A4IDGKR"
 			(at 134.62 1086.69 0)
 			(hide yes)
 			(show_name no)
@@ -11296,7 +11296,7 @@
 				)
 			)
 		)
-		(property "Value" "INA241A2IDGKR"
+		(property "Value" "INA241A4IDGKR"
 			(at 124.46 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11365,7 +11365,7 @@
 				(justify left top)
 			)
 		)
-		(property "Manufacturer_Part_Number" "INA241A2IDGKR"
+		(property "Manufacturer_Part_Number" "INA241A4IDGKR"
 			(at 134.62 695.25 0)
 			(hide yes)
 			(show_name no)
@@ -11377,7 +11377,7 @@
 				(justify left top)
 			)
 		)
-		(property "Mouser Part Number" "595-INA241A2IDGKR"
+		(property "Mouser Part Number" "595-INA241A4IDGKR"
 			(at 134.62 795.25 0)
 			(hide yes)
 			(show_name no)
@@ -11389,7 +11389,7 @@
 				(justify left top)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA241A2IDGKR?qs=Imq1NPwxi772hZtuitx1Tg%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Texas-Instruments/INA241A4IDGKR"
 			(at 134.62 895.25 0)
 			(hide yes)
 			(show_name no)
@@ -11401,7 +11401,7 @@
 				(justify left top)
 			)
 		)
-		(property "Arrow Part Number" "INA241A2IDGKR"
+		(property "Arrow Part Number" "INA241A4IDGKR"
 			(at 134.62 995.25 0)
 			(hide yes)
 			(show_name no)
@@ -12387,7 +12387,7 @@
 				)
 			)
 		)
-		(property "Value" "INA241A2IDGKR"
+		(property "Value" "INA241A4IDGKR"
 			(at 124.46 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12456,7 +12456,7 @@
 				(justify left top)
 			)
 		)
-		(property "Manufacturer_Part_Number" "INA241A2IDGKR"
+		(property "Manufacturer_Part_Number" "INA241A4IDGKR"
 			(at 134.62 649.53 0)
 			(hide yes)
 			(show_name no)
@@ -12468,7 +12468,7 @@
 				(justify left top)
 			)
 		)
-		(property "Mouser Part Number" "595-INA241A2IDGKR"
+		(property "Mouser Part Number" "595-INA241A4IDGKR"
 			(at 134.62 749.53 0)
 			(hide yes)
 			(show_name no)
@@ -12480,7 +12480,7 @@
 				(justify left top)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA241A2IDGKR?qs=Imq1NPwxi772hZtuitx1Tg%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.com/ProductDetail/Texas-Instruments/INA241A4IDGKR"
 			(at 134.62 849.53 0)
 			(hide yes)
 			(show_name no)
@@ -12492,7 +12492,7 @@
 				(justify left top)
 			)
 		)
-		(property "Arrow Part Number" "INA241A2IDGKR"
+		(property "Arrow Part Number" "INA241A4IDGKR"
 			(at 134.62 949.53 0)
 			(hide yes)
 			(show_name no)
@@ -12627,5 +12627,69 @@
 				)
 			)
 		)
+	)
+	(wire
+		(pts
+			(xy 110.49 199.39) (xy 110.49 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b9ab89e-8598-4305-9996-c94c9fb532ad")
+	)
+	(junction
+		(at 110.49 204.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d72faa3d-c5c7-40e8-93d1-7d17fba69087")
+	)
+	(wire
+		(pts
+			(xy 110.49 62.23) (xy 110.49 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b4dbb4c-2788-4dee-9495-39dca95b2b18")
+	)
+	(junction
+		(at 110.49 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "889df251-2986-4d5b-9bc5-33d264397c07")
+	)
+	(wire
+		(pts
+			(xy 110.49 107.95) (xy 110.49 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25896049-d51d-4409-b1be-752fa2802a5f")
+	)
+	(junction
+		(at 110.49 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3426af07-a551-4b9a-a302-8740aea3040c")
+	)
+	(wire
+		(pts
+			(xy 110.49 153.67) (xy 110.49 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a984a734-1ded-4578-95fd-e4dcb7266ac0")
+	)
+	(junction
+		(at 110.49 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fa0e035e-186a-488f-be40-6fcef8dd8582")
 	)
 )

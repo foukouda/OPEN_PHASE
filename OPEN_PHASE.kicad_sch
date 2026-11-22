@@ -1153,7 +1153,7 @@
 		)
 		(uuid "c7960137-7711-4ffe-94cf-8be0bcb30b2c")
 	)
-	(text "3-phase current and voltage sensing: INA241A2 + AD7606C-18"
+	(text "3-phase current and voltage sensing: INA241A4 + AD7606C-18"
 		(exclude_from_sim no)
 		(at 222.25 177.8 0)
 		(effects
@@ -1595,7 +1595,7 @@
 		)
 		(uuid "4fda5cf3-342b-4295-956a-65dd47f01ae9")
 	)
-	(text_box "DESIGN NOTE:\nCurrent: 2.5 V - 20 mV/A x I(J1->J2). Voltage: 0.198 V/V."
+	(text_box "DESIGN NOTE:\nCurrent: 2.5 V - 100 mV/A x I(J1->J2). Voltage: 0.198 V/V."
 		(exclude_from_sim no)
 		(at 26.67 258.445 0)
 		(size 30.48 20.32)

@@ -4405,7 +4405,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "OPEN_PHASE:LED_0603_1608Metric"
 			(at 86.36 222.25 0)
 			(hide yes)
 			(show_name no)
@@ -4750,7 +4750,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "OPEN_PHASE:LED_0603_1608Metric"
 			(at 86.36 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -4997,7 +4997,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "OPEN_PHASE:LED_0603_1608Metric"
 			(at 86.36 203.2 0)
 			(hide yes)
 			(show_name no)
@@ -6178,7 +6178,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "OPEN_PHASE:LED_0603_1608Metric"
 			(at 86.36 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -6950,6 +6950,93 @@
 			(project "OPEN_PHASE"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61"
 					(reference "#PWR062")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 163.83 160.02) (xy 172.72 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2b2a4c1-0139-4b71-b3c0-adf8755d0fa0")
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 172.72 160.02 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4e00ea40-1237-40ca-b16f-4283d17b3f9d")
+		(property "Reference" "#FLG06"
+			(at 172.72 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 172.72 163.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 172.72 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "97fd5745-4889-4757-af52-40fec112d571")
+		)
+		(instances
+			(project "OPEN_PHASE"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61"
+					(reference "#FLG06")
 					(unit 1)
 				)
 			)

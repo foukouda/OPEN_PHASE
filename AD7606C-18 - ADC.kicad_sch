@@ -1514,7 +1514,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "OPEN_PHASE:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(property "Footprint" "OPEN_PHASE:C_0805_2012Metric_4T"
 				(at 0.9652 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2901,7 +2901,7 @@
 		)
 		(uuid "2e133edb-1de2-4138-a47d-5667f6c23d7f")
 	)
-	(text_box "Plage ±5 V différentielle (mode logiciel)\n   1 LSB = 10 V / 2^18 = 38.1 µV\n   Courant : 38.1 µV / 20 mV/A = 1.9 mA par LSB ; 35 A = ±0.7 V = 14 % de la plage\n   Tension : 38.1 µV / 0.1977 = 0.19 mV par LSB ; 5 V / 0.1977 = 25.3 V max\n   (6S chargée : 25.2 V → 4.98 V, juste sous la limite)\n\nEntrées\n   RIN = 1.2 MΩ typ (1 MΩ min) vers 2 V : I = (VIN − 2 V) / RIN = −1.7 µA à 0 V\n   Filtre interne : 25 kHz (mode basse bande), en série avec les RC de la page 5\n\nDébit et bruit\n   1 MSPS sur les 8 voies à la fois\n   SNR 93 dB (±20 V diff.), 102 dB en suréchantillonnage ×32\n\nConsommation (datasheet)\n   AVCC : 8.5 mA à 10 kSPS, 45 mA à 1 MSPS (+5VA)\n   VDRIVE : < 2 mA (+3.3V)"
+	(text_box "Plage ±5 V différentielle (mode logiciel)\n   1 LSB = 10 V / 2^18 = 38.1 µV\n   Courant : 38.1 µV / 100 mV/A = 0.38 mA par LSB ; 18 A = ±1.8 V = 36 % de la plage\n   Tension : 38.1 µV / 0.1977 = 0.19 mV par LSB ; 5 V / 0.1977 = 25.3 V max\n   (6S chargée : 25.2 V → 4.98 V, juste sous la limite)\n\nEntrées\n   RIN = 1.2 MΩ typ (1 MΩ min) vers 2 V : I = (VIN − 2 V) / RIN = −1.7 µA à 0 V\n   Filtre interne : 25 kHz (mode basse bande), en série avec les RC de la page 5\n\nDébit et bruit\n   1 MSPS sur les 8 voies à la fois\n   SNR 93 dB (±20 V diff.), 102 dB en suréchantillonnage ×32\n\nConsommation (datasheet)\n   AVCC : 8.5 mA à 10 kSPS, 45 mA à 1 MSPS (+5VA)\n   VDRIVE : < 2 mA (+3.3V)"
 		(exclude_from_sim no)
 		(at 270.51 188.2 0)
 		(size 102.87 38)
@@ -8114,7 +8114,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "OPEN_PHASE:C_0805_2012Metric"
+		(property "Footprint" "OPEN_PHASE:C_0805_2012Metric_4T"
 			(at 143.205 114.3 0)
 			(hide yes)
 			(show_name no)

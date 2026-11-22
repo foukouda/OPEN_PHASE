@@ -2219,7 +2219,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "OPEN_PHASE:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "OPEN_PHASE:C_0805_2012Metric_4T"
 			(at 0.9652 -3.81 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2621,7 +2621,7 @@
 					)
 				)
 			)
-			(pin no_connect line
+			(pin passive line
 				(at 0 -7.62 0)
 				(length 5.08)
 				(name "NC"

@@ -755,7 +755,7 @@
 		)
 		(uuid "ad7c0534-00b2-53fc-be36-cf1c343af7ea")
 	)
-	(text "+/-115 A, 20 mV/A"
+	(text "+/-23 A, 100 mV/A"
 		(exclude_from_sim no)
 		(at 352 214 0)
 		(effects
@@ -1063,7 +1063,7 @@
 		)
 		(uuid "73b2b29c-2473-4e80-be0b-4f57c6856c3e")
 	)
-	(text_box "IC2 / IC4 / IC6\nINA241A2, 20 V/V\nout = 2.5 V - 20 mV/A x I(J1->J2)"
+	(text_box "IC2 / IC4 / IC6\nINA241A4, 100 V/V\nout = 2.5 V - 100 mV/A x I(J1->J2)"
 		(exclude_from_sim no)
 		(at 158 118 0)
 		(size 56 20)
@@ -1151,7 +1151,7 @@
 		)
 		(uuid "835bfa4b-2ad6-582f-b93f-a7912c33d88f")
 	)
-	(text_box "IC10\nINA241A2, 20 V/V\nout = 2.5 V - 20 mV/A x I(J3->J5)"
+	(text_box "IC10\nINA241A4, 100 V/V\nout = 2.5 V - 100 mV/A x I(J3->J5)"
 		(exclude_from_sim no)
 		(at 158 52 0)
 		(size 56 20)
