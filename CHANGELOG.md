@@ -27,6 +27,7 @@ Keep entries short: the `[Unreleased]` section is printed on the schematic Revis
 -   Silkscreen: board version table (INA241 A5/A4/A3/A2: motor cells, mV/A, peak current), fitted version ticked
 -   D6 PMEG2020EH (+3.3V -> +5VA): AVCC follows VDRIVE at power-up (AD7606C abs. max.)
 -   Test points TP1, TP2, TP7, TP8, TP13, TP14 placed on the bottom, with tags
+-   BOM: manufacturer part numbers on the 90 passives, diodes, LEDs and J4 (schematic and PCB fields)
 
 ### Changed
 
@@ -59,3 +60,4 @@ Keep entries short: the `[Unreleased]` section is printed on the schematic Revis
 -   J1/J2 and J5 mounting pads reduced (0.3 mm from the board edge)
 -   IC8/IC9 thermal vias tented on the bottom
 -   Silkscreen kept off pads, gold bands and board edge (connector outlines, J4, IC5 reference, labels)
+-   KiBot BoM read "Manufacturer Part Number", the symbols use "Manufacturer_Part_Number": the MPN columns were empty

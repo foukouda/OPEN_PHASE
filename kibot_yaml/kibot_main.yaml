@@ -573,8 +573,9 @@ definitions:
 
   # BoM ========================================================================
 
-  MPN_FIELD: 'Manufacturer Part Number'
-  MAN_FIELD: 'Manufacturer'
+  # Same field names as the symbols (SamacSys style), otherwise the BoM columns stay empty
+  MPN_FIELD: 'Manufacturer_Part_Number'
+  MAN_FIELD: 'Manufacturer_Name'
 
   # Drill table and drill map parameters =======================================
 
