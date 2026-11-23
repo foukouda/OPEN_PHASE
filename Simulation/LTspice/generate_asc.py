@@ -24,7 +24,7 @@ PINS = {  # R0 pin coordinates
                   "OUT_F": (144, -32), "P6": (144, 32)},
     "LTC6655-2.5": {"IN": (-144, -32), "SHDN": (-144, 32), "GND": (0, 64),
                     "OUT_F": (144, -32), "P6": (144, 32)},
-    "INA241A2_behav": {"IN+": (-128, -48), "IN-": (-128, 48), "REF1": (-64, 96), "REF2": (64, 96),
+    "INA241A4_behav": {"IN+": (-128, -48), "IN-": (-128, 48), "REF1": (-64, 96), "REF2": (64, 96),
                        "VS": (0, -96), "GND": (0, 96), "OUT": (128, 0)},
 }
 
@@ -353,7 +353,7 @@ def adc_input(s, x, yp, yn, tag, name_p, name_n, rin=("1.2Meg", "1.2Meg")):
     return x - 336, x - 240, x - 144
 
 
-# One measurement channel pair = shunt + INA241A2 + filter -> one ADC input, divider + filter -> another one.
+# One measurement channel pair = shunt + INA241A4 + filter -> one ADC input, divider + filter -> another one.
 # The battery channel B (DC bus, battery to ESC) has the same parts and values as the phase channels.
 # The four channels are numbered alike: n = 33R, n+1 = 9.1k (current filter), n+2 / n+3 = divider,
 # n+4 = 9.1k (voltage filter), with n = 15 (U), 20 (V), 25 (W), 30 (B), and Re1 ... Re4.
@@ -367,7 +367,7 @@ DC_BUS = {"what": "battery B", "in": "IN-B", "out": "OUT-B", "sng": "SNG-A4N", "
 
 def channels(s, vph, vph_ac, im, im_ac, pwm=False, motor=None, mc=False, lsh=None, ch=PHASE_U, bus=None,
              supplies=True):
-    """One channel pair, by default phase U: shunt R1 + INA241A2 (IC2) -> V8, and divider R17/R18 -> V7
+    """One channel pair, by default phase U: shunt R1 + INA241A4 (IC2) -> V8, and divider R17/R18 -> V7
     (sheets INA241 and AD7606C).
 
     pwm:   the phase source is a behavioural source (PWM expression `vph`).
@@ -432,9 +432,9 @@ def channels(s, vph, vph_ac, im, im_ac, pwm=False, motor=None, mc=False, lsh=Non
     s.label((96, 0), ch["in"])
     s.label((720, 0), ch["out"])
     s.text(144, -88, f"PBV-R001 shunt, {ch['lsh']} = its inductance (datasheet: < 10 nH)" if lsh else "PBV-R001 shunt", 1)
-    # --- INA241A2, Kelvin connection
-    u = s.part("INA241A2_behav", "IN+", (384, 256), ch["ic"],
-               spiceline="G={mc(20,tolG)} Vos={flat(15u)}" if mc else None)
+    # --- INA241A4, Kelvin connection
+    u = s.part("INA241A4_behav", "IN+", (384, 256), ch["ic"],
+               spiceline="G={mc(100,tolG)} Vos={flat(10u)}" if mc else None)
     s.wire((tap, 0), (tap, 256), u["IN+"])
     s.wire((160, 0), (160, 352), u["IN-"])
     s.wire(u["VS"], (512, 160))
@@ -501,11 +501,11 @@ s.save("05_Measurement_Channels_AC.asc")
 
 s = Sch(2100, 1500)
 header(s, "OPEN_PHASE - 06 - Measurement channels : DC transfer and step response",
-       "Phase voltage steps 0 -> 25.2 V (6S battery) at 100 us, phase current steps 0 -> 35 A (MR60 rating, J1 -> J2) at 300 us.")
-channels(s, "PWL(0 0 100u 0 100.1u 25.2)", None, "PWL(0 0 300u 0 300.1u 35)", None)
+       "Phase voltage steps 0 -> 25.2 V (6S battery) at 100 us, phase current steps 0 -> 18 A (peak current of the INA241A4 version, J1 -> J2) at 300 us.")
+channels(s, "PWL(0 0 100u 0 100.1u 25.2)", None, "PWL(0 0 300u 0 300.1u 18)", None)
 s.text(-400, 1120, ".tran 0 600u 0 20n", 2, True)
-s.text(-400, 1160, ".meas tran VI_zero AVG V(V8+,V8-) FROM 50u TO 90u\n.meas tran VI_35A AVG V(V8+,V8-) FROM 550u TO 600u\n"
-                   ".meas tran V8N_bias AVG V(V8-) FROM 550u TO 600u\n.meas tran T_I_1pct WHEN V(V8+,V8-)=VI_zero+0.99*(VI_35A-VI_zero) FALL=1", 2, True)
+s.text(-400, 1160, ".meas tran VI_zero AVG V(V8+,V8-) FROM 50u TO 90u\n.meas tran VI_18A AVG V(V8+,V8-) FROM 550u TO 600u\n"
+                   ".meas tran V8N_bias AVG V(V8-) FROM 550u TO 600u\n.meas tran T_I_1pct WHEN V(V8+,V8-)=VI_zero+0.99*(VI_18A-VI_zero) FALL=1", 2, True)
 s.text(720, 1160, ".meas tran VV_zero AVG V(V7+,V7-) FROM 50u TO 90u\n.meas tran VV_25V AVG V(V7+,V7-) FROM 250u TO 290u\n"
                   ".meas tran VOUTU AVG V(OUT-U) FROM 250u TO 290u\n.meas tran T_V_1pct WHEN V(V7+,V7-)=VV_zero+0.99*(VV_25V-VV_zero) RISE=1", 2, True)
 s.save("06_Measurement_Channels_Step.asc")
@@ -566,10 +566,11 @@ for x, n, val, lab, wy in ((-320, "V_MOD", "SINE(0.5 {m/2} {fe} 0 0 {phi})", "MO
     s.gnd(v["-"])
 s.text(-400, 1040, "PWM modulator: sine reference (MOD) against a triangle carrier (CAR)", 1)
 s.text(-400, 1120, ".tran 0 8m 0 50n uic\n.options plotwinsize=0\n.step param Lsh list 1p 5n 10n", 2, True)
-s.text(-400, 1250, ".param Vbat=25.2 fpwm=24k fe=1k m=0.774 phi=22.7 kedge=200\n.param Lm=30u Rm=50m Eb=8\n"
+s.text(-400, 1250, ".param Vbat=4.2 fpwm=48k fe=3.5k m=0.85 phi=47.7 kedge=200\n.param Lm=5u Rm=20m Eb=0.95\n"
                    ".param Rb=20m Lb=300n Cdc=470u Resr=30m", 2, True)
-s.text(-400, 1390, "6S battery, 24 kHz PWM, 1 kHz electrical frequency. Three runs: shunts without inductance, 5 nH, 10 nH.\n"
-                   "20 A peak in phase with the back-EMF: 90 W in each phase, PWM ripple of about 8 A pp.\n"
+s.text(-400, 1390, "1205.5 class motor on 1S (INA241A4 version): 4.2 V battery, 48 kHz PWM, 3.5 kHz electrical frequency\n"
+                   "(30 000 rpm, 7 pole pairs). Three runs: shunts without inductance, 5 nH, 10 nH.\n"
+                   "About 12 A peak in phase with the back-EMF, about 7 W in each phase. Phase 5 uH / 20 mOhm assumed.\n"
                    "DC bus: battery and leads 20 mOhm / 300 nH, ESC input capacitor 470 uF / 30 mOhm.\n"
                    "These four values are assumed (no battery or ESC is specified in the project).", 2)
 s.text(720, 1120, ".save V(IN-U) V(OUT-U) I(L_M) V(V8+) V(V8-) V(V7+) V(V7-)\n"
@@ -579,16 +580,16 @@ s.save("07_Measurement_Quality_Waveforms.asc")
 # 08: spread of the DC readings when every tolerance is drawn again (before any calibration).
 s = Sch(2100, 1500)
 header(s, "OPEN_PHASE - 08 - Measurement quality : Monte Carlo on the tolerances (phase U, DC readings)",
-       "Each run draws every tolerance again. The readings at 0 / 35 A and 0 / 25.2 V give the spread of offset and gain before calibration.")
+       "Each run draws every tolerance again. The readings at 0 / 18 A and 0 / 25.2 V give the spread of offset and gain before calibration.")
 channels(s, "0", None, "0", None, mc=True)
-s.text(-400, 1120, ".dc I_M 0 35 35 V_PH 0 25.2 25.2\n.step param run 1 1000 1", 2, True)
-s.text(-400, 1200, ".param tolSh=0.005 tolR=0.01 tolG=100u tolRin=0.167\n"
+s.text(-400, 1120, ".dc I_M 0 18 18 V_PH 0 25.2 25.2\n.step param run 1 1000 1", 2, True)
+s.text(-400, 1200, ".param tolSh=0.005 tolR=0.01 tolG=150u tolRin=0.167\n"
                    ".param R1v={mc(1m,tolSh)} R15v={mc(33,tolR)} R16v={mc(9.1k,tolR)}\n"
                    ".param R17v={mc(40.2k,tolR)} R18v={mc(10k,tolR)} Re1v={mc(1k,tolR)} R19v={mc(9.1k,tolR)}\n"
                    ".param RiP={mc(1.2Meg,tolRin)} RiN={mc(1.2Meg,tolRin)} RvP={mc(1.2Meg,tolRin)} RvN={mc(1.2Meg,tolRin)}\n"
                    ".param R11v={mc(1k,tolR)} R12v={mc(24.9k,tolR)} Iset={mc(100u,0.02)}\n"
                    ".param V25={(2.5*(1+flat(250u))/R11v+Iset)/(1/R11v+1/R12v)+flat(2m)}", 2, True)
-s.text(-400, 1450, "tolSh: PBV shunt 0.5 %.  tolR: resistors, 1 % assumed.  IC2: gain 20 V/V +/-0.01 %, offset +/-15 uV (INA241A2 datasheet maximum).\n"
+s.text(-400, 1450, "tolSh: PBV shunt 0.5 %.  tolR: resistors, 1 % assumed.  IC2: gain 100 V/V +/-0.015 %, offset +/-10 uV (INA241A4 datasheet maximum).\n"
                    "RiP, RiN, RvP, RvN: AD7606C input resistances, 1.0 ... 1.4 Meg.  V25: +2.5VA from the LTC6655B (0.025 %), the SET network\n"
                    "(ISET 100 uA +/-2 %, R11, R12) and the LT3045-1 offset (+/-2 mV).", 1)
 s.text(720, 1120, ".save V(IN-U) V(OUT-U) V(V8+) V(V8-) V(V7+) V(V7-) V(+2.5VA)", 2, True)

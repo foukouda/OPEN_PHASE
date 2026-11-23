@@ -25,7 +25,9 @@ from plotstyle import C1, C2, C3, C4, GRID, HERE, INK2, plt, save
 SIM7, SIM8 = "07_Measurement_Quality_Waveforms", "08_Measurement_Quality_Tolerances"
 
 # Constants a firmware would use when it only knows the schematic
-K_I = 1e-3 * 20                      # V/A  : 1 mohm shunt x 20 V/V
+K_I = 1e-3 * 100                     # V/A  : 1 mohm shunt x 100 V/V (INA241A4)
+I_FS = 18.0                          # A    : DC test current, peak current of the A4 version (silkscreen table)
+V_FS = 25.2                          # V    : DC test voltage (6S, the voltage channel is the same on every version)
 K_V = 10e3 / (40.2e3 + 10e3)         # V/V  : R18 / (R17 + R18)
 V_ZERO = 2.5                         # V    : zero-current level of the INA241 (+2.5VA)
 
@@ -45,9 +47,9 @@ ADC = {"full_scale": 10.0,
        "pfs_lsb": 120,               # positive / negative full-scale error, maximum
        "zero_lsb": 80,               # bipolar zero code error, maximum
        "ref": (2.495, 2.505)}        # external reference input voltage
-INA_NOISE = 49e-9                    # V/sqrt(Hz), input-referred, INA241A2 datasheet
+INA_NOISE = 36e-9                    # V/sqrt(Hz), input-referred, INA241A4 datasheet
 # Drift per kelvin, datasheet maxima
-DRIFT = {"ina_gain": 1e-6, "ina_vos": 150e-9,       # INA241A2
+DRIFT = {"ina_gain": 2e-6, "ina_vos": 100e-9,       # INA241A4
          "adc_fs": 3e-6, "adc_zero": 2.5e-6,        # AD7606C-18, of the 20 V span
          "ref": 2e-6,                               # LTC6655B
          "r_tcr": 100e-6}                           # R17 / R18: no part number in the schematic, thick film assumed
@@ -90,7 +92,7 @@ def lowpass(x, fc):
 
 
 def calibration():
-    """Two-point DC calibration (0 / 35 A, 0 / 25.2 V) taken from simulation 06."""
+    """Two-point DC calibration (0 / I_FS, 0 / V_FS) taken from simulation 06."""
     d = read_raw(os.path.join(HERE, "06_Measurement_Channels_Step.raw"))
     t = d["time"]
 
@@ -98,9 +100,9 @@ def calibration():
         m = (t >= a) & (t <= b)
         return float(np.mean(d[key_p][m] - d[key_n][m]))
 
-    i_zero, i_35 = avg("v(v8+)", "v(v8-)", 50e-6, 90e-6), avg("v(v8+)", "v(v8-)", 550e-6, 600e-6)
+    i_zero, i_fs = avg("v(v8+)", "v(v8-)", 50e-6, 90e-6), avg("v(v8+)", "v(v8-)", 550e-6, 600e-6)
     v_zero, v_25 = avg("v(v7+)", "v(v7-)", 50e-6, 90e-6), avg("v(v7+)", "v(v7-)", 250e-6, 290e-6)
-    return {"i_zero": i_zero, "k_i": (i_zero - i_35) / 35.0, "v_zero": v_zero, "k_v": (v_25 - v_zero) / 25.2}
+    return {"i_zero": i_zero, "k_i": (i_zero - i_fs) / I_FS, "v_zero": v_zero, "k_v": (v_25 - v_zero) / V_FS}
 
 
 def bandwidths():
@@ -325,7 +327,7 @@ def fig07():
     c.plot(us[m] - k0, base["v_cal"][m], color=C2, label="reading")
     c.set_xlabel("Time (us)")
     c.set_ylabel("Phase voltage (V)")
-    c.set_ylim(-2, 33)
+    c.set_ylim(-0.08 * p["Vbat"], 1.31 * p["Vbat"])           # -2 ... 33 V for a 6S battery
     c.set_title(f"Phase voltage: the {fpwm / 1e3:.0f} kHz PWM is still in the reading")
     c.legend(loc="upper right", fontsize=9, ncol=2)
 
@@ -346,15 +348,15 @@ def fig07():
 # ------------------------------------------------------------------ 08 : tolerances
 def fig08():
     d = read_raw(os.path.join(HERE, SIM8 + ".raw"))
-    n = len(d["i_m"]) // 4                               # per run: (0 A, 0 V) (35 A, 0 V) (0 A, 25.2 V) (35 A, 25.2 V)
+    n = len(d["i_m"]) // 4                               # per run: (0, 0) (I_FS, 0) (0, V_FS) (I_FS, V_FS)
     pin_i = (d["v(v8+)"] - d["v(v8-)"]).reshape(n, 4)
     pin_v = (d["v(v7+)"] - d["v(v7-)"]).reshape(n, 4)
     v25 = d["v(+2.5va)"].reshape(n, 4)[:, 0]
 
     def readings(code_i, code_v):
-        i0, i35 = (V_ZERO - code_i[:, 2]) / K_I, (V_ZERO - code_i[:, 3]) / K_I
+        i0, ifs = (V_ZERO - code_i[:, 2]) / K_I, (V_ZERO - code_i[:, 3]) / K_I
         v0, v25v = code_v[:, 0] / K_V, code_v[:, 2] / K_V
-        return {"zero": i0, "gain_i": pct((i35 - i0) / 35.0, 1.0), "zero_v": v0 * 1e3, "gain_v": pct((v25v - v0) / 25.2, 1.0)}
+        return {"zero": i0, "gain_i": pct((ifs - i0) / I_FS, 1.0), "zero_v": v0 * 1e3, "gain_v": pct((v25v - v0) / V_FS, 1.0)}
 
     analog = readings(pin_i, pin_v)                      # ideal ADC, exact 2.5 V reference
     # ADC of the datasheet: +2.5VA is its reference, plus its own full-scale and zero errors
@@ -406,7 +408,7 @@ def budget(cal, boards):
         return float((lo + hi) / 2), float((hi - lo) / 2)
 
     rows = []
-    for amps in (5.0, 10.0, 20.0, 35.0):
+    for amps in (2.0, 5.0, 10.0, I_FS):
         heat = SHUNT["tcr"] * SHUNT["rth"] * amps ** 2 * SHUNT["r"]              # self-heating of the shunt
         rows.append(("current", amps, spread(boards["zero"] + boards["gain_i"] / 100 * amps),
                      spread(boards["gain_i"] / 100 * amps)[1], (d["i_gain"] + heat) * amps))
@@ -436,7 +438,7 @@ def write_report():
     b = q["bus"]                                          # DC bus channel
     br, eff = b["runs"][0], b["eff"]
     eff_cal = [e["after DC calibration"] for e in eff]
-    heat35 = SHUNT["rth"] * 35 ** 2 * SHUNT["r"]
+    heat_fs = SHUNT["rth"] * I_FS ** 2 * SHUNT["r"]
 
     L = ["# Predicted measurement quality (generated by run_simulations.py)", "",
          "Phase U and the DC bus (battery to ESC, channel B), from simulations 07 (ESC waveforms) and 08 (Monte Carlo on the tolerances),",
@@ -475,8 +477,8 @@ def write_report():
           "| Datasheet figure | Value | Effect on the current reading |", "| --- | --- | --- |",
           f"| Tolerance | ±{SHUNT['tol'] * 100:g} % | ±{SHUNT['tol'] * 100:g} % of gain, removed by a gain calibration |",
           f"| Temperature coefficient | < {SHUNT['tcr'] * 1e6:.0f} ppm/K | ±{SHUNT['tcr'] * DT_AMB * 100:.2f} % for {DT_AMB:.0f} K |",
-          f"| Thermal resistance to ambient | < {SHUNT['rth']:.0f} K/W | at 35 A: {35 ** 2 * SHUNT['r']:.2f} W of the {SHUNT['power']:g} W allowed, "
-          f"+{heat35:.0f} K, up to {SHUNT['tcr'] * heat35 * 100:.2f} % |",
+          f"| Thermal resistance to ambient | < {SHUNT['rth']:.0f} K/W | at {I_FS:g} A: {I_FS ** 2 * SHUNT['r']:.2f} W of the {SHUNT['power']:g} W allowed, "
+          f"+{heat_fs:.0f} K, up to {SHUNT['tcr'] * heat_fs * 100:.2f} % |",
           f"| Inductance | < {SHUNT['l_max'] * 1e9:.0f} nH | changes the PWM ripple and the delay of the reading, see below |",
           f"| Thermal EMF | < {SHUNT['emf'] * 1e6:.0f} µV/K | {SHUNT['emf'] / SHUNT['r'] * 1e3:.0f} mA of offset per kelvin of difference between the two sense terminals |",
           f"| Stability | < {SHUNT['stability']:g} % after 2000 h | slow drift of the gain at nominal load |", "",
@@ -554,7 +556,7 @@ def write_report():
           "| Quantity | Current channel | Voltage channel |", "| --- | --- | --- |",
           f"| 1 LSB (18 bits, ±10 V) | {q['lsb'][0] * 1e3:.1f} mA | {q['lsb'][1] * 1e3:.2f} mV |",
           f"| ADC noise (SNR {ADC['snr_db']} dB) | {q['noise_i'][0] * 1e3:.1f} mA rms | {q['noise_v'] * 1e3:.2f} mV rms |",
-          f"| INA241A2 noise (49 nV/√Hz) | {q['noise_i'][1] * 1e3:.1f} mA rms | |",
+          f"| INA241A4 noise ({INA_NOISE * 1e9:.0f} nV/√Hz) | {q['noise_i'][1] * 1e3:.1f} mA rms | |",
           f"| Total | {q['noise_i'][2] * 1e3:.1f} mA rms | {q['noise_v'] * 1e3:.2f} mV rms |", "",
           f"## Static accuracy before calibration (simulation 08, {m['n']} boards)", "",
           "Readings computed with the schematic constants. Each cell gives the mean and the interval that holds 95 % of the boards.", "",
@@ -567,12 +569,12 @@ def write_report():
               f"The AD7606C accepts {ADC['ref'][0]} … {ADC['ref'][1]} V on REFIN: {m['v25_outside']:.1f} % of the boards are outside.", "",
           f"## Drift after calibration (datasheet maxima, {DT_AMB:.0f} K)", "",
           "| Contribution | Current | Voltage |", "| --- | --- | --- |",
-          f"| Gain | ±{drift['i_gain'] * 100:.2f} % (shunt {SHUNT['tcr'] * 1e6:.0f}, INA241A2 {DRIFT['ina_gain'] * 1e6:.0f}, ADC {DRIFT['adc_fs'] * 1e6:.0f}, "
+          f"| Gain | ±{drift['i_gain'] * 100:.2f} % (shunt {SHUNT['tcr'] * 1e6:.0f}, INA241A4 {DRIFT['ina_gain'] * 1e6:.0f}, ADC {DRIFT['adc_fs'] * 1e6:.0f}, "
           f"reference {DRIFT['ref'] * 1e6:.0f} ppm/K) | ±{drift['v_gain'] * 100:.2f} % (divider with two {DRIFT['r_tcr'] * 1e6:.0f} ppm/K resistors, assumed) |",
           f"| Zero | ±{drift['i_zero'] * 1e3:.0f} mA (mostly the ADC zero drift) | ±{drift['v_zero'] * 1e3:.0f} mV |",
-          f"| Shunt self-heating | up to {SHUNT['tcr'] * heat35 * 100:.2f} % at 35 A | |", "",
+          f"| Shunt self-heating | up to {SHUNT['tcr'] * heat_fs * 100:.2f} % at {I_FS:g} A | |", "",
           "## Not covered by these simulations", "",
-          "- INA241A2 common-mode rejection and its 1 µs output hold at each PWM edge (behavioural model).",
+          "- INA241A4 common-mode rejection and its 1 µs output hold at each PWM edge (behavioural model).",
           "- Layout: Kelvin routing of the shunt, coupling of the PWM edges into the sense traces.",
           "- The other two phases and the real motor: the waveform is a single-phase equivalent.",
           "- The real battery and ESC: the DC bus values are assumed, the half-bridges have no loss and their PWM uses the nominal",

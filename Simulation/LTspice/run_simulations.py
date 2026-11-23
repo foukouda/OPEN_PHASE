@@ -247,7 +247,7 @@ def fig06():
         b.text(dx, y + 0.02, f"{y:.4f} V", color=INK2, fontsize=9, ha=ha)
     b.set_xlabel("Time after the current step (us)")
     b.set_ylabel("V(V8+) - V(V8-) (V)")
-    b.set_title("Current channel: 0 -> 35 A step (J1 -> J2)")
+    b.set_title("Current channel: 0 -> 18 A step (J1 -> J2)")
     save(fig, "sim06_channels_step.png")
 
 
