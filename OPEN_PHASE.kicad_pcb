@@ -906,6 +906,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ee1d6b97-c088-4e52-9d4f-b80350c49bd0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-0733RL"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4d386ec5-3323-4439-a600-c9e69c58ae06")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/85769b3e-2c62-4c06-a7d3-13459ae336d9")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
@@ -1064,6 +1086,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0a11286a-550b-47fc-b066-ece908c8892c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM1885C1H102JA01D"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "716a5d96-8805-4c5a-8a80-71b5d865dbd6")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -1650,6 +1694,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9f601de3-acbe-4ddf-982b-e24605ba8e14")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-0720KL"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "38183a33-533e-48b3-986b-7d7c9bbdf9d6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/450d0ffb-b49a-4959-b917-e6a66a2cec40")
 		(sheetname "/Project Architecture/Power_Supply/")
@@ -1811,6 +1877,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9d60decf-3b88-407d-a1f1-6c6b4ad3f43b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R61E475KE11D"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f6a6fa6-10bf-47ab-94d2-b3f03f474d33")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/7fad4638-f6b6-4964-ad12-e0707dc43381")
 		(sheetname "/Project Architecture/Power_Supply/")
@@ -1969,6 +2057,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b57a1c70-8d2c-4983-ba79-ac4080f1e018")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-071KL"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d40e580b-d7b4-4e17-b157-eb23a6e069bb")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -2494,6 +2604,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fef4454b-d1fb-4e86-a255-9ebaabf91d29")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R71H104KA93D"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "821d9e95-f954-4d3b-88e6-6db726a8529d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/07b3968b-d320-4c04-a522-bb0d8ee11f02")
 		(sheetname "/Project Architecture/AD7606C-18_ADC/")
@@ -2651,6 +2783,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9a080215-5654-4e89-b26c-0655175d0dc6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R71E105KA12D"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "11329221-ff25-4f44-b9c5-aecb5cfd8251")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -2812,6 +2966,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "38415b5c-71bb-4558-9de1-772f9ba464c2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-079K1L"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5576cece-a9c8-4305-bfc6-5abbaafdc258")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -3875,6 +4051,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b92ceade-321a-49ba-ac56-9b885e67c9fa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-079K1L"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d9fe497e-dc3c-4d2c-82a4-1c7297e6cc3f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/412e6dbc-e019-463d-9eba-aa1ee2d25c88")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
@@ -4032,6 +4230,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Samsung Electro-Mechanics"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "db3d6e52-4ddc-4a4e-9b34-39c254dfc24c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21B106KOQNNNE"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8a0e3950-76c5-4a45-970e-c6b41bd1845b")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -4214,6 +4434,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d65d4c9b-a2ab-4033-af44-4ac291bd61ca")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-071KL"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2351da18-08c7-4430-8611-c7b1876bb004")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/61b89881-ddba-4cdb-b2d4-9913b1d09962")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
@@ -4372,6 +4614,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "024c3516-c658-4a34-b2e9-9e8fe8b78f95")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R71H104KA93D"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8d5df3e0-5bdb-457b-af6c-d59de6803b72")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -4536,6 +4800,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c2f2b8c0-7a3f-4e76-8386-59dc22e81348")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-071KL"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6c0f5f8c-d508-40ca-8e89-bd0949ffa1bf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/d31a5e86-ab47-4bf6-8b8c-83acc990c4c1")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
@@ -4693,6 +4979,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ec7c9dea-540b-4d62-9457-91f95a9618f6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-0733RL"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f1b475c6-c052-428e-8c49-a83ac0c042dd")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -4857,6 +5165,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0fe529f5-3fd5-47c5-91af-100b0105cf70")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-079K1L"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0d479889-1e3b-4c3c-864a-8f87a1677afd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/3627d060-59e8-4dc0-a17e-60ea2222ce84")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
@@ -5017,6 +5347,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Samsung Electro-Mechanics"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "069715fb-eda4-4b33-9eee-427bee232bed")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21B106KOQNNNE"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f556bc18-4257-42fd-9adb-fe018e482089")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/4c92c8d4-7ffc-44d2-ad40-b8ed584feb3a")
 		(sheetname "/Project Architecture/Power_Supply/")
@@ -5174,6 +5526,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Samsung Electro-Mechanics"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c6aee802-4a91-4e5d-8d61-288b40c80d18")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21B106KOQNNNE"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2d083325-8eb3-4a12-b092-a03290532353")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -5355,6 +5729,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "be625864-60af-4d5f-b1c9-e2ea10b68544")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-073K3L"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e0e5bccd-be03-42e8-a43b-f954719063c3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/3e706f54-3f30-467c-9365-43c66dab4015")
 		(sheetname "/Project Architecture/Connectors/")
@@ -5516,6 +5912,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "93a6b62c-0a5a-491c-993d-ecd08f35bc76")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM1885C1H181JA01D"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b0debc20-de45-4659-b98e-f7b98b36835e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/dd1d7b8f-2109-426f-977e-8596aa546708")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
@@ -5674,6 +6092,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "591df485-897b-4867-b0be-94601a5c8fe6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R61E475KE11D"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "17487798-6f8f-488f-b8ce-e8f35425c61d")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -6240,6 +6680,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Wurth Elektronik"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "63b51b55-d4c0-4271-9e4d-5ff4d485a674")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "61301621021"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "86945295-268b-4e36-a619-d87687c9a188")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -7242,6 +7704,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a2b4fd8a-41df-45e6-bc35-3b1c748af297")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-0749K9L"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8faa76ea-d766-47bb-8bdb-c2b7245ed5f8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/549c39b1-04c2-49f3-a63d-b798b49ec2b4")
 		(sheetname "/Project Architecture/Power_Supply/")
@@ -7400,6 +7884,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "72a46b9b-00e4-4c1d-8330-4b22d4558929")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-079K1L"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "25bdbe05-4885-474e-956c-851cf7c57154")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -7564,6 +8070,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a328d737-4f0e-467e-b1b1-ba7326d36050")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-0736K5L"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6b2b6dbb-74da-4775-a1c5-17290211f84f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/f11a858e-b1e3-46d4-b330-15ff90ab141d")
 		(sheetname "/Project Architecture/Power_Supply/")
@@ -7721,6 +8249,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8682e62e-c4cf-4195-b62d-d3d3e0343baf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-071KL"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b011262c-4af2-4d94-8c91-3c0f5fd1ee64")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -7884,6 +8434,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Samsung Electro-Mechanics"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a0b9d760-d799-4839-8981-d9ddd6535991")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL10A106KO8NQNC"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c488ee37-fd48-4025-8f67-5ec78f47daed")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/e5253a65-31b1-426b-a890-203872b163e9")
 		(sheetname "/Project Architecture/Power_Supply/")
@@ -8041,6 +8613,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e21e2821-1632-4394-b6e5-aabd20bd4144")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-0724K9L"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "70edcc0e-fbfc-4130-b024-52ff24d94ba1")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8205,6 +8799,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f9cd533-f5be-4822-977e-7e1752073ac7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM1885C1H102JA01D"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3e241471-60e7-4648-aa06-d10aa0d3cc9f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/9f327df2-af7f-48ba-81c7-74511217f9a2")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
@@ -8362,6 +8978,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e5f641f4-8cbc-4516-9485-f444dca140fa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-071KL"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8d6ead6d-c5c7-4df1-8de5-de38435411b6")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8535,6 +9173,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Wurth Elektronik"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "904c40bc-4aa9-44b9-abc4-e8e8720cd730")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "150060RS75000"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e115c750-7751-4a9c-bf07-d1581fbac798")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8746,6 +9406,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "16cae85a-69ff-440b-875d-7349e395f727")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-071KL"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6413d74f-5ad2-46b2-b078-afa93eb029ac")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -9294,6 +9976,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f30113de-ebf4-4465-a61a-52bdae74575f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-071ML"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "26419a3b-0bda-4c9a-9318-1f84cf5fa21b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/b22fbd91-ac9d-41f2-bc95-0a6c3066e245")
 		(sheetname "/Project Architecture/Power_Supply/")
@@ -9671,6 +10375,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "73057456-f85f-4fa0-808c-79fbb1f678cb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R71H104KA93D"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d2265465-104e-4175-9c08-c9f1bb52e6d4")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -10603,6 +11329,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "28cbeada-0e7d-404b-8bca-2153a219943d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-079K1L"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "49378c66-d063-4eea-a68b-d4409bf7b8e0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/2ac30af1-d691-48b6-88a1-a335def8363e")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
@@ -10761,6 +11509,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "889e2a29-25bc-47ac-a5dd-f853920945fc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R71H104KA93D"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0a1e4cc4-e692-4e18-9cd7-ee76820f5e2d")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -11801,6 +12571,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9af38f88-4015-4441-90f8-2b3964a60fb8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-07365KL"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "10203781-b0e5-4340-b206-ec6d95d61380")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/a86a4397-7e27-412b-ab01-e303c1684ee0")
 		(sheetname "/Project Architecture/Power_Supply/")
@@ -11959,6 +12751,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1de1eb35-84bf-4f8d-b909-29af97396e04")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-0733RL"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c1530cb-df92-46dc-b03a-27f6a8b76c04")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -12123,6 +12937,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fb921b6f-13b7-4d02-b5d7-aa826c5c04f2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R61E475KE11D"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d2c9b7de-c3ba-4d21-9873-8216d93ec3de")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/60c031fa-1a5b-42c1-ac73-404a20c36873")
 		(sheetname "/Project Architecture/Power_Supply/")
@@ -12269,6 +13105,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2b34459e-6885-462c-88cc-3ff5d31c68d6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Nexperia"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4a1974db-9a50-4565-8a64-9e0a1c518cf0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "PMEG2020EH,115"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7b258b2b-1946-49bf-97ca-cae16fe65aae")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12543,6 +13405,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Samsung Electro-Mechanics"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e35e3c9c-2b65-4b9d-a811-03589d013466")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21B106KOQNNNE"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cfee0e01-0faf-453c-9e11-f07ac7b84b78")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -12923,6 +13807,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5f88afeb-262c-4b5f-a64e-bffded17e271")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-079K1L"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6898a939-b626-4924-84e4-8f6866f015b7")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -13509,6 +14415,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9602c0d3-5b80-4ef5-bc34-455a3f17b2a0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R71H102KA01D"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "921d0b87-e67a-4d4d-b449-cc76bb2329ac")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/4fff951b-bb05-462e-abf5-0c4853ac4307")
 		(sheetname "/Project Architecture/Power_Supply/")
@@ -14078,6 +15006,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9df295fa-c78d-4ef7-a484-3e8dd67ea225")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-0733RL"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "267f5d7c-468f-4a69-a05f-d1e2ef14e83b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/990d4b9c-4a80-454a-a70e-b87a804a1ffb")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
@@ -14236,6 +15186,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fc23b074-84f6-4fbb-b340-4ae1e1c8d6ae")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CC0603CRNPO9BN4R7"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "751b3abc-c2dd-4a23-b811-4c08e6d662df")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -14400,6 +15372,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2e632c05-51e0-41fb-96fb-27b6b294abee")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM1885C1H102JA01D"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "96543c0b-7ce5-46e3-a191-c677828ad3ae")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/15d1409d-fd8c-4b1c-87a9-f75a5634afe0")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
@@ -14557,6 +15551,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d70355eb-bf40-4fd5-b9ff-8529d6ffc0f4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-071K5L"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5df84364-f39d-4a8b-9ac4-e1af4d69f2bd")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -14718,6 +15734,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "747ab527-c679-4b60-9a3b-3cf0279b14e3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R71E105KA12D"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3feb1ea8-1325-424f-9f89-a98585f52012")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -15243,6 +16281,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "abbafb0d-4621-4dbc-a60c-fcbdb842dd80")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM1885C1H181JA01D"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f424aa2d-a580-425a-b64e-e5f856d40bca")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/0003cd57-337d-4e35-975a-fcea27ddd65b")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
@@ -15401,6 +16461,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f859e3f4-bd0c-4015-ba23-aec2a18b4c59")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-079K1L"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7df3fbdb-541d-42f1-af7d-c4ead75155c4")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -15573,6 +16655,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Wurth Elektronik"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "189ae176-8bbb-492a-b001-c918e2404dd3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "150060RS75000"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0c19d11a-7bc3-499e-9c40-c194bdfc0204")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -15786,6 +16890,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Samsung Electro-Mechanics"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8ccf54cc-01d5-4b3b-bf68-30e6b715045a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL21B106KOQNNNE"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "00e7f3f7-a42a-4b13-83a3-4cc3a7f392f7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/1cc3c415-e376-4b37-b294-e797cc86f421")
 		(sheetname "/Project Architecture/Power_Supply/")
@@ -15974,6 +17100,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Wurth Elektronik"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0ccfffe2-3509-4b7f-af24-1ba65f629db5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "150060RS75000"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7b0f2ed0-264d-46e0-8a79-62065a7fcc88")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -16187,6 +17335,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "df4d3a53-8447-448f-aa70-0033d7dc269b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-07750RL"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "45ae49fc-3ce3-4983-b885-702525bf755b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/c7c721f5-c1ee-4db1-9a46-4881d72bcc61/5eedc231-0364-4ce9-ada5-70c41be21057")
 		(sheetname "/Project Architecture/Connectors/")
@@ -16344,6 +17514,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "440a36c3-a43e-46fe-99a5-f403c5aedd10")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-074K3L"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c38e9e3a-6c56-47ee-977d-a7f95bb15d42")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -16517,6 +17709,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Wurth Elektronik"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1384685d-8887-41d8-b7e9-a8f75a44a9d6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "150060RS75000"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b3f9762a-4d60-45cd-85b0-84c625a5fbc9")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -16731,6 +17945,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0a68fd70-6e3e-4bd4-8b5b-9512f0a8a048")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R71E105KA12D"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "964cab9f-7db6-46a9-b6fb-89c080d2c9c9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/8619ffcd-5d83-4ae5-b2be-c86c46e2e838")
 		(sheetname "/Project Architecture/Power_Supply/")
@@ -16889,6 +18125,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "45a16eba-288c-4db6-8037-e8c9c39c3365")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM1885C1H102JA01D"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d090d58f-12c5-4d64-9618-2f5fa6513fe8")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -17437,6 +18695,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c1572843-16e3-4237-b99d-b954e18511fd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM1885C1H181JA01D"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1fad68d2-306c-4fad-81d5-33c701287185")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/ec3b9c63-2865-4597-8dc0-220b6e844009")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
@@ -17594,6 +18874,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Samsung Electro-Mechanics"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f89887e5-3284-456d-9e11-55ade533970f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CL10A106KO8NQNC"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ac29b18e-2ba0-41ea-907f-5f30f98731e0")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -17758,6 +19060,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a2662195-016e-4ba0-9454-dab57b0d2180")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-079K1L"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e286c258-6717-4ff3-9cdb-e60e7f390270")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/86916788-70d6-4312-b767-07ba1a55710c")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
@@ -17919,6 +19243,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e02221cf-9e43-4445-96bf-0a28ce53b17c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM31CZ71C226ME15L"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e454d31d-3fc3-4247-b3f0-d893f6f7341e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/a51fd6f1-8cf8-40d5-8a52-d54bc27e25ec")
 		(sheetname "/Project Architecture/Power_Supply/")
@@ -18077,6 +19423,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8af5f375-78d0-4214-9ac0-ba9ca5b6d6f5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R71H104KA93D"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "18e87f36-2e6b-4bef-b014-0dc40f0152c7")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -18733,6 +20101,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "56b76f77-8981-42f6-a47b-4a03d3a2a37b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R71H103KA01D"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a898c7f5-36d2-444c-8512-736bcc3c16aa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/64761cd4-62bf-4da3-92a1-0053e0023d86/8a103d29-ddbb-404c-a6ad-b19737487247")
 		(sheetname "/Project Architecture/Power_Supply/")
@@ -18894,6 +20284,28 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bda92fbe-c4c7-4920-a9fd-7742b6bd2ead")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R71H104KA93D"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f2a8e271-19dc-40c7-9c47-da83e4b8b0c7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/d85565cb-8e80-4932-8b94-01c00bb50527")
 		(sheetname "/Project Architecture/AD7606C-18_ADC/")
@@ -19052,6 +20464,28 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f253175b-b834-4670-b4e0-f1121f4fc2e7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM1885C1H181JA01D"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2d9f9c59-d374-4c12-8ba3-e7c013f0dd15")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -19220,6 +20654,30 @@
 				(justify mirror)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "cf86cf4f-7848-4aff-8b2d-8732e54a62c3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0805FR-0740K2L"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e00d762e-248e-4871-b1ca-4bf2ddfecef3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/8a65175e-487c-4fb5-8ba5-50dee6d5112c")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
@@ -19381,6 +20839,30 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0d059845-f9b0-4851-b588-9e4e1374b9c1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R71E105KA12D"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "1d356129-1497-4f37-ab35-58d59f42ac02")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 				(justify mirror)
 			)
@@ -20041,6 +21523,30 @@
 				(justify mirror)
 			)
 		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e352d1c7-8184-4198-8c14-549bff87ccf6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R71H104KA93D"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9aaff45f-f622-4e61-99b9-090742805a61")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/e110d27e-c809-4335-bfd0-16a0dd700bd7")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
@@ -20580,6 +22086,30 @@
 				(justify mirror)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ce0c1a68-d1d7-49b0-b9c8-64d44d187e37")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0805FR-0740K2L"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8aae7104-814c-431d-9125-353a2afb6bea")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/9345ca51-3f48-4850-a239-244f71f9ff61")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
@@ -20742,6 +22272,30 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2437764a-396a-4220-b0ed-249f8d453999")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R71H104KA93D"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7f5f20ce-988d-42c9-a1e4-a631caf8ae00")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 				(justify mirror)
 			)
@@ -22322,6 +23876,30 @@
 				(justify mirror)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "015ca39a-c3eb-4e19-97d2-8c249d871837")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-07100KL"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e2887382-aab7-45c2-aa61-b3fc0595b026")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/29c21d8b-565c-49f5-90a9-b903bb932033")
 		(sheetname "/Project Architecture/AD7606C-18_ADC/")
 		(sheetfile "AD7606C-18 - ADC.kicad_sch")
@@ -22474,6 +24052,30 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "66e87507-cb5a-487c-8c6a-79c3cb4517f7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-07100RL"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "d56318a9-6557-4356-913e-ebd7c049f742")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 				(justify mirror)
 			)
@@ -22747,6 +24349,30 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "58c3851f-0b7c-407a-8e09-c24138f93a3d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-07100KL"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e55f8c42-9f02-4ce0-abde-f1c43ab60dd7")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 				(justify mirror)
 			)
@@ -23974,6 +25600,30 @@
 				(justify mirror)
 			)
 		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "263854a8-74b3-43ae-a676-1e9d7a56d259")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R71H104KA93D"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "56af4eb9-8c5c-488c-88d5-59e3364cd5fe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/5e6c64b9-d888-471b-9e42-7489b658456d")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
@@ -24136,6 +25786,30 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "87180549-e8b1-4c4e-b26c-2a15ea3fd2db")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R71H104KA93D"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2f215e1a-5300-4dab-904d-7a2a05e0c1ce")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 				(justify mirror)
 			)
@@ -24527,6 +26201,30 @@
 				(justify mirror)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "3fdfac86-a270-4bc6-876f-05e9071de4e2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0805FR-0710KL"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a7986c8d-f944-4826-be7a-21e562031143")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/914d4c13-bedf-4cd2-85ca-4b145411ca74")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
@@ -24692,6 +26390,30 @@
 				(justify mirror)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "bf043854-4b87-4570-965d-190da478682c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-07100RL"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "cd4afaaa-d485-4c7f-a311-18cf85d12cae")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/8c072639-c798-499b-9858-2d41be3fc6ef")
 		(sheetname "/Project Architecture/AD7606C-18_ADC/")
 		(sheetfile "AD7606C-18 - ADC.kicad_sch")
@@ -24844,6 +26566,30 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "6cb746a9-1c32-465e-ba94-c2e1edef93a6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-07100KL"
+			(at 0 0 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "1bf97735-cf1c-4f2c-b3a7-4f9a92584717")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 				(justify mirror)
 			)
@@ -25001,6 +26747,30 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0940d947-8ed3-4422-9a07-175c89845d65")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0805FR-0740K2L"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "4a3ada26-cd02-4801-8527-8565e096e18f")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 				(justify mirror)
 			)
@@ -25284,6 +27054,30 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "896e8331-42f5-47e2-9aa1-424916b6965a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R71E105KA12D"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "dd9cf2f0-d136-46cb-bd65-c0830e8cedb5")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 				(justify mirror)
 			)
@@ -26061,6 +27855,30 @@
 				(justify mirror)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "3644dd1b-6dda-4c8d-904f-57173d8f4919")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0805FR-0710KL"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "86079eaa-9a1e-4b64-8d36-8b55fe739149")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/b2310747-abfe-4013-92d6-944b4ba6ca99")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
@@ -26210,6 +28028,34 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "3d99f231-81cf-403a-9069-39dcb26f6464")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Name" "Bourns"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2cae0841-1b64-4501-b4e5-bad187a373a0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CAT16-101J4LF"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "41fa6d20-8857-48ee-b44b-25bde25c3e66")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26474,6 +28320,30 @@
 				(justify mirror)
 			)
 		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "04f5ae0f-2680-42eb-87e3-64eb6c3fdeac")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R71E105KA12D"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "d3fa2b2e-6aa3-4b0b-b1ed-a39fc01b22ed")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/40f96182-b18f-4994-902b-6a9060f9a4fc")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
@@ -26639,6 +28509,30 @@
 				(justify mirror)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ff9632ac-39b1-433d-be90-ec0e6ae5b7c0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0603FR-07100RL"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "deec2fdb-5765-4484-b646-aeeb0e42f5fb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c/b9940cfa-2b55-4654-b58f-e6f2b08642ba")
 		(sheetname "/Project Architecture/AD7606C-18_ADC/")
 		(sheetfile "AD7606C-18 - ADC.kicad_sch")
@@ -26795,6 +28689,30 @@
 				(justify mirror)
 			)
 		)
+		(property "Manufacturer_Name" "Murata"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2e8b1880-d499-41e8-a6a5-18a8f97ee9f3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM188R71E105KA12D"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ff5740d0-ff0f-401e-8b74-e0db552fc59d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/b5f48eef-46de-43eb-8a49-9803d1e37948")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
@@ -26943,6 +28861,34 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "d0b7281a-8ce8-4180-bd0e-58ac44a24c73")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Name" "Bourns"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "eb9d0e5b-d29d-4fb5-9b2e-f3d2315d1aa9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CAT16-101J4LF"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e7c5c55b-081e-4f24-85a6-111ed7197fbe")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27323,6 +29269,30 @@
 				(justify mirror)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "06931e7d-7f83-4ca2-8b8e-55ff951e9f24")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0805FR-0740K2L"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "25e87cfc-026f-4483-a7e0-38561d0b6112")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c5103ceb-5325-4a84-a025-9638a412984e/e744f3ce-03a6-44a6-8792-1447ef232b9a/5f44ee5c-e653-46d2-92da-e98374f3c988")
 		(sheetname "/Project Architecture/INA241_Phase_Sense/")
@@ -27484,6 +29454,30 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "da5a802b-44be-4199-b275-dd170d625328")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0805FR-0710KL"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "3abac0a0-7665-48bd-b297-668157316275")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 				(justify mirror)
 			)
@@ -27766,6 +29760,30 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9f4bd8f8-84a2-4a12-a18d-e3808b3346bb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RC0805FR-0710KL"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "d2f80f04-2902-4eb5-ad2f-5913b8bb0aaa")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 				(justify mirror)
 			)
@@ -28146,6 +30164,34 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "c9c7eef9-2fdf-4c11-ad24-f44d59009291")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Name" "Nexperia"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "063fea41-a160-4922-9738-8f1237a2f7be")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "PMEG2020EH,115"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8879e5cc-c820-459c-a71d-1e25c67e2e16")
 			(effects
 				(font
 					(size 1.27 1.27)
