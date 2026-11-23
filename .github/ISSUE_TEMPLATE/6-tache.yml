@@ -1,0 +1,39 @@
+name: 🧩 Tâche
+description: Un travail à faire qui n'est pas un défaut (générer les fichiers, commander, écrire une procédure…).
+labels: ["à-trier"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Titre** : `Zone : le travail`, par exemple `Fabrication : générer les fichiers de la rev A sur un tag et les relire`.
+  - type: textarea
+    id: objectif
+    attributes:
+      label: Objectif
+    validations:
+      required: true
+  - type: textarea
+    id: a_faire
+    attributes:
+      label: À faire
+      description: Une case par étape.
+      value: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: termine
+    attributes:
+      label: Terminé quand
+      description: Le résultat vérifiable qui permet de fermer l'issue.
+      placeholder: "Les Gerbers du tag 0.1.0 ont été ouverts dans le visualiseur de JLCPCB et relus couche par couche."
+    validations:
+      required: true
+  - type: input
+    id: liens
+    attributes:
+      label: Liens
+      description: Issues liées, commit, document.
+    validations:
+      required: false

@@ -1,0 +1,51 @@
+name: ❓ Décision à prendre
+description: Un choix de conception qui revient au responsable du projet.
+labels: ["décision", "à-trier"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        La décision est écrite en commentaire par le responsable du projet, puis l'issue est fermée. Elle s'applique ensuite telle quelle : on ne la rediscute que dans une nouvelle issue, avec un fait nouveau.
+        **Titre** : `Décision : la question`, par exemple `Décision : VDRIVE de l'AD7606C pris sur l'hôte ou sur un LDO local ?`
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+    validations:
+      required: true
+  - type: textarea
+    id: contexte
+    attributes:
+      label: Contexte
+      description: Ce qui pose problème, avec les sources (fiche technique, simulation, mesure, issue liée).
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options
+      value: |
+        **A.**
+        - pour :
+        - contre :
+
+        **B.**
+        - pour :
+        - contre :
+    validations:
+      required: true
+  - type: textarea
+    id: recommandation
+    attributes:
+      label: Recommandation
+      description: L'option que tu choisirais et pourquoi. Laisser vide si tu n'as pas d'avis.
+    validations:
+      required: false
+  - type: input
+    id: bloque
+    attributes:
+      label: Ce qui attend la décision
+      description: Issue, jalon ou date qui en dépend.
+      placeholder: "Bloque la commande de la rev A (#12)"
+    validations:
+      required: true

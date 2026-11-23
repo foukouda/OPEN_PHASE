@@ -1,0 +1,85 @@
+name: 🐞 Problème sur la carte
+description: Quelque chose est faux dans le schéma, le PCB, la BOM, les fichiers de fabrication ou la CI.
+labels: ["bug", "à-trier"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Avant d'écrire** : chercher dans les issues ouvertes et dans le [Sommaire #1](https://github.com/foukouda/OPEN_PHASE/issues/1). Si le problème y est déjà, ajouter ta preuve en commentaire là-bas.
+
+        **Titre** : `Zone : ce qui ne va pas`, par exemple `PCB : les LED de rail ne sont pas reliées à leurs résistances`.
+        **Une issue = un problème** qu'on peut corriger et fermer d'un coup. Règles complètes : [CONTRIBUTING.md](https://github.com/foukouda/OPEN_PHASE/blob/main/CONTRIBUTING.md).
+  - type: dropdown
+    id: partie
+    attributes:
+      label: Partie concernée
+      options:
+        - Schéma
+        - PCB (placement, routage, cuivre, sérigraphie)
+        - BOM / choix des composants
+        - Fichiers de fabrication (Gerbers, perçage, placement)
+        - CI / sorties générées
+        - Autre
+    validations:
+      required: true
+  - type: input
+    id: ou
+    attributes:
+      label: Où
+      description: Références, nets, feuille du schéma, coordonnées sur le PCB en mm et couche.
+      placeholder: "R36, D3 · net Net-(D3-A) · feuille Connectors · PCB (141.3, 60.2) mm, F.Cu"
+    validations:
+      required: true
+  - type: textarea
+    id: constat
+    attributes:
+      label: Constat
+      description: Ce qui est faux et d'où tu le sais (DRC ou ERC, page et tableau de la fiche technique, mesure, capture). Une capture d'écran se colle directement ici.
+      placeholder: "Le DRC trouve 4 connexions non routées : la piste entre R36 (pastille 1) et l'anode de D3 n'existe pas."
+    validations:
+      required: true
+  - type: textarea
+    id: consequence
+    attributes:
+      label: Conséquence si on fabrique tel quel
+      description: Ce qui se passe sur la vraie carte. Écrire « aucune » si c'est seulement cosmétique.
+      placeholder: "D3 ne s'allume jamais : on perd l'indication du rail +5VA à la mise en route."
+    validations:
+      required: true
+  - type: textarea
+    id: a_faire
+    attributes:
+      label: À faire (proposition)
+      description: Une case par action. Laisser vide si tu ne sais pas comment corriger.
+      value: |
+        - [ ]
+    validations:
+      required: false
+  - type: textarea
+    id: sortie
+    attributes:
+      label: Sortie de l'outil (facultatif)
+      description: Extrait du rapport DRC / ERC ou du journal de la CI, collé tel quel.
+      render: text
+    validations:
+      required: false
+  - type: dropdown
+    id: preuve
+    attributes:
+      label: Niveau de preuve
+      options:
+        - MESURÉ sur une carte
+        - DRC / ERC (kicad-cli ou KiCad)
+        - FICHE TECHNIQUE (page et tableau cités)
+        - SIMULATION (LTspice, openEMS, thermique)
+        - À VÉRIFIER (doute, pas encore prouvé)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version regardée
+      description: "Branche et commit (`git log -1 --format=%h`), ou tag des fichiers de fabrication."
+      placeholder: "dev @ 7054a4e"
+    validations:
+      required: true

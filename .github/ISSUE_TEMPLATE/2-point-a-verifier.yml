@@ -1,0 +1,58 @@
+name: 🔍 Point à vérifier
+description: Un doute sur le schéma, le PCB ou un composant. Il peut se révéler correct.
+labels: ["vérification", "à-trier"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Pour un doute, pas pour un défaut prouvé (celui-là va dans **🐞 Problème sur la carte**).
+        **Titre** : `Zone : la question`, par exemple `IC3 : le condensateur de sortie respecte-t-il l'ESR minimale ?`
+  - type: dropdown
+    id: partie
+    attributes:
+      label: Partie concernée
+      options:
+        - Schéma
+        - PCB (placement, routage, cuivre, sérigraphie)
+        - BOM / choix des composants
+        - Fichiers de fabrication (Gerbers, perçage, placement)
+        - CI / sorties générées
+        - Autre
+    validations:
+      required: true
+  - type: input
+    id: ou
+    attributes:
+      label: Où
+      description: Références, nets, feuille du schéma, coordonnées sur le PCB.
+    validations:
+      required: true
+  - type: textarea
+    id: doute
+    attributes:
+      label: Le doute
+      description: Pourquoi ça semble faux, avec la source (fiche technique page et tableau, note d'application, calcul).
+    validations:
+      required: true
+  - type: textarea
+    id: comment
+    attributes:
+      label: Comment le vérifier
+      description: Le document à lire, le calcul, la simulation ou la mesure qui tranchera.
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: consequence
+    attributes:
+      label: Conséquence si c'est faux
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version regardée
+      placeholder: "dev @ 7054a4e"
+    validations:
+      required: true
