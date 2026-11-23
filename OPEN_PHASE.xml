@@ -74,7 +74,7 @@
 11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.
 
 12)	CONFIRM SPACE WIDTHS AND SPACINGS.</textvar>
-    <textvar name="GIT_HASH_PCB">62ba3e5</textvar>
+    <textvar name="GIT_HASH_PCB">df317d9</textvar>
     <textvar name="GIT_HASH_SCH">de61407</textvar>
     <textvar name="GIT_URL">https://github.com/foukouda/OPEN_PHASE</textvar>
     <textvar name="PROJECT_NAME">OPEN_PHASE</textvar>
@@ -123,6 +123,8 @@ Added
 -   D6 PMEG2020EH (+3.3V -&gt; +5VA): AVCC follows VDRIVE at power-up (AD7606C abs. max.)
 
 -   Test points TP1, TP2, TP7, TP8, TP13, TP14 placed on the bottom, with tags
+
+-   BOM: manufacturer part numbers on the 90 passives, diodes, LEDs and J4 (schematic and PCB fields)
 
 ___________________________________
 
@@ -182,7 +184,9 @@ Fixed
 
 -   IC8/IC9 thermal vias tented on the bottom
 
--   Silkscreen kept off pads, gold bands and board edge (connector outlines, J4, IC5 reference, labels)</textvar>
+-   Silkscreen kept off pads, gold bands and board edge (connector outlines, J4, IC5 reference, labels)
+
+-   KiBot BoM read "Manufacturer Part Number", the symbols use "Manufacturer_Part_Number": the MPN columns were empty</textvar>
     <textvar name="RELEASE_DATE">23-Nov-2026</textvar>
     <textvar name="RELEASE_DATE_NUM">2026-11-23</textvar>
     <textvar name="RELEASE_TITLE_1.0.0"/>
@@ -419,11 +423,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM188R71H104KA93D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM188R71H104KA93D"/>
       <property name="Sheetname" value="AD7606C-18_ADC"/>
       <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -444,11 +452,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM188R71H104KA93D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM188R71H104KA93D"/>
       <property name="Sheetname" value="AD7606C-18_ADC"/>
       <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -469,11 +481,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM188R71H104KA93D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM188R71H104KA93D"/>
       <property name="Sheetname" value="AD7606C-18_ADC"/>
       <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -494,11 +510,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM188R71E105KA12D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM188R71E105KA12D"/>
       <property name="Sheetname" value="AD7606C-18_ADC"/>
       <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -519,11 +539,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM188R71E105KA12D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM188R71E105KA12D"/>
       <property name="Sheetname" value="AD7606C-18_ADC"/>
       <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -544,11 +568,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM188R71H104KA93D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM188R71H104KA93D"/>
       <property name="Sheetname" value="AD7606C-18_ADC"/>
       <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -569,11 +597,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0805_2012Metric_4T</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Samsung Electro-Mechanics</field>
+        <field name="Manufacturer_Part_Number">CL21B106KOQNNNE</field>
         <field name="Footprint">OPEN_PHASE:C_0805_2012Metric_4T</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C_4T" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Samsung Electro-Mechanics"/>
+      <property name="Manufacturer_Part_Number" value="CL21B106KOQNNNE"/>
       <property name="Sheetname" value="AD7606C-18_ADC"/>
       <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -596,11 +628,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM188R71H104KA93D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM188R71H104KA93D"/>
       <property name="Sheetname" value="AD7606C-18_ADC"/>
       <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -721,11 +757,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-07100RL</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-07100RL"/>
       <property name="Sheetname" value="AD7606C-18_ADC"/>
       <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -746,11 +786,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-07100RL</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-07100RL"/>
       <property name="Sheetname" value="AD7606C-18_ADC"/>
       <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -771,11 +815,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-07100RL</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-07100RL"/>
       <property name="Sheetname" value="AD7606C-18_ADC"/>
       <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -796,11 +844,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-07100KL</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-07100KL"/>
       <property name="Sheetname" value="AD7606C-18_ADC"/>
       <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -821,11 +873,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-07100KL</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-07100KL"/>
       <property name="Sheetname" value="AD7606C-18_ADC"/>
       <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -846,11 +902,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-07100KL</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-07100KL"/>
       <property name="Sheetname" value="AD7606C-18_ADC"/>
       <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -871,11 +931,15 @@ Fixed
       <footprint>OPEN_PHASE:R_Array_Concave_4x0603</footprint>
       <description>4 resistor network, parallel topology</description>
       <fields>
+        <field name="Manufacturer_Name">Bourns</field>
+        <field name="Manufacturer_Part_Number">CAT16-101J4LF</field>
         <field name="Footprint">OPEN_PHASE:R_Array_Concave_4x0603</field>
         <field name="Datasheet"/>
         <field name="Description">4 resistor network, parallel topology</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R_Pack04" description="4 resistor network, parallel topology"/>
+      <property name="Manufacturer_Name" value="Bourns"/>
+      <property name="Manufacturer_Part_Number" value="CAT16-101J4LF"/>
       <property name="Sheetname" value="AD7606C-18_ADC"/>
       <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
       <property name="ki_keywords" value="R network parallel topology isolated"/>
@@ -902,11 +966,15 @@ Fixed
       <footprint>OPEN_PHASE:R_Array_Concave_4x0603</footprint>
       <description>4 resistor network, parallel topology</description>
       <fields>
+        <field name="Manufacturer_Name">Bourns</field>
+        <field name="Manufacturer_Part_Number">CAT16-101J4LF</field>
         <field name="Footprint">OPEN_PHASE:R_Array_Concave_4x0603</field>
         <field name="Datasheet"/>
         <field name="Description">4 resistor network, parallel topology</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R_Pack04" description="4 resistor network, parallel topology"/>
+      <property name="Manufacturer_Name" value="Bourns"/>
+      <property name="Manufacturer_Part_Number" value="CAT16-101J4LF"/>
       <property name="Sheetname" value="AD7606C-18_ADC"/>
       <property name="Sheetfile" value="AD7606C-18 - ADC.kicad_sch"/>
       <property name="ki_keywords" value="R network parallel topology isolated"/>
@@ -1041,11 +1109,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM188R71H104KA93D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM188R71H104KA93D"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1066,11 +1138,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM188R71H104KA93D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM188R71H104KA93D"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1091,11 +1167,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM188R71H104KA93D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM188R71H104KA93D"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1116,11 +1196,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM188R71E105KA12D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM188R71E105KA12D"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1141,11 +1225,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM188R71E105KA12D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM188R71E105KA12D"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1166,11 +1254,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM188R71E105KA12D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM188R71E105KA12D"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1191,11 +1283,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM188R71H104KA93D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM188R71H104KA93D"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1216,11 +1312,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM188R71E105KA12D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM188R71E105KA12D"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1241,11 +1341,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM1885C1H102JA01D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM1885C1H102JA01D"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1266,11 +1370,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM1885C1H102JA01D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM1885C1H102JA01D"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1291,11 +1399,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM1885C1H181JA01D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM1885C1H181JA01D"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1316,11 +1428,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM1885C1H181JA01D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM1885C1H181JA01D"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1341,11 +1457,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM1885C1H102JA01D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM1885C1H102JA01D"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1366,11 +1486,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM1885C1H181JA01D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM1885C1H181JA01D"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1391,11 +1515,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM1885C1H181JA01D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM1885C1H181JA01D"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1416,11 +1544,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM1885C1H102JA01D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM1885C1H102JA01D"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1777,11 +1909,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-0733RL</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-0733RL"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1802,11 +1938,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-079K1L</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-079K1L"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1827,11 +1967,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0805_2012Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0805FR-0740K2L</field>
         <field name="Footprint">OPEN_PHASE:R_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0805FR-0740K2L"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1852,11 +1996,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0805_2012Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0805FR-0710KL</field>
         <field name="Footprint">OPEN_PHASE:R_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0805FR-0710KL"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1877,11 +2025,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-079K1L</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-079K1L"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1902,11 +2054,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-0733RL</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-0733RL"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1927,11 +2083,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-079K1L</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-079K1L"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1952,11 +2112,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0805_2012Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0805FR-0740K2L</field>
         <field name="Footprint">OPEN_PHASE:R_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0805FR-0740K2L"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1977,11 +2141,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0805_2012Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0805FR-0710KL</field>
         <field name="Footprint">OPEN_PHASE:R_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0805FR-0710KL"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2002,11 +2170,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-079K1L</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-079K1L"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2027,11 +2199,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-0733RL</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-0733RL"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2052,11 +2228,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-079K1L</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-079K1L"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2077,11 +2257,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0805_2012Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0805FR-0740K2L</field>
         <field name="Footprint">OPEN_PHASE:R_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0805FR-0740K2L"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2102,11 +2286,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0805_2012Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0805FR-0710KL</field>
         <field name="Footprint">OPEN_PHASE:R_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0805FR-0710KL"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2127,11 +2315,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-079K1L</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-079K1L"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2152,11 +2344,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-0733RL</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-0733RL"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2177,11 +2373,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-079K1L</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-079K1L"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2202,11 +2402,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0805_2012Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0805FR-0740K2L</field>
         <field name="Footprint">OPEN_PHASE:R_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0805FR-0740K2L"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2227,11 +2431,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0805_2012Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0805FR-0710KL</field>
         <field name="Footprint">OPEN_PHASE:R_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0805FR-0710KL"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2252,11 +2460,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-079K1L</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-079K1L"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2277,11 +2489,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-071KL</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-071KL"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2302,11 +2518,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-071KL</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-071KL"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2327,11 +2547,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-071KL</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-071KL"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2352,11 +2576,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-071KL</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-071KL"/>
       <property name="Sheetname" value="INA241_Phase_Sense"/>
       <property name="Sheetfile" value="INA241 - Phase Sensing.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2539,11 +2767,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Samsung Electro-Mechanics</field>
+        <field name="Manufacturer_Part_Number">CL10A106KO8NQNC</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Samsung Electro-Mechanics"/>
+      <property name="Manufacturer_Part_Number" value="CL10A106KO8NQNC"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2564,11 +2796,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM188R61E475KE11D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM188R61E475KE11D"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2589,11 +2825,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM188R61E475KE11D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM188R61E475KE11D"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2614,11 +2854,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Samsung Electro-Mechanics</field>
+        <field name="Manufacturer_Part_Number">CL10A106KO8NQNC</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Samsung Electro-Mechanics"/>
+      <property name="Manufacturer_Part_Number" value="CL10A106KO8NQNC"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2639,11 +2883,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0805_2012Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Samsung Electro-Mechanics</field>
+        <field name="Manufacturer_Part_Number">CL21B106KOQNNNE</field>
         <field name="Footprint">OPEN_PHASE:C_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Samsung Electro-Mechanics"/>
+      <property name="Manufacturer_Part_Number" value="CL21B106KOQNNNE"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2664,11 +2912,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0805_2012Metric_4T</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Samsung Electro-Mechanics</field>
+        <field name="Manufacturer_Part_Number">CL21B106KOQNNNE</field>
         <field name="Footprint">OPEN_PHASE:C_0805_2012Metric_4T</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C_4T" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Samsung Electro-Mechanics"/>
+      <property name="Manufacturer_Part_Number" value="CL21B106KOQNNNE"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2691,11 +2943,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0805_2012Metric_4T</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Samsung Electro-Mechanics</field>
+        <field name="Manufacturer_Part_Number">CL21B106KOQNNNE</field>
         <field name="Footprint">OPEN_PHASE:C_0805_2012Metric_4T</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C_4T" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Samsung Electro-Mechanics"/>
+      <property name="Manufacturer_Part_Number" value="CL21B106KOQNNNE"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2718,11 +2974,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0805_2012Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Samsung Electro-Mechanics</field>
+        <field name="Manufacturer_Part_Number">CL21B106KOQNNNE</field>
         <field name="Footprint">OPEN_PHASE:C_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Samsung Electro-Mechanics"/>
+      <property name="Manufacturer_Part_Number" value="CL21B106KOQNNNE"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2743,11 +3003,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM188R61E475KE11D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM188R61E475KE11D"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2768,11 +3032,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM188R71H104KA93D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM188R71H104KA93D"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2793,11 +3061,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM188R71H103KA01D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM188R71H103KA01D"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2818,11 +3090,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM188R71H102KA01D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM188R71H102KA01D"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2843,11 +3119,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM188R71E105KA12D</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM188R71E105KA12D"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2868,11 +3148,15 @@ Fixed
       <footprint>OPEN_PHASE:C_0603_1608Metric</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">CC0603CRNPO9BN4R7</field>
         <field name="Footprint">OPEN_PHASE:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="CC0603CRNPO9BN4R7"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2893,11 +3177,15 @@ Fixed
       <footprint>OPEN_PHASE:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
       <description>Unpolarized capacitor</description>
       <fields>
+        <field name="Manufacturer_Name">Murata</field>
+        <field name="Manufacturer_Part_Number">GRM31CZ71C226ME15L</field>
         <field name="Footprint">OPEN_PHASE:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</field>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="C" description="Unpolarized capacitor"/>
+      <property name="Manufacturer_Name" value="Murata"/>
+      <property name="Manufacturer_Part_Number" value="GRM31CZ71C226ME15L"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2919,11 +3207,15 @@ Fixed
       <datasheet>https://assets.nexperia.com/documents/data-sheet/PMEG2020EH_EJ.pdf</datasheet>
       <description>20V, 2A very low Vf MEGA Schottky barrier rectifier, SOD-123F</description>
       <fields>
+        <field name="Manufacturer_Name">Nexperia</field>
+        <field name="Manufacturer_Part_Number">PMEG2020EH,115</field>
         <field name="Footprint">OPEN_PHASE:D_SOD-123F</field>
         <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/PMEG2020EH_EJ.pdf</field>
         <field name="Description">20V, 2A very low Vf MEGA Schottky barrier rectifier, SOD-123F</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="PMEG2020EH" description="20V, 2A very low Vf MEGA Schottky barrier rectifier, SOD-123F"/>
+      <property name="Manufacturer_Name" value="Nexperia"/>
+      <property name="Manufacturer_Part_Number" value="PMEG2020EH,115"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="forward voltage diode"/>
@@ -2945,11 +3237,15 @@ Fixed
       <datasheet>https://assets.nexperia.com/documents/data-sheet/PMEG2020EH_EJ.pdf</datasheet>
       <description>20V, 2A very low Vf MEGA Schottky barrier rectifier, SOD-123F</description>
       <fields>
+        <field name="Manufacturer_Name">Nexperia</field>
+        <field name="Manufacturer_Part_Number">PMEG2020EH,115</field>
         <field name="Footprint">OPEN_PHASE:D_SOD-123F</field>
         <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/PMEG2020EH_EJ.pdf</field>
         <field name="Description">20V, 2A very low Vf MEGA Schottky barrier rectifier, SOD-123F</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="PMEG2020EH" description="20V, 2A very low Vf MEGA Schottky barrier rectifier, SOD-123F"/>
+      <property name="Manufacturer_Name" value="Nexperia"/>
+      <property name="Manufacturer_Part_Number" value="PMEG2020EH,115"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="forward voltage diode"/>
@@ -3243,11 +3539,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-0720KL</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-0720KL"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3268,11 +3568,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-0736K5L</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-0736K5L"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3293,11 +3597,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-071ML</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-071ML"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3318,11 +3626,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-07365KL</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-07365KL"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3343,11 +3655,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-071KL</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-071KL"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3368,11 +3684,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-071KL</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-071KL"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3393,11 +3713,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-0724K9L</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-0724K9L"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3418,11 +3742,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-0749K9L</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-0749K9L"/>
       <property name="Sheetname" value="Power_Supply"/>
       <property name="Sheetfile" value="Power Supply - Analog Rails.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3579,12 +3907,16 @@ Fixed
       <description>Light emitting diode</description>
       <fields>
         <field name="Sim.Pins">1=K 2=A</field>
+        <field name="Manufacturer_Name">Wurth Elektronik</field>
+        <field name="Manufacturer_Part_Number">150060RS75000</field>
         <field name="Footprint">OPEN_PHASE:LED_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Light emitting diode</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Sim.Pins" value="1=K 2=A"/>
+      <property name="Manufacturer_Name" value="Wurth Elektronik"/>
+      <property name="Manufacturer_Part_Number" value="150060RS75000"/>
       <property name="Sheetname" value="Connectors"/>
       <property name="Sheetfile" value="Connectors.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3606,12 +3938,16 @@ Fixed
       <description>Light emitting diode</description>
       <fields>
         <field name="Sim.Pins">1=K 2=A</field>
+        <field name="Manufacturer_Name">Wurth Elektronik</field>
+        <field name="Manufacturer_Part_Number">150060RS75000</field>
         <field name="Footprint">OPEN_PHASE:LED_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Light emitting diode</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Sim.Pins" value="1=K 2=A"/>
+      <property name="Manufacturer_Name" value="Wurth Elektronik"/>
+      <property name="Manufacturer_Part_Number" value="150060RS75000"/>
       <property name="Sheetname" value="Connectors"/>
       <property name="Sheetfile" value="Connectors.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3633,12 +3969,16 @@ Fixed
       <description>Light emitting diode</description>
       <fields>
         <field name="Sim.Pins">1=K 2=A</field>
+        <field name="Manufacturer_Name">Wurth Elektronik</field>
+        <field name="Manufacturer_Part_Number">150060RS75000</field>
         <field name="Footprint">OPEN_PHASE:LED_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Light emitting diode</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Sim.Pins" value="1=K 2=A"/>
+      <property name="Manufacturer_Name" value="Wurth Elektronik"/>
+      <property name="Manufacturer_Part_Number" value="150060RS75000"/>
       <property name="Sheetname" value="Connectors"/>
       <property name="Sheetfile" value="Connectors.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3660,12 +4000,16 @@ Fixed
       <description>Light emitting diode</description>
       <fields>
         <field name="Sim.Pins">1=K 2=A</field>
+        <field name="Manufacturer_Name">Wurth Elektronik</field>
+        <field name="Manufacturer_Part_Number">150060RS75000</field>
         <field name="Footprint">OPEN_PHASE:LED_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Light emitting diode</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Sim.Pins" value="1=K 2=A"/>
+      <property name="Manufacturer_Name" value="Wurth Elektronik"/>
+      <property name="Manufacturer_Part_Number" value="150060RS75000"/>
       <property name="Sheetname" value="Connectors"/>
       <property name="Sheetfile" value="Connectors.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3809,11 +4153,15 @@ Fixed
       <datasheet>~</datasheet>
       <description>Pin header, 2x08, 2.54 mm, horizontal (right angle), for Dupont jumper wires (odd pins row 1, even pins row 2). Host interface of the AD7606C-18 and +3.3V input</description>
       <fields>
+        <field name="Manufacturer_Name">Wurth Elektronik</field>
+        <field name="Manufacturer_Part_Number">61301621021</field>
         <field name="Footprint">OPEN_PHASE:PinHeader_2x08_P2.54mm_Horizontal</field>
         <field name="Datasheet">~</field>
         <field name="Description">Pin header, 2x08, 2.54 mm, horizontal (right angle), for Dupont jumper wires (odd pins row 1, even pins row 2). Host interface of the AD7606C-18 and +3.3V input</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="Conn_02x08_Odd_Even" description="Pin header, 2x08, 2.54 mm, horizontal (right angle), for Dupont jumper wires (odd pins row 1, even pins row 2). Host interface of the AD7606C-18 and +3.3V input"/>
+      <property name="Manufacturer_Name" value="Wurth Elektronik"/>
+      <property name="Manufacturer_Part_Number" value="61301621021"/>
       <property name="Sheetname" value="Connectors"/>
       <property name="Sheetfile" value="Connectors.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>
@@ -3914,11 +4262,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-07750RL</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-07750RL"/>
       <property name="Sheetname" value="Connectors"/>
       <property name="Sheetfile" value="Connectors.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3939,11 +4291,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-073K3L</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-073K3L"/>
       <property name="Sheetname" value="Connectors"/>
       <property name="Sheetfile" value="Connectors.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3964,11 +4320,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-071K5L</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-071K5L"/>
       <property name="Sheetname" value="Connectors"/>
       <property name="Sheetfile" value="Connectors.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -3989,11 +4349,15 @@ Fixed
       <footprint>OPEN_PHASE:R_0603_1608Metric</footprint>
       <description>Resistor</description>
       <fields>
+        <field name="Manufacturer_Name">Yageo</field>
+        <field name="Manufacturer_Part_Number">RC0603FR-074K3L</field>
         <field name="Footprint">OPEN_PHASE:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description">Resistor</field>
       </fields>
       <libsource lib="OPEN_PHASE" part="R" description="Resistor"/>
+      <property name="Manufacturer_Name" value="Yageo"/>
+      <property name="Manufacturer_Part_Number" value="RC0603FR-074K3L"/>
       <property name="Sheetname" value="Connectors"/>
       <property name="Sheetfile" value="Connectors.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>

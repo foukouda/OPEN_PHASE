@@ -1,7 +1,7 @@
 (export
 	(version "E")
 	(design
-		(source "/tmp/tmp-kibot-net_sch_print-6z05uw_u/OPEN_PHASE.kicad_sch")
+		(source "/tmp/tmp-kibot-net_sch_print-s4gluar6/OPEN_PHASE.kicad_sch")
 		(date "Date")
 		(tool "Eeschema 10.0.5-unknown-202607221313~667fa36054~ubuntu25.10.1")
 		(textvar
@@ -15,7 +15,7 @@
 		(textvar
 			(name "FABRICATION_NOTES") "FABRICATION NOTES (UNLESS OTHERWISE SPECIFIED)\n\n1)	FABRICATE PER IPC-6012A CLASS 2.\n\n2)	OUTLINE DEFINED IN SEPARATE GERBER FILE WITH\n	\"Edge_Cuts.GBR\" SUFFIX.\n\n	DIMENSIONS OF CIRCUMSIZED RECTANGLE SHOWN ON THIS\n	DRAWING FOR REFERENCE ONLY.\n\n3)	SEE SEPARATE DRILL FILES WITH \".DRL\" SUFFIX \n	FOR HOLE LOCATIONS.\n\n	SELECTED HOLE LOCATIONS SHOWN ON THIS DRAWING \n	FOR REFERENCE ONLY.\n\n4)	SURFACE FINISH: IMMERSION GOLD\n\n5)	SOLDERMASK ON BOTH SIDES OF THE BOARD SHALL \n	BE LPI, COLOR WHITE.\n\n6)	SILK SCREEN LEGEND TO BE APPLIED PER LAYER \n	STACKUP USING BLACK NON-CONDUCTIVE EPOXY INK.\n\n7)	ALL VIAS ARE TENTED ON BOTH SIDES UNLESS \n	SOLDERMASK OPENED IN GERBER.\n\n8)	VENDOR SHOULD FOLLOW ROHS COMPLIANT PROCESS \n	AND Pb FREE FOR MANUFACTURING\n\n9)	PCB MATERIAL REQUIREMENTS:\n\n	A.	FLAMMABILITY RATING MUST MEET OR EXCEED \n		UL94V-0 REQUIREMENTS.\n	B.	Tg 170 C OR EQUIVALENT.\n	C.	EQUIVALENT MATERIAL SHALL BE RoHS COMPLIANT, \n		HALOGEN FREE AND APPROVED BY OPEN THRUST LAB.\n\n10)	DESIGN GEOMETRY MINIMUM FEATURE SIZES:\n\n	BOARD SIZE				65.050 × 77.500 mm\n	BOARD THICKNESS		1.660 mm\n	TRACE WIDTH			0.200 mm\n	TRACE TO TRACE		0.200 mm\n	MIN. HOLE (PTH)			0.250 mm\n	MIN. HOLE (NPTH)		N/A mm\n	ANNULAR RING			0.150 mm\n	COPPER TO HOLE		0.254 mm\n	COPPER TO EDGE		0.250 mm\n	HOLE TO HOLE			0.254 mm\n\n11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.\n\n12)	CONFIRM SPACE WIDTHS AND SPACINGS.")
 		(textvar
-			(name "GIT_HASH_PCB") "62ba3e5")
+			(name "GIT_HASH_PCB") "df317d9")
 		(textvar
 			(name "GIT_HASH_SCH") "de61407")
 		(textvar
@@ -35,7 +35,7 @@
 			(name "RELEASE_BODY_1.1.0")
 		)
 		(textvar
-			(name "RELEASE_BODY_UNRELEASED") "___________________________________\n\nAdded\n\n-   4x PBV 1 mOhm shunt + INA241A2 (20 V/V)\n\n-   4x voltage divider 40.2k / 10k\n\n-   AD7606C-18 ADC, 8 inputs used\n\n-   +3.3V -> LT8362 6 V -> LT3045-1 +5VA / +2.5VA\n\n-   Self-contained libs and 3D models (lib/)\n\n-   LTspice simulations (Simulation/LTspice)\n\n-   Predicted measurement quality (sim 07, 08)\n\n-   openEMS shunt inductance model (Simulation/openEMS)\n\n-   Thermal / current density model (Simulation/Thermal)\n\n-   3D animation (Images/OPEN_PHASE.mp4)\n\n-   J4 host header 2x8: AD7606C serial, software mode\n\n-   Test points TP1-TP16\n\n-   4x rail indicator LED (D1, D3-D5), about 1 mA each\n\n-   Silkscreen: rail names at the LEDs, test point tags, OSHW logo\n\n-   100 Ohm in series on the 11 J4 lines: RN1, RN2 (4x0603 array, as OPEN_WEIGHT), R39-R41, bottom side\n\n-   100k pull-up on CS (R42), pull-downs on CONVST (R43) and RESET (R44)\n\n-   Silkscreen: board version table (INA241 A5/A4/A3/A2: motor cells, mV/A, peak current), fitted version ticked\n\n-   D6 PMEG2020EH (+3.3V -> +5VA): AVCC follows VDRIVE at power-up (AD7606C abs. max.)\n\n-   Test points TP1, TP2, TP7, TP8, TP13, TP14 placed on the bottom, with tags\n\n___________________________________\n\nChanged\n\n-   Renamed to OPEN_PHASE, KiCad 10\n\n-   Sheets named after their function\n\n-   IC3: LTC6655LN-2.5 -> LTC6655-2.5 (pin 6 = VOUT_S)\n\n-   R12: 49.9k -> 24.9k (+2.5VA = 2.500 V)\n\n-   L1: 744373965022 -> WE-MAPI 4030 74438357022 (4.1 x 4.1 mm)\n\n-   Solder mask white, silkscreen black\n\n-   Nets renamed SHUNT_*, INA_*, ADC_*\n\n-   IC1 AGND pin 26, REFGND pin 46 to GND\n\n-   IC8, IC9: thermal vias on exposed pad 13\n\n-   Licence: MIT -> CERN-OHL-P v2\n\n-   README / HTML logo: INGENIERIE FRANCE badge\n\n-   TP15 / TP16 on the AD7606C side of the series resistors\n\n-   Power planes IN/OUT U, V, W, B: 744 stitching vias removed\n\n-   IC2, IC4, IC6, IC10: INA241A2 -> INA241A4 (100 V/V, 100 mV/A, ±23 A), version for 1205.5 motors on 1S\n\n-   Courtyards to IPC-7351 level C (0.1 mm) on passives, LEDs, SOP/SON, LT8362, MAPI-4030, SOD-123F\n\n-   LED footprint copied into the project library (lib/)\n\n___________________________________\n\nFixed\n\n-   +5VA via of R36 sat on the ADC_~{CS} track (short): bus rerouted around it\n\n-   Rail LED anodes (D1, D3-D5) routed to R35-R38; PCB values of R35-R38 updated\n\n-   ERC clean: PWR_FLAG on +6V, +5VA, +2.5VA, GND1; SS label on its net\n\n-   C14, C15, C39 (4-terminal symbol): 0805 footprint with pads 3/4 on pads 2/1\n\n-   IC5 pads 0.305 -> 0.30 mm wide (0.20 mm gap, ADI MSE16 land pattern)\n\n-   INA241 pin 4 (NC) tied to GND, as the datasheet asks\n\n-   DRC errors: IC10 track widths as on IC2/4/6, via spacing (LDO grids, +3.3V row, INA REF vias), GND vias off other nets and off the edge, dangling track and via removed\n\n-   J1/J2 and J5 mounting pads reduced (0.3 mm from the board edge)\n\n-   IC8/IC9 thermal vias tented on the bottom\n\n-   Silkscreen kept off pads, gold bands and board edge (connector outlines, J4, IC5 reference, labels)")
+			(name "RELEASE_BODY_UNRELEASED") "___________________________________\n\nAdded\n\n-   4x PBV 1 mOhm shunt + INA241A2 (20 V/V)\n\n-   4x voltage divider 40.2k / 10k\n\n-   AD7606C-18 ADC, 8 inputs used\n\n-   +3.3V -> LT8362 6 V -> LT3045-1 +5VA / +2.5VA\n\n-   Self-contained libs and 3D models (lib/)\n\n-   LTspice simulations (Simulation/LTspice)\n\n-   Predicted measurement quality (sim 07, 08)\n\n-   openEMS shunt inductance model (Simulation/openEMS)\n\n-   Thermal / current density model (Simulation/Thermal)\n\n-   3D animation (Images/OPEN_PHASE.mp4)\n\n-   J4 host header 2x8: AD7606C serial, software mode\n\n-   Test points TP1-TP16\n\n-   4x rail indicator LED (D1, D3-D5), about 1 mA each\n\n-   Silkscreen: rail names at the LEDs, test point tags, OSHW logo\n\n-   100 Ohm in series on the 11 J4 lines: RN1, RN2 (4x0603 array, as OPEN_WEIGHT), R39-R41, bottom side\n\n-   100k pull-up on CS (R42), pull-downs on CONVST (R43) and RESET (R44)\n\n-   Silkscreen: board version table (INA241 A5/A4/A3/A2: motor cells, mV/A, peak current), fitted version ticked\n\n-   D6 PMEG2020EH (+3.3V -> +5VA): AVCC follows VDRIVE at power-up (AD7606C abs. max.)\n\n-   Test points TP1, TP2, TP7, TP8, TP13, TP14 placed on the bottom, with tags\n\n-   BOM: manufacturer part numbers on the 90 passives, diodes, LEDs and J4 (schematic and PCB fields)\n\n___________________________________\n\nChanged\n\n-   Renamed to OPEN_PHASE, KiCad 10\n\n-   Sheets named after their function\n\n-   IC3: LTC6655LN-2.5 -> LTC6655-2.5 (pin 6 = VOUT_S)\n\n-   R12: 49.9k -> 24.9k (+2.5VA = 2.500 V)\n\n-   L1: 744373965022 -> WE-MAPI 4030 74438357022 (4.1 x 4.1 mm)\n\n-   Solder mask white, silkscreen black\n\n-   Nets renamed SHUNT_*, INA_*, ADC_*\n\n-   IC1 AGND pin 26, REFGND pin 46 to GND\n\n-   IC8, IC9: thermal vias on exposed pad 13\n\n-   Licence: MIT -> CERN-OHL-P v2\n\n-   README / HTML logo: INGENIERIE FRANCE badge\n\n-   TP15 / TP16 on the AD7606C side of the series resistors\n\n-   Power planes IN/OUT U, V, W, B: 744 stitching vias removed\n\n-   IC2, IC4, IC6, IC10: INA241A2 -> INA241A4 (100 V/V, 100 mV/A, ±23 A), version for 1205.5 motors on 1S\n\n-   Courtyards to IPC-7351 level C (0.1 mm) on passives, LEDs, SOP/SON, LT8362, MAPI-4030, SOD-123F\n\n-   LED footprint copied into the project library (lib/)\n\n___________________________________\n\nFixed\n\n-   +5VA via of R36 sat on the ADC_~{CS} track (short): bus rerouted around it\n\n-   Rail LED anodes (D1, D3-D5) routed to R35-R38; PCB values of R35-R38 updated\n\n-   ERC clean: PWR_FLAG on +6V, +5VA, +2.5VA, GND1; SS label on its net\n\n-   C14, C15, C39 (4-terminal symbol): 0805 footprint with pads 3/4 on pads 2/1\n\n-   IC5 pads 0.305 -> 0.30 mm wide (0.20 mm gap, ADI MSE16 land pattern)\n\n-   INA241 pin 4 (NC) tied to GND, as the datasheet asks\n\n-   DRC errors: IC10 track widths as on IC2/4/6, via spacing (LDO grids, +3.3V row, INA REF vias), GND vias off other nets and off the edge, dangling track and via removed\n\n-   J1/J2 and J5 mounting pads reduced (0.3 mm from the board edge)\n\n-   IC8/IC9 thermal vias tented on the bottom\n\n-   Silkscreen kept off pads, gold bands and board edge (connector outlines, J4, IC5 reference, labels)\n\n-   KiBot BoM read \"Manufacturer Part Number\", the symbols use \"Manufacturer_Part_Number\": the MPN columns were empty")
 		(textvar
 			(name "RELEASE_DATE") "23-Nov-2026")
 		(textvar
@@ -627,6 +627,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM188R71H104KA93D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -640,6 +644,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM188R71H104KA93D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -687,6 +699,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM188R71H104KA93D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -700,6 +716,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM188R71H104KA93D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -747,6 +771,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM188R71H104KA93D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -760,6 +788,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM188R71H104KA93D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -807,6 +843,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM188R71E105KA12D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -820,6 +860,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM188R71E105KA12D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -867,6 +915,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM188R71E105KA12D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -880,6 +932,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM188R71E105KA12D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -927,6 +987,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM188R71H104KA93D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -940,6 +1004,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM188R71H104KA93D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -987,6 +1059,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Samsung Electro-Mechanics")
+				(field
+					(name "Manufacturer_Part_Number") "CL21B106KOQNNNE")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0805_2012Metric_4T")
@@ -1000,6 +1076,14 @@
 				(lib "OPEN_PHASE")
 				(part "C_4T")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Samsung Electro-Mechanics")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "CL21B106KOQNNNE")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -1053,6 +1137,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM188R71H104KA93D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -1066,6 +1154,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM188R71H104KA93D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -1387,6 +1483,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-07100RL")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -1400,6 +1500,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-07100RL")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -1447,6 +1555,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-07100RL")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -1460,6 +1572,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-07100RL")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -1507,6 +1627,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-07100RL")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -1520,6 +1644,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-07100RL")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -1567,6 +1699,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-07100KL")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -1580,6 +1716,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-07100KL")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -1627,6 +1771,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-07100KL")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -1640,6 +1788,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-07100KL")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -1687,6 +1843,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-07100KL")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -1700,6 +1860,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-07100KL")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -1747,6 +1915,10 @@
 			(description "4 resistor network, parallel topology")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Bourns")
+				(field
+					(name "Manufacturer_Part_Number") "CAT16-101J4LF")
+				(field
 					(name "Footprint") "OPEN_PHASE:R_Array_Concave_4x0603")
 				(field
 					(name "Datasheet")
@@ -1758,6 +1930,14 @@
 				(lib "OPEN_PHASE")
 				(part "R_Pack04")
 				(description "4 resistor network, parallel topology")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Bourns")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "CAT16-101J4LF")
 			)
 			(property
 				(name "Sheetname")
@@ -1819,6 +1999,10 @@
 			(description "4 resistor network, parallel topology")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Bourns")
+				(field
+					(name "Manufacturer_Part_Number") "CAT16-101J4LF")
+				(field
 					(name "Footprint") "OPEN_PHASE:R_Array_Concave_4x0603")
 				(field
 					(name "Datasheet")
@@ -1830,6 +2014,14 @@
 				(lib "OPEN_PHASE")
 				(part "R_Pack04")
 				(description "4 resistor network, parallel topology")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Bourns")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "CAT16-101J4LF")
 			)
 			(property
 				(name "Sheetname")
@@ -2119,6 +2311,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM188R71H104KA93D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -2132,6 +2328,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM188R71H104KA93D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -2179,6 +2383,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM188R71H104KA93D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -2192,6 +2400,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM188R71H104KA93D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -2239,6 +2455,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM188R71H104KA93D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -2252,6 +2472,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM188R71H104KA93D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -2299,6 +2527,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM188R71E105KA12D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -2312,6 +2544,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM188R71E105KA12D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -2359,6 +2599,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM188R71E105KA12D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -2372,6 +2616,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM188R71E105KA12D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -2419,6 +2671,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM188R71E105KA12D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -2432,6 +2688,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM188R71E105KA12D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -2479,6 +2743,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM188R71H104KA93D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -2492,6 +2760,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM188R71H104KA93D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -2539,6 +2815,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM188R71E105KA12D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -2552,6 +2832,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM188R71E105KA12D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -2599,6 +2887,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM1885C1H102JA01D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -2612,6 +2904,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM1885C1H102JA01D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -2659,6 +2959,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM1885C1H102JA01D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -2672,6 +2976,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM1885C1H102JA01D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -2719,6 +3031,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM1885C1H181JA01D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -2732,6 +3048,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM1885C1H181JA01D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -2779,6 +3103,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM1885C1H181JA01D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -2792,6 +3120,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM1885C1H181JA01D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -2839,6 +3175,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM1885C1H102JA01D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -2852,6 +3192,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM1885C1H102JA01D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -2899,6 +3247,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM1885C1H181JA01D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -2912,6 +3264,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM1885C1H181JA01D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -2959,6 +3319,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM1885C1H181JA01D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -2972,6 +3336,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM1885C1H181JA01D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -3019,6 +3391,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM1885C1H102JA01D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -3032,6 +3408,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM1885C1H102JA01D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -3895,6 +4279,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-0733RL")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -3908,6 +4296,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-0733RL")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -3955,6 +4351,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-079K1L")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -3968,6 +4368,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-079K1L")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -4015,6 +4423,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0805FR-0740K2L")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0805_2012Metric")
@@ -4028,6 +4440,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0805FR-0740K2L")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -4075,6 +4495,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0805FR-0710KL")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0805_2012Metric")
@@ -4088,6 +4512,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0805FR-0710KL")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -4135,6 +4567,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-079K1L")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -4148,6 +4584,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-079K1L")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -4195,6 +4639,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-0733RL")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -4208,6 +4656,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-0733RL")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -4255,6 +4711,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-079K1L")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -4268,6 +4728,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-079K1L")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -4315,6 +4783,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0805FR-0740K2L")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0805_2012Metric")
@@ -4328,6 +4800,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0805FR-0740K2L")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -4375,6 +4855,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0805FR-0710KL")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0805_2012Metric")
@@ -4388,6 +4872,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0805FR-0710KL")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -4435,6 +4927,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-079K1L")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -4448,6 +4944,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-079K1L")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -4495,6 +4999,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-0733RL")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -4508,6 +5016,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-0733RL")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -4555,6 +5071,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-079K1L")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -4568,6 +5088,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-079K1L")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -4615,6 +5143,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0805FR-0740K2L")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0805_2012Metric")
@@ -4628,6 +5160,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0805FR-0740K2L")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -4675,6 +5215,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0805FR-0710KL")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0805_2012Metric")
@@ -4688,6 +5232,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0805FR-0710KL")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -4735,6 +5287,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-079K1L")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -4748,6 +5304,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-079K1L")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -4795,6 +5359,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-0733RL")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -4808,6 +5376,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-0733RL")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -4855,6 +5431,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-079K1L")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -4868,6 +5448,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-079K1L")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -4915,6 +5503,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0805FR-0740K2L")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0805_2012Metric")
@@ -4928,6 +5520,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0805FR-0740K2L")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -4975,6 +5575,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0805FR-0710KL")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0805_2012Metric")
@@ -4988,6 +5592,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0805FR-0710KL")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -5035,6 +5647,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-079K1L")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -5048,6 +5664,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-079K1L")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -5095,6 +5719,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-071KL")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -5108,6 +5736,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-071KL")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -5155,6 +5791,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-071KL")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -5168,6 +5808,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-071KL")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -5215,6 +5863,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-071KL")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -5228,6 +5880,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-071KL")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -5275,6 +5935,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-071KL")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -5288,6 +5952,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-071KL")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -5677,6 +6349,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Samsung Electro-Mechanics")
+				(field
+					(name "Manufacturer_Part_Number") "CL10A106KO8NQNC")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -5690,6 +6366,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Samsung Electro-Mechanics")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "CL10A106KO8NQNC")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -5737,6 +6421,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM188R61E475KE11D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -5750,6 +6438,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM188R61E475KE11D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -5797,6 +6493,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM188R61E475KE11D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -5810,6 +6510,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM188R61E475KE11D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -5857,6 +6565,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Samsung Electro-Mechanics")
+				(field
+					(name "Manufacturer_Part_Number") "CL10A106KO8NQNC")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -5870,6 +6582,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Samsung Electro-Mechanics")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "CL10A106KO8NQNC")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -5917,6 +6637,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Samsung Electro-Mechanics")
+				(field
+					(name "Manufacturer_Part_Number") "CL21B106KOQNNNE")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0805_2012Metric")
@@ -5930,6 +6654,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Samsung Electro-Mechanics")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "CL21B106KOQNNNE")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -5977,6 +6709,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Samsung Electro-Mechanics")
+				(field
+					(name "Manufacturer_Part_Number") "CL21B106KOQNNNE")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0805_2012Metric_4T")
@@ -5990,6 +6726,14 @@
 				(lib "OPEN_PHASE")
 				(part "C_4T")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Samsung Electro-Mechanics")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "CL21B106KOQNNNE")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -6043,6 +6787,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Samsung Electro-Mechanics")
+				(field
+					(name "Manufacturer_Part_Number") "CL21B106KOQNNNE")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0805_2012Metric_4T")
@@ -6056,6 +6804,14 @@
 				(lib "OPEN_PHASE")
 				(part "C_4T")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Samsung Electro-Mechanics")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "CL21B106KOQNNNE")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -6109,6 +6865,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Samsung Electro-Mechanics")
+				(field
+					(name "Manufacturer_Part_Number") "CL21B106KOQNNNE")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0805_2012Metric")
@@ -6122,6 +6882,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Samsung Electro-Mechanics")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "CL21B106KOQNNNE")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -6169,6 +6937,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM188R61E475KE11D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -6182,6 +6954,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM188R61E475KE11D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -6229,6 +7009,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM188R71H104KA93D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -6242,6 +7026,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM188R71H104KA93D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -6289,6 +7081,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM188R71H103KA01D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -6302,6 +7098,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM188R71H103KA01D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -6349,6 +7153,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM188R71H102KA01D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -6362,6 +7170,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM188R71H102KA01D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -6409,6 +7225,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM188R71E105KA12D")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -6422,6 +7242,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM188R71E105KA12D")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -6469,6 +7297,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "CC0603CRNPO9BN4R7")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_0603_1608Metric")
@@ -6482,6 +7314,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "CC0603CRNPO9BN4R7")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -6529,6 +7369,10 @@
 			(description "Unpolarized capacitor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Murata")
+				(field
+					(name "Manufacturer_Part_Number") "GRM31CZ71C226ME15L")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder")
@@ -6542,6 +7386,14 @@
 				(lib "OPEN_PHASE")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Murata")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "GRM31CZ71C226ME15L")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -6590,6 +7442,10 @@
 			(description "20V, 2A very low Vf MEGA Schottky barrier rectifier, SOD-123F")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Nexperia")
+				(field
+					(name "Manufacturer_Part_Number") "PMEG2020EH,115")
+				(field
 					(name "Footprint") "OPEN_PHASE:D_SOD-123F")
 				(field
 					(name "Datasheet") "https://assets.nexperia.com/documents/data-sheet/PMEG2020EH_EJ.pdf")
@@ -6600,6 +7456,14 @@
 				(lib "OPEN_PHASE")
 				(part "PMEG2020EH")
 				(description "20V, 2A very low Vf MEGA Schottky barrier rectifier, SOD-123F")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Nexperia")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "PMEG2020EH,115")
 			)
 			(property
 				(name "Sheetname")
@@ -6644,6 +7508,10 @@
 			(description "20V, 2A very low Vf MEGA Schottky barrier rectifier, SOD-123F")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Nexperia")
+				(field
+					(name "Manufacturer_Part_Number") "PMEG2020EH,115")
+				(field
 					(name "Footprint") "OPEN_PHASE:D_SOD-123F")
 				(field
 					(name "Datasheet") "https://assets.nexperia.com/documents/data-sheet/PMEG2020EH_EJ.pdf")
@@ -6654,6 +7522,14 @@
 				(lib "OPEN_PHASE")
 				(part "PMEG2020EH")
 				(description "20V, 2A very low Vf MEGA Schottky barrier rectifier, SOD-123F")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Nexperia")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "PMEG2020EH,115")
 			)
 			(property
 				(name "Sheetname")
@@ -7371,6 +8247,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-0720KL")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -7384,6 +8264,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-0720KL")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -7431,6 +8319,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-0736K5L")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -7444,6 +8336,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-0736K5L")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -7491,6 +8391,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-071ML")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -7504,6 +8408,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-071ML")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -7551,6 +8463,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-07365KL")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -7564,6 +8480,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-07365KL")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -7611,6 +8535,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-071KL")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -7624,6 +8552,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-071KL")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -7671,6 +8607,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-071KL")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -7684,6 +8624,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-071KL")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -7731,6 +8679,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-0724K9L")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -7744,6 +8696,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-0724K9L")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -7791,6 +8751,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-0749K9L")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -7804,6 +8768,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-0749K9L")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -8138,6 +9110,10 @@
 				(field
 					(name "Sim.Pins") "1=K 2=A")
 				(field
+					(name "Manufacturer_Name") "Wurth Elektronik")
+				(field
+					(name "Manufacturer_Part_Number") "150060RS75000")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:LED_0603_1608Metric")
@@ -8155,6 +9131,14 @@
 			(property
 				(name "Sim.Pins")
 				(value "1=K 2=A")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Wurth Elektronik")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "150060RS75000")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -8204,6 +9188,10 @@
 				(field
 					(name "Sim.Pins") "1=K 2=A")
 				(field
+					(name "Manufacturer_Name") "Wurth Elektronik")
+				(field
+					(name "Manufacturer_Part_Number") "150060RS75000")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:LED_0603_1608Metric")
@@ -8221,6 +9209,14 @@
 			(property
 				(name "Sim.Pins")
 				(value "1=K 2=A")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Wurth Elektronik")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "150060RS75000")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -8270,6 +9266,10 @@
 				(field
 					(name "Sim.Pins") "1=K 2=A")
 				(field
+					(name "Manufacturer_Name") "Wurth Elektronik")
+				(field
+					(name "Manufacturer_Part_Number") "150060RS75000")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:LED_0603_1608Metric")
@@ -8287,6 +9287,14 @@
 			(property
 				(name "Sim.Pins")
 				(value "1=K 2=A")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Wurth Elektronik")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "150060RS75000")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -8336,6 +9344,10 @@
 				(field
 					(name "Sim.Pins") "1=K 2=A")
 				(field
+					(name "Manufacturer_Name") "Wurth Elektronik")
+				(field
+					(name "Manufacturer_Part_Number") "150060RS75000")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:LED_0603_1608Metric")
@@ -8353,6 +9365,14 @@
 			(property
 				(name "Sim.Pins")
 				(value "1=K 2=A")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Wurth Elektronik")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "150060RS75000")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -8701,6 +9721,10 @@
 			(description "Pin header, 2x08, 2.54 mm, horizontal (right angle), for Dupont jumper wires (odd pins row 1, even pins row 2). Host interface of the AD7606C-18 and +3.3V input")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Wurth Elektronik")
+				(field
+					(name "Manufacturer_Part_Number") "61301621021")
+				(field
 					(name "KiLib_Generator") "connector/pin_header_socket")
 				(field
 					(name "Footprint") "OPEN_PHASE:PinHeader_2x08_P2.54mm_Horizontal")
@@ -8713,6 +9737,14 @@
 				(lib "OPEN_PHASE")
 				(part "Conn_02x08_Odd_Even")
 				(description "Pin header, 2x08, 2.54 mm, horizontal (right angle), for Dupont jumper wires (odd pins row 1, even pins row 2). Host interface of the AD7606C-18 and +3.3V input")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Wurth Elektronik")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "61301621021")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -8957,6 +9989,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-07750RL")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -8970,6 +10006,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-07750RL")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -9017,6 +10061,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-073K3L")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -9030,6 +10078,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-073K3L")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -9077,6 +10133,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-071K5L")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -9090,6 +10150,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-071K5L")
 			)
 			(property
 				(name "KiLib_Generator")
@@ -9137,6 +10205,10 @@
 			(description "Resistor")
 			(fields
 				(field
+					(name "Manufacturer_Name") "Yageo")
+				(field
+					(name "Manufacturer_Part_Number") "RC0603FR-074K3L")
+				(field
 					(name "KiLib_Generator") "SMD_2terminal_chip_molded")
 				(field
 					(name "Footprint") "OPEN_PHASE:R_0603_1608Metric")
@@ -9150,6 +10222,14 @@
 				(lib "OPEN_PHASE")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "Manufacturer_Name")
+				(value "Yageo")
+			)
+			(property
+				(name "Manufacturer_Part_Number")
+				(value "RC0603FR-074K3L")
 			)
 			(property
 				(name "KiLib_Generator")

@@ -269,7 +269,7 @@ The board only needs **3.3 V**. An LT8362 boost converter (2 MHz) makes 6 V, and
 
 ## STATUS
 
-This revision has **no ERC / DRC error left**, but it is **not ordered yet**: the BOM has no manufacturer part numbers and there is no firmware. What is in the repository today:
+This revision has **no ERC / DRC error left**, but it is **not ordered yet**: every fitted part has a manufacturer part number, but there is no firmware. What is in the repository today:
 
 | Area | State |
 | --- | --- |
@@ -278,6 +278,7 @@ This revision has **no ERC / DRC error left**, but it is **not ordered yet**: th
 | AD7606C-18 digital interface (CONVST, BUSY, CS, SCLK, SDI, DOUTA–D, RESET, FRSTDATA) | Drawn: software mode (OS0–2 high), serial (PAR/SER SEL high), external reference (REF SELECT low), to the host connector J4. Drawn and routed |
 | +3.3V input | J4 pin 1, from the host |
 | Power supply (LT8362, LTC6655, LT3045-1) | Drawn and routed. D6 (PMEG2020EH, +3.3V to +5VA) keeps AVCC within 0.3 V of VDRIVE at power-up |
+| BOM | Manufacturer and part number on every fitted part (`Manufacturer_Name`, `Manufacturer_Part_Number`). Passives: Murata / Samsung MLCC (C0G for the filters, X7R / X5R rated 16 V or more on the 5–6 V rails), Yageo RC 1 % thick film (the tolerance of simulation 08), Bourns CAT16 arrays. LEDs Würth 150060RS75000, J4 Würth 61301621021 |
 | ERC / DRC | ERC 0; DRC 0 errors, 8 warnings (4 copper slivers on In2, 4 footprints edited on the board: IC1, J3, J4, J5); schematic parity 0. CI runs the `PRELIMINARY` variant (no ERC/DRC gate) |
 
 See [DESIGN REVIEW](#design-review) for the points found while documenting and simulating the design.
