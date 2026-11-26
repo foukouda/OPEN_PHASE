@@ -1,9 +1,9 @@
 Version 4
 SymbolType CELL
 RECTANGLE Normal -128 -96 128 96
-TEXT 8 -44 Center 2 INA241A2
+TEXT 8 -44 Center 2 INA241A4
 TEXT 8 -20 Center 1 (behavioral)
-TEXT 8 8 Center 1 20 V/V
+TEXT 8 8 Center 1 100 V/V
 TEXT -120 -48 Left 1 IN+
 TEXT -120 48 Left 1 IN-
 TEXT 120 0 Right 1 OUT
@@ -12,10 +12,10 @@ TEXT -64 84 Center 1 REF1
 TEXT 0 84 Center 1 GND
 TEXT 64 84 Center 1 REF2
 WINDOW 0 24 -112 Left 2
-SYMATTR Value INA241A2_BEHAV
+SYMATTR Value INA241A4_BEHAV
 SYMATTR Prefix X
-SYMATTR ModelFile INA241A2_behav.sub
-SYMATTR Description Behavioral model of TI INA241A2 current-sense amplifier (written for OPEN_PHASE, not a TI model)
+SYMATTR ModelFile INA241A4_behav.sub
+SYMATTR Description Behavioral model of TI INA241A4 current-sense amplifier (written for OPEN_PHASE, not a TI model)
 PIN -128 -48 NONE 0
 PINATTR PinName IN+
 PINATTR SpiceOrder 1
