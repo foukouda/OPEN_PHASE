@@ -4732,7 +4732,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "PBV-R001-F1-1.0"
+	(symbol "PBV-R001-F1-0.5"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4749,7 +4749,7 @@
 				(justify left top)
 			)
 		)
-		(property "Value" "PBV-R001-F1-1.0"
+		(property "Value" "PBV-R001-F1-0.5"
 			(at 16.51 5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4784,7 +4784,7 @@
 				(justify left top)
 			)
 		)
-		(property "Description" "ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %"
+		(property "Description" "ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-0.5 %"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4819,7 +4819,7 @@
 				(justify left top)
 			)
 		)
-		(property "Manufacturer_Part_Number" "PBV-R001-F1-1.0"
+		(property "Manufacturer_Part_Number" "PBV-R001-F1-0.5"
 			(at 16.51 -594.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4879,7 +4879,7 @@
 				(justify left top)
 			)
 		)
-		(symbol "PBV-R001-F1-1.0_1_1"
+		(symbol "PBV-R001-F1-0.5_1_1"
 			(rectangle
 				(start 5.08 2.54)
 				(end 15.24 -10.16)

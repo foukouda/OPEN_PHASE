@@ -47,6 +47,7 @@ Keep entries short: the `[Unreleased]` section is printed on the schematic Revis
 -   IC2, IC4, IC6, IC10: INA241A2 -> INA241A4 (100 V/V, 100 mV/A, ±23 A), version for 1205.5 motors on 1S
 -   Courtyards to IPC-7351 level C (0.1 mm) on passives, LEDs, SOP/SON, LT8362, MAPI-4030, SOD-123F
 -   LED footprint copied into the project library (lib/)
+-   R1, R4, R7, R9: PBV-R001-F1-1.0 -> PBV-R001-F1-0.5 (shunt ±1 % -> ±0.5 %, as in simulation 08)
 
 ### Fixed
 
