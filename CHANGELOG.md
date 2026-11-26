@@ -62,3 +62,4 @@ Keep entries short: the `[Unreleased]` section is printed on the schematic Revis
 -   IC8/IC9 thermal vias tented on the bottom
 -   Silkscreen kept off pads, gold bands and board edge (connector outlines, J4, IC5 reference, labels)
 -   KiBot BoM read "Manufacturer Part Number", the symbols use "Manufacturer_Part_Number": the MPN columns were empty
+-   lib/: IC1, J3, J4, J5 footprints saved from the board (silkscreen fixes), no more lib_footprint_mismatch
