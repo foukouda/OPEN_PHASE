@@ -273,7 +273,7 @@ This revision has **no ERC / DRC error left**, but it is **not ordered yet**: ev
 
 | Area | State |
 | --- | --- |
-| Analog front-end (shunts, INA241A2, dividers, input filters) | Drawn and routed |
+| Analog front-end (shunts, INA241A4, dividers, input filters) | Drawn and routed |
 | AD7606C-18 supply, reference and analog inputs | Drawn and routed |
 | AD7606C-18 digital interface (CONVST, BUSY, CS, SCLK, SDI, DOUTA–D, RESET, FRSTDATA) | Drawn: software mode (OS0–2 high), serial (PAR/SER SEL high), external reference (REF SELECT low), to the host connector J4. Drawn and routed |
 | +3.3V input | J4 pin 1, from the host |
@@ -382,10 +382,10 @@ Points found while checking the documentation against the netlist and the datash
 | 2 | **AD7606C-18 pins left open that the datasheet asks to connect**: AGND pin 26 and REFGND pin 46 (*"All six of the AGND pins must connect to the AGND plane"*). | Netlist: `unconnected-(IC1-AGND_2-Pad26)`, `…REFGND_2-Pad46`. | **Fixed**: both on GND. |
 | 3 | **INA241A2 pin 4 (NC) is open** on IC2, IC4, IC6 and IC10. The datasheet pin table says: *"NC — Reserved. Connect to ground."* | Netlist: `unconnected-(IC2-NC-Pad4)` and the same for IC4, IC6, IC10. | **Fixed**: pin 4 tied to GND on the four INA241 (schematic and PCB). |
 | 4 | **The INA241A2 gain is 20 V/V.** The schematic note listed the INA240 gains (A2 = 50 V/V). With 1 mΩ the scale is 20 mV/A: 35 A only uses ±0.7 V of the ±2.5 V available. | TI datasheet SBOSA30D: A1 = 10, A2 = 20, A3 = 50, A4 = 100, A5 = 200 V/V. The note is corrected in the schematic. | **Changed**: INA241A4 (100 V/V, ±23 A) fitted for small motors; the silkscreen table lists the other versions. |
-| 5 | **Current channels: the 9.1 kΩ return resistor creates a 15 mV offset.** The AD7606C inputs are 1.2 MΩ to an internal 2 V node. On the voltage channels both inputs see about 9 kΩ, so the two bias drops cancel (−0.15 mV). On the current channels the positive input sees 33 Ω and the negative one 9.1 kΩ: V− sits at +15 mV. | Simulation 06: 2.4849 V at zero current instead of 2.5000 V, which reads as +0.75 A. | Constant offset: remove it with a zero-current calibration. Do not shrink R16 / R21 / R26 / R31 without recomputing the filter: the capacitor is differential, so they set the 17.5 kHz corner. |
+| 5 | **Current channels: the 9.1 kΩ return resistor creates a 15 mV offset.** The AD7606C inputs are 1.2 MΩ to an internal 2 V node. On the voltage channels both inputs see about 9 kΩ, so the two bias drops cancel (−0.15 mV). On the current channels the positive input sees 33 Ω and the negative one 9.1 kΩ: V− sits at +15 mV. | Simulation 06: 2.4849 V at zero current instead of 2.5000 V, which reads as +0.15 A with the INA241A4 (+0.75 A with the A2). | Constant offset: remove it with a zero-current calibration. Do not shrink R16 / R21 / R26 / R31 without recomputing the filter: the capacitor is differential, so they set the 17.5 kHz corner. |
 | 6 | **Voltage channels: −0.75 % gain error** from the 9 kΩ source impedance into the 1.2 MΩ input (−0.9 % at the 1 MΩ minimum). | Simulation 05: 0.1977 V/V instead of 0.1992 V/V. | Calibrate, or use the AD7606C per-channel gain register (software mode, 9 kΩ). |
 | 7 | **PCB not finished**: IC5, L1 and the boost passives are outside the board outline, C16 has no schematic symbol, C14 / C15 / C39 use a 4-pin capacitor symbol on a 2-pad footprint. | DRC: 37 unconnected items, 20 schematic parity warnings. | **Fixed**: boost stage placed and routed; C14 / C15 / C39 on a 4-pad 0805 footprint (pads 3 / 4 stacked on 2 / 1). |
-| 8 | **The delay between the current and voltage readings is not known before a board exists.** The current channel has a 17.5 kHz filter and the voltage channel a 48.5 kHz one, and the inductance of the shunt (datasheet: below 10 nH) acts against the filter of the current channel. Under PWM, a phase difference between the two readings at the switching frequency turns reactive power into measured power. | Simulation 07, phase power after DC calibration: −4.2 % with 0 nH, +0.3 % with 5 nH, +4.7 % with 10 nH. With a time shift of the current calibrated at the electrical frequency: within ±1.5 %. | Measure the phase between the two channels on the first board, then choose C31 / C32 / C34 or correct the delay in the firmware. |
+| 8 | **The delay between the current and voltage readings is not known before a board exists.** The current channel has a 17.5 kHz filter and the voltage channel a 48.5 kHz one, and the inductance of the shunt (datasheet: below 10 nH) acts against the filter of the current channel. Under PWM, a phase difference between the two readings at the switching frequency turns reactive power into measured power. | Simulation 07 (1205.5-class motor on 1S, 3.5 kHz electrical), phase power after DC calibration: −19.0 % with 0 nH, −5.0 % with 5 nH, +9.0 % with 10 nH. With a time shift of the current calibrated at the electrical frequency: −3.5 … −2.5 %. | Measure the phase between the two channels on the first board, then choose C31 / C32 / C34 or correct the delay in the firmware. |
 | 9 | **AD7606C-18 VDRIVE is above AVCC + 0.3 V at power-up.** VDRIVE = +3.3V comes from the host and is there at once, while AVCC = +5VA (boost, then LTC6655 + LT3045-1) only passes 3.0 V after about 10 ms. | Datasheet Rev. B, Table 6: *"VDRIVE to AGND −0.3 V to AVCC + 0.3 V"*. | **Fixed**: D6, PMEG2020EH low-Vf Schottky from +3.3V (anode) to +5VA (cathode), under IC1 on the bottom side; reverse-biased in operation. |
 
 ***
@@ -401,14 +401,14 @@ The power chain and the two measurement channels are simulated with **LTspice 26
 | `03_Boost_Ripple.asc` | `.tran` 6 ms, switching | LT8362 steady-state ripple on +6V with the simulated load of both rails |
 | `04_Analog_Rails_PSRR.asc` | `.ac` 10 Hz – 10 MHz | Rejection from +6V to +5VA and +2.5VA (reference + LDO, board capacitors) |
 | `05_Measurement_Channels_AC.asc` | `.ac` 10 Hz – 10 MHz | Gain and bandwidth of the current and voltage channels, down to the ADC pins |
-| `06_Measurement_Channels_Step.asc` | `.tran` 600 µs | DC transfer, offsets and settling for a 25.2 V and a 35 A step |
+| `06_Measurement_Channels_Step.asc` | `.tran` 600 µs | DC transfer, offsets and settling for a 25.2 V and an 18 A step |
 | `07_Measurement_Quality_Waveforms.asc` | `.tran` 8 ms, 3 runs | ESC PWM voltage and motor current through both channels of phase U, battery voltage and current through the battery channels: readings against the truth, for a shunt inductance of 0, 5 and 10 nH |
 | `08_Measurement_Quality_Tolerances.asc` | `.dc`, 1000 runs | Monte Carlo on the tolerances: spread of offset and gain before calibration |
 
 **Models**
 
 - **LT8362, LT3045-1, LTC6655-5, LTC6655-2.5**: official Analog Devices models shipped with LTspice.
-- **INA241A2**: TI does not provide an LTspice model, so `INA241A2_behav.sub` / `.asy` is a **behavioral model** written for this project from the datasheet (SBOSA30D): gain 20 V/V around (REF1 + REF2) / 2, 1.1 MHz bandwidth, 8 V/µs slew rate, output swing, 2.5 mA supply current, 35 µA input bias. Gain and input offset are parameters, nominal except in simulation 08. It does not model noise, CMRR or the 1 µs output hold of the enhanced PWM rejection.
+- **INA241A4**: TI does not provide an LTspice model, so `INA241A4_behav.sub` / `.asy` is a **behavioral model** written for this project from the datasheet (SBOSA30D): gain 100 V/V around (REF1 + REF2) / 2, 1.1 MHz bandwidth, 8 V/µs slew rate, output swing, 2.5 mA supply current, 35 µA input bias. Gain and input offset are parameters, nominal except in simulation 08. It does not model noise, CMRR or the 1 µs output hold of the enhanced PWM rejection.
 - **AD7606C-18**: loads only. AVCC and VDRIVE are current sources (45 mA and 1.8 mA, the 1 MSPS figures). Each analog input is 1.2 MΩ to an internal 2 V node plus 5 pF, from the datasheet (*"Analog Input Current = (VIN − 2)/RIN"*).
 - **D2**: PMEG2020EH modelled with the LTspice PMEG2020AEA (same 20 V / 2 A Nexperia MEGA Schottky family). **L1**: 2.2 µH, 22 mΩ (Würth WE-MAPI 4030, 74438357022).
 - Ceramic capacitors use their nominal value (no DC-bias derating).
@@ -429,9 +429,9 @@ The power chain and the two measurement channels are simulated with **LTspice 26
 | PSRR +6V → +5VA | 85 dB at 1 kHz, 77 dB at 2 MHz | ideal layout |
 | PSRR +6V → +2.5VA | 85 dB at 1 kHz, 94 dB at 2 MHz | ideal layout |
 | Boost ripple left on +5VA / +2.5VA | 0.11 µV pp / 0.02 µV pp | +6V ripple × PSRR at 2 MHz |
-| Current channel gain | 20.00 mV/A | 1 mΩ × 20 V/V |
+| Current channel gain | 100.0 mV/A | 1 mΩ × 100 V/V |
 | Current channel −3 dB | 17.5 kHz | −4.6 dB at 24 kHz, −46 dB at 2 MHz |
-| Current channel at 0 A / 35 A (J1→J2) | 2.4849 V / 1.7849 V | 15 mV offset from the ADC input bias in R16 |
+| Current channel at 0 A / 18 A (J1→J2) | 2.4849 V / 0.6849 V | 15 mV offset from the ADC input bias in R16 |
 | Current channel 1 % settling | 42 µs | |
 | Voltage channel gain | 0.1977 V/V | 25.2 V reads 4.982 V |
 | Voltage channel −3 dB | 48.5 kHz | −0.95 dB at 24 kHz, −32 dB at 2 MHz |
@@ -479,36 +479,38 @@ Simulations 07 and 08 estimate how good the measurements will be before a board 
 
 | True value | No calibration | Zero taken before the run | Zero and gain calibrated |
 | --- | --- | --- | --- |
-| 5 A | reads 5.41 … 6.12 A | ±0.03 A (±0.5 %) | ±0.008 A (±0.16 %) |
-| 10 A | reads 10.41 … 11.13 A | ±0.05 A (±0.5 %) | ±0.017 A (±0.17 %) |
-| 20 A | reads 20.39 … 21.13 A | ±0.10 A (±0.5 %) | ±0.041 A (±0.21 %) |
-| 35 A | reads 35.35 … 36.16 A | ±0.18 A (±0.5 %) | ±0.105 A (±0.30 %) |
+| 2 A | reads 2.08 … 2.23 A | ±0.01 A (±0.5 %) | ±0.003 A (±0.16 %) |
+| 5 A | reads 5.08 … 5.23 A | ±0.03 A (±0.5 %) | ±0.008 A (±0.17 %) |
+| 10 A | reads 10.06 … 10.24 A | ±0.05 A (±0.5 %) | ±0.018 A (±0.18 %) |
+| 18 A | reads 18.03 … 18.28 A | ±0.09 A (±0.5 %) | ±0.036 A (±0.20 %) |
 | 12 V | reads 11.76 … 12.07 V | as without calibration | ±0.04 V (±0.33 %) |
 | 25.2 V | reads 24.71 … 25.33 V | as without calibration | ±0.08 V (±0.33 %) |
 | 50 V | reads 49.05 … 50.27 V | as without calibration | ±0.17 V (±0.33 %) |
 
-- **No calibration**: the firmware uses the schematic values. The current reads about 0.75 A too high (15 mV offset of the current channel, [DESIGN REVIEW](#design-review) 5) and the voltage about 0.7 % too low. The interval holds 95 % of the boards.
+- **No calibration**: the firmware uses the schematic values. The current reads about 0.15 A too high (15 mV offset of the current channel, [DESIGN REVIEW](#design-review) 5) and the voltage about 0.7 % too low. The interval holds 95 % of the boards.
 - **Zero taken before the run**: the reading at 0 A is subtracted. What is left on the current is the ±0.5 % tolerance of the shunt.
 - **Zero and gain calibrated**: the gain has been calibrated once against a known current and voltage. What is left is the drift 20 K away from that calibration, shunt self-heating included (datasheet maxima added together).
-- **Noise of one sample**: 10 mA rms and 0.85 mV rms (1 LSB = 3.8 mA and 0.39 mV). It averages out.
+- **Noise of one sample**: 5 mA rms and 0.85 mV rms (1 LSB = 0.8 mA and 0.39 mV). It averages out.
 
-**Under PWM** (simulation 07: 25.2 V battery, 24 kHz PWM, motor phase of 30 µH / 50 mΩ, 20 A peak at 1 kHz, 90 W in the phase)
+**Under PWM** (simulation 07: a 1205.5-class motor on 1S, the use of the INA241A4 version. 4.2 V battery, 48 kHz PWM, motor phase of 5 µH / 20 mΩ, 12 A peak at 3.5 kHz, 7.2 W in the phase. The motor and ESC values are assumed: no motor is specified in the project)
 
 | Question | Prediction | Comment |
 | --- | --- | --- |
-| RMS current | −0.4 … −1.0 % | Part of the PWM ripple is filtered: 41 … 75 % of it is left in the reading |
-| Mean phase voltage | 0.0 % after calibration | The RMS reads 14 % low because the filters round the PWM edges: use the mean or the fundamental |
-| Phase power after DC calibration | −4.2 … +4.7 % | Depends on the inductance of the shunt, between 0 and the 10 nH of its datasheet, see [DESIGN REVIEW](#design-review) 8 |
-| Phase power once the delay between the channels is calibrated | within ±1.5 % | Time shift of the current measured at the electrical frequency |
-| Sampling rate | ≥ 200 kSPS | Below, the PWM aliases into the power: up to 22 % over a 4 ms window |
-| Power from the battery | within 0.2 % after DC calibration | Battery voltage and current are almost steady: the delay between the two channels does not matter, from 10 kSPS |
+| RMS current | −3.4 … −1.0 % | Part of the PWM ripple is filtered: 15 … 49 % of it is left in the reading |
+| Mean phase voltage | +0.1 % after calibration | The RMS reads 16 % low because the filters round the PWM edges: use the mean or the fundamental |
+| Phase power after DC calibration | −19.0 … +9.0 % | Depends on the inductance of the shunt, between 0 and the 10 nH of its datasheet, see [DESIGN REVIEW](#design-review) 8 |
+| Phase power once the delay between the channels is calibrated | −3.5 … −2.5 % | Time shift of the current measured at the electrical frequency |
+| Sampling rate | ≥ 100 kSPS | Below, the PWM aliases into the power: up to 27 % over a 1 ms window |
+| Power from the battery | within 0.8 % after DC calibration | Battery voltage and current are almost steady: the delay between the two channels does not matter, from 10 kSPS |
+
+The phase power is the weak point of this version. At 3.5 kHz the fixed delay between the two channels is a 3.5 times larger phase angle than at 1 kHz, and the voltage of a small, fast motor leads its current by about 48°: the same delay error moves much more power. Measuring that delay on the first board and correcting it in the firmware ([issue #11](https://github.com/foukouda/OPEN_PHASE/issues/11)) brings the error back to about 3 %.
 
 **Shunt R1 / R4 / R7 / R9** (PBV-R001-F1-0.5, Isabellenhütte datasheet): tolerance ±0.5 %, temperature coefficient below 75 ppm/K, thermal resistance below 15 K/W (1.2 W and +18 K at 35 A, for 3 W allowed), inductance below 10 nH, thermal EMF below 2 µV/K (2 mA of offset per kelvin of difference between the two sense terminals). The other resistors have no part number in the schematic: 1 % and 100 ppm/K are assumed for them.
 
 **Method**
 
 - **07, dynamic accuracy.** The simulated phase voltage and motor current are the truth. The readings are rebuilt from the AD7606C pin voltages as a firmware would do it. Three runs: shunt without inductance, with 5 nH, with 10 nH.
-- **08, static accuracy.** Monte Carlo on 1000 boards: shunt 0.5 %, resistors 1 %, INA241A2 gain ±0.01 % and offset ±15 µV, AD7606C input resistance 1.0 – 1.4 MΩ, +2.5VA built from the LTC6655B tolerance, the SET network and the LT3045-1 offset (2.4949 … 2.5046 V over the 1000 boards, 0.1 % of them outside the 2.495 – 2.505 V reference window of the AD7606C).
+- **08, static accuracy.** Monte Carlo on 1000 boards: shunt 0.5 %, resistors 1 %, INA241A4 gain ±0.015 % and offset ±10 µV, AD7606C input resistance 1.0 – 1.4 MΩ, +2.5VA built from the LTC6655B tolerance, the SET network and the LT3045-1 offset (2.4949 … 2.5046 V over the 1000 boards, 0.1 % of them outside the 2.495 – 2.505 V reference window of the AD7606C).
 - **ADC.** The AD7606C-18 is not simulated. Its datasheet figures are applied to the simulated pin voltages: ±10 V range, 25 kHz input filter (low bandwidth mode), SNR 92.5 dB, full-scale error ±120 LSB, zero error ±80 LSB.
 
 <p align="center">
@@ -518,7 +520,7 @@ Simulations 07 and 08 estimate how good the measurements will be before a board 
   <img alt="Spread of the readings before calibration" src="../Images/Simulation/sim08_tolerances.png" width="90%">
 </p>
 
-> Not covered: the common-mode rejection of the INA241A2 and its 1 µs output hold at each PWM edge (behavioural model), the layout, and the other two phases (the waveform is a single-phase equivalent). The PWM figures are for this test waveform; change the `.param` line of simulation 07 for another motor or another PWM frequency.
+> Not covered: the common-mode rejection of the INA241A4 and its 1 µs output hold at each PWM edge (behavioural model), the layout, and the other two phases (the waveform is a single-phase equivalent). The PWM figures are for this test waveform; change the `.param` line of simulation 07 for another motor or another PWM frequency.
 
 ***
 
@@ -607,7 +609,7 @@ After 3.3 V is applied (values from the [LTspice simulations](#simulation-ltspic
     ├─ Report             # ERC / DRC reports
     ├─ Schematic          # Exported schematic PDFs
     ├─ Simulation
-    │  └─ LTspice         # LTspice schematics, INA241A2 behavioral model, run/plot scripts
+    │  └─ LTspice         # LTspice schematics, INA241A4 behavioral model, run/plot scripts
     ├─ Templates          # Drawing sheets and title block templates
     └─ Testing
        └─ Testpoints      # Test point tables
