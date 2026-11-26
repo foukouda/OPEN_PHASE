@@ -74,7 +74,7 @@
 11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.
 
 12)	CONFIRM SPACE WIDTHS AND SPACINGS.</textvar>
-    <textvar name="GIT_HASH_PCB">df317d9</textvar>
+    <textvar name="GIT_HASH_PCB">b545372</textvar>
     <textvar name="GIT_HASH_SCH">de61407</textvar>
     <textvar name="GIT_URL">https://github.com/foukouda/OPEN_PHASE</textvar>
     <textvar name="PROJECT_NAME">OPEN_PHASE</textvar>
@@ -162,6 +162,10 @@ Changed
 
 -   LED footprint copied into the project library (lib/)
 
+-   R1, R4, R7, R9: PBV-R001-F1-1.0 -&gt; PBV-R001-F1-0.5 (shunt ±1 % -&gt; ±0.5 %, as in simulation 08)
+
+-   Simulations 05-08 rerun with the INA241A4 (100 V/V, 18 A test current, 1205.5 motor on 1S in sim 07)
+
 ___________________________________
 
 Fixed
@@ -186,9 +190,13 @@ Fixed
 
 -   Silkscreen kept off pads, gold bands and board edge (connector outlines, J4, IC5 reference, labels)
 
--   KiBot BoM read "Manufacturer Part Number", the symbols use "Manufacturer_Part_Number": the MPN columns were empty</textvar>
-    <textvar name="RELEASE_DATE">23-Nov-2026</textvar>
-    <textvar name="RELEASE_DATE_NUM">2026-11-23</textvar>
+-   KiBot BoM read "Manufacturer Part Number", the symbols use "Manufacturer_Part_Number": the MPN columns were empty
+
+-   lib/: IC1, J3, J4, J5 footprints saved from the board (silkscreen fixes), no more lib_footprint_mismatch
+
+-   In2.Cu GND guard zone split in three around the shunt sense pins R1.3, R4.3, R7.3: no more copper_sliver (DRC 0 warnings)</textvar>
+    <textvar name="RELEASE_DATE">26-Nov-2026</textvar>
+    <textvar name="RELEASE_DATE_NUM">2026-11-26</textvar>
     <textvar name="RELEASE_TITLE_1.0.0"/>
     <textvar name="RELEASE_TITLE_1.0.1"/>
     <textvar name="RELEASE_TITLE_1.0.2"/>
@@ -1745,26 +1753,26 @@ Fixed
       </units>
     </comp>
     <comp ref="R1">
-      <value>PBV-R001-F1-1.0</value>
+      <value>PBV-R001-F1-0.5</value>
       <footprint>OPEN_PHASE:PBVR001F110</footprint>
       <datasheet>https://cms.nacsemi.com/content/AuthDatasheets/Isabellehuette/PBV.pdf</datasheet>
-      <description>ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %</description>
+      <description>ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-0.5 %</description>
       <fields>
         <field name="Height">20.7</field>
         <field name="Manufacturer_Name">Isabellenhutte</field>
-        <field name="Manufacturer_Part_Number">PBV-R001-F1-1.0</field>
+        <field name="Manufacturer_Part_Number">PBV-R001-F1-0.5</field>
         <field name="Mouser Part Number"/>
         <field name="Mouser Price/Stock"/>
         <field name="Arrow Part Number"/>
         <field name="Arrow Price/Stock"/>
         <field name="Footprint">OPEN_PHASE:PBVR001F110</field>
         <field name="Datasheet">https://cms.nacsemi.com/content/AuthDatasheets/Isabellehuette/PBV.pdf</field>
-        <field name="Description">ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %</field>
+        <field name="Description">ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-0.5 %</field>
       </fields>
-      <libsource lib="OPEN_PHASE" part="PBV-R001-F1-1.0" description="ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %"/>
+      <libsource lib="OPEN_PHASE" part="PBV-R001-F1-0.5" description="ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-0.5 %"/>
       <property name="Height" value="20.7"/>
       <property name="Manufacturer_Name" value="Isabellenhutte"/>
-      <property name="Manufacturer_Part_Number" value="PBV-R001-F1-1.0"/>
+      <property name="Manufacturer_Part_Number" value="PBV-R001-F1-0.5"/>
       <property name="Mouser Part Number" value=""/>
       <property name="Mouser Price/Stock" value=""/>
       <property name="Arrow Part Number" value=""/>
@@ -1785,26 +1793,26 @@ Fixed
       </units>
     </comp>
     <comp ref="R4">
-      <value>PBV-R001-F1-1.0</value>
+      <value>PBV-R001-F1-0.5</value>
       <footprint>OPEN_PHASE:PBVR001F110</footprint>
       <datasheet>https://cms.nacsemi.com/content/AuthDatasheets/Isabellehuette/PBV.pdf</datasheet>
-      <description>ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %</description>
+      <description>ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-0.5 %</description>
       <fields>
         <field name="Height">20.7</field>
         <field name="Manufacturer_Name">Isabellenhutte</field>
-        <field name="Manufacturer_Part_Number">PBV-R001-F1-1.0</field>
+        <field name="Manufacturer_Part_Number">PBV-R001-F1-0.5</field>
         <field name="Mouser Part Number"/>
         <field name="Mouser Price/Stock"/>
         <field name="Arrow Part Number"/>
         <field name="Arrow Price/Stock"/>
         <field name="Footprint">OPEN_PHASE:PBVR001F110</field>
         <field name="Datasheet">https://cms.nacsemi.com/content/AuthDatasheets/Isabellehuette/PBV.pdf</field>
-        <field name="Description">ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %</field>
+        <field name="Description">ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-0.5 %</field>
       </fields>
-      <libsource lib="OPEN_PHASE" part="PBV-R001-F1-1.0" description="ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %"/>
+      <libsource lib="OPEN_PHASE" part="PBV-R001-F1-0.5" description="ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-0.5 %"/>
       <property name="Height" value="20.7"/>
       <property name="Manufacturer_Name" value="Isabellenhutte"/>
-      <property name="Manufacturer_Part_Number" value="PBV-R001-F1-1.0"/>
+      <property name="Manufacturer_Part_Number" value="PBV-R001-F1-0.5"/>
       <property name="Mouser Part Number" value=""/>
       <property name="Mouser Price/Stock" value=""/>
       <property name="Arrow Part Number" value=""/>
@@ -1825,26 +1833,26 @@ Fixed
       </units>
     </comp>
     <comp ref="R7">
-      <value>PBV-R001-F1-1.0</value>
+      <value>PBV-R001-F1-0.5</value>
       <footprint>OPEN_PHASE:PBVR001F110</footprint>
       <datasheet>https://cms.nacsemi.com/content/AuthDatasheets/Isabellehuette/PBV.pdf</datasheet>
-      <description>ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %</description>
+      <description>ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-0.5 %</description>
       <fields>
         <field name="Height">20.7</field>
         <field name="Manufacturer_Name">Isabellenhutte</field>
-        <field name="Manufacturer_Part_Number">PBV-R001-F1-1.0</field>
+        <field name="Manufacturer_Part_Number">PBV-R001-F1-0.5</field>
         <field name="Mouser Part Number"/>
         <field name="Mouser Price/Stock"/>
         <field name="Arrow Part Number"/>
         <field name="Arrow Price/Stock"/>
         <field name="Footprint">OPEN_PHASE:PBVR001F110</field>
         <field name="Datasheet">https://cms.nacsemi.com/content/AuthDatasheets/Isabellehuette/PBV.pdf</field>
-        <field name="Description">ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %</field>
+        <field name="Description">ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-0.5 %</field>
       </fields>
-      <libsource lib="OPEN_PHASE" part="PBV-R001-F1-1.0" description="ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %"/>
+      <libsource lib="OPEN_PHASE" part="PBV-R001-F1-0.5" description="ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-0.5 %"/>
       <property name="Height" value="20.7"/>
       <property name="Manufacturer_Name" value="Isabellenhutte"/>
-      <property name="Manufacturer_Part_Number" value="PBV-R001-F1-1.0"/>
+      <property name="Manufacturer_Part_Number" value="PBV-R001-F1-0.5"/>
       <property name="Mouser Part Number" value=""/>
       <property name="Mouser Price/Stock" value=""/>
       <property name="Arrow Part Number" value=""/>
@@ -1865,26 +1873,26 @@ Fixed
       </units>
     </comp>
     <comp ref="R9">
-      <value>PBV-R001-F1-1.0</value>
+      <value>PBV-R001-F1-0.5</value>
       <footprint>OPEN_PHASE:PBVR001F110</footprint>
       <datasheet>https://cms.nacsemi.com/content/AuthDatasheets/Isabellehuette/PBV.pdf</datasheet>
-      <description>ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %</description>
+      <description>ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-0.5 %</description>
       <fields>
         <field name="Height">20.7</field>
         <field name="Manufacturer_Name">Isabellenhutte</field>
-        <field name="Manufacturer_Part_Number">PBV-R001-F1-1.0</field>
+        <field name="Manufacturer_Part_Number">PBV-R001-F1-0.5</field>
         <field name="Mouser Part Number"/>
         <field name="Mouser Price/Stock"/>
         <field name="Arrow Part Number"/>
         <field name="Arrow Price/Stock"/>
         <field name="Footprint">OPEN_PHASE:PBVR001F110</field>
         <field name="Datasheet">https://cms.nacsemi.com/content/AuthDatasheets/Isabellehuette/PBV.pdf</field>
-        <field name="Description">ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %</field>
+        <field name="Description">ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-0.5 %</field>
       </fields>
-      <libsource lib="OPEN_PHASE" part="PBV-R001-F1-1.0" description="ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %"/>
+      <libsource lib="OPEN_PHASE" part="PBV-R001-F1-0.5" description="ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-0.5 %"/>
       <property name="Height" value="20.7"/>
       <property name="Manufacturer_Name" value="Isabellenhutte"/>
-      <property name="Manufacturer_Part_Number" value="PBV-R001-F1-1.0"/>
+      <property name="Manufacturer_Part_Number" value="PBV-R001-F1-0.5"/>
       <property name="Mouser Part Number" value=""/>
       <property name="Mouser Price/Stock" value=""/>
       <property name="Arrow Part Number" value=""/>
@@ -4904,18 +4912,18 @@ Fixed
         <pin num="1" name="1" type="input"/>
       </pins>
     </libpart>
-    <libpart lib="OPEN_PHASE" part="PBV-R001-F1-1.0">
-      <description>ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %</description>
+    <libpart lib="OPEN_PHASE" part="PBV-R001-F1-0.5">
+      <description>ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-0.5 %</description>
       <docs>https://cms.nacsemi.com/content/AuthDatasheets/Isabellehuette/PBV.pdf</docs>
       <fields>
         <field name="Reference">R</field>
-        <field name="Value">PBV-R001-F1-1.0</field>
+        <field name="Value">PBV-R001-F1-0.5</field>
         <field name="Footprint">OPEN_PHASE:PBVR001F110</field>
         <field name="Datasheet">https://cms.nacsemi.com/content/AuthDatasheets/Isabellehuette/PBV.pdf</field>
-        <field name="Description">ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %</field>
+        <field name="Description">ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-0.5 %</field>
         <field name="Height">20.7</field>
         <field name="Manufacturer_Name">Isabellenhutte</field>
-        <field name="Manufacturer_Part_Number">PBV-R001-F1-1.0</field>
+        <field name="Manufacturer_Part_Number">PBV-R001-F1-0.5</field>
         <field name="Mouser Part Number"/>
         <field name="Mouser Price/Stock"/>
         <field name="Arrow Part Number"/>

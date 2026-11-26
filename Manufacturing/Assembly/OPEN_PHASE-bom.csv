@@ -40,5 +40,5 @@ Row,Quantity Per PCB,References,Value,Datasheet,Footprint,Description,Manufactur
 39,1,R3,"36,5kΩ",,R_0603_1608Metric,Resistor,Yageo,RC0603FR-0736K5L,
 40,1,R6,365kΩ,,R_0603_1608Metric,Resistor,Yageo,RC0603FR-07365KL,
 41,1,R5,1MΩ,,R_0603_1608Metric,Resistor,Yageo,RC0603FR-071ML,
-42,4,R1 R4 R7 R9,PBV-R001-F1-1.0,https://cms.nacsemi.com/content/AuthDatasheets/Isabellehuette/PBV.pdf,PBVR001F110,"ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-1 %",Isabellenhutte,PBV-R001-F1-1.0,
+42,4,R1 R4 R7 R9,PBV-R001-F1-0.5,https://cms.nacsemi.com/content/AuthDatasheets/Isabellehuette/PBV.pdf,PBVR001F110,"ISA-PLAN // Precision resistors Metal Film Resistor, 1 m, 3 W, +/-0.5 %",Isabellenhutte,PBV-R001-F1-0.5,
 43,2,RN1 RN2,RP_100Ω,,R_Array_Concave_4x0603,"4 resistor network, parallel topology",Bourns,CAT16-101J4LF,

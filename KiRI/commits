@@ -1,4 +1,4 @@
-_local_|2026-11-23|root|Local changes not committed|False|True
+_local_|2026-11-26|root|Local changes not committed|False|True
+b545372|2026-11-26|foukouda|Split the In2 GND guard zone around the shunt sense pins (#7)|False|True
+f866bc5|2026-11-23|foukouda|Use the 0.5 % PBV shunts on R1, R4, R7, R9 (#5)|True|True
 df317d9|2026-11-23|foukouda|Add manufacturer part numbers to the BOM (#4)|True|True
-62ba3e5|2026-11-22|foukouda|Restore the INA241 3D models on IC2, IC4, IC6; same model on IC10|False|True
-de61407|2026-11-22|foukouda|Fix ERC/DRC, INA241A4 version, VDRIVE Schottky, missing test points|True|True
