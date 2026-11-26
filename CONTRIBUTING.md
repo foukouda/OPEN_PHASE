@@ -166,9 +166,9 @@ kicad-cli sch erc OPEN_PHASE.kicad_sch
 kicad-cli pcb drc --schematic-parity OPEN_PHASE.kicad_pcb
 ```
 
-Un changement ne doit ajouter **aucun nouveau défaut**. Référence au 2026-11-23
-(`dev` @ `6c6d35f`) : ERC 0 ; DRC 0 erreur et 8 avertissements (4 `copper_sliver`,
-#7 ; 4 `lib_footprint_mismatch`, #8), 0 élément non connecté, 0 écart schéma/PCB.
+Un changement ne doit ajouter **aucun nouveau défaut**. Référence au 2026-11-26
+(branche `fix/7-copper-slivers`, fusionnée dans `dev`) : ERC 0 ; DRC 0 erreur et
+0 avertissement, 0 élément non connecté, 0 écart schéma/PCB.
 Quand une PR fait baisser ces comptes, elle met cette ligne à jour.
 
 ## Pour un assistant IA
