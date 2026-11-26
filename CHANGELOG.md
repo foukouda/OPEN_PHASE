@@ -64,3 +64,4 @@ Keep entries short: the `[Unreleased]` section is printed on the schematic Revis
 -   Silkscreen kept off pads, gold bands and board edge (connector outlines, J4, IC5 reference, labels)
 -   KiBot BoM read "Manufacturer Part Number", the symbols use "Manufacturer_Part_Number": the MPN columns were empty
 -   lib/: IC1, J3, J4, J5 footprints saved from the board (silkscreen fixes), no more lib_footprint_mismatch
+-   In2.Cu GND guard zone split in three around the shunt sense pins R1.3, R4.3, R7.3: no more copper_sliver (DRC 0 warnings)
